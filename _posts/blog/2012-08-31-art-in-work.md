@@ -3,8 +3,8 @@ layout: post
 title:  The art in our work
 date:   2012-08-31
 message: 
-banner: /i/andy-mangold-sung-tongs.jpg
-bottomline: Image <a href=http://thefoxisblack.com/2011/08/17/sights-sounds-animal-collective-sung-tongs-by-andy-mangold/>Sung Tongs</a> by Andy Mangold // the Desktop Wallpaper Project
+banner: 
+bottomline: 
 author: 
 ---
 This text was first published in OBJEKTspektrum, issue 5/2012, under the title [„Die Kunst in der Arbeit, eine Herausforderung des Status quo“][schneider2012]. I have enhanced and translated the initial document to publish it here.
