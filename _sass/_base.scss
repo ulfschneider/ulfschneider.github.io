@@ -140,6 +140,7 @@ blockquote {
 		padding-top:$spacing-unit;
 		padding-bottom:$spacing-unit;
 		position:relative;
+		line-height:1.7em;
     > :last-child {
         margin-bottom: 0;
     }		
@@ -149,9 +150,8 @@ blockquote {
 blockquote::before {
 	display:block;
 	content:"\201c";
-	font-size:6em;
+	font-size:4em;
 	position:absolute;
-	top:-$spacing-unit;
 	left:0;
 	font-weight:400;
 }
