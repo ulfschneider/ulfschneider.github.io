@@ -425,7 +425,7 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 		blockquote {
-			padding-left:2*$spacing-unit;
+			padding-left:1.5*$spacing-unit;
 		}
 		blockquote::before {
 				font-size:3em;
