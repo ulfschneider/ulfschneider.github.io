@@ -1,0 +1,17 @@
+# Site settings
+title: Ulf Schneider
+# email: us@datenlabor.net
+phone: +49 163 2505164
+description: Writing code and being agile
+baseurl:  # the subpath of your site, e.g. /blog/
+url: http://ulfeed.com # the base hostname & protocol for your site
+#twitter_username: ulfeed
+#github_username: 
+#twoople_username:
+
+
+# Build settings
+markdown: kramdown
+
+include: ['_pages']
+permalink: '/textwork/:year/:title/'

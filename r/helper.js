@@ -1,0 +1,43 @@
+function banner() {
+	height = $(window).height();
+	width = $(window).width();
+	headerHeight = $(".site-header").height();
+	newHeight = height - headerHeight;
+
+	$(".full").css("height", newHeight).css( "background-size", "cover" );
+}
+
+
+function wide(cssClass) {
+		width = $(window).width();
+		wrapperWidth = $(".wrapper").width();
+		$(cssClass).css("width", width);
+		$(cssClass).css("min-width", width);
+		$(cssClass).css("margin-left", -((width - wrapperWidth)/2));
+}
+
+function quote() {
+	width = $(window).width();
+	wrapperWidth = $(".wrapper").width();
+	$("blockquote").css("width", width - 100);
+	$("blockquote").css("min-width", width - 100);
+	$("blockquote").css("margin-left", -((width - 100 - wrapperWidth)/2));
+	
+}
+
+function wider() {
+	wide(".wide");	
+}
+
+
+$(window).on("orientationchange", function(event) { banner(); wider(); });
+$(window).on("load", function(event) { banner(); wider(); });
+$(window).resize(function(e) {
+	window.resizeEvt;
+   $(window).resize(function()
+   {
+       clearTimeout(window.resizeEvt);
+       window.resizeEvt = setTimeout(function() { banner(); wider();
+       }, 250);
+   });
+});

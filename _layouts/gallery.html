@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="gallery">
+
+    {% include header.html %}
+
+		{% include banner.html %}
+				
+    <div class="gallery-content">
+				<div class="wrapper">
+					{{ content }}
+				</div>
+		
+				<ul class="image-grid" id="gallery-grid">
+					{% for post in site.posts %}
+						
+						{% if post.layout contains 'image' %}
+
+					<a  href="{{ post.url | prepend: site.baseurl }}">
+						<li class="image-grid">
+							<img src="{{post.thumburl}}"/>
+							<div class="title">{{post.title}}</div>
+						</li>
+					</a>
+				{% endif %}
+
+				{% endfor %}
+			</ul>
+			
+			{% include footer.html %}
+			<script src="/r/packery.pkgd.min.js"></script>
+			<script>
+			var $container = $('#gallery-grid');
+			// init
+			$container.packery({
+			  itemSelector: 'li',
+			  gutter: 0
+			});
+			$(window).on("load", function(event) { $container.packery(); });
+			</script
+		</div>
+		
+
+
+  </body>
+
+</html>

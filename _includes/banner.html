@@ -1,0 +1,47 @@
+<!-- as a fallback for IE8 the banner will use http://louisremi.github.com/background-size-polyfill/ -->
+		{% if page.banner %}
+			<div class="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover; -ms-behavior: url(/r/backgroundsize.min.htc);">				
+				{% if page.message %}
+					<div class="message">
+						<div class="wrapper">{{ page.message | newline_to_br }}</div>
+					</div>
+				{% else %}
+					<div class="message">
+						<div class="wrapper">
+							{{page.title | newline_to_br }}
+					    <div class="meta">
+								{% if page.date %} {{ page.date | date: '%B %d, %Y' }} {% endif %}
+								{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }} {% endif %}
+							</div>	
+						</div>
+					</div>
+				{% endif %}
+			</div>			
+		{% else %}
+			{% if page.bannerFull %}			
+			<div class="banner full" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover; -ms-behavior: url(/r/backgroundsize.min.htc);">
+				{% if page.message %}
+					<div class="message">
+						<div class="wrapper">{{ page.message | newline_to_br }}</div>
+					</div>
+				{% else %}
+					<div class="message">
+						<div class="wrapper">
+							{{page.title | newline_to_br}}
+					    <div class="meta">
+								{% if page.date %} {{ page.date | date: '%B %d, %Y' }} {% endif %}
+								{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }} {% endif %}
+							</div>														
+						</div>						
+					</div>
+				{% endif %}
+			</div>						
+		{% else %}
+			{% if page.message %}
+				<div class="wrapper">
+					<h1 class="message title">{{ page.message | newline_to_br }}</h1>
+				</div>
+				{% endif %}
+		{% endif %}
+		{% endif %}
+		{% if page.bottomline %}<div class="wrapper"><div class="bottomline"> {{page.bottomline}}</div></div>{% endif %}		
