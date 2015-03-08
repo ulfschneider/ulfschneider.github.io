@@ -424,6 +424,14 @@ li.image-grid .title {
 
 
 @include media-query($on-palm) {
+		blockquote {
+			padding-left:2*$spacing-unit;
+		}
+		blockquote::before {
+				font-size:3em;
+				top:0;
+		}
+	
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
