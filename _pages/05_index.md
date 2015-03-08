@@ -1,15 +1,13 @@
 ---
 permalink: /
 layout: page
-message: Writing code and being agile
+message: 
 bannerFull: /i/ulf.jpg
 title: 
 ---
 Hi,
 
-my name is Ulf Schneider. I write code while being agile. 
-
-I am employed as an agile coach at [Wincor Nixdorf](http://www.wincor-nixdorf.com), supporting the world wide transition of the R&D software department towards [agility](http://agilemanifesto.org).
+my name is Ulf Schneider. I am employed as an agile coach at [Wincor Nixdorf](http://www.wincor-nixdorf.com), supporting the world wide transition of the R&D software department towards [agility](http://agilemanifesto.org).
 
 Here you can find some of my [writing](/know-how) about agile software development. 
 
