@@ -150,9 +150,10 @@ blockquote {
 blockquote::before {
 	display:block;
 	content:"\201c";
-	font-size:4em;
+	font-size:3em;
 	position:absolute;
 	left:0;
+	top:$spacing-unit;
 	font-weight:400;
 }
 
