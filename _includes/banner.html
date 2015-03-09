@@ -1,12 +1,8 @@
 		{% if page.banner %}
 			<div class="banner" id="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover;">	
-			<!-- [if lt IE 9]>
 				<script>
-				var bg = $('#banner').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');
-				alert(bg);
-				$('#banner').backstretch(bg); 
-				</script>
-			<![endif> -->						
+				$('#banner').backstretch('{{page.banner}}'); 				
+				</script>								
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
@@ -26,14 +22,9 @@
 		{% else %}
 			{% if page.bannerFull %}			
 			<div class="banner full" id="banner" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover;">
-			<!-- [if lt IE 9]>
 				<script>
-				var bg = $('#banner').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');;
-				$('#banner').backstretch(bg); 
-				alert(bg);
-				</script>
-			<![endif> -->						
-				
+				$('#banner').backstretch('{{page.banner}}'); 				
+				</script>				
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
