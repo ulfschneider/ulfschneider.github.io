@@ -5,6 +5,8 @@ function banner() {
 	newHeight = height - headerHeight;
 
 	$(".full").css("height", newHeight).css( "background-size", "cover" );
+
+	$('#banner').backstretch($('#banner').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'')); 					
 }
 
 
