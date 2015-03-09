@@ -1,5 +1,8 @@
 		{% if page.banner %}
-			<div class="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover;">							
+			<div class="banner" id="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover;">	
+			<!-- [if lt IE 9]>
+			<script>$('#banner').backstretch("{{page.banner}}"); </script>
+			<![endif> -->						
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
@@ -18,7 +21,11 @@
 			</div>			
 		{% else %}
 			{% if page.bannerFull %}			
-			<div class="banner full" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover;">
+			<div class="banner full" id="banner" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover;">
+			<!-- [if lt IE 9]>
+			<script>$('#banner').backstretch("{{page.banner}}"); </script>
+			<![endif> -->						
+				
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
