@@ -4,7 +4,7 @@ function banner() {
 	headerHeight = $(".site-header").height();
 	newHeight = height - headerHeight;
 
-	$(".full").css("height", newHeight).css( "background-size", "cover" );
+	$(".full").css("height", newHeight).css("width", width).css( "background-size", "cover" );
 }
 
 
