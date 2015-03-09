@@ -16,14 +16,6 @@ function wide(cssClass) {
 		$(cssClass).css("margin-left", -((width - wrapperWidth)/2));
 }
 
-function quote() {
-	width = $(window).width();
-	wrapperWidth = $(".wrapper").width();
-	$("blockquote").css("width", width - 100);
-	$("blockquote").css("min-width", width - 100);
-	$("blockquote").css("margin-left", -((width - 100 - wrapperWidth)/2));
-	
-}
 
 function wider() {
 	wide(".wide");	

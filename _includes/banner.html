@@ -1,6 +1,5 @@
-<!-- as a fallback for IE8 the banner will use http://louisremi.github.com/background-size-polyfill/ -->
 		{% if page.banner %}
-			<div class="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover; -ms-behavior: url(/r/backgroundsize.min.htc);">				
+			<div class="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover;">							
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
@@ -19,7 +18,7 @@
 			</div>			
 		{% else %}
 			{% if page.bannerFull %}			
-			<div class="banner full" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover; -ms-behavior: url(/r/backgroundsize.min.htc);">
+			<div class="banner full" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover;">
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
