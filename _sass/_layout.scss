@@ -431,8 +431,8 @@ li.image-grid .title {
 	
     .footer-col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100%);
+        width:         calc(100%);
     }
 	
 		
