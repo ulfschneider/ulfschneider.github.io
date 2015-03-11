@@ -32,12 +32,12 @@ function navigation() {
 	 	
 	if (scrollTop > height) {
 		if (showTopLink == false) {
-			$('#goTop').show(250);
+			$('#goTop').show(0);
 			showTopLink = true;
 		}
 	} else {
 		if (showTopLink == true) {
-			$('#goTop').hide(250);
+			$('#goTop').hide(0);
 			showTopLink = false;
 		}
 	}
