@@ -22,9 +22,28 @@ function wider() {
 	wide(".wide");	
 }
 
+function navigation() {
+	scrollTop = $(document).scrollTop();
+	height = $(window).height();
+	 	
+	if (scrollTop > height) {
+		$('#goTop').show(250);
+	} else {
+		$('#goTop').hide(250);
+	}
+}
 
-$(window).on("orientationchange", function(event) { banner(); wider(); });
-$(window).on("load", function(event) { banner(); wider(); });
+$(function() {
+	function scrollTop() {
+		$('html, body').animate({scrollTop:0}, 1000);
+	}
+	
+	$('#goTop').click(function() {scrollTop(); return false;});
+});
+
+
+$(window).on("orientationchange", function(event) { banner(); wider(); navigation();});
+$(window).on("load", function(event) { banner(); wider(); navigation(); });
 $(window).resize(function(e) {
 	window.resizeEvt;
    $(window).resize(function()
@@ -34,3 +53,4 @@ $(window).resize(function(e) {
        }, 250);
    });
 });
+$(document).scroll(function() {navigation();});
