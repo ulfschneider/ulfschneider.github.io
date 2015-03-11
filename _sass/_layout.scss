@@ -98,8 +98,8 @@
 	padding-right:$spacing-unit/4;
 	padding-left:$spacing-unit/4;
 	bottom:$spacing-unit;
-	font-size:1.5em;
-	line-height:1.5em;
+	font-size:1em;
+	line-height:$site-header-height - 10;
 	color:$background-color;
 	background:$text-color;
 	
