@@ -1,8 +1,8 @@
 function banner() {
-	height = $(window).height();
-	width = $(window).width();
-	headerHeight = $(".site-header").height();
-	newHeight = height - headerHeight;
+	var height = $(window).height();
+	var width = $(window).width();
+	var headerHeight = $(".site-header").height();
+	var newHeight = height - headerHeight;
 
 	$(".full").css("height", newHeight).css( "background-size", "cover" ).backstretch("resize");
 	
@@ -10,8 +10,8 @@ function banner() {
 
 
 function wide(cssClass) {
-		width = $(window).width();
-		wrapperWidth = $(".wrapper").width();
+		var width = $(window).width();
+		var wrapperWidth = $(".wrapper").width();
 		$(cssClass).css("width", width);
 		$(cssClass).css("min-width", width);
 		$(cssClass).css("margin-left", -((width - wrapperWidth)/2));
@@ -22,14 +22,24 @@ function wider() {
 	wide(".wide");	
 }
 
+
+var	showTopLink = false;
+
 function navigation() {
-	scrollTop = $(document).scrollTop();
-	height = $(window).height();
+
+	var scrollTop = $(document).scrollTop();
+	var height = $(window).height();
 	 	
 	if (scrollTop > height) {
-		$('#goTop').show(250);
+		if (showTopLink == false) {
+			$('#goTop').show(250);
+			showTopLink = true;
+		}
 	} else {
-		$('#goTop').hide(250);
+		if (showTopLink == true) {
+			$('#goTop').hide(250);
+			showTopLink = false;
+		}
 	}
 }
 
