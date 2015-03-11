@@ -94,10 +94,11 @@
 #goTop {
 	display:none;
 	position:fixed;
-	right:$spacing-unit/2;
+	right:$spacing-unit;
+	bottom:$spacing-unit;	
 	padding-right:$spacing-unit/4;
 	padding-left:$spacing-unit/4;
-	bottom:$spacing-unit;
+
 	font-size:1em;
 	line-height:$site-header-height - 10;
 	color:$background-color;
@@ -444,9 +445,13 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
-		blockquote {
-			padding-left:1.5*$spacing-unit;
-		}
+	#goTop {
+		right:$spacing-unit/2;		
+	}
+		
+	blockquote {
+		padding-left:1.5*$spacing-unit;
+	}
 	
     .footer-col {
         float: none;
