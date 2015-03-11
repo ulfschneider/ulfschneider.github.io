@@ -95,13 +95,14 @@
 	display:none;
 	position:fixed;
 	right:$spacing-unit/2;
-	padding-right:$spacing-unit/2;
-	padding-left:$spacing-unit/2;
+	padding-right:$spacing-unit/4;
+	padding-left:$spacing-unit/4;
 	bottom:$spacing-unit;
-	font-size:2em;
-	color:$text-color;
-	background:rgb(255,255,255); /*fallback */
-	background:rgba(255,255,255,0.5);	
+	font-size:1.5em;
+	line-height:1.5em;
+	color:$background-color;
+	background:$text-color;
+	
 }
 
 #goTop:hover {
