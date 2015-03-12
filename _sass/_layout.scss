@@ -96,11 +96,11 @@
 	position:fixed;
 	right:$spacing-unit;
 	bottom:$spacing-unit;	
-	padding-right:$spacing-unit/4;
-	padding-left:$spacing-unit/4;
+	padding:$spacing-unit/6;
 
-	font-size:1em;
-	line-height:$nav-icon-size*1.3;
+
+	font-size:$nav-icon-size;
+	line-height:$nav-icon-size;
 	color:$background-color;
 	background:$text-color;
 	
