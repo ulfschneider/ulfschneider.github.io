@@ -1,25 +1,26 @@
 function banner() {
-	var height = $(window).height();
-	var width = $(window).width();
-	var headerHeight = $(".site-header").height();
-	var newHeight = height - headerHeight;
+	$('.full').css('height', bannerHeight());
+	$('.banner').backstretch('resize');
+}
 
-	$(".full").css("height", newHeight).css( "background-size", "cover" ).backstretch("resize");
-	
+function bannerHeight() {
+	var height = $(window).height();
+	var headerHeight = $('.site-header').height();
+	return  height - headerHeight;
 }
 
 
 function wide(cssClass) {
 		var width = $(window).width();
-		var wrapperWidth = $(".wrapper").width();
-		$(cssClass).css("width", width);
-		$(cssClass).css("min-width", width);
-		$(cssClass).css("margin-left", -((width - wrapperWidth)/2));
+		var wrapperWidth = $('.wrapper').width();
+		$(cssClass).css('width', width);
+		$(cssClass).css('min-width', width);
+		$(cssClass).css('margin-left', -((width - wrapperWidth)/2));
 }
 
 
 function wider() {
-	wide(".wide");	
+	wide('.wide');	
 }
 
 
@@ -52,8 +53,8 @@ $(function() {
 });
 
 
-$(window).on("orientationchange", function(event) { banner(); wider(); navigation();});
-$(window).on("load", function(event) { banner(); wider(); navigation(); });
+$(window).on('orientationchange', function(event) { banner(); wider(); navigation();});
+$(window).on('load', function(event) { wider(); navigation(); });
 $(window).resize(function(e) {
 	window.resizeEvt;
    $(window).resize(function()

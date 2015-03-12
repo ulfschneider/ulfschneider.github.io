@@ -1,7 +1,7 @@
 		{% if page.banner %}
-			<div class="banner" id="banner" style="background:url({{page.banner}}) center no-repeat; background-size:cover;">	
+			<div class="banner" id="banner" data-background="{{page.banner}}">	
 				<script>
-				var bgurl = $('#banner').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');
+				var bgurl = $('#banner').data('background');
 				$('#banner').backstretch(bgurl);			
 				</script>
 				{% if page.message %}
@@ -22,9 +22,10 @@
 			</div>			
 		{% else %}
 			{% if page.bannerFull %}			
-			<div class="banner full" id="banner" style="background:url({{page.bannerFull}}) center no-repeat; background-size:cover;">
+			<div class="banner full" id="banner" data-background="{{page.bannerFull}}">
 				<script>
-				var bgurl = $('#banner').css('background-image').replace(/^url\(['"]?/,'').replace(/['"]?\)$/,'');
+				$('#banner').css('height', bannerHeight());
+				var bgurl = $('#banner').data('background');
 				$('#banner').backstretch(bgurl);			
 				</script>
 				{% if page.message %}
