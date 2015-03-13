@@ -1,9 +1,5 @@
 		{% if page.banner %}
 			<div class="banner" id="banner" data-background="{{page.banner}}">	
-				<script>
-				var bgurl = $('#banner').data('background');
-				$('#banner').backstretch(bgurl);			
-				</script>
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
@@ -19,15 +15,15 @@
 						</div>
 					</div>
 				{% endif %}
-			</div>			
+			</div>		
+			<script>
+			var bgurl = $('#banner').data('background');
+			$('#banner').backstretch(bgurl);			
+			</script>
+				
 		{% else %}
 			{% if page.bannerFull %}			
 			<div class="banner full" id="banner" data-background="{{page.bannerFull}}">
-				<script>
-				$('#banner').css('height', bannerHeight());
-				var bgurl = $('#banner').data('background');
-				$('#banner').backstretch(bgurl);			
-				</script>
 				{% if page.message %}
 					<div class="message">
 						<div class="wrapper">{{ page.message | newline_to_br }}</div>
@@ -43,7 +39,13 @@
 						</div>						
 					</div>
 				{% endif %}
-			</div>						
+			</div>	
+			<script>
+			$('#banner').css('height', bannerHeight());
+			var bgurl = $('#banner').data('background');
+			$('#banner').backstretch(bgurl);			
+			</script>
+								
 		{% else %}
 			{% if page.message %}
 				<div class="wrapper">
