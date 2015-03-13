@@ -21,8 +21,10 @@
 
 					<a  href="{{ post.url | prepend: site.baseurl }}">
 						<li class="image-grid">
-							<img src="{{post.thumburl}}"/>
-							<div class="title">{{post.title}}</div>
+							<div class="image">
+								<img src="{{post.thumburl}}"/>
+								<div class="title">{{post.title}}</div>
+							</div>
 						</li>
 					</a>
 				{% endif %}
