@@ -6,7 +6,11 @@
 
     <nav class="site-nav">
       <a href="#" class="fa fa-bars"></a><div class="trigger">
-        {% for page in site.pages %}{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{page.title }}</a>{% endif %}{% endfor %}
+        {% for page in site.pages %}
+				{% if page.menu %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{page.menu }}</a>{% else %}				
+				{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{page.title }}</a>{% endif %}
+				{% endif %}
+				{% endfor %}
       </div>
     </nav>
 

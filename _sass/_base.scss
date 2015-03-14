@@ -113,17 +113,6 @@ a {
 }
 
 
-a[href*="//"]::after {
-	font-family:"FontAwesome";
-	margin-left:0.5em;
-	content:"\f105";	
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.5em;
-}
-
 .fa {
 	margin-right:1em;
 }

@@ -1,10 +1,16 @@
 ---
 layout: page
-title: 
-message: Exposure Guide for iPhone
+title: Exposure Guide
+menu: Xg
 permalink: /xg/
 ---
-With the Exposure Guide for iPhone you can calibrate the darkening effect of your photographic neutral density filters. Based on the calibration the Exposure Guide calculates the correct exposure for your filters and gives you a timer to count down in seconds.
+Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The special look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters. 
+
+The *Exposure Guide for iPhone* is an iPhone app that supports this photographic style by giving you a tool to calibrate the darkening effect of your photographic neutral density filters. 
+
+[![Xg appstore](https://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.png)](https://itunes.apple.com/app/exposure-guide/id816163933?mt=8&uo=4)
+
+Based on the calibration the Exposure Guide calculates the correct exposure for your filters and gives you a timer to count down in seconds.
 
 ![Xg timer](/i/xg/xg_timer.jpg)
 
@@ -18,11 +24,11 @@ Starting point
 --
 Photographic neutral densitiy filters allow to take pictures with long exposures. The Lee Big Stopper for example has a darkening effect of 10 f-stops. By leveraging this you can take a picture, that would need an exposure of 1/8 seconds without a filter, with a new exposure of 128 seconds by using the filter.
 
-Every neutral density filter has a production tolerance which results in deviations of the darkening effect. A Big Stopper may have an actual darkening effect of 10.5 f-stops which will lead to an exposure of 181 seconds instead of the theoretical 128 seconds. Achim Sieger is pointing that out in his great blog post.
+Every neutral density filter has a production tolerance which results in deviations of the darkening effect. A Big Stopper may have an actual darkening effect of 10.5 f-stops which will lead to an exposure of 181 seconds instead of the theoretical 128 seconds. Achim Sieger is pointing that out in his great [blog post](http://www.achim-sieger.de/en/exposure-calculation-for-the-lee-big-stopper/).
 
 Solution
 --
-The calibration process allows you to include those production tolerances for each filter that you are using. Because long expoures take long you often can not make many experimental pictures in the essential photographic situation. The Exposure Guide helps you to save valuable time in those moments, because the images you take will have the right exposure from the start.
+The calibration process allows you to include those production tolerances for each filter that you are using. Because long exposures take long you often can not make many experimental pictures in the essential photographic situation. The Exposure Guide helps you to save valuable time in those moments, because the images you take will have the right exposure from the start.
 
 Calibrate
 --
