@@ -13,7 +13,7 @@ Usually a development team has not only a concept for the things to deliver in t
 In organizations that are new to the concept of sprints, this foresighted order can lead to the misunderstanding that sprints need to be handled like milestones which define anticipated results of the project. This is a distorded understanding and it makes the handling of sprints for both - the Scrum team and the surrounding organization - difficult because it points into the wrong direction.
 
 These are the problems
-===
+---
 
 * *Reporting:* The schedule and the achievement of milestones is reported to the organization, normally because other parties depend on these milestones to synchronize their work. In case of „sprint milestones“ we produce a chain of many milestones with short periods of time in between. If the Scrum team has a rough plan for the next three sprints, but not for the subsequent ones, management tends to ask for further milestones until the end of the project. This forces the Scrum team to make an upfront project plan with sprint milestones spanning the entire project duration. Of course milestones need to be tracked because decisions will be made if desired milestone achievements are not reached. Following that path, step by step the Scrum team will bring itself into a planning and reporting mode that does not help the team to deliver better and that does not help the organization to organize better. It simply produces more reporting and more reporting meetings.
 

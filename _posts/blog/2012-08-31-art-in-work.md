@@ -13,7 +13,7 @@ This text was first published in OBJEKTspektrum, issue 5/2012, under the title [
 The Agile Manifesto [[Beck et al. 2001]][agilemanifesto] represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force attracts certain people and companies. In this text I will examine some perspectives to come to a better understanding of the underlying movements. 
 
 People
-======
+---
 Work is an important part of human life. Otl Aicher writes basically: For humans, work is what for a spider is the net. As the net can not exist without a spider and the spider can not be without the net, likewise work can not exist without humans. We define our habitat by doing work. [Aicher 1992:28]
 
 We can understand our work as being oppressive, a craft or even art.
@@ -48,7 +48,7 @@ In this regard it is helpful that experienced people have an eye for other exper
 This positive and demanding expectation on us and our work is a  force behind the agile manifesto and also the software craftsmanship movement. From that perspective I think it is clear, that agile is about individuals, their opinions, attitudes, creativity, skills and their willingness to cooperate.
 
 Organization
-============
+---
 This perspective does not correspond with the model by that we have been socialised in the industrialised world during the last onehundred years. The school-, university and working worlds functioned by a mainly different pattern: the Taylorism [[Wiki]][wikitaylor].
 
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
@@ -65,11 +65,11 @@ Momentum is being created by dynamic people, by experienced and skilled workers 
 A template for congruent acting can be seen in the agile manifesto. And the corresponding attitude might be to understand our work as an art.
 
 Perspective
-=======
+---
 It is not about even more working. Instead I think we need to care about a more suitable style of working for nowadays, about personal progress and development. Those people and companies that understand their work as an art and who explore the field that will be opened thru that thinking and acting, are the avant-garde of a new wave. Maybe this wave can be compared to the transformative power that Taylorism unfolded during the last century. The agile manifesto and also the software craftsmanship movement are patterns of this new reality. The related value systems can guide the path for the individual, the team and the company. 
 
 References
-==========
+---
 * [Aicher 1992] O. Aicher, analog und digital, Ernst & Sohn, 1992
 * [agilemanifesto]: http://agilemanifesto.org
 [K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>

@@ -196,10 +196,6 @@ h1, .title {
 	line-height:1.6em;
 }
 
-h2 {
-	line-height:1.6em;
-}
-
 .message.title {
 			padding-top:2 * $spacing-unit;
 			margin-bottom:-2 * $spacing-unit + $spacing-unit/2;
@@ -230,26 +226,29 @@ h2 {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 30px;
-
+        font-size: 26px;
+				line-height:26px;
         @include media-query($on-palm) {
-            font-size: 28px;
+            font-size: 24px;
+						line-height:24px;
         }
     }
 
     h3 {
-        font-size: 26px;
-
+        font-size: 23px;
+				line-height:23px;
         @include media-query($on-palm) {
             font-size: 22px;
+						line-height:22px;
         }
     }
 
     h4 {
         font-size: 20px;
-
+				line-height:20px;
         @include media-query($on-palm) {
             font-size: 18px;
+						line-height:18px;
         }
     }
 		
