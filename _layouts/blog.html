@@ -18,7 +18,7 @@ layout: default
 	<li class="post-grid">
 		<div class="thumb"></div>
 		<a  href="{{ post.url | prepend: site.baseurl }}">
-			<span class="title">{{ post.title }}</span><p>{% if post.date %}  <span class="meta">{{ post.date | date: '%B %Y' }} </span>{% endif %}
+			<span class="title">{{ post.title }}</span><p>{% if post.date %}<span class="meta">{{ post.date | date: '%B %Y' }} • </span>{% endif %}
 
 			{% if post.excerpt %}
 			{{ post.excerpt }}

@@ -1,39 +1,41 @@
 ---
 layout: page
 title: 
+message: Exposure Guide for iPhone
 permalink: /xg/
 ---
-Exact
-===
 With the Exposure Guide for iPhone you can calibrate the darkening effect of your photographic neutral density filters. Based on the calibration the Exposure Guide calculates the correct exposure for your filters and gives you a timer to count down in seconds.
 
-//image
+![Xg timer](/i/xg/xg_timer.jpg)
 
 The Exposure Guide allows you to combine any or all of your filters in order to calculate the right exposure for your filter combinations.
 
-//image
+![Xg filter combi](/i/xg/xg_filter_combi.jpg)
 
 You do not need conversion tables for your filters anymore. Thru the calibration process you get exact customized conversion data for your photographic equipment which will result in correct exposures and better images.
 
 Starting point
-===
+--
 Photographic neutral densitiy filters allow to take pictures with long exposures. The Lee Big Stopper for example has a darkening effect of 10 f-stops. By leveraging this you can take a picture, that would need an exposure of 1/8 seconds without a filter, with a new exposure of 128 seconds by using the filter.
 
 Every neutral density filter has a production tolerance which results in deviations of the darkening effect. A Big Stopper may have an actual darkening effect of 10.5 f-stops which will lead to an exposure of 181 seconds instead of the theoretical 128 seconds. Achim Sieger is pointing that out in his great blog post.
 
 Solution
-===
+--
 The calibration process allows you to include those production tolerances for each filter that you are using. Because long expoures take long you often can not make many experimental pictures in the essential photographic situation. The Exposure Guide helps you to save valuable time in those moments, because the images you take will have the right exposure from the start.
 
 Calibrate
-===
+--
 At first you will create an entry for each filter you are using. Those entries simply contain the name of the filter and the darkening effect in f-stops.
 
 Now, when you take long exposures, you will use those entries to let the timer calculate the right exposure. If you notice your pictures being over- or underexposed by using the provided timer values, you need to adjust the f-stop value in the filter entry.
 
 For doing so you can use any of the following two techniques. Each of them requires to take the comparative images under identical light situations!
 
-**Use Adobe Lighroom or any software that allows you to correct the exposure of your images**
+Technique 1: use Adobe Lighroom or any software that allows you to correct the exposure of your images
+--
+
+![Xg edit filter](/i/xg/xg_edit_filter.jpg)
 
 Choose your motive and take a properly exposed picture without filter. Keep the exposure of that image in mind.
 
@@ -43,7 +45,10 @@ Now you have two images of the same motive. One taken with the filter and one wi
 
 This correcting value needs to be added to the f-stop value of your filter entry in the Exposure Guide. If you have taken, for example, the filter image with a Big Stopper wich has a theoretical f-stop of 10, and you needed to brighten you image by 0.5 f-stops, your new f-stop value will be 10.5. If you needed to darken your image by 0.5 f-stops, your new f-stop value will be 9.5.
 
-**Take experimental images by changing the exposure**
+Technique 2: take experimental images by changing the exposure
+--
+
+![Xg calibrate filter](/i/xg/xg_calibrate_filter.jpg)
 
 Again you take a properly exposed image without filter and keep the exposure in mind.
 

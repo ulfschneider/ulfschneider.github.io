@@ -116,7 +116,8 @@
  * Page content
  */
 .meta {
-    color: $grey-color;
+		display:inline;
+		line-height:1em;
 }
 
 .banner {
@@ -129,6 +130,12 @@
 .banner img {
 	width:100%;
 	border:none;
+}
+
+.page-content img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .message {
@@ -182,10 +189,14 @@
 }
 
 
-.title {
+h1, .title {
 	font-size:30px;
 	margin-top:0;
 	letter-spacing:-1px;
+	line-height:1.6em;
+}
+
+h2 {
 	line-height:1.6em;
 }
 
@@ -267,10 +278,6 @@ li.post-grid {
  .title {
 		font-size:1em;
 		font-weight:600;
-	}
-	
-	.meta {
-		margin-right:2em;
 	}
 	
 	
