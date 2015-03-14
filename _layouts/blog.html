@@ -19,8 +19,9 @@ layout: default
 		<div class="thumb"></div>
 		<a  href="{{ post.url | prepend: site.baseurl }}">
 			<span class="title">{{ post.title }}</span><p>{% if post.date %}  <span class="meta">{{ post.date | date: '%B %Y' }} </span>{% endif %}
-			{% if post.content contains '<!--more-->' %}
-			{{ post.content | split:'<!--more-->' | first }}
+
+			{% if post.excerpt %}
+			{{ post.excerpt }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
 			{% endif %}
