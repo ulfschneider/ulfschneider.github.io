@@ -406,7 +406,7 @@ li.image-grid .title {
 
 
 @include media-query($on-widescreen) {
-  	
+
 		li.image-grid {			
 		  width: 20%;
 		}
@@ -414,7 +414,7 @@ li.image-grid .title {
 }
 
 @include media-query($on-pc) {
-  	
+		
 		li.image-grid {
 		  width:25%;
 		}
