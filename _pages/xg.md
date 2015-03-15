@@ -6,7 +6,7 @@ permalink: /xg/
 ---
 Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The special look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters. 
 
-The *Exposure Guide for iPhone* is an iPhone app that supports this photographic style by giving you a tool to calibrate the darkening effect of your photographic neutral density filters. 
+I have written the *Exposure Guide for iPhone* to support this photographic style with a tool to calibrate the darkening effect of neutral density filters. 
 
 [![Xg appstore](https://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.png)](https://itunes.apple.com/app/exposure-guide/id816163933?mt=8&uo=4)
 
