@@ -439,10 +439,6 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
-	body, html {
-		font-size:$small-font-size;
-	}
-	
 	#goTop {
 		right:$spacing-unit/2;		
 	}
