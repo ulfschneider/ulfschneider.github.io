@@ -91,7 +91,7 @@
 
 
 
-#goTop {
+#goTop, #goDown {
 	display:none;
 	position:fixed;
 	right:$spacing-unit;
@@ -106,13 +106,13 @@
 	
 }
 
-#goTop:hover {
+#goTop:hover, #goDown:hover {
 	background:$text-color;
 	color:$background-color;
 }
 
 h1, .title {
-	font-size:$base-font-size * 2;
+	font-size:$base-font-size * 1.8;
 	margin-top:0;
 	line-height:1.6em;
  	font-weight:600;
@@ -145,6 +145,10 @@ h3, h4 {
 	overflow:hidden;
 	max-width:100%;
 	height:300px;
+}
+
+.banner.full {
+
 }
 
 .banner img {
@@ -328,23 +332,10 @@ li.image-grid .title {
 	background: $background-color;
 	color:$text-color;
 	font-size:$extra-small-font-size;
+	font-family:"Source Code Pro", monospace;
 	font-weight:400;
 }
 
-
-/**
- * image
- */
-.image-title {
-	font-size:$base-font-size;
-	font-weight:600;
-	margin:0px;
-}
-
-.image-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
 
 
 /**
@@ -424,7 +415,7 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
-	#goTop {
+	#goTop, #goDown {
 		right:$spacing-unit/2;		
 	}
 	

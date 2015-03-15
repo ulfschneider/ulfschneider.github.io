@@ -25,18 +25,29 @@ function wider() {
 
 
 var	showTopLink = false;
+var showDownLink = false;
 
 function navigation() {
 
-	var scrollTop = $(document).scrollTop();
+	var scrollTop = $(document).scrollTop();	
+	var doc = $(document).height();	
 	var height = $(window).height();
+
 	 	
-	if (scrollTop > height) {
+	if (scrollTop >= height || scrollTop + height >= doc) {
 		if (showTopLink == false) {
 			$('#goTop').show(0);
 			showTopLink = true;
 		}
+		if (showDownLink == true) {
+			$('#goDown').hide(0);
+			showDownLink = false;
+		}
 	} else {
+		if (showDownLink == false) {
+			$('#goDown').show(0);
+			showDownLink = true;
+		}		
 		if (showTopLink == true) {
 			$('#goTop').hide(0);
 			showTopLink = false;
@@ -49,7 +60,13 @@ $(function() {
 		$('html, body').animate({scrollTop:0}, 1000);
 	}
 	
+	function scrollDown() {
+		$('html, body').animate({scrollTop:$('#pageContent').offset().top}, 1000);
+	}
+	
 	$('#goTop').click(function() {scrollTop(); return false;});
+	
+	$('#goDown').click(function() {scrollDown(); return false;});
 });
 
 
