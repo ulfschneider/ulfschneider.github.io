@@ -222,36 +222,31 @@ h1, .title {
 }
 
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 26px;
-				line-height:26px;
-        @include media-query($on-palm) {
-            font-size: 24px;
-						line-height:24px;
-        }
-    }
-
-    h3 {
-        font-size: 23px;
-				line-height:23px;
-        @include media-query($on-palm) {
-            font-size: 22px;
-						line-height:22px;
-        }
-    }
-
-    h4 {
+h2 {
+    font-size: 23px;
+		line-height:33px;
+    @include media-query($on-palm) {
         font-size: 20px;
-				line-height:20px;
-        @include media-query($on-palm) {
-            font-size: 18px;
-						line-height:18px;
-        }
+				line-height:30px;
     }
-		
+}
+
+h3 {
+    font-size: 20px;
+		line-height:30px;
+    @include media-query($on-palm) {
+        font-size: 18px;
+				line-height:24px;
+    }
+}
+
+h4 {
+    font-size: 20px;
+		line-height:30px;
+    @include media-query($on-palm) {
+        font-size: 18px;
+				line-height:24px;
+    }
 }
 
 
