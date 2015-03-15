@@ -66,7 +66,7 @@ $(function() {
 	
 	$('#goTop').click(function() {scrollTop(); return false;});
 	
-	$('#goDown').click(function() {alert(2); scrollDown(); return false;});
+	$('#goDown').click(function() {scrollDown(); return false;});
 });
 
 
