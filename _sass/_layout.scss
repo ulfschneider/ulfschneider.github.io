@@ -259,7 +259,6 @@ li.post-grid {
 	margin:0px;
 	margin-top:$spacing-unit;
 	float:left;
-  font-size: $base-font-size;
 	height:100%;
 	
 	.thumb {
@@ -440,6 +439,10 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
+	body, html {
+		font-size:$small-font-size;
+	}
+	
 	#goTop {
 		right:$spacing-unit/2;		
 	}
@@ -447,6 +450,8 @@ li.image-grid .title {
 	.page-content img {
 		max-height:400px;
 	}
+	
+
 		
 	blockquote {
 		padding-left:1.5*$spacing-unit;
