@@ -23,7 +23,7 @@
 						<li class="image-grid">
 							<div class="image">
 								<img src="{{post.thumburl}}"/>
-								<div class="title">{{post.title}}</div>
+								{% if post.excerpt %}<div class="title">{{post.excerpt}}</div>{% else %}<div class="title">{{post.title}}</div>{% endif %}
 							</div>
 						</li>
 					</a>
