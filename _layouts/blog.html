@@ -20,8 +20,8 @@ layout: default
 		<a  href="{{ post.url | prepend: site.baseurl }}">
 			<span class="title">{{ post.title }}</span><p>{% if post.date %}<span class="meta">{{ post.date | date: '%B %Y' }} • </span>{% endif %}
 
-			{% if post.excerpt %}
-			{{ post.excerpt }}
+			{% if post.abstract %}
+			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
 			{% endif %}

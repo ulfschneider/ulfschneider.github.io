@@ -289,8 +289,19 @@ li.post-grid {
 * Gallery
 */
 .gallery {
-	background-color: $grey-color-light;
+	background-color: $text-color;
+	color:$background-color;
 }
+
+.gallery-content a {
+	color:$background-color;
+}
+
+.gallery-content a:hover {
+	background-color:$background-color;
+	color:$text-color;
+};
+
 
 .gallery-content {
 	padding-top:$site-header-height;
