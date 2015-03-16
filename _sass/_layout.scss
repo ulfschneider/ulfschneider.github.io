@@ -293,6 +293,10 @@ li.post-grid {
 	color:$background-color;
 }
 
+.gallery-content {
+	padding-top:$site-header-height;
+}
+
 .gallery-content a {
 	color:$background-color;
 }
@@ -300,12 +304,8 @@ li.post-grid {
 .gallery-content a:hover {
 	background-color:$background-color;
 	color:$text-color;
-};
-
-
-.gallery-content {
-	padding-top:$site-header-height;
 }
+
 
 .gallery-content .site-footer {
 	clear:both;
