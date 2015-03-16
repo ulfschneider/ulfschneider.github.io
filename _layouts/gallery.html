@@ -15,27 +15,29 @@
 				</div>
 		
 				<ul class="image-grid" id="gallery-grid">
-					{% for post in site.posts %}
+				{% for tag in page.tags%}
+					
+					{% for post in site.tags.[tag] %}
 						
 						{% if post.layout contains 'image' %}
 
-					<a  href="{{ post.url | prepend: site.baseurl }}">
-						<li class="image-grid">
-							<div class="image">
-								<img src="{{post.thumburl}}"/>
-								{% if post.abstract %}
-								<div class="title">{{post.abstract}}</div>
-								{% elsif post.title %}
-								<div class="title">{{post.title}}</div>
-								{% endif %}
-							</div>
-						</li>
-					</a>
-				{% endif %}
-
+							<a  href="{{ post.url | prepend: site.baseurl }}">
+								<li class="image-grid">
+									<div class="image">
+										<img src="{{post.thumburl}}"/>
+										{% if post.abstract %}
+											<div class="title">{{post.abstract}}</div>
+										{% elsif post.title %}
+											<div class="title">{{post.title}}</div>
+										{% endif %}
+									</div>
+								</li>
+							</a>
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			</ul>
-			
+								
 			{% include footer.html %}
 			<script src="/r/packery.pkgd.min.js"></script>
 			<script>
@@ -46,11 +48,8 @@
 			  gutter: 0
 			});
 			$(window).on("load", function(event) { $container.packery(); });
-			</script
+			</script>
 		</div>
-		
-
-
   </body>
 
 </html>
