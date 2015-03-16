@@ -34,7 +34,7 @@ function navigation() {
 	var height = $(window).height();
 
 	 	
-	if (scrollTop >= height || scrollTop + height >= doc - 100) {
+	if (scrollTop >= height || (scrollTop > 0 && scrollTop + height >= doc - 100)) {
 		if (showTopLink == false) {
 			$('#goTop').show(0);
 			showTopLink = true;

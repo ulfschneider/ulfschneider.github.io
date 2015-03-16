@@ -71,7 +71,7 @@ It is not about even more working. Instead I think we need to care about a more 
 References
 ---
 * [Aicher 1992] O. Aicher, analog und digital, Ernst & Sohn, 1992
-* [agilemanifesto]: http://agilemanifesto.org
+* [agilemanifesto]: http://agilemanifesto.org 
 [K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
 * [craftsmanship]: http://manifesto.softwarecraftsmanship.org
 [Bradbury et al. 2009] D. Bradbury et al., Manifesto for Software Craftsmanship, 2009, <http://manifesto.softwarecraftsmanship.org>
