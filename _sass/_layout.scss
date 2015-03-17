@@ -14,7 +14,7 @@
     float: left;
     color: $header-color;
 		font-size: $extra-small-font-size;
-		font-weight:normal;
+		font-weight:600;
 }
 
 .site-nav {
@@ -32,7 +32,7 @@
 				line-height: $site-header-height;
 				display:inline-block;
 				margin-left:$spacing-unit;
-				font-weight:normal;
+				font-weight:600;
 				&:hover {
 					color:$background-color;
 					background-color:$text-color

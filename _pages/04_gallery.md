@@ -1,8 +1,9 @@
 ---
 layout: gallery
 title: 
-permalink: /tis/
+permalink: /bw/
 tags: bw
+thumburl: /i/ulf.jpg
 ---
-Things I´ve seen.
+Black and white.
 
