@@ -17,7 +17,7 @@
 				<ul class="image-grid" id="gallery-grid">
         {% for page in site.pages %}
 											
-						{% if page.layout contains 'gallery' %}
+						{% if page.layout contains 'gallery' and page.thumburl %}
 
 							<a  href="{{ page.url | prepend: site.baseurl }}">
 								<li class="image-grid">

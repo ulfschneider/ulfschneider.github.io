@@ -3,10 +3,18 @@ function banner() {
 	$('.banner').backstretch('resize');
 }
 
+function pageContent() {
+	$('#pageContent').css('min-height', bannerHeight());
+}
+
 function bannerHeight() {
 	var height = $(window).height();
 	var headerHeight = $('.site-header').height();
 	return  height - headerHeight;
+}
+
+function fullHeight() {
+	return $(window).height();
 }
 
 
@@ -70,14 +78,14 @@ $(function() {
 });
 
 
-$(window).on('orientationchange', function(event) { banner(); wider(); navigation();});
-$(window).on('load', function(event) { wider(); navigation(); });
+$(window).on('orientationchange', function(event) { banner(); pageContent(); wider(); navigation();});
+$(window).on('load', function(event) { pageContent(); wider(); navigation(); });
 $(window).resize(function(e) {
 	window.resizeEvt;
    $(window).resize(function()
    {
        clearTimeout(window.resizeEvt);
-       window.resizeEvt = setTimeout(function() { banner(); wider();
+       window.resizeEvt = setTimeout(function() { banner(); pageContent(); wider(); navigation();
        }, 250);
    });
 });

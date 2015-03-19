@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+* {
+	box-sizing:border-box;
+}
+
 /**
  * Reset some basic elements
  */
@@ -179,7 +183,6 @@ pre {
  * Wrapper
  */
 .wrapper {
-		box-sizing:border-box;
     max-width:$content-width;
     margin-right: auto;
     margin-left: auto;

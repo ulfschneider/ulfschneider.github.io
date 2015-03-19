@@ -19,7 +19,7 @@
 					
 					{% for post in site.tags.[tag] %}
 						
-						{% if post.layout contains 'image' %}
+						{% if post.layout contains 'image' and post.thumburl %}
 
 							<a  href="{{ post.url | prepend: site.baseurl }}">
 								<li class="image-grid">
