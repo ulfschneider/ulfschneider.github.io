@@ -14,7 +14,7 @@ layout: default
 <ul class="post-grid">
 	
 {% for post in site.posts %}
-	{% if post.layout contains 'post' %}
+	{% if post.layout contains 'post' and post.title %}
 
 	<li class="post-grid">
 		<div class="thumb"></div>

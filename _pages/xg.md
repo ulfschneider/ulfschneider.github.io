@@ -38,7 +38,7 @@ Now, when you take long exposures, you will use those entries to let the timer c
 
 For doing so you can use any of the following two techniques. Each of them requires to take the comparative images under identical light situations!
 
-Technique 1: use Adobe Lighroom or any software that allows you to correct the exposure of your images
+Technique 1: use Adobe Lightroom or any software that allows you to correct the exposure of your images
 --
 
 ![Xg edit filter](/i/xg/xg_edit_filter.jpg)
