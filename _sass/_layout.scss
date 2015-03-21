@@ -457,7 +457,8 @@ li.image-grid .title {
 		right:$spacing-unit/2;		
 	}
 	
-	.page-content img {
+	img.LHOP {
+		/*limit height on palm*/
 		max-height:400px;
 	}
 	
