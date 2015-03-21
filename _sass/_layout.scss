@@ -52,11 +52,11 @@
         text-align: right;		
 
         .fa-bars {
-            display: block;
+            display: inline-block;
             float: right;
-						margin-right:0;
+			margin-right:0;
             text-align: center;
-						font-size:$nav-icon-size;
+			font-size:$nav-icon-size;
 						
 						&:hover {
 							background-color:$header-fallback-color;
@@ -69,8 +69,8 @@
         .trigger {
             clear: both;
             display: none;
-						border:1px solid #e0e0e0;
-						margin-top:$site-header-height - ($site-header-height - $nav-icon-size)/2;
+			border:1px solid #e0e0e0;
+			margin-top:$site-header-height - ($site-header-height - $nav-icon-size)/2;
         }
 
         &:hover .trigger {
@@ -78,13 +78,13 @@
         }
 
         .page-link {			
-					font-size:$base-font-size;
-            display: block;
-						padding-left:10px;
-						padding-right:10px;
-						padding-top:5px;
-						padding-bottom:5px;
-						margin-left:0px;
+			font-size:$base-font-size;
+           	display: block;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:5px;
+			padding-bottom:5px;
+			margin-left:0px;
         }
     }
 }
@@ -102,16 +102,18 @@
 	line-height:$nav-icon-size;
 	color:$text-color;
 	background:$background-color;
+	cursor:pointer;
 }
 
 #goBack {
-	display:block;
+	display:inline-block;
 	clear:both;
 	position:static;
 	padding:$spacing-unit/8;
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
 	margin-top:$spacing-unit;	
+	cursor:pointer;
 }
 
 #goTop:focus, #goDown:focus, #goBack:focus {
