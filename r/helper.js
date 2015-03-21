@@ -43,10 +43,8 @@ function wider() {
 
 
 function navigation() {
-	var scrollTop = $(document).scrollTop();	
 	var doc = $(document).height();	
 	var height = $(window).height();
-
 	 
 	if (internalReferrer() == false)	{
 		$('#goBack').hide(0);
@@ -54,16 +52,13 @@ function navigation() {
 		$('#goBack').show(0);
 	}
 	
-	if (scrollTop >= height	- 100 || (scrollTop > 100 && scrollTop + height >= doc - 100)) {
+	if (doc >= 2 * height) {
 		$('#goTop').show(0);
 	}	else {
 		$('#goTop').hide(0);
 	}
-	if (scrollTop > 100) {
-		$('#goDown').hide(0);
-	} else {
-		$('#goDown').show(0);
-	}
+	
+	$('#goDown').show(0);
 	
 }
 
@@ -71,8 +66,7 @@ function sizing() {
 	banner();  
 	adjustFullHeight();
 	wider(); 
-	navigation();
-	
+	navigation();	
 }
 
 function internalReferrer() {
@@ -118,4 +112,4 @@ $(window).resize(function(e) {
        }, 250);
    });
 });
-$(document).scroll(function() {navigation();});
+

@@ -161,12 +161,6 @@ h3, h4 {
 	border:none;
 }
 
-.page-content img {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .message {
 
 	font-size:35px;
@@ -208,13 +202,15 @@ h3, h4 {
 }
 
 .page-content {
-    padding: $spacing-unit 0;
-		padding-top:2 * $spacing-unit;
+	padding-top:2 * $spacing-unit;
 }
 
 .page-content img {
 	margin-top:$spacing-unit;
 	margin-bottom:$spacing-unit;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
 }
 
 
@@ -315,6 +311,21 @@ li.post-grid {
 .gallery-content .site-footer {
 	clear:both;
 	padding-top:2 * $spacing-unit;
+}
+
+.gallery-content #goTop, .gallery-content #goBack {
+	background:$text-color;
+	color:$background-color;
+}
+
+.gallery-content #goTop:focus, .gallery-content #goDown:focus, .gallery-content #goBack:focus {
+	background:$text-color;
+	color:$background-color;
+}
+
+.gallery-content #goTop:hover, .gallery-content #goDown:hover, .gallery-content #goBack:hover {
+	background:$background-color;
+	color:$text-color;
 }
 
 
