@@ -6,11 +6,11 @@ message:
 banner: 
 bottomline: 
 author: 
-abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, who fulfills a task for the delivery team and whose rights and duties in context of the Scrum process are being reflected in this article.
+abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 ---
 This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have enhanced and translated the initial document to publish it here.
 
-Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, who fulfills a task for the delivery team and whose rights and duties in context of the Scrum process are being reflected in this article.
+Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 
 Iterations
 ---
@@ -20,7 +20,11 @@ To achieve conceptual integrity it has to be considered during the entire design
 
 Scrum and architecture
 ---
+The agile manifesto [agilemanifesto] values responding to change over following a plan. By following this statement, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
 
+Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adopt built in because work is being „done“ every two or four weeks and at the end of these so called sprints a process inspection and a product inspection is being held by the delivery team.
+
+To create innovations - inventions that can be sold - like in software development projects
 
 
 References
