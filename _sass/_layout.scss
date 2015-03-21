@@ -110,8 +110,17 @@
 	line-height:$nav-icon-size;
 }
 
+#goTop:focus, #goDown:focus, #goBack:focus {
+	background:$text-color;
+	color:$background-color;
+}
 
-#goTop:hover, #goDown:hover {
+#goTop:hover, #goDown:hover, #goBack:hover {
+	background:$text-color;
+	color:$background-color;
+}
+
+#goTop:active, #goDown:active, #goBack:active {
 	background:$text-color;
 	color:$background-color;
 }
