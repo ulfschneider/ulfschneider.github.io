@@ -13,4 +13,4 @@ url: http://ulf.codes # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 include: ['_pages']
-permalink: '/:year/:title/'
+permalink: '/:year/:month/:day/:title/'

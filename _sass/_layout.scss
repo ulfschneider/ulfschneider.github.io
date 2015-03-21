@@ -105,9 +105,13 @@
 }
 
 #goBack {
+	display:block;
+	clear:both;
+	position:static;
 	padding:$spacing-unit/8;
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
+	margin-top:$spacing-unit;	
 }
 
 #goTop:focus, #goDown:focus, #goBack:focus {
@@ -128,7 +132,7 @@
 h1, .title {
 	font-size:$base-font-size * 1.8;
 	margin-top:0;
-	line-height:1.6em;
+	line-height:1.8em;
  	font-weight:600;
 	font-family:"Source Sans Pro";
 }
@@ -136,12 +140,12 @@ h1, .title {
 
 h2 {
     font-size: $base-font-size + 6;
-		line-height: $base-font-size + 12;
+	line-height: $base-font-size + 12;
 }
 
 h3, h4 {
     font-size: $base-font-size + 4;
-		line-height:$base-font-size + 8;
+	line-height:$base-font-size + 8;
 }
 
 
@@ -342,7 +346,7 @@ li.image-grid {
 	position:relative;
 	cursor:pointer;
 	box-sizing:border-box;
-  width: 15%;
+  	width: 12.5%;
 	padding:$spacing-unit;
 }
 
@@ -444,6 +448,11 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
+	h1, .title {
+	    font-size: $base-font-size + 6;
+		line-height: $base-font-size + 12;			
+	}
+	
 	#goTop, #goDown {
 		right:$spacing-unit/2;		
 	}
@@ -461,15 +470,15 @@ li.image-grid .title {
 	
 	.footer-col {
 		float: none;
-    width: 100%;
-  }
+   	 	width: 100%;
+  	}
 	
 	ul.image-grid {
 		margin:$spacing-unit/4;
 	}
 		
 	li.image-grid {
-    width: 50%;
+    	width: 50%;
 		padding:$spacing-unit/4;
 	}
 
