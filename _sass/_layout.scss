@@ -104,14 +104,10 @@
 }
 
 
-#goTop:focus, #goDown:focus, #goBack:focus {
-	background:$background-color;
-	color:$text-color;
-}
 
 #goTop:hover, #goDown:hover, #goBack:hover {
-	background:$text-color;
-	color:$background-color;
+	color:$text-color;
+	background:$background-color;
 }
 
 
@@ -216,9 +212,9 @@ h3, h4 {
 
 
 .message.title {
-			padding-top:2 * $spacing-unit;
-			margin-bottom:-2 * $spacing-unit + $spacing-unit/2;
-			line-height:2em;
+	padding-top:2 * $spacing-unit;
+	margin-bottom:-2 * $spacing-unit + $spacing-unit/2;
+	line-height:2em;
 }
 
 
@@ -318,14 +314,9 @@ li.post-grid {
 	color:$background-color;
 }
 
-.gallery-content #goTop:focus, .gallery-content #goDown:focus, .gallery-content #goBack:focus {
+.gallery-content #goTop:hover, .gallery-content #goDown:hover, .gallery-content #goBack:hover {
 	background:$text-color;
 	color:$background-color;
-}
-
-.gallery-content #goTop:hover, .gallery-content #goDown:hover, .gallery-content #goBack:hover {
-	background:$background-color;
-	color:$text-color;
 }
 
 
