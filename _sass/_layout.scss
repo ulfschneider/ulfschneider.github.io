@@ -333,7 +333,7 @@ li.image-grid {
 }
 
 li.image-grid .image {
-	padding:10px;
+	padding:5px;
 	background:$background-color;
 }
 
@@ -343,7 +343,7 @@ li.image-grid .image img {
 
 
 li.image-grid .title {
-	margin-top:10px;
+	margin-top:5px;
 	background: $background-color;
 	color:$text-color;
 	font-size:$extra-small-font-size;
@@ -457,14 +457,6 @@ li.image-grid .title {
 	li.image-grid {
     width: 50%;
 		padding:$spacing-unit/4;
-	}
-	
-	li.image-grid .title {
-		margin-top:5px;
-	}
-	
-	li.image-grid .image {
-		padding:5px;
 	}
 
 }
