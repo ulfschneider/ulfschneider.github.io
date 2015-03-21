@@ -329,7 +329,7 @@ li.image-grid {
 	cursor:pointer;
 	box-sizing:border-box;
   width: 15%;
-	padding:$spacing-unit / 2;
+	padding:$spacing-unit;
 }
 
 li.image-grid .image {
@@ -421,7 +421,7 @@ li.image-grid .title {
 	
 	li.image-grid {
     width: 33%;
-		padding:$spacing-unit/4;
+		padding:$spacing-unit;
 	}
   	
 }		
