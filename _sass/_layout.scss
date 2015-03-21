@@ -92,11 +92,10 @@
 
 
 #goTop, #goDown, #goBack {
-	text-align:center;
 	display:none;
-	position:fixed;
-	top:$site-header-height + $spacing-unit;	
-	right:$spacing-unit;
+	padding:$spacing-unit/8;
+	margin-top:$spacing-unit;
+	margin-right:2 * $spacing-unit;
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
 	color:$text-color;
@@ -105,24 +104,17 @@
 }
 
 
-#goBack {
-	top:$site-header-height + 3 * $spacing-unit;	
-}
-
 #goTop:focus, #goDown:focus, #goBack:focus {
 	background:$background-color;
 	color:$text-color;
 }
 
 #goTop:hover, #goDown:hover, #goBack:hover {
-	background:$background-color;
-	color:$text-color;
+	background:$text-color;
+	color:$background-color;
 }
 
-#goTop:active, #goDown:active, #goBack:active {
-	background:$background-color;
-	color:$text-color;
-}
+
 
 h1, .title {
 	font-size:$base-font-size * 1.8;
@@ -446,20 +438,6 @@ li.image-grid .title {
 	h1, .title {
 	    font-size: $base-font-size + 6;
 		line-height: $base-font-size + 12;			
-	}
-	
-	#goTop, #goDown, #goBack {
-		right:$spacing-unit/2;		
-	}
-	
-	#goTop, #goDown {
-		top:auto;
-		bottom:$spacing-unit*3;
-	}
-	
-	#goBack {
-		top:auto;
-		bottom:$spacing-unit;
 	}
 	
 	img.LHOP {
