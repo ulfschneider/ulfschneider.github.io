@@ -111,8 +111,8 @@
 }
 
 #goTop:focus, #goDown:focus, #goBack:focus {
-	background:$text-color;
-	color:$background-color;
+	background:$background-color;
+	color:$text-color;
 }
 
 #goTop:hover, #goDown:hover, #goBack:hover {
