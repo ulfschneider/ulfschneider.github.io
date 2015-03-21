@@ -458,5 +458,13 @@ li.image-grid .title {
     width: 50%;
 		padding:$spacing-unit/4;
 	}
+	
+	li.image-grid .title {
+		margin-top:5px;
+	}
+	
+	li.image-grid .image {
+		padding:5px;
+	}
 
 }
