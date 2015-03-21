@@ -102,9 +102,13 @@
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
 	color:$background-color;
-	background:$text-color;
-	
+	background:$text-color;	
 }
+
+#goBack {
+	padding:$spacing-unit/8;
+}
+
 
 #goTop:hover, #goDown:hover {
 	background:$text-color;

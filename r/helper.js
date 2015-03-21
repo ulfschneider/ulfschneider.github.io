@@ -50,7 +50,13 @@ function navigation() {
 	var doc = $(document).height();	
 	var height = $(window).height();
 
-	 	
+	 
+	if (internalReferrer() === false)	{
+		$('#goBack').hide(0);
+	} else {
+		$('#goBack').show(0);
+	}
+	
 	if (scrollTop >= height || (scrollTop > 50 && scrollTop + height >= doc - 100)) {
 		if (showTopLink == false) {
 			$('#goTop').show(0);
@@ -77,6 +83,24 @@ function sizing() {
 	adjustFullHeight();
 	wider(); 
 	navigation();
+	
+}
+
+function internalReferrer() {
+	var referrer = $(document).attr('referrer');
+	var host = $(location).attr('hostname');
+	var protocol = $(location).attr('protocol');
+
+	if (referrer.indexOf(protocol + '//' + host) === 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function goBack() {
+	var referrer = $(document).attr('referrer');
+	window.location = referrer;
 }
 
 $(function() {
