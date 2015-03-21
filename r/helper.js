@@ -41,41 +41,30 @@ function wider() {
 }
 
 
-var	showTopLink = false;
-var showDownLink = false;
 
 function navigation() {
-
 	var scrollTop = $(document).scrollTop();	
 	var doc = $(document).height();	
 	var height = $(window).height();
 
 	 
-	if (internalReferrer() === false)	{
+	if (internalReferrer() == false)	{
 		$('#goBack').hide(0);
 	} else {
 		$('#goBack').show(0);
 	}
 	
-	if (scrollTop >= height || (scrollTop > 50 && scrollTop + height >= doc - 100)) {
-		if (showTopLink == false) {
-			$('#goTop').show(0);
-			showTopLink = true;
-		}
-		if (showDownLink == true) {
-			$('#goDown').hide(0);
-			showDownLink = false;
-		}
-	} else {
-		if (showDownLink == false) {
-			$('#goDown').show(0);
-			showDownLink = true;
-		}		
-		if (showTopLink == true) {
-			$('#goTop').hide(0);
-			showTopLink = false;
-		}
+	if (scrollTop >= height	- 100 || (scrollTop > 100 && scrollTop + height >= doc - 100)) {
+		$('#goTop').show(0);
+	}	else {
+		$('#goTop').hide(0);
 	}
+	if (scrollTop > 100) {
+		$('#goDown').hide(0);
+	} else {
+		$('#goDown').show(0);
+	}
+	
 }
 
 function sizing() {
