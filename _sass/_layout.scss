@@ -116,13 +116,13 @@
 }
 
 #goTop:hover, #goDown:hover, #goBack:hover {
-	background:$text-color;
-	color:$background-color;
+	background:$background-color;
+	color:$text-color;
 }
 
 #goTop:active, #goDown:active, #goBack:active {
-	background:$text-color;
-	color:$background-color;
+	background:$background-color;
+	color:$text-color;
 }
 
 h1, .title {
