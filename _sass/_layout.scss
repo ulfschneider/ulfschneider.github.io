@@ -4,7 +4,7 @@
  */
 .site-header {
     height:$site-header-height;
-		background:$background-color;
+	background:$background-color;
 }
 
 
@@ -13,15 +13,15 @@
     margin-bottom: 0;
     float: left;
     color: $header-color;
-		font-size: $extra-small-font-size;
-		font-weight:600;
+	font-size: $extra-small-font-size;
+	font-weight:600;
 }
 
 .site-nav {
     float: left;
     line-height: $site-header-height;
-		font-size: $extra-small-font-size;
-		z-index:1000;
+	font-size: $extra-small-font-size;
+	z-index:1000;
 
     .fa-bars {
         display: none;
@@ -29,16 +29,14 @@
 
     .page-link {
         color: $header-color;
-				line-height: $site-header-height;
-				display:inline-block;
-				margin-left:$spacing-unit;
-				font-weight:600;
-				&:hover {
-					color:$background-color;
-					background-color:$text-color
-				}
-				
-
+		line-height: $site-header-height;
+		display:inline-block;
+		margin-left:$spacing-unit;
+		font-weight:600;
+			&:hover {
+				color:$background-color;
+				background-color:$text-color
+			}				
     }
 		
 	 
@@ -47,7 +45,7 @@
         position: absolute;
         top:($site-header-height - $nav-icon-size)/2;
         right:$spacing-unit/2;
-				background-color:$header-fallback-color;
+		background-color:$header-fallback-color;
         background-color: $header-background-color;
         text-align: right;		
 
@@ -58,12 +56,11 @@
             text-align: center;
 			font-size:$nav-icon-size;
 						
-						&:hover {
-							background-color:$header-fallback-color;
-							background-color:$header-background-color;
-							color:$text-color;
-						}
-
+			&:hover {
+				background-color:$header-fallback-color;
+				background-color:$header-background-color;
+				color:$text-color;
+				}
         }				
 
         .trigger {
@@ -137,8 +134,8 @@ h3, h4 {
  * Page content
  */
 .meta {
-		display:inline;
-		line-height:1em;
+	display:inline;
+	line-height:1em;
 }
 
 .banner {
