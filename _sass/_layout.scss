@@ -98,15 +98,16 @@
 	bottom:$spacing-unit;	
 	padding:$spacing-unit/8;
 
-
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
-	color:$background-color;
-	background:$text-color;	
+	color:$text-color;
+	background:$background-color;
 }
 
 #goBack {
 	padding:$spacing-unit/8;
+	font-size:$nav-icon-size;
+	line-height:$nav-icon-size;
 }
 
 
