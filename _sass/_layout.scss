@@ -337,6 +337,10 @@ li.image-grid .image {
 	background:$background-color;
 }
 
+li.image-grid .image img {
+	width:100%;
+}
+
 
 li.image-grid .title {
 	margin-top:10px;
@@ -395,7 +399,7 @@ li.image-grid .title {
 @include media-query($on-widescreen) {
 
 		li.image-grid {			
-		  width: 15%;
+		  width: 20%;
 		}
 
 }
