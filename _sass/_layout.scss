@@ -91,13 +91,12 @@
 
 
 
-#goTop, #goDown {
+#goTop, #goDown, #goBack {
+	text-align:center;
 	display:none;
 	position:fixed;
+	top:$site-header-height + $spacing-unit;	
 	right:$spacing-unit;
-	bottom:$spacing-unit;	
-	padding:$spacing-unit/8;
-
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
 	color:$text-color;
@@ -105,15 +104,9 @@
 	cursor:pointer;
 }
 
+
 #goBack {
-	display:inline-block;
-	clear:both;
-	position:static;
-	padding:$spacing-unit/8;
-	font-size:$nav-icon-size;
-	line-height:$nav-icon-size;
-	margin-top:$spacing-unit;	
-	cursor:pointer;
+	top:$site-header-height + 3 * $spacing-unit;	
 }
 
 #goTop:focus, #goDown:focus, #goBack:focus {
@@ -455,7 +448,7 @@ li.image-grid .title {
 		line-height: $base-font-size + 12;			
 	}
 	
-	#goTop, #goDown {
+	#goTop, #goDown, #goBack {
 		right:$spacing-unit/2;		
 	}
 	
