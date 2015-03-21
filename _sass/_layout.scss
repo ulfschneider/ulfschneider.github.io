@@ -452,6 +452,16 @@ li.image-grid .title {
 		right:$spacing-unit/2;		
 	}
 	
+	#goTop, #goDown {
+		top:auto;
+		bottom:$spacing-unit*3;
+	}
+	
+	#goBack {
+		top:auto;
+		bottom:$spacing-unit;
+	}
+	
 	img.LHOP {
 		/*limit height on palm*/
 		max-height:400px;
