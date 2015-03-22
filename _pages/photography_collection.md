@@ -1,7 +1,7 @@
 ---
 layout: collection
-title: 
-permalink: 
+title: Photography
+permalink: /photography/
 ---
 
 

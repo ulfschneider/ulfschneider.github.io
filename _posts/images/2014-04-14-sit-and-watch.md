@@ -4,9 +4,10 @@ title: Sit and watch
 date:   2014-04-14
 abstract: 
 thumburl: /i/DSCF0314_thumb.jpg
-tags: bw
+tags: [bw, street, people]
 ---
 ![](/i/DSCF0314.jpg)
+![](/i/DSCF0438.jpg)
 
 
 

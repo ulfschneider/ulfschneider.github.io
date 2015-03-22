@@ -4,7 +4,7 @@ title: Dark-stained field
 date:   2014-04-14
 abstract: 
 thumburl: /i/DSCF0515_thumb.jpg
-tags: bw
+tags: [bw, street, people]
 ---
 An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th, 2014.
 ![](/i/DSCF0539.jpg)
