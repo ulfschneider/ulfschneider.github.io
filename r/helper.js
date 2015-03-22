@@ -46,11 +46,8 @@ function navigation() {
 	var doc = $(document).height();	
 	var height = $(window).height();
 	 
-	if (internalReferrer() == false)	{
-		$('#goBack').hide(0);
-	} else {
-		$('#goBack').show(0);
-	}
+	$('#goBack').show(0);
+
 	
 	if (doc >= 2 * height) {
 		$('#goTop').show(0);
@@ -69,21 +66,9 @@ function sizing() {
 	navigation();	
 }
 
-function internalReferrer() {
-	var referrer = $(document).attr('referrer');
-	var host = $(location).attr('hostname');
-	var protocol = $(location).attr('protocol');
-
-	if (referrer.indexOf(protocol + '//' + host) === 0) {
-		return true;
-	} else {
-		return false;
-	}
-}
 
 function goBack() {
-	var referrer = $(document).attr('referrer');
-	window.location = referrer;
+	window.history.back();
 }
 
 $(function() {
