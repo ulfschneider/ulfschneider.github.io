@@ -6,7 +6,7 @@ abstract:
 thumburl: /i/DSCF0515_thumb.jpg
 tags: [bw, street, people]
 ---
-An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th, 2014.
+An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th, 2014. Shortly after a rain shower.
 ![](/i/DSCF0539.jpg)
 ![](/i/DSCF0525.jpg)
 ![](/i/DSCF0523.jpg)
