@@ -4,7 +4,7 @@ title:
 permalink: /photography/things/
 tags: things
 abstract: Things
-thumburl: /i/DSCF0573_thumb.jpg
+thumburl: /i/IMG_6854_thumb.jpg
 ---
 Things
 
