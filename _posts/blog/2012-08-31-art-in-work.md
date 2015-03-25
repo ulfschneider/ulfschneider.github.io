@@ -53,7 +53,8 @@ This perspective does not correspond with the model by that we have been sociali
 
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
-![](/i/taylor_tub.jpg)
+![](/i/blog/taylor_tub.jpg)
+
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
 
 In the Taylor-Tub the thoughts of the single individual are not of importance, because all workflows, procedures and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which has lead to disruptive productivity grows and inert mass markets during the last century.
