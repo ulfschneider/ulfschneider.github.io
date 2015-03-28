@@ -7,7 +7,7 @@ title:
 ---
 Hi,
 
-my name is Ulf Schneider. I am an agile coach and a software developer. I am employed at [Wincor Nixdorf](http://www.wincor-nixdorf.com), supporting the world wide transition of the R&D software department towards [agility](http://agilemanifesto.org).
+my name is Ulf Schneider. I am an agile coach and a software developer. I am employed at [Wincor Nixdorf](http://www.wincor-nixdorf.com), supporting the world wide transition of the R&D software department to be able to *produce a continuous stream of done software in each iteration, always delivering the most important parts first.*
 
 Here you can find some of my [writing](/know-how) about agile software development. 
 
