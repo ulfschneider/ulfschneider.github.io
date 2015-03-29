@@ -194,8 +194,14 @@ h3, h4 {
 
 
 .wide, img.wide {
-  display:block;
+  	display:block;
 	border:none;
+}
+
+.float-right, img.float-right {
+	display:inline-block;
+	max-width:33%;
+	float:right;
 }
 
 .page-content {
