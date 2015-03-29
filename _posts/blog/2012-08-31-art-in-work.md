@@ -56,6 +56,7 @@ The centralized planning, disassembly and automation of work brought us to the i
 ![](/i/blog/taylor_tub.jpg)
 
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
+{:.figcaption}
 
 In the Taylor-Tub the thoughts of the single individual are not of importance, because all workflows, procedures and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which has lead to disruptive productivity grows and inert mass markets during the last century.
 

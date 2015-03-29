@@ -13,15 +13,15 @@
     margin-bottom: 0;
     float: left;
     color: $header-color;
-	font-size: $extra-small-font-size;
-	font-weight:600;
+		font-size: $extra-small-font-size;
+		font-weight:600;
 }
 
 .site-nav {
     float: left;
     line-height: $site-header-height;
-	font-size: $extra-small-font-size;
-	z-index:1000;
+		font-size: $extra-small-font-size;
+		z-index:1000;
 
     .fa-bars {
         display: none;
@@ -212,9 +212,11 @@ h3, h4 {
 	border:none;
 }
 
-.exposed, img.exposed {
-	margin-top:4*$spacing-unit;
+figcaption, .figcaption {
+	margin-top:-$spacing-unit;
+	font-size:$extra-small-font-size;
 	display:block;
+	margin-bottom:$spacing-unit;
 }
 
 
@@ -386,6 +388,10 @@ li.image-grid .title {
 .social-media-list {
     list-style: none;
 		margin:0;
+}
+
+.contact-list .fa {
+	margin-right:1em;
 }
 
 .userlabel {

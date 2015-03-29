@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  
+permalink: /saa/
 date:   2011-06-27
 message: 
 banner: 
@@ -45,6 +46,7 @@ To me, design decisions, compared to architectural decisions, are of tactical or
 ![](/i/blog/architecture_bridge.jpg)
 
 Figure: Architecture as a bridge between the problem- and the solution space
+{:.figcaption}
 
 The cooperative role model of Scrum does not explicitly mention the architect role. Except of the Product Owner, the Scrum Master and the Development Team no other roles are named. It is supposed that the members of the Scrum Team will self-organize and find suitable solutions. 
 
