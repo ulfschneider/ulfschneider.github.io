@@ -8,8 +8,8 @@ tags: [bw, things]
 ---
 ![](/i/IMG_6854.jpg)
 ![](/i/IMG_6805.jpg)
-![](/i/IMG_6864.jpg)
-![](/i/IMG_6870.jpg)
+![](/i/IMG_6880.jpg)
 ![](/i/IMG_6881.jpg)
 ![](/i/IMG_6885.jpg)
+![](/i/IMG_6889.jpg)
 
