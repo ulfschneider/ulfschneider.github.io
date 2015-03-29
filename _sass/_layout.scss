@@ -193,16 +193,7 @@ h3, h4 {
 }
 
 
-.wide, img.wide {
-  	display:block;
-	border:none;
-}
 
-.float-right, img.float-right {
-	display:inline-block;
-	max-width:33%;
-	float:right;
-}
 
 .page-content {
 	padding-top:2 * $spacing-unit;
@@ -213,7 +204,17 @@ h3, h4 {
 	margin-bottom:$spacing-unit;
 	display: block;
 	margin-left: auto;
-  	margin-right: auto;
+  margin-right: auto;
+}
+
+.wide, img.wide {
+  display:block;
+	border:none;
+}
+
+.exposed, img.exposed {
+	margin-top:4*$spacing-unit;
+	display:block;
 }
 
 
