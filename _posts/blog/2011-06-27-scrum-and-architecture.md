@@ -30,13 +30,13 @@ Architectural decisions are of strategic nature for the solution space. They hav
 
 Architectural decisions are being taken under two premises [friedrichsen2010]:
 
-> represent and balance the interests of all stakeholders over the entire system lifecycle and
+> Represent and balance the interests of all stakeholders over the entire system lifecycle and
 >
-> minimize the total cost of ownership for the system over the entire lifecycle
+> Minimize the total cost of ownership for the system over the entire lifecycle
 
 Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks states, that 
 
-> the architect of a system, like the architect for a building, is the user´s agent [brooks1995:45]. 
+> The architect of a system, like the architect for a building, is the user´s agent [brooks1995:45]
 
 My impression is, both quotes are true.
 
@@ -48,13 +48,40 @@ Figure: Architecture as a bridge between the problem- and the solution space
 
 The cooperative role model of Scrum does not explicitly mention the architect role. Except of the Product Owner, the Scrum Master and the Development Team no other roles are named. It is supposed that the members of the Scrum Team will self-organize and find suitable solutions. 
 
-But in that model, how will architectural decisions being taken? Are they a result of a team-oriented brainstorming and is the decision „suddenly clear“, as long as the decision is being taken „late“? How is ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is, that the cooperative derivation of architectural decisions improves decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
+But in that model, how will architectural decisions being taken? Are they a result of a team-oriented brainstorming and is the decision „emergent“, as long as the decision is being taken „late“? How is ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is, that the cooperative derivation of architectural decisions improve decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
 
 Human and process
 ---
-A good architecture has conceptual integrity. Can it be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
+A good architecture leads to conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
-From the perspective of agile software development the answer can be found fast. The first value statement of the agile manifesto states, that „individuals and interactions are valued higher than processes and tools“ [agilemanifesto]. Therefore in an agile environment the architect has a higher significance than an architecture process.
+From the perspective of agile software development the answer is easy to find. The first value statement of the agile manifesto states, that „individuals and interactions are valued higher than processes and tools“ [agilemanifesto]. Therefore in an agile environment the architect always has a higher significance  than any architecture process.
+
+![architect decision tree]()
+
+And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product is creativity an important solution ingredient. Humans are creative, not so processes. Creativity can be supported by organizational structures but any organization will only help if creative people in general and especially creative architects are high valued in the context of software development.
+
+This does not mean that organization can be overlooked when design the fields of work. Organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. „Conway´s Law“ [conway1968] gives us the essential point of view: 
+
+> Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization´s communication structure.
+
+Rephrased: Our communication structures will be found again in the product.
+
+A complex organization with many empoyees and unclear responsibilities will lead to a bloat product. A lean organization with competent employess and clear responsibilities will produce a sharp and focused product.
+
+Scrum with it´s underlying reduction-minded, team-oriented and result-oriented setup is a good tool to create sharp and focused products. The architect in Scrum is the helping hand to keep conceptual integrity in the product.
+
+The architect in Scrum
+---
+Here are some suggestions to embed the architect into a Scrum endeavor:
+
+* *Embedded:* If the architect is embedded into the development team or if more separate positon is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will simply take his role inside of the development team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner. 
+* *Decision competency:* Analogous the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions.
+* *Member of the project:* The architect is proactively responsible for the architecture of the solution space. And she is expected to have the same willingness to collaborate and drive to improve the development process as it is expected from all other team members.
+* *Coding skills:* The architect is accepted by the Scrum Team. His contributions enrich the product and he provides benefits to the team. For software development projects it is inevitable that the architect is able to write code in order to understand technical details and working dynamics. In most cases the background of an architect is of technical nature. This requires him to be open and to be willing to learn the important aspects of the business domain.
+
+This is a lot to expect from an architect. But the same is true for all other members of a Scrum Team. A developer is expected to be on top of his craft, a Product Owner must be able to influence his organization and have a high competence in making business relevant decisions in service of the product. The business experts need to be able to develop concise requirements and even testcases. Vice versa the architect must be able to fill out his role or at least has to learn the relevant aspects over the course of the project.
+
+
 
 
 References
