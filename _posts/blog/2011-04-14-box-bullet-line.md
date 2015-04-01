@@ -73,4 +73,4 @@ Figure: A request initiated by A, giving data to B and getting a synchronous res
 Figure: A request initiated by A by giving data to B. The asynchronous response from B follows.
 {:.figcaption}
 
-This simple BBL notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connetions a direction and extend even more by adding control flow indication with calling sequences later. 
+This simple BBL notation can grow with your needs. For example you can start modeling with undirected connections, add data flows by giving your connections a direction and extend even more by adding control flow indication with calling sequences later. 
