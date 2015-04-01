@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  BBL, the Box-Bullet-Line Notation
+title:  The Box-Bullet-Line Notation (BBL)
 permalink: /bbl/
 date:   2011-04-17
 message: 
