@@ -17,7 +17,7 @@ Often a model is communicated by using graphical- or diagram techniques. But the
 
 ![UML diagrams overview](/i/blog/UML_diagrams_overview.svg)
 
-Figure: UML diagrams overview [Source: Wikipedia](http://en.wikipedia.org/wiki/File:UML_diagrams_overview.svg)
+Figure: UML diagrams overview (this figure is a SVG file, you need a modern Browser to view) [Source: Wikipedia](http://en.wikipedia.org/wiki/File:UML_diagrams_overview.svg)
 {:.figcaption}
 
 > In case you are a business domain expert, software developer, requirements engineer, tester or architect - do you know your UML diagram types?
