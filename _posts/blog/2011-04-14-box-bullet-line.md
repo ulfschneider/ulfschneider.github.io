@@ -21,7 +21,13 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 Until now I have only worked in projects where a shared understanding about UML diagrams did not exist. To me it seems that UML diagrams are often used by specialists for special meanings and sometimes only being created and consumed by the same single author.
 
-Instead of fostering communication among different members (with different skills) of a software development project, these diagrams may have the opposite effect, because they are not understood well enough or they are not up to date because their creation is too time consuming. I´m not against UML, but as laid-out before, in my projects the described communication problems were a reality.
+Instead of fostering communication among different members (with different skills) of a software development project, these diagrams may have the opposite effect, because 
+
+* they are not understood well enough or 
+* they are not up to date because their creation is too time consuming or 
+* the software to maintain them is not available to all project members. 
+
+I´m not against UML, but as laid-out before, in my projects the described communication problems were a reality.
 
 I want to speak for a natural and generic way of explaining components and their dependencies by drawing boxes and connecting them with lines. This is not to replace UML-models, but to have an easy drawing and modeling technique that all members of the project team can immediately use. We are intuitively capable to draw and understand such figures.
 
@@ -73,4 +79,4 @@ Figure: A request initiated by A, giving data to B and getting a synchronous res
 Figure: A request initiated by A by giving data to B. The asynchronous response from B follows.
 {:.figcaption}
 
-This simple BBL notation can grow with your needs. For example you can start modeling with undirected connections, add data flows by giving your connections a direction and extend even more by adding control flow indication with calling sequences later. 
+This simple BBL notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connetions a direction and extend even more by adding control flow indication with calling sequences later. 
