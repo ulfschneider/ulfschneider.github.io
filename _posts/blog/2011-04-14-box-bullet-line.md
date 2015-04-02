@@ -15,6 +15,11 @@ Writing software can be compared to the work of an author writing a book. Of cou
 
 Often a model is communicated by using graphical- or diagram techniques. But there is no single diagram type that covers all aspects of a software system model. Instead we use different diagrams to explain and communicate different aspects of the system. The Unified Modeling Language (UML) is a standardized language that reflects this fact by providing many different diagram types, which are grouped into structure- and behavior diagrams.
 
+![UML diagrams overview](/i/blog/UML_diagrams_overview.svg)
+
+Figure: UML diagrams overview
+{:.figcaption}
+
 > In case you are a business domain expert, software developer, requirements engineer, tester or architect - do you know your UML diagram types?
 
 UML diagrams have their value, but only if the ones who work with them have a shared understanding about how to read and write this language. 
