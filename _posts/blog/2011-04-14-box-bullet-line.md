@@ -11,9 +11,9 @@ abstract: An intuitive and natural notation to communicate control and data flow
 ---
 Many important aspects of software development are invisible. When creating software we work through different abstraction layers by analyzing symbols and writing code. 
 
-Writing software can be compared to the work of an author writing a book. Of course there are engineering elements and creative and social aspects that characterize the work of a software developer, but the contemplative articulation of models in code is authoring to me. The better we can communicate the underlying models, the better the system can grow. Indeed the ability of the system to grow is coupled to our *shared* mental models about the system.
+Writing software can be compared to the work of an author writing a book. Of course there are engineering elements and creative and social aspects that characterize the work of a software developer, but the contemplative articulation of a model into code is authoring to me. The better we can communicate the underlying model, the better the system can grow. Indeed the ability of the system to grow is coupled to our *shared* mental model about the system.
 
-Often models are communicated using graphical- or diagram techniques. But there is no single diagram type that covers all aspects of a software system. Instead we use different diagrams to explain and communicate different aspects of the system. The Unified Modeling Language (UML) is a standardized language that reflects this fact by providing many different diagram types, which are grouped into structure- and behavior diagrams.
+Often a model is communicated by using graphical- or diagram techniques. But there is no single diagram type that covers all aspects of a software system model. Instead we use different diagrams to explain and communicate different aspects of the system. The Unified Modeling Language (UML) is a standardized language that reflects this fact by providing many different diagram types, which are grouped into structure- and behavior diagrams.
 
 > In case you are a business domain expert, software developer, requirements engineer, tester or architect - do you know your UML diagram types?
 
