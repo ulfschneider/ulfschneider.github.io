@@ -30,7 +30,7 @@ Instead of fostering communication among different members (with different skill
 
 * they are not understood well enough or 
 * they are not up to date because their creation is too time consuming or 
-* the software to maintain them is not available to all project members. 
+* the software to maintain the diagrams is not available to all project members. 
 
 I´m not against UML, but as laid-out before, in my projects the described communication problems were a reality.
 
