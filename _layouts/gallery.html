@@ -39,6 +39,19 @@
 			</ul>
 								
 			{% include footer.html %}
+			<!--[if !IE]><!-->
+			<script src="/r/packery.pkgd.min.js"></script>
+			<script>
+			var $container = $('#gallery-grid');
+			// init
+			$container.packery({
+			  itemSelector: 'li',
+			  gutter: 0
+			});
+			$(window).on("load", function(event) { $container.packery(); });
+			</script>				
+			<!--<![endif]-->
+			<!--[if gt IE 8]>
 			<script src="/r/packery.pkgd.min.js"></script>
 			<script>
 			var $container = $('#gallery-grid');
@@ -49,6 +62,7 @@
 			});
 			$(window).on("load", function(event) { $container.packery(); });
 			</script>
+			<![endif]-->
 		</div>
   </body>
 
