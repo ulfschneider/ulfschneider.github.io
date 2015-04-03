@@ -25,7 +25,9 @@
 								<li class="image-grid">
 									<div class="image">
 										<img src="{{post.thumburl}}"/>
-										{% if post.abstract %}
+										{% if post.message %}
+											<div class="title">{{post.message}}</div>
+										{% elsif post.abstract %}										
 											<div class="title">{{post.abstract}}</div>
 										{% elsif post.title %}
 											<div class="title">{{post.title}}</div>

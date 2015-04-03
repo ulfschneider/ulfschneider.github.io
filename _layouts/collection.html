@@ -11,6 +11,11 @@
 				
     <div id="pageContent" class="gallery-content full-height">
 				<div class="wrapper">
+					{% if page.banner == nil and page.bannerFull == nil and page.title %}
+					<h1 class="title">{{page.title}}</h1>
+					{% elsif page.title and page.message %}
+					<h1 class="title">{{page.title}}</h1>
+					{% endif %}					
 					{{ content }}
 				</div>
 		
@@ -23,7 +28,9 @@
 								<li class="image-grid">
 									<div class="image">
 										<img src="{{page.thumburl}}"/>
-										{% if page.abstract %}
+										{% if page.message %}
+											<div class="title">{{page.message}}</div>
+										{% elsif page.abstract %}
 											<div class="title">{{page.abstract}}</div>
 										{% elsif page.title %}
 											<div class="title">{{page.title}}</div>

@@ -113,7 +113,7 @@
 
 
 
-h1, .title {
+h1, .title, .message, .message .title {
 	font-size:$base-font-size * 1.8;
 	margin-top:0;
 	line-height:1.8em;
@@ -123,15 +123,14 @@ h1, .title {
 
 
 h2 {
-    font-size: $base-font-size + 6;
+	font-size: $base-font-size + 6;
 	line-height: $base-font-size + 12;
 }
 
 h3, h4 {
-    font-size: $base-font-size + 4;
+  font-size: $base-font-size + 4;
 	line-height:$base-font-size + 8;
 }
-
 
 
 /**
@@ -158,18 +157,6 @@ h3, h4 {
 	border:none;
 }
 
-.message {
-
-	font-size:35px;
-	font-weight:600;
-	line-height:1.2em;
-	padding-top:0*$spacing-unit;
-	
-  @include media-query($on-palm) {
-		font-size:25px;
-	}
-}
-
 .banner .message {
 	color:$background-color;
 	background-color:rgb(0,0,0); /*fallback */
@@ -177,7 +164,6 @@ h3, h4 {
 }
 
 .message .meta {
-
 	font-size:$small-font-size;
 	background-color:transparent;
 	font-weight:normal;
@@ -224,7 +210,6 @@ figcaption, .figcaption {
 .message.title {
 	padding-top:2 * $spacing-unit;
 	margin-bottom:-2 * $spacing-unit + $spacing-unit/2;
-	line-height:2em;
 }
 
 
@@ -289,13 +274,12 @@ li.post-grid {
 /**
 * Gallery
 */
+
+
+/*
 .gallery {
 	background-color: $text-color;
 	color:$background-color;
-}
-
-.gallery-content {
-	padding-top:$site-header-height;
 }
 
 .gallery-content a {
@@ -307,12 +291,6 @@ li.post-grid {
 	color:$text-color;
 }
 
-
-.gallery-content .site-footer {
-	clear:both;
-	padding-top:2 * $spacing-unit;
-}
-
 .gallery-content #goTop, .gallery-content #goBack {
 	background-color:$text-color;
 	color:$background-color;
@@ -322,7 +300,16 @@ li.post-grid {
 	background-color:$text-color;
 	color:$background-color;
 }
+*/
 
+.gallery-content {
+	padding-top:2*$spacing-unit;
+}
+
+.gallery-content .site-footer {
+	clear:both;
+	padding-top:2 * $spacing-unit;
+}
 
 ul.image-grid {
 	list-style:none;
