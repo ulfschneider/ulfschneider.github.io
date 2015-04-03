@@ -96,7 +96,7 @@
 	font-size:$nav-icon-size;
 	line-height:$nav-icon-size;
 	color:$text-color;
-	background:$background-color;
+	background-color:$background-color;
 	cursor:pointer;
 }
 
@@ -108,7 +108,7 @@
 
 #goTop:hover, #goDown:hover, #goBack:hover {
 	color:$text-color;
-	background:$background-color;
+	background-color:$background-color;
 }
 
 
@@ -172,14 +172,14 @@ h3, h4 {
 
 .banner .message {
 	color:$background-color;
-	background:rgb(0,0,0); /*fallback */
-	background:rgba(0,0,0,0.15);
+	background-color:rgb(0,0,0); /*fallback */
+	background-color:rgba(0,0,0,0.15);
 }
 
 .message .meta {
 
 	font-size:$small-font-size;
-	background:transparent;
+	background-color:transparent;
 	font-weight:normal;
 	margin-top:-0.5em;
 }
@@ -257,13 +257,7 @@ li.post-grid {
 	margin-top:$spacing-unit;
 	float:left;
 	height:100%;
-	
-	.thumb {
-		height:100%;
-		width:75px;
-		background:red;
-	}	
-	
+		
 	.title {
     font-size: $big-font-size;
 	}
@@ -320,12 +314,12 @@ li.post-grid {
 }
 
 .gallery-content #goTop, .gallery-content #goBack {
-	background:$text-color;
+	background-color:$text-color;
 	color:$background-color;
 }
 
 .gallery-content #goTop:hover, .gallery-content #goDown:hover, .gallery-content #goBack:hover {
-	background:$text-color;
+	background-color:$text-color;
 	color:$background-color;
 }
 
@@ -339,7 +333,7 @@ ul.image-grid {
 li.image-grid {
 	margin:0;
 	border:0;
-	background:transparent;
+	background-color:transparent;
 	overflow:hidden;	
 	float:left;	
 	position:relative;
@@ -351,7 +345,7 @@ li.image-grid {
 
 li.image-grid .image {
 	padding:5px;
-	background:$background-color;
+	background-color:$background-color;
 }
 
 li.image-grid .image img {
@@ -361,7 +355,7 @@ li.image-grid .image img {
 
 li.image-grid .title {
 	margin-top:5px;
-	background: $background-color;
+	background-color: $background-color;
 	color:$text-color;
 	font-size:$extra-small-font-size;
 	font-family:"Source Sans Pro";
