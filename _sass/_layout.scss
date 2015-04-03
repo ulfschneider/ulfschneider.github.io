@@ -5,7 +5,6 @@
 .site-header {
   height:$site-header-height;
 	background-color:$background-color;
-	z-index:1;
 }
 
 
@@ -340,7 +339,7 @@ li.image-grid {
 	position:relative;
 	cursor:pointer;
 	box-sizing:border-box;
-  	width: 12.5%;
+	width:25%;
 	padding:$spacing-unit;
 }
 
@@ -409,6 +408,13 @@ li.image-grid .title {
 .footer-col-1, .footer-col-2 {     
 				width:50%;
 				box-sizing:border-box;
+}
+
+@include media-query($on-extra-widescreen) {
+
+	li.image-grid {			
+	  width: 12.5%;
+	}
 }
 
 
