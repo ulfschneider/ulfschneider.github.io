@@ -429,8 +429,8 @@ li.image-grid .title {
 	}
 	
 	li.image-grid {
-    width: 32.9%;
-		padding:$spacing-unit;
+    	width: 32.9%;
+		padding:$spacing-unit/4;
 	}
   	
 }		
@@ -466,7 +466,7 @@ li.image-grid .title {
 	}
 		
 	li.image-grid {
-    width: 50%;
+   	 	width: 50%;
 		padding:$spacing-unit/4;
 	}
 
