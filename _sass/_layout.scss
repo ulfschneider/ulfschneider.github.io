@@ -339,7 +339,7 @@ li.image-grid {
 	position:relative;
 	cursor:pointer;
 	box-sizing:border-box;
-	width:25%;
+	width:24.9%;
 	padding:$spacing-unit;
 }
 
@@ -406,14 +406,14 @@ li.image-grid .title {
 
 
 .footer-col-1, .footer-col-2 {     
-				width:50%;
-				box-sizing:border-box;
+		width:50%;
+		box-sizing:border-box;
 }
 
 @include media-query($on-extra-widescreen) {
 
 	li.image-grid {			
-	  width: 12.5%;
+	  width: 12.4%;
 	}
 }
 
@@ -421,7 +421,7 @@ li.image-grid .title {
 @include media-query($on-widescreen) {
 
 		li.image-grid {			
-		  width: 20%;
+		  width: 19.9%;
 		}
 
 }
@@ -429,7 +429,7 @@ li.image-grid .title {
 @include media-query($on-pc) {
 		
 		li.image-grid {
-		  width:25%;
+		  width:24.9%;
 		}
 
 }		
@@ -442,7 +442,7 @@ li.image-grid .title {
 	}
 	
 	li.image-grid {
-    width: 33%;
+    width: 32.9%;
 		padding:$spacing-unit;
 	}
   	
@@ -479,7 +479,7 @@ li.image-grid .title {
 	}
 		
 	li.image-grid {
-    	width: 50%;
+    width: 50%;
 		padding:$spacing-unit/4;
 	}
 
