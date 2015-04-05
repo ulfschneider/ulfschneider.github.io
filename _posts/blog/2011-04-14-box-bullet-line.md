@@ -4,7 +4,7 @@ title:  The Box-Bullet-Line Notation (BBL)
 permalink: /bbl/
 date:   2011-04-17
 message: 
-banner: 
+banner: /i/blog/bbl.jpg
 bottomline: 
 author: 
 abstract: An intuitive and natural notation to communicate control and data flows.
