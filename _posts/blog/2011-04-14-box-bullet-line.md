@@ -38,14 +38,14 @@ By enhancing the diagram with a tiny bullet for the control flow indication, we 
 
 * still visualize data flow
 * still easily draw by hand
-* indicate control flow
+* indicate callers
 * have calling sequences
 * use synchronous and asynchronous communication patterns.
 
-<h3>Flow of control</h3>
-The flow of control, in other words, who is calling whom, can be marked with a tiny bullet at the caller.
+<h3>Caller</h3>
+The caller can be marked with a tiny bullet.
 
-![Control and data flow](/i/blog/control_and_data_flow.jpg)
+![Caller and data flow](/i/blog/control_and_data_flow.jpg)
 
 Figure: A is calling B and handing over data to B
 {:.figcaption}
