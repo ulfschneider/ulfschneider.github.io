@@ -27,16 +27,18 @@ Therefore the usage of the UML diagrams should be decided with care and insight.
 
 One UML diagram that I find very useful for communicating process logic between people of different backgrounds, is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining components and their dependencies by drawing boxes and connecting them with lines.
 
-The UML activity diagram allows to model flow of data. By using a simple trick it can be enhanced to even indicate the control flow of a process. But let´s start with the basic data flow. In the example below the directed connection from A to B has the meaning of „data flows from A to B“. This is a convention of the UML activity diagram. 
+The UML activity diagram allows to model flow of control and data. By using a simple trick it can be enhanced to even indicate the caller of a process step. 
 
-![Data flow](/i/blog/data_flow.jpg)
+But let´s start with the basics. In the example below the directed connection from A to B has the meaning of „control flows from A to B“. This is a convention of the UML activity diagram. When I draw those diagrams I do not differentiate control and data flow. Although the UML activity diagram has a slightly different notation for „data flow“, which uses so called „pins“ at both ends of the connection. Let´s assume it is all about „flow“.
 
-Figure: The directed connection between A and B models a data flow from A to B.
+![Flow](/i/blog/flow.jpg)
+
+Figure: The directed connection between A and B models flow from A to B.
 {:.figcaption}
 
-By enhancing the diagram with a tiny bullet for the caller toindication, we can 
+By enhancing the diagram with a tiny bullet to indicate the caller in a flow, we can 
 
-* still visualize data flow
+* still visualize flow
 * still easily draw by hand
 * indicate callers
 * have calling sequences
@@ -45,18 +47,18 @@ By enhancing the diagram with a tiny bullet for the caller toindication, we can
 <h3>Caller</h3>
 The caller can be marked with a tiny bullet.
 
-![Caller and data flow](/i/blog/control_and_data_flow.jpg)
+![Caller and flow](/i/blog/caller_and_flow.jpg)
 
-Figure: A is calling B and handing over data to B
+Figure: A is calling B and handing over flow to B
 {:.figcaption}
 
 <h3>Sequences</h3>
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Caller and data flow with sequence](/i/blog/control_and_data_flow_sequence.jpg)
+![Caller and flow with sequence](/i/blog/caller_and_flow_sequence.jpg)
 
-Figure: Modeling control and data flow with a calling sequence
+Figure: Modeling flow with a calling sequence
 {:.figcaption}
 
 <h3>Synchronous and asynchronous communication</h3>
@@ -71,9 +73,9 @@ Figure: A request initiated by A, giving data to B and getting a synchronous res
 
 ![Request with asynchronous response](/i/blog/request_async_response.jpg)
 
-Figure: A call initiated by A, giving data to B. The asynchronous response from B follows.
+Figure: A call initiated by A, giving flow to B. The asynchronous response from B follows.
 {:.figcaption}
 
-This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
+This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
 Of course the entire notation language of the UML activity diagram is at hand for you to model more complex flows. Just use the tiny bullet for an enhancement towards caller flow and sequence indication.
