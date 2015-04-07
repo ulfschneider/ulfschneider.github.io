@@ -37,7 +37,7 @@ Figure: The directed connection between A and B models a data flow from A to B.
 By enhancing the diagram with a tiny bullet for the control flow indication, we can 
 
 * still visualize data flow
-* still easily draw by hand.
+* still easily draw by hand
 * indicate control flow
 * have calling sequences
 * use synchronous and asynchronous communication patterns.
