@@ -7,7 +7,7 @@ message:
 banner: /i/blog/bbl.jpg
 bottomline: 
 author: 
-abstract: An intuitive and natural diagram type to communicate data flows and indicate callers by enhancing the UML activity diagram type.
+abstract: An intuitive and natural notation to communicate flows and indicate callers.
 ---
 Many important aspects of software development are invisible. When creating software we work through different abstraction layers by analyzing symbols and writing code. 
 
