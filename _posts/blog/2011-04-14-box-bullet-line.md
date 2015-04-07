@@ -25,20 +25,20 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 Therefore the usage of the UML diagrams should be decided with care and insight.
 
-One UML diagram that I find very useful for communicating process logic between people of different backgrounds, is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
+One UML diagram that I find very useful for communicating process logic between people of different backgrounds is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
 
-The UML activity diagram allows to model flow of control and data. By using a simple trick it can be enhanced to even indicate the caller of a process step. 
+The UML activity diagram allows to model flow of control and data. I used it as a starting point and made some modifications that lead to the box-bullet-line notation.
 
-But let´s start with the basics. In the example below the directed connection from A to B has the meaning of „control flows from A to B“. This is a convention of the UML activity diagram. When I draw those diagrams I do not differentiate control and data flow. Although the UML activity diagram has a slightly different notation for „data flow“, which uses so called „pins“ at both ends of the connection. Let´s assume it is all about „flow“.
+But let´s start with the basics. In the example below the directed connection from A to B has the meaning of „control flows from A to B“. This is a convention of the UML activity diagram. 
 
 ![Flow](/i/blog/flow.jpg)
 
 Figure: The directed connection between A and B models flow from A to B.
 {:.figcaption}
 
-In the UML activity diagram a rounded rectangle stands for an activity. Often I found it helpful to interpret the rectangles as components, so that components and flow dependencies between components can be modeled. And when I draw by hand, it is time-consuming to draw rectangles with rounded corners, therefore I do not draw the rounding. This again is a difference to the original activity diagram, because not-rounded corners and rounded corners have a different meaning of: rounded = activity, not rounded = data object. 
+Now the modifications: When I draw BBL diagrams I do not differentiate control and data flow. Although the UML activity diagram has a slightly different notation for „data flow“, which uses so called „pins“ at both ends of the connection. Let´s assume it is all about „flow“.
 
-By enhancing the diagram with a tiny bullet to indicate the caller in a flow, we can 
+Furthermore in the UML activity diagram a rounded rectangle stands for an activity. I interpret the rectangles as components, so that components and flow dependencies between components will be modeled. And when I draw by hand, it is time-consuming to draw rectangles with rounded corners, therefore I do not draw the rounding. This again is a difference to the original activity diagram, because not-rounded corners and rounded corners have a different meaning of: rounded = activity, not rounded = data object. By enhancing the diagram with a tiny bullet to indicate the caller in a flow, we can 
 
 * still visualize flow
 * still easily draw by hand
@@ -80,4 +80,3 @@ Figure: A call initiated by A, giving flow to B. The asynchronous response from 
 
 This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
-Of course the entire notation language of the UML activity diagram is at hand for you to model more complex flows. Just use the tiny bullet for an enhancement towards caller flow and sequence indication.
