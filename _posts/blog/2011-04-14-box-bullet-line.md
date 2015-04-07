@@ -25,9 +25,9 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 Therefore the usage of the UML diagrams should be decided with care and insight.
 
-One UML diagram that i find very useful to communicate process logic between people of different backgrounds, is the [UML activity diagram type](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining components and their dependencies by drawing boxes and connecting them with lines.
+One UML diagram that I find very useful for communicating process logic between people of different backgrounds, is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining components and their dependencies by drawing boxes and connecting them with lines.
 
-The UML activity diagram allows to model flow of data. By using a simple trick I came across some years ago when modeling a business process for an insurance company, it can be enhanced to even indicate the control flow of a process. But let´s start with the basic data flow. In the example below the directed connection from A to B has the meaning of „data flows from A to B“. This is a convention of the UML activity diagram. 
+The UML activity diagram allows to model flow of data. By using a simple trick it can be enhanced to even indicate the control flow of a process. But let´s start with the basic data flow. In the example below the directed connection from A to B has the meaning of „data flows from A to B“. This is a convention of the UML activity diagram. 
 
 ![Data flow](/i/blog/data_flow.jpg)
 
@@ -73,6 +73,6 @@ Figure: A request initiated by A, giving data to B and getting a synchronous res
 Figure: A call initiated by A, giving data to B. The asynchronous response from B follows.
 {:.figcaption}
 
-This simple BBL notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding control flow indication with calling sequences later. 
+This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding control flow indication with calling sequences later. 
 
 Of course the entire notation language of the UML activity diagram is at hand for you to model more complex flows. Just use the tiny bullet for an enhancement towards control flow and sequence indication.
