@@ -25,7 +25,7 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 Therefore the usage of the UML diagrams should be decided with care and insight.
 
-One UML diagram that I find very useful for communicating process logic between people of different backgrounds, is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining components and their dependencies by drawing boxes and connecting them with lines.
+One UML diagram that I find very useful for communicating process logic between people of different backgrounds, is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
 
 The UML activity diagram allows to model flow of control and data. By using a simple trick it can be enhanced to even indicate the caller of a process step. 
 
@@ -35,6 +35,8 @@ But let´s start with the basics. In the example below the directed connection f
 
 Figure: The directed connection between A and B models flow from A to B.
 {:.figcaption}
+
+In the UML activity diagram a rounded rectangle stands for an activity. Often I found it helpful to interpret the rectangles as components, so that components and flow dependencies between components can be modeled. And when I draw by hand, it is time-consuming to draw rectangles with rounded corners, therefore I do not draw the rounding. This again is a difference to the original activity diagram, because not-rounded corners and rounded corners have a different meaning of: rounded = activity, not rounded = data object. 
 
 By enhancing the diagram with a tiny bullet to indicate the caller in a flow, we can 
 
