@@ -104,13 +104,10 @@
 	margin-top:$spacing-unit;
 }
 
-
-
 #goTop:hover, #goDown:hover, #goBack:hover {
 	color:$text-color;
 	background-color:$background-color;
 }
-
 
 
 h1, .title, .message, .message .title {
@@ -159,7 +156,7 @@ h3, h4 {
 
 .banner .message {
 	color:$background-color;
-	background-color:rgb(0,0,0); /*fallback */
+	background-color:$text-color;
 	background-color:rgba(0,0,0,0.15);
 }
 
@@ -177,9 +174,6 @@ h3, h4 {
 .bottomline {
 	font-size:$extra-small-font-size;
 }
-
-
-
 
 .page-content {
 	padding-top:2 * $spacing-unit;
