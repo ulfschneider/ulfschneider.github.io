@@ -7,7 +7,7 @@ message:
 banner: /i/blog/bbl.jpg
 bottomline: 
 author: 
-abstract: An intuitive and natural diagram type to communicate control and data flows by enhancing the UML activity diagram type.
+abstract: An intuitive and natural diagram type to communicate data flows and indicate callers by enhancing the UML activity diagram type.
 ---
 Many important aspects of software development are invisible. When creating software we work through different abstraction layers by analyzing symbols and writing code. 
 
@@ -34,7 +34,7 @@ The UML activity diagram allows to model flow of data. By using a simple trick i
 Figure: The directed connection between A and B models a data flow from A to B.
 {:.figcaption}
 
-By enhancing the diagram with a tiny bullet for the control flow indication, we can 
+By enhancing the diagram with a tiny bullet for the caller toindication, we can 
 
 * still visualize data flow
 * still easily draw by hand
@@ -54,7 +54,7 @@ Figure: A is calling B and handing over data to B
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Control and data flow with sequence](/i/blog/control_and_data_flow_sequence.jpg)
+![Caller and data flow with sequence](/i/blog/control_and_data_flow_sequence.jpg)
 
 Figure: Modeling control and data flow with a calling sequence
 {:.figcaption}
@@ -74,6 +74,6 @@ Figure: A request initiated by A, giving data to B and getting a synchronous res
 Figure: A call initiated by A, giving data to B. The asynchronous response from B follows.
 {:.figcaption}
 
-This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding control flow indication with calling sequences later. 
+This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
-Of course the entire notation language of the UML activity diagram is at hand for you to model more complex flows. Just use the tiny bullet for an enhancement towards control flow and sequence indication.
+Of course the entire notation language of the UML activity diagram is at hand for you to model more complex flows. Just use the tiny bullet for an enhancement towards caller flow and sequence indication.
