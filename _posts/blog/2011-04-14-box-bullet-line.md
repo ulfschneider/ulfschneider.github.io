@@ -21,11 +21,11 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 * they are not understood well enough or 
 * they are not up to date because their creation is too time consuming or 
-* the software to maintain the diagrams is not available to all project members. 
+* the software to maintain and read the diagrams is not available to all project members. 
 
 Therefore the usage of the UML diagrams should be decided with care and insight.
 
-One UML diagram that I find very useful for communicating process logic between people of different backgrounds is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
+One UML diagram that I find useful for communicating process logic between people of different backgrounds is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
 
 The UML activity diagram allows to model flow of control and data. I used it as a starting point and made some modifications that lead to the box-bullet-line notation.
 
