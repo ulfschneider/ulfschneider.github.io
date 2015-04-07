@@ -36,11 +36,11 @@ Figure: The directed connection between A and B models a data flow from A to B.
 
 By enhancing the diagram with a tiny bullet for the control flow indication, we can 
 
-* visualize data flow
+* still visualize data flow
+* still easily draw by hand.
 * indicate control flow
 * have calling sequences
-* use synchronous and asynchronous communication patterns
-* easily draw by hand (the UML activity diagram is already ease to draw by hand).
+* use synchronous and asynchronous communication patterns.
 
 <h3>Flow of control</h3>
 The flow of control, in other words, who is calling whom, can be marked with a tiny bullet at the caller.
