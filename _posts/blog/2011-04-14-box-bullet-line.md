@@ -7,7 +7,7 @@ message:
 banner: /i/blog/bbl.jpg
 bottomline: 
 author: 
-abstract: An intuitive and natural notation to communicate flows and indicate callers.
+abstract: An intuitive and natural notation to communicate flows  between components.
 ---
 Many important aspects of software development are invisible. When creating software we work through different abstraction layers by analyzing symbols and writing code. 
 
@@ -25,58 +25,68 @@ UML diagrams have their value, but only if the ones who work with them have a sh
 
 Therefore the usage of the UML diagrams should be decided with care and insight.
 
-One UML diagram that I find useful for communicating process logic between people of different backgrounds is the [UML activity diagram](http://agilemodeling.com/artifacts/activityDiagram.htm), because to me it is the most natural way of explaining activities and their dependencies by drawing boxes and connecting them with lines.
+The here proposed box-bullet-line notation is an easy to use drop in, that allows to  
 
-The UML activity diagram allows to model flow of control and data. I used it as a starting point and made some modifications that lead to the box-bullet-line notation.
-
-But let´s start with the basics. In the example below the directed connection from A to B has the meaning of „control flows from A to B“. This is a convention of the UML activity diagram. 
-
-![Flow](/i/blog/flow.jpg)
-
-Figure: The directed connection between A and B models flow from A to B.
-{:.figcaption}
-
-Now the modifications: When I draw BBL diagrams I do not differentiate control and data flow. Although the UML activity diagram has a slightly different notation for „data flow“, which uses so called „pins“ at both ends of the connection. Let´s assume it is all about „flow“.
-
-Furthermore in the UML activity diagram a rounded rectangle stands for an activity. I interpret the rectangles as components, so that components and flow dependencies between components will be modeled. And when I draw by hand, it is time-consuming to draw rectangles with rounded corners, therefore I do not draw the rounding. This again is a difference to the original activity diagram, because not-rounded corners and rounded corners have a different meaning of: rounded = activity, not rounded = data object. By enhancing the diagram with a tiny bullet to indicate the caller in a flow, we can 
-
-* still visualize flow
-* still easily draw by hand
+* model data flow
+* see components and their dependencies
 * indicate callers
 * have calling sequences
-* use synchronous and asynchronous communication patterns.
+* use synchronous and asynchronous communication patterns
+* still be able to draw easily by hand.
+
+<h3>Dependency</h3>
+
+Let´s start with the basics. A line between two boxes indicates a dependency between two system components. A box is a component. In early phases, when you explore an existing system or design a new one, when directions of communication are not of highest importance, the undirected dependency between components is a good starting point.
+
+![Dependency](/i/blog/bbl_dependency.jpg)
+
+Figure: A dependency between A and B
+
+<h3>Flow</h3>
+
+The directed connection from A to B has the meaning of „data flows from A to B“. 
+
+![Flow](/i/blog/bbl_flow.jpg)
+
+Figure: The directed connection between A and B models a data flow from A to B.
+{:.figcaption}
 
 <h3>Caller</h3>
 The caller can be marked with a tiny bullet.
 
-![Caller and flow](/i/blog/caller_and_flow.jpg)
+![Caller pushing](/i/blog/bbl_caller_push.jpg)
 
-Figure: A is calling B and handing over flow to B
+Figure: A is calling B and handing over data to B
+{:.figcaption}
+
+![Caller pulling](/i/blog/bbl_caller_pull.jpg)
+
+Figure: B is calling A and requesting data
 {:.figcaption}
 
 <h3>Sequences</h3>
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Caller and flow with sequence](/i/blog/caller_and_flow_sequence.jpg)
+![Caller and flow with sequence](/i/blog/bbl_caller_and_flow_sequence.jpg)
 
-Figure: Modeling flow with a calling sequence
+Figure: Modeling data flow with a calling sequence
 {:.figcaption}
 
-<h3>Synchronous and asynchronous communication</h3>
+<h3>Synchronous and asynchronous</h3>
 
-Synchronous and asynchronous communication can be modeled with single and double connections.
+Synchronous and asynchronous communication can be modeled with single and doubled connections.
 
-![Synchronous request and response](/i/blog/sync_request_response.jpg)
+![Synchronous request and response](/i/blog/bbl_sync.jpg)
 
-Figure: A request initiated by A, giving data to B and getting a synchronous response from B
+Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.
 {:.figcaption}
 
+![Request with asynchronous response](/i/blog/bbl_async.jpg)
 
-![Request with asynchronous response](/i/blog/request_async_response.jpg)
-
-Figure: A call initiated by A, giving flow to B. The asynchronous response from B follows.
+Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.
 {:.figcaption}
 
-This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
+This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
+BBL - model natural.
