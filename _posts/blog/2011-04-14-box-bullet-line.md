@@ -89,4 +89,7 @@ Figure: A call initiated by A, giving data to B. The asynchronous response with 
 
 This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
-BBL - model natural.
+
+[![BBL model natural](/i/blog/bbl_model_natural.jpg)](/r/blog/bbl.pdf)
+
+Click on the image above to get a short presentation laying out the BBL concepts.
