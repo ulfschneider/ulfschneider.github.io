@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 permalink: /tools/
 ---
 To support my craft I build and share these tools. 

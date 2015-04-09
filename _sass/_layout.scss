@@ -196,6 +196,15 @@ h3, h4 {
 	border:none;
 }
 
+.big {
+	font-size:$big-font-size;
+}
+
+.indent::before {
+	margin-right:1em;
+}
+
+
 figcaption, .figcaption {
 	margin-top:-$spacing-unit;
 	font-size:$extra-small-font-size;
