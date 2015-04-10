@@ -77,11 +77,24 @@ The architect in Scrum
 Here are some suggestions to embed the architect into a Scrum endeavor:
 
 * *Embedded:* If the architect is embedded into the development team or if more separate positon is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will simply take his role inside of the development team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner. 
-* *Decision competency:* Analogous the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions.
+* *Decision competency:* Analogous the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions. He helps to define the product.
 * *Member of the project:* The architect is proactively responsible for the architecture of the solution space. And she is expected to have the same willingness to collaborate and drive to improve the development process as it is expected from all other team members.
 * *Coding skills:* The architect is accepted by the Scrum Team. His contributions enrich the product and he provides benefits to the team. For software development projects it is inevitable that the architect is able to write code in order to understand technical details and working dynamics. In most cases the background of an architect is of technical nature. This requires him to be open and to be willing to learn the important aspects of the business domain.
 
-This is a lot to expect from an architect. But the same is true for all other members of a Scrum Team. A developer is expected to be on top of his craft, a Product Owner must be able to influence his organization and have a high competence in making business relevant decisions in service of the product. The business experts need to be able to develop concise requirements and even testcases. Vice versa the architect must be able to fill out his role or at least has to learn the relevant aspects over the course of the project.
+This is a lot to expect from an architect. But the same is true for all other members of a Scrum Team. A developer is expected to be on top of his craft, a Product Owner must be able to influence his organization and have a high competence in making business relevant decisions to serve the product. The business experts need to be able to develop concise requirements and even testcases. Vice versa the architect must be able to fill out his role or at least has to learn the relevant aspects over the course of the project.
+
+Architecture by comittee
+---
+Don´t do it. Companywide architecture comittees that are being feed with decisions from underordinated projects and that guard, release or reject architectural decisions are a bottleneck for the enterprise and for the involved projects. The parties are blocking themselves on the search for synergy. Responsibility is being carved out of the projects into the superordinated comittee where focus, involvement, competence and understanding are not bound to the projects that need the decisions. Because of too many players with different interests the decisions being taken are often not focused enough and for none of the involved projects optimal.
+
+> Architecture by comittee is the guarantee for a bloated product.
+
+A companywide architecture comittee should instead define constraints and architectural goals for the enterprise architecture and refrain from interventing the project work - except the project architect asks for it. To achieve results for real world situations it is helpful to have the same architects that work in delivery projects inside of the architecture comittee. But it is important to distinct comittee goals and project work clearly.
+
+Project architects on the other hand have to follow the architecture constraints and goals given by the comittee. Within this given space he derives architectural decisions on behalf of his project and in cooperation with his team. 
+
+
+
 
 
 
