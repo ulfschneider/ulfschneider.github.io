@@ -9,19 +9,19 @@
 
 
 .site-title {
-    line-height: $site-header-height;
-    margin-bottom: 0;
-    float: left;
-    color: $header-color;
-		font-size: $extra-small-font-size;
-		font-weight:600;
+  line-height: $site-header-height;
+  margin-bottom: 0;
+  float: left;
+  color: $header-color;
+	font-size: $extra-small-font-size;
+	font-weight:600;
 }
 
 .site-nav {
-    float: left;
-    line-height: $site-header-height;
-		font-size: $extra-small-font-size;
-		z-index:1000;
+  float: left;
+  line-height: $site-header-height;
+	font-size: $extra-small-font-size;
+	z-index:1000;
 
     .fa-bars {
         display: none;
