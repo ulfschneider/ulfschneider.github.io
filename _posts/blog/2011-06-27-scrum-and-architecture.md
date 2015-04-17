@@ -91,7 +91,17 @@ Don´t do it. Companywide architecture comittees that are being feed with decisi
 
 A companywide architecture comittee should instead define constraints and architectural goals for the enterprise architecture and refrain from interventing the project work - except the project architect asks for it. To achieve results for real world situations it is helpful to have the same architects that work in delivery projects inside of the architecture comittee. But it is important to distinct comittee goals and project work clearly.
 
-Project architects on the other hand have to follow the architecture constraints and goals given by the comittee. Within this given space he derives architectural decisions on behalf of his project and in cooperation with his team. 
+Project architects on the other hand have to follow the architecture constraints and goals given by the comittee. Within this given space she derives architectural decisions on behalf of her project and in cooperation with her team. The architect is responsible for her decisions - this includes the decision about how and when to involve the architecture comittee.
+
+Avoid architecture by comittee. The architecture is in the hand of the architect and not in the many hands of the comittee. Architecture by comittee is the guarantee for a bloated product.
+
+Tools
+---
+In the following I will propose some concrete tools that help the architect and the team to drive the architecture. These tools are mainly known from the IT architecture domain and I will only make suggestions how to use them inside of the Scrum process.
+
+Start with the vision
+---
+
 
 
 
