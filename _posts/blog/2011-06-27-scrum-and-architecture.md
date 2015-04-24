@@ -7,11 +7,11 @@ message:
 banner: 
 bottomline: 
 author: 
-abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
+abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 ---
 This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have enhanced and translated the initial document to publish it here.
 
-Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
+Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 
 Iterations
 ---
@@ -21,9 +21,9 @@ To achieve conceptual integrity it has to be considered during the entire design
 
 Scrum and architecture
 ---
-The agile manifesto [agilemanifesto] values „responding to change over following a plan“. By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
+The Agile Manifesto [agilemanifesto] values „responding to change over following a plan“. By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
 
-Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adopt built in because work is being „done“ every two or four weeks and at the end of these so called sprints a process inspection and a product inspection is being held by the delivery team.
+Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in because work is being „done“ every two or four weeks and at the end of these so called sprints a process inspection and a product inspection is being held by the delivery team.
 
 Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This includes to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results. The decision quality can be enhanced by following this guidance. In addition to late decisions we deliver working software as early as possible to avoid endless discussions and to use the momentum of done work. Putting these two behaviors together, we have an approach that can be called „deliver early and decide late“. Ken Schwaber and Mike Beedle coined in this connection the statement „cut through the noise by taking action“ [schwaber2004].
 
@@ -56,7 +56,7 @@ Human and process
 ---
 A good architecture leads to conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
-From the perspective of agile software development the answer is easy to find. The first value statement of the agile manifesto states, that „individuals and interactions are valued higher than processes and tools“ [agilemanifesto]. Therefore in an agile environment the architect always has a higher significance  than any architecture process.
+From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that „individuals and interactions are valued higher than processes and tools“ [agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
 
 ![architect decision tree]()
 

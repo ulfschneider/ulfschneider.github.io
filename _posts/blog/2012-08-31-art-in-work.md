@@ -39,13 +39,13 @@ By Seth Godins definition an artist is
 
 > … someone who uses bravery, insight, creativity and boldness to challenge the status quo. And an artist takes it personally. [Godin 2010:83]
 
-Art is not decoration, it is a motor of change. And art will only be made by artists. In this sense the heads behind the agile movement can be seen as artists.
+Art is not decoration, it is a motor of change. And art will only be made by artists. In this sense the heads behind the Agile movement can be seen as artists.
 
 This interpretation of art in work is not only about individual expertise, it is also about cooperation und social capabilities. Expertise and cooperation bring us to an up-movement, while in the opposite incompetence and egoistic driven acting bring us into a down-movement.
 
 In this regard it is helpful that experienced people have an eye for other experienced people [Wohland and Wiemeyer 2007:40], so that they attract each other, which facilitates cooperation in the end.
 
-This positive and demanding expectation on us and our work is a  force behind the agile manifesto and also the software craftsmanship movement. From that perspective I think it is clear, that agile is about individuals, their opinions, attitudes, creativity, skills and their willingness to cooperate.
+This positive and demanding expectation on us and our work is a  force behind the Agile Manifesto and also the software craftsmanship movement. From that perspective I think it is clear, that Agile is about individuals, their opinions, attitudes, creativity, skills and their willingness to cooperate.
 
 Organization
 ---
@@ -64,11 +64,11 @@ Todays markets are more and more characterized by their narrowness and/or comple
 
 Momentum is being created by dynamic people, by experienced and skilled workers who responsibly and self-organizing produce results. People who can bear with complexity. For those people values and leadership are of much higher importance than centralized control and management. 
 
-A template for congruent acting can be seen in the agile manifesto. And the corresponding attitude might be to understand our work as an art.
+A template for congruent acting can be seen in the Agile Manifesto. And the corresponding attitude might be to understand our work as an art.
 
 Perspective
 ---
-It is not about even more working. Instead I think we need to care about a more suitable style of working for nowadays, about personal progress and development. Those people and companies that understand their work as an art and who explore the field that will be opened thru that thinking and acting, are the avant-garde of a new wave. Maybe this wave can be compared to the transformative power that Taylorism unfolded during the last century. The agile manifesto and also the software craftsmanship movement are patterns of this new reality. The related value systems can guide the path for the individual, the team and the company. 
+It is not about even more working. Instead I think we need to care about a more suitable style of working for nowadays, about personal progress and development. Those people and companies that understand their work as an art and who explore the field that will be opened thru that thinking and acting, are the avant-garde of a new wave. Maybe this wave can be compared to the transformative power that Taylorism unfolded during the last century. The Agile Manifesto and also the software craftsmanship movement are patterns of this new reality. The related value systems can guide the path for the individual, the team and the company. 
 
 References
 ---

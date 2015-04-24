@@ -46,7 +46,12 @@ function navigation() {
 	var doc = $(document).height();	
 	var height = $(window).height();
 	 
-	$('#goBack').show(0);
+	if (document.referrer != '') {
+		$('#goBack').show(0);		
+	} else {
+		$('#goBack').hide(0);		
+	}
+
 
 	
 	if (doc >= 2 * height) {
