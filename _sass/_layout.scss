@@ -490,7 +490,23 @@ li.image-grid .title {
 
 }
 
-
+@include media-query($on-palm) {
+	 .page-content p img {
+		margin-left:-$spacing-unit / 2;
+		margin-left:0 \0; /*IE8 and below */
+		margin-right:-$spacing-unit / 2;
+		margin-right:0 \0; /*IE8 and below */;
+		max-width:calc(100% + #{$spacing-unit});
+		max-width:100% \0; /*IE8 and below */;
+	}
+	
+	.circular img, img.circular {
+		margin-left: auto;
+	  margin-right: auto;	
+	}
+	
+	
+}
 
 
 
