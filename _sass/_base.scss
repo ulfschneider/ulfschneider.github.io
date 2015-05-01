@@ -187,7 +187,7 @@ pre {
 		word-wrap:break-word;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-palm) {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }

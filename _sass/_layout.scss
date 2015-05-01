@@ -440,13 +440,10 @@ li.image-grid .title {
 
 @include media-query($on-laptop) {
 	
-	ul.image-grid {
-		margin:$spacing-unit/4;
-	}
 	
 	li.image-grid {
     width: 32.9%;
-		padding:$spacing-unit/4;
+		padding:$spacing-unit/2;
 	}
   	
 }
@@ -464,7 +461,7 @@ li.image-grid .title {
  		margin-left:0 \0; /*IE8 and below */
  		margin-right:-$spacing-unit / 2;
  		margin-right:0 \0; /*IE8 and below */;
- 		max-width:calc(100% + #{$spacing-unit});
+ 		min-width:calc(100% + #{$spacing-unit});
  		max-width:calc(100% + #{$spacing-unit});
  		max-width:100% \0; /*IE8 and below */;
  }
