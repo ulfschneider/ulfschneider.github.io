@@ -445,13 +445,11 @@ li.image-grid .title {
 	}
 	
 	li.image-grid {
-    	width: 32.9%;
+    width: 32.9%;
 		padding:$spacing-unit/4;
 	}
   	
-}		
-		
-
+}
 
 @include media-query($on-palm) {
 	
@@ -465,6 +463,21 @@ li.image-grid .title {
 		max-height:400px;
 	}
 	
+  .wide-image img, img.wide-image {
+ 		margin-left:-$spacing-unit / 2;
+ 		margin-left:0 \0; /*IE8 and below */
+ 		margin-right:-$spacing-unit / 2;
+ 		margin-right:0 \0; /*IE8 and below */;
+ 		max-width:calc(100% + #{$spacing-unit});
+ 		max-width:calc(100% + #{$spacing-unit});
+ 		max-width:100% \0; /*IE8 and below */;
+ }
+
+ 	.circular img, img.circular {
+ 		margin-left: auto;
+   	margin-right: auto;	
+ 	}
+		
 		
 	blockquote {
 		padding-left:1.5*$spacing-unit;
@@ -486,6 +499,8 @@ li.image-grid .title {
 	}
 
 }
+
+
 
 
 	
