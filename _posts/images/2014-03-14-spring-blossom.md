@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/DSCF0123_thumb.jpg
 tags: [bw, nature]
 ---
-![](/i/DSCF0123.jpg)
+![]({{site.url}}/i/DSCF0123.jpg)
 

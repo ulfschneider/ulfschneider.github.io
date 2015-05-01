@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/DSCF0958_thumb.jpg
 tags: [bw, people, portrait]
 ---
-![](/i/DSCF0958.jpg)
+![]({{site.url}}/i/DSCF0958.jpg)
 

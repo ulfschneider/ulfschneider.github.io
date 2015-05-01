@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/IMG_8215_thumb.jpg
 tags: [bw, animals]
 ---
-![](/i/IMG_8215.jpg)
+![]({{site.url}}/i/IMG_8215.jpg)
 

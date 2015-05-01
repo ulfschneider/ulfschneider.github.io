@@ -53,7 +53,7 @@ This perspective does not correspond with the model by that we have been sociali
 
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
-![](/i/blog/taylor_tub.jpg)
+![]({{site.url}}/i/blog/taylor_tub.jpg)
 
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
 {:.figcaption}
@@ -78,7 +78,7 @@ References
 * [craftsmanship]: http://manifesto.softwarecraftsmanship.org
 [Bradbury et al. 2009] D. Bradbury et al., Manifesto for Software Craftsmanship, 2009, <http://manifesto.softwarecraftsmanship.org>
 * [Godin 2010] S. Godin, Linchpin, Are You Indespensable?, Penguin Books, 2010
-* [schneider2012]: /r/blog/schneider_os_05_12.pdf 
+* [schneider2012]: {{site.url}}/r/blog/schneider_os_05_12.pdf 
 [Schneider 2012] U. Schneider, „Die Kunst in der Arbeit, eine Herausforderung des Status quo“, OBJEKTspektrum, Ausgabe 5, 2012
 * [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor
 [Wiki] Wikipedia, Frederick Winslow Taylor, <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>

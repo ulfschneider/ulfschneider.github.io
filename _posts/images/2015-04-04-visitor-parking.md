@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/IMG_7970_thumb.jpg
 tags: [bw, things]
 ---
-![](/i/IMG_7970.jpg)
+![]({{site.url}}/i/IMG_7970.jpg)
 

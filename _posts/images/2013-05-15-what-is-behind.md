@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/IMG_5039_thumb.jpg
 tags: [bw, street, people]
 ---
-![](/i/IMG_5039.jpg)
+![]({{site.url}}/i/IMG_5039.jpg)
 

@@ -4,6 +4,7 @@ title: Ulf Schneider
 phone: +49 163 2505164
 description: #Writing code and being agile
 baseurl:  # the subpath of your site, e.g. /blog/
+name: Ulf Schneider
 url: http://ulf.codes # the base hostname & protocol for thesite
 #twitter_username: ulfeed
 #github_username: 

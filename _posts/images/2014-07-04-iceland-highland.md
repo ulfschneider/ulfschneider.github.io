@@ -6,5 +6,5 @@ abstract:
 thumburl: /i/DSCF0922_thumb.jpg
 tags: [bw, landscape]
 ---
-![](/i/DSCF0922.jpg)
+![]({{site.url}}/i/DSCF0922.jpg)
 

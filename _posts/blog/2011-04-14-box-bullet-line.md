@@ -46,7 +46,7 @@ Figure: A dependency between A and B
 
 The directed connection from A to B has the meaning of „data flows from A to B“. 
 
-![Flow](/i/blog/bbl_flow.jpg)
+![Flow]({{site.url}}/i/blog/bbl_flow.jpg)
 
 Figure: The directed connection between A and B models a data flow from A to B.
 {:.figcaption}
@@ -54,12 +54,12 @@ Figure: The directed connection between A and B models a data flow from A to B.
 <h3>Caller</h3>
 The caller can be marked with a tiny bullet.
 
-![Caller pushing](/i/blog/bbl_caller_push.jpg)
+![Caller pushing]({{site.url}}/i/blog/bbl_caller_push.jpg)
 
 Figure: A is calling B and handing over data to B
 {:.figcaption}
 
-![Caller pulling](/i/blog/bbl_caller_pull.jpg)
+![Caller pulling]({{site.url}}/i/blog/bbl_caller_pull.jpg)
 
 Figure: B is calling A and requesting data
 {:.figcaption}
@@ -68,7 +68,7 @@ Figure: B is calling A and requesting data
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Caller and flow with sequence](/i/blog/bbl_caller_and_flow_sequence.jpg)
+![Caller and flow with sequence]({{site.url}}/i/blog/bbl_caller_and_flow_sequence.jpg)
 
 Figure: Modeling data flow with a calling sequence
 {:.figcaption}
@@ -82,7 +82,7 @@ Synchronous and asynchronous communication can be modeled with single and double
 Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.
 {:.figcaption}
 
-![Request with asynchronous response](/i/blog/bbl_async.jpg)
+![Request with asynchronous response]({{site.url}}/i/blog/bbl_async.jpg)
 
 Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.
 {:.figcaption}
@@ -90,6 +90,6 @@ Figure: A call initiated by A, giving data to B. The asynchronous response with 
 This simple box-bullet-line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. 
 
 
-[![BBL model natural](/i/blog/bbl_model_natural.jpg)](/r/blog/bbl.pdf)
+[![BBL model natural]({{site.url}}/i/blog/bbl_model_natural.jpg)]({{site.url}}/r/blog/bbl.pdf)
 
 Click on the image above to get a short presentation that is laying out the BBL concepts.
