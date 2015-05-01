@@ -453,10 +453,6 @@ li.image-grid .title {
 
 @include media-query($on-palm) {
 	
-	h1, .title {
-	    font-size: $base-font-size + 6;
-		line-height: $base-font-size + 12;			
-	}
 	
 	img.LHOP {
 		/*limit height on palm*/
