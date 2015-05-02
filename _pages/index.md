@@ -1,9 +1,13 @@
 ---
 permalink: /
 layout: page
-message: Hi,
+message: 
 title: 
 ---
+![](/r/u.jpg)
+{:.portrait}
+Hi,
+
 my name is Ulf Schneider. I am an Agile coach and a software developer. I am employed at [Wincor Nixdorf](http://www.wincor-nixdorf.com), supporting the world wide transition of the R&D software department to be able to <em>produce a continuous stream of done software in each iteration, always delivering the most valuable parts first.
 
 Here you can find some of my [writing](/know-how) about Agile software development. 

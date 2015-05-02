@@ -193,14 +193,14 @@ h3, h4 {
 	border:none;
 }
 
-.circular img, img.circular {
-	width:150px;
-	height:150px;
-	border-radius:75px;
-	display:block;	
-	margin-left: auto;
-  margin-right: auto;
-	display:hidden \0; /*IE8 and below */
+.portrait img, img.portrait {
+	width:152px;
+	height:152px;
+	border:1px solid lightgray;
+	float:left;
+	margin:0;
+	margin-right:2em;
+	margin-bottom:2em;
 }
 
 .big {
@@ -464,13 +464,9 @@ li.image-grid .title {
  		min-width:calc(100% + #{$spacing-unit});
  		max-width:calc(100% + #{$spacing-unit});
  		max-width:100% \0; /*IE8 and below */;
- }
-
- 	.circular img, img.circular {
- 		margin-left: auto;
-   	margin-right: auto;	
  	}
-		
+
+	
 		
 	blockquote {
 		padding-left:1.5*$spacing-unit;
