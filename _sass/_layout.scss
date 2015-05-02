@@ -193,14 +193,16 @@ h3, h4 {
 	border:none;
 }
 
-.portrait img, img.portrait {
+.portrait {
 	width:150px;
 	height:150px;
-	border:1px solid lightgray;
+	border:1px solid $grey-color-light;
 	float:left;
 	margin:0;
-	margin-right:2em;
-	margin-bottom:1em;
+	margin-right:$spacing-unit;
+	margin-bottom:$spacing-unit;
+	box-sizing:content-box;
+	background-image:url(/r/u150.jpg);
 }
 
 .big {
@@ -465,19 +467,21 @@ li.image-grid .title {
  		max-width:calc(100% + #{$spacing-unit});
  		max-width:100% \0; /*IE8 and below */;
  	}
-
-	.portrait img, img.portrait {
-		width:125px;
-		height:125px;
+	
+	.portrait {
+		display:block;
+		clear:both;
+		float:none;
 	}
 		
+	
 	blockquote {
 		padding-left:1.5*$spacing-unit;
 	}
 	
 	
 	.footer-col {
-			float: none;
+		float: none;
    	 	width: 100%;
   	}
 	
@@ -491,6 +495,15 @@ li.image-grid .title {
 	}
 
 }
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+	.portrait {
+	background-image: url(/r/u300.jpg) no-repeat;
+	}
+
+}
+
 
 
 
