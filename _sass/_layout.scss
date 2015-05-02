@@ -194,13 +194,13 @@ h3, h4 {
 }
 
 .portrait img, img.portrait {
-	width:152px;
-	height:152px;
+	width:150px;
+	height:150px;
 	border:1px solid lightgray;
 	float:left;
 	margin:0;
 	margin-right:2em;
-	margin-bottom:2em;
+	margin-bottom:1em;
 }
 
 .big {
@@ -456,7 +456,7 @@ li.image-grid .title {
 		max-height:400px;
 	}
 	
-  .wide-image img, img.wide-image {
+  	.wide-image img, img.wide-image {
  		margin-left:-$spacing-unit / 2;
  		margin-left:0 \0; /*IE8 and below */
  		margin-right:-$spacing-unit / 2;
@@ -466,7 +466,10 @@ li.image-grid .title {
  		max-width:100% \0; /*IE8 and below */;
  	}
 
-	
+	.portrait img, img.portrait {
+		width:125px;
+		height:125px;
+	}
 		
 	blockquote {
 		padding-left:1.5*$spacing-unit;
