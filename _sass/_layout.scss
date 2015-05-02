@@ -496,10 +496,10 @@ li.image-grid .title {
 
 }
 
-@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
 
 	.portrait {
-	background-image: url(/r/u300.jpg) no-repeat;
+	background-image: url(/r/u300.jpg);
 	}
 
 }
