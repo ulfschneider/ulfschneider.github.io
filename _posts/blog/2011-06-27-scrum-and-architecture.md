@@ -43,7 +43,7 @@ My impression is, both quotes are true.
 
 To me, design decisions, compared to architectural decisions, are of tactical or operational nature for the solution space. Design decisions make a structure inside of the solutions space, and the solution space is spanned by the architectural decisions. The transition between architecture and design might be flowing.
 
-![](/i/blog/architecture_bridge.jpg)
+![]({{site.url}}/i/blog/architecture_bridge.jpg)
 
 Figure: Architecture as a bridge between the problem- and the solution space
 {:.figcaption}
@@ -101,6 +101,44 @@ In the following I will propose some concrete tools that help the architect and 
 
 Start with the vision
 ---
+The product vision contains and communicates the strategic goals  of the endeavor. The vision will give self-organizational forces a direction. Whenever during the project course a decision needs to be taken, it must not contradict the goals of the vision. 
+
+ELEVATOR PITCH
+
+One approach for developing such a vision is Geoffrey Moore´s elevator pitch. To go even one step further and anchor the vision within your business model, the [Business Model Canvas][Osterwalder and Pigneur] by Alexander Ostervalder and Yves Pigneur may be of use. 
+
+> It is one of the Product Owners obligations to prepare a convincing product vision. 
+
+The architect has an interest in the vision, too. Often architectural goals are bound to the product vision. These often non-functional goals may be explicit or implicit, but they are by definition of strategic nature. To identify and make them explicit is in the responsibility of the architect. 
+
+In addition to the business goals that are given by the Product Owner, the architect has to identify the relevant stakeholders and find the architectural goals by deriving them from the business goals. But keep in mind, the architect does not invent the architectural goals - she only makes them visible by deriving them from the business goals. 
+
+Architecture vision
+---
+The architect will work closely together with the Product Owner to align the goals. Once identified, they will be listed in a architecture vision statement or be embedded into the product vision. 
+
+As an architect you should not jump into a project if this work can not be done, otherwise chances for a project success are limited from the start. It is like the saying: „A shirt will never fit right if you miss the first buttonhole.“
+
+How important the knowledge of architectural goals is, can be seen in the following figures, that show different architectural goals:
+
+ARCHITECTURAL GOALS
+
+Sometimes an architecture overview diagram is part of the architecture vision. The [Box-Bullet-Line]({{site.url}}/bbl) notation can be of help to visualize process flows between architecture components.
+
+Constraints
+---
+Technical or organizational constraints are to be considered in any project. Constraints limit the solution space that can be spanned by the architect. At the same time constraints provide anchoring points for the solution architecture.
+
+Constraints may be given by the presetting to use an enterprise wide directory service, or by a time frame that is available for batch processing of data entries, or by queueing interfaces to existing systems. A given cost limit is a constraint, too.
+
+The list of relevant constraints has to be maintained by the architect. This list can be a part of the architecture vision or be a separate document. 
+
+Context diagram
+---
+The context diagram 
+
+
+
 
 
 
@@ -117,6 +155,7 @@ References
 * [craftsmanship]: http://manifesto.softwarecraftsmanship.org
 [Bradbury et al. 2009] D. Bradbury et al., Manifesto for Software Craftsmanship, 2009, <http://manifesto.softwarecraftsmanship.org>
 * [Godin 2010] S. Godin, Linchpin, Are You Indespensable?, Penguin Books, 2010
+* [Osterwalder and Pigneur]: http://www.businessmodelgeneration.com 
 * [schneider2012]: /r/schneider_os_05_12.pdf 
 [Schneider 2012] U. Schneider, „Die Kunst in der Arbeit, eine Herausforderung des Status quo“, OBJEKTspektrum, Ausgabe 5, 2012
 * [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor
