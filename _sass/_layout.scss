@@ -85,7 +85,7 @@
 
 
 
-#goTop, #goDown, #goBack {
+#goTop, #goBack {
 	display:none;
 	padding:$spacing-unit/8;
 	margin-bottom:$spacing-unit;
@@ -97,9 +97,6 @@
 	cursor:pointer;
 }
 
-#goDown {
-	margin-top:$spacing-unit;
-}
 
 #goTop:hover, #goDown:hover, #goBack:hover {
 	color:$text-color;
