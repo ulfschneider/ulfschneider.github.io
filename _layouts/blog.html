@@ -23,7 +23,7 @@ layout: default
 			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
-			{% endif %}&nbsp;&nbsp;<br><a class="more" href="{{ post.url | prepend: site.baseurl }}">More</a>
+			{% endif %}<br><a class="more" href="{{ post.url | prepend: site.baseurl }}">More</a>
 		</p>
 	</li>
   {% endif %}
