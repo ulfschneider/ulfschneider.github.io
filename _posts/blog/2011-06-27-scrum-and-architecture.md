@@ -133,9 +133,40 @@ Constraints may be given by the presetting to use an enterprise wide directory s
 
 The list of relevant constraints has to be maintained by the architect. This list can be a part of the architecture vision or be a separate document. 
 
-Context diagram
+System context diagram
 ---
-The context diagram 
+The system context diagram explains the environment of your system. The system itself will be seen as a black box. The important part is to understand the surrounding forces that affect the system with their input- and output-interfaces, system boundaries and responsibilities. Such forces are users as well resources and other systems.
+
+![]()
+Figure: Context diagram. Understand the environmental forces that are affecting the system.
+{:.figcaption}
+
+The system itself will be drawn as a circle in the middle of the diagram. All surrounding components, systems and resources acting upon the system will be drawn as boxes and users will be drawn as stick figures. Communication and data streams will be drawn as arrows between the system and the environmental forces. Again, use the [Box-Bullet-Line]({{site.url}}/bbl) notation to indicate callers, directions, synchronous and asynchronous communication patters and sequences.
+
+Non-functional requirements, like the number of data records that have to be transmitted in a specific amount of time over a communication line or the number of users hitting the system at peak times, can be placed as weights beside the arrows or at the component boxes.
+
+The context diagram is of value in early project stages and through out the entire project. It is best be developed in a group effort together with the stakeholders of the system. By group-working, the different perspectives on the system can be visualized quickly and you have a hook to communicate with the stakeholders. Just draw the system in the middle (use a metaplan board or a whiteboard). The surrounding elements can be placed by using sticky notes or moderation cards. When leveraging this technique you can easily move the environmental elements around and develop your system context. 
+
+Non-functional requirements
+---
+Non-functional requirements often are system-wide and can therefore not be attached to a single user story.
+
+The strategic non-functional requirements lead to the architecture goals that will be documented in the product vision or the architecture vision.
+
+But there are also non-functional requirements that will influence the system architecture and do not find their way into the vision statements. A good entry point to identify those non-functional requirements is the system context diagram. It helps to identify requirements regarding reliability, performance, scaleability, security, maintainability. 
+
+Because of the system-spanning nature of non-functional requirements the architect has the obligation to identify, document and communicate these requirements. 
+
+Only in case a non-functional requirement can be directly attached to a specific user story, it should be documented besides the story (e.g. in the acceptance criteria). In other cases a separate document that collects all non-functional requirements serves the purpose better to understand the system stressors.
+
+The architect has to transform the non-functional requirements into measurable quantities that allow the easy observance of compliance or violation. This gives all actors a direction and makes it easier to fulfill the requirement during development.
+
+Especially the technique of the constraining resource needs this kind of measurable quantities.
+
+Constraining resource
+---
+
+
 
 
 

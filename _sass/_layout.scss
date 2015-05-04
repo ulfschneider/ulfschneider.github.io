@@ -264,6 +264,14 @@ li.post-grid {
     font-size: $big-font-size;
 	}
 	
+	&:hover {
+		.more {
+			color:$background-color;
+			background-color:$text-color;
+			transition-duration: $transition-duration;			
+		}
+	}
+	
 	> a {
 		font-weight:400;
 		color:$text-color;
@@ -272,12 +280,6 @@ li.post-grid {
 	> a:hover {
 		color:$text-color;
 		background-color:$background-color;
-		.title {
-			color:$background-color;
-			background-color:$text-color;
-			transition-duration: $transition-duration;
-			
-		}
 		
 	}
 	
