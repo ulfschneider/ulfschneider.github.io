@@ -3,8 +3,8 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-	<a id="goBack" onclick="goBack()" class="fa-chevron-left" style="font-family:FontAwesome;"></a>	  
-	<a id="goTop" href="#header" class="fa-chevron-up" style="font-family:FontAwesome;"></a>
+	<a id="goBack" onclick="goBack()">&#x25c1;</a>	  
+	<a id="goTop" href="#header">&#x25b3;</a>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -12,27 +12,15 @@
 					<li>Ulf Schneider</li>
           {% if site.phone %}
           <li>
-						<i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{ site.phone }}</a>
+							<span>T: </span><a href="tel:{{site.phone}}">{{ site.phone }}</a>
 					</li>
 					{% endif %}					
 				
           {% if site.email %}
           <li>
-							<i class="fa fa-envelope"></i><a href="mailto:{{site.email}}">{{ site.email }}</a>
+							<span>M: </span><a href="mailto:{{site.email}}">{{ site.email }}</a>
 					</li>
 					{% endif %}					
-					
-          {% if site.github_username %}
-					<li>
-            <i class="fa fa-github"></i><a href="https://github.com/{{site.github_username}}">{{ site.github_username }}</a>
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
- 						<i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a>
-          </li>
-          {% endif %}	
 				</ul>			
       </div>
 
@@ -40,7 +28,7 @@
         <ul class="contact-list">
 					{% if site.description %}<li>{{ site.description }}</li>{% endif %}
 					<li>
-						<i class="fa fa-rss"></i><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a>
+						<span>F: </span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a>
 					</li>										
         </ul>				 
       </div>
