@@ -185,8 +185,9 @@ h3, h4 {
 	display:inline-block;
 }
 
-.wide, img.wide {
-  display:block;
+.wide img, img.wide {
+  	display:block;
+	width:100%;
 	border:none;
 }
 
