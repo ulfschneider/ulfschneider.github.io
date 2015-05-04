@@ -33,6 +33,7 @@ function wide(cssClass) {
 		$(cssClass).css('width', width);
 		$(cssClass).css('min-width', width);
 		$(cssClass).css('margin-left', -((width - wrapperWidth)/2));
+		$(cssClass).css('margin-right', -((width - wrapperWidth)/2));		
 }
 
 
