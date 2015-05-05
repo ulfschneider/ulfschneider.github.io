@@ -52,3 +52,16 @@ LOTUS SHADOWS by Rebecca Horn
 
 THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
 {:.figcaption}
+
+![]({{site.url}}/i/IMG_8308.jpg)
+
+FLOATER 99 by James Turrell
+{:.figcaption}
+
+![]({{site.url}}/i/IMG_8265.jpg)
+
+SLOE WHITE AND RAVEN BLACK by Christina Kubisch
+{:.figcaption}
+
+![]({{site.url}}/i/IMG_8357.jpg)
+{:.wide}
