@@ -63,5 +63,5 @@ FLOATER 99 by James Turrell
 SLOE WHITE AND RAVEN BLACK by Christina Kubisch
 {:.figcaption}
 
-![]({{site.url}}/i/IMG_8357.jpg)
+![]({{site.url}}/i/IMG_8354.jpg)
 {:.wide}
