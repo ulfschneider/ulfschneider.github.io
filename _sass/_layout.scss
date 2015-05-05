@@ -169,8 +169,24 @@ h3, h4 {
 	font-size:$extra-small-font-size;
 }
 
-.page-content {
+
+
+#pageContent {
 	padding-top:2 * $spacing-unit;
+	
+	a {
+		font-weight:normal;
+		background-image: url(/r/link.jpg);
+		background-repeat: repeat-x;
+		background-position: 100% 100%;			
+		
+		&:active,
+    &:hover {
+			background-color:$background-color;
+			background-repeat:repeat;
+			color:$text-color;
+    }
+	}
 }
 
 .page-content img {
@@ -265,62 +281,36 @@ li.post-grid {
     font-size: $big-font-size;
 	}
 	
-	&:hover {
-		.more {
-			color:$background-color;
-			background-color:$text-color;
-			transition-duration: $transition-duration;			
-		}
+}
+
+#pageContent {
+	
+	li.post-grid {
+		&:hover {
+			a.more {
+				color:$background-color;
+				background-color:$text-color;
+				transition-duration: $transition-duration;			
+			}
+		}	
 	}
 	
-	> a {
-		font-weight:400;
-		color:$text-color;
-		display:block;
-	}
-	> a:hover {
+	a.more {
+		font-weight:600;
+		background-image:none;
 		color:$text-color;
 		background-color:$background-color;
-		
 	}
-	
+	a.more:hover, a.more:active {
+		color:$background-color;
+		background-color:$text-color;		
+	}
 }
 
 
 .post-link {
 		color:$text-color;
 }
-
-/**
-* Gallery
-*/
-
-
-/*
-.gallery {
-	background-color: $text-color;
-	color:$background-color;
-}
-
-.gallery-content a {
-	color:$background-color;
-}
-
-.gallery-content a:hover {
-	background-color:$background-color;
-	color:$text-color;
-}
-
-.gallery-content #goTop, .gallery-content #goBack {
-	background-color:$text-color;
-	color:$background-color;
-}
-
-.gallery-content #goTop:hover, .gallery-content #goDown:hover, .gallery-content #goBack:hover {
-	background-color:$text-color;
-	color:$background-color;
-}
-*/
 
 .gallery-content {
 	padding-top:2*$spacing-unit;

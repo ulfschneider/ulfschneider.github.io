@@ -123,29 +123,17 @@ a {
  * Blockquotes
  */
 blockquote {
-		font-style:italic;
     color: $text-color;    
-		padding-left:3 * $spacing-unit;
+		padding-left:2 * $spacing-unit;
 		padding-top:$spacing-unit;
 		padding-bottom:$spacing-unit;
-		position:relative;
-		font-weight:600;
+		letter-spacing:2px;
+		border-left:$spacing-unit/2 solid $text-color;
+		margin-left:-$spacing-unit/2;
     > :last-child {
         margin-bottom: 0;
     }		
 }
-
-
-blockquote::before {
-	display:block;
-	content:"\201c";
-	font-size:3em;
-	position:absolute;
-	top:0;
-	left:0;
-	font-weight:400;
-}
-
 
 
 
