@@ -6,7 +6,7 @@ abstract:
 thumburl: /i/IMG_8374_thumb.jpg
 tags: [bw, color, people]
 ---
-This is one of the rare occasions when you will see color photos on theses pages. 
+This is one of the rare occasions when you will see color photos on these pages. 
 
 You will find some people moving around at the Centre for International Light Art in Unna. There is another page [light-artefacts-unna]({{site.url}}/light-artefacts-unna) emphasizing the artefacts at the same location. 
 

@@ -6,7 +6,7 @@ abstract:
 thumburl: /i/IMG_8370_thumb.jpg
 tags: [bw, color, things]
 ---
-This is one of the rare occasions when you will see color photos on theses pages. 
+This is one of the rare occasions when you will see color photos on these pages. 
 
 The photos emphasize the artefacts, they are without people. There is another page [light-people-unna]({{site.url}}/light-people-unna) showing some people at the same location. 
 
