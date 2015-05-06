@@ -7,7 +7,7 @@ $base-font-size:   14px;
 $code-font-size:   14px;
 $small-font-size:  $base-font-size - 1;
 $extra-small-font-size: $small-font-size - 1;
-$nav-icon-size:    18px;
+$nav-icon-size:    $base-font-size;
 $big-font-size:    $base-font-size + 4;
 $extra-big-font-size: 2*$base-font-size;
 $base-line-height: 2;
