@@ -72,9 +72,23 @@ A complex organization with many empoyees and unclear responsibilities will lead
 
 Scrum with it´s underlying reduction-minded, team-oriented and result-oriented setup is a good tool to create sharp and focused products. The architect in Scrum is the helping hand to keep conceptual integrity in the product.
 
+Multi-team setup
+---
+In multi-team projects it is likely that your teams are traditionally formed around architectural components. You may have a frontend and a backend team or a mobile and a web team with team leaders and the like. 
+
+This grouping of teams by components helps to bundle component know-how and to keep the components intact but normally it does not help to deliver end-to-end features fast and without friction, because the teams are waiting for each other and blocking themselves. Communication is more difficult, takes more time and if the component teams are placed in different locations the hurdles are even higher. 
+
+Therefore I suggest the following approach: stay with the component teams - they help to bundle component know-how. But for the delivery of features have in addition *virtual* feature teams that consist of people from several component teams - simply those people who anyway need to come together to make the end-to-end feature real. For these feature teams often a Daily Scrum makes much more sense than for a component team, because they are hunting to deliver a feature and use the Daily Scrum to ensure the end-to-end readiness and delivery of the feature. 
+
+In such an organization component teams will discuss from time to time difficult changes (and for example API changes) that belong to the component. These changes may be required and indicated by a *virtual* feature team. And it may be the same person who indicates the need for a change from inside of the feature team, brings it to his *home* component team, leads the discussion and come back with a solution approach to the feature team.
+
+The *virtual* feature teams may change from time to time - whenever the next feature to be delivered requires a different team setup.   
+
+This multi-team organization, which forms a matrix with the axes *features* and *components* will support both dimensions: the component architecture and fast, communication oriented end-to-end feature delivery.
+
 The architect in Scrum
 ---
-Here are some suggestions to embed the architect into a Scrum endeavor:
+Coming from the organization to the individual, we have to think about the architects role. Here are some suggestions to embed the architect into a Scrum endeavor:
 
 * *Embedded:* If the architect is embedded into the development team or if more separate positon is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will simply take his role inside of the development team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner. 
 * *Decision competency:* Analogous the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions. He helps to define the product.
@@ -141,7 +155,7 @@ The system context diagram explains the environment of your system. The system i
 Figure: Context diagram. Understand the environmental forces that are affecting the system.
 {:.figcaption}
 
-The system itself will be drawn as a circle in the middle of the diagram. All surrounding components, systems and resources acting upon the system will be drawn as boxes and users will be drawn as stick figures. Communication and data streams will be drawn as arrows between the system and the environmental forces. Again, use the [Box-Bullet-Line]({{site.url}}/bbl) notation to indicate callers, directions, synchronous and asynchronous communication patters and sequences.
+The system itself will be drawn as a circle in the middle of the diagram. All surrounding components, systems and resources acting upon the system will be drawn as boxes and users will be drawn as stick figures. Communication and data streams will be drawn as arrows between the system and the environmental forces. 
 
 Non-functional requirements, like the number of data records that have to be transmitted in a specific amount of time over a communication line or the number of users hitting the system at peak times, can be placed as weights beside the arrows or at the component boxes.
 
@@ -180,7 +194,7 @@ The Box-Bullet-Line diagram is a pragmatic way to visualize flows between compon
 
 > The strength of the notation is, that it is intuitively understandable by the members of the project team, so that the diagram can foster communication and is supporting a shared understanding of the inner system structure and behavior.
 
-Unlike the system context diagram, which gives a blackbox perspective on our system, the BBL is a whitebox view. We want to understand what parts are important and and how the data and control flows between these parts.
+Unlike the system context diagram, which gives a blackbox perspective on our system, the BBL is a whitebox view. We want to understand what parts are important and how the data and control flows between these parts.
 
 Please refer to [Box-Bullet-Line]({{site.url}}/bbl) to get more details.
 
