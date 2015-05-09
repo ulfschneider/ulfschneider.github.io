@@ -7,16 +7,11 @@
 
     {% include header.html %}
 
-		{% include banner.html %}
 				
     <div id="pageContent" class="gallery-content">
 				<div class="wrapper">
-					{% if page.banner == nil and page.bannerFull == nil and page.title %}
-					<h1 class="title">{{page.title}}</h1>
-					{% elsif page.title and page.message %}
-					<h1 class="title">{{page.title}}</h1>
-					{% endif %}					
-					{{ content }}
+						{% include title.html %}
+						{{ content }}
 				</div>
 		
 				<ul class="image-grid" id="gallery-grid">

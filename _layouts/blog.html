@@ -2,13 +2,6 @@
 layout: default
 ---
 
-{% if page.banner == nil and page.bannerFull == nil and page.title %}
-<h1 class="title">{{page.title}}</h1>
-{% elsif page.title and page.message %}
-<h1 class="title">{{page.title}}</h1>
-{% endif %}
-
-
 {{ content }}
 		
 <ul class="post-grid">
@@ -17,13 +10,13 @@ layout: default
 	{% if post.layout contains 'post' and post.title %}
 
 	<li class="post-grid">
-			<span class="title">{{ post.title }}</span><p>{% if post.date %}<span class="meta">{{ post.date | date: '%B %Y' }} • </span>{% endif %}
-
+			<span class="title">{{ post.title }}</span><p>
 			{% if post.abstract %}
 			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
-			{% endif %}<br><a class="more" href="{{ post.url | prepend: site.baseurl }}">More</a>
+			{% endif %}
+			<br><a class="more" href="{{ post.url | prepend: site.baseurl }}">More</a>
 		</p>
 	</li>
   {% endif %}

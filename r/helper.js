@@ -1,32 +1,3 @@
-function banner() {
-	$('.banner.full').css('height', bannerHeight());
-	$('.banner').backstretch('resize');
-}
-
-function adjustFullHeight() {
-
-	var docHeight = $(document).height();
-	if (docHeight >= fullHeight() + headerHeight()) {
-		$('.full-height').css("min-height", fullHeight() );
-	} else {
-		$('.full-height').css("min-height", bannerHeight());
-	}
-}
-
-
-function headerHeight() {
-	return $('#siteHeader').height();
-}
-
-function bannerHeight() {
-	return  fullHeight() - headerHeight();
-}
-
-function fullHeight() {
-	return $(window).height();
-}
-
-
 function wide(cssClass) {
 		var width = $(window).width();
 		var wrapperWidth = $('.wrapper').width();
@@ -40,7 +11,6 @@ function wide(cssClass) {
 function wider() {
 	wide('.wide');	
 }
-
 
 
 function navigation() {
@@ -66,12 +36,9 @@ function navigation() {
 }
 
 function sizing() {
-	banner();  
-	adjustFullHeight();
 	wider(); 
 	navigation();	
 }
-
 
 function goBack() {
 	window.history.back();

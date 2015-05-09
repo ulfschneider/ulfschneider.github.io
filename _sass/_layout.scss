@@ -104,7 +104,7 @@
 }
 
 
-h1, .title, .message, .message .title {
+h1, .title{
 	font-size:$base-font-size * 1.8;
 	margin-top:0;
 	line-height:1.8em;
@@ -128,47 +128,11 @@ h3, h4 {
  * Page content
  */
 .meta {
-	display:inline;
-	line-height:1em;
+	margin-top:-1em;
+	margin-bottom:$spacing-unit;
+	letter-spacing:2px;
+	text-transform:uppercase;
 }
-
-.banner {
-	position:relative;
-	overflow:hidden;
-	max-width:100%;
-	height:300px;
-}
-
-.banner.full {
-
-}
-
-.banner img {
-	width:100%;
-	border:none;
-}
-
-.banner .message {
-	color:$background-color;
-	background-color:$text-color;
-	background-color:rgba(0,0,0,0.15);
-}
-
-.message .meta {
-	font-size:$small-font-size;
-	background-color:transparent;
-	font-weight:normal;
-	margin-top:-0.5em;
-}
-
-.banner .message .meta {
-		color:$background-color;
-}
-
-.bottomline {
-	font-size:$extra-small-font-size;
-}
-
 
 
 #pageContent {

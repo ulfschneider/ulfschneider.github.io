@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  
+subtitle: The architect is not dead
 permalink: /saa/
-date:   2011-06-27
+date: 2011-06-27
 message: 
 banner: 
-bottomline: 
 author: 
 abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 ---
@@ -159,17 +159,47 @@ Because of the system-spanning nature of non-functional requirements the archite
 
 Only in case a non-functional requirement can be directly attached to a specific user story, it should be documented besides the story (e.g. in the acceptance criteria). In other cases a separate document that collects all non-functional requirements serves the purpose better to understand the system stressors.
 
-The architect has to transform the non-functional requirements into measurable quantities that allow the easy observance of compliance or violation. This gives all actors a direction and makes it easier to fulfill the requirement during development.
+> The architect has to transform the non-functional requirements into measurable quantities that allow the easy observance of compliance or violation. This gives all actors a direction and makes it easier to fulfill the requirement during development.
 
-Especially the technique of the constraining resource needs this kind of measurable quantities.
+In particular the technique of the constraining resource needs this kind of measurable quantities.
 
 Constraining resource
 ---
+When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable limits that the project team can use to measure and compare.
 
+As an example:
+2,500,000 data records need to be processed within one hour. Currently achieved value is 1,800,000. 
 
+> To identify the key limit, make it visible and establish an environment to measure continuously the current ability of the system to achieve the target is a major task for the architect.
 
+The achievement of the target should be checked and communicated on a daily basis. This information will give direction for the delivery team and will foster self-organization towards the achievement of the target.
 
+Box-Bullet-Line (BBL)
+---
+The Box-Bullet-Line diagram is a pragmatic way to visualize flows between components. It can be used to model the architecture overview (see above, product vision or architecture vision) or to model some details of the system.
 
+> The strength of the notation is, that it is intuitively understandable by the members of the project team, so that the diagram can foster communication and is supporting a shared understanding of the inner system structure and behavior.
+
+Unlike the system context diagram, which gives a blackbox perspective on our system, the BBL is a whitebox view. We want to understand what parts are important and and how the data and control flows between these parts.
+
+Please refer to [Box-Bullet-Line]({{site.url}}/bbl) to get more details.
+
+The BBL diagram can be used as a starting point to develop the storyboard and the End-To-End-Skeleton.
+
+Storyboard
+---
+In Scrum we handle requirements in the form of user stories. The product backlog is an ordered list of user stories.
+
+A user story does not explain how to build it. That is intentional. The user story says what, why and gives context, but it does not explain the how, in order to give room for self-organization. 
+
+> The storyboard supports the mapping from the „what“ to the „how“. The relevant tasks for a specific story will be visualized in the context of the components they belong to. 
+
+You start with a BBL diagram that contains the components that you think are needed to build the story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
+
+This visualization helps all involved team members to identify the connection of the tasks. The mapping from user story to tasks supports the goal of any architecture as an intermediary between business requirements and the concrete solution structure. The storyboard improves the understanding of the solution structure for your user stories. 
+
+End-To-End-Sekeleton (ETES)
+---
 
 
 

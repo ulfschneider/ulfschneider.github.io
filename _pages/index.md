@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: page
+layout: default
 message: 
 title: 
 ---
