@@ -54,7 +54,6 @@ This perspective does not correspond with the model by that we have been sociali
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
 ![]({{site.url}}/i/blog/taylor_tub.jpg)
-{:.wide-image}
 
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
 {:.figcaption}
