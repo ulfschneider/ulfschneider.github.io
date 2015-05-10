@@ -68,7 +68,7 @@ A template for congruent acting can be seen in the Agile Manifesto. And the corr
 
 Perspective
 ---
-It is not about even more working. Instead I think we need to care about a more suitable style of working for nowadays, about personal progress and development. Those people and companies that understand their work as an art and who explore the field that will be opened thru that thinking and acting, are the avant-garde of a new wave. Maybe this wave can be compared to the transformative power that Taylorism unfolded during the last century. The Agile Manifesto and also the software craftsmanship movement are patterns of this new reality. The related value systems can guide the path for the individual, the team and the company. 
+It is not about even more working. Instead I think we need to care about a more suitable style of working for nowadays, about personal progress and development. Those people and companies that understand their work as an art and who explore the field that will be opened through that thinking and acting, are the avant-garde of a new wave. Maybe this wave can be compared to the transformative power that Taylorism unfolded during the last century. The Agile Manifesto and also the software craftsmanship movement are patterns of this new reality. The related value systems can guide the path for the individual, the team and the company. 
 
 References
 ---
