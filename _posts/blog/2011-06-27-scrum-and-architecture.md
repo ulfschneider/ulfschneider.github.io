@@ -6,11 +6,11 @@ permalink: /saa/
 date: 2011-06-27
 message: 
 author: 
-abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
+abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and obligations in context of the Scrum process are being reflected in this essay.
 ---
 This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have enhanced and translated the initial document to publish it here.
 
-Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
+Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this essay.
 
 Iterations
 ---
@@ -222,20 +222,48 @@ In multi-team setups an integrated proceed with feature delivery can be achieved
 
 Important is an initial interface definition between the components. Even this definition may change later, but you have to use a technical contract right from the start to model the end-to-end flow and make the programming efforts operational.
 
-For sure it will occur that some functionalities will be developed later and some earlier. The later ones need to be represented by mock objects. These mock objects can produce some results for specific datasets but are no productive implementation of the needed functionality. Mock objects allow to test early some end-to-end flows.
+For sure it will occur that some functionalities will be developed later and some earlier. The later ones need to be represented by test doubles (like a stunt double in movies). These test doubles can produce some results for specific datasets but are no productive implementation of the needed functionality. Test doubles allow to test early some end-to-end flows.
 
 The purpose of the End-to-End-Skeleton is a full-length flow through all components that are touched by the new feature. This ensures from the start an integrated view of all actors and the development is being bound to concrete interfaces. It becomes immediately visible if the full-length flow is interrupted at any point.
 
-The technical specification of the interfaces should be in the hand of the architect or at least he should be part of the discussions so that an over-arching understanding can be kept up and the data flows and interfaces can be moved into the simplest possible format without duplicate or missing structures and attributes.
+The technical specification of the interfaces should be in the hand of the architect or at least he should be part of the discussions that lead to interfaces, so that an over-arching understanding can be kept up and the data flows and interfaces can be brought into the simplest possible format without duplicate or missing structures and attributes.
 
 Architecture decisions
 ---
+Architecture decisions represent the deliberate spanning of the solution space. Architecture decisions are anchoring points for further decisions. Being anchoring points makes them difficult to change later on. With Stefan Zörner we can say 
 
+> „The one who is in charge of deriving architecture decisions in a comprehensible manner develops the architecture.“ [Zörner, 2010]
 
+All aspects and tools that we have touched so far influence the way in which architecture decisions are being taken.
 
+Architecture decisions need to be communicated. Besides the spoken language, which is a central part, the written form can not be omitted. By writing down architecture decisions, the entire team or project will be enabled to trace even long in the past taken decisions. Stefan Zörner has a real practical approach for the derivation and documentation of architecture decisions, which simply goes by writing down the answers to the following questions:
 
+* Problem  
+	* What in detail is the problem?
+	* Why is it of relevance for the architecture?
+	* Which impacts has the decision?
+* Constraints
+	* What constraints need to be considered?
+	* What influencing factors need to be considered?
+* Assumptions
+	* What assumptions have been made?
+	* What assumptions can be validated?
+	* What risks exist?
+* Alternatives
+	* What alternatives will be examined?
+	* How should each of the alternatives be assessed?
+	* What alternatives are consciously being skipped?
+* Decision
+	* What is the decision?
+	* Who took the decision?
+	* How is the decision being reasoned?
+	* When was the decision made?
 
+Conclusion
+---
+The here made suggestions are explicitly not meant to make the Scrum framework more complicated or to inject an additional hierarchical level just for the architect. Also classical architecture tools, of which only some are being mentioned here, should not be replaced by the here mentioned. Instead these elaborations should describe what the architects role is about in context of the Scrum role model and what concepts and tools are of use in that case.
 
+The essay is a plea for the rights and obligations of the architect in Scrum, towards collaboration in the Scrum Team and against architecture by comittee. I hope you can use some of the here made suggestions in your current or your next endeavor.
 
 References
 ---
