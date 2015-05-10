@@ -35,7 +35,8 @@ The here proposed Box-Bullet-Line notation is an easy to use drop in, that allow
 * use synchronous and asynchronous communication patterns
 * still be able to draw easily by hand.
 
-<h3>Dependency</h3>
+Dependency
+---
 
 Let´s start with the basics. A line between two boxes indicates a dependency between two system components. A box is a component. In early phases, when you explore an existing system or design a new one, when directions of communication are not of highest importance, the undirected dependency between components is a good starting point.
 
@@ -43,7 +44,8 @@ Let´s start with the basics. A line between two boxes indicates a dependency be
 
 Figure: A dependency between A and B
 
-<h3>Flow</h3>
+Flow
+---
 
 The directed connection from A to B has the meaning of „data flows from A to B“. 
 
@@ -52,7 +54,9 @@ The directed connection from A to B has the meaning of „data flows from A to B
 Figure: The directed connection between A and B models a data flow from A to B.
 {:.figcaption}
 
-<h3>Caller</h3>
+Caller
+---
+
 The caller can be marked with a tiny bullet.
 
 ![Caller pushing]({{site.url}}/i/blog/bbl_caller_push.jpg)
@@ -65,7 +69,8 @@ Figure: A is calling B and handing over data to B
 Figure: B is calling A and requesting data
 {:.figcaption}
 
-<h3>Sequences</h3>
+Sequences
+---
 
 By using numbers beside the connections, calling sequences can be modeled.
 
@@ -74,7 +79,8 @@ By using numbers beside the connections, calling sequences can be modeled.
 Figure: Modeling data flow with a calling sequence
 {:.figcaption}
 
-<h3>Synchronous and asynchronous</h3>
+Synchronous and asynchronous
+---
 
 Synchronous and asynchronous communication can be modeled with single and doubled connections.
 
