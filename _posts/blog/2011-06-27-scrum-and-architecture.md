@@ -5,7 +5,6 @@ subtitle: The architect is not dead
 permalink: /saa/
 date: 2011-06-27
 message: 
-banner: 
 author: 
 abstract: Making architectural decisions in a cooperative way at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. My thesis is, that conceptual integrity will only be achieved for the software if one person has the final word regarding those decisions. This is the architect, serving the delivery team and the product and whose rights and duties in context of the Scrum process are being reflected in this article.
 ---

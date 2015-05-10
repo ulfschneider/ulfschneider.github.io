@@ -114,6 +114,9 @@ h1, .title{
 
 .subtitle {
 	line-height:1.2em;
+  margin-bottom: $spacing-unit / 2;		
+	text-transform:uppercase;
+	letter-spacing:2px;
 }
 
 
@@ -134,8 +137,6 @@ h3, h4 {
  */
 .meta {
 	margin-bottom:$spacing-unit;
-	letter-spacing:2px;
-	text-transform:uppercase;
 }
 
 
