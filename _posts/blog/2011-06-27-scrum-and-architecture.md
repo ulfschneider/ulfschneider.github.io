@@ -77,13 +77,18 @@ In multi-team projects it is likely that your teams are traditionally formed aro
 
 This grouping of teams by components helps to bundle component know-how and to keep the components intact but normally it does not help to deliver end-to-end features fast and without friction, because the teams are waiting for each other and blocking themselves. Communication is more difficult, takes more time and if the component teams are placed in different locations the hurdles are even higher. 
 
-Therefore I suggest the following approach: stay with the component teams - they help to bundle component know-how. But for the delivery of features have in addition *virtual* feature teams that consist of people from several component teams - simply those people who anyway need to come together to make the end-to-end feature real. For these feature teams often a Daily Scrum makes much more sense than for a component team, because they are hunting to deliver a feature and use the Daily Scrum to ensure the end-to-end readiness and delivery of the feature. 
+With the only perspective of component teams the project can easily get into the fallacy of delivering only component parts without end-to-end integration in each Sprint. A feature that can be inspected by a customer or a Product Owner will then only be visible after some Sprints.
 
-In such an organization component teams will discuss from time to time difficult changes (and for example API changes) that belong to the component. These changes may be required and indicated by a *virtual* feature team. And it may be the same person who indicates the need for a change from inside of the feature team, brings it to his *home* component team, leads the discussion and come back with a solution approach to the feature team.
+Therefore I suggest the following approach: stay with the component teams - they help to bundle component know-how. But for the delivery of features have in addition *virtual* feature teams that consist of people from several component teams - simply those people who anyway need to come together to make the end-to-end feature real. For these feature teams often a Daily Scrum makes much more sense than for a component team, because they are hunting for a feature and use the Daily Scrum to ensure the end-to-end readiness and delivery of the feature. 
+
+In such an organization component teams and the architect will discuss from time to time difficult changes (and for example API changes) that belong to the component. These changes may be required and indicated by a *virtual* feature team. And it may be the same person who indicates the need for a change from inside of the feature team, bringing it to his *home* component team, participates in the discussion and come back with a solution approach to the feature team.
 
 The *virtual* feature teams may change from time to time - whenever the next feature to be delivered requires a different team setup.   
 
-This multi-team organization, which forms a matrix with the axes *features* and *components* will support both dimensions: the component architecture and fast, communication oriented end-to-end feature delivery.
+This multi-team organization, which forms a matrix with the axes *feature* and *component* will support both dimensions: the component architecture and fast, communication oriented end-to-end feature delivery.
+
+In the text below, when examining some tools for the architect, please refer to the End-to-End-Skeleton. This is a technique that supports feature delivery even in multi-team setups.
+
 
 The architect in Scrum
 ---
@@ -178,7 +183,7 @@ In particular the technique of the constraining resource needs this kind of meas
 
 Constraining resource
 ---
-When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable limits that the project team can use to measure and compare.
+When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable targets that the project team can use to measure and compare.
 
 As an example:
 2,500,000 data records need to be processed within one hour. Currently achieved value is 1,800,000. 
@@ -193,11 +198,11 @@ The Box-Bullet-Line diagram is a pragmatic way to visualize flows between compon
 
 > The strength of the notation is, that it is intuitively understandable by the members of the project team, so that the diagram can foster communication and is supporting a shared understanding of the inner system structure and behavior.
 
-Unlike the system context diagram, which gives a blackbox perspective on our system, the BBL is a whitebox view. We want to understand what parts are important and how the data and control flows between these parts.
+Unlike the system context diagram, which gives a blackbox perspective on the system, the BBL is a whitebox view. We want to understand what parts are important and how the data and control flows between these parts.
 
 Please refer to [Box-Bullet-Line]({{site.url}}/bbl) to get more details.
 
-The BBL diagram can be used as a starting point to develop the storyboard and the End-To-End-Skeleton.
+The BBL diagram can be used as a starting point for storyboards and End-To-End-Skeletons.
 
 Storyboard
 ---
@@ -211,9 +216,20 @@ You start with a BBL diagram that contains the components that you think are nee
 
 This visualization helps all involved team members to identify the connection of the tasks. The mapping from user story to tasks supports the goal of any architecture as an intermediary between business requirements and the concrete solution structure. The storyboard improves the understanding of the solution structure for your user stories. 
 
-End-To-End-Sekeleton (ETES)
+End-To-End-Skeleton (ETES)
 ---
+In multi-team setups an integrated proceed with feature delivery can be achieved by using the End-to-End-Skeleton technique. By following this approach all components that are needed for a specific feature will be involved right from the start of development. 
 
+Important is an initial interface definition between the components. Even this definition may change later, but you have to use a technical contract right from the start to model the end-to-end flow and make the programming efforts operational.
+
+For sure it will occur that some functionalities will be developed later and some earlier. The later ones need to be represented by mock objects. These mock objects can produce some results for specific datasets but are no productive implementation of the needed functionality. Mock objects allow to test early some end-to-end flows.
+
+The purpose of the End-to-End-Skeleton is a full-length flow through all components that are touched by the new feature. This ensures from the start an integrated view of all actors and the development is being bound to concrete interfaces. It becomes immediately visible if the full-length flow is interrupted at any point.
+
+The technical specification of the interfaces should be in the hand of the architect or at least he should be part of the discussions so that an over-arching understanding can be kept up and the data flows and interfaces can be moved into the simplest possible format without duplicate or missing structures and attributes.
+
+Architecture decisions
+---
 
 
 
@@ -235,6 +251,8 @@ References
 * [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor
 [Wiki] Wikipedia, Frederick Winslow Taylor, <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
 * [Wohland and Wiemeyer 2007] G. Wohland, M. Wiemeyer, Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen, Murmann Verlag, 2007
+
+* http://www.martinfowler.com/articles/mocksArentStubs.html 
 
 
 

@@ -121,13 +121,13 @@ h1, .title{
 
 
 h2 {
-	font-size: $base-font-size + 6;
+	font-size: $base-font-size * 1.5;
 	line-height: 1.4em;
 }
 
 
 h3, h4 {
-  font-size: $base-font-size + 4;
+  font-size: $base-font-size * 1.2;
 	line-height:1.4em;
 }
 
