@@ -109,11 +109,11 @@ a {
 		outline:0;
 		&:active,
     &:hover {
-				outline:0;
+		outline:0;
         color: $background-color;
-				background-color:$text-color;
+		background-color:$text-color;
         text-decoration: none;
-				transition-duration: $transition-duration;
+		transition-duration: $transition-duration;
     }
 }
 
@@ -123,12 +123,12 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $text-color;    
+    	color: $text-color;    
 		padding-left:2 * $spacing-unit;
 		padding-top:$spacing-unit;
 		padding-bottom:$spacing-unit;
 		letter-spacing:2px;
-		border-left:$spacing-unit/2 solid $text-color;
+		border-left:$spacing-unit/2 solid $grey-color;
 		margin-left:-$spacing-unit/2;
     > :last-child {
         margin-bottom: 0;
