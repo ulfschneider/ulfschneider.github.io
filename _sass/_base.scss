@@ -128,8 +128,8 @@ blockquote {
 		padding-top:$spacing-unit;
 		padding-bottom:$spacing-unit;
 		letter-spacing:2px;
-		border-left:$spacing-unit/2 solid $text-color;
-		margin-left:-$spacing-unit/2;
+		border-left:$spacing-unit/3 solid $text-color;
+		margin-left:-$spacing-unit/3;
     > :last-child {
         margin-bottom: 0;
     }		

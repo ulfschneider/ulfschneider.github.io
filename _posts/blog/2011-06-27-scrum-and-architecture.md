@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  
-subtitle: The architect is not dead
-permalink: /saa/
+subtitle: The architect and his tools in the Scrum process
+permalink: /saa
 date: 2011-06-27
 message: 
 author: 
@@ -265,7 +265,7 @@ Conclusion
 ---
 The here made suggestions are explicitly not meant to make the Scrum framework more complicated or to inject an additional hierarchical level just for the architect. Also classical architecture tools, of which only some are being mentioned here, should not be replaced by the here mentioned. Instead these elaborations should describe what the architects role is about in context of the Scrum role model and what concepts and tools are of use in that case.
 
-The essay is a plea for the rights and obligations of the architect inside of the Scrum process, towards collaboration in the Scrum Team and against architecture by comittee. I hope you can use some of the here made suggestions in your current or your next endeavor.
+The essay is a plea for the rights and obligations of the architect acting inside of the Scrum process; towards collaboration in the Scrum Team and against architecture by comittee. I hope you can use some of the here made suggestions in your current or your next endeavor.
 
 References
 ---
