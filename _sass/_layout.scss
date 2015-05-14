@@ -288,7 +288,9 @@ li.post-grid {
 
 ul.image-grid {
 	list-style:none;
-	margin:$spacing-unit/2;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:$content-width;
 	line-height:1.3em;
 }
 
@@ -301,7 +303,7 @@ li.image-grid {
 	position:relative;
 	cursor:pointer;
 	box-sizing:border-box;
-	width:24.9%;
+	width:32.2%;
 	padding:$spacing-unit;
 }
 
@@ -372,41 +374,6 @@ li.image-grid .title {
 		box-sizing:border-box;
 }
 
-@include media-query($on-extra-widescreen) {
-
-	li.image-grid {			
-	  width: 12.4%;
-	}
-}
-
-
-@include media-query($on-widescreen) {
-
-		li.image-grid {			
-		  width: 19.9%;
-		}
-
-}
-
-@include media-query($on-pc) {
-		
-		li.image-grid {
-		  width:24.9%;
-		}
-
-}		
-		
-
-@include media-query($on-laptop) {
-	
-	
-	li.image-grid {
-    width: 32.9%;
-		padding:$spacing-unit/2;
-	}
-  	
-}
-
 @include media-query($on-palm) {
 	
 	
@@ -427,7 +394,7 @@ li.image-grid .title {
 	
 	.extend-image-on-palm .wide img, .extend-image-on-palm img.wide {
 		margin-left:0;
-	  margin-right:0;
+	  	margin-right:0;
 		min-width:100%;
 		width:100%;
 	}

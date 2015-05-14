@@ -172,7 +172,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-		word-wrap:break-word;
+	word-wrap:break-word;
     @extend %clearfix;
 
     @include media-query($on-palm) {
