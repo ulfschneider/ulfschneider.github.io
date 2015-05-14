@@ -9,7 +9,9 @@ title:
 
 Hi,
 
-my name is Ulf Schneider. I am an Agile coach and a software developer. I am employed at [Wincor Nixdorf](http://www.wincor-nixdorf.com), working with my colleagues towards the transition of the software business unit to deliver a continuous stream of done software in each iteration, always doing the most valuable parts first.
+my name is Ulf Schneider and I live in Paderborn, Germany. 
+
+I am an Agile coach and a software developer. Together with my colleagues at [Wincor Nixdorf](http://www.wincor-nixdorf.com) I am working towards the transition of our software business unit to deliver a continuous stream of done software in each iteration, always doing the most valuable parts first.
 
 Here you can find some of my [writing]({{site.url}}/know-how) about Agile software development. 
 
