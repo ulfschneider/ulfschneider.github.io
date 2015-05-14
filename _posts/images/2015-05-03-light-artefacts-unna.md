@@ -28,6 +28,7 @@ Two images above: THE REFLECTING CORRIDOR by Olafur Eliasson
 ![]({{site.url}}/i/IMG_8247.jpg) 
 
 ![]({{site.url}}/i/IMG_8367.jpg) 
+{:.wide}
 
 Four images above: SPACE - SPEECH - SPEED by Mischa Kuball. 
 {:.figcaption}
