@@ -23,7 +23,13 @@ Two images above: THE REFLECTING CORRIDOR by Olafur Eliasson
 
 ![]({{site.url}}/i/IMG_8370.jpg) 
 
-SPACE - SPEECH - SPEED by Mischa Kuball. 
+![]({{site.url}}/i/IMG_8244.jpg) 
+
+![]({{site.url}}/i/IMG_8247.jpg) 
+
+![]({{site.url}}/i/IMG_8367.jpg) 
+
+Four images above: SPACE - SPEECH - SPEED by Mischa Kuball. 
 {:.figcaption}
 
 
@@ -64,4 +70,9 @@ SLOE WHITE AND RAVEN BLACK by Christina Kubisch
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_8354.jpg)
+{:.wide}
+
+![]({{site.url}}/i/IMG_8271.jpg) 
+
+![]({{site.url}}/i/IMG_8241.jpg) 
 {:.wide}

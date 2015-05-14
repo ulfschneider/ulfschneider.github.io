@@ -9,7 +9,7 @@ bottomline:
 author: 
 abstract: The Agile Manifesto represents a force that is behind any concrete Agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 ---
-This text was first published in OBJEKTspektrum, issue 5/2012, under the title [„Die Kunst in der Arbeit, eine Herausforderung des Status quo“][schneider2012]. I have enhanced and translated the initial document to publish it here.
+This text was first published in OBJEKTspektrum, issue 5/2012, under the title [„Die Kunst in der Arbeit, eine Herausforderung des Status quo“][schneider2012]. I have enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
 
 The Agile Manifesto [[Beck et al. 2001]][agilemanifesto] represents a force that is behind any concrete Agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 
