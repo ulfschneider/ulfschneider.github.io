@@ -285,10 +285,6 @@ li.post-grid {
 	padding-top:2*$spacing-unit;
 }
 
-.gallery-content .site-footer {
-	clear:both;
-	padding-top:2 * $spacing-unit;
-}
 
 ul.image-grid {
 	list-style:none;
@@ -335,7 +331,8 @@ li.image-grid .title {
  */
 .site-footer {
 		padding:0;
-    padding-top: $spacing-unit;
+		clear:both;
+		padding-top: $spacing-unit;
 		padding-bottom: 2*$spacing-unit;
 }
 

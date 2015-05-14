@@ -13,24 +13,24 @@
 					<li>Ulf Schneider</li>
           {% if site.phone %}
           <li>
-							<span>T: </span><a href="tel:{{site.phone}}">{{ site.phone }}</a>
+						<a href="tel:{{site.phone}}">{{ site.phone }}</a>
 					</li>
 					{% endif %}					
 				
           {% if site.email %}
           <li>
-							<span>M: </span><a href="mailto:{{site.email}}">{{ site.email }}</a>
+						<a href="mailto:{{site.email}}">{{ site.email }}</a>
 					</li>
-					{% endif %}					
+					{% endif %}			
+					<li>
+						<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a>
+					</li>																	
 				</ul>			
       </div>
 
       <div class="footer-col  footer-col-2">
         <ul class="contact-list">
 					{% if site.description %}<li>{{ site.description }}</li>{% endif %}
-					<li>
-						<span>R: </span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a>
-					</li>										
         </ul>				 
       </div>
     </div>

@@ -3,8 +3,10 @@
 	{% elsif page.message %} 
 		<h1 class="title">{{ page.message }}</h1>
 	{% endif %}
+	{%if page.subtitle or page.date or page.author or page.meta %}
   <div class="meta">	
 		{% if page.subtitle %}<div class="subtitle">{{page.subtitle}}</div>{% endif %}		
 		{% if page.date %}<span>{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
 		{% if page.author %}<span> by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}</span>{% endif %}
 	</div>
+	{% endif %}
