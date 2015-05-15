@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 
+title: Scrum and Architecture
 subtitle: The architect and his tools in the Scrum process
-permalink: /saa
+permalink: 
 date: 2011-06-27
-message: Scrum and Architecture
+message: 
 author: 
-abstract: Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
+abstract: Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
 ---
-This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
+This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have reworked, enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
 
-Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier, is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
+Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
 
 Iterations
 ---
@@ -24,25 +24,27 @@ The [Agile Manifesto][agilemanifesto] values „responding to change over follow
 
 Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in. Work is being „done“ every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
 
-Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement „cut through the noise by taking action“ [Schwaber and Beedle, 2004][schwaber2004].
+Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle, 2004][schwaber2004].
 
-> Putting these two behaviors together, we have an approach that can be called „deliver early and decide late“. 
+By putting these two behaviors together, we have an approach that can be called *„deliver early and decide late“*. 
+
+> Deliver early and decide late.
 
 Architectural decisions are of strategic nature for the solution space. They have an effect for many aspects of the solution and will be recognized by the users of the product. Architectural decisions define the solution space for a given problem and bridge the gap between the requirements and the implementation. It is the architecture that allows to adopt a software system with reasonable effort for changing requirements.
 
-Architectural decisions are being taken under two premises:
+Architectural decisions are being taken under two premises [Friedrichsen, 2010]:
 
 > Represent and balance the interests of all stakeholders over the entire system lifecycle and
 >
-> Minimize the total cost of ownership for the system over the entire lifecycle [Friedrichsen, 2010][friedrichsen2010]
+> Minimize the total cost of ownership for the system over the entire lifecycle 
 
-Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks states, that 
+Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks [Brooks 1995:45] states, that 
 
-> The architect of a system, like the architect for a building, is the user´s agent [Brooks 1995:45][brooks1995]
+> The architect of a system, like the architect for a building, is the user´s agent 
 
 My impression is, both quotes are true.
 
-To me, design decisions, compared to architectural decisions, are of tactical or operational nature for the solution space. Design decisions make a structure inside of the solutions space, and the solution space is spanned by the architectural decisions. The transition between architecture and design might be flowing.
+To me, design decisions, compared to architectural decisions, are of tactical or operational nature for the solution space. Design decisions make a structure inside of the solutions space, and the solution space itself is spanned by the architectural decisions. The transition between architecture and design might be flowing.
 
 ![]({{site.url}}/i/blog/architecture_bridge.jpg)
 
@@ -53,7 +55,7 @@ The cooperative role model of Scrum does not explicitly mention the architects r
 
 But in that model, how will architectural decisions being taken? Are they a result of a team-oriented brainstorming and is the decision „emergent“, as long as the decision is being taken „late“? How is ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is, that the cooperative derivation of architectural decisions improve decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
 
-Human and Process
+Human and process
 ---
 A good architecture has conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
@@ -61,7 +63,7 @@ From the perspective of Agile software development the answer is easy to find. T
 
 And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product creativity is an important solution ingredient. Humans are creative, not so processes. Creativity can be supported by organizational structures but any organization will only help if creative people in general and creative architects in particular are high valued in the context of software development.
 
-This does not mean that organization can be overlooked when we design the fields of work. Organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. „Conway´s Law“ [Conway 1968][conway1968] gives us the essential point of view: 
+This does not mean that organization can be overlooked when we design the fields of work. Organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. *„Conway´s Law“* [Conway 1968][conway1968] gives us the essential point of view: 
 
 > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization´s communication structure.
 
@@ -71,7 +73,7 @@ A complex organization with many employees and unclear responsibilities will lea
 
 Scrum with it´s underlying reduction-minded, team-oriented and result-oriented setup is a good tool to create sharp and focused products. The architect in Scrum is the helping hand to keep the conceptual integrity in the product.
 
-Multi-team Setup
+Multi-team setup
 ---
 In multi-team projects it is likely that your teams are traditionally formed around architectural components. You may have a frontend and a backend team or a mobile and a web team with team leaders and the like. 
 
@@ -102,7 +104,14 @@ This is a lot to expect from an architect. But the same is true for all other me
 
 Architecture by committee
 ---
-Don´t do it. Companywide architecture committees that are being feed with decisions from underordinated projects and that guard, release or reject architectural decisions are a bottleneck for the enterprise and for the involved projects. The parties are blocking themselves on the search for synergy. Responsibility is being carved out of the projects into the superordinated committee where focus, involvement, competence and understanding are not bound to the projects that need the decisions. Because of too many players with different interests the decisions being taken are often not focused enough and for none of the involved projects optimal.
+Don´t do it. Companywide architecture committees that are being feed with decisions from underordinated projects and that guard, release or reject architectural decisions are a bottleneck for the enterprise and for the involved projects. The parties are blocking themselves on the search for synergy. Responsibility is being carved out of the projects into the superordinated committee where focus, involvement, competence and understanding are not bound to the projects that need the decisions. 
+
+![](/{{site.url}}/i/blog/architecture_committee.jpg)
+
+Figure: Architecture by committee is the guarantee for a bloated product
+{:.figcaption}
+
+Because of too many players with different interests the decisions being taken are often not focused enough and for none of the involved projects optimal.
 
 > Architecture by committee is the guarantee for a bloated product.
 
@@ -110,7 +119,7 @@ A companywide architecture committee should instead define constraints and archi
 
 Project architects on the other hand have to follow the architecture constraints and goals given by the committee. Within this given space the architect derives architectural decisions on behalf of the project and in cooperation with the team. The architect is responsible for his decisions - this includes the decision about how and when to involve the architecture committee.
 
-Avoid architecture by committee. The architecture is in the hand of the architect and not in the many hands of the committee. Architecture by committee is the guarantee for a bloated product.
+Avoid architecture by committee [Brooks 2010:39]. The architecture is in the hand of the architect and not in the many hands of the committee. Architecture by committee is the guarantee for a bloated product.
 
 Tools
 ---
@@ -152,23 +161,27 @@ As an architect you should not jump into a project if this work can not be done,
 
 How important the knowledge of architectural goals is, can be seen in the following figures, that show different architectural goals:
 
-ARCHITECTURAL GOALS
+![](/{{site.url}}/i/blog/architecture_goals.jpg)
 
-Sometimes an Architecture Overview diagram is part of the Architecture Vision. The [Box-Bullet-Line]({{site.url}}/bbl) notation can be of help to draw the diagram and visualize process flows between architecture components.
+Figure: The importance of architecture goals
+{:.figcaption}
+
+Sometimes an Architecture Overview Diagram is part of the Architecture Vision. The [Box-Bullet-Line]({{site.url}}/bbl) notation can be of help to draw the diagram and visualize process flows between architecture components.
 
 System Context Diagram
 ---
-The System Context diagram explains the environment of the system. The system itself will be seen as a black box. The important part is to understand the surrounding forces that affect the system with their input- and output-interfaces, system boundaries and responsibilities. Such forces are users as well as resources and other systems.
+The System Context Diagram explains the environment of the system. The system itself will be seen as a black box. The important part is to understand the surrounding forces that affect the system with their input- and output-interfaces, system boundaries and responsibilities. Such forces are users as well as resources and other systems.
 
-![]()
-Figure: System Context diagram. Understand the environmental forces that are affecting the system.
+![](/{{site.url}}/i/blog/system_context.jpg)
+
+Figure: System Context Diagram. Understand the environmental forces that are affecting the system.
 {:.figcaption}
 
 The system itself will be drawn as a circle in the middle of the diagram. All surrounding components, systems and resources acting upon the system will be drawn as boxes and users will be drawn as stick figures. Communication and data streams will be drawn as arrows between the system and the environmental forces. 
 
 Non-functional requirements, like the number of data records that have to be transmitted in a specific amount of time over a communication line or the number of users hitting the system at peak times, can be placed as weights beside the arrows or at the surrounding component boxes.
 
-The System Context diagram is of value in early project stages and through out the entire project. It is best developed in a group effort together with the stakeholders of the system. By group-working, the different perspectives on the system can be visualized quickly and the architect has a hook to communicate with the stakeholders. Just draw the system in the middle (use a Metaplan board or a whiteboard). The surrounding elements can be placed by using sticky notes or moderation cards. When leveraging this technique you can easily move the environmental elements around and develop your System Context. 
+The System Context Diagram is of value in early project stages and through out the entire project. It is best developed in a group effort together with the stakeholders of the system. By group-working, the different perspectives on the system can be visualized quickly and the architect has a hook to communicate with the stakeholders. Just draw the system in the middle (use a Metaplan board or a whiteboard). The surrounding elements can be placed by using sticky notes or moderation cards. When leveraging this technique you can easily move the environmental elements around and develop your System Context. 
 
 Constraints
 ---
@@ -180,7 +193,7 @@ To maintain the list of constraints that are of relevance for the project is a t
 
 Constraints are among the many factors that lead to non-functional requirements. 
 
-Non-functional Requirements
+Non-functional requirements
 ---
 Non-functional requirements often are system-wide and can therefore not be attached to a single User Story.
 
@@ -198,9 +211,16 @@ Only in case a non-functional requirement can be directly attached to a specific
 
 In particular the following technique of the constraining resource needs this kind of measurable quantities.
 
-Constraining Resource
+Constraining resource
 ---
-When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable targets that the project team can use to measure and compare.
+When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. 
+
+![](/{{site.url}}/i/blog/constraining_resource.jpg)
+
+Figure: The constraining resource is the key limit that determines the performance of the system
+{:.figcaption}
+
+These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable targets that the project team can use to measure and compare.
 
 As an example:
 2,500,000 data records need to be processed within one hour. Currently achieved value is 1,800,000. 
@@ -231,6 +251,11 @@ A User Story does not explain how to build it. That is intentional. The User Sto
 
 You start with a BBL diagram that contains the components you think are needed to build the Story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
 
+![](/{{site.url}}/i/blog/storyboard.jpg)
+
+Figure: Storyboard. The relevant tasks for a specific User Story will be visualized in the context of the components they belong to.
+{:.figcaption}
+
 This visualization helps all involved team members to identify the connection of the tasks. The mapping from User Story to tasks supports the goal of any architecture as an intermediary between business requirements and the concrete solution structure. The Storyboard improves the understanding of the solution structure for your User Stories. 
 
 End-To-End-Skeleton
@@ -245,7 +270,7 @@ The purpose of the End-to-End-Skeleton is a full-length flow through all compone
 
 The technical specification of the interfaces should be in the hand of the architect or at least he should be part of the discussions that lead to interfaces, so that an over-arching understanding can be kept up and the data flows as well as the interfaces can be brought into the simplest possible format without duplicate or missing structures and attributes.
 
-Architecture Decisions
+Architecture decisions
 ---
 Architecture decisions represent the deliberate spanning of the solution space. Architecture decisions are anchoring points for further decisions. Being such anchoring points, makes architecture decisions difficult to change later on. With Stefan Zörner we can say 
 
@@ -289,6 +314,7 @@ References
 * [agilemanifesto]: http://agilemanifesto.org 
 [K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
 * [Brooks 1995] F. P. Brooks, „The Mythical Man Month“, Addison Wesley 1995
+* [Brooks 2010] F. P. Brooks, „The Design of Design“, Addison Wesley 2010
 * [conway1968]: http://www.melconway.com/Home/Conways_Law.html
 [Conway 1968] M. E. Conway, „How Do Committees Invent?“, 1968, <http://www.melconway.com/Home/Conways_Law.html>
 * [fowler2007]: http://www.martinfowler.com/articles/mocksArentStubs.html 
