@@ -3,38 +3,12 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-	<!--	
-	<a id="goBack" onclick="goBack()"><</a>	  
-	<a id="goTop" href="#header">⋀</a>
- 	 -->
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-					<li>Ulf Schneider</li>
-          {% if site.phone %}
-          <li>
-						<a href="tel:{{site.phone}}">{{ site.phone }}</a>
-					</li>
-					{% endif %}					
-				
-          {% if site.email %}
-          <li>
-						<a href="mailto:{{site.email}}">{{ site.email }}</a>
-					</li>
-					{% endif %}			
-					<li>
-						<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a>
-					</li>																	
-				</ul>			
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="contact-list">
-					{% if site.description %}<li>{{ site.description }}</li>{% endif %}
-        </ul>				 
-      </div>
-    </div>
-
+        <ul>
+			<li>{{site.title}}</li>
+          	{% if site.phone %}<li><a href="tel:{{site.phone}}">{{ site.phone }}</a></li>{% endif %}						
+			{% if site.email %}<li><a href="mailto:{{site.email}}">{{ site.email }}</a></li>{% endif %}			
+			<li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a></li>																	
+		</ul>			
   </div>
 
 </footer>

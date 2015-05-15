@@ -24,7 +24,7 @@ The [Agile Manifesto][agilemanifesto] values *„responding to change over follo
 
 Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
 
-Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle, 2004][schwaber2004].
+Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle 2004].
 
 By putting these two behaviors together, we have an approach that can be called *„deliver early and decide late“*. 
 
@@ -32,7 +32,7 @@ By putting these two behaviors together, we have an approach that can be called 
 
 Architectural decisions are of strategic nature for the solution space. They have an effect for many aspects of the solution and will be recognized by the users of the product. Architectural decisions define the solution space for a given problem and bridge the gap between the requirements and the implementation. It is the architecture that allows to adopt a software system with reasonable effort for changing requirements.
 
-Architectural decisions are being taken under two premises [Friedrichsen, 2010]:
+Architectural decisions are being taken under two premises [Friedrichsen 2010]:
 
 > Represent and balance the interests of all stakeholders over the entire system lifecycle and
 >
@@ -59,11 +59,11 @@ Human and process
 ---
 A good architecture has conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
-From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that *„individuals and interactions are valued higher than processes and tools“* [Agile Manifesto][agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
+From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that *„individuals and interactions are valued higher than processes and tools“* [[Agile Manifesto]][agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
 
 And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product creativity is an important solution ingredient. Humans are creative, not so processes. Creativity can be supported by organizational structures but any organization will only help if creative people in general and creative architects in particular are high valued in the context of software development.
 
-This does not mean that organization can be overlooked when we design the fields of work. Organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. *„Conway´s Law“* [Conway 1968][conway1968] gives us the essential point of view: 
+This does not mean that organization can be overlooked when we design the fields of work. Organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. *„Conway´s Law“* [[Conway 1968]][conway1968] gives us the essential point of view: 
 
 > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization´s communication structure.
 
@@ -95,10 +95,13 @@ The architect in Scrum
 ---
 Coming from the organization to the individual, we have to think about the architects role. Here are some suggestions to embed the architect into a Scrum endeavor:
 
-* *Embedding:* If the architect is part of the Scrum Development Team or if a more separate position is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will simply take his role inside of the Development Team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner. 
-* *Decision competency:* Analogous to the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions. He helps to define the product.
-* *Member of the project:* The architect is proactively responsible for the architecture of the solution space. And she is expected to have the same willingness to collaborate and drive to improve the development process as it is expected from all other team members.
-* *Coding skills:* The architect is accepted by the Scrum Team. Her contributions enrich the product and she provides benefits to the team. For software development projects it is inevitable that the architect is able to write code in order to understand technical details and working dynamics. In most cases the background of an architect is of technical nature. This requires her to be open and to be willing to learn the important aspects of the business or problem domain.
+* Embedding: If the architect is part of the Scrum Development Team or if a more separate position is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will simply take his role inside of the Development Team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner. 
+
+* Decision competency: Analogous to the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions. He helps to define the product.
+
+* Member of the project: The architect is proactively responsible for the architecture of the solution space. And she is expected to have the same willingness to collaborate and drive to improve the development process as it is expected from all other team members.
+
+* Coding skills: The architect is accepted by the Scrum Team. Her contributions enrich the product and she provides benefits to the team. For software development projects it is inevitable that the architect is able to write code in order to understand technical details and working dynamics. In most cases the background of an architect is of technical nature. This requires her to be open and to be willing to learn the important aspects of the business or problem domain.
 
 This is a lot to expect from an architect. But the same is true for all other members of a Scrum Team. A developer is expected to be on top of his craft, a Product Owner must be able to influence his organization and have a high competence in making business relevant decisions to serve the product. The business experts need to be able to develop concise requirements and even testcases. Vice versa the architect must be able to fill out his role or at least has to learn the relevant aspects over the course of the project.
 
@@ -159,7 +162,7 @@ The architect will work closely together with the Product Owner to align the goa
 
 As an architect you should not jump into a project if this work can not be done, otherwise chances for a project success are limited from the start. It is like the saying: *„A shirt will never fit right if you miss the first buttonhole.“*
 
-How important the knowledge of architectural goals is, can be seen in the following figures, that show different architectural goals:
+How important the knowledge of architectural goals is, can be seen in the following figures, that stand for different architectural goals:
 
 ![]({{site.url}}/i/blog/architecture_goals.jpg)
 
@@ -280,22 +283,26 @@ All aspects and tools that we have touched so far influence the way in which arc
 
 Architecture decisions need to be communicated. Besides the spoken language, which is a central part, the written form can not be omitted. By writing down architecture decisions, the entire team or project will be enabled to trace even long in the past taken decisions. Stefan Zörner [Zörner 2009] has a real practical approach for the derivation and documentation of architecture decisions, which simply goes by writing down the answers to the following questions:
 
-* Problem  
+1.	Problem
 	* What in detail is the problem?
 	* Why is it of relevance for the architecture?
 	* Which impacts has the decision?
-* Constraints
+
+2. Constraints
 	* What constraints need to be considered?
 	* What influencing factors need to be considered?
-* Assumptions
+
+3. Assumptions
 	* What assumptions have been made?
 	* What assumptions can be validated?
 	* What risks exist?
-* Alternatives
+
+4. Alternatives
 	* What alternatives have been examined?
 	* How is each of the alternatives being assessed?
 	* What alternatives are by intent being skipped?
-* Decision
+
+5. Decision
 	* What is the decision?
 	* Who took the decision?
 	* How is the decision being reasoned?
@@ -311,22 +318,32 @@ The essay is a plea for the rights and obligations of the architect acting insid
 
 References
 ---
-* [agilemanifesto]: http://agilemanifesto.org 
+[agilemanifesto]: http://agilemanifesto.org 
 [K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
-* [Brooks 1995] F. P. Brooks, „The Mythical Man Month“, Addison Wesley 1995
-* [Brooks 2010] F. P. Brooks, „The Design of Design“, Addison Wesley 2010
-* [conway1968]: http://www.melconway.com/Home/Conways_Law.html
+
+[Brooks 1995] F. P. Brooks, „The Mythical Man Month“, Addison Wesley 1995
+
+[Brooks 2010] F. P. Brooks, „The Design of Design“, Addison Wesley 2010
+
+[conway1968]: http://www.melconway.com/Home/Conways_Law.html
 [Conway 1968] M. E. Conway, „How Do Committees Invent?“, 1968, <http://www.melconway.com/Home/Conways_Law.html>
-* [fowler2007]: http://www.martinfowler.com/articles/mocksArentStubs.html 
+
+[fowler2007]: http://www.martinfowler.com/articles/mocksArentStubs.html 
 [Fowler 2007] M. Fowler, „Mocks Aren´t Stubs“, 2007, <http://www.martinfowler.com/articles/mocksArentStubs.html>
-* [Friedrichsen 2010] U. Friedrichsen, „Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten“, OBJEKTspektrum, Ausgabe 3, 2010
-* [businessmodelcanvas]: http://www.businessmodelgeneration.com
+
+[Friedrichsen 2010] U. Friedrichsen, „Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten“, OBJEKTspektrum, Ausgabe 3, 2010
+
+[businessmodelcanvas]: http://www.businessmodelgeneration.com
 [Osterwalder] Business Model Canvas, <http://businessmodelgeneration.com/book?_ga=1.264929356.2127012834.1431598082> 
-* [schneider2011]: {{site.url}}/r/blog/schneider_os_04_11.pdf 
+
+[schneider2011]: {{site.url}}/r/blog/schneider_os_04_11.pdf 
 [Schneider 2011] [U. Schneider, „Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“, OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/r/schneider_os_04_11.pdf)
-* [Schwaber 20004] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 2004 
-* [Zörner 2009] S. Zörner, „Historisch gewachsen? - Entscheidungen festhalten“, Java Magazin 04/2009
-* [Zörner 2010] S. Zörner, „Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?“, Java Magazin 10/2010
+
+[Schwaber 20004] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 2004 
+
+[Zörner 2009] S. Zörner, „Historisch gewachsen? - Entscheidungen festhalten“, Java Magazin 04/2009
+
+[Zörner 2010] S. Zörner, „Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?“, Java Magazin 10/2010
 
 
 

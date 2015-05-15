@@ -6,9 +6,7 @@ abstract:
 thumburl: /i/IMG_8370_thumb.jpg
 tags: [bw, color, things]
 ---
-This is one of the rare occasions when you will see color photos on these pages. 
-
-The photos emphasize the artefacts, they are without people. There is another page [light-people-unna]({{site.url}}/light-people-unna) showing some people at the same location. 
+The photos emphasize the artefacts at the Centre for International Light Art in Unna, they are without people. There is another page [light-people-unna]({{site.url}}/light-people-unna) showing some people at the same location. 
 
 To cite the exhibition catalogue: „The Centre for International Light Art in Unna has a worldwide unique profile: it is the first and so far only museum dedicated exlusively to light art. The collection, founded in 2001, focuses on one of the most advanced genres of contemporary art. The most famous light artists of their time have created light installations exclusively for the maze-like vaulted cellars of the former Lindenbrauerei. This unconventional cosmos of a space deep below ground and its individual architectural offshoots above ground gather original works by Christian Boltansky, Olafur Eliasson, Johannes Dinnebier, Rebecca Horn, Brigitte Kowanz, Joseph Kosuth, Mischa Kuball, Christina Kubisch, Mario Merz, Francois Morellet, Jan van Munster, Keith Sonnier and James Turrell.“
 
