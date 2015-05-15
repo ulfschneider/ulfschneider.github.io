@@ -267,7 +267,7 @@ In multi-team setups an integrated feature delivery can be achieved by using the
 
 Important is an initial interface definition between the components. Even this definition may change later, but you have to use a technical contract right from the start to model the end-to-end flow and make the programming efforts operational.
 
-For sure it will occur that some functionalities will be developed later and some earlier. The later ones need to be represented by test doubles (like a stunt double in movies, but in software development these doubles are mocks, fakes or stubs) [Fowler 2007][fowler2007]. The test doubles can produce some results for specific datasets but are no productive implementation of the needed functionality. Test doubles allow to test early some end-to-end flows.
+For sure it will occur that some functionalities will be developed later and some earlier. The later ones need to be represented by test doubles (like a stunt double in movies, but in software development these doubles are mocks, fakes or stubs) [[Fowler 2007]][fowler2007]. The test doubles can produce some results for specific datasets but are no productive implementation of the needed functionality. Test doubles allow to test early some end-to-end flows.
 
 The purpose of the End-to-End-Skeleton is a full-length flow through all components that are touched by the new feature. This ensures from the start an integrated view of all actors and the development is being bound to concrete interfaces. It becomes immediately visible if the full-length flow is interrupted at any point.
 
