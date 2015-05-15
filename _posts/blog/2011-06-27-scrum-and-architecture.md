@@ -28,7 +28,7 @@ Software development is a learning process. After finishing a project we normall
 
 By putting these two behaviors together, we have an approach that can be called *„deliver early and decide late“*. 
 
-> Deliver early and decide late.
+> Deliver early and decide late
 
 Architectural decisions are of strategic nature for the solution space. They have an effect for many aspects of the solution and will be recognized by the users of the product. Architectural decisions define the solution space for a given problem and bridge the gap between the requirements and the implementation. It is the architecture that allows to adopt a software system with reasonable effort for changing requirements.
 
