@@ -106,7 +106,7 @@ Architecture by committee
 ---
 Don´t do it. Companywide architecture committees that are being feed with decisions from underordinated projects and that guard, release or reject architectural decisions are a bottleneck for the enterprise and for the involved projects. The parties are blocking themselves on the search for synergy. Responsibility is being carved out of the projects into the superordinated committee where focus, involvement, competence and understanding are not bound to the projects that need the decisions. 
 
-![](/{{site.url}}/i/blog/architecture_committee.jpg)
+![]({{site.url}}/i/blog/architecture_committee.jpg)
 
 Figure: Architecture by committee is the guarantee for a bloated product
 {:.figcaption}
@@ -161,7 +161,7 @@ As an architect you should not jump into a project if this work can not be done,
 
 How important the knowledge of architectural goals is, can be seen in the following figures, that show different architectural goals:
 
-![](/{{site.url}}/i/blog/architecture_goals.jpg)
+![]({{site.url}}/i/blog/architecture_goals.jpg)
 
 Figure: The importance of architecture goals
 {:.figcaption}
@@ -172,7 +172,7 @@ System Context Diagram
 ---
 The System Context Diagram explains the environment of the system. The system itself will be seen as a black box. The important part is to understand the surrounding forces that affect the system with their input- and output-interfaces, system boundaries and responsibilities. Such forces are users as well as resources and other systems.
 
-![](/{{site.url}}/i/blog/system_context.jpg)
+![]({{site.url}}/i/blog/system_context.jpg)
 
 Figure: System Context Diagram. Understand the environmental forces that are affecting the system.
 {:.figcaption}
@@ -215,7 +215,7 @@ Constraining resource
 ---
 When crafting a system, the non-functional requirements, constraints and the architecture goals will lead the project team to the limiting or constraining resources. 
 
-![](/{{site.url}}/i/blog/constraining_resource.jpg)
+![]({{site.url}}/i/blog/constraining_resource.jpg)
 
 Figure: The constraining resource is the key limit that determines the performance of the system
 {:.figcaption}
@@ -251,7 +251,7 @@ A User Story does not explain how to build it. That is intentional. The User Sto
 
 You start with a BBL diagram that contains the components you think are needed to build the Story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
 
-![](/{{site.url}}/i/blog/storyboard.jpg)
+![]({{site.url}}/i/blog/storyboard.jpg)
 
 Figure: Storyboard. The relevant tasks for a specific User Story will be visualized in the context of the components they belong to.
 {:.figcaption}
