@@ -1,10 +1,9 @@
 ---
 layout: image
-title: 
-message: Bauhaus Dessau
+title: Bauhaus Dessau
 date:   2013-06-11
 abstract: 
-thumburl: /i/IMG_5796_thumb.jpg
+thumburl: 
 tags: [bw, things]
 ---
 The Bauhaus Dessau is a great place to experience the open-mindedness, the idealistic new thinking and the architectural style that influenced almost every architect and designer in the last 90 years. 
