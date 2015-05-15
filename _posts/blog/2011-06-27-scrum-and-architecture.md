@@ -18,7 +18,7 @@ Scrum is team-oriented and separates the delivery process into subsequent iterat
 
 To achieve conceptual integrity it has to be considered during the entire design and delivery process of a software solution. In this essay you will find organizational and manual suggestions with the purpose to support conceptual integrity in the Scrum process. I will emphasize the role of the architect as an important player with strong responsibilities for the conceptual integrity of the software product.
 
-Scrum and architecture
+Scrum and Architecture
 ---
 The [Agile Manifesto][agilemanifesto] values „responding to change over following a plan“. By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
 
