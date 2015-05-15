@@ -20,9 +20,9 @@ To achieve conceptual integrity it has to be considered during the entire design
 
 Scrum and Architecture
 ---
-The [Agile Manifesto][agilemanifesto] values „responding to change over following a plan“. By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
+The [Agile Manifesto][agilemanifesto] values *„responding to change over following a plan“.* By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
 
-Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in. Work is being „done“ every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
+Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
 
 Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle, 2004][schwaber2004].
 
@@ -53,13 +53,13 @@ Figure: Architecture as a bridge between the problem- and the solution space. Ar
 
 The cooperative role model of Scrum does not explicitly mention the architects role. Except of the Product Owner, the Scrum Master and the Development Team no other roles are named. It is supposed that the members of the Scrum Team will self-organize and find suitable solutions. 
 
-But in that model, how will architectural decisions being taken? Are they a result of a team-oriented brainstorming and is the decision „emergent“, as long as the decision is being taken „late“? How is ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is, that the cooperative derivation of architectural decisions improve decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
+But in that model, how will architectural decisions being taken? Are they a result of a team-oriented brainstorming and is the decision *„emergent“*, as long as the decision is being taken *„late“*? How is ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is, that the cooperative derivation of architectural decisions improve decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
 
 Human and process
 ---
 A good architecture has conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
-From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that „individuals and interactions are valued higher than processes and tools“ [Agile Manifesto][agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
+From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that *„individuals and interactions are valued higher than processes and tools“* [Agile Manifesto][agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
 
 And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product creativity is an important solution ingredient. Humans are creative, not so processes. Creativity can be supported by organizational structures but any organization will only help if creative people in general and creative architects in particular are high valued in the context of software development.
 
@@ -157,7 +157,7 @@ Architecture Vision
 ---
 The architect will work closely together with the Product Owner to align the goals. Once identified, the architecture goals will be listed in an Architecture Vision statement or be embedded into the Product Vision. 
 
-As an architect you should not jump into a project if this work can not be done, otherwise chances for a project success are limited from the start. It is like the saying: „A shirt will never fit right if you miss the first buttonhole.“
+As an architect you should not jump into a project if this work can not be done, otherwise chances for a project success are limited from the start. It is like the saying: *„A shirt will never fit right if you miss the first buttonhole.“*
 
 How important the knowledge of architectural goals is, can be seen in the following figures, that show different architectural goals:
 
@@ -247,7 +247,7 @@ In Scrum we handle with requirements in the form of User Stories. The Product Ba
 
 A User Story does not explain how to build it. That is intentional. The User Story says what, why and gives context, but it does not explain the how, in order to give room for self-organization. 
 
-> The Storyboard supports the mapping from the „what“ to the „how“. The relevant tasks for a specific Story will be visualized in the context of the components they belong to. 
+> The Storyboard supports the mapping from the *„what“* to the *„how“.* The relevant tasks for a specific Story will be visualized in the context of the components they belong to. 
 
 You start with a BBL diagram that contains the components you think are needed to build the Story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
 
@@ -272,9 +272,9 @@ The technical specification of the interfaces should be in the hand of the archi
 
 Architecture decisions
 ---
-Architecture decisions represent the deliberate spanning of the solution space. Architecture decisions are anchoring points for further decisions. Being such anchoring points, makes architecture decisions difficult to change later on. With Stefan Zörner we can say 
+Architecture decisions represent the deliberate spanning of the solution space. Architecture decisions are anchoring points for further decisions. Being such anchoring points, makes architecture decisions difficult to change later on. With Stefan Zörner [Zörner, 2010] we can say 
 
-> „The one who is in charge of deriving architecture decisions in a comprehensible manner develops the architecture.“ [Zörner, 2010]
+> The one who is in charge of deriving architecture decisions in a comprehensible manner develops the architecture. 
 
 All aspects and tools that we have touched so far influence the way in which architecture decisions are being taken.
 
