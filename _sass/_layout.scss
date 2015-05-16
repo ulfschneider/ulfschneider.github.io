@@ -142,21 +142,27 @@ h3, h4 {
 		margin-bottom:$spacing-unit;
 		display: block;
 		margin-left: auto;
-	  	margin-right: auto;
+	  margin-right: auto;
+		max-height:600px;
 	}		
 	
-	.left img {
-		display:inline-block;
+	 .image img {
+		margin-left:0;
+		margin-top:$spacing-unit * 2;
 	}
+	
+	
+	
 }
 
 
 .wide img, img.wide {
-  	display:block;
+  display:block;
 	width:100%;
+	max-height:100%;
 	border:none;
 	margin-left:0;
-  	margin-right:0;
+  margin-right:0;
 	
 }
 
@@ -303,7 +309,7 @@ li.image-grid .title {
 		max-height:400px;
 	}
 	
-  	.extend-image-on-palm img, img.extend-image-on-palm {
+  	.image.extend-image-on-palm img, .image img.extend-image-on-palm {
  		margin-left:-$spacing-unit / 2;
  		margin-left:0 \0; /*IE8 and below */
  		margin-right:-$spacing-unit / 2;
@@ -311,13 +317,15 @@ li.image-grid .title {
  		min-width:calc(100% + #{$spacing-unit});
  		max-width:calc(100% + #{$spacing-unit});
  		max-width:100% \0; /*IE8 and below */;
+		max-height:100%;
  	}
 	
 	.extend-image-on-palm .wide img, .extend-image-on-palm img.wide {
 		margin-left:0;
-	  	margin-right:0;
+	  margin-right:0;
 		min-width:100%;
 		width:100%;
+		max-height:100%;
 	}
 	
 	.portrait {
