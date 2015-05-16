@@ -200,7 +200,7 @@ figcaption, .figcaption {
 		
 		.title {
 			font-size: $base-font-size * 1.3;
-			line-height: 1.5em;		
+			line-height:$base-line-height;
 		}
 		
 		a {
