@@ -159,7 +159,7 @@ h3, h4 {
 .wide img, img.wide {
   display:block;
 	width:100%;
-	max-height:100%;
+	max-height:auto;
 	border:none;
 	margin-left:0;
   margin-right:0;
@@ -317,7 +317,7 @@ li.image-grid .title {
  		min-width:calc(100% + #{$spacing-unit});
  		max-width:calc(100% + #{$spacing-unit});
  		max-width:100% \0; /*IE8 and below */;
-		max-height:100%;
+		max-height:auto;
  	}
 	
 	.image.extend-image-on-palm .wide img, .image.extend-image-on-palm img.wide {
@@ -325,7 +325,7 @@ li.image-grid .title {
 	  margin-right:0;
 		min-width:100%;
 		width:100%;
-		max-height:100%;
+		max-height:auto;
 	}
 	
 	.portrait {
