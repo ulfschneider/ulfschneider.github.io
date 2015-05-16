@@ -10,8 +10,8 @@ layout: default
 	{% if post.layout contains 'post' and post.title %}
 
 	<li class="post-grid">
-			<a class="more" href="{{ post.url | prepend: site.baseurl }}"><span class="title">{{ post.title }}</span></a>
 			<p>
+			<a class="more" href="{{ post.url | prepend: site.baseurl }}"><span class="title">{{ post.title }}</span></a>
 			{% if post.abstract %}
 			{{ post.abstract }}
 			{% else %}
