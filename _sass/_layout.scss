@@ -220,14 +220,6 @@ figcaption, .figcaption {
 			font-size: $big-font-size;
 		}
 		
-		&:hover {
-			a.more {
-				color:$background-color;
-				background-color:$text-color;
-				transition-duration: $transition-duration;			
-			}
-		}	
-		
 		&::before{
 			content:none;
 			padding:0;

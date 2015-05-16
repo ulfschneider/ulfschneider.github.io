@@ -10,13 +10,14 @@ layout: default
 	{% if post.layout contains 'post' and post.title %}
 
 	<li class="post-grid">
-			<span class="title">{{ post.title }}</span><p>
+			<a class="more" href="{{ post.url | prepend: site.baseurl }}"><span class="title">{{ post.title }}</span></a>
+			<p>
 			{% if post.abstract %}
 			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
 			{% endif %}
-			<br><a class="more" href="{{ post.url | prepend: site.baseurl }}">More</a>
+			<a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
 		</p>
 	</li>
   {% endif %}
