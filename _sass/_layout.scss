@@ -142,24 +142,22 @@ h3, h4 {
 		margin-bottom:$spacing-unit;
 		display: block;
 		margin-left: auto;
-	  margin-right: auto;
-		max-height:600px;
-	}		
+	  margin-right: auto;		
+	}			
 	
-	 .image img {
+}
+
+.image-page img {
 		margin-left:0;
 		margin-top:$spacing-unit * 2;
-	}
-	
-	
-	
+		max-height:600px;
 }
 
 
 .wide img, img.wide {
   display:block;
 	width:100%;
-	max-height:auto;
+	max-height:none;
 	border:none;
 	margin-left:0;
   margin-right:0;
@@ -309,24 +307,26 @@ li.image-grid .title {
 		max-height:400px;
 	}
 	
-  	.image.extend-image-on-palm img, .image img.extend-image-on-palm {
- 		margin-left:-$spacing-unit / 2;
- 		margin-left:0 \0; /*IE8 and below */
- 		margin-right:-$spacing-unit / 2;
- 		margin-right:0 \0; /*IE8 and below */;
- 		min-width:calc(100% + #{$spacing-unit});
- 		max-width:calc(100% + #{$spacing-unit});
- 		max-width:100% \0; /*IE8 and below */;
-		max-height:auto;
- 	}
 	
-	.image.extend-image-on-palm .wide img, .image.extend-image-on-palm img.wide {
-		margin-left:0;
-	  margin-right:0;
-		min-width:100%;
-		width:100%;
-		max-height:auto;
-	}
+	.image-page img {
+		margin-left:-$spacing-unit / 2;
+		margin-left:0 \0; /*IE8 and below */
+		margin-right:-$spacing-unit / 2;
+		margin-right:0 \0; /*IE8 and below */;
+		min-width:calc(100% + #{$spacing-unit});
+		max-width:calc(100% + #{$spacing-unit});
+		max-width:100% \0; /*IE8 and below */;
+		max-height:none;
+ }
+	
+ .wide img {
+	 margin-left:0;
+	 margin-right:0;
+	 min-width:100%;
+	 width:100%;
+	 max-height:none;
+ }
+	
 	
 	.portrait {
 		display:block;
