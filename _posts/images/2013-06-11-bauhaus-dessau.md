@@ -10,26 +10,50 @@ The Bauhaus Dessau is a great place to experience the open-mindedness, the ideal
 
 ![](/i/IMG_5778.jpg)
 
-![](/i/IMG_5796.jpg)
+<div>
+<figure>
+<img src="/i/IMG_5853.jpg" />
+</figure>
+<figure>
+<img src="/i/IMG_5887.jpg" />
+</figure>
+</div>
+{: .breakout .double}
 
-![](/i/IMG_5853.jpg)
-
-![](/i/IMG_5887.jpg)
-
-![](/i/IMG_5899.jpg)
+<div>
+<figure>
+<img src="/i/IMG_5796.jpg" />
+</figure>
+<figure>
+<img src="/i/IMG_5899.jpg" />
+</figure>
+</div>
+{:.breakout .double}
 
 Five images above: A tour around the Bauhaus building.
 {:.figcaption}
 
-![](/i/IMG_5823.jpg)
-
-![](/i/IMG_5826.jpg)
+<div>
+<figure>
+<img src="/i/IMG_5823.jpg" />
+</figure>
+<figure>
+<img src="/i/IMG_5826.jpg" />
+</figure>
+</div>
+{:.breakout .double}
 
 ![](/i/IMG_5827.jpg)
 
-![](/i/IMG_5830.jpg)
-
-![](/i/IMG_5828.jpg)
+<div>
+<figure>
+<img src="/i/IMG_5830.jpg" />
+</figure>
+<figure>
+<img src="/i/IMG_5828.jpg" /> 
+</figure>
+</div>
+{:.breakout .double}
 
 Five images above: Entering the building.
 {:.figcaption}
@@ -46,15 +70,22 @@ Two images above: Walking the stairs up and down.
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
 {:.figcaption}
 
-![](/i/IMG_5833.jpg)
-
+<div>
+<figure>
+<img src="/i/IMG_5833.jpg" />
+<figcaption>
 The functional parts are visible
-{:.figcaption}
+</figcaption>
+</figure>
 
-![](/i/IMG_5850.jpg)
-
+<figure>
+<img src="/i/IMG_5850.jpg" />
+<figcaption>
 Junkers heating
-{:.figcaption}
+</figcaption>
+</figure>
+</div>
+{:.breakout .double}
 
 ![](/i/IMG_5890.jpg)
 
@@ -63,12 +94,24 @@ The steel house by Georg Muche and Richard Paulick
 
 ![](/i/IMG_5804.jpg)
 
-![](/i/IMG_5798.jpg)
-
-![](/i/IMG_5808.jpg)
-
-Three images above: The Prellerhaus
+Prellerhaus
 {:.figcaption}
+
+<div>
+<figure>
+<img src="/i/IMG_5808.jpg" />
+<figcaption>
+Step out on the balcony at the Prellerhaus
+</figcaption>
+</figure>
+<figure>
+<img src="/i/IMG_5798.jpg" />
+<figcaption>
+Facade of the Prellerhaus
+</figcaption>
+</figure>
+</div>
+{: .breakout .double}
 
 ![](/i/IMG_5889.jpg)
 

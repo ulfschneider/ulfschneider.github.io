@@ -146,7 +146,7 @@ h3, h4 {
 
 .image-page img {
 		margin-left:0;
-		margin-top:$spacing-unit * 2;
+		margin-top:$spacing-unit * 1.5;
 		margin-bottom:$spacing-unit * 2;
 		max-height:700px;
 }
@@ -160,6 +160,19 @@ h3, h4 {
 	margin-left:0;
   margin-right:0;
 	
+}
+
+
+.double {
+	clear:both;
+	figure {
+		padding-left:$spacing-unit;
+		padding-right:$spacing-unit;
+		display:inline-block;
+		width:49%;
+		vertical-align:top;
+		
+	}
 }
 
 .portrait {
@@ -323,7 +336,22 @@ li.image-grid .title {
 		max-width:calc(100% + #{$spacing-unit});
 		max-width:100% \0; /*IE8 and below */;
 		max-height:none;
+
  }
+ 
+.double {
+	figure {
+		padding-left:$spacing-unit / 2;
+		padding-right:$spacing-unit / 2;
+		
+		img {
+			margin-left:0;
+			margin-right:0;
+			min-width:100%;
+			max-width:100%;
+		}
+	}
+}
 	
  .wide img {
 	 margin-left:0;

@@ -7,9 +7,20 @@ function wide(cssClass) {
 		$(cssClass).css('margin-right', -((width - wrapperWidth)/2));		
 }
 
+function breakout(cssClass) {
+		var width = $(window).width();
+		var breakoutWidth = 1000;
+		var useWidth = Math.min(width, breakoutWidth);
+		var wrapperWidth = $('.wrapper').width();
+		$(cssClass).css('max-width', useWidth);
+		$(cssClass).css('margin-left', -((useWidth - wrapperWidth)/2));
+		$(cssClass).css('margin-right', -((useWidth - wrapperWidth)/2));		
+}
+
 
 function wider() {
 	wide('.wide');	
+	breakout('.breakout');
 }
 
 
@@ -67,7 +78,7 @@ $(window).resize(function(e) {
    {
        clearTimeout(window.resizeEvt);
        window.resizeEvt = setTimeout(function() {  sizing();
-       }, 250);
+       }, 100);
    });
 });
 
