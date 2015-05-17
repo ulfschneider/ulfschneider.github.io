@@ -12,7 +12,8 @@ function breakout(cssClass) {
 		var breakoutWidth = 1000;
 		var useWidth = Math.min(width, breakoutWidth);
 		var wrapperWidth = $('.wrapper').width();
-		$(cssClass).css('max-width', useWidth);
+		$(cssClass).css('width', useWidth);
+		$(cssClass).css('max-width', useWidth);		
 		$(cssClass).css('margin-left', -((useWidth - wrapperWidth)/2));
 		$(cssClass).css('margin-right', -((useWidth - wrapperWidth)/2));		
 }

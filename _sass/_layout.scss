@@ -163,15 +163,15 @@ h3, h4 {
 }
 
 
+
 .double {
 	clear:both;
+
 	figure {
 		padding-left:$spacing-unit;
 		padding-right:$spacing-unit;
-		display:inline-block;
-		width:48%;
-		vertical-align:top;
-		
+		float:left;
+		width:50%;
 	}
 }
 
@@ -201,8 +201,9 @@ figcaption, .figcaption {
 	line-height:$extra-small-font-size * 1.5;
 }
 
-.image-page .figcaption, .image-page figcaption {
-	margin-top:-1.5 * $spacing-unit;
+
+.image-page figcaption, .image-page .figcaption {
+	margin-top:-$spacing-unit * 1.5;
 }
 
 
