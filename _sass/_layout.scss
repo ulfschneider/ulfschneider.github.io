@@ -302,7 +302,7 @@ li.image-grid .title {
 @include media-query($on-palm) {
 	
 	
-	img.LHOP {
+	img.LHOP, .LHOP img {
 		/*limit height on palm*/
 		max-height:400px;
 	}
