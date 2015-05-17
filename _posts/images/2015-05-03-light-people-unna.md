@@ -20,13 +20,11 @@ THE REFLECTING CORRIDOR by Olafur Eliasson
 
 
 ![]({{site.url}}/i/IMG_8347.jpg)
-{:.wide}
 
 ![]({{site.url}}/i/IMG_8275.jpg)
 
 
 ![]({{site.url}}/i/IMG_8258.jpg)
-{:.wide}
 
 ![]({{site.url}}/i/IMG_8256.jpg)
 

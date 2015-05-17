@@ -26,14 +26,12 @@ Two images above: THE REFLECTING CORRIDOR by Olafur Eliasson
 ![]({{site.url}}/i/IMG_8247.jpg) 
 
 ![]({{site.url}}/i/IMG_8367.jpg) 
-{:.wide}
 
 Four images above: SPACE - SPEECH - SPEED by Mischa Kuball. 
 {:.figcaption}
 
 
 ![]({{site.url}}/i/IMG_8248.jpg)
-{:.wide}
 
 I (IN DIALOGUE) by Jan van Munster
 {:.figcaption}
@@ -41,7 +39,6 @@ I (IN DIALOGUE) by Jan van Munster
 ![]({{site.url}}/i/IMG_8252.jpg)
 
 ![]({{site.url}}/i/IMG_8366.jpg)
-{:.wide}
 
 ![]({{site.url}}/i/IMG_8364.jpg)
 
@@ -69,9 +66,7 @@ SLOE WHITE AND RAVEN BLACK by Christina Kubisch
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_8354.jpg)
-{:.wide}
 
 ![]({{site.url}}/i/IMG_8271.jpg) 
 
 ![]({{site.url}}/i/IMG_8241.jpg) 
-{:.wide}
