@@ -173,6 +173,20 @@ h3, h4 {
 	}
 }
 
+figcaption, .figcaption {
+	margin-top:-$spacing-unit;
+	font-size:$extra-small-font-size;
+	display:block;
+	margin-bottom:$spacing-unit;
+	line-height:$extra-small-font-size * 1.5;
+}
+
+.figcaption {
+	clear:both;
+}
+
+
+
 .portrait {
 	width:150px;
 	height:150px;
@@ -186,19 +200,17 @@ h3, h4 {
 	background-image:url(/r/u150.jpg);
 }
 
+
+
 .big {
 	font-size:$big-font-size;
 }
+	
+	
+	
+	
+	
 
-
-figcaption, .figcaption {
-	margin-top:-$spacing-unit;
-	font-size:$extra-small-font-size;
-	display:block;
-	margin-bottom:$spacing-unit;
-	line-height:$extra-small-font-size * 1.5;
-	clear:both;
-}
 
 
 

@@ -104,14 +104,13 @@ Step out on the balcony at the Prellerhaus
 Facade of the Prellerhaus
 </figcaption>
 </figure>
-</div>
-{:.double}
+</div> {:.double}
 
-![]({{site.url}}/i/IMG_5889.jpg)
+
+<img src="{{site.url}}/i/IMG_5889.jpg" />
 
 A Laubenganghaus by Hannes Meyer
 {:.figcaption}
-
 
 ![]({{site.url}}/i/IMG_5888.jpg)
 

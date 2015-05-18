@@ -12,18 +12,27 @@ To cite the exhibition catalogue: „The Centre for International Light Art in U
 
 In case you are in Unna, Germany, this exhibition is worth a visit. 
 
-![]({{site.url}}/i/IMG_8337.jpg)
-
-![]({{site.url}}/i/IMG_8278.jpg)
-
+<div>
+<figure>
+<img src="{{site.url}}/i/IMG_8337.jpg" />
+</figure>
+<figure>
+<img src="{{site.url}}/i/IMG_8278.jpg" />
+</figure>
+</div> {:.double}
 Two images above: THE REFLECTING CORRIDOR by Olafur Eliasson
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_8370.jpg) 
 
-![]({{site.url}}/i/IMG_8244.jpg) 
-
-![]({{site.url}}/i/IMG_8247.jpg) 
+<div>
+<figure>
+<img src="{{site.url}}/i/IMG_8244.jpg" />
+</figure>
+<figure>
+<img src="{{site.url}}/i/IMG_8247.jpg" />
+</figure>
+</div> {:.double}
 
 ![]({{site.url}}/i/IMG_8367.jpg) 
 
