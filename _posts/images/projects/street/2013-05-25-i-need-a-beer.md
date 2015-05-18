@@ -1,6 +1,6 @@
 ---
 layout: image
-title: Girls having fun
+title: I need a beer
 permalink: 
 date:   2013-05-25
 abstract: 

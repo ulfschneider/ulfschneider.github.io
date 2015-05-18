@@ -1,6 +1,6 @@
 ---
 layout: image
-title: Taiko girl
+title: Taiko woman
 permalink: 
 date:   2013-05-25
 abstract: 
