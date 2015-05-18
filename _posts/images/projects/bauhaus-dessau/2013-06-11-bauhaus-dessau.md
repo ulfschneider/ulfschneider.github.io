@@ -20,19 +20,35 @@ The Bauhaus Dessau is a great place to experience the open-mindedness, the ideal
 </div>
 {:.double}
 
+<div>
+<figure>
 <img src="{{site.url}}/i/IMG_5796.jpg" />
+</figure>
+<figure>
 <img src="{{site.url}}/i/IMG_5899.jpg" />
+</figure>
+</div>
+{:.double}
 
 Five images above: A tour around the Bauhaus building.
 {:.figcaption}
+
 
 <img src="{{site.url}}/i/IMG_5823.jpg" />
 <img src="{{site.url}}/i/IMG_5826.jpg" />
 
 ![]({{site.url}}/i/IMG_5827.jpg)
 
+<div>
+<figure>
 <img src="{{site.url}}/i/IMG_5830.jpg" />
+</figure>
+<figure>
 <img src="{{site.url}}/i/IMG_5828.jpg" /> 
+</figure>
+</div>
+{:.double}
+
 
 Five images above: Entering the building.
 {:.figcaption}
@@ -49,16 +65,21 @@ Two images above: Walking the stairs up and down.
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
 {:.figcaption}
 
+<div>
+<figure>
 <img src="{{site.url}}/i/IMG_5833.jpg" />
-
+<figcaption>
 The functional parts are visible
-{:.figcaption}
-
-
+</figcaption>
+</figure>
+<figure>
 <img src="{{site.url}}/i/IMG_5850.jpg" />
-
+<figcaption>
 Junkers heating
-{:.figcaption}
+</figcaption>
+</figure>
+</div>
+{:.double}
 
 ![]({{site.url}}/i/IMG_5890.jpg)
 
@@ -70,16 +91,21 @@ The steel house by Georg Muche and Richard Paulick
 Prellerhaus
 {:.figcaption}
 
-
+<div>
+<figure>
 <img src="{{site.url}}/i/IMG_5808.jpg" />
-
+<figcaption>
 Step out on the balcony at the Prellerhaus
-{:.figcaption}
-
+</figcaption>
+</figure>
+<figure>
 <img src="{{site.url}}/i/IMG_5798.jpg" />
-
+<figcaption>
 Facade of the Prellerhaus
-{:.figcaption}
+</figcaption>
+</figure>
+</div>
+{:.double}
 
 ![]({{site.url}}/i/IMG_5889.jpg)
 
