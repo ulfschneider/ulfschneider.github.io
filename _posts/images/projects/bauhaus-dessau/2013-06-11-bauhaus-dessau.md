@@ -10,12 +10,17 @@ The Bauhaus Dessau is a great place to experience the open-mindedness, the ideal
 
 ![]({{site.url}}/i/IMG_5778.jpg)
 
+<div>
+<figure>
 <img src="{{site.url}}/i/IMG_5853.jpg" />
-
+</figure>
+<figure>
 <img src="{{site.url}}/i/IMG_5887.jpg" />
+</figure>
+</div>
+{:.double}
 
 <img src="{{site.url}}/i/IMG_5796.jpg" />
-
 <img src="{{site.url}}/i/IMG_5899.jpg" />
 
 Five images above: A tour around the Bauhaus building.

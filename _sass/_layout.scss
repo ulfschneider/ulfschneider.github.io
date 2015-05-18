@@ -152,26 +152,16 @@ h3, h4 {
 }
 
 
-.wide img, img.wide {
-  display:block;
-	width:100%;
-	max-height:none;
-	border:none;
-	margin-left:0;
-  margin-right:0;
-	
-}
-
-
-
 .double {
 	clear:both;
+	margin-left:-$spacing-unit / 2;
+	margin-right:-$spacing-unit / 2;
 
 	figure {
-		padding-left:$spacing-unit;
-		padding-right:$spacing-unit;
 		float:left;
 		width:50%;
+		padding:$spacing-unit / 2;
+		
 	}
 }
 
@@ -354,15 +344,7 @@ li.image-grid .title {
 	}
 }
 	
- .wide img {
-	 margin-left:0;
-	 margin-right:0;
-	 min-width:100%;
-	 width:100%;
-	 max-height:none;
- }
-	
-	
+
 	.portrait {
 		display:block;
 		clear:both;
