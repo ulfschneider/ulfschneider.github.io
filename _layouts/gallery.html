@@ -41,13 +41,20 @@
 		</div>
 
 			{% include footer.html %}
-			<script src="/r/packery.pkgd.min.js"></script>
-			<script>
-			docReady(function() {
-				var container = document.querySelector('#image-grid');
-				var pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
-			});
-			</script>								
+ 		<script src="/r/packery.pkgd.min.js"></script>
+ 			<script src="/r/imagesloaded.pkgd.min.js"></script>					
+ 		<script>
+ 		 container = document.querySelector('#image-grid');
+ 		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
+		
+ 		docReady(function() {
+ 			pckry.layout();
+ 		});
+		
+ 		imagesLoaded('#image-grid', function() {
+ 			pckry.layout();
+ 		});
+ 		</script>								
   </body>
 
 </html>
