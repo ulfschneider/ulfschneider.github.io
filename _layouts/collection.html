@@ -14,21 +14,36 @@
 						{{ content }}
 				</div>
 		
-				<ul class="image-grid" id="gallery-grid">
-        {% for page in site.pages %}
-											
-						{% if page.layout contains 'gallery' and page.thumburl %}
+				<ul class="image-grid" id="image-grid">
+        {% for post in site.posts %}
 
-							<a  href="{{ page.url | prepend: site.baseurl }}">
+						{% if post.layout contains 'gallery' and post.thumburl %}
+						
+							<a  href="{{ post.url | prepend: site.baseurl }}">
 								<li class="image-grid">
 									<div class="image">
-										<img src="{{page.thumburl}}"/>
-										{% if page.message %}
-											<div class="title">{{page.message}}</div>
-										{% elsif page.abstract %}
-											<div class="title">{{page.abstract}}</div>
-										{% elsif page.title %}
-											<div class="title">{{page.title}}</div>
+										<img src="{{post.thumburl}}"/>
+										{% if post.message %}
+											<div class="title">{{post.message}}</div>
+										{% elsif post.abstract %}
+											<div class="title">{{post.abstract}}</div>
+										{% elsif post.title %}
+											<div class="title">{{post.title}}</div>
+										{% endif %}
+									</div>
+								</li>
+							</a>
+							{% elsif post.layout contains 'image' and post.thumburl and post.tags contains 'projects' %}
+							<a  href="{{ post.url | prepend: site.baseurl }}">
+								<li class="image-grid">
+									<div class="image">
+										<img src="{{post.thumburl}}"/>
+										{% if post.message %}
+											<div class="title">{{post.message}}</div>
+										{% elsif post.abstract %}										
+											<div class="title">{{post.abstract}}</div>
+										{% elsif post.title %}
+											<div class="title">{{post.title}}</div>
 										{% endif %}
 									</div>
 								</li>
@@ -43,11 +58,12 @@
 
 		<script src="/r/packery.pkgd.min.js"></script>
 		<script>
-		var $container = $('#gallery-grid');
+		var $container = $('#image-grid');
 		// init
 		$container.packery({
 		  itemSelector: 'li',
-		  gutter: 0
+		  gutter: 0,
+			percentPosition : true
 		});
 		$(window).on("load", function(event) { $container.packery(); });
 		</script>

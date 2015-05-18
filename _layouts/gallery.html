@@ -43,11 +43,12 @@
 			{% include footer.html %}
 			<script src="/r/packery.pkgd.min.js"></script>
 			<script>
-			var $container = $('#gallery-grid');
+			var $container = $('#image-grid');
 			// init
 			$container.packery({
 			  itemSelector: 'li',
-			  gutter: 0
+			  gutter: 0,
+				percentPosition: true
 			});
 			$(window).on("load", function(event) { $container.packery(); });
 			</script>								
