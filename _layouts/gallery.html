@@ -43,8 +43,10 @@
 			{% include footer.html %}
 			<script src="/r/packery.pkgd.min.js"></script>
 			<script>
-			var container = document.querySelector('#image-grid');
-			var pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});
+			docReady(function() {
+				var container = document.querySelector('#image-grid');
+				var pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
+			});
 			</script>								
   </body>
 
