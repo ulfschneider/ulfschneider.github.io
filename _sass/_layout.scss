@@ -150,11 +150,15 @@ h3, h4 {
 }
 
 
-.image-page .double, .double {
-	clear:both;
+.double {
 	margin-left:-$spacing-unit / 2;
 	margin-right:-$spacing-unit / 2;
-	
+	margin-top:$spacing-unit;
+	margin-bottom:$spacing-unit;		
+	overflow:hidden; /* clearfix */
+	zoom: 1;  /* Triggering "hasLayout" in IE */
+  display: block;
+
 	img, figure img {
 		margin:0;
 		width:none;
@@ -167,10 +171,10 @@ h3, h4 {
 
 	figure {
 		float:left;
+
 		width:50%;
 		padding-left:$spacing-unit / 2;
 		padding-right:$spacing-unit / 2;
-		margin-bottom:$spacing-unit;
 		
 		img {
 			max-width:100%;
@@ -178,11 +182,12 @@ h3, h4 {
 		}
 		
 		figcaption, .figcaption {
-			margin-top:0;
+			margin:0;
 		}
 		
 	}
 }
+
 
 figcaption, .figcaption {
 	margin-top:-$spacing-unit;
@@ -194,6 +199,34 @@ figcaption, .figcaption {
 
 .figcaption {
 	clear:both;
+}
+
+
+.left {
+
+	margin-left:-$spacing-unit / 2;
+	margin-right:-$spacing-unit / 2;
+	margin-top:$spacing-unit;
+	margin-bottom:$spacing-unit;		
+	overflow:hidden; /* clearfix */
+	zoom: 1;  /* Triggering "hasLayout" in IE */
+  display: block;
+		
+		img {
+			margin:0;
+			float:left;
+			max-width:50%;
+			padding-left:$spacing-unit / 2;
+			padding-right:$spacing-unit / 2;
+			
+		}
+	
+	figcaption, .figcaption {
+		float:left;
+		margin:0;
+		display:inline-block;
+		max-width:45%;
+	}
 }
 
 
@@ -349,7 +382,7 @@ li.image-grid .title {
 		max-height:none;
  }
  
- .image-page .double, .double {
+.double, .left {
 	
  	img {
  		margin:0;
@@ -361,6 +394,10 @@ li.image-grid .title {
 		padding-right:$spacing-unit / 2;
  	}
 }
+
+.left img {
+		padding-left:0;
+	}
  
 	.portrait {
 		display:block;
