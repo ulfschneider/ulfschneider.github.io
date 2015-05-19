@@ -150,10 +150,19 @@ h3, h4 {
 }
 
 
-.double {
+.image-page .double, .double {
 	clear:both;
 	margin-left:-$spacing-unit / 2;
 	margin-right:-$spacing-unit / 2;
+	
+	img, figure img {
+		margin:0;
+		width:none;
+		max-width:50%;
+		min-width:0;
+		display:inline-block;
+		padding:$spacing-unit / 2;
+	}
 
 	figure {
 		float:left;
@@ -162,12 +171,12 @@ h3, h4 {
 		padding-right:$spacing-unit / 2;
 		
 		img {
-			margin-top:0;
-			margin-left:0;
-			margin-right:0;
-			width:100%;
 			max-width:100%;
-			min-width:100%;
+			padding:0;
+		}
+		
+		figcaption, .figcaption {
+			margin-top:0;
 		}
 		
 	}
@@ -179,6 +188,7 @@ figcaption, .figcaption {
 	display:block;
 	margin-bottom:$spacing-unit;
 	line-height:$extra-small-font-size * 1.5;
+<<<<<<< Updated upstream
 }
 
 .figcaption {
@@ -187,6 +197,11 @@ figcaption, .figcaption {
 
 
 
+=======
+	clear:both;
+}
+
+>>>>>>> Stashed changes
 .portrait {
 	width:150px;
 	height:150px;
@@ -212,6 +227,11 @@ figcaption, .figcaption {
 	
 
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 
 
 /**
@@ -317,10 +337,13 @@ li.image-grid .title {
 		padding:0;
 		clear:both;
 		padding-top: $spacing-unit;
-		padding-bottom: 2*$spacing-unit;
+		padding-bottom: 2 * $spacing-unit;
 		font-size:$base-font-size;
-		ul, li {list-style-type:none;}
-	    @extend %clearfix;		
+		ul, li {
+			list-style-type:none;
+		}
+
+    @extend %clearfix;		
 }
 
 /* Media */
@@ -343,8 +366,19 @@ li.image-grid .title {
 		max-width:calc(100% + #{$spacing-unit});
 		max-width:100% \0; /*IE8 and below */;
 		max-height:none;
-
  }
+ 
+ .image-page .double, .double {
+	
+ 	img {
+ 		margin:0;
+ 		width:none;
+ 		max-width:50%;
+ 		min-width:0;
+ 		display:inline-block;
+ 		padding:$spacing-unit / 2;
+ 	}
+}
  
 	.portrait {
 		display:block;
