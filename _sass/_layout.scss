@@ -154,7 +154,6 @@ h3, h4 {
 	clear:both;
 	margin-left:-$spacing-unit / 2;
 	margin-right:-$spacing-unit / 2;
-	margin-bottom:$spacing-unit;
 	
 	img, figure img {
 		margin:0;
@@ -171,6 +170,7 @@ h3, h4 {
 		width:50%;
 		padding-left:$spacing-unit / 2;
 		padding-right:$spacing-unit / 2;
+		padding-bottom:$spacing-unit;
 		
 		img {
 			max-width:100%;
