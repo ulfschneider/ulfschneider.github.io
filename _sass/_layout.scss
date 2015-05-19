@@ -154,6 +154,7 @@ h3, h4 {
 	clear:both;
 	margin-left:-$spacing-unit / 2;
 	margin-right:-$spacing-unit / 2;
+	margin-bottom:$spacing-unit;
 	
 	img, figure img {
 		margin:0;
@@ -161,7 +162,8 @@ h3, h4 {
 		max-width:50%;
 		min-width:0;
 		display:inline-block;
-		padding:$spacing-unit / 2;
+		padding-left:$spacing-unit / 2;
+		padding-right:$spacing-unit / 2;
 	}
 
 	figure {
@@ -355,7 +357,8 @@ li.image-grid .title {
  		max-width:50%;
  		min-width:0;
  		display:inline-block;
- 		padding:$spacing-unit / 2;
+ 		padding-left:$spacing-unit / 2;
+		padding-right:$spacing-unit / 2;
  	}
 }
  
