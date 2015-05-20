@@ -1,9 +1,5 @@
-.site-nav {	
-	line-height: $site-header-height;
-	vertical-align:center;
-}
 
-.site-nav .menu {
+.menu {
    display: none;
 }
 

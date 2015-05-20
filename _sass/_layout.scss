@@ -12,13 +12,13 @@
 .site-title {
   line-height: $site-header-height;
   margin-bottom: 0;
-  float: left;
   color: $header-color;
+	display:inline-block;
 }
 
 .site-nav {
-  float: left;
   line-height: $site-header-height;
+	display:inline-block;
 
     .menu {
         display: none;
