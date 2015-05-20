@@ -20,7 +20,7 @@ $background-color: #fff;
 $brand-color:      #08c;
 $header-fallback-color: #fff;
 $header-background-color: #fff;
-$header-color: #000000;
+$header-color: $text-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

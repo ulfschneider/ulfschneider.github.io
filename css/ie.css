@@ -1,4 +1,8 @@
 
+.site-title {
+	float:left;
+}
+
 .site-nav {
   line-height: 50px;
 	float:left;
