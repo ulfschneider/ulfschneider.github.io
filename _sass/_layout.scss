@@ -233,7 +233,7 @@ figcaption, .figcaption {
 			margin:0;
 			float:left;
 			max-width:50%;
-			padding-right:$spacing-unit;			
+			padding-right:$spacing-unit / 2;			
 		}
 	
 	figcaption, .figcaption {
@@ -410,17 +410,17 @@ li.image-grid .title {
 }
 
 .left {
-	margin-right:0;
+
 	img {
-		padding-left:0;
+		padding-right:$spacing-unit / 2;
 	}
 }
  
-	.portrait {
-		display:block;
-		clear:both;
-		float:none;
-	}
+.portrait {
+	display:block;
+	clear:both;
+	float:none;
+}
 			
 	
 ul.image-grid {
