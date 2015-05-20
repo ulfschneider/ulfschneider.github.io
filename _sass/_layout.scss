@@ -19,7 +19,7 @@
 .site-nav {
   float: left;
   line-height: $site-header-height;
-
+	z-index:1000;
     .menu {
         display: none;
     }
