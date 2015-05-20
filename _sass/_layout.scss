@@ -370,6 +370,7 @@ li.image-grid .title {
 		padding-bottom: 2 * $spacing-unit;
 		font-size:$base-font-size;
 		ul, li {
+			list-style:none;
 			list-style-type:none;
 		}
 
