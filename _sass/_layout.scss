@@ -19,7 +19,6 @@
 .site-nav {
   line-height: $site-header-height;
 	display:inline-block;
-	@extend %clearfix;			
 
     .menu {
         display: none;
