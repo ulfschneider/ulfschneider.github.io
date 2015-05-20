@@ -30,6 +30,7 @@
 				line-height: $site-header-height;
 				display:inline-block;
 				margin-left:$spacing-unit;
+				margin-bottom:0;
 				&:hover {
 					color:$background-color;
 					background-color:$text-color
