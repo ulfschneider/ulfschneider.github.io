@@ -33,11 +33,10 @@ Four images: SPACE - SPEECH - SPEED by Mischa Kuball.
 I (IN DIALOGUE) by Jan van Munster
 {:.figcaption}
 
-![]({{site.url}}/i/IMG_8252.jpg)
+![]({{site.url}}/i/IMG_8252.jpg)![]({{site.url}}/i/IMG_8364.jpg)
+{:.double}
 
 ![]({{site.url}}/i/IMG_8366.jpg)
-
-![]({{site.url}}/i/IMG_8364.jpg)
 
 Color photos above: TUNNEL OF TEARS FOR UNNA by Keith Sonnier
 {:.figcaption}
