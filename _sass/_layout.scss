@@ -409,6 +409,17 @@ li.image-grid .title {
  	}
 }
 
+.double figure:first-child figcaption {
+	padding-left:$spacing-unit / 2;
+}
+
+
+.double figure:last-child figcaption {
+	padding-right:$spacing-unit / 2;
+}
+
+
+
 .left {
 
 	img {
