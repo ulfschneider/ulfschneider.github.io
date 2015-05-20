@@ -6,35 +6,21 @@ abstract:
 thumburl: /i/DSCF0515_thumb.jpg
 tags: [bw, street, people]
 ---
-<figure>
-<img src="{{site.url}}/i/DSCF0539.jpg" />
-<figcaption>
-An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th, 2014. Shortly after a rain shower.
-</figcaption>
-</figure> {:.left}
+
+![]({{site.url}}/i/DSCF0539.jpg)An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th, 2014. Shortly after a rain shower.
+{:.left}
 
 ![]({{site.url}}/i/DSCF0515.jpg)
 
-<div>
-<figure>
-<img src="{{site.url}}/i/DSCF0525.jpg" />
-</figure>
-<figure>
-<img src="{{site.url}}/i/DSCF0523.jpg" />
-</figure>
-</div> {:.double}
+
+![]({{site.url}}/i/DSCF0525.jpg)![]({{site.url}}/i/DSCF0523.jpg)
+{:.double}
 
 ![]({{site.url}}/i/DSCF0507.jpg)
 ![]({{site.url}}/i/DSCF0487.jpg)
 
-<div>
-<figure>
-<img src="{{site.url}}/i/DSCF0486.jpg" />
-</figure>
-<figure>
-<img src="{{site.url}}/i/DSCF0471.jpg" />
-</figure>
-</div> {:.double}
+![]({{site.url}}/i/DSCF0486.jpg)![]({{site.url}}/i/DSCF0471.jpg)
+{:.double}
 
 ![]({{site.url}}/i/DSCF0468.jpg)
 

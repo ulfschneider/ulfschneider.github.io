@@ -151,8 +151,6 @@ h3, h4 {
 
 
 .double {
-	margin-left:-$spacing-unit / 2;
-	margin-right:-$spacing-unit / 2;
 	margin-top:$spacing-unit;
 	margin-bottom:$spacing-unit;		
 	overflow:hidden; /* clearfix */
@@ -165,16 +163,22 @@ h3, h4 {
 		max-width:50%;
 		min-width:0;
 		display:inline-block;
-		padding-left:$spacing-unit / 2;
+		padding:0;
+	}
+	
+	img:first-child {
 		padding-right:$spacing-unit / 2;
 	}
+	
+	img:last-child {
+		padding-left:$spacing-unit / 2;
+	}
+
 
 	figure {
 		float:left;
-
 		width:50%;
-		padding-left:$spacing-unit / 2;
-		padding-right:$spacing-unit / 2;
+		padding:0;
 		
 		img {
 			max-width:100%;
@@ -183,8 +187,23 @@ h3, h4 {
 		
 		figcaption, .figcaption {
 			margin:0;
-		}
+		}	
+	}
+	
+	figure:first-child {
+		padding-right:$spacing-unit / 2;
 		
+		img {
+			padding:0;
+		}
+	}
+	
+	figure:last-child {
+		padding-left:$spacing-unit / 2;
+		
+		img {
+			padding:0;
+		}
 	}
 }
 
@@ -204,8 +223,6 @@ figcaption, .figcaption {
 
 .left {
 
-	margin-left:-$spacing-unit / 2;
-	margin-right:-$spacing-unit / 2;
 	margin-top:$spacing-unit;
 	margin-bottom:$spacing-unit;		
 	overflow:hidden; /* clearfix */
@@ -216,15 +233,12 @@ figcaption, .figcaption {
 			margin:0;
 			float:left;
 			max-width:50%;
-			padding-left:$spacing-unit / 2;
-			padding-right:$spacing-unit / 2;
-			
+			padding-right:$spacing-unit;			
 		}
 	
 	figcaption, .figcaption {
 		float:left;
 		margin:0;
-		display:inline-block;
 		max-width:45%;
 	}
 }
@@ -383,21 +397,24 @@ li.image-grid .title {
  }
  
 .double, .left {
-	
+		margin-left:-$spacing-unit / 2;
+		margin-right:-$spacing-unit / 2;
+		
  	img {
  		margin:0;
  		width:none;
  		max-width:50%;
  		min-width:0;
  		display:inline-block;
- 		padding-left:$spacing-unit / 2;
-		padding-right:$spacing-unit / 2;
  	}
 }
 
-.left img {
+.left {
+	margin-right:0;
+	img {
 		padding-left:0;
 	}
+}
  
 	.portrait {
 		display:block;
@@ -406,17 +423,12 @@ li.image-grid .title {
 	}
 			
 	
-	.footer-col {
-		float: none;
-   	 	width: 100%;
-  	}
-	
-	ul.image-grid {
+ul.image-grid {
 		margin:$spacing-unit/4;
-	}
+}
 		
-	li.image-grid {
-   		width: 50%;
+li.image-grid {
+  	width: 50%;
 		padding:$spacing-unit/4;
 	}
 
