@@ -13,7 +13,7 @@
 
 .site-title {
   line-height: $site-header-height;
-  margin-bottom: 0;
+	margin:0;
   color: $header-color;
 	float:left;
 }
@@ -31,8 +31,9 @@
 				background-color:$header-background-color;				
 				line-height: $site-header-height;
 				display:inline-block;
+				margin:0;
 				margin-left:$spacing-unit;
-				margin-bottom:0;
+
 				&:hover {
 					color:$background-color;
 					background-color:$text-color
