@@ -34,49 +34,6 @@
 					background-color:$text-color
 				}				
     }
-		
-	 
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top:0;
-        right:$spacing-unit/2;
-        background-color: $header-background-color;
-        text-align: right;		
-
-        .menu {
-            display: block;
-            float: right;
-						margin-right:0;
-            text-align: center;
-						
-						&:hover {
-							background-color:$header-background-color;
-							color:$text-color;
-						}
-        }				
-
-        .trigger {
-            clear: both;
-            display: none;
-						border:1px solid #e0e0e0;
-						margin-right:-5px;					
-        }
-
-        &:hover .trigger {
-            display: block;
-        }
-
-        .page-link {			
-						font-size:$base-font-size;
-          			  	display: block;
-						padding-left:10px;
-						padding-right:10px;
-						padding-top:5px;
-						padding-bottom:5px;
-						margin-left:0px;
-        }
-    }
 }
 
 
@@ -382,6 +339,47 @@ li.image-grid .title {
 /* Media */
 
 @include media-query($on-palm) {
+	
+  .site-nav {
+         position: absolute;
+         top:0;
+         right:$spacing-unit/2;
+         background-color: $header-background-color;
+         text-align: right;		
+
+         .menu {
+             display: block;
+             float: right;
+ 						margin-right:0;
+             text-align: center;
+						
+ 						&:hover {
+ 							background-color:$header-background-color;
+ 							color:$text-color;
+ 						}
+         }				
+
+         .trigger {
+             clear: both;
+             display: none;
+ 						border:1px solid #e0e0e0;
+ 						margin-right:-5px;					
+         }
+
+         &:hover .trigger {
+             display: block;
+         }
+
+         .page-link {			
+ 						font-size:$base-font-size;
+           			  	display: block;
+ 						padding-left:10px;
+ 						padding-right:10px;
+ 						padding-top:5px;
+ 						padding-bottom:5px;
+ 						margin-left:0px;
+         }
+     }
 	
 	
 	img.LHOP, .LHOP img {
