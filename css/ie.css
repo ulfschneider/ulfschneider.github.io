@@ -18,7 +18,7 @@
 		background-color:$text-color
 }
 
-.site-footer ul, .site-footer li {
+.site-footer ul, .site-footer ul li {
 	list-style:none;
 	list-style-type:none;
 }
