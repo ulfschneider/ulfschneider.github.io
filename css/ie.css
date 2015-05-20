@@ -1,3 +1,22 @@
-.menu {
-	display:none;
+.site-nav {
+	float: left;
+	line-height: $site-header-height;
+}
+
+.site-nav .menu {
+   display: none;
+}
+
+.page-link {
+      color: $header-color;
+			background-color:$header-background-color;				
+			line-height: $site-header-height;
+			display:inline-block;
+			margin-left:$spacing-unit;
+  }
+
+
+.page-link:hover {
+		color:$background-color;
+		background-color:$text-color
 }
