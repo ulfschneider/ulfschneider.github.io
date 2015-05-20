@@ -19,13 +19,14 @@
 .site-nav {
   float: left;
   line-height: $site-header-height;
-	z-index:1000;
+
     .menu {
         display: none;
     }
 
     .page-link {
         color: $header-color;
+				background-color:$header-background-color;				
 				line-height: $site-header-height;
 				display:inline-block;
 				margin-left:$spacing-unit;
@@ -67,12 +68,12 @@
 
         .page-link {			
 						font-size:$base-font-size;
-          			  	display: block;
+          	display: block;
 						padding-left:10px;
 						padding-right:10px;
 						padding-top:5px;
 						padding-bottom:5px;
-						margin-left:0px;
+						margin:0;
         }
     }
 }
