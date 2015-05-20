@@ -8,6 +8,10 @@
 	float:left;
 }
 
+.site-nav:hover .trigger {
+	display:none;
+}
+
 .menu {
    display: none;
 }
