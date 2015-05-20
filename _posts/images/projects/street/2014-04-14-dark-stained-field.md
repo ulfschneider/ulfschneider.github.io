@@ -13,6 +13,8 @@ An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th
 </figcaption>
 </figure> {:.left}
 
+![]({{site.url}}/i/DSCF0515.jpg)
+
 <div>
 <figure>
 <img src="{{site.url}}/i/DSCF0525.jpg" />
@@ -22,7 +24,6 @@ An afternoon at the skating rink „Planten un Blomen“ in Hamburg on April 4th
 </figure>
 </div> {:.double}
 
-![]({{site.url}}/i/DSCF0515.jpg)
 ![]({{site.url}}/i/DSCF0507.jpg)
 ![]({{site.url}}/i/DSCF0487.jpg)
 
