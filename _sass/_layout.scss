@@ -221,7 +221,7 @@ figcaption, .figcaption {
 }
 
 
-.left {
+.left, .right {
 
 	margin-top:$spacing-unit;
 	margin-bottom:$spacing-unit;		
@@ -240,6 +240,12 @@ figcaption, .figcaption {
 		float:left;
 		margin:0;
 		max-width:45%;
+	}
+}
+
+.right, figcaption, .figcaption {
+	img {
+		float:right;
 	}
 }
 
@@ -421,9 +427,13 @@ li.image-grid .title {
 
 
 .left {
+	padding-left:$spacing-unit / 2;
+	padding-right:$spacing-unit / 2;
 
 	img {
-		padding-right:$spacing-unit / 2;
+		margin-left:-$spacing-unit / 2;
+		max-width:calc(50% + #{$spacing-unit / 2});
+		max-width:50% \0; /*IE8 and below */;		
 	}
 }
  
