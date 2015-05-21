@@ -7,7 +7,6 @@
 		background-color:$background-color;
 		font-size:$base-font-size;
 		
-		@extend %clearfix;			
 }
 
 
@@ -15,12 +14,13 @@
   line-height: $site-header-height;
 	margin:0;
   color: $header-color;
-	float:left;
+	display:inline-block;
 }
 
 .site-nav {
   line-height: $site-header-height;
-	float:left;
+	display:inline-block;
+	@extend %clearfix;			
 
     .menu {
         display: none;
@@ -238,12 +238,6 @@ figcaption, .figcaption {
 		float:left;
 		margin:0;
 		max-width:45%;
-	}
-}
-
-.right, figcaption, .figcaption {
-	img {
-		float:right;
 	}
 }
 
