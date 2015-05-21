@@ -6,7 +6,7 @@
   	height:$site-header-height;
 		background-color:$background-color;
 		font-size:$base-font-size;
-		
+		@extend %clearfix;			
 }
 
 
@@ -14,13 +14,13 @@
   line-height: $site-header-height;
 	margin:0;
   color: $header-color;
-	display:inline-block;
+	float:left;
 }
 
 .site-nav {
   line-height: $site-header-height;
-	display:inline-block;
-	@extend %clearfix;			
+	float:left;
+
 
     .menu {
         display: none;
