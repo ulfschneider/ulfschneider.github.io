@@ -9,3 +9,13 @@
 			margin-bottom:0;
 }
 
+
+.site-title {
+	float:left;
+}
+
+.site-nav {
+	float:left;
+  line-height: 50px;
+	clear:both;
+}
