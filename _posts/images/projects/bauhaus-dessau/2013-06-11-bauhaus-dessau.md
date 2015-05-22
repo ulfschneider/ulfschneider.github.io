@@ -39,9 +39,13 @@ Five images above: A tour around the Bauhaus building.
 
 ![]({{site.url}}/i/IMG_5827.jpg)
 
+Five images above: Entering the building.
+{:.figcaption}
+
 <div>
 <figure>
 <img src="{{site.url}}/i/IMG_5830.jpg" />
+<figcaption>The Bauhaus stage</figcaption>
 </figure>
 <figure>
 <img src="{{site.url}}/i/IMG_5828.jpg" /> 
@@ -50,8 +54,6 @@ Five images above: A tour around the Bauhaus building.
 {:.double}
 
 
-Five images above: Entering the building.
-{:.figcaption}
 
 ![]({{site.url}}/i/IMG_5820.jpg)
 

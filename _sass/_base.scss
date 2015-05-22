@@ -120,6 +120,11 @@ a {
     }
 }
 
+::selection {
+	background-color:yellow;
+}
+
+
 
 /**
  * Blockquotes
