@@ -113,13 +113,12 @@ a {
 	&:active,
 	&:hover {
 		outline:0;
-        color: $background-color;
+    color: $background-color;
 		background-color:$text-color;
-        text-decoration: none;
+    text-decoration: none;
 		transition-duration: $transition-duration;
     }
 }
-
 
 
 /**
