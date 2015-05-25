@@ -12,7 +12,7 @@ The Bauhaus Dessau is a great place to experience the open-mindedness, the ideal
 This photo series is a result of two visits, the first one in June 2013 and the second in May 2015. Two journeys into the archeology of modernism. 
 {:.left}
 
-When you look at the Bauhaus building from 2925/26, it appears like a bunch of boxes spread around but connected to each other.
+When you look at the Bauhaus building from 1925/26, it appears like a bunch of boxes spread around but connected to each other.
 
 ![](/i/IMG_8405.jpg)
 
@@ -33,10 +33,13 @@ Staircase
 
 Interior
 
-![]({{site.url}}/i/IMG_5848.jpg)
-
+<figure>
+<img src="{{site.url}}/i/IMG_5848.jpg"/>
+<figcaption>
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
-{:.figcaption}
+</figcaption>
+</figure>
+{:.left}
 
 <div>
 <figure>
