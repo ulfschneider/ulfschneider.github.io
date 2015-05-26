@@ -14,14 +14,23 @@ This photo series is a result of two visits, the first one in June 2013 and the 
 
 When you look at the Bauhaus building from 1925/26, it appears like a bunch of boxes spread around but connected to each other.
 
+![](/i/IMG_8404.jpg)
+{:.left}
+
+![](/i/IMG_8387.jpg)
+{:.right}
+
 ![](/i/IMG_8488.jpg)
 
 ![](/i/IMG_8428.jpg)
 
 Glas, transparency and straight lines play a huge role. 
 
-![](/i/IMG_8440.jpg)![](/i/IMG_8422.jpg)
-{:.double}
+![](/i/IMG_8440.jpg)
+{:.left}
+
+![](/i/IMG_8422.jpg)
+{:.right}
 
 Staircase
 
@@ -51,6 +60,10 @@ The Prellerhaus
 ![](/i/IMG_8407.jpg) 
 
 The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks.
+
+![](/i/IMG_8499.jpg) 
+The balkony
+{:.right}
 
 ![](/i/IMG_8394.jpg) 
 The rooms
