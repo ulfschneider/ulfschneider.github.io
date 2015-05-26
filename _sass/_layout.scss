@@ -223,13 +223,15 @@ figcaption, .figcaption {
 
 .left, .right {
 	@extend %clearfix;		
+	text-align:left;
 	margin-top:$spacing-unit;
 	margin-bottom:$spacing-unit;		
 		
 		img {
 			margin:0;
 			float:left;
-			max-width:50%;
+			max-width:60%;
+			max-height:500px;
 			padding-right:$spacing-unit / 2;			
 		}
 	
@@ -241,6 +243,8 @@ figcaption, .figcaption {
 }
 
 .right {
+	text-align:right;
+	
 	img {
 		float:right;
 		padding-right:0;
@@ -444,13 +448,14 @@ li.image-grid .title {
 
 	img {
 		margin-left:-$spacing-unit / 2;
-		max-width:calc(50% + #{$spacing-unit / 2});
+		max-width:calc(60% + #{$spacing-unit / 2});
 	}
 }
 
 .right {
 
 	img {
+		margin-left:0;
 		margin-right:-$spacing-unit / 2;
 	}
 }

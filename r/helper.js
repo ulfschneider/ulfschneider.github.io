@@ -53,7 +53,7 @@ function layoutLeft() {
 		var elem = l[i];
 		var margin = getMargin();
 		if (margin < 0) {
-			elem.style.marginLeft = "" + margin + "px";			
+			elem.style.marginLeft = "" + margin + "px";						
 		} 
 	}
 }

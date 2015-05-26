@@ -35,21 +35,14 @@ Interior
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
 {:.left}
 
-<div>
-<figure>
-<img src="{{site.url}}/i/IMG_5833.jpg" />
-<figcaption>
+![]({{site.url}}/i/IMG_5833.jpg) 
 The functional parts are visible
-</figcaption>
-</figure>
-<figure>
-<img src="{{site.url}}/i/IMG_5850.jpg" />
-<figcaption>
+{:.right}
+
+
+![]({{site.url}}/i/IMG_5850.jpg) 
 Junkers heating
-</figcaption>
-</figure>
-</div>
-{:.double}
+{:.left}
 
 The Prellerhaus
 
@@ -60,14 +53,12 @@ The Prellerhaus
 The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks.
 
 ![](/i/IMG_8394.jpg) 
-
 The rooms
-{:.figcaption}
+{:.left}
 
 ![](/i/IMG_8505.jpg)
-
 The café
-{:.figcaption}
+{:.right}
 
 ![]({{site.url}}/i/IMG_5888.jpg)
 
