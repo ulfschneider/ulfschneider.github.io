@@ -24,7 +24,7 @@ When you look at the Bauhaus building from 1925/26, it appears like a bunch of b
 
 ![](/i/IMG_8428.jpg)
 
-Glas, transparency and straight lines play a huge role. 
+Glass, transparency and straight lines play a huge role. 
 
 ![](/i/IMG_8440.jpg)
 {:.left}
@@ -35,13 +35,23 @@ Glas, transparency and straight lines play a huge role.
 Staircase
 
 ![](/i/IMG_8456.jpg)
+{:.left}
 
 ![](/i/IMG_8445.jpg)
+{:.right}
 
-Interior
+![](/i/IMG_8454.jpg)
+{:.left}
+
+Looking inside out
+
+![](/i/IMG_8528.jpg)
+
+![](/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
+{:.right}
 
 ![]({{site.url}}/i/IMG_5848.jpg)
-The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
+The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair.
 {:.left}
 
 ![]({{site.url}}/i/IMG_5833.jpg) 
@@ -59,23 +69,28 @@ The Prellerhaus
 
 ![](/i/IMG_8407.jpg) 
 
-The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks.
+The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks. We stayed there for one night.
 
 ![](/i/IMG_8499.jpg) 
-The balkony
+View from our balkony
 {:.right}
 
 ![](/i/IMG_8394.jpg) 
-The rooms
+Our room
 {:.left}
 
 ![](/i/IMG_8505.jpg)
 The café
 {:.right}
 
+![](/i/IMG_8483.jpg)
+
+A short walk of 2 kilometers brings you from the Bauhaus building to the Kornhaus. We were there for dinner and it was quite good.
+{:.figcaption}
+
 ![]({{site.url}}/i/IMG_5888.jpg)
 
-A door handle with nicely integrated lock, inside of a Laubenganghaus
+A door handle with nicely integrated lock, inside of a Laubenganghaus.
 {:.figcaption}
 
 

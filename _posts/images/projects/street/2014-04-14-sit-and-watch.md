@@ -8,7 +8,7 @@ thumburl: /i/DSCF0314_thumb.jpg
 tags: [bw, street, people]
 ---
 ![]({{site.url}}/i/DSCF0314.jpg)
-![]({{site.url}}/i/DSCF0438.jpg)
+
 
 
 

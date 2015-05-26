@@ -39,10 +39,15 @@ function getWrapperWidth() {
 
 function getMargin() {
 	var limit = -100;
+	var palm = 600; /* must be same like in main.css form on-palm */
 	var winWidth = getWindowWidth();
 	var wrapWidth = getWrapperWidth();
-
-	return   Math.round(Math.max(Math.min(-(winWidth - wrapWidth) / 2, -15), limit));	
+	
+	if (wrapWidth <= palm) {
+		return - 15;
+	} else {
+		return   Math.round(Math.max(-(winWidth - wrapWidth) / 2, limit));	
+	}
 }
 
 function layoutLeft() {
@@ -52,7 +57,7 @@ function layoutLeft() {
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
 		var margin = getMargin();
-		if (margin < 0) {
+		if (margin <= 0) {
 			elem.style.marginLeft = "" + margin + "px";						
 		} 
 	}
@@ -64,7 +69,7 @@ function layoutRight() {
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
 		var margin = getMargin();
-		if (margin < 0) {
+		if (margin <= 0) {
 			elem.style.marginRight = "" + margin + "px";			
 		} 
 	}
@@ -77,7 +82,7 @@ function layoutDouble() {
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
 		var margin = getMargin();
-		if (margin < 0) {
+		if (margin <= 0) {
 			elem.style.marginLeft = "" + margin + "px";		
 			elem.style.marginRight = "" + margin + "px";		
 		} 
