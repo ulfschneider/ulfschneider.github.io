@@ -74,7 +74,7 @@ The Prellerhaus
 The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks. We stayed there for one night.
 
 ![]({{site.url}}/i/IMG_8499.jpg) 
-View from our balkony
+View from our balcony
 {:.right}
 
 ![]({{site.url}}/i/IMG_8394.jpg) 
