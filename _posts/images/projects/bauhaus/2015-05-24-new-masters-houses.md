@@ -8,6 +8,8 @@ tags: [bw, things, projects]
 ---
 Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-houses-in-dessau> and (in German) <http://www.bauhaus-dessau.de/bauhaus-neue-meisterhauser-dessau-wiedereroeffnet.html>.
 
+![](/i/IMG_8468.jpg)
+
 ![](/i/IMG_8557.jpg)
 {:.left}
 
@@ -26,5 +28,6 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 ![](/i/IMG_8536.jpg)
 
 ![](/i/IMG_8464.jpg)
+{:.right}
 
 ![](/i/IMG_8463.jpg)
