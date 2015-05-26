@@ -8,46 +8,48 @@ tags: [bw, things, projects]
 ---
 The Bauhaus Dessau is a great place to experience the open-mindedness, the idealistic, adventuresome new thinking and the architectural style that influenced almost every architect and designer in the last 90 years. An icon of the modern era.
 
-![](/i/IMG_8503.jpg)
+![]({{site.url}}/i/IMG_8503.jpg)
 This photo series is a result of two visits, the first one in June 2013 and the second in May 2015. Two journeys into the archeology of modernism. 
 {:.left}
 
 When you look at the Bauhaus building from 1925/26, it appears like a bunch of boxes spread around but connected to each other.
 
-![](/i/IMG_8404.jpg)
+![]({{site.url}}/i/IMG_8404.jpg)
 {:.left}
 
-![](/i/IMG_8387.jpg)
+![]({{site.url}}/i/IMG_8387.jpg)
 {:.right}
 
-![](/i/IMG_8488.jpg)
+![]({{site.url}}/i/IMG_8488.jpg)
 
-![](/i/IMG_8428.jpg)
+![]({{site.url}}/i/IMG_8428.jpg)
 
 Glass, transparency and straight lines play a huge role. 
 
-![](/i/IMG_8440.jpg)
+![]({{site.url}}/i/IMG_8440.jpg)
 {:.left}
 
-![](/i/IMG_8422.jpg)
+![]({{site.url}}/i/IMG_8422.jpg)
 {:.right}
 
 Staircase
 
-![](/i/IMG_8456.jpg)
+![]({{site.url}}/i/IMG_8456.jpg)
 {:.left}
 
-![](/i/IMG_8445.jpg)
+![]({{site.url}}/i/IMG_8445.jpg)
 {:.right}
 
-![](/i/IMG_8454.jpg)
+![]({{site.url}}/i/IMG_8454.jpg)
 {:.left}
 
 Looking inside out
 
-![](/i/IMG_8528.jpg)
+![]({{site.url}}/i/IMG_8528.jpg)
 
-![](/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
+![]({{site.url}}/i/IMG_8451.jpg)
+
+![]({{site.url}}/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
 {:.right}
 
 ![]({{site.url}}/i/IMG_5848.jpg)
@@ -65,25 +67,25 @@ Junkers heating
 
 The Prellerhaus
 
-![](/i/IMG_8411.jpg)
+![]({{site.url}}/i/IMG_8411.jpg)
 
-![](/i/IMG_8407.jpg) 
+![]({{site.url}}/i/IMG_8407.jpg) 
 
 The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks. We stayed there for one night.
 
-![](/i/IMG_8499.jpg) 
+![]({{site.url}}/i/IMG_8499.jpg) 
 View from our balkony
 {:.right}
 
-![](/i/IMG_8394.jpg) 
+![]({{site.url}}/i/IMG_8394.jpg) 
 Our room
 {:.left}
 
-![](/i/IMG_8505.jpg)
+![]({{site.url}}/i/IMG_8505.jpg)
 The café
 {:.right}
 
-![](/i/IMG_8483.jpg)
+![]({{site.url}}/i/IMG_8483.jpg)
 
 A short walk of 2 kilometers brings you from the Bauhaus building to the Kornhaus. We were there for dinner and it was quite good.
 {:.figcaption}

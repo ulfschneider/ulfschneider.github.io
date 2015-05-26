@@ -8,26 +8,26 @@ tags: [bw, things, projects]
 ---
 Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-houses-in-dessau> and (in German) <http://www.bauhaus-dessau.de/bauhaus-neue-meisterhauser-dessau-wiedereroeffnet.html>.
 
-![](/i/IMG_8468.jpg)
+![]({{site.url}}/i/IMG_8468.jpg)
 
-![](/i/IMG_8557.jpg)
+![]({{site.url}}/i/IMG_8557.jpg)
 {:.left}
 
-![](/i/IMG_8549.jpg) 
+![]({{site.url}}/i/IMG_8549.jpg) 
 {:.right}
 
-![](/i/IMG_8543.jpg)
+![]({{site.url}}/i/IMG_8543.jpg)
 {:.left}
 
-![](/i/IMG_8538.jpg)
+![]({{site.url}}/i/IMG_8538.jpg)
 {:.right}
 
-![](/i/IMG_8559.jpg)
+![]({{site.url}}/i/IMG_8559.jpg)
 {:.left}
 
-![](/i/IMG_8536.jpg)
+![]({{site.url}}/i/IMG_8536.jpg)
 
-![](/i/IMG_8464.jpg)
+![]({{site.url}}/i/IMG_8464.jpg)
 {:.right}
 
-![](/i/IMG_8463.jpg)
+![]({{site.url}}/i/IMG_8463.jpg)
