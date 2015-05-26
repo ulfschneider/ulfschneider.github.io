@@ -91,8 +91,5 @@ function layoutStuff() {
 }
 
 
-window.onload =  function() {layoutStuff();};
-window.onresize =  function() {layoutStuff();};
-
 
 
