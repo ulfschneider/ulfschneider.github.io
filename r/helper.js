@@ -38,7 +38,7 @@ function getWrapperWidth() {
 
 
 function getMargin() {
-	var limit = -200;
+	var limit = -100;
 	var winWidth = getWindowWidth();
 	var wrapWidth = getWrapperWidth();
 

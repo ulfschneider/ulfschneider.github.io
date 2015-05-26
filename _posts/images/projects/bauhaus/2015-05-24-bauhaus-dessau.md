@@ -14,11 +14,9 @@ This photo series is a result of two visits, the first one in June 2013 and the 
 
 When you look at the Bauhaus building from 1925/26, it appears like a bunch of boxes spread around but connected to each other.
 
-![](/i/IMG_8405.jpg)
+![](/i/IMG_8488.jpg)
 
 ![](/i/IMG_8428.jpg)
-
-![](/i/IMG_8488.jpg)
 
 Glas, transparency and straight lines play a huge role. 
 
@@ -33,12 +31,8 @@ Staircase
 
 Interior
 
-<figure>
-<img src="{{site.url}}/i/IMG_5848.jpg"/>
-<figcaption>
+![]({{site.url}}/i/IMG_5848.jpg)
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair
-</figcaption>
-</figure>
 {:.left}
 
 <div>

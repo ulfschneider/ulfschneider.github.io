@@ -212,10 +212,8 @@ h3, h4 {
 
 figcaption, .figcaption {
 	margin-top:-$spacing-unit;
-	font-size:$extra-small-font-size;
 	display:block;
 	margin-bottom:$spacing-unit;
-	line-height:$extra-small-font-size * 1.5;
 }
 
 .figcaption {
@@ -237,6 +235,20 @@ figcaption, .figcaption {
 	
 	figcaption, .figcaption {
 		float:left;
+		margin:0;
+		max-width:45%;
+	}
+}
+
+.right {
+	img {
+		float:right;
+		padding-right:0;
+		padding-left:$spacing-unit / 2;
+	}
+	
+	figcaption, .figcaption {
+		float:right;
 		margin:0;
 		max-width:45%;
 	}
@@ -402,7 +414,7 @@ li.image-grid .title {
 		max-height:none;
  }
  
-.double, .left {
+.double, .left, .right {
 		margin-left:-$spacing-unit / 2;
 		margin-right:-$spacing-unit / 2;
 		
@@ -426,13 +438,20 @@ li.image-grid .title {
 
 
 
-.left {
+.left, .right {
 	padding-left:$spacing-unit / 2;
 	padding-right:$spacing-unit / 2;
 
 	img {
 		margin-left:-$spacing-unit / 2;
 		max-width:calc(50% + #{$spacing-unit / 2});
+	}
+}
+
+.right {
+
+	img {
+		margin-right:-$spacing-unit / 2;
 	}
 }
  
