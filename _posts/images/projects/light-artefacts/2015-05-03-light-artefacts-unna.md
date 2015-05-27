@@ -12,34 +12,33 @@ To cite the exhibition catalogue: „The Centre for International Light Art in U
 
 In case you are in Unna, Germany, this exhibition is worth a visit. 
 
-![](/i/IMG_8337.jpg)![](/i/IMG_8278.jpg)
-{:.double}
+![](/i/IMG_8337.jpg)THE REFLECTING CORRIDOR by Olafur Eliasson
+{:.left}
 
-Two images above: THE REFLECTING CORRIDOR by Olafur Eliasson
-{:.figcaption}
+![](/i/IMG_8278.jpg)
+{:.right}
 
-![]({{site.url}}/i/IMG_8370.jpg)
+![]({{site.url}}/i/IMG_8370.jpg)SPACE - SPEECH - SPEED by Mischa Kuball
+{:.left}
 
 ![]({{site.url}}/i/IMG_8244.jpg)![]({{site.url}}/i/IMG_8247.jpg)
 {:.double}
 
 ![]({{site.url}}/i/IMG_8367.jpg)
 
-Four images: SPACE - SPEECH - SPEED by Mischa Kuball. 
-{:.figcaption} 
 
 ![]({{site.url}}/i/IMG_8248.jpg)
 
 I (IN DIALOGUE) by Jan van Munster
 {:.figcaption}
 
-![]({{site.url}}/i/IMG_8252.jpg)![]({{site.url}}/i/IMG_8364.jpg)
-{:.double}
+![]({{site.url}}/i/IMG_8252.jpg)TUNNEL OF TEARS FOR UNNA by Keith Sonnier
+{:.left}
+
+![]({{site.url}}/i/IMG_8364.jpg)
+{:.right}
 
 ![]({{site.url}}/i/IMG_8366.jpg)
-
-Color photos above: TUNNEL OF TEARS FOR UNNA by Keith Sonnier
-{:.figcaption}
 
 ![]({{site.url}}/i/IMG_8302.jpg)
 
@@ -51,10 +50,8 @@ LOTUS SHADOWS by Rebecca Horn
 THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
 {:.figcaption}
 
-![]({{site.url}}/i/IMG_8308.jpg)
-
-FLOATER 99 by James Turrell
-{:.figcaption}
+![]({{site.url}}/i/IMG_8308.jpg)FLOATER 99 by James Turrell
+{:.left}
 
 ![]({{site.url}}/i/IMG_8265.jpg)
 
@@ -62,7 +59,10 @@ SLOE WHITE AND RAVEN BLACK by Christina Kubisch
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_8354.jpg)
+{:.left}
 
 ![]({{site.url}}/i/IMG_8271.jpg) 
+{:.right}
 
 ![]({{site.url}}/i/IMG_8241.jpg) 
+{:.left}
