@@ -48,10 +48,8 @@ I (IN DIALOGUE) by Jan van Munster
 LOTUS SHADOWS by Rebecca Horn
 {:.figcaption}
 
-![]({{site.url}}/i/IMG_8313.jpg)
-
-THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
-{:.figcaption}
+![]({{site.url}}/i/IMG_8313.jpg)THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
+{:.right}
 
 ![]({{site.url}}/i/IMG_8308.jpg)FLOATER 99 by James Turrell
 {:.left}
