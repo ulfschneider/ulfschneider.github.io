@@ -6,19 +6,11 @@ function hasClass(elem, selector) {
 	}
 }
 
-function hasId(elem, selector) {
-	if (selector.charAt(0) === '#') {
-		return ("#" + elem.id) === selector;
-	} else {
-		return false;
-	}
-}
-
 
 function recursiveSelect(elem, selector, collect) {
 
 	if (elem != null) {
-		if (hasClass(elem, selector) || hasId(elem, selector)) {
+		if (hasClass(elem, selector)) {
 			collect.push(elem);			
 		}
 	
@@ -33,7 +25,12 @@ function recursiveSelect(elem, selector, collect) {
 function select(selector) {
 
 	var objects = [];
-	return recursiveSelect(document.body, selector, objects);
+	
+	if (selector.charAt(0) === '#') {
+		return document.getElementById(selector.substring(1, selector.length));
+	} else {
+		return recursiveSelect(document.body, selector, objects);
+	}
 }
 
 function getWindowWidth() {
