@@ -57,18 +57,12 @@
 		{% include footer.html %}
 
 		<script src="/r/packery.pkgd.min.js"></script>
-			<script src="/r/imagesloaded.pkgd.min.js"></script>					
 		<script>
-		 container = document.querySelector('#image-grid');
+		 container = select('#image-grid')[0];
 		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
 		
-		docReady(function() {
-			pckry.layout();
-		});
-		
-		imagesLoaded('#image-grid', function() {
-			pckry.layout();
-		});
+		 setInterval(function() {pckry.layout()}, 200);
+				
 		</script>								
 	
   </body>

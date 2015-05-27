@@ -1,11 +1,24 @@
 function hasClass(elem, selector) {
-		return (" " + elem.className + " ").indexOf(" " + selector + " ") > -1;
+	if (selector.charAt(0) === '.') {
+		return (" ." + elem.className + " ").indexOf(" " + selector + " ") > -1;
+	} else {
+		return false;
+	}
 }
+
+function hasId(elem, selector) {
+	if (selector.charAt(0) === '#') {
+		return ("#" + elem.id) === selector;
+	} else {
+		return false;
+	}
+}
+
 
 function recursiveSelect(elem, selector, collect) {
 
 	if (elem != null) {
-		if (hasClass(elem, selector)) {
+		if (hasClass(elem, selector) || hasId(elem, selector)) {
 			collect.push(elem);			
 		}
 	
@@ -28,9 +41,8 @@ function getWindowWidth() {
 }
 
 function getWrapperWidth() {
-	var wrappers = select("wrapper");
+	var wrappers = select(".wrapper");
 	if (wrappers.length > 0) {
-
 		return wrappers[0].offsetWidth;
 	}
 	return getWindowWidth();
@@ -52,7 +64,7 @@ function getMargin() {
 
 function layoutLeft() {
 
-	var l = select("left");
+	var l = select(".left");
 
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
@@ -64,7 +76,7 @@ function layoutLeft() {
 }
 
 function layoutRight() {
-	var l = select("right");
+	var l = select(".right");
 
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
@@ -77,7 +89,7 @@ function layoutRight() {
 
 function layoutDouble() {
 
-	var l = select("double");
+	var l = select(".double");
 
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
@@ -94,6 +106,9 @@ function layoutStuff() {
 	layoutRight();
 	layoutDouble();
 }
+
+
+setInterval(function() {layoutStuff()}, 200);
 
 
 
