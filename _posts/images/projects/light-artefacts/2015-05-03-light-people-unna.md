@@ -20,10 +20,10 @@ You will find some people moving around at the Centre for International Light Ar
 ![]({{site.url}}/i/IMG_8275.jpg)
 {:.right}
 
-TUNNEL OF TEARS FOR UNNA by Keith Sonnier
+
 ![]({{site.url}}/i/IMG_8258.jpg)
 
-![]({{site.url}}/i/IMG_8256.jpg)
+![]({{site.url}}/i/IMG_8256.jpg)TUNNEL OF TEARS FOR UNNA by Keith Sonnier
 {:.right}
 
 ![]({{site.url}}/i/IMG_8355.jpg)

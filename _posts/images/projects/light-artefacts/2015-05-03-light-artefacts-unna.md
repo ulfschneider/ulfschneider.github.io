@@ -21,8 +21,11 @@ In case you are in Unna, Germany, this exhibition is worth a visit.
 ![]({{site.url}}/i/IMG_8370.jpg)SPACE - SPEECH - SPEED by Mischa Kuball
 {:.left}
 
-![]({{site.url}}/i/IMG_8244.jpg)![]({{site.url}}/i/IMG_8247.jpg)
-{:.double}
+![]({{site.url}}/i/IMG_8244.jpg)
+{:.right}
+
+![]({{site.url}}/i/IMG_8247.jpg)
+{:.left}
 
 ![]({{site.url}}/i/IMG_8367.jpg)
 
