@@ -15,7 +15,7 @@ layout: default
 			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
-			{% endif %} | <a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+			{% endif %} - <a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
 		</p>
 	</li>
   {% endif %}
