@@ -59,9 +59,11 @@
 		<script src="/r/packery.pkgd.min.js"></script>
 		<script>
 		 container = select('#image-grid');
-		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
+		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	
 		
-		 setInterval(function() {pckry.layout()}, 200);
+		 setInterval(function() {	
+			 	pckry.layout();
+		 }, 200);
 				
 		</script>								
 	

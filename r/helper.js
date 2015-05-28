@@ -98,14 +98,22 @@ function layoutDouble() {
 	}
 }
 
+
+referenceWidth = 0;
+
 function layoutStuff() {
-	layoutLeft();
-	layoutRight();
-	layoutDouble();
+	var width = getWindowWidth();
+	
+	if (referenceWidth != width) { 
+		referenceWidth = width;
+		layoutLeft();
+		layoutRight();
+		layoutDouble();
+	}
 }
 
 
-setInterval(function() {layoutStuff()}, 200);
+setInterval(function() {layoutStuff()}, 100);
 
 
 
