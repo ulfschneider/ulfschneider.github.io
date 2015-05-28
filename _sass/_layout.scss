@@ -153,63 +153,6 @@ h3, h4 {
 
 
 
-.double {
-	
-	@extend %clearfix;		
-	margin-top:$spacing-unit;
-	margin-bottom:$spacing-unit;		
-
-	img, figure img {
-		margin:0;
-		width:none;
-		max-width:50%;
-		min-width:0;
-		display:inline-block;
-		padding:0;
-	}
-	
-	img:first-child {
-		padding-right:$spacing-unit / 2;
-	}
-	
-	img:last-child {
-		padding-left:$spacing-unit / 2;
-	}
-
-
-	figure {
-		float:left;
-		width:50%;
-		padding:0;
-		
-		img {
-			max-width:100%;
-			padding:0;
-		}
-		
-		figcaption, .figcaption {
-			margin:0;
-		}	
-	}
-	
-	figure:first-child {
-		padding-right:$spacing-unit / 2;
-		
-		img {
-			padding:0;
-		}
-	}
-	
-	figure:last-child {
-		padding-left:$spacing-unit / 2;
-		
-		img {
-			padding:0;
-		}
-	}
-}
-
-
 figcaption, .figcaption {
 	margin-top:-$spacing-unit;
 	display:block;
@@ -418,7 +361,7 @@ li.image-grid .title {
 		max-height:none;
  }
  
-.double, .left, .right {
+.left, .right {
 		margin-left:-$spacing-unit / 2;
 		margin-right:-$spacing-unit / 2;
 		
@@ -431,14 +374,6 @@ li.image-grid .title {
  	}
 }
 
-.double figure:first-child figcaption {
-	padding-left:$spacing-unit / 2;
-}
-
-
-.double figure:last-child figcaption {
-	padding-right:$spacing-unit / 2;
-}
 
 
 
