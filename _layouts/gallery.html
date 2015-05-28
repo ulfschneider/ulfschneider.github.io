@@ -43,16 +43,24 @@
 			{% include footer.html %}
 	
 		
-		<script src="/r/packery.pkgd.min.js"></script>
-		<script>
-		 container = select('#image-grid');
-		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});				
+   		<script src="/r/packery.pkgd.min.js"></script>
+   		<script src="/r/imagesloaded.pkgd.min.js"></script>
+   		<script>
+   		 container = select('#image-grid');
+   		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	
+   		 referenceWidth = 0;
+		 
+   		 imagesLoaded(container, function() {pckry.layout();});
 		
-		 setInterval(function() {
-			 	pckry.layout();
-		 }, 200);
-					
-		</script>								
+   		 setInterval(function() {	
+   			var  width = getWindowWidth();
+   			 if (referenceWidth != width) {
+   				 referenceWidth = width;
+   				 pckry.layout();
+   			}
+   		 }, 200);
+				
+   		</script>		
 								
   </body>
 
