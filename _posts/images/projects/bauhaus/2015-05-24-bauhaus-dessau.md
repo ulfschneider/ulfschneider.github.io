@@ -87,7 +87,7 @@ The café
 
 ![]({{site.url}}/i/IMG_8483.jpg)
 
-A short walk of 2 kilometers brings you from the Bauhaus building to the Kornhaus. We were there for dinner and it was quite good.
+A short walk of 2 kilometers will bring you from the Bauhaus building to the Kornhaus. We were there for dinner and it was quite good.
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_5888.jpg)
