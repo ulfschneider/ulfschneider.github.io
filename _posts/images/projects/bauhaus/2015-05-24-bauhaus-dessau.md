@@ -47,7 +47,8 @@ Looking inside out
 
 ![]({{site.url}}/i/IMG_8528.jpg)
 
-![]({{site.url}}/i/IMG_8451.jpg)
+![]({{site.url}}/i/IMG_8449.jpg)
+{:.left}
 
 ![]({{site.url}}/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
 {:.right}

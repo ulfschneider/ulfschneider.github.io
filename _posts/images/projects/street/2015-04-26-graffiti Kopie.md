@@ -1,0 +1,10 @@
+---
+layout: image
+title: Graffiti
+date:   2015-04-26
+abstract: 
+thumburl: /i/DSCF1697_thumb.jpg
+tags: [bw, street, things]
+---
+![]({{site.url}}/i/DSCF1697.jpg)
+
