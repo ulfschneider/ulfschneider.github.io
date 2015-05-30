@@ -53,6 +53,12 @@ Looking inside out
 ![]({{site.url}}/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
 {:.right}
 
+![]({{site.url}}/i/IMG_5884.jpg)Marcel Breuer
+{:.left}
+
+![]({{site.url}}/i/IMG_5885.jpg)Ise Gropius?
+{:.right}
+
 ![]({{site.url}}/i/IMG_5848.jpg)
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair.
 {:.left}
