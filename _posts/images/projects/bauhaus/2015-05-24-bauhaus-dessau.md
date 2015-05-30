@@ -56,7 +56,7 @@ Looking inside out
 ![]({{site.url}}/i/IMG_5884.jpg)Marcel Breuer
 {:.left}
 
-![]({{site.url}}/i/IMG_5885.jpg)Ise Gropius?
+![]({{site.url}}/i/IMG_5885.jpg)Lis Beyer, Ise Gropius?
 {:.right}
 
 ![]({{site.url}}/i/IMG_5848.jpg)
