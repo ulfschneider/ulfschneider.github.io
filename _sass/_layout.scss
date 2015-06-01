@@ -20,7 +20,7 @@
 .site-nav {
   line-height: $site-header-height;
 	float:left;
-
+	z-index:1000;
 
     .menu {
         display: none;
@@ -45,14 +45,14 @@
         top:0;
         right:$spacing-unit/2;
         background-color: $header-background-color;
-        text-align: right;		
+        text-align: right;	
+					
 
         .menu {
             display: block;
             float: right;
 						margin-right:0;
             text-align: center;
-						
 						&:hover {
 							background-color:$header-background-color;
 							color:$text-color;
