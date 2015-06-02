@@ -6,11 +6,11 @@ permalink:
 date: 2011-06-27
 message: 
 author: 
-abstract: Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
+abstract: Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
 ---
 This text was first published in OBJEKTspektrum, issue 4/2011, under the title [„Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“][schneider2011]. I have reworked, enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
 
-Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in Agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
+Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
 
 Iterations
 ---
@@ -22,7 +22,7 @@ Scrum and Architecture
 ---
 The [Agile Manifesto][agilemanifesto] values *„responding to change over following a plan“.* By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
 
-Scrum is a team-oriented management framework for Agile product development that creates transparency and has this kind inspect and adopt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
+Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adopt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
 
 Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle 2004].
 
@@ -59,7 +59,7 @@ Human and process
 ---
 A good architecture has conceptual integrity. One question is, can this be achieved by organizational measures, like processes and organizational structures, or is the expertise of an experienced and inspired architect of higher importance?
 
-From the perspective of Agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that *„individuals and interactions are valued higher than processes and tools“* [[Agile Manifesto]][agilemanifesto]. Therefore in an Agile environment the architect always has a higher significance  than any architecture process.
+From the perspective of agile software development the answer is easy to find. The first value statement of the Agile Manifesto states, that *„individuals and interactions are valued higher than processes and tools“* [[Agile Manifesto]][agilemanifesto]. Therefore in an agile environment the architect always has a higher significance  than any architecture process.
 
 And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product creativity is an important solution ingredient. Humans are creative, not so processes. Creativity can be supported by organizational structures but any organization will only help if creative people in general and creative architects in particular are high valued in the context of software development.
 

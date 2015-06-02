@@ -4,5 +4,5 @@ title: Know-how
 permalink: /know-how/
 banner: 
 ---
-Essays about my experiences within the Agile movement and the Agile value system. 
+Essays about my experiences within the agile movement and the agile value system. 
 

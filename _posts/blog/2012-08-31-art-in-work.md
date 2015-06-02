@@ -7,11 +7,11 @@ message:
 banner: 
 bottomline: 
 author: 
-abstract: The Agile Manifesto represents a force that is behind any concrete Agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
+abstract: The Agile Manifesto represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 ---
 This text was first published in OBJEKTspektrum, issue 5/2012, under the title [„Die Kunst in der Arbeit, eine Herausforderung des Status quo“][schneider2012]. I have enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
 
-The Agile Manifesto [[Beck et al. 2001]][agilemanifesto] represents a force that is behind any concrete Agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
+The Agile Manifesto [[Beck et al. 2001]][agilemanifesto] represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 
 People
 ---
@@ -40,7 +40,7 @@ By Seth Godins definition an artist is
 
 > … someone who uses bravery, insight, creativity and boldness to challenge the status quo. And an artist takes it personally. [Godin 2010:83]
 
-Art is not decoration, it is a motor of change. And art will only be made by artists. In this sense the heads behind the Agile movement can be seen as artists.
+Art is not decoration, it is a motor of change. And art will only be made by artists. In this sense the heads behind the agile movement can be seen as artists.
 
 This interpretation of art in work is not only about individual expertise, it is also about cooperation und social capabilities. Expertise and cooperation bring us to an up-movement, while in the opposite incompetence and egoistic driven acting bring us into a down-movement.
 
