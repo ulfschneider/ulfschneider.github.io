@@ -1,3 +1,32 @@
+function getStyle(elem, style) {
+ 
+  var value = elem.style[toCamelCase(style)];
+ 
+  if(!value) {
+		if(document.defaultView) {
+      value = document.defaultView.getComputedStyle(elem, "").getPropertyValue(style);
+		} else if(elem.currentStyle) {
+      value = elem.currentStyle[toCamelCase(style)];
+		}
+	}
+	
+  return value;
+}
+
+function toCamelCase( value ) {
+  var oStringList = value.split('-');
+  if(oStringList.length == 1)  {
+    return oStringList[0];
+	}
+	
+  var ret = value.indexOf("-") == 0 ? oStringList[0].charAt(0).toUpperCase() + oStringList[0].substring(1) : oStringList[0];
+  for(var i = 1, len = oStringList.length; i < len; i++){
+    var s = oStringList[i];
+    ret += s.charAt(0).toUpperCase() + s.substring(1)
+  }
+  return ret;
+}
+
 function hasClass(elem, selector) {
 	if (selector.charAt(0) === '.') {
 		return (" ." + elem.className + " ").indexOf(" " + selector + " ") > -1;
@@ -45,6 +74,14 @@ function getWrapperWidth() {
 	return getWindowWidth();
 }
 
+function getWrapperHorizPadding() {
+	var wrappers = select(".wrapper");
+	if (wrappers.length > 0) {
+		return parseInt(getStyle(wrappers[0], "padding-left")) * 2;
+	}
+	return 0;
+
+}
 
 function getMargin() {
 	var limit = -100;
@@ -53,19 +90,19 @@ function getMargin() {
 	var wrapWidth = getWrapperWidth();
 	
 	if (wrapWidth <= palm) {
-		return - 15;
+		return -15;
 	} else {
-		return   Math.round(Math.max(-(winWidth - wrapWidth) / 2, limit));	
+		return Math.round(Math.max(-(winWidth - wrapWidth) / 2, limit));	
 	}
 }
 
 function layoutLeft() {
 
 	var l = select(".left");
+	var margin = getMargin();
 
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
-		var margin = getMargin();
 		if (margin <= 0) {
 			elem.style.marginLeft = "" + margin + "px";						
 		} 
@@ -74,10 +111,10 @@ function layoutLeft() {
 
 function layoutRight() {
 	var l = select(".right");
-
+	var margin = getMargin();
+		
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
-		var margin = getMargin();
 		if (margin <= 0) {
 			elem.style.marginRight = "" + margin + "px";			
 		} 
@@ -87,10 +124,37 @@ function layoutRight() {
 function layoutDouble() {
 
 	var l = select(".double");
-
+	var margin = getMargin();
+	
 	for(var i=0; i<l.length; i++) {
 		var elem = l[i];
-		var margin = getMargin();
+
+		if (margin <= 0) {
+			elem.style.marginLeft = "" + margin + "px";		
+			elem.style.marginRight = "" + margin + "px";		
+		} 
+	}
+}
+
+function layoutWide() {
+
+	var palm = 600; /* must be same like in main.css form on-palm */
+	var wrapWidth = getWrapperWidth();
+
+	var margin = 0;
+	
+	if (wrapWidth <= palm) {
+		margin = 0;
+	} else {
+		var winWidth = getWindowWidth();		
+		var wrapPadding = getWrapperHorizPadding();
+		margin = Math.round(-(winWidth + wrapPadding - wrapWidth) / 2);	
+	}
+	
+	var l = select(".wide");
+	
+	for(var i=0; i<l.length; i++) {
+		var elem = l[i];
 		if (margin <= 0) {
 			elem.style.marginLeft = "" + margin + "px";		
 			elem.style.marginRight = "" + margin + "px";		
@@ -109,6 +173,7 @@ function layoutStuff() {
 		layoutLeft();
 		layoutRight();
 		layoutDouble();
+		layoutWide();
 	}
 }
 

@@ -125,7 +125,7 @@ h3, h4 {
 	
 	a {
 		font-weight:normal;
-		background-image: url(/r/link.jpg);
+		background-image: url(/r/link.gif);
 		background-repeat: repeat-x;
 		background-position: 100% 100%;			
 		
@@ -150,7 +150,6 @@ h3, h4 {
 .image-page img {
 		margin-left:0;
 }
-
 
 
 figcaption, .figcaption {
@@ -199,6 +198,13 @@ figcaption, .figcaption {
 		margin:0;
 		max-width:45%;
 	}
+}
+
+.double img, .wide img {
+	
+	max-height:none;
+	max-width:none;
+	width:100%;
 }
 
 
@@ -375,10 +381,8 @@ li.image-grid .title {
 		margin-left:-$spacing-unit / 2;
  		width:none;
  		min-width:0;		
- 		max-width:50%;
+ 		max-width:60%;
 		max-width:calc(60% + #{$spacing-unit / 2});				
-
- 		display:inline-block;
  	}
 }
 
