@@ -11,11 +11,11 @@ layout: default
 
 	<li class="post-grid">
 			<p>
-			<a class="more" href="{{ post.url | prepend: site.baseurl }}"><span class="title">{{ post.title }}</span></a> {% if post.abstract %}
+			<a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% if post.abstract %}
 			{{ post.abstract }}
 			{% else %}
 		 	{{ post.content | truncatewords:50 | strip_html }}
-			{% endif %} - <a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+			{% endif %}<a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
 		</p>
 	</li>
   {% endif %}

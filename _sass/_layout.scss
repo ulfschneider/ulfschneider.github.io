@@ -93,7 +93,7 @@ h1, .title{
 
 .subtitle {
 	line-height:1.4em;
-  	margin-bottom: $spacing-unit / 2;		
+  margin-bottom: $spacing-unit / 2;		
 	text-transform:uppercase;
 	letter-spacing:2px;
 }
@@ -106,7 +106,7 @@ h2 {
 
 
 h3, h4 {
-  	font-size: $base-font-size * 1.4;
+  font-size: $base-font-size * 1.4;
 	line-height:1.4em;
 }
 
@@ -238,10 +238,17 @@ figcaption, .figcaption {
 		padding:0;
 		list-style-type:none;
 		
+		.more {
+			padding-left:$spacing-unit;
+			float:right;
+		}
+		
 		.title {
 			font-size: $base-font-size * 1.4;
-			line-height:$base-line-height;
+			padding-right:$spacing-unit;
+			float:left;
 		}
+		
 		
 		a {
 			font-weight:400;
