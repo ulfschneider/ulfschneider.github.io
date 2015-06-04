@@ -276,11 +276,8 @@ figcaption, .figcaption {
 			padding:0;
 			margin:0;
 		}
-	}
-	
-	
+	}	
 }
-
 
 
 /*Galleries */
@@ -315,6 +312,7 @@ li.image-grid {
 
 li.image-grid .image {
 	padding:0px;
+	position:relative;
 	background-color:$background-color;
 	img {
 		width:100%;
@@ -323,11 +321,23 @@ li.image-grid .image {
 
 
 li.image-grid .title {
-	margin-top:5px;
+	overflow:hidden;
+	position:absolute;
+	display:none;
+	padding:1px;
+	z-index:10;
+	bottom:5px;
+	left:0;
+	right:0;
 	color:$text-color;
 	font-size:$extra-small-font-size;
 	font-family:"Source Sans Pro";
+	background:white;
 	font-weight:400;
+}
+
+li.image-grid:hover .title {
+	display:block;
 }
 
 /**
