@@ -110,7 +110,7 @@ Doing
 ---
 Done work has a momentum. Let yourself be permeated by your task until a solution arises. Act, deliver, inspect and improve. In the agile movement this attitude is captured by a collection of nice sayings: "Cut through the noise by taking action" [Beedle and Schwaber 2002:27], "Deliver early and decide late", "Do, do right, do better".
 
-This all comes down to, that in this complex self-organizing universe where always more is not known than known, theoretical models are not enough. 
+This all comes down to, that in this complex self-organizing universe where always more is unknown than known, theoretical models are not enough. 
 
 > Do the things that produce results now. Repeat.
 
