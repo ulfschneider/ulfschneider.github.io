@@ -163,5 +163,5 @@ References
 [taleb2012]: https://www.youtube.com/watch?v=zOUph1JpLlk
 [Taleb 2012] Nassim Nicholas Taleb, "Anti-Fragility", ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
 
-[Wohland und Wiemeyer 2007] Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
+[Wohland and Wiemeyer 2007] Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
 
