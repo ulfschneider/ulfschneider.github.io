@@ -116,7 +116,7 @@ This all comes down to, that in this complex self-organizing universe where alwa
 
 Divergent-convergent thinking and responsibility
 ---
-Explore and expand possible solution spaces for a given problem. In other words, think divergent and do it in a team before deciding for a solution. Don´t decide easily for the first and obvious solution. Bear with different perspectives from different team members for a while and then start to converge. 
+Explore and expand possible solution spaces for a given problem. In other words, think divergent and do it in a team before deciding for a solution. Don´t decide easily for the first and obvious solution. Diversity is something valuable. Bear with different perspectives from different team members for a while and then start to converge. 
 
 Possible techniques for divergent-convergent thinking are silent-brainstorming or the dynamics group decision making model  by Sam Kaner [Kaner et al. 2007]. 
 
