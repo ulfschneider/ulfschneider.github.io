@@ -20,17 +20,17 @@ To achieve conceptual integrity it has to be considered during the entire design
 
 Scrum and Architecture
 ---
-The [Agile Manifesto][agilemanifesto] values *„responding to change over following a plan“.* By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adopt and to come to better and more appropriate solutions while delivering results. 
+The [Agile Manifesto][agilemanifesto] values *„responding to change over following a plan“.* By taking this statement serious, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adapt and to come to better and more appropriate solutions while delivering results. 
 
-Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adopt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
+Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adapt built in. Work is being *„done“* every two or so weeks and at the end of these so called Sprints a process inspection and a product inspection is being held by the delivery team.
 
-Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Schwaber and Beedle 2004].
+Software development is a learning process. After finishing a project we normally know more than we did when we started the endeavor. This requires to make architectural decisions as late as possible to leverage the knowledge that has been obtained while delivering results, because decision quality can be enhanced by following this approach. In addition to late decisions we deliver working software as early as possible, to learn by doing, to avoid endless discussions and to use the momentum of done work. Ken Schwaber and Mike Beedle coined the statement *„cut through the noise by taking action“* [Beedle and Schwaber 2002].
 
 By putting these two behaviors together, we have an approach that can be called *„deliver early and decide late“*. 
 
 > Deliver early and decide late
 
-Architectural decisions are of strategic nature for the solution space. They have an effect for many aspects of the solution and will be recognized by the users of the product. Architectural decisions define the solution space for a given problem and bridge the gap between the requirements and the implementation. It is the architecture that allows to adopt a software system with reasonable effort for changing requirements.
+Architectural decisions are of strategic nature for the solution space. They have an effect for many aspects of the solution and will be recognized by the users of the product. Architectural decisions define the solution space for a given problem and bridge the gap between the requirements and the implementation. It is the architecture that allows to adapt a software system with reasonable effort for changing requirements.
 
 Architectural decisions are being taken under two premises [Friedrichsen 2010]:
 
@@ -321,6 +321,8 @@ References
 [agilemanifesto]: http://agilemanifesto.org 
 [K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
 
+[Beedle and Schwaber 2002] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 2002 
+
 [Brooks 1995] F. P. Brooks, „The Mythical Man Month“, Addison Wesley 1995
 
 [Brooks 2010] F. P. Brooks, „The Design of Design“, Addison Wesley 2010
@@ -338,8 +340,6 @@ References
 
 [schneider2011]: {{site.url}}/r/blog/schneider_os_04_11.pdf 
 [Schneider 2011] [U. Schneider, „Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess“, OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/r/blog/schneider_os_04_11.pdf)
-
-[Schwaber 20004] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 2004 
 
 [Zörner 2009] S. Zörner, „Historisch gewachsen? - Entscheidungen festhalten“, Java Magazin 04/2009
 
