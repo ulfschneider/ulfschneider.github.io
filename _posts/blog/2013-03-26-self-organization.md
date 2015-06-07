@@ -52,7 +52,7 @@ Self-organization describes spontaneous - emergent - processes that are responsi
 
 Water being wet is an emergent property. A single H2O molecule can not be wet but a lot of interdependent water molecules will develop the property of being wet.
 
-Pedestrians participating in crowded events will, when searching their path for different directions, develop streams in which they can move with the least possible collisions. This happens always although no one is planning this behavior [[Helbing 2011]][helbing2011]. 
+Pedestrians participating in crowded events will, when searching their path for different directions, develop streams in which they can move with the least possible collisions. This happens always although no one is planning this behavior. 
 
 The spontaneous development of new system properties will happen while these properties could not be predicted upfront when inspecting the actors or components of the system. The so developed *new* is not more or less but something different than the sum of the parts. While the actors or components are visible, their interactions are invisible and difficult to measure. In particular these interactions are the determining element in complex and self-organizing systems, they  make the systems behavior non-linear and difficult or impossible to reproduce - small causes can have enormous effects.
 
@@ -74,7 +74,7 @@ The reaction to unforeseeable events affords ad-hoc negotiation,  the breakdown 
 
 One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms and regulations. Instead one has to trust in self-organizational forces and the empowerment of employees to take local and autonomous decisions where needed.
 
-Still not all decisions are being taken autonomous on local levels. Self-organization can be accompanied with hierarchic structures. Lower levels build up higher levels and higher levels adapt with a slower pace. Lower levels will get their orientation from higher levels and not the other way around [[Helbing 2011]][helbing2011]. In self-organizing systems impulse and input from lower levels will be integrated into decision processes. It is not the question, if centralized or decentralized decision patterns are better in self-organizing systems. Instead both patterns can be observed and are needed.
+Still not all decisions are being taken autonomous on local levels. Self-organization can be accompanied with hierarchic structures. Lower levels build up higher levels and higher levels adapt with a slower pace. Lower levels will get their orientation from higher levels and not the other way around. In self-organizing systems impulse and input from lower levels will be integrated into decision processes. It is not the question, if centralized or decentralized decision patterns are better in self-organizing systems. Instead both patterns can be observed and are needed.
 
 > This is theory - but what can we do in concrete to give self-organizational forces a direction?
 
@@ -153,9 +153,6 @@ References
 
 [Hayek 2011] Friedrich A. von Hayek, "Law, Legislation and Liberty, Volume 1: Rules and Order", University of Chicago Press, 2011
 
-[helbing2011]: http://youtu.be/L_N8jDnY3N8
-[Helbing 2011] Dirk Helbing, "Komplexität und Selbstorganisation",  <http://youtu.be/L_N8jDnY3N8>
-
 [Kaner et al. 2007] Sam Kaner et al., "Facilitators Guide to Participatory Decision Making", Jossey-Bass 2007, Second Edition
 
 [Malik 2009] Fredmund Malik, "Systemisches Management, Evolution, Selbstorganisation", Haupt 2009
@@ -167,6 +164,4 @@ References
 [Taleb 2012] Nassim Nicholas Taleb, "Anti-Fragility", ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
 
 [Wohland und Wiemeyer 2007] Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
-
-
 
