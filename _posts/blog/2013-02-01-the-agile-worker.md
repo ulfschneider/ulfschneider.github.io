@@ -8,7 +8,7 @@ message:
 banner: 
 bottomline: 
 author: 
-abstract: The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. If the theory is not questioned by reality, if whether model or reality do not play a role, then there is no learning. Then work does not require the quest for suitable solutions and work can be done by following instructions. 
+abstract: The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. 
 ---
 An important part of agile work is learning. Agile workers are knowledge workers who bring their mental models in contact with reality. The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. If the theory is not questioned by reality, if whether model or reality do not play a role, then there is no learning. Then work does not require the quest for suitable solutions and work can be done by following instructions. 
 
