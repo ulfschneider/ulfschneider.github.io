@@ -73,10 +73,15 @@ Like learning is in service to produce good decisions, good decisions are in ser
 
 Many of us
 ---
-Is the idea of the self-determined, purpose-oriented and mastery-striving cooperative worker a model for many of us? I believe, yes. When we were children, we all started as agile workers. Then we have been socialized in schools, university and corporate structures. Ideas change the world. Taylorism has done that and left us behind as resources in highly automated manufacturing processes. The changing world with new challenges and ever increasing complexity will ask for our place in this world. Routined good behavior will no longer be the answer to that question. Creativity, exploring, understanding, changing, will become the normal case. The agile movement is a promising new idea and at the same time a reality pattern that represents a deeper and ground breaking change that is already on the way.
+Is the idea of the self-determined, purpose-oriented and mastery-striving cooperative worker a model for many of us? I believe, yes. When we were children, we all started as agile workers. Then we have been socialized in schools, university and corporate structures. If you want to have an idea about what happens during that way, habe a look at the [marshmallow challenge][wujec] - kindergarten children usually produce better results than graduates of economy schools.
+
+Ideas change the world. Taylorism has done that and left us behind with a-priori planning and acting as resources in highly automated manufacturing processes. The changing world with new challenges and ever increasing complexity will ask for our place in this world. Routined good behavior will no longer be the answer to that question. Creativity, exploring, understanding, changing, will become the normal case. The agile movement is a promising new idea and at the same time a reality pattern that represents a deeper and ground breaking change that is already on the way.
 
 References
 ---
 [Appelo 2011] J. Appelo, „Management 3.0, Leading Agile Developers, Develop Agile Leaders“, Addison Wesley 2011
 
 [Kaner 2007] S. Kaner et al., „Facilitator´s Guide to Participatory Decision Making“, Second Edition, Jossey-Bass 2007
+
+[wujec]: http://marshmallowchallenge.com/TED_Talk.html
+[Wujec 2010] T. Wuject, „The Marshmallow Challenge“, <http://marshmallowchallenge.com/TED_Talk.html>
