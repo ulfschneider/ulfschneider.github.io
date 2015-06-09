@@ -40,7 +40,7 @@ Dependency
 
 Let´s start with the basics. A line between two boxes indicates a dependency between two system components. A box is a component. In early phases, when you explore an existing system or design a new one, when directions of communication are not of highest importance, the undirected dependency between components is a good starting point.
 
-![Dependency](/i/blog/bbl_dependency.jpg)
+![Dependency]({{site.url}}/i/blog/bbl_dependency.jpg)
 
 Figure: A dependency between A and B
 
@@ -84,7 +84,7 @@ Synchronous and asynchronous
 
 Synchronous and asynchronous communication can be modeled with single and doubled connections.
 
-![Synchronous request and response](/i/blog/bbl_sync.jpg)
+![Synchronous request and response]({{site.url}}/i/blog/bbl_sync.jpg)
 
 Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.
 {:.figcaption}
