@@ -43,6 +43,7 @@ Let´s start with the basics. A line between two boxes indicates a dependency be
 ![Dependency]({{site.url}}/i/blog/bbl_dependency.jpg){:.w200}
 
 Figure: A dependency between A and B
+{:.figcaption}
 
 Flow
 ---
