@@ -98,6 +98,6 @@ Figure: A call initiated by A, giving data to B. The asynchronous response with 
 This simple Box-Bullet-Line notation can grow with your needs. For example you can start modeling only undirected connections, add data flows by giving your connections a direction and extend even more by adding caller indication with calling sequences later. You can even use a swim-lane structure and place the components into those lanes, to communicate categories or domains that the components belong to.
 
 
-[![BBL model natural]({{site.url}}/i/blog/bbl_model_natural.png)]({{site.url}}/r/blog/bbl.pdf)
+[![BBL model natural]({{site.url}}/i/blog/bbl_model_natural.jpg)]({{site.url}}/r/blog/bbl.pdf)
 
 Click on the image above to get a short presentation that is laying out the BBL concepts.
