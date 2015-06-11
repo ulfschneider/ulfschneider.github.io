@@ -40,7 +40,7 @@ Dependency
 
 Let´s start with the basics. A line between two boxes indicates a dependency between two system components. A box is a component. In early phases, when you explore an existing system or design a new one, when directions of communication are not of highest importance, the undirected dependency between components is a good starting point.
 
-![Dependency]({{site.url}}/i/blog/bbl_dependency.jpg)
+![Dependency]({{site.url}}/i/blog/bbl_dependency.jpg){:.w200}
 
 Figure: A dependency between A and B
 
@@ -49,7 +49,7 @@ Flow
 
 The directed connection from A to B has the meaning of „data flows from A to B“. 
 
-![Flow]({{site.url}}/i/blog/bbl_flow.jpg)
+![Flow]({{site.url}}/i/blog/bbl_flow.jpg){:.w200}
 
 Figure: The directed connection between A and B models a data flow from A to B.
 {:.figcaption}
@@ -59,12 +59,12 @@ Caller
 
 The caller can be marked with a tiny bullet.
 
-![Caller pushing]({{site.url}}/i/blog/bbl_caller_push.jpg)
+![Caller pushing]({{site.url}}/i/blog/bbl_caller_push.jpg){:.w200}
 
 Figure: A is calling B and handing over data to B
 {:.figcaption}
 
-![Caller pulling]({{site.url}}/i/blog/bbl_caller_pull.jpg)
+![Caller pulling]({{site.url}}/i/blog/bbl_caller_pull.jpg){:.w200}
 
 Figure: B is calling A and requesting data
 {:.figcaption}
@@ -74,7 +74,7 @@ Sequences
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Caller and flow with sequence]({{site.url}}/i/blog/bbl_caller_and_flow_sequence.jpg)
+![Caller and flow with sequence]({{site.url}}/i/blog/bbl_caller_and_flow_sequence.jpg){:.w300}
 
 Figure: Modeling data flow with a calling sequence
 {:.figcaption}
@@ -84,12 +84,12 @@ Synchronous and asynchronous
 
 Synchronous and asynchronous communication can be modeled with single and doubled connections.
 
-![Synchronous request and response]({{site.url}}/i/blog/bbl_sync.jpg)
+![Synchronous request and response]({{site.url}}/i/blog/bbl_sync.jpg){:.w200}
 
 Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.
 {:.figcaption}
 
-![Request with asynchronous response]({{site.url}}/i/blog/bbl_async.jpg)
+![Request with asynchronous response]({{site.url}}/i/blog/bbl_async.jpg){:.w200}
 
 Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.
 {:.figcaption}
