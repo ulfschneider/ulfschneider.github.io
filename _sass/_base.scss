@@ -230,12 +230,14 @@ table thead tr th {
 	vertical-align:bottom;
 	padding-right:$spacing-unit;
 	padding-bottom:$spacing-unit/2;
+	text-align:left;
 }
 
 table tbody tr td {
 	vertical-align:top;
 	padding-right:$spacing-unit;
 	padding-bottom:$spacing-unit/2;
+	text-align:left;
 }
 
 table tbody tr td:last-child, table thead tr th:last-child {

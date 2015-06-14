@@ -4,7 +4,7 @@ title:  Self-organization
 subtitle: A force of life
 date:   2013-03-26
 message: 
-permalink: self-organization
+permalink: 
 banner: 
 bottomline: 
 author: 
@@ -134,9 +134,9 @@ Anti-fragility
 ---
 Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragility does not mean robustness. Robustness is the ability of a system to resist changes without modifying its initial stable structure. Anti-fragility is more. It is the ability to become stronger through drawbacks, impacts or enhanced demands. If you lift 50 kilogram on one day, your body starts preparing to lift 51 kilogram on the next day. You become stronger because you are getting trained. The same is true for self-organizing teams. As long as the task of the team is clear, the team will start to orient itself on the task. The task is allowed to be demanding - but it has to be clear and the team must be empowered to change structures and adapt.
 
-Reflexion
+Reflection
 ---
-I want to close with a suggestion for a reflexion exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118]. 
+I want to close with a suggestion for a reflection exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118]. 
 
 Think about. Act. Repeat.
 
