@@ -35,7 +35,7 @@ E.g. a short list of possible steps that are needed to get a piece of software d
 
 The team has to discuss, negotiate and conclude on the suitable work steps. As a result the team earns a clear understanding of "done" software in the specific context. This is an important contract to ensure not to break the product during iterated delivery and to have defined quality for any "done" piece of software in each iteration.
 
-> Write down your current *Definition of Done* and provide it somewhere so that anyone can immediatly access it. Stick to it. 
+> Write down your current *Definition of Done* and provide it somewhere so that anyone can immediatly access it. Make it explicit. Stick to it. 
 
 The contract of the *Definition of Done* can be modified by the team after each iteration. These discussions have a huge impact on making the flow of work visible, to see if the work can be done by the team and to unhide bottlenecks. But be aware not to make the DoD so thin that at the end a piece of work that fulfills your DoD is actually not done. Remember, almost done is easy, but that is not done.
 
