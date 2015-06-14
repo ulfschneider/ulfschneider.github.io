@@ -55,14 +55,14 @@ Requirement in User Story syntax | Domain expert
 Discussion about solution | Domain expert and team
 Test cases developed | Test expert and domain expert
 Implemented | Developer
-Acceptance criteria met | Developer
+Acceptance criteria met | Developer and domain expert
 Database changes | Developer and database admin
 Automated unit tests | Developer
 Performance fulfilled | Developer
 Translations | Translator and domain expert
 User tests | Test expert
 Deployed | Operations team
-Docuented | Editor and domain expert
+Documented | Editor and domain expert
 
 If some roles can not be filled by members of the team - because of a lack of skills or because no member will take over the responsibility that comes with the role - you may have found an organizational dysfunction. It is worth to identify the root cause. Why is role so difficult to fill? What can be changed?
 
