@@ -150,7 +150,6 @@ h3, h4 {
     &:hover {
 			background-color:$background-color;
 			background-repeat:repeat;
-			text-decoration:underline;
 			color:$text-color;
    	 	}
 	}
@@ -163,7 +162,7 @@ h3, h4 {
 		margin-left: auto;
 	  margin-right: auto;		
 	}
-	
+		
 }
 
 
@@ -278,7 +277,6 @@ figcaption, .figcaption {
 			
 			&:active,
 	    	&:hover {
-				text-decoration:none;
 				background-color:$text-color;
 				color:$background-color;
 	   	 	}		
