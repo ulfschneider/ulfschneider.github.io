@@ -165,8 +165,18 @@ h3, h4 {
 		
 }
 
+/* INITIAL CAPS
+.post-content > p:first-child:first-letter {
+	font-size: $base-line-height * 1.5;
+	margin: 0 0.1em 0 0;
+	padding:0px 4px;
+	border:2px solid $text-color;
+	}
+*/
 
-.image-page img {
+
+
+.image-content img {
 		margin-left:0;
 }
 
@@ -265,7 +275,7 @@ figcaption, .figcaption {
 		.title {
 			font-size: $base-font-size * 1.4;
 			padding-right:$spacing-unit;
-			float:left;
+			line-height:1em;
 		}
 		
 		
@@ -287,7 +297,6 @@ figcaption, .figcaption {
 	li.post-grid {
 		margin:0px;
 		margin-top:$spacing-unit;		
-		float:left;
 		height:100%;
 				
 		&::before{

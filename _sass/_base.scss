@@ -48,14 +48,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
 /**
  * Images
  */
 img {
     max-width: 100%;
-	max-height:700px;
+		max-height:700px;
     vertical-align: top;
-	border:0;
+		border:0;
 }
 
 
@@ -72,14 +73,27 @@ figure > img {
  */
 
 ul {
-	list-style:disc;
+	list-style:disc inside;
 }
 
-ul, ol {
+ol {
 	list-style-position:inside;
+}
+
+
+ul, ol {
 	li {
-    	> ul,
-		> ol {
+			> p {
+				display:inline;
+				
+				&:after {
+					content:"";
+					display:block;
+					margin-bottom:$spacing-unit / 2;
+					}
+				}
+		
+    	> ul,	> ol {
 			margin-left:$spacing-unit;
 			margin-bottom: 0;
 		 }	
