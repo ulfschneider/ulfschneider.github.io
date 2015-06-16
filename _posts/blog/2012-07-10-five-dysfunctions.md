@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The five dysfunctions of a team
+title:  Five dysfunctions of a team
 subtitle: A non-performing team is not a team
 permalink: 
 date:   2012-07-10
