@@ -295,7 +295,10 @@ figcaption, .figcaption {
 
 	
 	li.post-grid {
+		
 		margin:0px;
+		clear:both;
+		float:left;
 		margin-top:$spacing-unit;		
 		height:100%;
 				
