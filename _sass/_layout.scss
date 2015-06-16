@@ -147,22 +147,25 @@ h3, h4 {
 		background-position: 100% 100%;			
 		
 		&:active,
-    	&:hover {
+    &:hover {
 			background-color:$background-color;
 			background-repeat:repeat;
+			text-decoration:underline;
 			color:$text-color;
    	 	}
 	}
-
+	
+	
 	img {
 		margin-top:$spacing-unit;
 		margin-bottom:$spacing-unit;
 		display: block;
 		margin-left: auto;
 	  margin-right: auto;		
-	}			
+	}
 	
 }
+
 
 .image-page img {
 		margin-left:0;
@@ -233,7 +236,7 @@ figcaption, .figcaption {
 	float:left;
 	margin:0;
 	margin-right:$spacing-unit;
-	margin-bottom:$spacing-unit;
+	margin-bottom:$spacing-unit / 2;
 	box-sizing:content-box;
 	background-image:url(/r/u150.jpg);
 }
@@ -275,6 +278,7 @@ figcaption, .figcaption {
 			
 			&:active,
 	    	&:hover {
+				text-decoration:none;
 				background-color:$text-color;
 				color:$background-color;
 	   	 	}		
