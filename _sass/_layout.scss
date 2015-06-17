@@ -82,6 +82,33 @@
     }
 }
 
+.post-nav {
+	margin-top:$spacing-unit;
+		
+	.next {
+		float:right;
+	}
+	
+	.prev {
+		float:left;
+	}
+}
+
+.page-content .meta {
+	a {
+		color:$text-color;
+		background-color:$background-color;			
+		background-image:none;
+		
+		&:active, &:hover {
+			background-color:$text-color;
+			color:$background-color;
+		}
+		
+	}
+	
+}
+
 
 h1, .title{
 	font-size:$base-font-size * 1.8;

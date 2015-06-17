@@ -1,0 +1,47 @@
+ {% for post in site.posts %}
+ 
+ 	{% if post.url == page.url %}
+ 		{% assign current = post %}
+		{% assign index = forloop.index %}
+ 	 {% endif %}
+
+	{% if current %}
+
+		{% unless prev %}	
+		{% for p in site.posts offset:index   %}
+			{% unless prev %}
+				{% if p.layout == current.layout %}
+					{% assign prev = p %}
+				{% endif %}
+			{% endunless %}
+		{% endfor %}
+		{% endunless %}
+		
+		{% unless next %}
+		{% for p in site.posts %}
+				{% if p.layout == current.layout and forloop.index < index  %}
+					{% assign next = p %}
+				{% endif %}
+		{% endfor %}		
+		{% endunless %}
+		
+		{% break %}
+	{% endif %}
+
+ {% endfor %}
+ 
+ {% if prev or next %}
+	<div class="post-nav">
+		<div class="wrapper">		 
+
+			 {% if prev  %}
+				 <a class="prev" href="{{ site.url }}{{ prev.url }}"><&nbsp;{{ prev.title }}&nbsp; </a>
+			 {% endif %}
+
+			{% if next  %}
+   		<a class="next" href="{{ site.url }}{{ next.url }}"> &nbsp;{{ next.title }}&nbsp;></a>
+ 			{% endif %}
+	 
+	 </div>
+</div>
+{% endif %}

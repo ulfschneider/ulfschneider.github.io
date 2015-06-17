@@ -1,0 +1,41 @@
+ {% for post in site.posts %}
+ 
+ 	{% if post.url == page.url %}
+ 		{% assign current = post %}
+		{% assign index = forloop.index %}
+ 	 {% endif %}
+
+	{% if current %}
+
+		{% unless prev %}	
+		{% for p in site.posts offset:index   %}
+			{% unless prev %}
+				{% if p.layout == current.layout %}
+					{% assign prev = p %}
+				{% endif %}
+			{% endunless %}
+		{% endfor %}
+		{% endunless %}
+		
+		{% unless next %}
+		{% for p in site.posts %}
+				{% if p.layout == current.layout and forloop.index < index  %}
+					{% assign next = p %}
+				{% endif %}
+		{% endfor %}		
+		{% endunless %}
+		
+		{% break %}
+	{% endif %}
+
+ {% endfor %}
+ 
+ {% if prev or next %}
+			 {% if prev  %}
+				 <a class="prev" title="{{prev.title}}" href="{{ site.url }}{{ prev.url }}"><&nbsp;prev&nbsp;</a>
+			 {% endif %}
+
+			{% if next  %}
+   		<a class="next" title="{{next.title}}" href="{{ site.url }}{{ next.url }}">&nbsp;next&nbsp;></a>
+ 			{% endif %}
+{% endif %}
