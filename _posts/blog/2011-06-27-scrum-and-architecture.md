@@ -220,10 +220,10 @@ When crafting a system, the non-functional requirements, constraints and the arc
 
 ![]({{site.url}}/i/blog/constraining_resource.jpg)
 
-Figure: The constraining resource is the key limit that determines the performance of the system
+Figure: The constraining resource gives the key limit that determines the performance of the system
 {:.figcaption}
 
-These are key limits that determine the performance of the system. The architect has to identify this scarce resources and derive allowable targets that the project team can use to measure and compare.
+These resources give the key limits that determine the performance of the system. The architect has to identify the scarce resources and derive allowable targets that can be used to measure and compare.
 
 As an example:
 2,500,000 data records need to be processed within one hour. Currently achieved value is 1,800,000. 
