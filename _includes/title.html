@@ -10,7 +10,7 @@
 			{% if page.date %}<span>{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
 		{% endunless %}
 		{% if page.author %}<span> by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
-		{% unless page.layout contains 'gallery' or page.layout contains 'collection' %}
+		{% unless page.layout contains 'gallery' or page.layout contains 'collection' or page.layout contains 'image' %}
 		{% if page.date %}
 				<div style="float:right;">{% include shortpostnav.html %}</div>
 		{% endif %}

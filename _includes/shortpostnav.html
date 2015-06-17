@@ -5,7 +5,7 @@
 		{% assign index = forloop.index %}
  	 {% endif %}
 
-	{% if current and current.layout != "image" %}
+	{% if current and current.layout != "image" and current.layout != "gallery" and current.layout != "collection "%}
 
 		{% unless prev %}	
 		{% for p in site.posts offset:index   %}
