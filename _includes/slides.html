@@ -1,0 +1,68 @@
+<div class="slide-gallery-content">
+					
+{% if page.title %}
+	<div>{{ page.title }}</div>
+{% elsif page.message %} 
+	<div>{{ page.message }}</div>
+{% endif %}
+
+<a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>		
+<a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>		
+				
+<div class="slides" id="slides">
+
+	{% for tag in page.tags %}
+					
+		{% for post in site.tags.[tag] %}
+						
+				{% if post.layout contains 'image' and post.thumburl %}
+						<div class="slide">
+							<a  href="{{ post.url | prepend: site.baseurl }}">
+								{% if post.slideurl %}
+								<img src="{{post.slideurl | prepend: site.baseurl}}"  />
+								{% else %}
+								<img src="{{post.thumburl | prepend: site.baseurl}}"  />
+								{% endif %}
+							</a>
+							
+							{% if post.message %}
+								<div>{{post.message}}</div>
+							{% elsif post.abstract %}										
+								<div>{{post.abstract}}</div>
+							{% elsif post.title %}
+								<div>{{post.title}}</div>
+							{% endif %}							
+							
+						</div>
+					{% endif %}
+				{% endfor %}
+		{% endfor %}
+</div>			
+
+<script src="/r/jquery.min.js" type="text/javascript"></script>
+<script>
+			
+function next() {
+ $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
+}
+	 
+function prev() {
+ $('.slides > :first-child').fadeOut();
+ $('.slides > :last-child').insertBefore('.slides > :first-child');
+ $('.slides > :first-child').fadeIn();		 
+}	
+	 
+$("body").keydown(function(e) {
+  if(e.which == 37) { 
+      $("#prev").trigger("click");
+  }
+  else if(e.which == 39) { 
+      $("#next").trigger("click");
+  }
+});	
+	  
+
+$(function(){$('.slides > :gt(0)').hide();});		
+</script>
+</div>
+									

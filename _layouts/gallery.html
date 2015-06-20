@@ -5,12 +5,17 @@
 
   <body class="gallery">
 
-    {% include header.html %}
+		<div class="for-gallery">
+    	{% include header.html %}
+		</div>
 				
-    <div id="pageContent" class="gallery-content">
+    <div id="pageContent" class="gallery-content for-gallery">
 				<div class="wrapper">
 					{% include title.html %}
 					{{ content }}
+
+					<a id="slides" style="cursor:pointer;" onclick="displaySlides();">slide view ></a>
+					
 				</div>
 		
 				<ul class="image-grid" id="image-grid">
@@ -23,7 +28,7 @@
 							<a  href="{{ post.url | prepend: site.baseurl }}">
 								<li class="image-grid">
 									<div class="image">
-										<img src="{{post.thumburl}}"/>
+										<img src="{{post.thumburl | prepend: site.baseurl}}"/>
 										{% if post.message %}
 											<div class="title">{{post.message}}</div>
 										{% elsif post.abstract %}										
@@ -39,21 +44,36 @@
 				{% endfor %}
 			</ul>									
 		</div>
+		
+		<div class="wrapper for-slides">
+		<a id="gallery" style="cursor:pointer;" onclick="displayGallery();">< gallery view</a>		
+			{% include slides.html %}
+		</div>			
 
-			{% include footer.html %}
+	</div>
 	
 		
-   		<script src="/r/packery.pkgd.min.js"></script>
-   		<script>
-   		 container = select('#image-grid');
-   		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	
-	 
-		
-   		 setInterval(function() {	
-   				 pckry.layout();
-   		 }, 200);
+<script src="/r/packery.pkgd.min.js"></script>
+<script>
+
+$('.for-slides').hide();
+
+container = select('#image-grid');
+pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	setInterval(function() {	 pckry.layout(); }, 500);
+
+function displayGallery() {
+	$('.for-slides').fadeOut(); 
+	$('.for-gallery').delay(500).fadeIn(); 
+}
+
+function displaySlides() {
+	$('.for-gallery').fadeOut();
+	$('.for-slides').delay(500).fadeIn(); 
+}
+
+
 				
-   		</script>		
+</script>		
 								
   </body>
 

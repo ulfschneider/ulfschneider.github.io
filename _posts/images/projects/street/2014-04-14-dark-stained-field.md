@@ -4,6 +4,7 @@ title: Dark-stained field
 date:   2014-04-14
 abstract: 
 thumburl: /i/DSCF0515_thumb.jpg
+slideurl: /i/DSCF0515.jpg
 tags: [bw, street, people]
 ---
 
