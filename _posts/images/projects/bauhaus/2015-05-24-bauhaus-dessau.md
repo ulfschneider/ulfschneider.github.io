@@ -59,7 +59,8 @@ Looking inside out
 ![]({{site.url}}/i/IMG_5885.jpg)Lis Beyer, Ise Gropius?
 {:.right}
 
-![]({{site.url}}/i/IMG_8528.jpg)
+![]({{site.url}}/i/IMG_8522.jpg)Some newer work.
+{:.left}
 
 ![]({{site.url}}/i/IMG_5848.jpg)
 The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair.
