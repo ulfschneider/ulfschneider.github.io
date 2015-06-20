@@ -121,12 +121,15 @@ a {
 	background-color:transparent;
 	outline:0;
 	&:active,
-	&:hover {
-		outline:0;
+	&:hover {		
     color: $background-color;
 		background-color:$text-color;
-    text-decoration: none;
     }
+		&:visited {
+    color: $text-color;	
+		background-color:transparent;
+		}
+		
 }
 
 ::selection {
