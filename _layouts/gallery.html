@@ -4,18 +4,18 @@
  {% include head.html %}
 
  <body class="gallery">
-
+		<script src="/r/jquery.min.js" type="text/javascript"></script>		
+	 
 		<div class="for-gallery">
    	{% include header.html %}
-		</div>
+
 				
-   <div id="pageContent" class="gallery-content for-gallery">
+  		<div id="pageContent" class="gallery-content">
 				<div class="wrapper">
 					{% include title.html %}
 					{{ content }}
 
 					<a id="slides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
-					
 				</div>
 		
 				<ul class="image-grid" id="image-grid">
@@ -45,36 +45,107 @@
 			</ul>									
 		</div>
 		
-		<div style="display:none; margin-top:1em;" class="wrapper for-slides">
-		<a id="gallery" style="cursor:pointer;" onclick="displayGallery();">display gallery</a>		
-			{% include slides.html %}
-		</div>			
+		<script src="/r/packery.pkgd.min.js"></script>
+		
+		<script>
 
+		$('.for-slides').hide();
+
+		container = select('#image-grid');
+		pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	setInterval(function() {	 pckry.layout(); }, 500);
+
+		function displayGallery() {
+			$('.for-slides').fadeOut(); 
+			$('.for-gallery').delay(500).fadeIn(); 
+		}
+
+		function displaySlides() {
+			$('.for-gallery').fadeOut();
+			$('.for-slides').delay(500).fadeIn(); 
+		}
+		
+		</script>
+		
+		
 	</div>
 	
-		
-<script src="/r/packery.pkgd.min.js"></script>
-<script>
+	
+	<div style="display:none;"class="slide-gallery-content for-slides">
+		<div class="wrapper">
+					
+			{% if page.title %}
+			<div class="title">{{ page.title }}</div>
+			{% elsif page.message %} 
+			<div class="title">{{ page.message }}</div>
+			{% endif %}
 
-$('.for-slides').hide();
+			<div class="nav">
+				<a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>		
+				<a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>		
+				<a class="gallery" id="gallery"  onclick="displayGallery();">display gallery</a>		
+			</div>
 
-container = select('#image-grid');
-pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	setInterval(function() {	 pckry.layout(); }, 500);
+			<div class="slides" id="slides">
 
-function displayGallery() {
-	$('.for-slides').fadeOut(); 
-	$('.for-gallery').delay(500).fadeIn(); 
-}
+				{% for tag in page.tags %}
+					
+					{% for post in site.tags.[tag] %}
+						
+						{% if post.layout contains 'image' and post.thumburl %}
+							<div class="slide">
 
-function displaySlides() {
-	$('.for-gallery').fadeOut();
-	$('.for-slides').delay(500).fadeIn(); 
-}
+									{% if post.slideurl %}
+									<img src="{{post.slideurl | prepend: site.baseurl}}"  />
+									{% else %}
+									<img src="{{post.thumburl | prepend: site.baseurl}}"  />
+									{% endif %}
+							
+								{% if post.message %}
+									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
+								{% elsif post.abstract %}										
+									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
+								{% elsif post.title %}
+									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
+								{% endif %}							
+							
+							</div>
+						{% endif %}
+					{% endfor %}
+			{% endfor %}
+		</div>		
+	</div>	
 
+	<script src="/r/jquery.mobile.custom.min.js" type="text/javascript"></script>
+	<script>
+			
+	function next() {
+	 $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
+	}
+	 
+	function prev() {
+	 $('.slides > :first-child').fadeOut();
+	 $('.slides > :last-child').insertBefore('.slides > :first-child');
+	 $('.slides > :first-child').fadeIn();		 
+	}	
+	 
+	$("body").keydown(function(e) {
+	  if(e.which == 37) { 
+			prev();
+	  }
+	  else if(e.which == 39) { 
+			next();
+	  }	
+	});	
 
-				
-</script>		
-								
+	$( ".slide" ).on( "swipeleft", next );
+	$( ".slide" ).on( "swiperight", prev );
+ 	  
+
+	$(function(){$('.slides > :gt(0)').hide();});		
+	</script>
+	</div>
+									
+											
  </body>
 
 </html>

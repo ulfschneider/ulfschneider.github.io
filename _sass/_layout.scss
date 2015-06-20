@@ -208,8 +208,22 @@
 	padding-top:$spacing-unit;
 	position:relative;
 	
-	a.prev, a.next {
-		cursor:pointer;
+	.nav {
+		
+		a.prev, a.next {
+			cursor:pointer;
+			float:left;
+		}
+		
+		a.prev {
+			margin-right:$spacing-unit;
+		}
+	
+		a.gallery {
+			cursor:pointer;
+			float:right;
+		}
+	@extend %clearfix;			
 	}
 
 
