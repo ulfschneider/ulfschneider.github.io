@@ -124,12 +124,7 @@ a {
 	&:hover {		
     color: $background-color;
 		background-color:$text-color;
-    }
-		&:visited, &:focus {
-    color: $text-color;	
-		background-color:transparent;
-		}
-		
+    }		
 }
 
 ::selection {
