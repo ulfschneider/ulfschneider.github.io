@@ -59,8 +59,9 @@
 			$('.for-gallery').delay(500).fadeIn(); 
 		}
 
-		function displaySlides() {
+		function displaySlides() {			
 			$('.for-gallery').fadeOut();
+			$('.slides img').show();			
 			$('.for-slides').delay(500).fadeIn(); 
 		}
 		
@@ -141,7 +142,7 @@
 	$( ".slide" ).on( "swiperight", prev );
  	  
 
-	$(function(){$('.slides > :gt(0)').hide(); $('.slides img').show();});		
+	$(function(){$('.slides > :gt(0)').hide(); });		
 	</script>
 	</div>
 									
