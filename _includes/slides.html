@@ -19,9 +19,9 @@
 						<div class="slide">
 
 								{% if post.slideurl %}
-								<img src="{{post.slideurl | prepend: site.baseurl}}"  />
+								<img style="display:none;" src="{{post.slideurl | prepend: site.baseurl}}"  />
 								{% else %}
-								<img src="{{post.thumburl | prepend: site.baseurl}}"  />
+								<img style="display:none;" src="{{post.thumburl | prepend: site.baseurl}}"  />
 								{% endif %}
 							
 							{% if post.message %}

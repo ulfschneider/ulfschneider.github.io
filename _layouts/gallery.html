@@ -95,9 +95,9 @@
 							<div class="slide">
 
 									{% if post.slideurl %}
-									<img src="{{post.slideurl | prepend: site.baseurl}}"  />
+									<img style="display:none;" src="{{post.slideurl | prepend: site.baseurl}}"  />
 									{% else %}
-									<img src="{{post.thumburl | prepend: site.baseurl}}"  />
+									<img style="display:none;" src="{{post.thumburl | prepend: site.baseurl}}"  />
 									{% endif %}
 							
 								{% if post.message %}
@@ -118,7 +118,7 @@
 	<script src="/r/jquery.mobile.custom.min.js" type="text/javascript"></script>
 	<script>
 			
-	function next() {
+	function next() {		
 	 $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
 	}
 	 
@@ -141,7 +141,7 @@
 	$( ".slide" ).on( "swiperight", prev );
  	  
 
-	$(function(){$('.slides > :gt(0)').hide();});		
+	$(function(){$('.slides > :gt(0)').hide(); $('.slides img').show();});		
 	</script>
 	</div>
 									
