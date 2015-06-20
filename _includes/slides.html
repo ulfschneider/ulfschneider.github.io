@@ -55,11 +55,11 @@ function prev() {
 	 
 $("body").keydown(function(e) {
   if(e.which == 37) { 
-      $("#prev").trigger("click");
+		prev();
   }
   else if(e.which == 39) { 
-      $("#next").trigger("click");
-  }
+		next();
+  }	
 });	
 
 $( ".slide" ).on( "swipeleft", next );
