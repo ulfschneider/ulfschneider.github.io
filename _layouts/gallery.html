@@ -61,7 +61,6 @@
 
 		function displaySlides() {			
 			$('.for-gallery').fadeOut();
-			$('.slides img').show();			
 			$('.for-slides').delay(500).fadeIn(); 
 		}
 		
@@ -96,9 +95,9 @@
 							<div class="slide">
 
 									{% if post.slideurl %}
-									<img style="display:none;" src="{{post.slideurl | prepend: site.baseurl}}"  />
+									<img src="{{post.slideurl | prepend: site.baseurl}}"  />
 									{% else %}
-									<img style="display:none;" src="{{post.thumburl | prepend: site.baseurl}}"  />
+									<img src="{{post.thumburl | prepend: site.baseurl}}"  />
 									{% endif %}
 							
 								{% if post.message %}
