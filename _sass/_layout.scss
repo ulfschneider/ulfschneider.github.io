@@ -276,9 +276,16 @@ li.image-grid .title {
 	font-weight:400;
 }
 
+
 li.image-grid:hover .title {
 	display:block;
 }
+
+li.image-grid:active .title {
+	display:none;
+}
+
+
 
 .post-nav {
 	margin-top:$spacing-unit;
@@ -490,7 +497,7 @@ ul.image-grid {
 		
 li.image-grid {
   	width: 50%;
-		padding:$spacing-unit/4;
+		padding:$spacing-unit/4;				
 	}
 
 }

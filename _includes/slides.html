@@ -17,20 +17,19 @@
 						
 				{% if post.layout contains 'image' and post.thumburl %}
 						<div class="slide">
-							<a  href="{{ post.url | prepend: site.baseurl }}">
+
 								{% if post.slideurl %}
 								<img src="{{post.slideurl | prepend: site.baseurl}}"  />
 								{% else %}
 								<img src="{{post.thumburl | prepend: site.baseurl}}"  />
 								{% endif %}
-							</a>
 							
 							{% if post.message %}
-								<div>{{post.message}}</div>
+								<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
 							{% elsif post.abstract %}										
-								<div>{{post.abstract}}</div>
+								<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
 							{% elsif post.title %}
-								<div>{{post.title}}</div>
+								<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
 							{% endif %}							
 							
 						</div>
