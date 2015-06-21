@@ -108,7 +108,7 @@
  */
 .page-content {
 	
-	padding-top:2 * $spacing-unit;	
+	padding-top:2 * $spacing-unit;			
 	
 	img {
 		margin-top:$spacing-unit;
@@ -172,16 +172,7 @@
 	position:relative;
 	
 	.nav {
-		
-		a.prev, a.next {
-			cursor:pointer;
-			float:left;
-		}
-		
-		a.prev {
-			margin-right:$spacing-unit;
-		}
-	
+			
 		a.gallery {
 			cursor:pointer;
 			float:right;
@@ -246,6 +237,15 @@ li.image-grid .title {
 }
 
 
+a.prev, a.next {
+	cursor:pointer;
+	float:left;
+}
+
+a.prev {
+	margin-right:$spacing-unit;
+}
+
 
 
 .post-nav {
@@ -255,10 +255,6 @@ li.image-grid .title {
 		float:right;
 	}
 	
-	.prev {
-		margin-right:$spacing-unit;
-		float:left;
-	}
 }
 
 .meta, .page-content .meta {

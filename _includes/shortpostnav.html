@@ -32,10 +32,10 @@
  
  {% if prev or next %}
 			 {% if prev  %}
-				 <a class="prev" accesskey="-" title="{{prev.title}}" href="{{ site.url }}{{ prev.url }}"><&nbsp;prev&nbsp;</a>
+				<a class="prev" accesskey="-" title="{{prev.title}}" href="{{ site.url }}{{ prev.url }}"><&nbsp;prev</a>
 			 {% endif %}
 
 			{% if next  %}
-   		<a class="next" accesskey="+" title="{{next.title}}" href="{{ site.url }}{{ next.url }}">&nbsp;next&nbsp;></a>
+   		<a class="next" accesskey="+" title="{{next.title}}" href="{{ site.url }}{{ next.url }}">next&nbsp;></a>
  			{% endif %}
 {% endif %}
