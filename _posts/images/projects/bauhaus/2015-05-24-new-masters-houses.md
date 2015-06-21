@@ -10,6 +10,8 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 
 ![]({{site.url}}/i/IMG_8468.jpg)
 
+![]({{site.url}}/i/IMG_8470.jpg)
+
 ![]({{site.url}}/i/IMG_8557.jpg)
 {:.left}
 
@@ -26,6 +28,8 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 {:.left}
 
 ![]({{site.url}}/i/IMG_8536.jpg)
+
+![]({{site.url}}/i/IMG_8563.jpg)
 
 ![]({{site.url}}/i/IMG_8464.jpg)
 {:.right}
