@@ -100,9 +100,9 @@
 
 									
 									{% if post.slideurl %}
-									<img lazy="{{post.slideurl | prepend: site.baseurl}}"  />
+									<img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"  />
 									{% else %}
-									<img lazy="{{post.thumburl | prepend: site.baseurl}}"  />
+									<img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"  />
 									{% endif %}
 							
 								{% if post.message %}
