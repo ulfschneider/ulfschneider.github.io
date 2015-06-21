@@ -124,13 +124,13 @@
 		list-style-type:none;
 		
 		.more {
-			padding-left:$spacing-unit;
+			margin-left:$spacing-unit;
 			float:right;
 		}
 		
 		.title {
 			font-size: $base-font-size * 1.4;
-			padding-right:$spacing-unit;
+			margin-right:$spacing-unit;
 			line-height:1em;
 		}
 				
