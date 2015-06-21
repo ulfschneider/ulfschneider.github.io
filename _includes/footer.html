@@ -3,8 +3,9 @@
   <div class="wrapper">
         <ul>
 			<li>{{site.title}}</li>
-          	{% if site.phone %}<li><a href="tel:{{site.phone}}">{{ site.phone }}</a></li>{% endif %}						
-			{% if site.email %}<li><a href="mailto:{{site.email}}">{{ site.email }}</a></li>{% endif %}			
+          	{% if site.phone %}<li>Phone: <a href="tel:{{site.phone}}">{{ site.phone }}</a></li>{% endif %}						
+			{% if site.email %}<li>Mail: <a href="mailto:{{site.email}}">{{ site.email }}</a></li>{% endif %}			
+			{% if site.twitter_username %}<li>Twitter: <a href="http://twitter.com/{{site.twitter_username}}">{{ site.twitter_username }}</a></li>{% endif %}						
 			<li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a></li>																	
 		</ul>			
   </div>
