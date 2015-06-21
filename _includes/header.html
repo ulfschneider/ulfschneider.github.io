@@ -6,11 +6,15 @@
 
     <nav class="site-nav">
       <a href="#" class="menu">Contents</a><div class="trigger">
-        {% for page in site.pages %}
-				{% if page.menu %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{page.menu }}</a>{% else %}				
-				{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{page.title }}</a>{% endif %}
+        {% for p in site.pages %}
+			{% if p.menu %}
+				<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
+			{% else %}				
+				{% if p.title %}
+				<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
 				{% endif %}
-				{% endfor %}
+			{% endif %}
+		{% endfor %}
       </div>
     </nav>
 

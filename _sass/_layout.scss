@@ -5,7 +5,6 @@
 .site-header {
   	height:$site-header-height;
 	background-color:$background-color;
-	font-size:$base-font-size;
 	@extend %clearfix;			
 }
 
@@ -62,7 +61,6 @@
         }
 
         .page-link {			
-			font-size:$base-font-size;
           	display: block;
 			padding-left:10px;
 			padding-right:10px;
@@ -368,7 +366,6 @@ figcaption, .figcaption {
 		clear:both;
 		padding-top: $spacing-unit;
 		padding-bottom: 2 * $spacing-unit;
-		font-size:$base-font-size;
 		ul, li {
 			list-style:none;
 			list-style-type:none;
@@ -392,6 +389,9 @@ figcaption, .figcaption {
 
 @include media-query($on-palm) {
 	
+	body {
+		font-size:$small-font-size;
+	}
 	
 	img.LHOP, .LHOP img {
 		/*limit height on palm*/
