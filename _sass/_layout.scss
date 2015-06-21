@@ -275,25 +275,14 @@ li.image-grid .image {
 
 
 li.image-grid .title {
-	overflow:hidden;
-	position:absolute;
-	display:none;
 	padding:1px;
-	z-index:10;
-	bottom:5px;
-	left:0;
-	right:0;
 	color:$text-color;
 	font-size:$extra-small-font-size;
 	font-family:"Source Sans Pro";
-	background:white;
 	font-weight:400;
 }
 
 
-li.image-grid:hover .title {
-	display:block;
-}
 
 
 .post-nav {
