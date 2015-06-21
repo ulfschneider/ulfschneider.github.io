@@ -2,12 +2,10 @@
 
   <div class="wrapper">
         <ul>
-			<li>{{site.title}}</li>
-          	{% if site.phone %}<li>Phone: <a href="tel:{{site.phone}}">{{ site.phone }}</a></li>{% endif %}						
-			{% if site.email %}<li>Mail:  <a href="mailto:{{site.email}}">{{ site.email }}</a></li>{% endif %}			
-			{% if site.twitter_username %}<li>Tweet: <a href="http://twitter.com/{{site.twitter_username}}">{{ site.twitter_username }}</a></li>{% endif %}						
-			<li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS for this site</a></li>																	
-		</ul>			
+			<dl><dt>RSS:</dt><dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{{site.title}}</a></dd></dl>																				
+          	{% if site.phone %}<dl><dt>Phone:</dt><dd><a href="tel:{{site.phone}}">{{ site.phone }}</a></dd></dl>{% endif %}						
+			{% if site.email %}<dl><dt>Mail:</dt><dd><a href="mailto:{{site.email}}">{{ site.email }}</a></dd></dl>{% endif %}			
+			{% if site.twitter_username %}<dl><dt>Tweet:</dt><dd><a href="http://twitter.com/{{site.twitter_username}}">{{ site.twitter_username }}</a></dd></dl>{% endif %}									
   </div>
 
 </div>
