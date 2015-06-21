@@ -4,21 +4,21 @@
  */
 .site-header {
   	height:$site-header-height;
-		background-color:$background-color;
-		font-size:$base-font-size;
-		@extend %clearfix;			
+	background-color:$background-color;
+	font-size:$base-font-size;
+	@extend %clearfix;			
 }
 
 
 .site-title {
-  line-height: $site-header-height;
-	margin:0;
-  color: $header-color;
-	float:left;
+	 line-height: $site-header-height;
+	 margin:0;
+	 color: $header-color;
+	 float:left;
 }
 
 .site-nav {
-  line-height: $site-header-height;
+	line-height: $site-header-height;
 	float:left;
 	z-index:1000;
 
@@ -28,16 +28,11 @@
 
     .page-link {
         color: $header-color;
-				background-color:$header-background-color;				
-				line-height: $site-header-height;
-				display:inline-block;
-				margin:0;
-				margin-left:$spacing-unit;
-
-				&:hover {
-					color:$background-color;
-					background-color:$text-color
-				}				
+		background-color:$header-background-color;				
+		line-height: $site-header-height;
+		display:inline-block;
+		margin:0;
+		margin-left:$spacing-unit;
     }
 
     @include media-query($on-palm) {
@@ -51,19 +46,15 @@
         .menu {
             display: block;
             float: right;
-						margin-right:0;
+			margin-right:0;
             text-align: center;
-						&:hover {
-							background-color:$header-background-color;
-							color:$text-color;
-						}
         }				
 
         .trigger {
             clear: both;
             display: none;
-						border:1px solid #e0e0e0;
-						margin-right:-5px;					
+			border:1px solid $text-color;
+			margin-right:-5px;					
         }
 
         &:hover .trigger {
@@ -71,13 +62,13 @@
         }
 
         .page-link {			
-						font-size:$base-font-size;
+			font-size:$base-font-size;
           	display: block;
-						padding-left:10px;
-						padding-right:10px;
-						padding-top:5px;
-						padding-bottom:5px;
-						margin:0;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:5px;
+			padding-bottom:5px;
+			margin:0;
         }
     }
 }
@@ -117,22 +108,7 @@
  */
 .page-content {
 	
-	padding-top:2 * $spacing-unit;
-	
-	a {
-		font-weight:normal;
-		background-image: url(/r/link.gif);
-		background-repeat: repeat-x;
-		background-position: 100% 100%;			
-		
-		&:active,
-    &:hover {
-			background-color:$background-color;
-			background-repeat:repeat;
-			color:$text-color;
-   	 	}
-	}
-	
+	padding-top:2 * $spacing-unit;	
 	
 	img {
 		margin-top:$spacing-unit;
@@ -157,20 +133,7 @@
 			padding-right:$spacing-unit;
 			line-height:1em;
 		}
-		
-		
-		a {
-			font-weight:400;
-			background-image:none;
-			color:$text-color;
-			background-color:$background-color;	
-			
-			&:active,
-	    	&:hover {
-				background-color:$text-color;
-				color:$background-color;
-	   	 	}		
-		}
+				
 	}
 
 	
@@ -299,20 +262,7 @@ li.image-grid .title {
 }
 
 .meta, .page-content .meta {
-	margin-bottom:$spacing-unit;
-		
-	a {
-		color:$text-color;
-		background-color:$background-color;			
-		background-image:none;
-		
-		&:active, &:hover {
-			background-color:$text-color;
-			color:$background-color;
-		}
-		
-	}
-	
+	margin-bottom:$spacing-unit;			
 }
 
 h1, .title{
