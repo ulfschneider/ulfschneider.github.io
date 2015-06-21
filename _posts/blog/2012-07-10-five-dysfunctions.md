@@ -18,6 +18,11 @@ Good teams find solutions. All, really all of our agile concepts and procedures 
 
 Patrick Lencioni provides with his „Five Dysfunctions of a Team“ [Lencioni 2002:188] a model to understand how team dysfunctions will build on one another with worsening effects from layer to layer.
 
+![](/i/blog/five_dysfunctions.jpg)
+
+Figure: The five dysfunctions of a team
+{:.figcaption}
+
 Layer|Dysfunction|Behavioral pattern
 -|-----------|-----------------
 1|Absence of trust|Unwilling to be vulnerable within the group
