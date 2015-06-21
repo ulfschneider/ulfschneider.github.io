@@ -4,7 +4,6 @@
  {% include head.html %}
 
  <body class="gallery">
-		<script src="/r/jquery.min.js" type="text/javascript"></script>		
 	 
 		<div class="for-gallery">
    	{% include header.html %}
@@ -44,10 +43,13 @@
 				{% endfor %}
 			</ul>									
 		</div>
-		
+		<script src="/r/jquery.min.js"></script>		
 		<script src="/r/packery.pkgd.min.js"></script>
 		
 		<script>
+		
+		echo.init({offset: 100, throttle: 250, unload: false });
+		
 
 		$('.for-slides').hide();
 
@@ -59,8 +61,10 @@
 			$('.for-gallery').delay(500).fadeIn(); 
 		}
 
-		function displaySlides() {			
+		function displaySlides() {		
 			$('.for-gallery').fadeOut();
+			/* load larger images only now*/
+			$('img[lazy]').each(function() {$(this).attr('src', $(this).attr('lazy')); });
 			$('.for-slides').delay(500).fadeIn(); 
 		}
 		
@@ -94,10 +98,11 @@
 						{% if post.layout contains 'image' and post.thumburl %}
 							<div class="slide">
 
+									
 									{% if post.slideurl %}
-									<img src="{{post.slideurl | prepend: site.baseurl}}"  />
+									<img lazy="{{post.slideurl | prepend: site.baseurl}}"  />
 									{% else %}
-									<img src="{{post.thumburl | prepend: site.baseurl}}"  />
+									<img lazy="{{post.thumburl | prepend: site.baseurl}}"  />
 									{% endif %}
 							
 								{% if post.message %}
@@ -115,7 +120,7 @@
 		</div>		
 	</div>	
 
-	<script src="/r/jquery.mobile.custom.min.js" type="text/javascript"></script>
+	<script src="/r/jquery.mobile.custom.min.js"></script>
 	<script>
 			
 	function next() {		
