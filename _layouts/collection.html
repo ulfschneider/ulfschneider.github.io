@@ -7,18 +7,18 @@
 
     {% include header.html %}
 
-				
+
     <div id="pageContent" class="gallery-content">
 				<div class="wrapper">
 						{% include title.html %}
 						{{ content }}
 				</div>
-		
+
 				<ul class="image-grid" id="image-grid">
         {% for post in site.posts %}
 
 						{% if post.layout contains 'gallery' and post.thumburl %}
-						
+
 							<a  href="{{ post.url | prepend: site.baseurl }}">
 								<li class="image-grid">
 									<div class="image">
@@ -40,7 +40,7 @@
 										<img src="{{post.thumburl}}"/>
 										{% if post.message %}
 											<div class="title">{{post.message}}</div>
-										{% elsif post.abstract %}										
+										{% elsif post.abstract %}
 											<div class="title">{{post.abstract}}</div>
 										{% elsif post.title %}
 											<div class="title">{{post.title}}</div>
@@ -51,22 +51,24 @@
 						{% endif %}
 				{% endfor %}
 			</ul>
-								
+
 		</div>
-		
+
 		{% include footer.html %}
 
 		<script src="/r/packery.pkgd.min.js"></script>
 		<script>
 		 container = select('#image-grid');
-		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	
+		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});
 
-		 setInterval(function() {	
+		 setInterval(function() {
 				 pckry.layout();
 		 }, 200);
-				
-		</script>								
-	
+
+		</script>
+
+    {% include analytics.html %}					
+
   </body>
 
 </html>
