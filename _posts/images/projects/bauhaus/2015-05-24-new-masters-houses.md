@@ -2,7 +2,7 @@
 layout: image
 title: New Master´s Houses Dessau
 date:   2015-05-24
-abstract: 
+abstract:
 thumburl: /i/IMG_8538_thumb.jpg
 tags: [bw, things, projects]
 ---
@@ -16,7 +16,7 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 ![]({{site.url}}/i/IMG_8557.jpg)
 {:.left}
 
-![]({{site.url}}/i/IMG_8549.jpg) 
+![]({{site.url}}/i/IMG_8549.jpg)
 {:.right}
 
 ![]({{site.url}}/i/IMG_8543.jpg)
@@ -37,3 +37,15 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 {:.right}
 
 ![]({{site.url}}/i/IMG_8463.jpg)
+
+![]({{site.url}}/i/IMG_5873.jpg)The remaining original master houses are situated at the same area.
+{:.left}
+
+![]({{site.url}}/i/IMG_5866.jpg)
+{:.right}
+
+![]({{site.url}}/i/IMG_5865.jpg)
+{:.left}
+
+![]({{site.url}}/i/IMG_8532.jpg)And even those original master houses were decayed and have been reconstructed.
+{:.right}
