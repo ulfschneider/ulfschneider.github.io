@@ -2,21 +2,19 @@
 layout: post
 title:  The agile worker
 subtitle: The agile worker does only exist because there are discrepancies between theory and reality
-permalink: 
+permalink:
 date:   2013-02-01
-message: 
-banner: 
-bottomline: 
-author: 
-abstract: The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. 
+message:
+banner:
+bottomline:
+author:
+abstract: The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies.
 ---
-An important part of agile work is learning. Agile workers are knowledge workers who bring their mental models in contact with reality. The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. If the theory is not questioned by reality, if whether model or reality do not play a role, then there is no learning. Then work does not require the quest for suitable solutions and work can be done by following instructions. 
+An important part of agile work is learning. Agile workers are knowledge workers who bring their mental models in contact with reality. The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. If the theory is not questioned by reality, if whether model or reality do not play a role, then there is no learning. Then work does not require the quest for suitable solutions and work can be done by following instructions.
 
 Empowerment
 ---
 The agile worker is searching for insights. If insights should have a meaning, they lead to decisions. This is a further characteristic of the agile worker: she makes decisions.
-
-How do you make decisions? Do you only use your energy and your knowledge for routined good behavior but not to come to the right or new solutions? Maybe your boss did not recognize yet that you are an agile worker and therefore you need some of your energy to ensure yourself some open space to be able to produce valuable results? 
 
 The agile worker is acting best inside of a system where agile values are being affirmed. In such a system decisions will be taken at the level with deepest insights and not necessarily at the level with the most formal power. The delegation of responsibility is a central part of the leadership process in agile organizations. But empowerment is more, it means also the ability to take risks, to change the organization and to develop. This is not primarily to reduce the work of managers but to come to best possible decisions [Appelo 2011:114].
 
@@ -28,7 +26,7 @@ Now [self-organization]({{site.url}}/self-organization), in dissociation to cent
 Constraints
 ---
 
-In any complex system, in small companies and in large corporations, self-organization takes place and the constraints of the system give the direction for the self-organization. 
+In any complex system, in small companies and in large corporations, self-organization takes place and the constraints of the system give the direction for the self-organization.
 
 > To give self-organizational forces a direction by setting constraints is the major task for leaders of agile organizations
 
@@ -53,19 +51,19 @@ Decisions
 ---
 The self-organizing team often makes decisions in a discourse. Possible solution spaces are being explored and divergent opinions have to be endured because best solutions can arise by affirming heterogenous perspectives about a topic. The decision does not need to be taken in a democratic way. We all deserve the same respect but in a specific context we are not all equal. Someone has more or less knowledge in the specific area of interest, is more or less experienced, can provide more or less orientation for the team to cope with the task. If really results have to be delivered and the team is committed to produce results, often a natural order of authority emerges which determines who has to or is allowed to speak the final word about a specific decision. A precondition for this is the collaboration oriented and committed attitude of the team. This attitude requires the individual to share the consequences of a decision even if one has a different opinion. This requires to put the operating needs of the team above the individual preferences.
 
-To be against a decision is not the same as accepting and sharing a decision. In the first case the team has to go through a clarifying conflict. Artificial harmony does not help to go further. Are all facts on the table? Assistance for team oriented decisions can be found at the „Facilitator´s Guide to Participatory Decision-Making“ by Sam Kaner [Kaner 2007]. 
+To be against a decision is not the same as accepting and sharing a decision. In the first case the team has to go through a clarifying conflict. Artificial harmony does not help to go further. Are all facts on the table? Assistance for team oriented decisions can be found at the „Facilitator´s Guide to Participatory Decision-Making“ by Sam Kaner [Kaner 2007].
 
 Roles and professions
 ---
 The weighed and reasoned decision can also be taken by a finally responsible person. For example the Product Owner in a Scrum Team has the right to speak the final word with regards to business relevant decisions. The IT-Architect can do the same with regards to architectural decisions. A team leader of a technical component team can speak the final word in a discourse that does not come to an end. Of course here power is being exercised but I see it positive. Such behavior can be a service to the team. If final instances for decision making are embedded into the process and if these instances are willing and are able to take the responsibility, this will help all actors to move one step further. Roles and professions should not vanish in the team process. Instead the ordering capabilities of different roles and professions have to be used for the better.
 
-It is important how the decision is being derived, what is being learned during the discourse and how the decision can be reasoned. It is important to review if the decisions lead to a functioning system. Upfront we can not always be sure if a decision brings an improvement or not. Therefore the agile worker prefers to work in an empiric process model. The essential characteristic of this process model is the continuous inspection and adaption, the short cycled comparison of mental model and reality. 
+It is important how the decision is being derived, what is being learned during the discourse and how the decision can be reasoned. It is important to review if the decisions lead to a functioning system. Upfront we can not always be sure if a decision brings an improvement or not. Therefore the agile worker prefers to work in an empiric process model. The essential characteristic of this process model is the continuous inspection and adaption, the short cycled comparison of mental model and reality.
 
 The defined process model, in which the a-priori planning allows to predict which actions lead to specific outcomes, is not important for the agile worker, because defined process models do not require learning and therefore no agile workers.
 
-Stop. This is too simple. Defined processes, when functioning, are mental models that are anchored in reality. Functioning defined processes are part of the agile workers toolbox. They are building blocks that can be combined to new solutions. They lower the amount of energy that is needed to come to results. Indeed they are to some extent part of the professional identity of the agile worker because this is what has been learned and what can be picked up to come to results faster, with lower risk and less energy input. The learning process is empiric, the learned is defined and will be reused to learn the new. 
+Stop. This is too simple. Defined processes, when functioning, are mental models that are anchored in reality. Functioning defined processes are part of the agile workers toolbox. They are building blocks that can be combined to new solutions. They lower the amount of energy that is needed to come to results. Indeed they are to some extent part of the professional identity of the agile worker because this is what has been learned and what can be picked up to come to results faster, with lower risk and less energy input. The learning process is empiric, the learned is defined and will be reused to learn the new.
 
-Compare it to a child learning to tie the shoes. At first this is an empiric process with all senses sharp. From the first success to the automatic procedure some time is required and then no further thoughts go into it. Higher goals are to reach. 
+Compare it to a child learning to tie the shoes. At first this is an empiric process with all senses sharp. From the first success to the automatic procedure some time is required and then no further thoughts go into it. Higher goals are to reach.
 
 Sometimes the most difficult task is in the questioning of the already learned. What was successful in the past may no longer help in the future. The agile worker should be prepared to move out of the comfort zone and to stand in for new insights. The new insight often does not have a lobby nor is it mainstream. Instead the new insight will challenge the status quo. This will move boundaries and it comes along with giving up personal safety. Because all new has to cleave its way.
 

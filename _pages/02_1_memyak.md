@@ -3,23 +3,16 @@ layout: default
 message: memYAK
 permalink: /memyak/
 ---
-memYAK is a web application for innovation teams with special support for agile software development. 
+memYAK is the external memory for innovation teams with special support of agile software development.
 
-We use this software at Wincor Nixdorf to support our agile teams in China, Germany, Netherlands and Poland.
+This web application is in use at Wincor Nixdorf to support the agile teams in China, Germany, Netherlands and Poland.
 
-[Download memYAK 2.7.5](/r/memyak.zip)
+[Download memYAK 2.7.5 - it´s free](/r/memyak.zip)
 
-You can store any kind of data with memYAK and use filter and search mechanisms to find and select the contents that are of relevance for you. Structured navigational concepts like a Kanban grid or a Product Backlog view support you when managing your project(s). A Product Burndown Diagram makes the progress of your team(s) visible.
+![](/i/memyak/memyak.jpg)
+
+You can store any kind of data with memYAK and use filter and search mechanisms to select the contents that are of relevance for you. Structured navigational concepts like a Kanban grid or a Product Backlog view support you in your project work. A Product Burndown Diagram indicates the progress of your endeavors.
 
 memYAK is a Java Enterprise application that leverages [MongoDB](http://mongodb.org) for data storage. Install memYAK on a server. Fire up your web browser and you are ready to start.
 
-*Remark:* Currently the installation procedure and online help is only German.
-
-
-
-
-
-
-
-
-
+<mark>Remark:</mark> Currently the installation procedure and the online help are only German.
