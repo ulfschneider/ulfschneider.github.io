@@ -11,10 +11,14 @@
       <div class="wrapper">
 				{% include title.html %}
         {{ content }}
+        {% if page.timeline %}
+            {% include twitter_timeline.html %}
+        {% endif %}
       </div>
     </div>
 
 		{% include postnav.html %}
+
 
     {% include footer.html %}
 
