@@ -67,7 +67,10 @@
 
 		</script>
 
+    {% unless page.nofooter %}
     {% include footer.html %}
+    {% endunless %}
+
 	</div>
 
 
@@ -146,6 +149,7 @@
 	$(function(){$('.slides > :gt(0)').hide(); });
 	</script>
 	</div>
+
 
   {% include analytics.html %}
 
