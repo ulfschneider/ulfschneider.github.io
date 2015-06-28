@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: tweets
 message: Tweets
 permalink: /tweets/
-timeline: true
 banner: 
 ---
 
