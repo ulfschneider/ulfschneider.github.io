@@ -140,6 +140,9 @@
 	  else if(e.which == 39) {
 			next();
 	  }
+    else if(e.which == 27) {
+      displayGallery();
+    }
 	});
 
 	$( ".slide" ).on( "swipeleft", next );
