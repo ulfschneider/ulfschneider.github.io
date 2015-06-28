@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul class="post-grid">
+
+{% for post in site.posts %}
+	{% if post.layout contains 'attracting' and post.title %}
+
+	<li class="post-grid">
+			<p>
+			<a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		 	{{ post.content }}
+			</p>
+	</li>
+  {% endif %}
+
+{% endfor %}
+</ul>
