@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+@font-face {
+ font-family: "Source Code Pro";
+ src: url("/r/SourceCodePro-Regular.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: "Source Sans Pro";
+ src: url("SourceSansPro-Regular.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: "Source Code Pro";
+ src: url("/r/SourceCodePro-Regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family: "Source Sans Pro";
+ src: url("SourceSansPro-Regular.ttf") /* TTF file for CSS3 browsers */
+}
 * {
 	box-sizing:border-box;
 }
@@ -39,11 +58,11 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;		
+    margin-bottom: $spacing-unit / 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	 margin-top: $spacing-unit;		
+	 margin-top: $spacing-unit;
 }
 
 
@@ -85,18 +104,18 @@ ul, ol {
 	li {
 			> p {
 				display:inline;
-				
+
 				&:after {
 					content:"";
 					display:block;
 					margin-bottom:$spacing-unit / 2;
 					}
 				}
-		
+
     	> ul,	> ol {
 			margin-left:$spacing-unit;
 			margin-bottom: 0;
-		 }	
+		 }
 	 }
 }
 
@@ -134,9 +153,9 @@ a {
 	text-decoration:underline;
 	outline:none;
 	&:active,
-	&:hover {		
+	&:hover {
     color: $text-color;
-    }		
+    }
 }
 
 ::selection {
@@ -149,7 +168,7 @@ a {
  * Blockquotes
  */
 blockquote {
-    	color: $text-color;    
+    	color: $text-color;
 		padding-left:$spacing-unit;
 		padding-top:$spacing-unit;
 		padding-bottom:$spacing-unit;
@@ -158,7 +177,7 @@ blockquote {
 
     > :last-child {
         margin-bottom: 0;
-    }		
+    }
 }
 
 
