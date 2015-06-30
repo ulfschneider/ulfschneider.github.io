@@ -74,7 +74,7 @@
 
 .index {
   color:$text-color;
-	font-family:"Source Code Pro";
+	font-family:"Source Code Pro", monospace;
   margin-top:$site-header-height;
 
 
@@ -83,12 +83,14 @@
     line-height:1em;
     float:none;
     margin-right:1em;
+    display:inline-block;
   }
 
   .site-description {
     font-size:$extra-small-font-size;
     line-height:1em;
     font-weight:200;
+    display:inline-block;
   }
 
   .site-nav {
