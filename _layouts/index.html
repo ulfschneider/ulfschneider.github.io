@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="pageContent" class="page-content">
+      <div class="wrapper index">
+
+          <div><span class="site-title">{{site.title}}</span><span class="site-description">{{site.description}}</span></div>
+          <nav class="site-nav">
+
+              {% for p in site.pages %}
+					      {% if p.menu %}
+      							<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
+      					{% elsif p.title %}
+      							<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
+      					{% endif %}
+      				{% endfor %}
+          </nav>
+
+        </div>
+    </div>
+
+    {% include analytics.html %}
+
+  </body>
+</html>
