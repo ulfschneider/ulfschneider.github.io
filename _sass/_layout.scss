@@ -112,11 +112,13 @@
     .page-link {
       font-family:"Source Sans Pro", "Source Code Pro", monospace;
       font-size:$base-font-size * 1.8;
+      font-weight:400;
 
       display:block;
       margin:0;
       padding:0;
       text-decoration:none;
+      letter-spacing:2px;
     }
 }
 
@@ -283,7 +285,7 @@ li.image-grid .title {
 	padding:1px;
 	color:$text-color;
 	font-size:$small-font-size;
-	font-family:"Source Sans Pro";
+	font-family:"Source Sans Pro", "Source Code Pro", monospace;
 	font-weight:400;
 }
 
@@ -317,7 +319,8 @@ h1, .title{
 	margin-top:0;
 	line-height:1.4em;
  	font-weight:400;
-	font-family:"Source Sans Pro";
+	font-family:"Source Sans Pro", "Source Code Pro", monospace;
+  letter-spacing:2px;
 }
 
 .subtitle {
