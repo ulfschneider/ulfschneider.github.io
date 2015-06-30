@@ -451,16 +451,22 @@ li.image-grid {
 /* Twitter timeline */
 .page-content {
 
+
+  .followme {
+    margin-bottom:$spacing-unit;
+  }
+
   .twitter-timeline {
     line-height:1.5em;
 
     ul {
       list-style: none;
-    }
 
-    li {
-      @extend %clearfix;
-      margin-bottom:$spacing-unit;
+
+      li {
+        @extend %clearfix;
+        margin-bottom:$spacing-unit;
+      }
     }
 
     .user {
@@ -480,10 +486,12 @@ li.image-grid {
 
     p.timePosted {
       float:left;
+      margin-bottom:0;
     }
 
     p.interact {
       float:right;
+      margin-bottom:0;
 
       a {
         margin-left:1em;
