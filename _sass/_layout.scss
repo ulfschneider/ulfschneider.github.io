@@ -100,15 +100,15 @@
     text-align:left;
     float:left;
     @extend %clearfix;
-  }
 
-  .page-link, .page-link + .page-link {
-    font-size:$base-font-size * 1.8;
-    margin:0;
-    padding:0;
-    float:none;
-    text-decoration:none;
-
+    .page-link, .page-link + .page-link {
+      font-size:$base-font-size * 1.8;
+      display:block;
+      margin:0;
+      padding:0;
+      float:none;
+      text-decoration:none;
+      }
   }
 }
 
