@@ -419,79 +419,6 @@ figcaption, .figcaption {
     @extend %clearfix;
 }
 
-/* Media */
-
-
-
-@include media-query($on-laptop) {
-
-	li.image-grid {
-			padding:$spacing-unit;
-			width:33%;
-		}
-	}
-
-
-@include media-query($on-palm) {
-
-	body {
-		font-size:$small-font-size;
-	}
-
-	img.LHOP, .LHOP img {
-		/*limit height on palm*/
-		max-height:400px;
-	}
-
-
-.image-content img, .slide img {
-		margin-left:-$spacing-unit / 2;
-		margin-right:-$spacing-unit / 2;
-		max-width:calc(100% + #{$spacing-unit});
- }
-
-.left, .right {
-		margin-left:-$spacing-unit / 2;
-		margin-right:-$spacing-unit / 2;
-		padding-left:$spacing-unit / 2;
-		padding-right:$spacing-unit / 2;
-
- 	img {
- 		margin:0;
-		margin-left:-$spacing-unit / 2;
- 		width:none;
- 		min-width:0;
- 		max-width:60%;
-		max-width:calc(60% + #{$spacing-unit / 2});
- 	}
-}
-
-.right {
-	img {
-		margin-left:0;
-		margin-right:-$spacing-unit / 2;
-	}
-}
-
-.portrait {
-	display:block;
-	clear:both;
-	float:none;
-}
-
-
-ul.image-grid {
-		margin:$spacing-unit/4;
-}
-
-li.image-grid {
-  	width: 50%;
-		padding:$spacing-unit/4;
-	}
-
-}
-
-
 /* Twitter timeline */
 .page-content {
 
@@ -543,6 +470,85 @@ li.image-grid {
     }
   }
 }
+
+/* Media */
+
+
+
+@include media-query($on-laptop) {
+
+	li.image-grid {
+			padding:$spacing-unit;
+			width:33%;
+		}
+	}
+
+
+@include media-query($on-palm) {
+
+	body {
+		font-size:$small-font-size;
+	}
+
+	img.LHOP, .LHOP img {
+		/*limit height on palm*/
+		max-height:400px;
+	}
+
+  .index {
+    margin-top:0;
+  }
+
+
+.image-content img, .slide img {
+		margin-left:-$spacing-unit / 2;
+		margin-right:-$spacing-unit / 2;
+		max-width:calc(100% + #{$spacing-unit});
+ }
+
+.left, .right {
+		margin-left:-$spacing-unit / 2;
+		margin-right:-$spacing-unit / 2;
+		padding-left:$spacing-unit / 2;
+		padding-right:$spacing-unit / 2;
+
+ 	img {
+ 		margin:0;
+		margin-left:-$spacing-unit / 2;
+ 		width:none;
+ 		min-width:0;
+ 		max-width:60%;
+		max-width:calc(60% + #{$spacing-unit / 2});
+ 	}
+}
+
+.right {
+	img {
+		margin-left:0;
+		margin-right:-$spacing-unit / 2;
+	}
+}
+
+.portrait {
+	display:block;
+	clear:both;
+	float:none;
+}
+
+
+ul.image-grid {
+		margin:$spacing-unit/4;
+}
+
+li.image-grid {
+  	width: 50%;
+		padding:$spacing-unit/4;
+	}
+
+}
+
+
+
 
 @media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
 
