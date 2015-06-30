@@ -53,15 +53,15 @@
         .trigger {
             clear: both;
             display: none;
-			border:1px solid $text-color;
-			margin-right:-5px;
+			      border:1px solid $text-color;
+			      margin-right:-5px;
         }
 
         &:hover .trigger {
             display: block;
         }
 
-        .page-link {
+        .page-link, .page-link + .page-link {
           display: block;
 			    padding-left:10px;
 			    padding-right:10px;
@@ -98,14 +98,14 @@
     display:block;
     position:static;
     text-align:left;
-
+    float:left;
+    @extend %clearfix;
   }
 
   .page-link, .page-link + .page-link {
     font-size:$base-font-size * 1.8;
     margin:0;
     padding:0;
-    display:block;
     float:none;
     text-decoration:none;
 
