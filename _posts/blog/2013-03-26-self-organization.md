@@ -3,14 +3,14 @@ layout: post
 title:  Self-organization
 subtitle: A force of life
 date:   2013-03-26
-message: 
-permalink: 
-banner: 
-bottomline: 
-author: 
-abstract: Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not. 
+message:
+permalink:
+banner:
+bottomline:
+author:
+abstract: Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.
 ---
-Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not. 
+Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.
 
 This contrasts with the constructing model, in which a central masterminded instance designs the system and controls it. Broadly, one can say that self-organization relies on evolution and construction relies on command and obedience.
 
@@ -40,19 +40,19 @@ Complexity
 ---
 A consequence of evolution is the increase of complexity which leads to enhanced regulatory capacity. But the better regulatory capacity also increases chances of misregulation. That makes the steering of complex systems incredibly difficult. But on the other hand, complexity is a prerequisite for outstanding achievements. [Malik 2009:17]
 
-Complex systems function although no one is understanding the entire system. A autombile manufacturer is able to build a complicated and efficient car in serial production with high safety standards, although no one is understanding fully the entire construction or manufacturing process. A hospital is functioning although no single person knows all processes and all treatment procedures. 
+Complex systems function although no one is understanding the entire system. A autombile manufacturer is able to build a complicated and efficient car in serial production with high safety standards, although no one is understanding fully the entire construction or manufacturing process. A hospital is functioning although no single person knows all processes and all treatment procedures.
 
-The central construction of such systems would be limited to centralized knowledge which immediatly would become a bottleneck for the organization. 
+The central construction of such systems would be limited to centralized knowledge which immediatly would become a bottleneck for the organization.
 
-> It is irritating that a complex system can not be controlled by a central instance, still the system is self-sustaining. 
+> It is irritating that a complex system can not be controlled by a central instance, still the system is self-sustaining.
 
 Self-organization
 ---
-Self-organization describes spontaneous - emergent - processes that are responsible to bring a system into some kind of order and to sustain that order. That includes the reaction to internal and external changes, in other words the adaptability to new conditions [[Bendel 2006:2]][bendel2006]. The ability to self-organize is a property of the system even without the actors being aware of that ability. The essential feature of the self-organizing capability is given by the interactions between the actors.
+Self-organization describes spontaneous - emergent - processes that bring a system into some kind of order and to sustain that order. That includes the reaction to internal and external changes, in other words the adaptability to new conditions [[Bendel 2006:2]][bendel2006]. The ability to self-organize is a property of the system even without the actors being aware of that ability. The essential feature of the self-organizing capability is given by the interactions between the actors.
 
 Water being wet is an emergent property. A single H2O molecule can not be wet but a lot of interdependent water molecules will develop the property of being wet.
 
-Pedestrians participating in crowded events will, when searching their path for different directions, develop streams in which they can move with the least possible collisions. This happens always although no one is planning this behavior. 
+Pedestrians participating in crowded events will, when searching their path for different directions, develop streams in which they can move with the least possible collisions. This happens always although no one is planning this behavior.
 
 The spontaneous development of new system properties will happen while these properties could not be predicted upfront when inspecting the actors or components of the system. The so developed *new* is not more or less but something different than the sum of the parts. While the actors or components are visible, their interactions are invisible and difficult to measure. In particular these interactions are the determining element in complex and self-organizing systems, they  make the systems behavior non-linear and difficult or impossible to reproduce - small causes can have enormous effects.
 
@@ -64,13 +64,13 @@ Language develops in the same manner. The interdependencies within our brains co
 
 The opponent of the described ordering forces is chaos. In shape of turbulences and swirls chaos brings unpredictable dynamics and the moment of chance into the world. Complex self-organizing systems are situated along the border to chaos.
 
-In human organizations stabilizing rules and routines will be put against the chaos. But the so developed structures exist only as long as they are being reproduced and confirmed by the actors. Too many rules solidify the organization and prevent the adaption to new circumstances [[Bendel 2006:2]][bendel2006]. 
+In human organizations stabilizing rules and routines will be put against the chaos. But the so developed structures exist only as long as they are being reproduced and confirmed by the actors. Too many rules solidify the organization and prevent the adaption to new circumstances [[Bendel 2006:2]][bendel2006].
 
 Knowledge organizations are not able to survive without extensive degrees of freedom, because otherwise self-regulation, innovation and adaption to changing environments can not run fast enough and with the necessary quality.
 
-The reaction to unforeseeable events affords ad-hoc negotiation,  the breakdown of routines and goal-oriented development of new rules to modify current structures. 
+The reaction to unforeseeable events affords ad-hoc negotiation,  the breakdown of routines and goal-oriented development of new rules to modify current structures.
 
-> In a radical way one has to leave behind the idea that everything in the organization can be ruled and controlled [[Bendel 2006:2f]][bendel2006]. 
+> In a radical way one has to leave behind the idea that everything in the organization can be ruled and controlled [[Bendel 2006:2f]][bendel2006].
 
 One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms and regulations. Instead one has to trust in self-organizational forces and the empowerment of employees to take local and autonomous decisions where needed.
 
@@ -84,7 +84,7 @@ For an organization to handle complexity in a proper way, communication and coop
 
 Transparency
 ---
-Self-organization is about inspect and adapt. Try to make the invisible visible and operate on facts. Determine the success criteria of your endeavor and ensure that everyone is operating on the same figures. If you need to make assumptions, make clear what assumptions have been taken and try to verify them as soon as possible. Be realistic and radical in terms of going to root causes, do not play down anything. 
+Self-organization is about inspect and adapt. Try to make the invisible visible and operate on facts. Determine the success criteria of your endeavor and ensure that everyone is operating on the same figures. If you need to make assumptions, make clear what assumptions have been taken and try to verify them as soon as possible. Be realistic and radical in terms of going to root causes, do not play down anything.
 
 Results, feedback and continuous planning
 ---
@@ -110,15 +110,15 @@ Doing
 ---
 Done work has a momentum. Let yourself be permeated by your task until a solution arises. Act, deliver, inspect and improve. In the agile movement this attitude is captured by a collection of nice sayings: "Cut through the noise by taking action" [Beedle and Schwaber 2002:27], "Deliver early and decide late", "Do, do right, do better".
 
-This all comes down to, that in this complex self-organizing universe where always more is unknown than known, theoretical models are not enough. 
+This all comes down to, that in this complex self-organizing universe where always more is unknown than known, theoretical models are not enough.
 
 > Do the things that produce results now. Repeat.
 
 Divergent-convergent thinking and responsibility
 ---
-Explore and expand possible solution spaces for a given problem. In other words, think divergent and do it in a team before deciding for a solution. Don´t decide easily for the first and obvious solution. Diversity is something valuable. Bear with different perspectives from different team members for a while and then start to converge. 
+Explore and expand possible solution spaces for a given problem. In other words, think divergent and do it in a team before deciding for a solution. Don´t decide easily for the first and obvious solution. Diversity is something valuable. Bear with different perspectives from different team members for a while and then start to converge.
 
-Possible techniques for divergent-convergent thinking are silent-brainstorming or the dynamics group decision making model  by Sam Kaner [Kaner et al. 2007]. 
+Possible techniques for divergent-convergent thinking are silent-brainstorming or the dynamics group decision making model  by Sam Kaner [Kaner et al. 2007].
 
 Personally I find it helpful to have a responsible person to speak the final word for strategic decisions at the end of such decision courses. In Scrum, for example, there is the Product Owner who speaks the final word for business relevant decisions. The IT-Architect will speak the final word regarding architectural decisions.
 
@@ -128,7 +128,7 @@ Use what is working. Do not put everything all at once into question. Evolution 
 
 The networks will follow their task
 ---
-Our tasks determine our communication patterns. Make the task that has to be fulfilled absolute clear. This will lead to a  task-oriented organization where teams will freely and on behalf of their tasks form themselves and keep that order intact. A shared sense of belonging will not arise from social events, like christmas dinners, but from shared goals and tasks [[Bendel 2006:5]][bendel2006]. 
+Our tasks determine our communication patterns. Make the task that has to be fulfilled absolute clear. This will lead to a  task-oriented organization where teams will freely and on behalf of their tasks form themselves and keep that order intact. A shared sense of belonging will not arise from social events, like christmas dinners, but from shared goals and tasks [[Bendel 2006:5]][bendel2006].
 
 Anti-fragility
 ---
@@ -136,7 +136,7 @@ Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragilit
 
 Reflection
 ---
-I want to close with a suggestion for a reflection exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118]. 
+I want to close with a suggestion for a reflection exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118].
 
 Think about. Act. Repeat.
 
@@ -164,4 +164,3 @@ References
 [Taleb 2012] Nassim Nicholas Taleb, „Anti-Fragility“, ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
 
 [Wohland and Wiemeyer 2007] Gerhard Wohland und Matthias Wiemeyer, „Denkwerkzeuge der Höchstleister“, Murmann 2007
-
