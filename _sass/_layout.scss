@@ -78,10 +78,12 @@
 	font-family:"Source Code Pro", monospace;
   margin-top:$site-header-height;
 
+  .site {
+
+  }
 
   .site-title {
     font-size:$big-font-size;
-    line-height:1em;
     float:none;
     margin-right:1em;
     display:inline-block;
@@ -89,12 +91,12 @@
 
   .site-description {
     font-size:$extra-small-font-size;
-    line-height:1em;
     font-weight:200;
     display:inline-block;
   }
 
   .site-nav {
+    clear:both;
     margin-top:$spacing-unit;
     margin-bottom:$spacing-unit;
     display:block;
