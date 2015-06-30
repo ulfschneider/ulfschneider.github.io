@@ -103,6 +103,8 @@
     float:left;
     @extend %clearfix;
 
+    }
+
     .page-link {
       font-size:$base-font-size * 1.8;
       display:block;
@@ -110,7 +112,6 @@
       padding:0;
       text-decoration:none;
       }
-  }
 }
 
 .active, .active:active, .active:hover {
