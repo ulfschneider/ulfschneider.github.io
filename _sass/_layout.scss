@@ -124,6 +124,8 @@
 
 .active, .active:active, .active:hover {
 	text-decoration:none;
+  background:$text-color;
+  color:$background-color;
 }
 
 
