@@ -85,7 +85,7 @@
   }
 
   .site-title {
-    font-size:$big-font-size;
+    font-size:$base-font-size;
     float:none;
     margin-right:1em;
     display:inline-block;
@@ -111,7 +111,7 @@
 
     .page-link {
       font-family:"Source Sans Pro", "Source Code Pro", monospace;
-      font-size:$base-font-size * 1.8;
+      font-size:$base-font-size * 1.4;
       font-weight:400;
 
       display:block;
@@ -184,7 +184,7 @@
 		}
 
 		.title {
-			font-size: $base-font-size * 1.3;
+			font-size: $base-font-size * 1.2;
 			margin-right:$spacing-unit;
 			line-height:1em;
 		}
@@ -316,8 +316,8 @@ a.prev {
 	margin-bottom:$spacing-unit;
 }
 
-h1, .title{
-	font-size:$base-font-size * 1.8;
+h1, .title {
+	font-size:$base-font-size * 1.4;
 	margin-top:0;
 	line-height:1.4em;
  	font-weight:400;
