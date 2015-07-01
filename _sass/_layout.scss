@@ -81,11 +81,11 @@
   margin-top:$site-header-height;
 
   .site {
-
+    @extend %clearfix;
   }
 
   .site-title {
-    font-size:$base-font-size;
+    font-size:$big-font-size;
     float:none;
     margin-right:1em;
     display:inline-block;
