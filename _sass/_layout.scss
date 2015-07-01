@@ -38,7 +38,7 @@
     }
 
 
-    @include media-query($on-palm) {
+    @include media-query($on-narrow) {
         position: absolute;
         top:0;
         right:$spacing-unit/2;
@@ -485,9 +485,6 @@ figcaption, .figcaption {
 }
 
 /* Media */
-
-
-
 @include media-query($on-laptop) {
 
 	li.image-grid {
@@ -496,6 +493,11 @@ figcaption, .figcaption {
 		}
 	}
 
+@include media-query($on-narrow) {
+  ul, li {
+    list-style-position:inside;
+  }
+}
 
 @include media-query($on-palm) {
 

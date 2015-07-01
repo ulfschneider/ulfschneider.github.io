@@ -1,7 +1,7 @@
 <div class="site-footer">
 
   <div class="wrapper">
-			<dl><dt>RSS:</dt><dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{{site.title}}</a></dd></dl>
+			<dl><dt>RSS Feed:</dt><dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{{site.url | remove_first: "http://" }}</a></dd></dl>
           	{% if site.phone %}<dl><dt>Phone:</dt><dd><a href="tel:{{site.phone}}">{{ site.phone }}</a></dd></dl>{% endif %}
 			{% if site.email %}<dl><dt>Mail:</dt><dd><a href="mailto:{{site.email}}">{{ site.email }}</a></dd></dl>{% endif %}
 			{% if site.twitter_username %}<dl><dt>Twitter:</dt><dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a> • <a href="http://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&via=ulfeed">share</a></dd></dl>{% endif %}
