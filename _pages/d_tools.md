@@ -14,6 +14,7 @@ I build and share this stuff:
 	</li>
 	<li class="post-grid">
 		<p>
-			<a class="title" href="{{site.url}}">{{site.url | remove_first: "http://" }}</a> This site is build and maintained with <a href="http://jekyllrb.com">Jekyll</a> and hosted on <a href="https://pages.github.com">GitHub Pages</a>. I am using <a href="http://packery.metafizzy.co">Packery</a> for image gallery alignment and <a href="https://github.com/jasonmayes/Twitter-Post-Fetcher">Twitter-Post-Fetcher</a> to access my Twitter timeline. A little bit of <a href="https://jquery.com">jQuery</a> is also in. Fonts are <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a> and <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.</p>
+			<a class="title" href="{{site.url}}">{{site.url | remove_first: "http://" }}</a> This site is build and maintained with <a href="http://jekyllrb.com">Jekyll</a> and hosted on <a href="https://pages.github.com">GitHub Pages</a>. I am using <a href="http://packery.metafizzy.co">Packery</a> for image gallery alignment and <a href="https://github.com/jasonmayes/Twitter-Post-Fetcher">Twitter-Post-Fetcher</a> to access my Twitter timeline. A little bit of <a href="https://jquery.com">jQuery</a> is also in. Fonts are <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a> and <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a>.
+		</p>
 	</li>
 	</ul>
