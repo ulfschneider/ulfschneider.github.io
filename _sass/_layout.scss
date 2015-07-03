@@ -78,8 +78,6 @@
 .index {
   color:$text-color;
 
-  margin-top:$site-header-height;
-
   .site {
     @extend %clearfix;
   }
