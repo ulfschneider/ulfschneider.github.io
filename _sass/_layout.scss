@@ -28,6 +28,7 @@
 	line-height:$site-nav-height;
 	.page-link {
 		display:inline-block;
+		margin:0px 10px;
 
 	}
 }
@@ -450,8 +451,10 @@ figcaption, .figcaption {
 		max-height:400px;
 	}
 
-	.page-link {
-		line-height:$site-nav-height;
+	.site-nav {
+		.page-link {	
+			margin:0px;
+		}
 	}
 
 	.page-content {
