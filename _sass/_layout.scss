@@ -10,6 +10,7 @@
 
 .site {
 	text-decoration:none;
+  @extend %clearfix;
 }
 
 .site-title {
@@ -36,10 +37,6 @@
 
 .index {
   color:$text-color;
-
-  .site {
-    @extend %clearfix;
-  }
 
   .site-nav {
     margin-top:$spacing-unit;
