@@ -14,8 +14,9 @@
 }
 
 .site-title {
-	font-family:$title-font-family;
-	font-weight:$title-font-weight;
+
+	font-family: $base-font-family;
+	font-size:$extra-small-font-size;
 	display:inline-block;
 	text-decoration:none;
 }
@@ -37,6 +38,13 @@
 
 .index {
   color:$text-color;
+
+	.site-title {
+		font-family:$title-font-family;
+		font-weight:$title-font-weight;
+		font-size: $base-font-size;
+		margin-right:1em;
+	}
 
   .site-nav {
     margin-top:$spacing-unit;
