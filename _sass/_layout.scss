@@ -25,6 +25,7 @@
 .site-nav {
   text-align:center;
 	line-height:$site-nav-height;
+	margin-top:$spacing-unit / 2;
 	.page-link {
 		display:inline-block;
 
@@ -438,6 +439,10 @@ figcaption, .figcaption {
 	img.LHOP, .LHOP img {
 		/*limit height on palm*/
 		max-height:400px;
+	}
+
+	.site-nav {
+		line-height:$site-nav-height + 10px;
 	}
 
 	.page-content {
