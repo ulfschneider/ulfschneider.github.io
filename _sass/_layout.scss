@@ -24,7 +24,7 @@
 
 .site-nav {
   text-align:center;
-	font-size:$extra-small-font-size;
+	line-height:$site-nav-height;
 	.page-link {
 		display:inline-block;
 
@@ -42,15 +42,13 @@
     margin-top:$spacing-unit;
     margin-bottom:$spacing-unit;
     text-align:left;
-		line-height:$site-nav-height;
-
     }
 
     .page-link {
       font-family:$title-font-family;
       font-size:$base-font-size + 6px;
       display:block;
-      margin:0;
+      margin:10px 0px;
       padding:0;
       text-decoration:none;
       letter-spacing:2px;
@@ -436,6 +434,10 @@ figcaption, .figcaption {
 	img.LHOP, .LHOP img {
 		/*limit height on palm*/
 		max-height:400px;
+	}
+
+	.page-content {
+		padding-top:3*$spacing-unit;
 	}
 
   .image-content img, .slide img {
