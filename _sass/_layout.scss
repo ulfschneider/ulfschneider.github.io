@@ -146,10 +146,13 @@
 	}
 
 	.nav {
+		.direction {
+			float:right;
+		}
 
 		a.gallery {
 			cursor:pointer;
-			float:right;
+			float:left;
 		}
 	@extend %clearfix;
 	}
@@ -442,8 +445,9 @@ figcaption, .figcaption {
 	}
 
 	.site-nav {
-		margin-top:$spacing-unit/2;
-		line-height:$site-nav-height + 10px;
+		.page-link {
+			margin-top:$spacing-unit/2;
+		}
 	}
 
 	.page-content {
