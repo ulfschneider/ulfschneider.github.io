@@ -23,8 +23,8 @@
 }
 
 .site-nav {
-  text-align: center;
-
+  text-align:center;
+	font-size:$extra-small-font-size;
 	.page-link {
 		display:inline-block;
 
@@ -83,6 +83,7 @@
 
 .title-wrapper {
   margin-bottom:1.5 * $spacing-unit;
+	text-align:center;
 }
 
 /**
@@ -229,7 +230,6 @@ a.prev {
 
 .meta, .page-content .meta {
 	margin-bottom:$spacing-unit;
-  text-align:center;
 }
 
 h1, .title {
@@ -239,7 +239,6 @@ h1, .title {
   margin-bottom:$spacing-unit / 2;
 	font-family:$title-font-family;
   font-weight:normal;
-  text-align: center;
 }
 
 .subtitle {
@@ -248,7 +247,6 @@ h1, .title {
   margin-bottom: $spacing-unit / 2;
 	text-transform:uppercase;
 	letter-spacing:2px;
-  text-align: center;
 }
 
 
@@ -257,7 +255,7 @@ h2, h3, h4 {
 	line-height: $base-font-size;
   font-family:$title-font-family;
   font-weight:normal;
-  text-align: center;
+  text-align:center;
 }
 
 
@@ -342,7 +340,7 @@ figcaption, .figcaption {
     dl {
     	margin:0;
     	padding:0;
-      text-align: center;
+      text-align:center;
     }
 
     dt {
