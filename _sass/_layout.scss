@@ -14,9 +14,7 @@
 }
 
 .site-title {
-
 	font-family: $base-font-family;
-	display:inline-block;
 	text-decoration:none;
 }
 
@@ -38,6 +36,7 @@
   color:$text-color;
 
 	.site-title {
+		display:inline-block;
 		font-family:$title-font-family;
 		font-weight:$title-font-weight;
 		font-size: $base-font-size;
