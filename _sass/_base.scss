@@ -1,24 +1,5 @@
 @charset "utf-8";
 
-@font-face {
- font-family: "Source Code Pro";
- src: url("/r/SourceCodePro-Regular.eot"); /* EOT file for IE */
-}
-
-@font-face {
- font-family: "Source Sans Pro";
- src: url("/r/SourceSansPro-Regular.eot"); /* EOT file for IE */
-}
-
-@font-face {
- font-family: "Source Code Pro";
- src: url("/r/SourceCodePro-Regular.ttf"); /* TTF file for CSS3 browsers */
-}
-
-@font-face {
- font-family: "Source Sans Pro";
- src: url("/r/SourceSansPro-Regular.ttf"); /* TTF file for CSS3 browsers */
-}
 * {
 	box-sizing:border-box;
 }
@@ -42,7 +23,6 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
 		-ms-text-size-adjust:100%;
@@ -73,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 img {
     max-width: 100%;
-		max-height:600px;
+		max-height:700px;
     vertical-align: top;
 		border:0;
 }
@@ -139,8 +119,7 @@ dd {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-	font-family:"Source Sans Pro";
+	font-family:$base-font-family;
 }
 
 
@@ -168,13 +147,13 @@ a {
  * Blockquotes
  */
 blockquote {
-    	color: $text-color;
-		padding-left:$spacing-unit;
-		padding-top:$spacing-unit;
-		padding-bottom:$spacing-unit;
-		letter-spacing:2px;
-		border-left:$spacing-unit/3 solid $text-color;
-
+    color: $text-color;
+		padding-left:$spacing-unit / 2;
+    margin-left:-$spacing-unit / 2;
+		margin-top:1.5 * $spacing-unit;
+		margin-bottom:1.5 * $spacing-unit;
+    border-left:3px solid $text-color;
+    font-family:$title-font-family;
     > :last-child {
         margin-bottom: 0;
     }
@@ -217,7 +196,8 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-	word-wrap:break-word;
+	  word-wrap:break-word;
+    position:relative;
     @extend %clearfix;
 
     @include media-query($on-palm) {
@@ -242,7 +222,7 @@ pre {
 
 
 strong, b {
-	font-weight:700;
+	font-family:$title-font-family;
 }
 
 /**
@@ -270,11 +250,12 @@ table {
 }
 
 table thead tr th {
+  font-family:$title-font-family;
 	vertical-align:bottom;
 	padding-right:$spacing-unit;
 	padding-bottom:$spacing-unit/2;
 	text-align:left;
-	font-weight:600;
+
 }
 
 table tbody tr td {

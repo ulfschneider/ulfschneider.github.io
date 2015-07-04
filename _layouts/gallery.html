@@ -9,12 +9,13 @@
    	{% include header.html %}
 		<div class="for-gallery">
 
-  		<div id="pageContent" class="gallery-content">
+  		<div id="pageContent" class="page-content">
 				<div class="wrapper">
 					{% include title.html %}
 					{{ content }}
-
-					<a id="slides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
+          <p style="text-align:center;">
+					<a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
+        </p>
 				</div>
 
 				<ul class="image-grid" id="image-grid">

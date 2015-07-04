@@ -3,76 +3,52 @@
  * Site header
  */
 .site-header {
-  height:$site-header-height;
-	background-color:$background-color;
-	@extend %clearfix;
+
 }
 
 
 .site-title {
 	 line-height: $site-header-height;
-	 margin:0;
-	 float:left;
    margin-right:$spacing-unit;
+   display:inline;
+   text-align:left;
 }
 
 .site-nav {
-	line-height: $site-header-height;
-	float:left;
-	z-index:1000;
-
-    .menu {
-        display: none;
-    }
-
-
-    .page-link {
-				line-height: $site-header-height;
-				display:inline-block;
-				margin:0;
-        margin-left:$spacing-unit;
-    }
-
-    .page-link:first-child {
-      margin:0;
-    }
+  line-height: $site-header-height;
+  text-align: right;
+  position:absolute;
+  top:0;
+  right:$spacing-unit;
+  z-index:1000;
 
 
-    @include media-query($on-narrow) {
-        position: absolute;
-        top:0;
-        right:$spacing-unit/2;
-        background-color: $header-background-color;
-        text-align: right;
+  .page-link {
+		display:block;
+    padding:0px $spacing-unit / 2;
+  }
+
+  .menu {
+    display:block;
+    position:relative;
+    right:0;
+    text-align: right;
+	  line-height: $site-header-height;
+  }
+
+  .trigger {
+    display: none;
+    border:1px solid $text-color;
+    background:$background-color;
+  }
+
+  &:hover .trigger {
+      display: block;
+      position:absolute;
+      right:0;
+  }
 
 
-        .menu {
-            display: block;
-            float: right;
-						margin-right:0;
-            text-align: center;
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-			      border:1px solid $text-color;
-			      margin-right:-5px;
-        }
-
-        &:hover .trigger {
-            display: block;
-        }
-
-        .page-link {
-          display: block;
-			    padding-left:10px;
-			    padding-right:10px;
-			    padding-top:5px;
-			    padding-bottom:5px;
-			    margin:0;
-        }
-    }
 }
 
 .index {
@@ -83,7 +59,7 @@
   }
 
   .site-title {
-    font-family:"Source Code Pro", monospace;
+    font-family:$title-font-family;
     font-size:$big-font-size;
     float:none;
     margin-right:1em;
@@ -91,9 +67,8 @@
   }
 
   .site-description {
-    font-family: "Source Code Pro", monospace;
+    font-family: $base-font-family;
     font-size:$extra-small-font-size;
-    font-weight:200;
     display:inline-block;
   }
 
@@ -110,10 +85,8 @@
     }
 
     .page-link {
-      font-family:"Source Sans Pro", "Source Code Pro", monospace;
-      font-size:$base-font-size * 1.4;
-      font-weight:400;
-
+      font-family:$title-font-family;
+      font-size:$base-font-size + 6px;
       display:block;
       margin:0;
       padding:0;
@@ -134,10 +107,9 @@
 	height:150px;
 	background-size: 150px 150px;
 	border:1px solid $grey-color-light;
-	float:left;
 	margin:0;
-	margin-right:$spacing-unit;
-	margin-bottom:$spacing-unit / 2;
+  margin:$spacing-unit auto;
+  margin-top:0;
 	box-sizing:content-box;
 	background-image:url(/r/u150.jpg);
 }
@@ -147,23 +119,16 @@
 	font-size:$big-font-size;
 }
 
-
-/* INITIAL CAPS
-.post-content > p:first-child:first-letter {
-	font-size: $base-line-height * 1.5;
-	margin: 0 0.1em 0 0;
-	padding:0px 4px;
-	border:2px solid $text-color;
-	}
-*/
-
+.title-wrapper {
+  margin-bottom:1.5 * $spacing-unit;
+}
 
 /**
  * Posts
  */
 .page-content {
 
-	padding-top:3 * $spacing-unit;
+	padding-top:4 * $spacing-unit;
 
 	img {
 		margin-top:$spacing-unit;
@@ -184,9 +149,10 @@
 		}
 
 		.title {
-			font-size: $base-font-size * 1.2;
+			font-size: $base-font-size;
+      font-family:$title-font-family;
 			margin-right:$spacing-unit;
-			line-height:1em;
+			line-height:$base-font-size;
 		}
 
 	}
@@ -209,19 +175,7 @@
 }
 
 
-/* Image */
-
-.image-content img {
-		margin-left:0;
-}
-
-
 /*Galleries */
-.gallery-content {
-	padding-top:3*$spacing-unit;
-}
-
-
 .slide-gallery-content {
 	padding-top:$spacing-unit;
 	position:relative;
@@ -250,10 +204,8 @@
 
 ul.image-grid {
 	list-style:none;
-	margin-left:auto;
-	margin-right:auto;
+  margin:0 auto;
 	max-width:$image-content-width;
-	line-height:1.3em;
 }
 
 
@@ -269,6 +221,7 @@ li.image-grid {
 	box-sizing:border-box;
 	width:25%;
 	padding:1.5*$spacing-unit;
+  padding-top:0;
 
 }
 
@@ -279,16 +232,16 @@ li.image-grid .image {
 	img {
 		width:100%;
 		position:relative;
+    margin:0;
 	}
 }
 
 
 li.image-grid .title {
-	padding:1px;
 	color:$text-color;
-	font-size:$small-font-size;
-	font-family:"Source Sans Pro", "Source Code Pro", monospace;
-	font-weight:400;
+	font-size:$extra-small-font-size;
+	font-family:$base-font-family;
+  text-align: left;
 }
 
 
@@ -314,34 +267,35 @@ a.prev {
 
 .meta, .page-content .meta {
 	margin-bottom:$spacing-unit;
+  text-align:center;
 }
 
 h1, .title {
-	font-size:$base-font-size * 1.4;
+	font-size:$base-font-size + 6px;
 	margin-top:0;
-	line-height:1.4em;
- 	font-weight:400;
-	font-family:"Source Sans Pro", "Source Code Pro", monospace;
-  letter-spacing:2px;
+	line-height:$base-font-size + 6px;
+  margin-bottom:$spacing-unit / 2;
+	font-family:$title-font-family;
+  font-weight:normal;
+  text-align: center;
 }
 
 .subtitle {
-	line-height:1.4em;
+	line-height:$base-font-size + 6px;
+  font-size:$base-font-size;
   margin-bottom: $spacing-unit / 2;
 	text-transform:uppercase;
 	letter-spacing:2px;
+  text-align: center;
 }
 
 
-h2 {
-	font-size: $base-font-size * 1.4;
-	line-height: 1.4em;
-}
-
-
-h3, h4 {
-  font-size: $base-font-size * 1.4;
-	line-height:1.4em;
+h2, h3, h4 {
+	font-size: $base-font-size;
+	line-height: $base-font-size;
+  font-family:$title-font-family;
+  font-weight:normal;
+  text-align: center;
 }
 
 
@@ -421,12 +375,24 @@ figcaption, .figcaption {
 .site-footer {
 		padding:0;
 		clear:both;
-		padding-top: $spacing-unit;
+		padding-top: 1.5 * $spacing-unit;
 		padding-bottom: 2 * $spacing-unit;
-		ul, li {
-			list-style:none;
-			list-style-type:none;
-		}
+
+    dl {
+    	margin:0;
+    	padding:0;
+      text-align: center;
+    }
+
+    dt {
+      padding-right:.5em;
+      float:none;
+      display:inline;
+    }
+
+    dd {
+      display:inline;
+    }
 
     @extend %clearfix;
 }
@@ -440,7 +406,6 @@ figcaption, .figcaption {
   }
 
   .twitter-timeline {
-    line-height:1.5em;
 
     ul {
       list-style: none;
@@ -488,6 +453,7 @@ figcaption, .figcaption {
 
 	li.image-grid {
 			padding:$spacing-unit;
+      padding-top:0;
 			width:33%;
 		}
 	}
@@ -495,6 +461,10 @@ figcaption, .figcaption {
 @include media-query($on-narrow) {
   ul, li {
     list-style-position:inside;
+  }
+
+  blockquote {
+    margin-left:0px;
   }
 }
 
@@ -509,22 +479,21 @@ figcaption, .figcaption {
 		max-height:400px;
 	}
 
-  .index {
-    margin-top:0;
+  .site-nav {
+    right:$spacing-unit / 2;
   }
 
+  .image-content img, .slide img {
+		  margin-left:-$spacing-unit / 2;
+		  margin-right:-$spacing-unit / 2;
+		  max-width:calc(100% + #{$spacing-unit});
+    }
 
-.image-content img, .slide img {
-		margin-left:-$spacing-unit / 2;
-		margin-right:-$spacing-unit / 2;
-		max-width:calc(100% + #{$spacing-unit});
- }
-
- .double img, .wide img {
+  .double img, .wide img {
  	  width:calc(100% + #{$spacing-unit});
- }
+   }
 
-.left, .right {
+  .left, .right {
 		margin-left:-$spacing-unit / 2;
 		margin-right:-$spacing-unit / 2;
 		padding-left:$spacing-unit / 2;
@@ -547,20 +516,10 @@ figcaption, .figcaption {
 	}
 }
 
-.portrait {
-	display:block;
-	clear:both;
-	float:none;
-}
-
-
-ul.image-grid {
-		margin:$spacing-unit/4;
-}
-
 li.image-grid {
   	width: 50%;
 		padding:$spacing-unit/4;
+    padding-top:0;
 	}
 
 }

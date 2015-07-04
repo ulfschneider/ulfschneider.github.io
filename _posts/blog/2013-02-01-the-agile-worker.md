@@ -82,4 +82,4 @@ References
 [Kaner 2007] S. Kaner et al., „Facilitator´s Guide to Participatory Decision Making“, Second Edition, Jossey-Bass 2007
 
 [wujec]: http://marshmallowchallenge.com/Welcome.html
-[Wujec 2010] T. Wuject, „The Marshmallow Challenge“, <http://marshmallowchallenge.com/Welcome.html>
+[Wujec 2010] T. Wujec, „The Marshmallow Challenge“, <http://marshmallowchallenge.com/Welcome.html>
