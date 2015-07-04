@@ -9,9 +9,6 @@
 						{% else %}
 							<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
 						{% endif %}
-            {% if p != last %}
-              <span> • </span>
-            {% endif %}
 
 					{% elsif p.title %}
 						{% if page.url == p.url %}
@@ -19,9 +16,6 @@
 						{% else %}
 							<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
 						{% endif %}
-            {% if p != last %}
-              <span> • </span>
-            {% endif %}
 
 					{% endif %}
 
