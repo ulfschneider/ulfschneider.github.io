@@ -141,6 +141,10 @@
 	padding-top:$spacing-unit;
 	position:relative;
 
+	.title {
+		text-align:center;
+	}
+
 	.nav {
 
 		a.gallery {
