@@ -21,3 +21,5 @@ In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.) and s
 * Sun: SCJP, SCWCD, SCBCD
 * Lotus: Principal Application Developer, Principal System Administrator
 * IBM: Certified IT Architect
+
+Besides this, every now and then I´m taking [photographs]({{site.url}}/photography).
