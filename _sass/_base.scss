@@ -22,6 +22,7 @@ dl, dd, ol, ul, figure {
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
+		font-weight: $base-font-weight;
     line-height: $base-line-height;
     color: $text-color;
     background-color: $background-color;
@@ -119,7 +120,10 @@ dd {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-	font-family:$base-font-family;
+	font-family:$title-font-family;
+	font-weight:$title-font-weight;
+	margin-top:1.5 * $spacing-unit;
+	margin-bottom:$spacing-unit;
 }
 
 
@@ -150,10 +154,14 @@ blockquote {
     color: $text-color;
 		padding-left:$spacing-unit / 2;
     margin-left:-$spacing-unit / 2;
-		margin-top:1.5 * $spacing-unit;
-		margin-bottom:1.5 * $spacing-unit;
+		margin-top: $spacing-unit;
+		margin-bottom: $spacing-unit;
     border-left:3px solid $text-color;
-    font-family:$title-font-family;
+    font-family:$base-font-family;
+		font-weight:$base-font-weight;
+		text-transform:uppercase;
+		letter-spacing:1px;
+
     > :last-child {
         margin-bottom: 0;
     }
@@ -251,6 +259,7 @@ table {
 
 table thead tr th {
   font-family:$title-font-family;
+	font-weight:$title-font-weight;
 	vertical-align:bottom;
 	padding-right:$spacing-unit;
 	padding-bottom:$spacing-unit/2;

@@ -2,16 +2,18 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$base-font-family:  "Nitti Light", monospace;
-$title-font-family: "Nitti Medium", monospace;
-$base-font-size:   17px;
-$code-font-size:   17px;
+$base-font-family:  "Input Sans", monospace;
+$base-font-weight: normal;
+$title-font-family: "Input Sans Medium", monospace;
+$title-font-weight: normal;
+$base-font-size:   16px;
+$code-font-size:   16px;
 $small-font-size:  $base-font-size - 1;
 $extra-small-font-size: $small-font-size - 1;
 $nav-icon-size:    $base-font-size;
 $big-font-size:    $base-font-size + 2;
 $extra-big-font-size: 2*$base-font-size;
-$base-line-height: 27px;
+$base-line-height: 30px;
 
 $site-header-height: 50px;
 $site-nav-height: 30px;
@@ -29,10 +31,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
-$image-content-width: 800px + 400px;
+$content-width:    750px;
+$image-content-width: 750px + 400px;
 $on-palm:         600px;
-$on-narrow:       850px;
+$on-narrow:       800px;
 $on-laptop:       900px;
 $on-pc:           1200px;
 $on-widescreen:   1800px;

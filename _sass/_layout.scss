@@ -10,10 +10,10 @@
 
 .site-title {
 	font-family:$title-font-family;
-	font-size:$big-font-size;
+	font-weight:$title-font-weight;
+	font-size:$base-font-size;
 	display:inline-block;
 	text-decoration:none;
-	margin-right:1em;
 }
 
 .site-description {
@@ -45,13 +45,13 @@
     }
 
     .page-link {
-      font-family:$title-font-family;
+      font-family:$base-font-family;
       font-size:$base-font-size + 6px;
       display:block;
-      margin:10px 0px;
+      margin:$spacing-unit / 2  0px;
       padding:0;
       text-decoration:none;
-      letter-spacing:2px;
+      letter-spacing:3px;
     }
 }
 
@@ -112,6 +112,7 @@
 		.title {
 			font-size: $base-font-size;
       font-family:$title-font-family;
+			font-weight:$title-font-weight;
 			margin-right:$spacing-unit;
 			line-height:$base-font-size;
 		}
@@ -239,20 +240,17 @@ a.prev {
 }
 
 h1, .title {
-	font-size:$base-font-size + 6px;
-	margin-top:0;
-	line-height:$base-font-size + 6px;
-  margin-bottom:$spacing-unit / 2;
+	font-size:$base-font-size;
+	margin:0;
 	font-family:$title-font-family;
-  font-weight:normal;
+  font-weight:$title-font-weight;
 }
 
 .subtitle {
-	line-height:$base-font-size + 6px;
   font-size:$base-font-size;
-  margin-bottom: $spacing-unit / 2;
+  margin:0;
 	text-transform:uppercase;
-	letter-spacing:2px;
+	letter-spacing:1px;
 }
 
 
@@ -260,7 +258,7 @@ h2, h3, h4 {
 	font-size: $base-font-size;
 	line-height: $base-font-size;
   font-family:$title-font-family;
-  font-weight:normal;
+  font-weight:$title-font-weight;
   text-align:center;
 }
 
@@ -444,11 +442,7 @@ figcaption, .figcaption {
 		max-height:400px;
 	}
 
-	.site-nav {
-		.page-link {
-			margin-top:$spacing-unit/2;
-		}
-	}
+
 
 	.page-content {
 		padding-top:3*$spacing-unit;

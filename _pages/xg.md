@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 
+title:
 message: Exposure Guide
 permalink: /xg/
 ---
-Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The distinct look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters. 
+Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The distinct look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters.
 
-I have written the *Exposure Guide for iPhone* to support this photographic style with a tool to calibrate the darkening effect of neutral density filters. 
+I have written the *Exposure Guide for iPhone* to support this photographic style with a tool to calibrate the darkening effect of neutral density filters.
 
 [![Xg appstore](/r/appstore.svg)](https://itunes.apple.com/app/exposure-guide/id816163933?mt=8&uo=4)
 
@@ -38,7 +38,7 @@ Now, when you take long exposures, you will use those entries to let the timer c
 
 For doing so you can use any of the following two techniques. Each of them requires to take the comparative images under identical light situations!
 
-Technique 1: use Adobe Lightroom or any software that allows you to correct the exposure of your images
+Technique 1: Use Adobe Lightroom or any software that allows you to correct the exposure of your images
 --
 
 ![Xg edit filter](/i/xg/xg_edit_filter.jpg){:.LHOP}
@@ -51,7 +51,7 @@ Now you have two images of the same motive. One taken with the filter and one wi
 
 This correcting value needs to be added to the f-stop value of your filter entry in the Exposure Guide. If you have taken, for example, the filter image with a Big Stopper wich has a theoretical f-stop of 10, and you needed to brighten you image by 0.5 f-stops, your new f-stop value will be 10.5. If you needed to darken your image by 0.5 f-stops, your new f-stop value will be 9.5.
 
-Technique 2: take experimental images by changing the exposure
+Technique 2: Take experimental images by changing the exposure
 --
 
 ![Xg calibrate filter](/i/xg/xg_calibrate_filter.jpg){:.LHOP}
@@ -62,6 +62,6 @@ In the next step you take a comparative image of the same motive by using your f
 
 If the filter image has not the right exposure, you need to take more images while making adjustments to the exposure. Choose a longer exposure if your image is underexposed and choose a shorter exposure when your image is overexposed.
 
-After you have taken an image that has the right exposure you need to open the dialog Calibrate with exposure times in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter. 
+After you have taken an image that has the right exposure you need to open the dialog Calibrate with exposure times in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter.
 
 Have fun taking pictures!
