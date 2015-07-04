@@ -11,7 +11,6 @@
 .site-title {
 	font-family:$title-font-family;
 	font-weight:$title-font-weight;
-	font-size:$base-font-size;
 	display:inline-block;
 	text-decoration:none;
 }
@@ -210,6 +209,7 @@ li.image-grid .image {
 li.image-grid .title {
 	color:$text-color;
 	font-size:$extra-small-font-size;
+	line-height:$extra-small-font-size + 5px;
 	font-family:$base-font-family;
   text-align: left;
 }
@@ -434,7 +434,7 @@ figcaption, .figcaption {
 @include media-query($on-palm) {
 
 	body {
-		font-size:$small-font-size;
+		font-size:$palm-base-font-size;
 	}
 
 	img.LHOP, .LHOP img {
@@ -483,7 +483,9 @@ figcaption, .figcaption {
 
 li.image-grid {
   	width: 50%;
+
 		padding:$spacing-unit/4;
+		padding-bottom:$spacing-unit;
     padding-top:0;
 	}
 
