@@ -41,6 +41,7 @@
     margin-top:$spacing-unit;
     margin-bottom:$spacing-unit;
     text-align:left;
+		display:inline-block;
     }
 
     .page-link {
@@ -159,7 +160,7 @@
 
 
 	.slides {
-		margin-top:2* $spacing-unit;
+		margin-top:$spacing-unit;
 		position:relative;
 
 		.slide {
@@ -442,7 +443,9 @@ figcaption, .figcaption {
 		max-height:400px;
 	}
 
-
+	.page-link {
+		line-height:$site-nav-height;
+	}
 
 	.page-content {
 		padding-top:3*$spacing-unit;
