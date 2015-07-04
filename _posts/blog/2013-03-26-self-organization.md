@@ -14,7 +14,7 @@ Self-organization is the determining element for agile teams and companies. To t
 
 This contrasts with the constructing model, in which a central masterminded instance designs the system and controls it. Broadly, one can say that self-organization relies on evolution and construction relies on command and obedience.
 
-The affirmation of the evolutionary approach is rewarding, but will challenge traditional behavioral patterns even in the microcosm of a single team. For the entire - maybe huge - organization is the paradox of giving up central control in order to make the organization controllable, radical and requires open minds and the willingness to learn and improve - in particular from the leaders of the organization.
+The affirmation of the evolutionary approach is rewarding, but will challenge traditional behavioral patterns even in the microcosm of a single team. For the entire - possibly huge - organization is the paradox of giving up central control in order to make the organization controllable, radical and requires open minds and the willingness to learn and improve - in particular from the leaders of the organization.
 
 Leaders in agile organizations have the important function of actively giving self-organizational forces a direction. This seems to be conflicting with the evolutionary approach and to span the tension field even further, here are two quotes I found in [Malik 2009:137]:
 
