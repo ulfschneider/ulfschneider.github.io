@@ -1,7 +1,7 @@
 ---
 layout: tweets
-title: Tweets
+menu: Tweets
 permalink: /tweets/
 banner:
-nofooter: 
+nofooter:
 ---

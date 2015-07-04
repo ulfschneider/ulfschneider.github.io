@@ -3,52 +3,32 @@
  * Site header
  */
 .site-header {
-
+	line-height:$site-header-height;
+	text-align:center;
 }
 
 
 .site-title {
-	 line-height: $site-header-height;
-   margin-right:$spacing-unit;
-   display:inline;
-   text-align:left;
+	font-family:$title-font-family;
+	font-size:$big-font-size;
+	display:inline-block;
+	text-decoration:none;
+	margin-right:1em;
+}
+
+.site-description {
+	font-family: $base-font-family;
+	font-size:$extra-small-font-size;
+	display:inline-block;
 }
 
 .site-nav {
-  line-height: $site-header-height;
-  text-align: right;
-  position:absolute;
-  top:0;
-  right:$spacing-unit;
-  z-index:1000;
+  text-align: center;
 
+	.page-link {
+		display:inline-block;
 
-  .page-link {
-		display:block;
-    padding:0px $spacing-unit / 2;
-  }
-
-  .menu {
-    display:block;
-    position:relative;
-    right:0;
-    text-align: right;
-	  line-height: $site-header-height;
-  }
-
-  .trigger {
-    display: none;
-    border:1px solid $text-color;
-    background:$background-color;
-  }
-
-  &:hover .trigger {
-      display: block;
-      position:absolute;
-      right:0;
-  }
-
-
+	}
 }
 
 .index {
@@ -58,29 +38,11 @@
     @extend %clearfix;
   }
 
-  .site-title {
-    font-family:$title-font-family;
-    font-size:$big-font-size;
-    float:none;
-    margin-right:1em;
-    display:inline-block;
-  }
-
-  .site-description {
-    font-family: $base-font-family;
-    font-size:$extra-small-font-size;
-    display:inline-block;
-  }
-
   .site-nav {
-    clear:both;
     margin-top:$spacing-unit;
     margin-bottom:$spacing-unit;
-    display:block;
-    position:static;
     text-align:left;
-    float:left;
-    @extend %clearfix;
+		line-height:$site-nav-height;
 
     }
 
@@ -477,10 +439,6 @@ figcaption, .figcaption {
 		/*limit height on palm*/
 		max-height:400px;
 	}
-
-  .site-nav {
-    right:$spacing-unit / 2;
-  }
 
   .image-content img, .slide img {
 		  margin-left:-$spacing-unit / 2;

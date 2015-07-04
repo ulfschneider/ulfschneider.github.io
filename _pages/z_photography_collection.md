@@ -1,7 +1,5 @@
 ---
 layout: collection
-title: Photography
+menu: Photography
 permalink: /photography/
 ---
-
-
