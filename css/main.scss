@@ -14,7 +14,7 @@ $palm-base-font-size: $extra-small-font-size;
 $nav-icon-size:    $base-font-size;
 $big-font-size:    $base-font-size + 2;
 $extra-big-font-size: 2*$base-font-size;
-$base-line-height: 30px;
+$base-line-height: $base-font-size + 10px;
 
 $site-header-height: 50px;
 $site-nav-height: 30px;

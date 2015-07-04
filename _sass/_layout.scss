@@ -107,6 +107,7 @@
 		.more {
 			margin-left:$spacing-unit;
 			float:right;
+			display:none; /* remove this line to see the more button*/
 		}
 
 		.title {
@@ -114,7 +115,6 @@
       font-family:$title-font-family;
 			font-weight:$title-font-weight;
 			margin-right:$spacing-unit;
-			line-height:$base-font-size;
 		}
 
 	}
