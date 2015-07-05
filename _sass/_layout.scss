@@ -27,14 +27,11 @@
   text-align:center;
 	line-height:$site-nav-height;
 	.page-link {
-		display:inline-block;
 		margin:0px 10px;
-
 	}
 }
 
 .index {
-  color:$text-color;
 
 	.site-title {
 		display:inline-block;
@@ -57,15 +54,15 @@
       display:block;
       margin:$spacing-unit / 2  0px;
       padding:0;
-      text-decoration:none;
       letter-spacing:3px;
+			background-image:none;
     }
 }
 
 .active, .active:active, .active:hover {
-	text-decoration:none;
   background:$text-color;
   color:$background-color;
+	padding:3px 0px;
 }
 
 
@@ -391,9 +388,10 @@ figcaption, .figcaption {
     .user {
       a {
         text-decoration:none;
-
+				background-image:none;
         [data-scribe="element:name"], [data-scribe="element:screen_name"] {
-          text-decoration:underline;
+          text-decoration:none;
+					@extend %linkstyle;
         }
       }
 
@@ -451,14 +449,16 @@ figcaption, .figcaption {
 		max-height:400px;
 	}
 
-	.site-nav {
-		.page-link {	
-			margin:0px;
+	.site-header {
+		.site-nav {
+			.page-link {
+				margin:0px;
+			}
 		}
 	}
 
 	.page-content {
-		padding-top:3*$spacing-unit;
+		padding-top:2*$spacing-unit;
 	}
 
   .image-content img, .slide img {
