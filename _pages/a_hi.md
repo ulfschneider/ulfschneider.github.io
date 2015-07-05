@@ -2,6 +2,7 @@
 layout: default
 title:
 menu: Hi
+permalink: /hi/
 ---
 <div></div>
 {:.portrait}
