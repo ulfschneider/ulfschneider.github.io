@@ -6,8 +6,8 @@ $base-font-family:  "Input Sans", monospace;
 $base-font-weight: normal;
 $title-font-family: "Input Sans Medium", monospace;
 $title-font-weight: normal;
-$base-font-size:   16px;
-$code-font-size:   16px;
+$base-font-size:   15px;
+$code-font-size:   15px;
 $small-font-size:  $base-font-size - 1;
 $extra-small-font-size: $small-font-size - 1;
 $palm-base-font-size: $small-font-size;
@@ -33,10 +33,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    750px;
-$image-content-width: 750px + 400px;
+$content-width:    700px;
+$image-content-width: 700px + 400px;
 $on-palm:         600px;
-$on-narrow:       800px;
+$on-narrow:       750px;
 $on-laptop:       900px;
 $on-pc:           1200px;
 $on-widescreen:   1800px;
