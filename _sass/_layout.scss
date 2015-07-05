@@ -14,8 +14,11 @@
 }
 
 .site-title {
-	font-family: $base-font-family;
-	text-decoration:none;
+	font-size:$extra-small-font-size;
+	font-family:$title-font-family;
+	letter-spacing:2px;
+	background-image:none;
+	text-transform:uppercase;
 }
 
 .site-description {
@@ -24,6 +27,7 @@
 }
 
 .site-nav {
+	margin-top:$spacing-unit / 2;
   text-align:center;
 	line-height:$site-nav-height;
 	.page-link {
@@ -35,10 +39,8 @@
 
 	.site-title {
 		display:inline-block;
-		font-family:$title-font-family;
-		font-weight:$title-font-weight;
-		font-size: $base-font-size;
 		margin-right:1em;
+		font-size:$base-font-size;
 	}
 
   .site-nav {
@@ -86,6 +88,10 @@
 .title-wrapper {
   margin-bottom:2 * $spacing-unit;
 	text-align:center;
+}
+
+.prev, .next {
+	cursor:pointer;
 }
 
 /**
@@ -154,16 +160,12 @@
 		.direction {
 			float:right;
 
-			a.prev, a.next {
-				cursor:pointer;
-			}
-
-			a.prev {
+			.prev {
 				margin-right:$spacing-unit;
 			}
 		}
 
-		a.gallery {
+		.gallery {
 			cursor:pointer;
 		}
 	@extend %clearfix;
