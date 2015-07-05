@@ -1,5 +1,5 @@
  {% for post in site.posts %}
- 
+
  	{% if post.url == page.url %}
  		{% assign current = post %}
 		{% assign index = forloop.index %}
@@ -8,7 +8,7 @@
 	{% if current and current.layout != "image" and current.layout != "gallery" and current.layout != "collection "%}
 
 
-		{% unless prev %}	
+		{% unless prev %}
 		{% for p in site.posts offset:index   %}
 			{% unless prev %}
 				{% if p.layout == current.layout %}
@@ -17,32 +17,32 @@
 			{% endunless %}
 		{% endfor %}
 		{% endunless %}
-		
+
 		{% unless next %}
 		{% for p in site.posts %}
 				{% if p.layout == current.layout and forloop.index < index  %}
 					{% assign next = p %}
 				{% endif %}
-		{% endfor %}		
+		{% endfor %}
 		{% endunless %}
-		
+
 		{% break %}
 	{% endif %}
 
  {% endfor %}
- 
+
  {% if prev or next %}
 	<div class="post-nav">
-		<div class="wrapper">		 
+		<div class="wrapper">
 
 			 {% if prev  %}
-				 <a class="prev" accesskey="-" href="{{ site.url }}{{ prev.url }}"><&nbsp;{{ prev.title }}</a>
+				 <span class="prev"><a accesskey="-" href="{{ site.url }}{{ prev.url }}"><&nbsp;{{ prev.title }}</a></span>
 			 {% endif %}
 
 			{% if next  %}
-			<a class="next" accesskey="+" href="{{ site.url }}{{ next.url }}">{{ next.title }}&nbsp;></a>
+        <span class="next"><a accesskey="+" href="{{ site.url }}{{ next.url }}">{{ next.title }}&nbsp;></a></span>
  			{% endif %}
-	 
+
 	 </div>
 </div>
 {% endif %}

@@ -153,11 +153,18 @@
 	.nav {
 		.direction {
 			float:right;
+
+			a.prev, a.next {
+				cursor:pointer;
+			}
+
+			a.prev {
+				margin-right:$spacing-unit;
+			}
 		}
 
 		a.gallery {
 			cursor:pointer;
-			float:left;
 		}
 	@extend %clearfix;
 	}
@@ -172,6 +179,7 @@
 			width:100%;
 			padding-bottom:$spacing-unit;
 		}
+
 	}
 }
 
@@ -220,20 +228,14 @@ li.image-grid .title {
 }
 
 
-a.prev, a.next {
-	cursor:pointer;
-	float:left;
-}
-
-a.prev {
-	margin-right:$spacing-unit;
-}
-
-
 
 .post-nav {
 	margin-top:$spacing-unit;
 
+
+	.prev {
+		float:left;
+	}
 	.next {
 		float:right;
 	}
