@@ -22,7 +22,7 @@
 }
 
 .site-description {
-	font-family: $base-font-family;
+	font-family: $subtitle-font-family;
 	display:inline-block;
 }
 
@@ -245,6 +245,7 @@ li.image-grid .title {
 
 .meta, .page-content .meta {
 	margin-bottom:$spacing-unit;
+	font-family:$subtitle-font-family;
 }
 
 h1, .title {
@@ -256,6 +257,7 @@ h1, .title {
 
 .subtitle {
   font-size:$base-font-size;
+	font-family:$subtitle-font-family;
   margin:0;
 	text-transform:uppercase;
 	letter-spacing:1px;
