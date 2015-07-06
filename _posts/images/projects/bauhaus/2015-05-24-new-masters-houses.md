@@ -25,9 +25,6 @@ Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-house
 ![]({{site.url}}/i/IMG_8538.jpg)
 {:.right}
 
-![]({{site.url}}/i/IMG_8559.jpg)
-{:.left}
-
 ![]({{site.url}}/i/IMG_8536.jpg)
 
 ![]({{site.url}}/i/IMG_8563.jpg)

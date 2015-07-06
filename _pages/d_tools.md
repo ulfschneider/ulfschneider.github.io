@@ -4,7 +4,7 @@ menu: Tools
 message:
 permalink: /tools/
 ---
-I build and share this stuff:
+I build and share these tools:
 
 <ul class="post-grid">
 	<li class="post-grid">

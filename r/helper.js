@@ -85,7 +85,7 @@ function getWrapperHorizPadding() {
 
 function getMargin() {
 	var limit = -100;
-	var palm = 600; /* must be same like in main.css form on-palm */
+	var palm = 600; /* must be same like in main.css on-palm */
 	var winWidth = getWindowWidth();
 	var wrapWidth = getWrapperWidth();
 	

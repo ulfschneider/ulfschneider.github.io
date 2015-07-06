@@ -336,12 +336,10 @@ figcaption, .figcaption {
 	}
 }
 
-.double img,  .wide img {
-	max-height:none;
+.double img {
 	max-width:none;
 	width:100%;
 }
-
 /**
  * Site footer
  */
@@ -472,24 +470,20 @@ figcaption, .figcaption {
 		  max-width:calc(100% + #{$spacing-unit});
     }
 
-  .double img, .wide img {
- 	  width:calc(100% + #{$spacing-unit});
-   }
-
   .left, .right {
 		margin-left:-$spacing-unit / 2;
 		margin-right:-$spacing-unit / 2;
 		padding-left:$spacing-unit / 2;
 		padding-right:$spacing-unit / 2;
 
- 	img {
- 		margin:0;
-		margin-left:-$spacing-unit / 2;
- 		width:none;
- 		min-width:0;
- 		max-width:60%;
-		max-width:calc(60% + #{$spacing-unit / 2});
- 	}
+ 		img {
+ 			margin:0;
+			margin-left:-$spacing-unit / 2;
+ 			width:none;
+ 			min-width:0;
+ 			max-width:60%;
+			max-width:calc(60% + #{$spacing-unit / 2});
+ 		}
 }
 
 .right {
@@ -497,6 +491,12 @@ figcaption, .figcaption {
 		margin-left:0;
 		margin-right:-$spacing-unit / 2;
 	}
+}
+
+.double img {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
 }
 
 li.image-grid {
