@@ -8,7 +8,7 @@ baseurl:  # the subpath of your site, e.g. /blog/
 name: Ulf Schneider
 url: http://ulf.codes # the base hostname & protocol for thesite
 twitter_username: ulfeed
-github_username: ulfschneider
+github_username: # ulfschneider
 
 
 
