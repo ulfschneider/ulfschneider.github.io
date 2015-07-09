@@ -34,6 +34,7 @@
 	}
 }
 
+
 .index {
 
 	.site-title {
@@ -459,6 +460,11 @@ figcaption, .figcaption {
 			}
 		}
 	}
+
+	.site-footer {
+			line-height:$site-nav-height;
+	}
+
 
 	.page-content {
 		padding-top:2*$spacing-unit;
