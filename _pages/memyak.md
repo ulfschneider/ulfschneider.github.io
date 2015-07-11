@@ -13,6 +13,6 @@ We use this web application at Wincor Nixdorf for our agile software product dev
 
 You can store any kind of data in memYAK and use filter and search mechanisms to select the contents that are of relevance for you. Structured navigational concepts like a Kanban Grid or a Product Backlog View support you in your project work. A Product Burndown Diagram indicates the progress of your endeavors.
 
-memYAK is a Java Enterprise application that leverages [MongoDB](http://mongodb.org) for data storage. Install memYAK on a server like Tomcat. Fire up your web browser and you are ready to start.
+memYAK is a Java Enterprise application that leverages [MongoDB](http://mongodb.org) for data storage. Install memYAK in a web container like Tomcat. Fire up your web browser and you are ready to start.
 
 <mark>Remark:</mark> Currently the install documentation and the online help are only German.
