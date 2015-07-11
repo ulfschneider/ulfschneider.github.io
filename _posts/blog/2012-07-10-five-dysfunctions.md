@@ -2,12 +2,12 @@
 layout: post
 title:  Five dysfunctions of a team
 subtitle: A non-performing team is not a team
-permalink: 
+permalink:
 date:   2012-07-10
-message: 
-banner: 
-bottomline: 
-author: 
+message:
+banner:
+bottomline:
+author:
 abstract: Deliver with each iteration a done piece of work and collaborate as a team. If you do only these two things and forget about all the concepts and procedures we like to talk about in the agile world, you already have made a good part of the agile journey.
 ---
 Deliver with each iteration a [done]({{site.url}}/definition-of-done) piece of work and collaborate as a team. If you do only these two things and forget about all the concepts and procedures we like to talk about in the agile world, you already have made a good part of the agile journey.
@@ -33,11 +33,11 @@ Layer|Dysfunction|Behavioral pattern
 
 I find the model useful to analyze team dysfunctions, isolate root causes and work through each layer, starting with the most basic and going to the top. E.g. if you can not establish a trustful environment you will not be able to get real commitments.
 
-The dysfunctions can be reformulated to give a positive direction. In order to come to a lively and performing team, the team should 
+The dysfunctions can be reformulated to give a positive direction. In order to come to a lively and performing team, the team should
 
 Layer|Try to achieve
 -----|--------------
-1|Establish a trustful environment
+1|Establish a trustful environment, allowing oneself to be vulnerable
 2|Have an open and fair communication culture and engage in conflict around ideas
 3|Commit to shared goals and decisions
 4|Hold each other accountable against the shared goals and decisions
@@ -50,5 +50,3 @@ References
 [Lencioni 2002] Patrick Lencioni, „The Five Dysfunctions of a Team“, Jossey-Bass 2002
 
 [Lencioni 2005] Patrick Lencioni, „Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators“, Jossey-Bass 2005
-
-

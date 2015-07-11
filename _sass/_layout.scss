@@ -449,7 +449,7 @@ figcaption, .figcaption {
 	}
 
 	img.LHOP, .LHOP img {
-		/*limit height on palm*/
+		/*Limit Height On Palm*/
 		max-height:400px;
 	}
 
@@ -463,6 +463,7 @@ figcaption, .figcaption {
 
 	.site-footer {
 			line-height:$site-nav-height;
+			/* increase space for touching links */
 	}
 
 
