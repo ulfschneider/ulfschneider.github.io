@@ -72,7 +72,7 @@ The reaction to unforeseeable events affords ad-hoc negotiation,  the breakdown 
 
 > In a radical way one has to leave behind the idea that everything in the organization can be ruled and controlled [[Bendel 2006:2f]][bendel2006].
 
-One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms and regulations. Instead one has to trust in self-organizational forces and the empowerment of employees to take local and autonomous decisions where needed.
+One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms and regulations. Instead one has to trust in self-organizational forces and the emancipation of employees to take local and autonomous decisions where needed.
 
 Still not all decisions are being taken autonomous on local levels. Self-organization can be accompanied with hierarchic structures. Lower levels build up higher levels and higher levels adapt with a slower pace. Lower levels will get their orientation from higher levels and not the other way around. In self-organizing systems impulse and input from lower levels will be integrated into decision processes. It is not the question, if centralized or decentralized decision patterns are better in self-organizing systems. Instead both patterns can be observed and are needed.
 
@@ -132,7 +132,7 @@ Our tasks determine our communication patterns. Make the task that has to be ful
 
 Anti-fragility
 ---
-Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragility does not mean robustness. Robustness is the ability of a system to resist changes without modifying its initial stable structure. Anti-fragility is more. It is the ability to become stronger through drawbacks, impacts or enhanced demands. If you lift 50 kilogram on one day, your body starts preparing to lift 51 kilogram on the next day. You become stronger because you are getting trained. The same is true for self-organizing teams. As long as the task of the team is clear, the team will start to orient itself on the task. The task is allowed to be demanding - but it has to be clear and the team must be empowered to change structures and adapt.
+Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragility does not mean robustness. Robustness is the ability of a system to resist changes without modifying its initial stable structure. Anti-fragility is more. It is the ability to become stronger through drawbacks, impacts or enhanced demands. If you lift 50 kilogram on one day, your body starts preparing to lift 51 kilogram on the next day. You become stronger because you are getting trained. The same is true for self-organizing teams. As long as the task of the team is clear, the team will start to orient itself on the task. The task is allowed to be demanding - but it has to be clear and the team must be emancipated to change structures and adapt.
 
 Reflection
 ---

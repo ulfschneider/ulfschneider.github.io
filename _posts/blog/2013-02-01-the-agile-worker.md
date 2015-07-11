@@ -12,11 +12,15 @@ abstract: The agile worker does only exist because discrepancies exist between t
 ---
 An important part of agile work is learning. Agile workers are knowledge workers who bring their mental models in contact with reality. The agile worker does only exist because discrepancies exist between theory and reality and because insights can be gained through these discrepancies. If the theory is not questioned by reality, if whether model or reality do not play a role, then there is no learning. Then work does not require the quest for suitable solutions and work can be done by following instructions.
 
-Empowerment
+Authority
 ---
 The agile worker is searching for insights. If insights should have a meaning, they lead to decisions. This is a further characteristic of the agile worker: she makes decisions.
 
-The agile worker is acting best inside of a system where agile values are being affirmed. In such a system decisions will be taken at the level with deepest insights and not necessarily at the level with the most formal power. The delegation of responsibility is a central part of the leadership process in agile organizations. But empowerment is more, it means also the ability to take risks, to change the organization and to develop. This is not primarily to reduce the work of managers but to come to best possible decisions [Appelo 2011:114].
+The agile worker is acting best inside of a system where decisions will be taken at the level with deepest insights and not necessarily at the level with the most formal power.
+
+> Do not move information to authority. Move authority to where the information lives. [Marquet 2012:49]
+
+Such kind af authority is a central part of the leadership process in agile organizations. It means also the ability to take risks, to change the organization and to develop. This is not primarily to reduce the work of managers but to come to best possible decisions [Appelo 2011:114].
 
 Self-organization
 ---
@@ -80,6 +84,8 @@ References
 [Appelo 2011] J. Appelo, „Management 3.0, Leading Agile Developers, Develop Agile Leaders“, Addison Wesley 2011
 
 [Kaner 2007] S. Kaner et al., „Facilitator´s Guide to Participatory Decision Making“, Second Edition, Jossey-Bass 2007
+
+[Marquet 2012] L. David Marquet, „Turn the ship around, A true story of turning followers into leaders“, Penguin 2012
 
 [wujec]: http://marshmallowchallenge.com/Welcome.html
 [Wujec 2010] T. Wujec, „The Marshmallow Challenge“, <http://marshmallowchallenge.com/Welcome.html>
