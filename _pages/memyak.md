@@ -5,9 +5,9 @@ permalink: /memyak/
 ---
 memYAK is the external memory for innovation teams with special support for agile software development.
 
-We use this web application at Wincor Nixdorf for our agile software product development to support the agile teams in China, Germany, Netherlands and Poland.
+We use this web application at Wincor Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
 
-[Download memYAK 2.7.6 - it´s free](/r/memyak/memyak_2.7.6.zip)
+[Download memYAK 2.7.6 - it´s free](http://memyak.com/resource/memyak_2.7.6.zip)
 
 ![](/i/memyak/burndown.jpg)
 
