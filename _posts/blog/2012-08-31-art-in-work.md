@@ -3,9 +3,6 @@ layout: post
 title:  The art in our work
 subtitle: Challenging the status quo is art
 date:   2012-08-31
-message: 
-banner: 
-bottomline: 
 author: 
 abstract: The Agile Manifesto represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 ---

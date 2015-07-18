@@ -2,9 +2,8 @@
 layout: post
 title: Scrum and Architecture
 subtitle: The architect and his tools in the Scrum process
-permalink:
+permalink: 
 date: 2011-06-27
-message:
 author:
 abstract: Making architectural decisions in a cooperative way, at a point in time when they are needed - and not earlier - is a quality-improving paradigm in agile software development. Conceptual integrity in the flow of architecture decisions will only be achieved if one person has the final word regarding those decisions. This is the architect, serving the product, whose rights and obligations in context of the Scrum process are being reflected in this essay.
 ---

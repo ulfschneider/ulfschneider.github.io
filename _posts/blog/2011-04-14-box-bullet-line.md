@@ -4,9 +4,6 @@ title:  The Box-Bullet-Line (BBL)
 subtitle: An intuitive and natural notation to communicate flows between components
 permalink: /bbl/
 date:   2011-04-17
-message: 
-banner: 
-bottomline: 
 author: 
 abstract: An intuitive and natural notation to communicate flows  between components.
 ---
