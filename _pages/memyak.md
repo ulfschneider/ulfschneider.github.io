@@ -9,7 +9,9 @@ We use this web application at Wincor Nixdorf to support our agile product devel
 
 [Download memYAK 2.7.6 - it´s free](http://memyak.com/resource/memyak_2.7.6.zip)
 
-Do you like it? Please [share on Twitter or simply tweet me](http://twitter.com/intent/tweet?url=http://ulf.codes/memyak/&via=ulfeed).
+Do you like it? [Drop me a line on Twitter](http://twitter.com/intent/tweet?screen_name=ulfeed) or [share](http://twitter.com/intent/tweet?url={{site.url}}/memyak/&via=ulfeed). 
+
+
 
 ![](/i/memyak/burndown.jpg)
 
