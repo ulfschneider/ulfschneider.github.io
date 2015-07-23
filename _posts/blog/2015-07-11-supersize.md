@@ -7,16 +7,16 @@ permalink: supersize
 author:
 abstract: Do not let scaled agile be your scaled snake oil
 ---
-We talk about scaling agile when we have to deal with more than one team. Each team not more than 10 members.
+First let´s define the term: I talk about scaling agile when we have to deal with more than one team to get a thing delivered. Each team not more than 10 members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery it´s that: multiple teams working on one thing.
 
 Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. This is an incredible difficult thing to do. Peter Drucker coined the phrase "culture eats strategy for breakfast". You better prepare for the long run. Is it clear, why you want to change? "You" are: managers, who define how the system works, product managers who define what kind of product is needed, research and development people who explore possibilities, engineers who build the product, salesforce who will drive sales, project managers who are in charge of leading one-of-a-kind endeavors, human resources to hire and to support peoples growth - you will identify even more people and roles for your organization.
 
 Do your leaders have a sense of urgency that agile is the way to go? Can they argue for it and will they? Do your leaders know what problem they want to solve by being agile?
 
-You have to change, you know that. Do you think it can happen by implementing some new release train processes that you have seen in the latest scaled agile book? Or disseminating a slide deck to your subordinates, giving order to work in Sprints and counting Sprints as being unsuccessful if some tasks are left undone at the end of the Sprint? By letting the Project Management Office give instructions to standardize Scrum Boards in the entire company with predefined columns? Or printing sticky note templates to have them all look the same on the boards, without referring to your workforce? These top-down communications are patterns of how to completely get agile wrong.
+You have to change, you know that. Do you think it can happen by implementing some new release train processes that you have seen in the latest scaled agile book? Or disseminating a slide deck to your subordinates, giving order to work in Sprints and counting Sprints as being unsuccessful if some tasks are left undone at the end of the Sprint? By letting the Project Management Office give instructions to standardize Scrum Boards in the entire company with predefined columns? Or printing sticky note templates to have them all look the same on the boards, without referring to your workforce? These top-down communications are patterns of how to get agile wrong.
 If you think this is scaled agile and will lead to cultural change, then you are heading for scaled snake oil. Mentally, your people will step aside and identify the entire thing as some kind of theater communication. If you understand agile as the current way of working to only squeeze more results faster out of your knowledge worker people, because your engineered waterfall projects seem to fail to often without delivering the desired outcome, you did not get the idea of agile. 
 
-Agile is not implementing a process and follow. Agile has to be earned, not given.
+Agile is not implementing a process and then follow. Agile has to be earned, not given.
 
 Every organization is unique
 ---
@@ -26,16 +26,16 @@ Though, every organization is unique and has to find answers to questions like "
 Agile properties
 ---
 
-Find out, if this is something for you: Center around people and results, not processes. Processes are servant, not master. Still continuously improve processes and focus less on improving the monitoring of people. Identify what brings value to your customers and organize around delivering that value. Money is not the goal, it is a result which comes from achieving value for delighted customers. Have a straight line from your product strategy to your release strategy to the delivery order of the features within a release. Things are ordered in a way to always deliver the highest value first in small increments. The people are oriented about that and understand. Transparency on all levels with everyone seeing the same figures, whether it´s the progress of value delivery or costs and earnings. The workforce is emancipated and authority is brought to where information lives and not information is brought via monitoring chains to "authorities". Give control to people and not take control. Decentralize and find ways to let information and energy easily flow to the places where needed. Be clear about the goals and intent, but leave space for the workforce to find ways how to achieve the goals. Grow competency to perform. Strive for a learning attitude on all levels to enable the organization to get better and to lead change. Team and personal growth are not only lip service and to be a leader is about duties and responsibilities and not necessarily about privileges. Leaders are cultivators, not controllers. Instead of a one-way top-down commanding communication, a horizontal discursive approach is default and top-down is only used where really needed. This organization is more of a leader-leader type instead of playing the leader-follower game. You want leaders on all levels and not people with their brains off and only following given procedures. 
+Find out, if this is something for you: Center around people and results, not processes. Processes are servant, not master. Still continuously improve processes and focus less on improving the monitoring of people. Identify what brings value to your customers and organize around delivering that value. Money is not the goal, it is a result which comes from achieving value for delighted customers. Have a straight line from your product strategy to your release strategy to the delivery order of the features within a release. Things are ordered in a way to regularly deliver the highest value first, in small increments. The people are oriented about that and understand. Transparency on all levels with everyone seeing the same figures, whether it´s the progress of value delivery or costs and earnings. The workforce is emancipated and authority is brought to where information lives and not information is brought via monitoring chains to "authorities". Give control to people and not take control. Decentralize and find ways to let information and energy easily flow to the places where needed. Be clear about the goals and intent, but leave space for the workforce to find ways how to achieve the goals. Grow competency to perform. Strive for a learning attitude on all levels to enable the organization to get better and to lead change. Team and personal growth are not only lip service and to be a leader is about duties and responsibilities and not necessarily about privileges. Leaders are cultivators, not controllers. Instead of a one-way top-down commanding communication, a horizontal discursive approach is default. Top-down is only used where really needed. This organization is more of a leader-leader type instead of playing the leader-follower game. You want leaders on all levels and not people with their brains off and only following given procedures. 
 
 The agile organization is a failure resilient, success seeking, cooperative, status-quo challenging, potential growing, knowledge worker organization instead of a failure avoiding routined good behavior following procedures company.
 
 Not for mummy´s boys
 ---
 
-You may want to "use" agile only for a single project with 8, 20 or even 50 people and don´t think about your entire organization at first hand. That is ok, growing natural makes sense and to understand how things work in the small and then scale gives some chance for the scaling endeavor to function. Chances are, you try to do it the agile way because your project currently is about to sink. This may also work, because then you have some pressure for clarity and right decisions - but no guarantee that you will make the right decisions of course.
+You may want to "use" agile only for a single project with 8, 20 or even 50 people and don´t think about your entire organization at first hand. That is ok, growing natural makes sense and to understand how things work in the small and then scale gives some chance for the scaling endeavor to function. Chances are, you try to go the agile way because your project currently is about to sink. This may also work, because then you have some pressure for clarity and right decisions - but no guarantee that you will make the right decisions of course.
 
-Now, even being agile in a team of 8 people is incredibly difficult if you haven´t done it before. It is likely the most disciplined way of working you ever had to, or, better, wanted to achieve in your work life. It is not easy going. You have to be unafraid and explore. But it is not all hard stuff and discipline, it is mostly about people and purpose and real collaboration, about engagement, choice and fun at work, about trust, freedom, ownership and a sense of self [Mayer 2013:29]. I suppose no one ever achieved something great only because it was told him to do. You can achieve great if you see a purpose, if you are convinced, if you reinforce the spirit of your team, by making and learning, making and learning, making and learning. And not giving up. As managers, you can not buy such behavior and attitude, nor can you give orders to do so. You have to set suitable constraints to give self-organizational forces a direction and give people authority to act as human beings. Be prepared to learn and adapt, because you will have to.
+Now, even being agile in a team of 8 people is incredibly difficult if you haven´t done it before. It is likely the most disciplined way of working you ever had to, or, better, wanted to achieve in your work life. It is not easy going. You have to be unafraid and explore. But it is not all hard stuff and discipline, it is mostly about people and purpose and real collaboration, about engagement, choice and fun at work, about trust, freedom, ownership and a sense of self [Mayer 2013:29]. I suppose no one ever achieved something great only because it was told him to do. You can achieve great if you see a purpose, if you are convinced, if you reinforce the spirit of your team, by making and learning, making and learning, making and learning. As managers, you can not buy such behavior and attitude, nor can you give orders to do so. You have to set suitable constraints to give self-organizational forces a direction and give people authority to act as human beings. Be prepared to learn and adapt, because you will have to.
 
 That said, why would you want to do that? Isn´t it better for the organization to be robust, reduce room for surprise and have people following orders?
 
@@ -64,7 +64,7 @@ Problem class
 ---
 Any innovative endeavor will challenge knowledge workers with uncertainty about the problem space and the suitable solution space. To pick up a slightly modified Stacey Matrix, it is the complexity space where knowledge workers are at home and that´s where agile is positioned. 
 
-![](/i/blog/uncertainty.jpg)
+![](http://{{site.url}}/i/blog/uncertainty.jpg)
 
 Figure: The complex problem class is characterized by uncertainty, this is the place for agile
 {:.figcaption}
@@ -77,7 +77,7 @@ Process model
 ---
 Being positioned in dynamic, competitive markets that are characterized by uncertainty of both, problem space and solution space, we have to ask for a suitable process model to support and guide the workforce to achieve results. The detailed upfront planning of execution steps, the defined process model, does not bring any advantage, instead even the disadvantage of false safety and effort consumption. The waterfall process follows such a defined process model.
 
-![](/i/blog/waterfall.jpg)
+![](http://{{site.url}}/i/blog/waterfall.jpg)
 
 Figure: The waterfall process follows the defined process model approach
 {:.figcaption}
@@ -90,7 +90,7 @@ Consider the following questions:
 
 In the agile world, we respond with the empirical process model.
 
-![](/i/blog/iterations.jpg)
+![](http://{{site.url}}/i/blog/iterations.jpg)
 
 Figure: The iterative process follows the empirical process model approach
 {:.figcaption}
@@ -132,7 +132,7 @@ Even the simple Scrum framework, in the wrong hands or misunderstood, so that th
 
 Ken Schwaber once suggested to use a transition team to address the organizational change which is being demanded by the delivery units [Schwaber 2007]. 
 
-![](/i/blog/transition_team.jpg)
+![](http://{{site.url}}/i/blog/transition_team.jpg)
 
 Figure: Transition team
 {:.figcaption}
@@ -155,7 +155,7 @@ The general answer is, keep it as small as possible and, again, try to find the 
 
 As communication lines among people grow by squares in terms of n*(n-1) (with a team size of n), you come to 20 communication lines for a team size of 5, 30 lines for a team size of 6 and a team with 9 people will have 72 lines that need to be maintained among senders and receivers in the team. 
 
-![](/i/blog/communication_lines.jpg)
+![](http://{{site.url}}/i/blog/communication_lines.jpg)
 
 Figure: Communication lines
 {:.figcaption}
@@ -164,7 +164,7 @@ That´s the reason for not letting a team grow beyond 10 people. If more people 
 
 The other way around, having teams grouped by architectural components or skills, like front-end, back-end, UX and the like in separated teams, will increase dependencies and lead to teams blocking each other when delivering end-to-end features. No team alone can deliver and the people will have to maintain not only the communication lines inside of their team, but in addition to all people in other teams who are required to to deliver the feature. 
 
-Focus on this: have a team to be able to deliver done software by the end of each iteration, always doing the most valuable things first, and let them work together as a real team. From that point on the people are in a self-carrying upwards movement. As managers you only need to move barriers out of their way, the rest they will go alone. 
+Focus on this: have a team to be able to deliver done software by the end of each iteration, always doing the most valuable things first, and let them work together as a real team. From that point on the people are in a self-carrying upwards movement. As managers you only need to move barriers out of their way, the rest they will go alone. Scaling before you reached that point will only let you scale up a mess.
 
 Standup
 ---
@@ -190,7 +190,7 @@ Clarity means clarity in organizational goals and intent. Understand what brings
 
 Scaling agile is about emancipating people. Strive for clarity in goals and intent, let people grow their competencies and give them control to decide. 
 
-Agile is self-scaling. If one team really has achieved it, you only need to move barriers out of the way and growth will be self-carrying.
+Agile is self-scaling. If one team really has achieved it, you only need to move barriers out of the way and growth will be self-carrying. 
 
 References
 ---
