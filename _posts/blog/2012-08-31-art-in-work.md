@@ -56,11 +56,11 @@ The centralized planning, disassembly and automation of work brought us to the i
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
 {:.figcaption}
 
-In the Taylor-Tub the thoughts of the single individual are not of importance, because all workflows, procedures and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which has lead to disruptive productivity grows and inert mass markets during the last century.
+In the Taylor-Tub the thoughts of the individual are not of importance, because all workflows, procedures and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which has lead to disruptive productivity growth and inert mass markets during the last century.
 
 Todays markets are more and more characterized by their narrowness and/or complexity. This complexity requires a better understanding of customer needs, higher flexibility and often interdisciplinary approaches. Those companies that can create such dynamics, the top performers, set the less capable companies under pressure. Companies that can not create the dynamics will suffer the pressure.
 
-Momentum is being created by dynamic people, by experienced and skilled workers who responsibly and self-organizing produce results. People who can bear with complexity. For those people values and leadership are of much higher importance than centralized control and management. 
+The momentum is being created by dynamic people, by experienced and skilled workers who responsibly and self-organizing produce results. People who can bear with complexity. For those people values and leadership are of much higher importance than centralized control and management. 
 
 A template for congruent acting can be seen in the Agile Manifesto. And the corresponding attitude might be to understand our work as an art.
 
