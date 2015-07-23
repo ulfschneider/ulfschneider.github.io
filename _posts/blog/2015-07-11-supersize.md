@@ -64,7 +64,7 @@ Problem class
 ---
 Any innovative endeavor will challenge knowledge workers with uncertainty about the problem space and the suitable solution space. To pick up a slightly modified Stacey Matrix, it is the complexity space where knowledge workers are at home and that´s where agile is positioned. 
 
-![](http://{{site.url}}/i/blog/uncertainty.jpg)
+![]({{site.url}}/i/blog/uncertainty.jpg)
 
 Figure: The complex problem class is characterized by uncertainty, this is the place for agile
 {:.figcaption}
@@ -77,7 +77,7 @@ Process model
 ---
 Being positioned in dynamic, competitive markets that are characterized by uncertainty of both, problem space and solution space, we have to ask for a suitable process model to support and guide the workforce to achieve results. The detailed upfront planning of execution steps, the defined process model, does not bring any advantage, instead even the disadvantage of false safety and effort consumption. The waterfall process follows such a defined process model.
 
-![](http://{{site.url}}/i/blog/waterfall.jpg)
+![]({{site.url}}/i/blog/waterfall.jpg)
 
 Figure: The waterfall process follows the defined process model approach
 {:.figcaption}
@@ -90,7 +90,7 @@ Consider the following questions:
 
 In the agile world, we respond with the empirical process model.
 
-![](http://{{site.url}}/i/blog/iterations.jpg)
+![]({{site.url}}/i/blog/iterations.jpg)
 
 Figure: The iterative process follows the empirical process model approach
 {:.figcaption}
@@ -132,7 +132,7 @@ Even the simple Scrum framework, in the wrong hands or misunderstood, so that th
 
 Ken Schwaber once suggested to use a transition team to address the organizational change which is being demanded by the delivery units [Schwaber 2007]. 
 
-![](http://{{site.url}}/i/blog/transition_team.jpg)
+![]({{site.url}}/i/blog/transition_team.jpg)
 
 Figure: Transition team
 {:.figcaption}
@@ -155,7 +155,7 @@ The general answer is, keep it as small as possible and, again, try to find the 
 
 As communication lines among people grow by squares in terms of n*(n-1) (with a team size of n), you come to 20 communication lines for a team size of 5, 30 lines for a team size of 6 and a team with 9 people will have 72 lines that need to be maintained among senders and receivers in the team. 
 
-![](http://{{site.url}}/i/blog/communication_lines.jpg)
+![]({{site.url}}/i/blog/communication_lines.jpg)
 
 Figure: Communication lines
 {:.figcaption}
