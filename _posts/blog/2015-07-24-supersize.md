@@ -97,7 +97,7 @@ Figure: The iterative process follows the empirical process model approach
 
 Working in short iterations of 1, 2, 3 or 4 weeks length and delivering working software at the end of each iteration will give you the security net that is comparable to what mountain climbers do when they climb and secure, climb and secure. At the end of each iteration you reach a safety point that clearly tells you what is and what not. 
 
-Picking up the same questions I asked for the defined process model:
+Picking up the same questions I already asked for the defined process model:
 
 1. If you have spent 30% of your time and effort, you can exactly compare that with the list of already done pieces of software. Your measurement for progress is no longer spent effort or time, but done work compared to missing pieces yet waiting to be delivered. This is clear and simple. Possibly you are 30% done at that point. Your customer decides and you can tell him exactly what is done.
 2. Do you have something of value for your customer or yourself? You should. If you have build working software in each iteration, even if not delivered to the customer, you have something to show and to learn from and to rely on. 
