@@ -117,7 +117,7 @@ The agile movement started in the IT industry. It is driven by programmers and e
 
 The ideas, values and principles of agile are pro people and pro results. The central working unit is the team, at max 10 persons, cross-functional and being able to deliver results. The team is emancipated, has authority to decide, the competency to act and clarity in the goals to achieve.
 
-> Agile is about letting people make things that deliver value now, to let them be connected to their work, to validate results and to deliver. The people are value focused and have the technical expertise to deliver frequently.
+> Agile is about letting people make things that deliver value now, to let them be connected to their work and validate results. The people are value focused and have the technical expertise to deliver frequently.
 
 Agile delivery goes with the least possible process that is expected to work. This process is a servant, not a master. For example, the Scrum framework can be drawn and explained on a beer coaster - which does not mean it´s easy to live up to.
 
