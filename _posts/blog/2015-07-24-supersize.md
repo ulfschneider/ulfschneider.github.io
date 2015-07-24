@@ -190,11 +190,9 @@ Competency means the technical skills to do things on top of a craft. These skil
 
 Clarity means clarity in organizational goals and intent. Understand what brings value and follow the value. 
 
-Often, organizations do not follow the value and instead try to always consume the entire workforce capacity at minimal costs, maximizing their output (the amount of build software) and not think about the outcome (outcome is what comes after output, what your users do). This will likely lead to many started and less finished things. Do it the other way around, minimize the output and maximize the outcome, understand and follow the value, stop starting and start finishing.
+Sometimes (maybe often), organizations do not follow the value and instead try to always consume the entire workforce capacity at minimal costs, maximizing their output (the amount of built features) and not think about the outcome (outcome is what comes after output, what your users do). This will likely lead to many started and less finished things. Do it the other way around, minimize the output and maximize the outcome, understand and follow the value, stop starting and start finishing.
 
-Scaling agile is about emancipating people. Strive for clarity in goals and intent, let people grow their competencies and give them control to decide. 
-
-Agile is self-scaling. Focus on being agile at team level. From there on you only need to move barriers out of the way and growth will be self-carrying into the organization. 
+Scaling agile is about emancipating people. Strive for clarity in goals and intent, let people grow their competencies and give them control to decide. Then agile is self-scaling. Focus on being agile at team level. From there on you only need to move barriers out of the way and growth will be self-carrying into the organization. 
 
 References
 ---
