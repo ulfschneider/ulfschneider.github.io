@@ -198,7 +198,7 @@ Agile is self-scaling. Focus on being agile at team level. From there on you onl
 
 References
 ---
-[Beedle and Schwaber 2002] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 200202
+[Beedle and Schwaber 2002] K. Schwaber, M. Beedle, „Agile Software Development with Scrum“, Pearson Prentice Hall, 2002
 
 [cohn2014]: http://www.mountaingoatsoftware.com/blog/introducing-the-lafable-process-for-scaling-agile
 [Cohn 2014] M. Cohn, "Introducing the LAFABLE Process for Scaling Agile", 2014, <http://www.mountaingoatsoftware.com/blog/introducing-the-lafable-process-for-scaling-agile>
