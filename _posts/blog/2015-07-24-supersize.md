@@ -58,7 +58,7 @@ Todays markets are more and more characterized by their narrowness and/or comple
 
 The momentum is being created by dynamic people, by experienced and skilled workers who responsibly and self-organizing produce results. People who can bear with complexity. For those people values and leadership are of much higher importance than centralized control and management. 
 
-Agile values support dynamic and skilled knowledge workers. For your organization to be able to changeope with current market requirements, you may be forced into an agile working style by your market, whether you like it or not.
+Agile values support dynamic and skilled knowledge workers. For your organization to be able to cope with current market requirements, you may be forced into an agile working style, whether you like it or not.
 
 Problem class
 ---
@@ -95,7 +95,9 @@ In the agile world, we respond with the empirical process model.
 Figure: The iterative process follows the empirical process model approach
 {:.figcaption}
 
-Working in short iterations of 1, 2, 3 or 4 weeks length and delivering working software at the end of each iteration will give you the security net that is comparable to what mountain climbers do when they climb and secure, climb and secure. At the end of each iteration you reach a safety point that clearly tells you what is and what not. Picking up the same questions I asked for the defined process model:
+Working in short iterations of 1, 2, 3 or 4 weeks length and delivering working software at the end of each iteration will give you the security net that is comparable to what mountain climbers do when they climb and secure, climb and secure. At the end of each iteration you reach a safety point that clearly tells you what is and what not. 
+
+Picking up the same questions I asked for the defined process model:
 
 1. If you have spent 30% of your time and effort, you can exactly compare that with the list of already done pieces of software. Your measurement for progress is no longer spent effort or time, but done work compared to missing pieces yet waiting to be delivered. This is clear and simple. Possibly you are 30% done at that point. Your customer decides and you can tell him exactly what is done.
 2. Do you have something of value for your customer or yourself? You should. If you have build working software in each iteration, even if not delivered to the customer, you have something to show and to learn from and to rely on. 
