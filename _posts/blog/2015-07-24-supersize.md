@@ -210,7 +210,7 @@ References
 [Jeffries 2015] R. Jeffries, "Do we really need another method?", 2015, <http://ronjeffries.com/articles/2015-07-07-yet-another-method/>
 
 [lafable]: http://www.lafable.com
-[LAFABLE]: M. Cohn, "Large Agile Framework for Big, Lumbering Enterprises", 2014, <http://www.lafable.com>
+[LAFABLE] M. Cohn, "Large Agile Framework for Big, Lumbering Enterprises", 2014, <http://www.lafable.com>
 
 [Marquet 2013] L. D. Marquet, "Turn the Ship Around! A true story of turning followers into leaders.", Penguin, 2013
 
