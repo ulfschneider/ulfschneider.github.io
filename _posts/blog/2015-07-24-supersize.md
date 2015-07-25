@@ -43,7 +43,7 @@ I can identify four angles to assess the topic: the market, the problem class, t
 
 Market
 ---
-*Remark:* The following paragraphs on *market* have been taken from the text [the art in our work]({{site.url}}/the-art-in-our-work).
+*Remark:* The following paragraphs on *market* have been taken from the text [the art in our work]({{site.url}}/art-in-work).
 
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
