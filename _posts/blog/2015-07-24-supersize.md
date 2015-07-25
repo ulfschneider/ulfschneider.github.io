@@ -173,7 +173,7 @@ Focus on this: have a team to be able to deliver done software by the end of eac
 Standup
 ---
 
-Let´s assume you do daily standup´s with component- or skill-formed teams (I hope you do standup´s, doing it not is a very bad idea). Considering the purpose of a daily standup is to ensure the delivery of a feature by the end of your iteration and to unhide the impediments or necessary adjustments to reach that goal, usually a daily standup with only the people who belong to a single architectural component doesn´t support you at all. You will find communication without direction and the impression of wasting time among the participants. This is not fruitful. 
+Let´s assume you do daily standup´s with component- or skill-formed teams (I hope you do standup´s, doing it not is a very bad idea). Considering the purpose of a daily standup is to ensure the delivery of a feature by the end of your iteration and to unhide the necessary adjustments to reach that goal, usually a daily standup with only the people who belong to a single architectural component doesn´t support you at all. You will find communication without direction and the impression of wasting time among the participants. This is not fruitful. 
 
 Instead, if *all* the people who deliver a feature are together from the start, a so called cross-functional team, the standup supports collaboration and communication towards that goal of feature delivery and the team can start to hunt features.
 
