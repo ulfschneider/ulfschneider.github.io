@@ -153,9 +153,11 @@ Scaling agile beyond the first team is the first step of scaling. Is there an en
 
 ![]({{site.url}}/i/blog/supersize.jpg)
 
-The general answer is, keep it as small as possible and, again, try to find the least solution that can work. Attacking the topic from the start as a scaling endeavor will not help you. Agile will scale itself when you allow it to truly work on a team level. Your organization will learn from such achievement and find a natural way to scale. Scaling is not the primary goal, it is a result of a curated successful agile implementation in the tiniest cells. The more people are included, the more work is created instead of being done, because communication effort will grow quadratic and not linear.
+The general answer is, keep it as small as possible and, again, try to find the least solution that can work. Attacking the topic from the start as a scaling endeavor will not help you. Agile will scale itself when you allow it to truly work on a team level. Your organization will learn from such achievement and find a natural way to scale. Scaling is not the primary goal, it is a result of a curated successful agile implementation in the tiniest cells. 
 
-As communication lines among people grow quadratic in terms of n*(n-1) (with a team size of n), you come to 20 communication lines for a team size of 5, 30 lines for a team size of 6 and a team with 9 people will have 72 lines that need to be maintained among senders and receivers in the team. 
+The more people are included, the more communication work is imposed on the people, because communication effort will grow quadratic and not linear.
+
+Here is the simple math: Communication lines among people grow in terms of n*(n-1) (with a team size of n). By this you come to 20 communication lines for a team size of 5, 30 lines for a team size of 6 and a team with 9 people will have 72 lines that need to be maintained among senders and receivers in the team. 
 
 ![]({{site.url}}/i/blog/communication_lines.jpg)
 
