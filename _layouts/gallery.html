@@ -1,165 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 
- {% include head.html %}
+{% include head.html %}
 
- <body class="gallery">
+<body class="gallery">
 
 
+<div class="for-gallery">
+    {% include header.html %}
+    <div id="pageContent" class="page-content">
+        <div class="wrapper">
+            {% include title.html %}
+            {{ content }}
+            <p style="text-align:center;">
+                <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
+            </p>
+        </div>
 
-		<div class="for-gallery">
-   	{% include header.html %}
-  		<div id="pageContent" class="page-content">
-				<div class="wrapper">
-					{% include title.html %}
-					{{ content }}
-          <p style="text-align:center;">
-					<a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
-        </p>
-				</div>
+        <ul class="image-grid" id="image-grid">
+            {% for tag in page.tags %}
 
-				<ul class="image-grid" id="image-grid">
-				{% for tag in page.tags %}
+            {% for post in site.tags.[tag] %}
 
-					{% for post in site.tags.[tag] %}
+            {% if post.layout contains 'image' and post.thumburl %}
 
-						{% if post.layout contains 'image' and post.thumburl %}
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <li class="image-grid">
+                    <div class="image">
+                        <img src="{{post.thumburl | prepend: site.baseurl}}"/>
+                        {% if post.message %}
+                        <div class="title">{{post.message}}</div>
+                        {% elsif post.abstract %}
+                        <div class="title">{{post.abstract}}</div>
+                        {% elsif post.title %}
+                        <div class="title">{{post.title}}</div>
+                        {% endif %}
+                    </div>
+                </li>
+            </a>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="/r/jquery.min.js"></script>
+    <script src="/r/packery.pkgd.min.js"></script>
 
-							<a  href="{{ post.url | prepend: site.baseurl }}">
-								<li class="image-grid">
-									<div class="image">
-										<img src="{{post.thumburl | prepend: site.baseurl}}"/>
-										{% if post.message %}
-											<div class="title">{{post.message}}</div>
-										{% elsif post.abstract %}
-											<div class="title">{{post.abstract}}</div>
-										{% elsif post.title %}
-											<div class="title">{{post.title}}</div>
-										{% endif %}
-									</div>
-								</li>
-							</a>
-						{% endif %}
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-		<script src="/r/jquery.min.js"></script>
-		<script src="/r/packery.pkgd.min.js"></script>
+    <script>
 
-		<script>
+        $('.for-slides').hide();
 
-		$('.for-slides').hide();
+        container = select('#image-grid');
+        pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
+        setInterval(function () {
+            pckry.layout();
+        }, 500);
 
-		container = select('#image-grid');
-		pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});	setInterval(function() {	 pckry.layout(); }, 500);
+        function displayGallery() {
+            $('.for-slides').fadeOut();
+            $('.for-gallery').delay(500).fadeIn();
+        }
 
-		function displayGallery() {
-			$('.for-slides').fadeOut();
-			$('.for-gallery').delay(500).fadeIn();
-		}
+        function displaySlides() {
+            $('.for-gallery').fadeOut();
+            /* load larger images only now*/
+            $('img[lazy]').each(function () {
+                $(this).attr('src', $(this).attr('lazy'));
+            });
+            $('.for-slides').delay(500).fadeIn();
+        }
 
-		function displaySlides() {
-			$('.for-gallery').fadeOut();
-			/* load larger images only now*/
-			$('img[lazy]').each(function() {$(this).attr('src', $(this).attr('lazy')); });
-			$('.for-slides').delay(500).fadeIn();
-		}
-
-		</script>
+    </script>
 
     {% unless page.nofooter %}
     {% include footer.html %}
     {% endunless %}
 
-	</div>
+</div>
 
 
-	<div style="display:none;"class="slide-gallery-content for-slides">
-		<div class="wrapper">
+<div style="display:none;" class="slide-gallery-content for-slides">
+    <div class="wrapper">
 
-			{% if page.title %}
-			<div class="title">{{ page.title }}</div>
-			{% elsif page.message %}
-			<div class="title">{{ page.message }}</div>
-			{% endif %}
+        {% if page.title %}
+        <div class="title">{{ page.title }}</div>
+        {% elsif page.message %}
+        <div class="title">{{ page.message }}</div>
+        {% endif %}
 
-			<div class="nav">
-				<a class="gallery" id="gallery"  onclick="displayGallery();">back to gallery</a>
-        <div class="direction">
-				    <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>
-				    <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
-          </div>
-			</div>
+        <div class="nav">
+            <a class="gallery" id="gallery" onclick="displayGallery();">back to gallery</a>
 
-			<div class="slides" id="slides">
+            <div class="direction">
+                <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>
+                <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
+            </div>
+        </div>
 
-				{% for tag in page.tags %}
+        <div class="slides" id="slides">
 
-					{% for post in site.tags.[tag] %}
+            {% for tag in page.tags %}
 
-						{% if post.layout contains 'image' and post.thumburl %}
-							<div class="slide">
+            {% for post in site.tags.[tag] %}
 
-
-									{% if post.slideurl %}
-									<img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"  />
-									{% else %}
-									<img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"  />
-									{% endif %}
-
-								{% if post.message %}
-									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
-								{% elsif post.abstract %}
-									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
-								{% elsif post.title %}
-									<div><a  href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
-								{% endif %}
-
-							</div>
-						{% endif %}
-					{% endfor %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<script src="/r/jquery.mobile.custom.min.js"></script>
-	<script>
-
-	function next() {
-	 $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
-	}
-
-	function prev() {
-	 $('.slides > :first-child').fadeOut();
-	 $('.slides > :last-child').insertBefore('.slides > :first-child');
-	 $('.slides > :first-child').fadeIn();
-	}
-
-	$("body").keydown(function(e) {
-	  if(e.which == 37) {
-			prev();
-	  }
-	  else if(e.which == 39) {
-			next();
-	  }
-    else if(e.which == 27) {
-      displayGallery();
-    }
-	});
-
-	$( ".slide" ).on( "swipeleft", next );
-	$( ".slide" ).on( "swiperight", prev );
+            {% if post.layout contains 'image' and post.thumburl %}
+            <div class="slide">
 
 
-	$(function(){$('.slides > :gt(0)').hide(); });
-	</script>
-	</div>
+                {% if post.slideurl %}
+                <img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"/>
+                {% else %}
+                <img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"/>
+                {% endif %}
+
+                {% if post.message %}
+                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
+                {% elsif post.abstract %}
+                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
+                {% elsif post.title %}
+                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
+                {% endif %}
+
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="/r/jquery.mobile.custom.min.js"></script>
+    <script>
+
+        function next() {
+            $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
+        }
+
+        function prev() {
+            $('.slides > :first-child').fadeOut();
+            $('.slides > :last-child').insertBefore('.slides > :first-child');
+            $('.slides > :first-child').fadeIn();
+        }
+
+        $("body").keydown(function (e) {
+            if (e.which == 37) {
+                prev();
+            }
+            else if (e.which == 39) {
+                next();
+            }
+            else if (e.which == 27) {
+                displayGallery();
+            }
+        });
+
+        $(".slide").on("swipeleft", next);
+        $(".slide").on("swiperight", prev);
 
 
-  {% include analytics.html %}
+        $(function () {
+            $('.slides > :gt(0)').hide();
+        });
+    </script>
+</div>
 
 
- </body>
+{% include analytics.html %}
+
+
+</body>
 
 </html>

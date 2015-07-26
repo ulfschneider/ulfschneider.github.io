@@ -1,11 +1,35 @@
 <div class="site-footer">
 
-  <div class="wrapper">
-			{% if site.email %}<dl><dt>Mail:</dt><dd><a href="mailto:{{site.email}}">{{ site.email }}</a></dd></dl>{% endif %}
-			{% if site.twitter_username %}<dl><dt>Twitter:</dt><dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a> • <a href="http://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&via=ulfeed">share</a></dd></dl>{% endif %}
-			{% if site.github_username %}<dl><dt>GitHub:</dt><dd><a href="http://github.com/{{site.github_username}}">{{ site.github_username }}</a></dd></dl>{% endif %}      
-      {% if site.phone %}<dl><dt>Phone:</dt><dd><a href="tel:{{site.phone}}">{{ site.phone }}</a></dd></dl>{% endif %}
-      <dl><dt>RSS:</dt><dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed</a></dd></dl>
-  </div>
+    <div class="wrapper">
+        {% if site.email %}
+        <dl>
+            <dt>Mail:</dt>
+            <dd><a href="mailto:{{site.email}}">{{ site.email }}</a></dd>
+        </dl>
+        {% endif %}
+        {% if site.twitter_username %}
+        <dl>
+            <dt>Twitter:</dt>
+            <dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a> • <a
+                    href="http://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&via=ulfeed">share</a></dd>
+        </dl>
+        {% endif %}
+        {% if site.github_username %}
+        <dl>
+            <dt>GitHub:</dt>
+            <dd><a href="http://github.com/{{site.github_username}}">{{ site.github_username }}</a></dd>
+        </dl>
+        {% endif %}
+        {% if site.phone %}
+        <dl>
+            <dt>Phone:</dt>
+            <dd><a href="tel:{{site.phone}}">{{ site.phone }}</a></dd>
+        </dl>
+        {% endif %}
+        <dl>
+            <dt>RSS:</dt>
+            <dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed</a></dd>
+        </dl>
+    </div>
 
 </div>

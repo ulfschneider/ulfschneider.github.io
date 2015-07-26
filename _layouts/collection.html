@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="gallery">
+<body class="gallery">
 
-    {% include header.html %}
+{% include header.html %}
 
 
-    <div id="pageContent" class="page-content">
-				<div class="wrapper">
-						{% include title.html %}
-						{{ content }}
-				</div>
+<div id="pageContent" class="page-content">
+    <div class="wrapper">
+        {% include title.html %}
+        {{ content }}
+    </div>
 
-				<ul class="image-grid" id="image-grid">
+    <ul class="image-grid" id="image-grid">
         {% for post in site.posts %}
 
-						{% if post.layout contains 'gallery' and post.thumburl %}
+        {% if post.layout contains 'gallery' and post.thumburl %}
 
-							<a  href="{{ post.url | prepend: site.baseurl }}">
-								<li class="image-grid">
-									<div class="image">
-										<img src="{{post.thumburl}}"/>
-										{% if post.message %}
-											<div class="title">{{post.message}}</div>
-										{% elsif post.abstract %}
-											<div class="title">{{post.abstract}}</div>
-										{% elsif post.title %}
-											<div class="title">{{post.title}}</div>
-										{% endif %}
-									</div>
-								</li>
-							</a>
-							{% elsif post.layout contains 'image' and post.thumburl and post.tags contains 'projects' %}
-							<a  href="{{ post.url | prepend: site.baseurl }}">
-								<li class="image-grid">
-									<div class="image">
-										<img src="{{post.thumburl}}"/>
-										{% if post.message %}
-											<div class="title">{{post.message}}</div>
-										{% elsif post.abstract %}
-											<div class="title">{{post.abstract}}</div>
-										{% elsif post.title %}
-											<div class="title">{{post.title}}</div>
-										{% endif %}
-									</div>
-								</li>
-							</a>
-						{% endif %}
-				{% endfor %}
-			</ul>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <li class="image-grid">
+                <div class="image">
+                    <img src="{{post.thumburl}}"/>
+                    {% if post.message %}
+                    <div class="title">{{post.message}}</div>
+                    {% elsif post.abstract %}
+                    <div class="title">{{post.abstract}}</div>
+                    {% elsif post.title %}
+                    <div class="title">{{post.title}}</div>
+                    {% endif %}
+                </div>
+            </li>
+        </a>
+        {% elsif post.layout contains 'image' and post.thumburl and post.tags contains 'projects' %}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <li class="image-grid">
+                <div class="image">
+                    <img src="{{post.thumburl}}"/>
+                    {% if post.message %}
+                    <div class="title">{{post.message}}</div>
+                    {% elsif post.abstract %}
+                    <div class="title">{{post.abstract}}</div>
+                    {% elsif post.title %}
+                    <div class="title">{{post.title}}</div>
+                    {% endif %}
+                </div>
+            </li>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </ul>
 
-		</div>
+</div>
 
-		<script src="/r/packery.pkgd.min.js"></script>
-		<script>
-		 container = select('#image-grid');
-		 pckry = new Packery(container, { itemSelector: 'li',  gutter: 0,  percentPosition: true	});
+<script src="/r/packery.pkgd.min.js"></script>
+<script>
+    container = select('#image-grid');
+    pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
 
-		 setInterval(function() {
-				 pckry.layout();
-		 }, 200);
+    setInterval(function () {
+        pckry.layout();
+    }, 200);
 
-		</script>
+</script>
 
-    {% unless page.nofooter %}
-    {% include footer.html %}
-    {% endunless %}
+{% unless page.nofooter %}
+{% include footer.html %}
+{% endunless %}
 
-    {% include analytics.html %}
+{% include analytics.html %}
 
-  </body>
+</body>
 
 </html>

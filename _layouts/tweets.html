@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+{% include header.html %}
 
-    <div id="pageContent" class="page-content">
-      <div class="wrapper">
-				{% include title.html %}
+<div id="pageContent" class="page-content">
+    <div class="wrapper">
+        {% include title.html %}
         {{ content }}
         {% include twitter_timeline.html %}
-      </div>
     </div>
+</div>
 
-    {% unless page.nofooter %}
-    {% include footer.html %}
-    {% endunless %}
+{% unless page.nofooter %}
+{% include footer.html %}
+{% endunless %}
 
-    {% include analytics.html %}
+{% include analytics.html %}
 
-  </body>
+</body>
 </html>

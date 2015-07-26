@@ -6,19 +6,19 @@ layout: default
 
 <ul class="post-grid">
 
-{% for post in site.posts %}
-	{% if post.layout contains 'post' and post.title %}
+    {% for post in site.posts %}
+    {% if post.layout contains 'post' and post.title %}
 
-	<li class="post-grid">
-			<p>
-			<a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% if post.abstract %}
-			{{ post.abstract }}
-			{% else %}
-		 	{{ post.content | truncatewords:50 | strip_html }}
-			{% endif %}<a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
-		</p>
-	</li>
-  {% endif %}
+    <li class="post-grid">
+        <p>
+            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% if post.abstract %}
+            {{ post.abstract }}
+            {% else %}
+            {{ post.content | truncatewords:50 | strip_html }}
+            {% endif %}<a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+        </p>
+    </li>
+    {% endif %}
 
-{% endfor %}
+    {% endfor %}
 </ul>
