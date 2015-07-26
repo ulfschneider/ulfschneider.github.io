@@ -12,9 +12,7 @@
 }
 
 .site-title {
-  font-size: $extra-small-font-size;
-  font-family: $title-font-family;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background-image: none;
   text-transform: uppercase;
 }
@@ -23,9 +21,6 @@
   display: inline-block;
 }
 
-.site .site-title {
-  font-family:$base-font-family;
-}
 
 
 .site-nav {
