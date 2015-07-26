@@ -20,9 +20,13 @@
 }
 
 .site-description {
-  font-family: $subtitle-font-family;
   display: inline-block;
 }
+
+.site .site-title {
+  font-family:$base-font-family;
+}
+
 
 .site-nav {
   line-height: $site-nav-height;
