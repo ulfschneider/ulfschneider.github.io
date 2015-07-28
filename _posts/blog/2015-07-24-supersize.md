@@ -69,7 +69,7 @@ Any innovative endeavor will challenge knowledge workers with uncertainty about 
 Figure: The complex problem class is characterized by uncertainty, this is the place where agile is at home
 {:.figcaption}
 
-In this complex area we talk about dynamic, self-organizing systems with non-linear behavior. An environment, where more is unknown than known. The a-priori definition of all states the system can be in and how to move the system from any of these states into a desired other state is not possible. One has to work through this environment to get a grip on it. Therefore the a-priori definition of a detailed step-by-step execution processes does not function and to put more effort into upfront planning will only consume more effort but won´t improve the outcome. 
+In this complex area we talk about dynamic, self-organizing systems with non-linear behavior. An environment, where more is unknown than known. The a-priori definition of all states of which the system can be in - and how to move the system from any of these states into a desired other state - is not possible. One has to work through this environment to get a grip on it. Therefore the a-priori definition of a detailed step-by-step execution process will not function and to put more effort into upfront planning will only consume more effort but won´t improve the outcome. 
 
 This leads to the next, tightly coupled angle on the agile topic: the process model to use. 
 
