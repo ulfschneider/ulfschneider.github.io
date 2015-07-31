@@ -115,7 +115,7 @@ To sum it up, agile does help in competitive dynamic markets. It does help to so
 It is driven by programmers
 ---
 
-The agile movement started in the IT industry. It is driven by programmers and engineers at first hand, by people who are in the process of making and delivering. That kind of people who know since long how hard it is to get an idea to life and build something which other people like to use (and pay for). I assume the agile mindset found its first expression in Extreme Programming, later followed by Scrum and the Agile Manifesto. And to me, when talking about agile in terms of frameworks, still I mean Scrum + XP, I don´t see we need more.
+The agile movement started in the IT industry. It is driven by programmers and engineers at first hand, by people who are in the process of making and delivering. That kind of people who know since long how hard it is to get an idea to life and build something which other people like to use (and pay for). I assume the agile mindset found its first expression in Extreme Programming and Scrum in the second half of the 1990s, followed by the Agile Manifesto in 2001. And to me, when talking about agile in terms of frameworks, still I mean Scrum + XP, I don´t see we need more.
 
 The ideas, values and principles of agile are pro people and pro results. The central working unit is the team, at max 10 persons, cross-functional and being able to deliver results. The team is emancipated, has authority to decide, the competency to act and clarity in the goals to achieve.
 
