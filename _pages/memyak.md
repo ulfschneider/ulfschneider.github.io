@@ -9,10 +9,6 @@ We use this web application at Wincor Nixdorf to support our agile product devel
 
 [Download memYAK 2.7.6 - it´s free](http://memyak.com/resource/memyak_2.7.6.zip)
 
-Do you like it? [Drop me a line on Twitter](http://twitter.com/intent/tweet?screen_name=ulfeed) or [share](http://twitter.com/intent/tweet?url={{site.url}}/memyak/&via=ulfeed). 
-
-
-
 ![](/i/memyak/burndown.jpg)
 
 You can store any kind of data in memYAK and use filter and search mechanisms to select the contents that are of relevance for you. Structured navigational concepts like a Kanban Grid or a Product Backlog View support you in your project work. A Product Burndown Diagram indicates the progress of your endeavors.
