@@ -1,0 +1,17 @@
+---
+layout: default
+message: Spitfire
+permalink: /spitfire/
+---
+Spitfire is a virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in.
+
+![]({{site.url}}/i/spitfire/spitfire.jpg)
+
+Just go to [spitfire.meteor.com](http://spitfire.meteor.com), create a whiteboard session and share the URL with the people you want to work with. Anyone who has access to that URL can participate in your work.
+
+Spitfire is free to use for everyone. I am building it on top of the [Meteor](http://www.meteor.com) platform while obeying the agile mantra: Build the simplest thing that will possibly work. Repeat. Yay.
+
+Spitfire is [Open Source](http://github.com/ulfschneider/spitfire). 
+
+Please tell me how it fits for you and what you´d like to have different.
+
