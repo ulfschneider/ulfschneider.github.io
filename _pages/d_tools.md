@@ -21,7 +21,7 @@ I build and share these tools:
 
 	<li class="post-grid">
 	<p>
-<a class="title" href="{{site.url}}/spitfire/">Spitfire</a> A virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. You can access it on <a href="http://spitfire.meteor.com">spitfire.meteor.com</a> and start a whiteboard session. 
+<a class="title" href="{{site.url}}/spitfire/">Spitfire</a> A virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. Go to <a href="http://spitfire.meteor.com">spitfire.meteor.com</a> and start a whiteboard session. 
 </p>
 	</li>
 	<li class="post-grid">
