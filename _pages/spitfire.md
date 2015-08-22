@@ -11,7 +11,7 @@ Just go to [spitfire.meteor.com](http://spitfire.meteor.com), create a whiteboar
 
 Spitfire is free to use for everyone. I am building it on top of the [Meteor](http://www.meteor.com) platform while obeying the agile mantra: Build the simplest thing that will possibly work. Validate. Repeat. Yay.
 
-Spitfire is [Open Source](http://github.com/ulfschneider/spitfire). 
+Spitfire is Open Source. Find the code on [GitHub](http://github.com/ulfschneider/spitfire). 
 
 Please tell me how it fits for you and what you´d like to have different.
 
