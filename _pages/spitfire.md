@@ -9,7 +9,7 @@ Spitfire is a virtual whiteboard to be shared by multiple persons at the same ti
 
 Just go to [spitfire.meteor.com](http://spitfire.meteor.com), create a whiteboard session and share the URL with the people you want to work with. Anyone who has access to that URL can participate in your work.
 
-Spitfire is free to use for everyone. I am building it on top of the [Meteor](http://www.meteor.com) platform while obeying the agile mantra: Build the simplest thing that will possibly work. Validate. Repeat. Yay.
+Spitfire is free to use for everyone. I am building it on top of the [Meteor](http://www.meteor.com) platform while obeying the agile mantra: Make the simplest thing that will possibly work now. Validate. Repeat. Yay.
 
 Spitfire is Open Source. Find the code on [GitHub](http://github.com/ulfschneider/spitfire). 
 
