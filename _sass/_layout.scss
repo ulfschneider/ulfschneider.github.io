@@ -242,6 +242,7 @@ h1, .title {
   font-weight: $title-font-weight;
 }
 
+
 .subtitle {
   font-size: $base-font-size;
   font-family: $subtitle-font-family;
@@ -250,9 +251,10 @@ h1, .title {
   letter-spacing: 1px;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
+	text-transform:uppercase;
+	letter-spacing:1px;	
   font-size: $base-font-size;
-  line-height: $base-font-size;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   text-align: center;
