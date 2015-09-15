@@ -386,15 +386,11 @@ figcaption, .figcaption {
 
 
         p.timePosted {
-          float: left;
+          display:none;
         }
 
         p.interact {
-          float: right;
-
-          a {
-            margin-left: 1em;
-          }
+          display:none;
         }
       }
     }
