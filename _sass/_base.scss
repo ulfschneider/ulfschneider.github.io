@@ -148,9 +148,9 @@ blockquote {
   margin-bottom: $spacing-unit;
   border-left: 3px solid $text-color;
   font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: $title-font-weight;
+
+
 
   > :last-child {
     margin-bottom: 0;
