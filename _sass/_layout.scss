@@ -366,11 +366,16 @@ figcaption, .figcaption {
         margin-bottom: $spacing-unit;
 
         .user {
-          display:block;
+          display:inline-block;
+          margin-right: $spacing-unit;
 
           a {
             [data-scribe="element:name"] {
               display:none;
+            }
+
+            [data-scribe="element:screen_name"] {
+              font-weight:$title-font-weight;
             }
           }
 
