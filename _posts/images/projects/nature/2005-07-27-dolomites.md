@@ -8,6 +8,8 @@ slideurl: /i/DSCF1263.jpg
 tags: [bw, nature]
 ---
 ![]({{site.url}}/i/dolomites.jpg)
+{:.left}
 
-![]({{site.url}}/i/dolomites2.jpg)
+![]({{site.url}}/i/dolomites_2.jpg)
+{:.right}
 
