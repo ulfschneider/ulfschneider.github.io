@@ -65,13 +65,12 @@
 .portrait {
   width: 150px;
   height: 150px;
-  background-size: 150px 150px;
-  border: 1px solid $grey-color-light;
+  background-size: 150px 150px;  
   margin: 0;
   margin: $spacing-unit auto;
   margin-top: 0;
   box-sizing: content-box;
-  background-image: url(/r/u150.jpg);
+  background-image: url(/r/u400.jpg);
 }
 
 .big {
@@ -494,7 +493,7 @@ figcaption, .figcaption {
 @media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
 
   .portrait {
-    background-image: url(/r/u300.jpg);
+    background-image: url(/r/u400.jpg);
   }
 
 }
