@@ -125,8 +125,12 @@
     margin: 0px;
     clear: both;
     float: left;
-    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
     height: 100%;
+
+    p:after {
+      margin:0;
+    }
 
     &::before {
       content: none;
@@ -246,12 +250,14 @@ h1, .title {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5*$spacing-unit;
   font-size: $base-font-size;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   text-align: center;
 }
+
 
 .w200 img, img.w200 {
   max-width: 200px;
@@ -351,9 +357,6 @@ figcaption, .figcaption {
 /* Twitter timeline */
 .page-content {
 
-  .followme {
-    margin-bottom: $spacing-unit;
-  }
 
   .twitter-timeline {
 
@@ -383,6 +386,9 @@ figcaption, .figcaption {
           }
         }
 
+        p:after {
+          margin:0;
+        }
 
         p.timePosted {
           display:none;

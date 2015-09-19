@@ -35,11 +35,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 /**
@@ -104,15 +100,6 @@ dd {
   display: block;
 }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: $title-font-family;
-  font-weight: $title-font-weight;
-  margin-top: 1.5 * $spacing-unit;
-  margin-bottom: $spacing-unit;
-}
 
 /**
  * Links
