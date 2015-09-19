@@ -1,3 +1,5 @@
+
+
 function getStyle(elem, style) {
 
     var value = elem.style[toCamelCase(style)];
@@ -164,9 +166,9 @@ function layoutWide() {
 }
 
 
-referenceWidth = 0;
 
 function layoutStuff() {
+
     var width = getWindowWidth();
 
     if (referenceWidth != width) {
@@ -176,13 +178,11 @@ function layoutStuff() {
         layoutDouble();
         layoutWide();
     }
+
 }
 
 
+var referenceWidth = 0;
 setInterval(function () {
     layoutStuff()
-}, 100);
-
-
-
-
+}, 200);
