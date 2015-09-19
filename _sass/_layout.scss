@@ -230,7 +230,6 @@ li.image-grid .title {
 .meta, .page-content .meta {
   margin-bottom: $spacing-unit;
   font-family: $subtitle-font-family;
-  font-weight:lighter;
 }
 
 h1, .title {
@@ -324,7 +323,7 @@ figcaption, .figcaption {
 /**
  * Site footer
  */
-.site-footer {  
+.site-footer {
   padding: 0;
   clear: both;
   padding-top: 1.5 * $spacing-unit;
