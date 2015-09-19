@@ -54,6 +54,12 @@
 
 </div>
 
+
+{% unless page.nofooter %}
+{% include footer.html %}
+{% endunless %}
+
+{% include footer_scripts.html %}
 <script src="/r/packery.pkgd.min.js"></script>
 <script>
     container = select('#image-grid');
@@ -65,11 +71,6 @@
 
 </script>
 
-{% unless page.nofooter %}
-{% include footer.html %}
-{% endunless %}
-
-{% include analytics.html %}
 
 </body>
 

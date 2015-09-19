@@ -65,7 +65,7 @@
 .portrait {
   width: 150px;
   height: 150px;
-  background-size: 150px 150px;  
+  background-size: 150px 150px;
   margin: 0;
   margin: $spacing-unit auto;
   margin-top: 0;
@@ -230,6 +230,7 @@ li.image-grid .title {
 .meta, .page-content .meta {
   margin-bottom: $spacing-unit;
   font-family: $subtitle-font-family;
+  font-weight:lighter;
 }
 
 h1, .title {
@@ -323,7 +324,7 @@ figcaption, .figcaption {
 /**
  * Site footer
  */
-.site-footer {
+.site-footer {  
   padding: 0;
   clear: both;
   padding-top: 1.5 * $spacing-unit;
