@@ -20,7 +20,6 @@
 }
 
 
-
 .site-nav {
   line-height: $site-nav-height;
   text-align: center;
@@ -34,7 +33,6 @@
   .site-title {
     display: inline-block;
     margin-right: 1em;
-    font-size: $base-font-size;
   }
 
   .site-nav {
@@ -46,7 +44,8 @@
 
   .page-link {
     font-family: $base-font-family;
-    font-size: $base-font-size + 6px;
+    font-size: $base-font-size * 1.5;
+    line-height:$base-line-height * 1.5;
     display: block;
     margin: $spacing-unit / 2 0px;
     padding: 0;
@@ -72,9 +71,6 @@
   background-image: url(/r/u400.jpg);
 }
 
-.big {
-  font-size: $big-font-size;
-}
 
 .title-wrapper {
   margin-bottom: 2 * $spacing-unit;
@@ -112,7 +108,6 @@
     }
 
     .title {
-      font-size: $base-font-size;
       font-family: $title-font-family;
       font-weight: $title-font-weight;
       margin-right: $spacing-unit;
@@ -237,7 +232,6 @@ li.image-grid .title {
 }
 
 h1, .title {
-  font-size: $base-font-size;
   margin: 0;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
@@ -245,14 +239,12 @@ h1, .title {
 
 
 .subtitle {
-  font-size: $base-font-size;
   font-family: $subtitle-font-family;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5*$spacing-unit;
-  font-size: $base-font-size;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   text-align: center;
@@ -441,6 +433,11 @@ figcaption, .figcaption {
       }
     }
   }
+
+  .index .page-link {
+    font-size: $palm-base-font-size * 1.5;
+    line-height:$palm-base-line-height * 1.5;
+}
 
   .site-footer {
     line-height: $site-nav-height;
