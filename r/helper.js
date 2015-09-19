@@ -185,4 +185,4 @@ function layoutStuff() {
 var referenceWidth = 0;
 setInterval(function () {
     layoutStuff()
-}, 200);
+}, 100);
