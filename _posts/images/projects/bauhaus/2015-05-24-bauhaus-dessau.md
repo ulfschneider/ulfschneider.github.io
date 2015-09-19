@@ -32,16 +32,10 @@ Glass, transparency and straight lines play a huge role.
 ![]({{site.url}}/i/IMG_8422.jpg)
 {:.right}
 
-Staircase
 
-![]({{site.url}}/i/IMG_8456.jpg)
+![]({{site.url}}/i/IMG_8456.jpg)Staircase
 {:.left}
 
-![]({{site.url}}/i/IMG_8445.jpg)
-{:.right}
-
-![]({{site.url}}/i/IMG_8454.jpg)
-{:.left}
 
 Looking inside out
 
