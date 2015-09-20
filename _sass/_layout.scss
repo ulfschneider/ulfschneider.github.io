@@ -89,8 +89,8 @@
   padding-top: 4 * $spacing-unit;
 
   img {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
+    margin-top: 2*$spacing-unit;
+    margin-bottom: 2*$spacing-unit;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -280,14 +280,14 @@ figcaption, .figcaption {
 .left, .right {
   @extend %clearfix;
   text-align: left;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin-top: 2*$spacing-unit;
+  margin-bottom: 2*$spacing-unit;
 
   img {
     margin: 0;
     float: left;
     max-width: 60%;
-    padding-right: $spacing-unit / 2;
+    padding-right: $spacing-unit;
   }
 
   figcaption, .figcaption {
@@ -303,7 +303,7 @@ figcaption, .figcaption {
   img {
     float: right;
     padding-right: 0;
-    padding-left: $spacing-unit / 2;
+    padding-left: $spacing-unit;
   }
 
   figcaption, .figcaption {
