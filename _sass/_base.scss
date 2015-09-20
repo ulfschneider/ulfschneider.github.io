@@ -39,6 +39,13 @@ ul, ol, dl,
   margin-bottom: $spacing-unit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5*$spacing-unit;
+  font-family: $title-font-family;
+  font-weight: $title-font-weight;
+  text-align: center;
+}
+
 /**
  * Images
  */
