@@ -419,9 +419,6 @@ figcaption, .figcaption {
     line-height: $site-nav-height;
     /* increase space for touching links */
   }
-  .page-content {
-    padding-top: 2*$spacing-unit;
-  }
   .image-content img, .slide img {
     margin-left: -$spacing-unit / 2;
     margin-right: -$spacing-unit / 2;
