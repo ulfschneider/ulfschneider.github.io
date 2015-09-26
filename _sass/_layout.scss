@@ -64,9 +64,7 @@
   width: 150px;
   height: 150px;
   background-size: 150px 150px;
-  margin: 0;
-  margin: $spacing-unit auto;
-  margin-top: 0;
+  margin: 0 auto;
   box-sizing: content-box;
   background-image: url(/r/u400.jpg);
 }
@@ -86,7 +84,7 @@
  */
 .page-content {
 
-  padding-top: 4 * $spacing-unit;
+  margin-top: 4 * $spacing-unit;
 
   img {
     margin-top: 2*$spacing-unit;
@@ -317,8 +315,8 @@ figcaption, .figcaption {
 .site-footer {
   padding: 0;
   clear: both;
-  padding-top: 1.5 * $spacing-unit;
-  padding-bottom: 2 * $spacing-unit;
+  margin-top: $spacing-unit;
+  margin-bottom: 2 * $spacing-unit;
 
   dl {
     margin: 0;
