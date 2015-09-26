@@ -400,6 +400,9 @@ figcaption, .figcaption {
     font-size: $palm-base-font-size;
     line-height: $palm-base-line-height;
   }
+  img {
+    max-height:900px;
+  }
   img.LHOP, .LHOP img {
     /*Limit Height On Palm*/
     max-height: 400px;
