@@ -73,7 +73,7 @@ One has to withstand the reflex of responding to uncertainty and ambiguity with 
 
 Still not all decisions are being taken autonomous on local levels. Self-organization can be accompanied with hierarchic structures. Lower levels build up higher levels and higher levels adapt with a slower pace. Lower levels will get their orientation from higher levels and not the other way around. In self-organizing systems impulse and input from lower levels will be integrated into decision processes. It is not the question, if centralized or decentralized decision patterns are better in self-organizing systems. Instead both patterns can be observed and are needed.
 
-> This is theory - but what can we do in concrete to give self-organizational forces a direction?
+> This is theory - but what can we *do* to give self-organizational forces a direction?
 
 Cooperation and communication
 ---
@@ -85,7 +85,7 @@ Self-organization is about inspect and adapt. Try to make the invisible visible 
 
 Results, feedback and continuous planning
 ---
-If you know your strategic goal and you have your success criteria, inject sensors into your process. On a regular basis inspect your results with regard to target achievement and to the actors behavior in the social context. These are two sides of the coin: adaption of behavior and target achievement are of equal importance. Only by maintaining these two dimensions, a social group can find its way for a upward movement and improve continuously. Based on the findings of the regular inspections you can plan for your next steps. Do not plan to far into the future, instead measure and inspect in short cycles if the planning leads to desired results and then adapt accordingly. You will find orientation and direction in the strategic goal that has been set before starting the endeavor.
+If you know your strategic goal and you have your success criteria, inject sensors into your process. On a regular basis inspect your results with regard to target achievement and to the actors behavior in the social context. These are two sides of the coin: adaption of behavior and target achievement are of equal importance. Only by maintaining these two dimensions, a social group can find its way for an upward movement and improve continuously. Based on the findings of the regular inspections you can plan for your next steps. Do not plan to far into the future, instead measure and inspect in short cycles if the planning leads to desired results and then adapt accordingly. You will find orientation and direction in the strategic goal that has been set before starting the endeavor.
 
 Performance orientation
 ---

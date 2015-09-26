@@ -3,18 +3,18 @@
 ---
 
 $base-font-family:  "Input Sans", monospace;
-$base-font-weight: 400;
+$base-font-weight: normal;
 $title-font-family: "Input Sans", monospace;
-$title-font-weight: 700;
+$title-font-weight: bold;
 $subtitle-font-family: "Input Sans", monospace;
-$subtitle-font-weight: 400;
+$subtitle-font-weight: normal;
 $base-font-size:   16px;
 $code-font-size:   16px;
 $small-font-size:  $base-font-size - 1;
 $extra-small-font-size: $small-font-size - 1;
 $palm-base-font-size: $small-font-size;
-$palm-base-line-height: $palm-base-font-size * 1.7;
-$base-line-height: $base-font-size * 1.7;
+$palm-base-line-height: $palm-base-font-size * 1.8;
+$base-line-height: $base-font-size * 1.8;
 
 $site-header-height: 50px;
 $site-nav-height: 30px;
