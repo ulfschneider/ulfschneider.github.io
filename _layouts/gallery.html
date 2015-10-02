@@ -54,9 +54,7 @@
 
         container = select('#image-grid');
         pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
-        setInterval(function () {
-            pckry.layout();
-        }, 500);
+        pckry.layout();
 
         function displayGallery() {
             $('.for-slides').fadeOut();
