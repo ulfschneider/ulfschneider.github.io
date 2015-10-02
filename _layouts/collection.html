@@ -64,7 +64,10 @@
 <script>
     container = select('#image-grid');
     pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
-    pckry.layout();
+
+    setInterval(function () {
+        pckry.layout();
+    }, 200);
 
 </script>
 
