@@ -60,14 +60,16 @@
 {% endunless %}
 
 {% include footer_scripts.html %}
-<script src="/r/packery.pkgd.min.js"></script>
+<script src="/r/imagesloaded.min.js"></script>
+<script src="/r/masonry.min.js"></script>
 <script>
     container = select('#image-grid');
-    pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
+    masonry = new Masonry(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
+    imgLoad = imagesLoaded(container);
+    imgLoad.on('progress', function() {
+        masonry.layout();
+    });
 
-    setInterval(function () {
-        pckry.layout();
-    }, 200);
 
 </script>
 

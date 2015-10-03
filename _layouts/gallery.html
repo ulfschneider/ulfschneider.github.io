@@ -46,17 +46,20 @@
 
     {% include footer_scripts.html %}
     <script src="/r/jquery.min.js"></script>
-    <script src="/r/packery.pkgd.min.js"></script>
+    <script src="/r/imagesloaded.min.js"></script>
+    <script src="/r/masonry.min.js"></script>
+
 
     <script>
 
         $('.for-slides').hide();
 
         container = select('#image-grid');
-        pckry = new Packery(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
-        setInterval(function () {
-            pckry.layout();
-        }, 500);
+        masonry = new Masonry(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
+        imgLoad = imagesLoaded(container);
+        imgLoad.on('progress', function() {
+            masonry.layout();
+        });
 
         function displayGallery() {
             $('.for-slides').fadeOut();
