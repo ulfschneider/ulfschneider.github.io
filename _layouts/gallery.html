@@ -64,6 +64,7 @@
         function displayGallery() {
             $('.for-slides').fadeOut();
             $('.for-gallery').delay(500).fadeIn();
+            setTimeout(function() {masonry.layout();}, 500);
         }
 
         function displaySlides() {
