@@ -48,9 +48,10 @@ Market
 The centralized planning, disassembly and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
 ![]({{site.url}}/i/blog/taylor_tub.jpg)
-
+{:.double}
 Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
 {:.figcaption}
+
 
 In the Taylor-Tub the thoughts of the individual are not of importance, because all workflows, procedures and processes are already defined upfront and have to be followed. This makes the system robust, but inflexible. We have been educated for this world of working, which means we have been educated to follow. This brought up disruptive productivity growth and inert mass markets during the last century. Biggest problem to solve for these markets: how to produce as much as possible at the cheapest price.
 
