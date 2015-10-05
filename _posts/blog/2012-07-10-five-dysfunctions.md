@@ -34,7 +34,7 @@ The dysfunctions can be reformulated to give a positive direction. In order to c
 
 Layer|Try to achieve
 -----|--------------
-1|Establish a trustful environment, allowing oneself to be vulnerable
+1|Nurturing a trustful environment, allowing oneself to be vulnerable
 2|Have an open and fair communication culture and engage in conflict around ideas
 3|Commit to shared goals and decisions
 4|Hold each other accountable against the shared goals and decisions
