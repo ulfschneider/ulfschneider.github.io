@@ -1,5 +1,8 @@
 
 
+var PALM_WIDTH = 600;
+var SPACING_UNIT = 30;
+
 function getStyle(elem, style) {
 
     var value = elem.style[toCamelCase(style)];
@@ -86,13 +89,12 @@ function getWrapperHorizPadding() {
 
 function getMargin() {
     var limit = -100;
-    var palm = 600;
-    /* must be same like in main.css on-palm */
+
     var winWidth = getWindowWidth();
     var wrapWidth = getWrapperWidth();
 
-    if (wrapWidth <= palm) {
-        return -15;
+    if (wrapWidth <= PALM_WIDTH) {
+        return -(SPACING_UNIT / 2);
     } else {
         return Math.round(Math.max(-(winWidth - wrapWidth) / 2, limit));
     }
@@ -140,13 +142,12 @@ function layoutDouble() {
 
 function layoutWide() {
 
-    var palm = 600;
-    /* must be same like in main.css form on-palm */
+
     var wrapWidth = getWrapperWidth();
 
     var margin = 0;
 
-    if (wrapWidth <= palm) {
+    if (wrapWidth <= PALM_WIDTH) {
         margin = 0;
     } else {
         var winWidth = getWindowWidth();

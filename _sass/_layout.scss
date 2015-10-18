@@ -32,7 +32,7 @@
 
   .site-title {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: $spacing-unit;
   }
 
   .site-nav {
@@ -194,7 +194,7 @@ li.image-grid h2 {
 }
 
 .post-nav {
-  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
   .prev {
     float: left;
@@ -297,7 +297,6 @@ figcaption, .figcaption {
 .site-footer {
   padding: 0;
   clear: both;
-  margin-top: $spacing-unit;
   margin-bottom: 2 * $spacing-unit;
 
   dl {
