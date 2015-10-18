@@ -353,11 +353,8 @@ figcaption, .figcaption {
   ul, li {
     list-style-position: inside;
   }
-  li {
-    text-indent:$spacing-unit / 4;
-  }
   blockquote {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 @include media-query($on-palm) {
