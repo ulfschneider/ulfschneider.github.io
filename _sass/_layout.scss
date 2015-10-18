@@ -353,6 +353,9 @@ figcaption, .figcaption {
   ul, li {
     list-style-position: inside;
   }
+  li {
+    text-indent:$spacing-unit / 4;
+  }
   blockquote {
     margin-left: 0px;
   }
