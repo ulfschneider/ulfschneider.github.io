@@ -4,19 +4,16 @@ layout: default
 
 {{ content }}
 
-<div class="text-grid">
-
     {% for post in site.posts %}
     {% if post.layout contains 'post' and post.title %}
 
-    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     {% if post.abstract %}
-      {{ post.abstract }}
+      <p>{{ post.abstract }}</p>
     {% else %}
-      {{ post.content | truncatewords:50 | strip_html }}
-    {% endif %}<a class="more" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+      <p>{{ post.content | truncatewords:50 | strip_html }}</p>
+    {% endif %}
 
     {% endif %}
 
     {% endfor %}
-</div>
