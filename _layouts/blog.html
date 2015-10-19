@@ -4,16 +4,16 @@ layout: default
 
 {{ content }}
 
-    {% for post in site.posts %}
-    {% if post.layout contains 'post' and post.title %}
+{% for post in site.posts %}
+{% if post.layout contains 'post' and post.title %}
 
-    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-    {% if post.abstract %}
-      <p>{{ post.abstract }}</p>
-    {% else %}
-      <p>{{ post.content | truncatewords:50 | strip_html }}</p>
-    {% endif %}
+<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+{% if post.abstract %}
+  <p>{{ post.abstract }}</p>
+{% else %}
+  <p>{{ post.content | truncatewords:50 | strip_html }}</p>
+{% endif %}
 
-    {% endif %}
+{% endif %}
 
-    {% endfor %}
+{% endfor %}
