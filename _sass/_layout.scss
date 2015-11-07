@@ -30,28 +30,36 @@
 
 .index {
 
+  .site {
+    float:left;
+  }
+
   .site-title {
-    display: inline-block;
+    font-family:$base-font-family;
     margin-right: $spacing-unit;
+    font-size: $base-font-size * 1.3;
+  }
+
+  .site-description {
+    display:none;
   }
 
   .site-nav {
-    margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
-    text-align: left;
-    display: inline-block;
+    float:left;
+
+    .page-link {
+      display:block;
+      text-align: left;
+      font-family: $base-font-family;
+      letter-spacing: 2px;
+      background-image: none;
+      margin-bottom:$spacing-unit / 2;
+    }
+
   }
 
-  .page-link {
-    font-family: $base-font-family;
-    font-size: $base-font-size * 1.5;
-    line-height:$base-line-height * 1.5;
-    display: block;
-    margin: $spacing-unit / 2 0px;
-    padding: 0;
-    letter-spacing: 3px;
-    background-image: none;
-  }
+
 }
 
 .active, .active:active, .active:hover {
@@ -375,10 +383,6 @@ figcaption, .figcaption {
         margin: 0px 5px;
       }
     }
-  }
-  .index .page-link {
-    font-size: $palm-base-font-size * 1.5;
-    line-height:$palm-base-line-height * 1.5;
   }
   .site-footer {
     line-height: $site-nav-height;
