@@ -384,6 +384,13 @@ figcaption, .figcaption {
       }
     }
   }
+  .index .site-title {
+    margin-right:$spacing-unit / 2;
+    font-size:$base-font-size * 1.2;
+  }
+  .index .page-link {
+    letter-spacing:1px;
+  }
   .site-footer {
     line-height: $site-nav-height;
     /* increase space for touching links */
