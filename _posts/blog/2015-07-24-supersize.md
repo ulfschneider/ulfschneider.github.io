@@ -5,7 +5,7 @@ subtitle: Do not let scaled agile be your scaled snake oil
 date:   2015-07-24
 permalink: 
 author:
-abstract: Do not let scaled agile be your scaled snake oil. Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. This is an incredible difficult thing to do. Peter Drucker coined the phrase "culture eats strategy for breakfast". You better prepare for the long run.
+abstract: Do not let scaled agile be your scaled snake oil. Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. 
 ---
 We have to scale agile when more than one team is required to get a thing delivered. Each team not more than 10 members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery, that´s it: multiple teams working on one thing.
 
