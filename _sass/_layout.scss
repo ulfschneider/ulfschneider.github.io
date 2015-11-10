@@ -25,6 +25,8 @@
   text-align: center;
   .page-link {
     margin: 0px 10px;
+    padding-left:1px;
+    padding-right:1px;
   }
 }
 
@@ -54,6 +56,7 @@
       text-align: left;
       font-family: $base-font-family;
       letter-spacing: 2px;
+      padding:0;
       background-image: none;
       margin-bottom:$spacing-unit / 2;
     }
@@ -66,7 +69,7 @@
 .active, .active:active, .active:hover {
   background: $text-color;
   color: $background-color;
-  padding: 3px 0px;
+  padding: 3px 1px;
 }
 
 .portrait {

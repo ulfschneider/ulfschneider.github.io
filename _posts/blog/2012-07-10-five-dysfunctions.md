@@ -13,7 +13,7 @@ Teams deliver. The better the team, the better the performance. We can not think
 
 Good teams find solutions. All, really all of our agile concepts and procedures do not work, if they are not backed up by a functioning team.
 
-Patrick Lencioni provides with his „Five Dysfunctions of a Team“ [Lencioni 2002:188] a model to understand how team dysfunctions will build on one another with worsening effects from layer to layer.
+Patrick Lencioni provides with his "Five Dysfunctions of a Team" [Lencioni 2002:188] a model to understand how team dysfunctions will build on one another with worsening effects from layer to layer.
 
 ![](/i/blog/five_dysfunctions.jpg)
 
@@ -44,6 +44,6 @@ Lencioni offers a field guide for leaders, managers and facilitators with exerci
 
 References
 ---
-[Lencioni 2002] Patrick Lencioni, „The Five Dysfunctions of a Team“, Jossey-Bass 2002
+[Lencioni 2002] Patrick Lencioni, "The Five Dysfunctions of a Team", Jossey-Bass 2002
 
-[Lencioni 2005] Patrick Lencioni, „Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators“, Jossey-Bass 2005
+[Lencioni 2005] Patrick Lencioni, "Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators", Jossey-Bass 2005
