@@ -109,7 +109,6 @@
 
 /*Galleries */
 .slide-gallery-content {
-  padding-top: $spacing-unit;
   position: relative;
 
   .title {
@@ -117,6 +116,7 @@
   }
 
   .nav {
+
     .direction {
       float: right;
 
@@ -139,6 +139,14 @@
       position: absolute;
       width: 100%;
       padding-bottom: $spacing-unit;
+
+      h2 {
+        text-align:left;
+        font-family:$base-font-family;
+        font-weight:normal;
+        margin:0;
+        margin-top:$spacing-unit/2;
+      }
     }
 
   }
@@ -186,6 +194,8 @@ li.image-grid h2 {
   margin:0;
   margin-top:$spacing-unit/2;
 }
+
+
 
 .post-nav {
   margin-bottom: $spacing-unit;

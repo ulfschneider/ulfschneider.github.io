@@ -89,9 +89,9 @@
     <div class="wrapper">
 
         {% if page.title %}
-        <div class="title">{{ page.title }}</div>
+        <h1>{{ page.title }}</h1>
         {% elsif page.message %}
-        <div class="title">{{ page.message }}</div>
+        <h1>{{ page.message }}<h1>
         {% endif %}
 
         <div class="nav">
@@ -102,6 +102,7 @@
                 <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
             </div>
         </div>
+
 
         <div class="slides" id="slides">
 
@@ -120,11 +121,11 @@
                 {% endif %}
 
                 {% if post.message %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
+                <h2><a href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></h2>
                 {% elsif post.abstract %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
+                <h2><a href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></h2>
                 {% elsif post.title %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
+                <h2><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h2>
                 {% endif %}
 
             </div>
@@ -132,7 +133,11 @@
             {% endfor %}
             {% endfor %}
         </div>
+
     </div>
+
+
+
 
     <script src="/r/jquery.mobile.custom.min.js"></script>
     <script>
