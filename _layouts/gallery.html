@@ -136,6 +136,7 @@ function autoplaySlides() {
           <div> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.title}} {% unless page.autoplay %}</a>{% endunless %}</div>
           {% endif %}
 
+
         </div>
         {% endif %}
         {% endfor %}
@@ -143,17 +144,18 @@ function autoplaySlides() {
       </div>
     </div>
 
+
     {% unless page.autoplay %}
     <script src="/r/jquery.mobile.custom.min.js"></script>
     {% endunless %}
+
+
     <script>
     function next() {
       var height = $('.slide').innerHeight();
       $('.slide').css('min-height', height);
       $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
-
     }
-
     function prev() {
       $('.slides > :first-child').fadeOut();
       $('.slides > :last-child').insertBefore('.slides > :first-child');
@@ -161,6 +163,7 @@ function autoplaySlides() {
     }
 
     {% unless page.autoplay %}
+
     $("body").keydown(function (e) {
       if (e.which == 37) {
         prev();
@@ -193,10 +196,8 @@ function autoplaySlides() {
   </script>
   {% endif %}
 
-</div>
-
-
-{% include footer_scripts.html %}
+  
+  {% include footer_scripts.html %}
 </body>
 
 </html>

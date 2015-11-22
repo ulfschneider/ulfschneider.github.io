@@ -6,7 +6,7 @@ date:   2012-08-31
 author: 
 abstract: The Agile Manifesto represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 ---
-This text was first published in OBJEKTspektrum, issue 5/2012, under the title [„Die Kunst in der Arbeit, eine Herausforderung des Status quo“][schneider2012]. I have enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
+This text was first published in OBJEKTspektrum, issue 5/2012, under the title ["Die Kunst in der Arbeit, eine Herausforderung des Status quo"][schneider2012]. I have enhanced and translated the initial document to publish it here on [{{site.url | remove:"http://"}}]({{site.url}}).
 
 The Agile Manifesto [[Beck et al. 2001]][agilemanifesto] represents a force that is behind any concrete agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies. 
 
@@ -70,23 +70,23 @@ It is not about even more working. Instead I think we need to care about a more 
 
 References
 ---
-[Aicher 1992] O. Aicher, analog und digital, Ernst & Sohn, 1992
+[Aicher 1992] O. Aicher, "analog und digital", Ernst & Sohn, 1992
 
 [agilemanifesto]: http://agilemanifesto.org 
-[K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
+[K. Beck et al.] "Agile Manifesto", 2001, <http://agilemanifesto.org>
 
 [craftsmanship]: http://manifesto.softwarecraftsmanship.org
-[Bradbury et al. 2009] D. Bradbury et al., Manifesto for Software Craftsmanship, 2009, <http://manifesto.softwarecraftsmanship.org>
+[Bradbury et al. 2009] D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, <http://manifesto.softwarecraftsmanship.org>
 
-[Godin 2010] S. Godin, Linchpin, Are You Indespensable?, Penguin Books, 2010
+[Godin 2010] S. Godin, "Linchpin, Are You Indespensable?", Penguin Books, 2010
 
 [schneider2012]: {{site.url}}/r/blog/schneider_os_05_12.pdf 
-[Schneider 2012] U. Schneider, „Die Kunst in der Arbeit, eine Herausforderung des Status quo“, OBJEKTspektrum, Ausgabe 5, 2012
+[Schneider 2012] U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo", OBJEKTspektrum, Ausgabe 5, 2012
 
 [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor
-[Wiki] Wikipedia, Frederick Winslow Taylor, <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
+[Wiki] Wikipedia, "Frederick Winslow Taylor", <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
 
-[Wohland and Wiemeyer 2007] G. Wohland, M. Wiemeyer, Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen, Murmann Verlag, 2007
+[Wohland and Wiemeyer 2007] G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen", Murmann Verlag, 2007
 
 
 
