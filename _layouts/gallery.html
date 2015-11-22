@@ -53,6 +53,7 @@ function autoplaySlides() {
     <ul class="image-grid" id="image-grid">
       {% for tag in page.tags %}
       {% for post in site.tags.[tag] %}
+      {% unless post.nonav %}
       {% if post.layout contains 'image' and post.thumburl %}
 
       <a href="{{ post.url | prepend: site.baseurl }}">
@@ -70,6 +71,7 @@ function autoplaySlides() {
         </li>
       </a>
       {% endif %}
+      {% endunless %}
       {% endfor %}
       {% endfor %}
     </ul>
@@ -165,13 +167,13 @@ function autoplaySlides() {
     {% unless page.autoplay %}
 
     $("body").keydown(function (e) {
-      if (e.which == 37) {
+      if (e.which === 37) {
         prev();
       }
-      else if (e.which == 39) {
+      else if (e.which === 39) {
         next();
       }
-      else if (e.which == 27) {
+      else if (e.which === 27) {
         displayGrid();
       }
     });

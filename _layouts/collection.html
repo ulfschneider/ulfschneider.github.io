@@ -17,6 +17,7 @@
     <ul class="image-grid" id="image-grid">
         {% for post in site.posts %}
 
+        {% unless post.nonav %}
         {% if post.layout contains 'gallery' and post.thumburl %}
 
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -49,6 +50,7 @@
             </li>
         </a>
         {% endif %}
+        {% endunless %}
         {% endfor %}
     </ul>
 
