@@ -9,7 +9,7 @@
 function displayGrid() {
   $('.slide-gallery-content').fadeOut();
   $('.grid-gallery-content').delay(500).fadeIn();
-  setTimeout(function() {masonry.layout();}, 500);
+  masonry.layout();
 }
 
 function displaySlides() {
@@ -22,12 +22,8 @@ function displaySlides() {
 }
 
 function autoplaySlides() {
-  $('.grid-gallery-content').fadeOut();
-  /* load larger images only now*/
-  $('img[lazy]').each(function () {
-    $(this).attr('src', $(this).attr('lazy'));
-  });
-  $('.slide-gallery-content').delay(500).fadeIn();
+  displaySlides();
+  setInterval(next, 3000);
 }
 
 </script>
@@ -51,28 +47,42 @@ function autoplaySlides() {
     </p>
 
     <ul class="image-grid" id="image-grid">
+
+
+
+      {% assign images = "" | split:"|"  %}
       {% for tag in page.tags %}
       {% for post in site.tags.[tag] %}
       {% unless post.nonav %}
       {% if post.layout contains 'image' and post.thumburl %}
+      {% assign images = images | push: post %}
+      {% endif %}
+      {% endunless %}
+      {% endfor %}
+      {% endfor %}
+      {% if page.reversed %}
+      {% assign sorted-images = images | sort:'date' %}
+      {% else %}
+      {% assign sorted-images = images %}
+      {% endif %}
 
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      {% for image in sorted-images %}
+
+      <a href="{{ image.url | prepend: site.baseurl }}">
         <li class="image-grid">
           <div class="image">
-            <img src="{{post.thumburl | prepend: site.baseurl}}"/>
-            {% if post.message %}
-            <h2>{{post.message}}</h2>
-            {% elsif post.abstract %}
-            <h2>{{post.abstract}}</h2>
-            {% elsif post.title %}
-            <h2>{{post.title}}</h2>
+            <img src="{{image.thumburl | prepend: site.baseurl}}"/>
+            {% if image.message %}
+            <h2>{{image.message}}</h2>
+            {% elsif image.abstract %}
+            <h2>{{image.abstract}}</h2>
+            {% elsif image.title %}
+            <h2>{{image.title}}</h2>
             {% endif %}
           </div>
         </li>
       </a>
-      {% endif %}
-      {% endunless %}
-      {% endfor %}
+
       {% endfor %}
     </ul>
 
@@ -119,30 +129,43 @@ function autoplaySlides() {
 
       <div class="slides" id="slides">
 
+        {% assign images = "" | split:"|"  %}
         {% for tag in page.tags %}
         {% for post in site.tags.[tag] %}
+        {% unless post.nonav %}
         {% if post.layout contains 'image' and post.thumburl %}
+        {% assign images = images | push: post %}
+        {% endif %}
+        {% endunless %}
+        {% endfor %}
+        {% endfor %}
+        {% if page.reversed %}
+        {% assign sorted-images = images | sort:'date' %}
+        {% else %}
+        {% assign sorted-images = images %}
+        {% endif %}
+
+        {% for image in sorted-images %}
         <div class="slide">
 
-          {% if post.slideurl %}
-          <img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"/>
+          {% if image.slideurl %}
+          <img src="/r/spinner.gif" lazy="{{image.slideurl | prepend: site.baseurl}}"/>
           {% else %}
-          <img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"/>
+          <img src="/r/spinner.gif" lazy="{{image.thumburl | prepend: site.baseurl}}"/>
           {% endif %}
 
-          {% if post.message %}
-          <h2>  {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.message}} {% unless page.autoplay %}</a>{% endunless %}</h2>
-          {% elsif post.abstract %}
-          <h2> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.abstract}} {% unless page.autoplay %}</a>{% endunless %}</h2>
-          {% elsif post.title %}
-          <h2> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.title}} {% unless page.autoplay %}</a>{% endunless %}</h2>
+          {% if image.message %}
+          <h2>  {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.message}} {% unless page.autoplay %}</a>{% endunless %}</h2>
+          {% elsif image.abstract %}
+          <h2> {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.abstract}} {% unless page.autoplay %}</a>{% endunless %}</h2>
+          {% elsif image.title %}
+          <h2> {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.title}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% endif %}
-
 
         </div>
-        {% endif %}
+
         {% endfor %}
-        {% endfor %}
+
       </div>
     </div>
 
@@ -184,10 +207,6 @@ function autoplaySlides() {
 
     $(function () {
       $('.slides > :gt(0)').hide();
-
-      {% if page.autoplay %}
-      setInterval(next, 3000);
-      {% endif %}
     });
     </script>
   </div>
