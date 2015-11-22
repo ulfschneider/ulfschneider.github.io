@@ -3,78 +3,89 @@
 
 {% include head.html %}
 
-<body class="gallery">
+<script src="/r/jquery.min.js"></script>
 
+<script>
+function displayGrid() {
+  $('.slide-gallery-content').fadeOut();
+  $('.grid-gallery-content').delay(500).fadeIn();
+  setTimeout(function() {masonry.layout();}, 500);
+}
 
-<div class="for-gallery">
+function displaySlides() {
+  $('.grid-gallery-content').fadeOut();
+  /* load larger images only now*/
+  $('img[lazy]').each(function () {
+    $(this).attr('src', $(this).attr('lazy'));
+  });
+  $('.slide-gallery-content').delay(500).fadeIn();
+}
+
+function autoplaySlides() {
+  $('.grid-gallery-content').fadeOut();
+  /* load larger images only now*/
+  $('img[lazy]').each(function () {
+    $(this).attr('src', $(this).attr('lazy'));
+  });
+  $('.slide-gallery-content').delay(500).fadeIn();
+}
+
+</script>
+
+<body>
+  {% unless page.autoplay %}
+  <!-- grid -->
+  <div class="grid-gallery-content">
+
     {% include header.html %}
-    <div id="pageContent" class="page-content">
-        <div class="wrapper">
-            {% include title.html %}
-            {{ content }}
-            <p style="text-align:center;">
-                <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
-            </p>
-        </div>
 
-        <ul class="image-grid" id="image-grid">
-            {% for tag in page.tags %}
-
-            {% for post in site.tags.[tag] %}
-
-            {% if post.layout contains 'image' and post.thumburl %}
-
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <li class="image-grid">
-                    <div class="image">
-                        <img src="{{post.thumburl | prepend: site.baseurl}}"/>
-                        {% if post.message %}
-                        <h2>{{post.message}}</h2>
-                        {% elsif post.abstract %}
-                        <h2>{{post.abstract}}</h2>
-                        {% elsif post.title %}
-                        <h2>{{post.title}}</h2>
-                        {% endif %}
-                    </div>
-                </li>
-            </a>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-        </ul>
+    <div class="page-content">
+      <div class="wrapper">
+        {% include title.html %}
+        {{ content }}
+      </div>
     </div>
 
-    {% include footer_scripts.html %}
-    <script src="/r/jquery.min.js"></script>
+    <p style="text-align:center;">
+      <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
+    </p>
+
+    <ul class="image-grid" id="image-grid">
+      {% for tag in page.tags %}
+      {% for post in site.tags.[tag] %}
+      {% if post.layout contains 'image' and post.thumburl %}
+
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <li class="image-grid">
+          <div class="image">
+            <img src="{{post.thumburl | prepend: site.baseurl}}"/>
+            {% if post.message %}
+            <h2>{{post.message}}</h2>
+            {% elsif post.abstract %}
+            <h2>{{post.abstract}}</h2>
+            {% elsif post.title %}
+            <h2>{{post.title}}</h2>
+            {% endif %}
+          </div>
+        </li>
+      </a>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+
     <script src="/r/imagesloaded.min.js"></script>
     <script src="/r/masonry.min.js"></script>
 
-
     <script>
+    $('.slide-gallery-content').hide();
 
-        $('.for-slides').hide();
-
-        container = select('#image-grid');
-        masonry = new Masonry(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
-        imgLoad = imagesLoaded(container);
-        imgLoad.on('progress', function() {
-            masonry.layout();
-        });
-
-        function displayGallery() {
-            $('.for-slides').fadeOut();
-            $('.for-gallery').delay(500).fadeIn();
-            setTimeout(function() {masonry.layout();}, 500);
-        }
-
-        function displaySlides() {
-            $('.for-gallery').fadeOut();
-            /* load larger images only now*/
-            $('img[lazy]').each(function () {
-                $(this).attr('src', $(this).attr('lazy'));
-            });
-            $('.for-slides').delay(500).fadeIn();
-        }
+    container = $('#image-grid')[0];
+    masonry = new Masonry(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
+    imgLoad = imagesLoaded(container);
+    imgLoad.on('progress', function() {
+      masonry.layout();
+    });
 
     </script>
 
@@ -82,97 +93,110 @@
     {% include footer.html %}
     {% endunless %}
 
-</div>
+  </div>
+
+  {% endunless %}
 
 
-<div style="display:none;" class="slide-gallery-content for-slides">
+  <!-- slides -->
+  <div style="display:none;" class="slide-gallery-content">
     <div class="wrapper">
 
-        {% if page.title %}
-        <div class="title">{{ page.title }}</div>
-        {% elsif page.message %}
-        <div class="title">{{ page.message }}</div>
+      {% include title.html %}
+      {{ content }}
+
+      {% unless page.autoplay %}
+      <div class="nav">
+        <a class="gallery" id="gallery" onclick="displayGrid();">back to gallery</a>
+        <div class="direction">
+          <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>
+          <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
+        </div>
+      </div>
+      {% endunless %}
+
+      <div class="slides" id="slides">
+
+        {% for tag in page.tags %}
+        {% for post in site.tags.[tag] %}
+        {% if post.layout contains 'image' and post.thumburl %}
+        <div class="slide">
+
+          {% if post.slideurl %}
+          <img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"/>
+          {% else %}
+          <img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"/>
+          {% endif %}
+
+          {% if post.message %}
+          <div>  {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.message}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          {% elsif post.abstract %}
+          <div> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.abstract}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          {% elsif post.title %}
+          <div> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.title}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          {% endif %}
+
+        </div>
         {% endif %}
-
-        <div class="nav">
-            <a class="gallery" id="gallery" onclick="displayGallery();">back to gallery</a>
-
-            <div class="direction">
-                <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>
-                <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
-            </div>
-        </div>
-
-        <div class="slides" id="slides">
-
-            {% for tag in page.tags %}
-
-            {% for post in site.tags.[tag] %}
-
-            {% if post.layout contains 'image' and post.thumburl %}
-            <div class="slide">
-
-
-                {% if post.slideurl %}
-                <img src="/r/spinner.gif" lazy="{{post.slideurl | prepend: site.baseurl}}"/>
-                {% else %}
-                <img src="/r/spinner.gif" lazy="{{post.thumburl | prepend: site.baseurl}}"/>
-                {% endif %}
-
-                {% if post.message %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.message}}</a></div>
-                {% elsif post.abstract %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.abstract}}</a></div>
-                {% elsif post.title %}
-                <div><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></div>
-                {% endif %}
-
-            </div>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-        </div>
+        {% endfor %}
+        {% endfor %}
+      </div>
     </div>
 
+    {% unless page.autoplay %}
     <script src="/r/jquery.mobile.custom.min.js"></script>
+    {% endunless %}
     <script>
+    function next() {
+      var height = $('.slide').innerHeight();
+      $('.slide').css('min-height', height);
+      $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
 
-        function next() {
-            $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
-        }
+    }
 
-        function prev() {
-            $('.slides > :first-child').fadeOut();
-            $('.slides > :last-child').insertBefore('.slides > :first-child');
-            $('.slides > :first-child').fadeIn();
-        }
+    function prev() {
+      $('.slides > :first-child').fadeOut();
+      $('.slides > :last-child').insertBefore('.slides > :first-child');
+      $('.slides > :first-child').fadeIn();
+    }
 
-        $("body").keydown(function (e) {
-            if (e.which == 37) {
-                prev();
-            }
-            else if (e.which == 39) {
-                next();
-            }
-            else if (e.which == 27) {
-                displayGallery();
-            }
-        });
+    {% unless page.autoplay %}
+    $("body").keydown(function (e) {
+      if (e.which == 37) {
+        prev();
+      }
+      else if (e.which == 39) {
+        next();
+      }
+      else if (e.which == 27) {
+        displayGrid();
+      }
+    });
 
-        $(".slide").on("swipeleft", next);
-        $(".slide").on("swiperight", prev);
+    $(".slide").on("swipeleft", next);
+    $(".slide").on("swiperight", prev);
+    {% endunless %}
 
+    $(function () {
+      $('.slides > :gt(0)').hide();
 
-        $(function () {
-            $('.slides > :gt(0)').hide();
-        });
+      {% if page.autoplay %}
+      setInterval(next, 3000);
+      {% endif %}
+    });
     </script>
+  </div>
+
+  {% if page.autoplay %}
+  <script>
+  autoplaySlides();
+  </script>
+  {% endif %}
+
 </div>
 
 
 {% include footer_scripts.html %}
-
-
 </body>
 
 </html>
