@@ -129,11 +129,11 @@ function autoplaySlides() {
           {% endif %}
 
           {% if post.message %}
-          <div>  {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.message}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          <h2>  {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.message}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% elsif post.abstract %}
-          <div> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.abstract}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          <h2> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.abstract}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% elsif post.title %}
-          <div> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.title}} {% unless page.autoplay %}</a>{% endunless %}</div>
+          <h2> {% unless page.autoplay %}<a href="{{ post.url | prepend: site.baseurl }}">{% endunless %}{{post.title}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% endif %}
 
 
@@ -196,7 +196,7 @@ function autoplaySlides() {
   </script>
   {% endif %}
 
-  
+
   {% include footer_scripts.html %}
 </body>
 
