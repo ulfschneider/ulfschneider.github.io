@@ -5,28 +5,6 @@
 
 <script src="/r/jquery.min.js"></script>
 
-<script>
-function displayGrid() {
-  $('.slide-gallery-content').fadeOut();
-  $('.grid-gallery-content').delay(500).fadeIn();
-  masonry.layout();
-}
-
-function displaySlides() {
-  $('.grid-gallery-content').fadeOut();
-  /* load larger images only now*/
-  $('img[lazy]').each(function () {
-    $(this).attr('src', $(this).attr('lazy'));
-  });
-  $('.slide-gallery-content').delay(500).fadeIn();
-}
-
-function autoplaySlides() {
-  displaySlides();
-  setInterval(next, 3000);
-}
-
-</script>
 
 <body>
   {% unless page.autoplay %}
@@ -47,8 +25,6 @@ function autoplaySlides() {
     </p>
 
     <ul class="image-grid" id="image-grid">
-
-
 
       {% assign images = "" | split:"|"  %}
       {% for tag in page.tags %}
@@ -147,7 +123,6 @@ function autoplaySlides() {
 
         {% for image in sorted-images %}
         <div class="slide">
-
           {% if image.slideurl %}
           <img src="/r/spinner.gif" lazy="{{image.slideurl | prepend: site.baseurl}}"/>
           {% else %}
@@ -161,7 +136,6 @@ function autoplaySlides() {
           {% elsif image.title %}
           <h2> {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.title}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% endif %}
-
         </div>
 
         {% endfor %}
@@ -176,15 +150,53 @@ function autoplaySlides() {
 
 
     <script>
+    function center() {
+      var iwidth = $('.slides > :first-child > img').width();
+      var swidth = $('.slides').width();
+
+      if (iwidth && iwidth < swidth) {
+        $('.slides > :first-child').css('width', iwidth).css('margin-left', (swidth - iwidth) / 2);
+        $('.slides > :first-child > img').css('margin-left', 0).css('margin-right', 0);
+      }
+    }
+
     function next() {
-      var height = $('.slide').innerHeight();
-      $('.slide').css('min-height', height);
+      var height = $('.slides > :first-child').height();
+      $('.slides').css('min-height', height);
       $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
+      center();
+
     }
     function prev() {
+      var height = $('.slides > :first-child').height();
+      $('.slides').css('min-height', height);
+
       $('.slides > :first-child').fadeOut();
       $('.slides > :last-child').insertBefore('.slides > :first-child');
       $('.slides > :first-child').fadeIn();
+
+      center();
+    }
+
+    function displayGrid() {
+      $('.slide-gallery-content').fadeOut();
+      $('.grid-gallery-content').delay(500).fadeIn();
+      masonry.layout();
+    }
+
+    function displaySlides() {
+      $('.grid-gallery-content').fadeOut();
+      /* load larger images only now*/
+      $('img[lazy]').each(function () {
+        $(this).attr('src', $(this).attr('lazy'));
+      });
+      $('.slide-gallery-content').delay(500).fadeIn();
+      setTimeout(center, 500);
+    }
+
+    function autoplaySlides() {
+      displaySlides();
+      setInterval(next, 3000);
     }
 
     {% unless page.autoplay %}
