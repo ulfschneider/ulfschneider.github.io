@@ -149,7 +149,7 @@
 
 
     <script>
-    loadingImage = false; //avoid loading of multiple images due to timout interferences
+    loadingImage = false; //avoid loading of multiple images due to timeout interferences
 
     function center() {
       var iwidth = $('.slides > :first-child > img').width();
@@ -164,7 +164,9 @@
     function displayImage() {
 
       var img = $('.slides > :first-child > img[lazy]');
+      var title = $('.slides > :first-child > h2');
       if (img.attr('loaded') !== 'true') {
+        title.hide(0);
         img.attr('src', img.attr('lazy'));
         img.hide(0);
       } else {
@@ -182,6 +184,7 @@
             img.attr('loaded', 'true');
             img.show(0);
             center();
+            title.show(0);
             setTimeout(next, 3000);
           });
         }
@@ -192,6 +195,7 @@
         img.attr('loaded', 'true');
         img.show(0);
         center();
+        title.show(0);
       });
       {% endif %}
 
