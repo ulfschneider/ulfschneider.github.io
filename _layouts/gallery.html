@@ -5,7 +5,6 @@
 
 <script src="/r/jquery.min.js"></script>
 
-
 <body>
   {% unless page.autoplay %}
   <!-- grid -->
@@ -150,6 +149,32 @@
 
 
     <script>
+    function displayImage() {
+      var img = $('.slides > :first-child > img[lazy]');
+      img.attr('src', img.attr('lazy'));
+
+      {% if page.autoplay %}
+
+      if (img.attr('loaded') === 'true') {
+        setTimeout(next, 3000);
+      } else {
+        img.on('load', function() {
+          img.attr('loaded', 'true');
+          setTimeout(next, 3000);
+        });
+      }
+
+      {% else %}
+
+      img.on('load', function() {
+        img.attr('loaded', 'true');
+      });
+
+      {% endif %}
+
+      center();
+    }
+
     function center() {
       var iwidth = $('.slides > :first-child > img').width();
       var swidth = $('.slides').width();
@@ -164,9 +189,9 @@
       var height = $('.slides > :first-child').height();
       $('.slides').css('min-height', height);
       $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
-      center();
-
+      displayImage();
     }
+
     function prev() {
       var height = $('.slides > :first-child').height();
       $('.slides').css('min-height', height);
@@ -174,8 +199,7 @@
       $('.slides > :first-child').fadeOut();
       $('.slides > :last-child').insertBefore('.slides > :first-child');
       $('.slides > :first-child').fadeIn();
-
-      center();
+      displayImage();
     }
 
     function displayGrid() {
@@ -186,18 +210,10 @@
 
     function displaySlides() {
       $('.grid-gallery-content').fadeOut();
-      /* load larger images only now*/
-      $('img[lazy]').each(function () {
-        $(this).attr('src', $(this).attr('lazy'));
-      });
       $('.slide-gallery-content').delay(500).fadeIn();
-      setTimeout(center, 500);
+      setTimeout(displayImage, 510);
     }
 
-    function autoplaySlides() {
-      displaySlides();
-      setInterval(next, 3000);
-    }
 
     {% unless page.autoplay %}
 
@@ -225,7 +241,7 @@
 
   {% if page.autoplay %}
   <script>
-  autoplaySlides();
+  displaySlides();
   </script>
   {% endif %}
 
