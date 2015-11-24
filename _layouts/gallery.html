@@ -149,7 +149,10 @@
 
 
     <script>
+    loadingImage = false; //avoid loading of multiple images due to timout interferences
+
     function displayImage() {
+
 
       var img = $('.slides > :first-child > img[lazy]');
       img.attr('src', img.attr('lazy'));
@@ -158,16 +161,19 @@
         center();
       }
 
-      {% if page.autoplay %}
 
-      if (img.attr('loaded') === 'true') {
-        setTimeout(next, 3000);
-      } else {
-        img.on('load', function() {
-          img.attr('loaded', 'true');
-          center();
+      {% if page.autoplay %}
+      if (!loadingImage) {
+        loadingImage = true;
+        if (img.attr('loaded') === 'true') {
           setTimeout(next, 3000);
-        });
+        } else {
+          img.on('load', function() {
+            img.attr('loaded', 'true');
+            center();
+            setTimeout(next, 3000);
+          });
+        }
       }
 
       {% else %}
@@ -178,8 +184,9 @@
       });
 
       {% endif %}
-
     }
+
+
 
     function center() {
       var iwidth = $('.slides > :first-child > img').width();
@@ -192,6 +199,7 @@
     }
 
     function next() {
+      loadingImage = false;
       var height = $('.slides > :first-child').height();
       $('.slides').css('min-height', height);
       $('.slides > :first-child').fadeOut().next().fadeIn().end().appendTo('.slides');
@@ -199,6 +207,7 @@
     }
 
     function prev() {
+      loadingImage = false;
       var height = $('.slides > :first-child').height();
       $('.slides').css('min-height', height);
 
