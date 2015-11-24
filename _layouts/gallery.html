@@ -162,8 +162,8 @@
     }
 
     function adjustHeight() {
-      var height = $('.slides > :first-child').height();
-      var minHeight = parseInt($('.slides').css('min-height'));      
+      var height = $('.slides > :first-child').outerHeight();
+      var minHeight = parseInt($('.slides').css('min-height'));
       $('.slides').css('min-height', Math.max(height, minHeight));
     }
 
