@@ -123,9 +123,9 @@
         {% for image in sorted-images %}
         <div class="slide">
           {% if image.slideurl %}
-          <img src="/r/spinner.gif" lazy="{{image.slideurl | prepend: site.baseurl}}"/>
+          <img lazy="{{image.slideurl | prepend: site.baseurl}}"/>
           {% else %}
-          <img src="/r/spinner.gif" lazy="{{image.thumburl | prepend: site.baseurl}}"/>
+          <img lazy="{{image.thumburl | prepend: site.baseurl}}"/>
           {% endif %}
 
           {% if image.message %}
@@ -161,6 +161,12 @@
       }
     }
 
+    function adjustHeight() {
+      var height = $('.slides > :first-child').height();
+      var minHeight = parseInt($('.slides').css('min-height'));
+      $('.slides').css('min-height', Math.max(height, minHeight));
+    }
+
     function displayImage() {
 
       var slide = $('.slides > :first-child');
@@ -170,6 +176,7 @@
         img.attr('src', img.attr('lazy'));
       } else {
         slide.fadeIn();
+        adjustHeight();
         center();
       }
 
@@ -183,6 +190,7 @@
           img.on('load', function() {
             img.attr('loaded', 'true');
             slide.fadeIn();
+            adjustHeight();
             center();
             setTimeout(next, 3000);
           });
@@ -193,6 +201,7 @@
       img.on('load', function() {
         img.attr('loaded', 'true');
         slide.fadeIn();
+        adjustHeight();        
         center();
       });
       {% endif %}
@@ -202,17 +211,12 @@
 
     function next() {
       loadingImage = false;
-      var height = $('.slides > :first-child').height();
-      $('.slides').css('min-height', height);
       $('.slides > :first-child').fadeOut().next().end().appendTo('.slides');
       displayImage();
     }
 
     function prev() {
       loadingImage = false;
-      var height = $('.slides > :first-child').height();
-      $('.slides').css('min-height', height);
-
       $('.slides > :first-child').fadeOut();
       $('.slides > :last-child').insertBefore('.slides > :first-child');
       displayImage();
