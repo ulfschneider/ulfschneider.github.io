@@ -173,6 +173,7 @@
       var img = $('.slides > :first-child > img[lazy]');
 
       if (img.attr('loaded') !== 'true') {
+        slide.hide(0);
         img.attr('src', img.attr('lazy'));
       } else {
         slide.fadeIn();
@@ -201,7 +202,7 @@
       img.on('load', function() {
         img.attr('loaded', 'true');
         slide.fadeIn();
-        adjustHeight();        
+        adjustHeight();
         center();
       });
       {% endif %}
@@ -231,6 +232,7 @@
     function displaySlides() {
       $('.grid-gallery-content').fadeOut();
       $('.slide-gallery-content').delay(500).fadeIn();
+
       setTimeout(displayImage, 510);
     }
 
