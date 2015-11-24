@@ -153,17 +153,16 @@
 
     function displayImage() {
 
-
-      var img = $('.slides > :first-child > img[lazy]');
-      img.attr('src', img.attr('lazy'));
-
-      if (img.attr('loaded') === 'true') {
-        center();
-      }
-
-
-      {% if page.autoplay %}
       if (!loadingImage) {
+        var img = $('.slides > :first-child > img[lazy]');
+        img.attr('src', img.attr('lazy'));
+
+        if (img.attr('loaded') === 'true') {
+          center();
+        }
+                
+        {% if page.autoplay %}
+
         loadingImage = true;
         if (img.attr('loaded') === 'true') {
           setTimeout(next, 3000);
@@ -174,16 +173,17 @@
             setTimeout(next, 3000);
           });
         }
+
+
+        {% else %}
+
+        img.on('load', function() {
+          img.attr('loaded', 'true');
+          center();
+        });
+
+        {% endif %}
       }
-
-      {% else %}
-
-      img.on('load', function() {
-        img.attr('loaded', 'true');
-        center();
-      });
-
-      {% endif %}
     }
 
 
