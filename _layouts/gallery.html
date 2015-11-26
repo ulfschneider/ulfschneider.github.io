@@ -6,6 +6,7 @@
 <script src="/r/jquery.min.js"></script>
 
 <body>
+
   {% unless page.autoplay %}
   <!-- grid -->
   <div class="grid-gallery-content">
@@ -61,19 +62,8 @@
       {% endfor %}
     </ul>
 
-    <script src="/r/imagesloaded.min.js"></script>
-    <script src="/r/masonry.min.js"></script>
-
     <script>
     $('.slide-gallery-content').hide();
-
-    container = $('#image-grid')[0];
-    masonry = new Masonry(container, {itemSelector: 'li', gutter: 0, percentPosition: true});
-    imgLoad = imagesLoaded(container);
-    imgLoad.on('progress', function() {
-      masonry.layout();
-    });
-
     </script>
 
     {% unless page.nofooter %}
@@ -83,7 +73,6 @@
   </div>
 
   {% endunless %}
-
 
   <!-- slides -->
   <div style="display:none;" class="slide-gallery-content">
@@ -224,16 +213,14 @@
     }
 
     function displayGrid() {
-      $('.slide-gallery-content').fadeOut();
-      $('.grid-gallery-content').delay(500).fadeIn();
-      masonry.layout();
+      $('.slide-gallery-content').hide(0);
+      $('.grid-gallery-content').show(0);
     }
 
     function displaySlides() {
-      $('.grid-gallery-content').fadeOut();
-      $('.slide-gallery-content').delay(500).fadeIn();
-
-      setTimeout(displayImage, 510);
+      $('.grid-gallery-content').hide(0);
+      $('.slide-gallery-content').show(0);
+      displayImage();
     }
 
 
@@ -266,7 +253,6 @@
   displaySlides();
   </script>
   {% endif %}
-
 
   {% include footer_scripts.html %}
 </body>

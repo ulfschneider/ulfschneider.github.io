@@ -160,24 +160,31 @@ ul.image-grid {
   max-width: $image-content-width;
 }
 
+ul.image-grid * {
+    box-sizing: border-box;
+}
+
+ul.image-grid a {
+  background-image:none;
+}
+
 li.image-grid {
   margin: 0;
   border: 0;
   background-color: transparent;
   overflow: hidden;
-  float: left;
-  position: relative;
+  display:inline-block;
   cursor: pointer;
-  box-sizing: border-box;
-  width: 25%;
-  padding: 1.5*$spacing-unit;
+  width: 24%;
+  padding: $spacing-unit;
   padding-top: 0;
-
+  vertical-align:top;
 }
 
 li.image-grid .image {
-  padding: 0px;
-  position: relative;
+  padding: 0;
+  margin:0;
+  border:0;
   background-color: $background-color;
   img {
     width: 100%;
@@ -371,7 +378,7 @@ figcaption, .figcaption {
   li.image-grid {
     padding: $spacing-unit;
     padding-top: 0;
-    width: 33%;
+    width: 32%;
   }
 }
 @include media-query($on-narrow) {
@@ -450,7 +457,7 @@ figcaption, .figcaption {
     max-width: 100%;
   }
   li.image-grid {
-    width: 50%;
+    width: 49%;
     padding: $spacing-unit/4;
     padding-bottom: $spacing-unit;
     padding-top: 0;
