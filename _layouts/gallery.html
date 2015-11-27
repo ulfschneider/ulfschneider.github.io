@@ -25,7 +25,6 @@
     </p>
 
     <ul class="image-grid" id="image-grid">
-
       {% assign images = "" | split:"|"  %}
       {% for tag in page.tags %}
       {% for post in site.tags.[tag] %}
@@ -41,11 +40,8 @@
       {% else %}
       {% assign sorted-images = images %}
       {% endif %}
-
-      {% for image in sorted-images %}
-
-      <a href="{{ image.url | prepend: site.baseurl }}">
-        <li class="image-grid">
+      {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny gap in between -->
+        <a href="{{ image.url | prepend: site.baseurl }}">
           <div class="image">
             <img src="{{image.thumburl | prepend: site.baseurl}}"/>
             {% if image.message %}
@@ -56,11 +52,8 @@
             <h2>{{image.title}}</h2>
             {% endif %}
           </div>
-        </li>
-      </a>
-
-      {% endfor %}
-    </ul>
+        </a>
+      </li>{% endfor %}</ul>
 
     <script>
     $('.slide-gallery-content').hide();

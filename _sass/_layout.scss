@@ -160,35 +160,32 @@ ul.image-grid {
   max-width: $image-content-width;
 }
 
-ul.image-grid * {
-    box-sizing: border-box;
-}
-
 ul.image-grid a {
   background-image:none;
+  padding:0;
+  margin:0;
+  border:0;
+  background-color: green;
 }
 
 li.image-grid {
-  margin: 0;
+  margin:0;
   border: 0;
-  background-color: transparent;
   overflow: hidden;
   display:inline-block;
   cursor: pointer;
-  width: 24%;
+  width: 25%;
+
   padding: $spacing-unit;
   padding-top: 0;
   vertical-align:top;
+
 }
 
 li.image-grid .image {
-  padding: 0;
-  margin:0;
-  border:0;
   background-color: $background-color;
   img {
     width: 100%;
-    position: relative;
     margin: 0;
   }
 }
@@ -378,7 +375,7 @@ figcaption, .figcaption {
   li.image-grid {
     padding: $spacing-unit;
     padding-top: 0;
-    width: 32%;
+    width: 33%;
   }
 }
 @include media-query($on-narrow) {
@@ -457,7 +454,7 @@ figcaption, .figcaption {
     max-width: 100%;
   }
   li.image-grid {
-    width: 49%;
+    width: 50%;
     padding: $spacing-unit/4;
     padding-bottom: $spacing-unit;
     padding-top: 0;
