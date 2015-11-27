@@ -143,12 +143,12 @@
     .slide {
       position: absolute;
       padding-bottom: $spacing-unit;
+      max-width:100%;
 
       h2 {
         text-align:left;
         font-family:$base-font-family;
         font-weight:normal;
-
         margin-top:$spacing-unit/2;
       }
     }
@@ -427,6 +427,7 @@ figcaption, .figcaption {
   .image-content img, .slide img {
     margin-left: -$spacing-unit / 2;
     margin-right: -$spacing-unit / 2;
+    max-width:100%;
     max-width: calc(100% + #{$spacing-unit});
   }
   .left, .right {
