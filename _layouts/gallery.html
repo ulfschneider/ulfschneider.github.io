@@ -158,7 +158,7 @@
         slide.hide(0);
         img.attr('src', img.attr('lazy'));
       } else {
-        slide.fadeIn();
+        slide.fadeIn(200);
         adjustHeight();
         center();
       }
@@ -172,7 +172,7 @@
         } else {
           img.on('load', function() {
             img.attr('loaded', 'true');
-            slide.fadeIn();
+            slide.fadeIn(200);
             adjustHeight();
             center();
             setTimeout(next, 3000);
@@ -183,7 +183,7 @@
       //non autoplay
       img.on('load', function() {
         img.attr('loaded', 'true');
-        slide.fadeIn();
+        slide.fadeIn(200);
         adjustHeight();
         center();
       });
@@ -194,13 +194,13 @@
 
     function next() {
       loadingImage = false;
-      $('.slides > :first-child').fadeOut().next().end().appendTo('.slides');
+      $('.slides > :first-child').fadeOut(200).next().end().appendTo('.slides');
       displayImage();
     }
 
     function prev() {
       loadingImage = false;
-      $('.slides > :first-child').fadeOut();
+      $('.slides > :first-child').fadeOut(200);
       $('.slides > :last-child').insertBefore('.slides > :first-child');
       displayImage();
     }
