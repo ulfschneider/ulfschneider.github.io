@@ -175,7 +175,6 @@ li.image-grid {
   border: 0;
   overflow: hidden;
   display:inline-block;
-  cursor: pointer;
   width: 25%;
 
   padding: $spacing-unit;
@@ -185,6 +184,8 @@ li.image-grid {
 
 li.image-grid .image {
   background-color: $background-color;
+  cursor: pointer;
+  
   img {
     width: 100%;
     margin: 0;
