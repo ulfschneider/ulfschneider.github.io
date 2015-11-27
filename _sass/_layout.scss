@@ -180,12 +180,14 @@ li.image-grid {
   padding: $spacing-unit;
   padding-top: 0;
   vertical-align:top;
+
+  transition: all 0.2s ease-out;  
 }
 
 li.image-grid .image {
   background-color: $background-color;
   cursor: pointer;
-  
+
   img {
     width: 100%;
     margin: 0;
