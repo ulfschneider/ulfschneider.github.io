@@ -59,10 +59,6 @@
     $('.slide-gallery-content').hide();
     </script>
 
-    {% unless page.nofooter %}
-    {% include footer.html %}
-    {% endunless %}
-
   </div>
 
   {% endunless %}
@@ -246,6 +242,10 @@
   displaySlides();
   </script>
   {% endif %}
+
+  {% unless page.nofooter %}
+  {% include footer.html %}
+  {% endunless %}
 
   {% include footer_scripts.html %}
 </body>
