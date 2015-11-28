@@ -10,8 +10,7 @@
         {% if site.twitter_username %}
         <dl>
             <dt>Twitter:</dt>
-            <dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a> • <a
-                    href="http://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&via=ulfeed">share</a></dd>
+            <dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a></dd>
         </dl>
         {% endif %}
         {% if site.github_username %}
@@ -30,6 +29,13 @@
             <dt>RSS:</dt>
             <dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed</a></dd>
         </dl>
+        {% if site.title %}
+        <dl>
+                  <br>
+        © <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </dl>
+        {% endif %}
+
     </div>
 
 </div>
