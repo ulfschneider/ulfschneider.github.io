@@ -164,14 +164,14 @@
       if (!loadingImage) {
         loadingImage = true;
         if (img.attr('loaded') === 'true') {
-          setTimeout(next, 3000);
+          setTimeout(next, 4000);
         } else {
           img.on('load', function() {
             img.attr('loaded', 'true');
             slide.fadeIn(200);
             adjustHeight();
             center();
-            setTimeout(next, 3000);
+            setTimeout(next, 4000);
           });
         }
       }
