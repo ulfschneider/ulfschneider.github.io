@@ -40,7 +40,7 @@
       {% else %}
       {% assign sorted-images = images %}
       {% endif %}
-      {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny gap in between -->
+      {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny column gap between images -->
         <a href="{{ image.url | prepend: site.baseurl }}">
           <div class="image">
             <img src="{{image.thumburl | prepend: site.baseurl}}"/>
