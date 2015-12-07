@@ -181,7 +181,7 @@ li.image-grid {
   padding-top: 0;
   vertical-align:top;
 
-  transition: all 0.2s ease-out;  
+  transition: all 0.2s ease-out;
 }
 
 li.image-grid .image {
@@ -319,8 +319,7 @@ figcaption, .figcaption {
     text-align: center;
   }
 
-  dt {
-    padding-right: .5em;
+  dt {        
     float: none;
     display: inline;
   }
