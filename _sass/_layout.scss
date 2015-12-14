@@ -319,7 +319,7 @@ figcaption, .figcaption {
     text-align: center;
   }
 
-  dt {        
+  dt {
     float: none;
     display: inline;
   }
@@ -426,7 +426,7 @@ figcaption, .figcaption {
     line-height: $site-nav-height;
     /* increase space for touching links */
   }
-  .image-content img, .slide img {
+  .image-content, .slide {
     margin-left: -$spacing-unit / 2;
     margin-right: -$spacing-unit / 2;
     max-width:100%;
