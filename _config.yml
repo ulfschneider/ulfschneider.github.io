@@ -1,16 +1,10 @@
 # Site settings
 title: Ulf Schneider
-# email:
-phone: +49 163 2505164
 description: Developer • Agile Coach
 meta: Ulf Schneider Agile Paderborn
 baseurl:  # the subpath of your site, e.g. /blog/
 name: Ulf Schneider
 url: http://ulf.codes # the base hostname & protocol for thesite
-twitter_username: ulfeed
-github_username: # ulfschneider
-
-
 
 # Build settings
 markdown: kramdown
