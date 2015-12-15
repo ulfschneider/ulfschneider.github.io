@@ -3,6 +3,7 @@ layout: gallery
 autoplay: true
 reversed: true
 nonav: true
+nofooter: true
 title: Emil
 subtitle: 
 date:   2015-11-01
