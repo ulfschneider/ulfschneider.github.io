@@ -1,41 +1,14 @@
 <div class="site-footer">
 
   <div class="wrapper">
-    {% if site.email %}
-    <dl>
-      <dt>Mail:</dt>
-      <dd><a href="mailto:{{site.email}}">{{ site.email }}</a></dd>
-    </dl>
-    {% endif %}
-    {% if site.twitter_username %}
-    <dl>
-      <dt>Twitter:</dt>
-      <dd><a href="http://twitter.com/{{site.twitter_username}}">@{{ site.twitter_username }}</a></dd>
-    </dl>
-    {% endif %}
-    {% if site.github_username %}
-    <dl>
-      <dt>GitHub:</dt>
-      <dd><a href="http://github.com/{{site.github_username}}">{{ site.github_username }}</a></dd>
-    </dl>
-    {% endif %}
-    {% if site.phone %}
-    <dl>
-      <dt>Phone:</dt>
-      <dd><a href="tel:{{site.phone}}">{{ site.phone }}</a></dd>
-    </dl>
-    {% endif %}
-    <dl>
-      <dt>RSS:</dt>
-      <dd><a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed</a></dd>
-    </dl>
-    {% if site.title %}
-    <dl>
-      <br>
-      © <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
-    </dl>
-    {% endif %}
-
+    <div class="site-nav">
+      <a class="page-link" href="{{ "/" | prepend: site.baseurl }}">Home</a>
+      {% if page.url == "/contact/" %}
+      <span class="page-link active" href="{{ "/contact" | prepend: site.baseurl }}">Contact</span>
+      {% else %}
+      <a class="page-link" href="{{ "/contact" | prepend: site.baseurl }}">Contact</a>
+      {% endif %}
+      <a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></div>
+    </div>
   </div>
-
 </div>

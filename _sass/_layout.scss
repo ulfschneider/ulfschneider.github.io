@@ -315,21 +315,6 @@ figcaption, .figcaption {
   clear: both;
   margin-bottom: 2 * $spacing-unit;
 
-  dl {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  dt {
-    float: none;
-    display: inline;
-  }
-
-  dd {
-    display: inline;
-  }
-
   @extend %clearfix;
 }
 
