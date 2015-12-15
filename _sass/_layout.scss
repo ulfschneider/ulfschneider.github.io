@@ -324,6 +324,10 @@ figcaption, .figcaption {
 
   .twitter-timeline {
 
+    img {
+      margin: $spacing-unit auto;
+    }
+
     ul {
       list-style: none;
 
