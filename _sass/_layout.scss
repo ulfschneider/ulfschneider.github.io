@@ -160,6 +160,8 @@ ul.image-grid {
   list-style: none;
   margin: 0 auto;
   max-width: $image-content-width;
+  padding-left: $spacing-unit / 4;
+  padding-right: $spacing-unit / 4;
 }
 
 ul.image-grid a {
@@ -426,7 +428,7 @@ figcaption, .figcaption {
     line-height: $site-nav-height;
     /* increase space for touching links */
   }
-  
+
   li.image-grid {
     width: 50%;
     padding: $spacing-unit/4;
