@@ -5,28 +5,28 @@
 
 <body>
 
-<div class="index">
+  <div class="index">
 
-<div id="pageContent" class="page-content">
-  <div class="wrapper">
+    <div id="pageContent" class="page-content">
+      <div class="wrapper">
         <div class="site">
-            <div class="site-title">{{site.title}}</div>
-            <div class="site-description">{{site.description}}</div>
+          <div class="site-title">{{site.title}}</div>
+          <div class="site-description">{{site.description}}</div>
         </div>
         <nav class="site-nav">
-            {% for p in site.pages %}
-            {% if p.menu %}
-            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
-            {% elsif p.title %}
-            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
-            {% endif %}
-            {% endfor %}
+          {% for p in site.pages %}
+          {% if p.menu %}
+          <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
+          {% elsif p.title %}
+          <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
+          {% endif %}
+          {% endfor %}
         </nav>
 
+      </div>
     </div>
-</div>
 
-{% include footer_scripts.html %}
+    {% include footer_scripts.html %}
   </div>
 </body>
 </html>

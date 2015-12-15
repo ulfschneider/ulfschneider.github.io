@@ -9,9 +9,9 @@ layout: default
 
 <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 {% if post.abstract %}
-  <p>{{ post.abstract }}</p>
+<p>{{ post.abstract }}</p>
 {% else %}
-  <p>{{ post.content | truncatewords:50 | strip_html }}</p>
+<p>{{ post.content | truncatewords:50 | strip_html }}</p>
 {% endif %}
 
 {% endif %}
