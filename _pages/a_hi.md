@@ -24,3 +24,5 @@ In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.) and s
 * IBM: Certified IT Architect
 
 Besides this, every now and then I´m taking [photographs]({{site.url}}/photography).
+
+
