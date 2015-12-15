@@ -5,6 +5,7 @@ meta: Ulf Schneider Agile Paderborn
 baseurl:  # the subpath of your site, e.g. /blog/
 name: Ulf Schneider
 url: http://ulf.codes # the base hostname & protocol for thesite
+twitter_username: ulfeed
 
 # Build settings
 markdown: kramdown
