@@ -1,24 +1,24 @@
+{% unless page.nositenav %}
 <div id="navigation" class="site-nav">
+  {% assign last = {{site.pages | last}} %}
+  {% for p in site.pages %}
+  {% if p.menu %}
+  {% if page.url == p.url %}
+  <span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
+  {% else %}
+  <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
+  {% endif %}
 
+  {% elsif p.title %}
+  {% if page.url == p.url %}
+  <span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</span>
+  {% else %}
+  <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
+  {% endif %}
 
-        {% assign last = {{site.pages | last}} %}
-        {% for p in site.pages %}
-        {% if p.menu %}
-        {% if page.url == p.url %}
-        <span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
-        {% else %}
-        <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
-        {% endif %}
+  {% endif %}
 
-        {% elsif p.title %}
-        {% if page.url == p.url %}
-        <span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</span>
-        {% else %}
-        <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
-        {% endif %}
+  {% endfor %}
 
-        {% endif %}
-
-        {% endfor %}
-        
 </div>
+{% endunless %}

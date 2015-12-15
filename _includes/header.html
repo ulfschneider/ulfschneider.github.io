@@ -1,6 +1,8 @@
+{% unless page.noheader %}
 <div id="siteHeader" class="site-header">
   <div class="wrapper">
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     {% include navigation.html %}
   </div>
 </div>
+{% endunless %}
