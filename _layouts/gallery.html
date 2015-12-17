@@ -153,8 +153,9 @@
 
       if (img.attr('loaded') !== 'true') {
         slide.hide(0);
-        $('.slides').prepend('<div id="loading">loading ...</div>');
         img.attr('src', img.attr('lazy'));
+        $('.slides').prepend('<div id="loading">loading ...</div>');
+        $('#loading').delay(500).show(0);
       } else {
         $('#loading').remove();
         slide.fadeIn(200);
