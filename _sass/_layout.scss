@@ -139,7 +139,7 @@
     margin-top: $spacing-unit;
     position: relative;
     width:100%;
-    min-height:$spacing-unit;
+    min-height: 3*$spacing-unit;
 
     #loading {
       text-align:center;
