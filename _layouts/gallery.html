@@ -136,7 +136,7 @@
       if (iwidth && iwidth < swidth) {
         $('.slides > :first-child').css('width', iwidth).css('margin-left', (swidth - iwidth) / 2);
         $('.slides > :first-child > img').css('margin-left', 0).css('margin-right', 0);
-      }    
+      }
     }
 
     function adjustHeight() {
@@ -147,13 +147,16 @@
 
     function displayImage() {
 
+
       var slide = $('.slides > :first-child');
       var img = $('.slides > :first-child > img[lazy]');
 
       if (img.attr('loaded') !== 'true') {
         slide.hide(0);
+        $('.slides').prepend('<div id="loading">loading ...</div>');
         img.attr('src', img.attr('lazy'));
       } else {
+        $('#loading').remove();
         slide.fadeIn(200);
         adjustHeight();
         center();
@@ -168,6 +171,7 @@
         } else {
           img.on('load', function() {
             img.attr('loaded', 'true');
+            $('#loading').remove();
             slide.fadeIn(200);
             adjustHeight();
             center();
@@ -179,6 +183,7 @@
       //non autoplay
       img.on('load', function() {
         img.attr('loaded', 'true');
+        $('#loading').remove();
         slide.fadeIn(200);
         adjustHeight();
         center();

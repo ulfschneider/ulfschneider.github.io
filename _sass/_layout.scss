@@ -140,6 +140,11 @@
     position: relative;
     width:100%;
 
+    #loading {
+      position:absolute;
+      text-align:center;
+    }
+
     .slide {
       position: absolute;
       padding-bottom: $spacing-unit;
