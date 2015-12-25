@@ -15,29 +15,25 @@
     </div>
 
     <ul class="image-grid" id="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny gap in between -->
-      {% for post in site.posts %}{% unless post.nonav %}{% if post.layout contains 'gallery' and post.thumburl %}<li class="image-grid">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+      {% for p in site.posts %}{% unless p.nonav %}{% if p.layout contains 'gallery' and p.thumburl %}<li class="image-grid">
+        <a href="{{ p.url | prepend: site.baseurl }}">
           <div class="image">
-            <img src="{{post.thumburl}}"/>
-            {% if post.message %}
-            <h2>{{post.message}}</h2>
-            {% elsif post.abstract %}
-            <h2>{{post.abstract}}</h2>
-            {% elsif post.title %}
-            <h2>{{post.title}}</h2>
+            <img src="{{p.thumburl}}"/>
+            {% if p.abstract %}
+            <h2>{{p.abstract}}</h2>
+            {% elsif p.title %}
+            <h2>{{p.title}}</h2>
             {% endif %}
           </div>
         </a>
-      </li>{% elsif post.layout contains 'image' and post.thumburl and post.tags contains 'projects' %}<li class="image-grid">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+      </li>{% elsif p.layout contains 'image' and p.thumburl and p.tags contains 'projects' %}<li class="image-grid">
+        <a href="{{ p.url | prepend: site.baseurl }}">
           <div class="image">
-            <img src="{{post.thumburl}}"/>
-            {% if post.message %}
-            <h2>{{post.message}}</h2>
-            {% elsif post.abstract %}
-            <h2>{{post.abstract}}</h2>
-            {% elsif post.title %}
-            <h2>{{post.title}}</h2>
+            <img src="{{p.thumburl}}"/>
+            {% if p.abstract %}
+            <h2>{{p.abstract}}</h2>
+            {% elsif p.title %}
+            <h2>{{p.title}}</h2>
             {% endif %}
           </div>
         </a>

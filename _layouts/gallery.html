@@ -27,10 +27,10 @@
     <ul class="image-grid" id="image-grid">
       {% assign images = "" | split:"|"  %}
       {% for tag in page.tags %}
-      {% for post in site.tags.[tag] %}
-      {% unless post.nonav %}
-      {% if post.layout contains 'image' and post.thumburl %}
-      {% assign images = images | push: post %}
+      {% for p in site.tags.[tag] %}
+      {% unless p.nonav %}
+      {% if p.layout contains 'image' and p.thumburl %}
+      {% assign images = images | push: p %}
       {% endif %}
       {% endunless %}
       {% endfor %}
@@ -84,10 +84,10 @@
 
         {% assign images = "" | split:"|"  %}
         {% for tag in page.tags %}
-        {% for post in site.tags.[tag] %}
-        {% unless post.nonav %}
-        {% if post.layout contains 'image' and post.thumburl %}
-        {% assign images = images | push: post %}
+        {% for p in site.tags.[tag] %}
+        {% unless p.nonav %}
+        {% if p.layout contains 'image' and p.thumburl %}
+        {% assign images = images | push: p %}
         {% endif %}
         {% endunless %}
         {% endfor %}
