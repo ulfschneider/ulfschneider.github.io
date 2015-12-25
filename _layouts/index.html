@@ -19,6 +19,8 @@
           <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
           {% elsif p.title %}
           <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.title }}</a>
+          {% elsif p.index %}
+          <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</a>
           {% endif %}
           {% endfor %}
         </nav>
