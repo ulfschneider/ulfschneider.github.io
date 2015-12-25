@@ -1,11 +1,12 @@
 # Site settings
-title: Ulf Schneider
+title: Ulf Schneider #title of the page
 description: Developer • Agile Coach
 meta: Ulf Schneider Agile Paderborn
 baseurl:  # the subpath of your site, e.g. /blog/
 name: Ulf Schneider
 url: http://ulf.codes # the base hostname & protocol for thesite
-twitter_username: ulfeed
+twitter_prompt: Follow me via #something like: Follow me via
+twitter_username: ulfeed #twitter user
 
 # Build settings
 markdown: kramdown

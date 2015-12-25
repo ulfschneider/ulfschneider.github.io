@@ -38,8 +38,9 @@
 
   .site-title {
     font-family:$base-font-family;
+    margin:0;
     margin-right: $spacing-unit;
-    margin-bottom:$spacing-unit;
+
     font-size: $base-font-size * 1.7;
     line-height:1em;
     letter-spacing:1px;
@@ -47,8 +48,10 @@
   }
 
   .site-description {
-    display:none;
+    font-family:$thin-font-family;
     margin-right: $spacing-unit;
+    margin-bottom: $spacing-unit;
+
   }
 
   .site-nav {
@@ -421,6 +424,7 @@ figcaption, .figcaption {
 
     .site-description {
       margin-right: $spacing-unit;
+      line-height:$base-line-height;
     }
 
     .page-link {
