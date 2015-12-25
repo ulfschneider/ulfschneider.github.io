@@ -38,37 +38,39 @@
 
   .site-title {
     font-family:$base-font-family;
-    margin:0;
-    margin-right: $spacing-unit;
-
     font-size: $base-font-size * 1.7;
-    line-height:1em;
+    line-height:$base-font-size * 1.7;
+
+    margin:0;
+    margin-right: 2*$spacing-unit;
+
     letter-spacing:1px;
     text-transform: uppercase;
   }
 
   .site-description {
     font-family:$thin-font-family;
-    margin-right: $spacing-unit;
+    font-size:$base-font-size;
+    margin-right: 2*$spacing-unit;
     margin-bottom: $spacing-unit;
   }
 
   .site-nav {
     margin-bottom: $spacing-unit;
-    line-height:1em;
     float:left;
 
     .page-link {
-      display:block;
-      text-align: left;
       font-family: $base-font-family;
+      font-size:$base-font-size;
+      line-height:$base-font-size;
       letter-spacing: 1px;
+      text-align: left;
+
+      display:block;
       padding:0;
       margin:0;
       background-image: none;
       margin-bottom:$spacing-unit;
-      line-height:1em;
-      letter-spacing:1px;
     }
 
   }
@@ -416,14 +418,11 @@ figcaption, .figcaption {
     }
   }
   .index {
+
     .site-title {
       font-size:$base-font-size;
+      line-height:$base-font-size;
       font-weight:$title-font-weight;
-    }
-
-    .site-description {
-      margin-right: $spacing-unit;
-      line-height:$base-line-height;
     }
 
   }
