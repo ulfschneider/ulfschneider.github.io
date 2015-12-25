@@ -8,7 +8,7 @@ layout: default
 {% unless p.nonav %}
 {% if p.layout contains 'post' and p.title %}
 
-<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
+<h3><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}
