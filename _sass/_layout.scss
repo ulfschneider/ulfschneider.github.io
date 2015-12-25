@@ -51,7 +51,6 @@
     font-family:$thin-font-family;
     margin-right: $spacing-unit;
     margin-bottom: $spacing-unit;
-
   }
 
   .site-nav {
@@ -427,9 +426,6 @@ figcaption, .figcaption {
       line-height:$base-line-height;
     }
 
-    .page-link {
-      letter-spacing:1px;
-    }
   }
   .site-footer {
     line-height: $site-nav-height;
