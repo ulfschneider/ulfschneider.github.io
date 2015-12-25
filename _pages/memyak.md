@@ -1,6 +1,7 @@
 ---
 layout: default
-message: memYAK
+title: memYAK
+nonav: true
 permalink: /memyak/
 ---
 memYAK is the external memory for innovation teams with special support for agile software development.

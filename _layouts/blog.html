@@ -4,16 +4,17 @@ layout: default
 
 {{ content }}
 
-{% for post in site.posts %}
-{% if post.layout contains 'post' and post.title %}
+{% for p in site.posts %}
+{% unless p.nonav %}
+{% if p.layout contains 'post' and p.title %}
 
-<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-{% if post.abstract %}
-<p>{{ post.abstract }}</p>
+<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
+{% if p.abstract %}
+<p>{{ p.abstract }}</p>
 {% else %}
-<p>{{ post.content | truncatewords:50 | strip_html }}</p>
+<p>{{ p.content | truncatewords:50 | strip_html }}</p>
 {% endif %}
 
 {% endif %}
-
+{% endunless %}
 {% endfor %}

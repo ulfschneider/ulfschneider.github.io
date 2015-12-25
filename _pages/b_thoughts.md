@@ -1,6 +1,7 @@
 ---
 layout: blog
 menu: Thoughts
+index: Thoughts
 permalink: /thoughts/
 banner:
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
-title:
-message: Exposure Guide
+title: Exposure Guide
+nonav: true
 permalink: /xg/
 ---
 Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The distinct look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters.

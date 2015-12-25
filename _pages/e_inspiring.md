@@ -1,7 +1,6 @@
 ---
 layout: default
 menu:
-message:
 permalink: 
 ---
 http://tools.subtraction.com

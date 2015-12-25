@@ -1,7 +1,7 @@
 ---
 layout: default
 menu: Tools
-message:
+index: Tools
 permalink: /tools/
 ---
 I build and share these tools:

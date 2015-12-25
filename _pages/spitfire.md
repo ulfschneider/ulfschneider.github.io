@@ -1,6 +1,7 @@
 ---
 layout: default
-message: Spitfire
+title: Spitfire
+nonav: true
 permalink: /spitfire/
 ---
 Spitfire is a virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. 
