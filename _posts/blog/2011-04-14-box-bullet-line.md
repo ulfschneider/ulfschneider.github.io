@@ -97,4 +97,4 @@ This simple Box-Bullet-Line notation can grow with your needs. For example you c
 
 [![BBL model natural]({{site.url}}/i/blog/bbl_model_natural.jpg)]({{site.url}}/r/blog/bbl.pdf)
 
-Click on the image above to get a short presentation that is laying out the BBL concepts.
+Click on the above image to get a short presentation about the BBL concepts.
