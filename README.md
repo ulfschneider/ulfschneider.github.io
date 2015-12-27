@@ -5,12 +5,12 @@ The following directories and their contents are Copyright Ulf Schneider. You ma
 * _posts/
 * i/
 
-The blog is using the font [Input Sans](http://input.fontbureau.com). This font is not for free. I´ve purchased it at [Webtype](http://webtype.com) and included a CSS provided by them into _includes/head.html.
-You have to remove this CSS and purchase the font on your own or simply use a different font. In any case you need to remove the link to //cloud.webtype.com from the head.html in the /_includes directory. You have to add your own link to Webtype or use an entirely different font. Additional adjustments need to be taken in /css/main.css, here you find some variable settings for the font, font-sizes and line-heights.
+The blog is using the font [Input Sans](http://input.fontbureau.com). This font is not for free. I´ve purchased it at [Webtype](http://webtype.com) and included a CSS provided by them into `_includes/head.html`.
+You have to remove this CSS and purchase the font on your own or simply use a different font. In any case you need to remove the link to `//cloud.webtype.com` from the `/_includes/head.html` directory. You have to add your own link to Webtype or use an entirely different font. Additional adjustments need to be taken in `/css/main.css`, here you find some variable settings for the font, font-sizes and line-heights.
 
-The favicon is referred to from the /_includes/head.html. 
+The favicon is referred to from the '/_includes/head.html`. 
 
-Some configurations like site title and the like can be made in /_config.yml.
+Some configurations like site title and the like can be made in `/_config.yml`.
 
 Feel free to use all other HTML and CSS as you please. If you do use them, a link back to https://github.com/ulfschneider/ulfschneider.github.io would be appreciated, but is not required.
 
@@ -68,7 +68,7 @@ To be used in posts of type *gallery*. Will order the images in reversed order, 
 
 **thumburl:** A path to an image
 
-To be used in posts of type *image*. Will used inside of a gallery to display a link to the post.
+To be used in posts of type *image*. Will be used inside of a gallery to display a thumb image link to the post.
 
 **slideurl:** A path to an image
 
