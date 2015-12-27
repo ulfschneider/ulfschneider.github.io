@@ -1,23 +1,8 @@
 <head>
+  <!-- REPLACE THIS LINK WITH YOUR OWN FONT INFORMATION -->
   <link href="//cloud.webtype.com/css/5a243789-ac1f-4a86-878c-35769acf8ef7.css" rel="stylesheet" type="text/css" />
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="viewport" content="width=device-width initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% elsif page.message %}{{ page.message }}{% elsif page.menu %}{{ page.menu }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="author" content="Ulf Schneider">
-  <meta name="description" content="{{ site.meta }} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-  <link rel="stylesheet" href="/css/main.css" >
-
-	<!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/ie.css">
-	<![endif]-->
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
+  <!-- REPLACE THIS REFERENCE TO THE FAVICON WITH YOUR OWN -->
   <link rel="apple-touch-icon" sizes="57x57" href="/r/favicon/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/r/favicon/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/r/favicon/apple-touch-icon-72x72.png">
@@ -37,5 +22,24 @@
   <meta name="msapplication-TileImage" content="/r/favicon/mstile-144x144.png">
   <meta name="msapplication-config" content="/r/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% elsif page.message %}{{ page.message }}{% elsif page.menu %}{{ page.menu }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="author" content="Ulf Schneider">
+  <meta name="description" content="{{ site.meta }} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+  <link rel="stylesheet" href="/css/main.css" >
+
+	<!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/ie.css">
+	<![endif]-->
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
 </head>
