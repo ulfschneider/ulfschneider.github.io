@@ -1,6 +1,6 @@
 ---
 layout: image
-title: Hour 1
+title: First Hour
 subtitle: 
 date:   2015-11-01
 permalink: 
