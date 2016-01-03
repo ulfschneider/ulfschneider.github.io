@@ -283,7 +283,8 @@ figcaption, .figcaption {
 
 figcaption:before, .figcaption:before {
   content: "";
-  width: $spacing-unit;
+  width: $spacing-unit * 1.5;
+  margin-left:-$spacing-unit / 2;
   height:0;
   display:block;
   border-bottom: 2px solid $text-color;
@@ -405,6 +406,10 @@ figcaption:before, .figcaption:before {
   }
   blockquote {
     margin-left: 0;
+  }
+  figcaption:before, .figcaption:before {
+    width: $spacing-unit;
+    margin-left:0;
   }
 }
 @include media-query($on-palm) {
