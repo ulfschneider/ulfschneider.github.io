@@ -276,9 +276,18 @@ li.image-grid h2 {
 }
 
 figcaption, .figcaption {
+  font-size:$extra-small-font-size;
   margin-top: -$spacing-unit;
   display: block;
   margin-bottom: $spacing-unit;
+}
+
+figcaption:before, .figcaption:before {
+  content: "";
+  width: $spacing-unit;
+  height:0;
+  display:block;
+  border-bottom: 2px solid $text-color;
 }
 
 .figcaption {
