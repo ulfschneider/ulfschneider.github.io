@@ -147,8 +147,11 @@ blockquote {
   margin-bottom: $spacing-unit;
   border-left: 2px solid $text-color;
   font-family: $base-font-family;
-  font-weight: $title-font-weight;
-
+  font-style:italic;
+  letter-spacing:1px;
+  p {
+    margin-left:$spacing-unit / 2;
+  }
   > :last-child {
     margin-bottom: 0;
   }
