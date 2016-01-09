@@ -1,7 +1,5 @@
 ---
 layout: gallery
-autoplay: true
-reversed: true
 nonav: true
 title: Emil
 subtitle: 
