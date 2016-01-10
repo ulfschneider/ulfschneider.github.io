@@ -309,23 +309,15 @@ figcaption:before, .figcaption:before {
   figcaption, .figcaption {
     float: left;
     margin: 0;
-    max-width: 45%;
+    max-width: 40%;
   }
 }
 
 .right {
-  text-align: right;
-
   img {
     float: right;
     padding-right: 0;
     padding-left: $spacing-unit;
-  }
-
-  figcaption, .figcaption {
-    float: right;
-    margin: 0;
-    max-width: 45%;
   }
 }
 
