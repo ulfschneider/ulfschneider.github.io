@@ -390,7 +390,8 @@ figcaption:before, .figcaption:before {
     padding-top: 0;
     width: 33%;
   }
-  ul, li {
+  li {
+    margin-top:$spacing-unit / 2;
     list-style-position: inside;
   }
   blockquote {
