@@ -199,6 +199,7 @@ li.image-grid {
 
   padding: $spacing-unit;
   padding-top: 0;
+  padding-bottom:2*$spacing-unit;
   vertical-align:top;
 
   transition: all 0.2s ease-out;
@@ -386,8 +387,6 @@ figcaption:before, .figcaption:before {
 /* Media */
 @include media-query($on-narrow) {
   li.image-grid {
-    padding: $spacing-unit;
-    padding-top: 0;
     width: 33%;
   }
   li {
