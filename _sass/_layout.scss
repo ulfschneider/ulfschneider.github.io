@@ -282,7 +282,7 @@ figcaption, .figcaption {
 
 figcaption:before, .figcaption:before {
   content: "";
-  width: $spacing-unit;  
+  width: $spacing-unit;
   height:0;
   display:block;
   border-bottom: 2px solid $text-color;
@@ -384,14 +384,12 @@ figcaption:before, .figcaption:before {
   }
 }
 /* Media */
-@include media-query($on-laptop) {
+@include media-query($on-narrow) {
   li.image-grid {
     padding: $spacing-unit;
     padding-top: 0;
     width: 33%;
   }
-}
-@include media-query($on-narrow) {
   ul, li {
     list-style-position: inside;
   }
