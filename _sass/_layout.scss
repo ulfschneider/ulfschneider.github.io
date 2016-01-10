@@ -282,8 +282,7 @@ figcaption, .figcaption {
 
 figcaption:before, .figcaption:before {
   content: "";
-  width: $spacing-unit * 1.5;
-  margin-left:-$spacing-unit / 2;
+  width: $spacing-unit;  
   height:0;
   display:block;
   border-bottom: 2px solid $text-color;
@@ -311,6 +310,7 @@ figcaption:before, .figcaption:before {
     margin: 0;
     max-width: 40%;
   }
+
 }
 
 .right {
