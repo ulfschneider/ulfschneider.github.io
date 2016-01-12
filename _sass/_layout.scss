@@ -12,7 +12,7 @@
 }
 
 .site-title {
-  background-image:none;
+  @extend %nolinkstyle;
   text-transform:uppercase;
 }
 
@@ -70,8 +70,8 @@
       display:block;
       padding:0;
       margin:0;
-      background-image: none;
       margin-bottom:$spacing-unit;
+      @extend %nolinkstyle;
     }
 
   }
@@ -184,10 +184,10 @@ ul.image-grid {
 }
 
 ul.image-grid a {
-  background-image:none;
   padding:0;
   margin:0;
   border:0;
+  @extend %nolinkstyle;
 }
 
 li.image-grid {
@@ -277,7 +277,7 @@ li.image-grid h2 {
 
 figcaption, .figcaption {
   margin-top: -$spacing-unit;
-  display: block;
+  display: inline-block;
   margin-bottom: $spacing-unit;
 }
 
@@ -286,7 +286,8 @@ figcaption:before, .figcaption:before {
   width: $spacing-unit;
   height:0;
   display:block;
-  border-bottom: 2px solid $text-color;
+
+  @extend %linkstyle;
 }
 
 .figcaption {
@@ -307,7 +308,6 @@ figcaption:before, .figcaption:before {
   }
 
   figcaption, .figcaption {
-    float: left;
     margin: 0;
     max-width: 40%;
   }
