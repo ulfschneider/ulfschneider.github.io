@@ -144,17 +144,18 @@ a {
  */
 blockquote {
   color: $text-color;
-  padding-left: $spacing-unit;
+  padding-left: $spacing-unit / 2;
   margin-left: -$spacing-unit / 2;
+  border-left: 2px solid $text-color;
+  p {
+    margin-left:0;
+  }
+
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  border-left: 2px solid $text-color;
   font-family: $base-font-family;
   font-style:italic;
   letter-spacing:1px;
-  p {
-    margin-left:$spacing-unit / 2;
-  }
   > :last-child {
     margin-bottom: 0;
   }
