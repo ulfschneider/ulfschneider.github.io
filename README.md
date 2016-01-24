@@ -77,6 +77,10 @@ To be used in posts of type *image*. Will be displayed when the image is part of
 **tags:** A comma-separated text string list
 
 Tagging for the content. When you specify a tag for a post of type *gallery*, the gallery will display all posts of type *image* that contain the same tag.
+
+**noslides:** true|false|empty
+
+To be used in galleries to indicate if a slide show is allowed or not. By default slide shows are allowed.
  
 
 

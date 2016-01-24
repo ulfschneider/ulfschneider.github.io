@@ -20,9 +20,11 @@
       </div>
     </div>
 
+    {% unless page.noslides %}
     <p style="text-align:center;">
       <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
     </p>
+    {% endunless %}
 
     <ul class="image-grid" id="image-grid">
       {% assign images = "" | split:"|"  %}
@@ -64,6 +66,7 @@
   {% endunless %}
 
   <!-- slides -->
+  {%unless page.noslides %}
   <div style="display:none;" class="slide-gallery-content">
     <div class="wrapper">
 
@@ -246,6 +249,7 @@
   displaySlides();
   </script>
   {% endif %}
+  {% endunless %}
 
   {% unless page.nofooter %}
   {% include footer.html %}
