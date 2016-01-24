@@ -13,3 +13,7 @@ http://butdoesitfloat.com
 http://hakim.se
 http://cargocollective.com 
 http://fontsinuse.com
+https://unsplash.com
+https://www.desktopneo.com
+http://framerjs.com
+http://patorjk.com/software/taag/
