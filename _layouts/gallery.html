@@ -41,19 +41,19 @@
       {% assign sorted-images = images %}
       {% endif %}
       {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny column gap between images -->
-        <a href="{{ image.url | prepend: site.baseurl }}">
-          <div class="image">
-            <img src="{{image.thumburl | prepend: site.baseurl}}"/>
-            {% if image.message %}
-            <h2>{{image.message}}</h2>
-            {% elsif image.abstract %}
-            <h2>{{image.abstract}}</h2>
-            {% elsif image.title %}
-            <h2>{{image.title}}</h2>
-            {% endif %}
-          </div>
-        </a>
-      </li>{% endfor %}</ul>
+      <a href="{{ image.url | prepend: site.baseurl }}">
+        <div class="image">
+          <img src="{{image.thumburl | prepend: site.baseurl}}"/>
+          {% if image.message %}
+          <h2>{{image.message}}</h2>
+          {% elsif image.abstract %}
+          <h2>{{image.abstract}}</h2>
+          {% elsif image.title %}
+          <h2>{{image.title}}</h2>
+          {% endif %}
+        </div>
+      </a>
+    </li>{% endfor %}</ul>
 
     <script>
     $('.slide-gallery-content').hide();
@@ -141,13 +141,11 @@
 
     function adjustHeight() {
       var height = $('.slides > :first-child').outerHeight();
-      var minHeight = parseInt($('.slides').css('min-height'));
+      var minHeight = parseInt($('.slides').css('min-height'));      
       $('.slides').css('min-height', Math.max(height, minHeight));
     }
 
     function displayImage() {
-
-
       var slide = $('.slides > :first-child');
       var img = $('.slides > :first-child > img[lazy]');
 
@@ -159,8 +157,8 @@
       } else {
         $('#loading').remove();
         slide.fadeIn(500);
-        adjustHeight();
         center();
+        adjustHeight();        
       }
 
       //autoplay
@@ -174,8 +172,8 @@
             img.attr('loaded', 'true');
             $('#loading').remove();
             slide.fadeIn(500);
+            center();            
             adjustHeight();
-            center();
             setTimeout(next, 4000);
           });
         }
@@ -186,8 +184,8 @@
         img.attr('loaded', 'true');
         $('#loading').remove();
         slide.fadeIn(500);
+        center();        
         adjustHeight();
-        center();
       });
       {% endif %}
 
@@ -212,10 +210,10 @@
       $('.grid-gallery-content').show(0);
     }
 
-    function displaySlides() {
+    function displaySlides() {      
       $('.grid-gallery-content').hide(0);
       $('.slide-gallery-content').show(0);
-      displayImage();
+      displayImage();      
     }
 
 
