@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Guidance
+title: Pocket Git Guide
 subtitle: Why and how
 date:   2016-01-31
 permalink: 
@@ -19,7 +19,7 @@ Git will help you doing the following things:
 * When sharing your work with other persons, you can work on your local computer without being connected to a shared repository, only synchronizing eventually.
 * No centralized locking of files - all team members have their own working copy on their own computers which allows each of them to work independently.
 
-Git is free and nowadays you can use free services to share your work with other persons, like for example [GitHub](http://github.com).
+Git is free and nowadays there are free services to share your work with other persons, like for example with [GitHub](http://github.com).
 
 Working with Git
 ---
