@@ -58,7 +58,7 @@
     </li>{% endfor %}</ul>
 
     <script>
-    $('.slide-gallery-content').hide();
+      $('.slide-gallery-content').hide();
     </script>
 
   </div>
@@ -241,21 +241,21 @@
     $(function () {
       $('.slides > :gt(0)').hide(0);
     });
-    </script>
-  </div>
-
-  {% if page.autoplay %}
-  <script>
-  displaySlides();
   </script>
-  {% endif %}
-  {% endunless %}
+</div>
 
-  {% unless page.nofooter %}
-  {% include footer.html %}
-  {% endunless %}
+{% if page.autoplay %}
+<script>
+  displaySlides();
+</script>
+{% endif %}
+{% endunless %}
 
-  {% include footer_scripts.html %}
+{% unless page.nofooter %}
+{% include footer.html %}
+{% endunless %}
+
+{% include footer_scripts.html %}
 </body>
 
 </html>
