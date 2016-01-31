@@ -185,13 +185,9 @@ code {
 
 pre {
   padding:0;
+  margin:$spacing-unit/2 0;
   overflow-x: scroll;
 
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 /**

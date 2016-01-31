@@ -25,9 +25,27 @@ Working with Git
 ---
 
 <table>
-<tr><td><hr>Create new local repository</td><td><hr>Clone existing repository to local</td></tr>
-<tr><td><code>git init</code></td><td><code>git clone </code></td></tr>
-<tr><td colspan="2">No matter which of the above commands you will use, Git keeps your project in a local repository, which is a hidden folder inside of the folder you want to have under Git version control.</td></tr>
+
+<tr>
+<td><hr>Create new local repository</td>
+<td><hr>Clone existing repository to local</td>
+</tr>
+
+<tr>
+<td>Move to the folder which should be the parent folder of you project
+<pre><code>cd /path/to/repo/</code></pre>
+Then initialize the Git repository with 
+<pre><code>git init</code></pre></td>
+
+<td>Move to folder under which the new project should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repository&gt;</code></pre>Where &lt;repository&gt; is any of the following: 
+<ul><li>ssh://[user@]host.xz[:port]/path/to/repo.git/</li>
+<li>git://host.xz[:port]/path/to/repo.git/</li>
+<li>http[s]://host.xz[:port]/path/to/repo.git/</li>
+<li>ftp[s]://host.xz[:port]/path/to/repo.git/</li>
+<li>rsync://host.xz/path/to/repo.git/</li></ul>
+</td>
+</tr>
+
 <tr><td colspan="2"><hr><center>Stage contents</center></td></tr>
 <tr><td colspan="2"><center><code>git add</code></center></td></tr>
 <tr><td colspan="2"><hr><center>Commit contents</center></td></tr>
