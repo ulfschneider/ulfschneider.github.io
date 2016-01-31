@@ -21,14 +21,13 @@ Git will help you doing the following things:
 
 Git is free and nowadays there are free services to share your work with other persons, like for example with [GitHub](http://github.com).
 
-Working with Git
----
+Convenient commands to achieve something with Git are:
 
 <table>
 
 <tr>
-<td><hr>Create new local repository</td>
-<td><hr>Clone existing repository to local</td>
+<td><hr><strong>Create new local repository</strong></td>
+<td><hr><strong>Clone existing repository to local</strong></td>
 </tr>
 
 <tr>
@@ -46,9 +45,9 @@ Then initialize the Git repository with
 </td>
 </tr>
 
-<tr><td colspan="2"><hr><center>Stage contents</center></td></tr>
+<tr><td colspan="2"><hr><center><strong>Stage contents</strong></center></td></tr>
 <tr><td colspan="2"><center><code>git add</code></center></td></tr>
-<tr><td colspan="2"><hr><center>Commit contents</center></td></tr>
+<tr><td colspan="2"><hr><center><strong>Commit contents</strong></center></td></tr>
 <tr><td colspan="2"><center><code>git commit</code></center></td></tr>
 </table>
 
