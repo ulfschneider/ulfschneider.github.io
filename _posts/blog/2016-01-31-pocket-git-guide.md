@@ -25,7 +25,7 @@ Git will help you doing the following things with a computer:
 <ul>
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, like the Linux operating system kernel, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
-<li>No centralized locking of files - all team members have their own working copy on their own computers which allows each of them to work independently.</li>
+<li>No centralized locking of files. All team members have their own working copy on their own computers which allows each of them to work independently.</li>
 </ul>
 </div>
 </div>
@@ -35,12 +35,12 @@ Git is free and nowadays there are services to share your work with other person
 Convenient commands to achieve something with Git are:
 
 <div class="grid">
-<div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
-Move to the folder which should be the parent folder of you project
+<div class="col-1-2 first"><hr><strong>Create new local repository</strong><br>
+Move to the folder which should be the parent folder of your project
 <pre><code>cd /path/to/repo/</code></pre>
 Then initialize the Git repository with 
 <pre><code>git init</code></pre></div>
-<div class="col-2-3 last"><hr><strong>Clone existing repository to local</strong><br>
+<div class="col-1-2 last"><hr><strong>Clone existing repository to local</strong><br>
 Move to the folder under which the new project should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is any of the following:<div class="extra-small">
 ssh://[user@]host.xz[:port]/path/to/repo.git/<br>
 git://host.xz[:port]/path/to/repo.git/<br>
@@ -55,6 +55,11 @@ rsync://host.xz/path/to/repo.git/
 
 <div class="col-1-1 first last"><hr><strong>Commit contents</strong>
 <pre><code>git commit</code></pre></div>
+
+<div class="col-1-2 first"><hr><strong>Branch</strong>
+<pre><code>git branch</code></pre></div>
+<div class="col-1-2 last"><hr><strong>Merge</strong>
+<pre><code>git merge</code></pre></div>
 </div>
 
 
