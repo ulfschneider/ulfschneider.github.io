@@ -7,6 +7,20 @@ permalink:
 author:
 abstract: A brief description why and how to use Git.
 ---
+**Contents**
+
+* Reasons to use Git
+* Tell Git who you are
+* Create new local repository
+* Clone existing repository to local
+* Status of your Git repository
+* Stage contents
+* Commit contents
+* Branch
+* Merge
+
+Reasons to use Git
+---
 Git will help you doing the following things with a computer:
 
 <div class="grid"><div class="col-1-2 first">
@@ -30,29 +44,47 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free and nowadays there are services to share your work with other persons, like for example via [GitHub](http://github.com).
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to get Git installed.
+
+The usual Git command structure is: 
+<pre><code>git commandname parameter1 parameter2 --option</code></pre> 
 
 Convenient commands to achieve something with Git are:
-
 <div class="grid">
+<div class="col-1-1 first last"><hr><strong>Tell Git who you are</strong><br>
+<pre><code>git config user.name "your name" --global</code></pre>
+<pre><code>git config user.email "your email address" --global</code></pre>
+Use the <code>-- global</code> option to tell Git that the given configuration will be the default for all projects on your computer. After these settings have been made, they will be added to any of your commits. And when you push your commits to a shared server, your name and email address will also appear on that server.</div>
+
 <div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
 Move to the folder which should contain your project
 <pre><code>cd /path/to/prj/</code></pre>
 Then initialize the Git repository for the project with 
 <pre><code>git init</code></pre></div>
 <div class="col-2-3 last"><hr><strong>Clone existing repository to local</strong><br>
-Move to the folder under which the existing repository should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is the path to the existing repository and has any of the following structures:<br>
-<div class="extra-small">
-ssh://[user@]host.xz[:port]/path/to/repo/<br>
-git://host.xz[:port]/path/to/repo/<br>
-http[s]://host.xz[:port]/path/to/repo/<br>
-ftp[s]://host.xz[:port]/path/to/repo/<br>
-rsync://host.xz/path/to/repo/
-</div>
+The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt; [new folder name]</code></pre>
+<code>&lt;repo&gt;</code> is the path to the existing repository and has any of the following structures:
+<ul style="word-break:break-all;">
+<li>ssh://[user@]host.xz[:port]/path/to/repo/</li>
+<li>git://host.xz[:port]/path/to/repo/</li>
+<li>http[s]://host.xz[:port]/path/to/repo/</li>
+<li>ftp[s]://host.xz[:port]/path/to/repo/</li>
+<li>rsync://host.xz/path/to/repo/</li>
+</ul>
+<code>[new folder name]</code> is the optional folder name of the cloned project on your computer.
 </div>
 
-<div class="col-1-1 first last"><hr><strong>Stage contents</strong>
-<pre><code>git add</code></pre></div>
+<div class="col-1-1 first last"><hr><strong>Status of your Git repository</strong><br>
+When inside of a local Git repository
+<pre><code>git status</code></pre>
+will tell you what branch you are currently working on and give you an overview about untracked changes and outstanding commits.
+</div>
+
+
+<div class="col-1-1 first last"><hr><strong>Stage contents</strong><br>
+To make a snapshot of your current work, which will be stored in the Git repository, make a
+<pre><code>git add [pathspec] [-A]</code></pre></div>
+<code>[pathspec]</code> specifies the files to be included into the snapshot. Wildcards are allowed. If you omit the <code>[pathspec]</code>, the <code>[-A]</code> option will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
 <div class="col-1-1 first last"><hr><strong>Commit contents</strong>
 <pre><code>git commit</code></pre></div>
