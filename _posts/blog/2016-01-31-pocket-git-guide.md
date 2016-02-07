@@ -36,12 +36,12 @@ Convenient commands to achieve something with Git are:
 
 <div class="grid">
 <div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
-Move to the folder which should be the parent folder of your project
-<pre><code>cd /path/to/repo/</code></pre>
-Then initialize the Git repository with 
+Move to the folder which should contain your project
+<pre><code>cd /path/to/prj/</code></pre>
+Then initialize the Git repository for the project with 
 <pre><code>git init</code></pre></div>
 <div class="col-2-3 last"><hr><strong>Clone existing repository to local</strong><br>
-Move to the folder under which the new project should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is any of the following:
+Move to the folder under which the existing repository should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is the path to the existing repository and has any of the following structures:<br>
 <div class="extra-small">
 ssh://[user@]host.xz[:port]/path/to/repo/<br>
 git://host.xz[:port]/path/to/repo/<br>
