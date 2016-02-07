@@ -35,18 +35,19 @@ Git is free and nowadays there are services to share your work with other person
 Convenient commands to achieve something with Git are:
 
 <div class="grid">
-<div class="col-1-2 first"><hr><strong>Create new local repository</strong><br>
+<div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
 Move to the folder which should be the parent folder of your project
 <pre><code>cd /path/to/repo/</code></pre>
 Then initialize the Git repository with 
 <pre><code>git init</code></pre></div>
-<div class="col-1-2 last"><hr><strong>Clone existing repository to local</strong><br>
-Move to the folder under which the new project should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is any of the following:<div class="extra-small">
-ssh://[user@]host.xz[:port]/path/to/repo.git/<br>
-git://host.xz[:port]/path/to/repo.git/<br>
-http[s]://host.xz[:port]/path/to/repo.git/<br>
-ftp[s]://host.xz[:port]/path/to/repo.git/<br>
-rsync://host.xz/path/to/repo.git/
+<div class="col-2-3 last"><hr><strong>Clone existing repository to local</strong><br>
+Move to the folder under which the new project should be cloned <pre><code>cd /path/to/parent/</code></pre>Then clone the existing repository into the parent <pre><code>git clone &lt;repo&gt;</code></pre>Where &lt;repo&gt; is any of the following:
+<div class="extra-small">
+ssh://[user@]host.xz[:port]/path/to/repo/<br>
+git://host.xz[:port]/path/to/repo/<br>
+http[s]://host.xz[:port]/path/to/repo/<br>
+ftp[s]://host.xz[:port]/path/to/repo/<br>
+rsync://host.xz/path/to/repo/
 </div>
 </div>
 
