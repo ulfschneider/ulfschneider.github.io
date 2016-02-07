@@ -10,14 +10,15 @@ abstract: A brief description why and how to use Git.
 **Contents**
 
 * Reasons to use Git
-* Tell Git who you are
-* Create new local repository
-* Clone existing repository to local
-* Status of your Git repository
-* Stage contents
-* Commit contents
-* Branch
-* Merge
+* Working with Git
+    * Tell Git who you are
+    * Create new local repository
+    * Clone existing repository to local
+    * Status of your Git repository
+    * Stage contents
+    * Commit contents
+    * Branch
+    * Merge
 
 Reasons to use Git
 ---
@@ -46,7 +47,9 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to get Git installed.
 
-The usual Git command structure is: 
+Working with Git
+---
+The usual Git command structure when working in the shell is: 
 <pre><code>git commandname parameter1 parameter2 --option</code></pre> 
 
 Convenient commands to achieve something with Git are:
