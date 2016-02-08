@@ -49,14 +49,11 @@ Git is free. When you try to use Git for the first time on a Mac (my preferred e
 
 Working with Git
 ---
-The usual Git command structure when working in the shell is: 
-<pre><code>git commandname parameter1 parameter2 --option</code></pre> 
-
 Convenient commands to achieve something with Git are:
 <div class="grid">
 <div class="col-1-1 first last"><hr><strong>Tell Git who you are</strong><br>
-<pre><code>git config user.name "your name" --global</code></pre>
-<pre><code>git config user.email "your email address" --global</code></pre>
+<pre><code>git config --global user.name "your name" </code></pre>
+<pre><code>git config --global user.email "your email address" </code></pre>
 Use the <code>-- global</code> option to tell Git that the given configuration will be the default for all projects on your computer. After these settings have been made, they will be added to any of your commits. And when you push your commits to a shared server, your name and email address will also appear on that server.</div>
 
 <div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
@@ -85,18 +82,25 @@ will tell you what branch you are currently working on and give you an overview 
 
 
 <div class="col-1-1 first last"><hr><strong>Stage contents</strong><br>
-To make a snapshot of your current work, which will be stored in the Git repository, make a
+To make a snapshot of your current work, which will be stored in the Git repository, call
 <pre><code>git add [pathspec] [-A]</code></pre></div>
-<code>[pathspec]</code> specifies the files to be included into the snapshot. Wildcards are allowed. If you omit the <code>[pathspec]</code>, the <code>[-A]</code> option will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
+If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged and uncommitted content remains only on your local computer. <code>[pathspec]</code> specifies the files to be included into the snapshot. Wildcards are allowed. If you omit the <code>[pathspec]</code>, the <code>[-A]</code> option will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
-<div class="col-1-1 first last"><hr><strong>Commit contents</strong>
-<pre><code>git commit</code></pre></div>
+<div class="col-1-1 first last"><hr><strong>Commit contents</strong><br>
+Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing.
+<pre><code>git commit [-a] -m "your commit message"</code></pre>
+<code>[-a]</code> is a nice shorthand option to avoid the staging of content with a separate <code>git add</code> command. By using the option <code>[-a]</code> you don´t need the <code>git add</code> command, because all modified files will automatically be staged and subsequently committed. With <code>-m "your commit message"</code> you tell your co-workers and probably yourself why you made the commit.
+</div>
 
 <div class="col-1-2 first"><hr><strong>Branch</strong>
 <pre><code>git branch</code></pre></div>
 <div class="col-1-2 last"><hr><strong>Merge</strong>
 <pre><code>git merge</code></pre></div>
 </div>
+
+git log
+git rm
+git mv
 
 
 
