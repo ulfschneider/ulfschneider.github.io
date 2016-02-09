@@ -262,6 +262,10 @@ li.image-grid h2 {
   margin: 0;
 }
 
+.toc li { 
+  list-style-type: none;
+}
+
 
 .w200 img, img.w200 {
   max-width: 200px;

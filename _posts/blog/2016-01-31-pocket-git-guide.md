@@ -10,15 +10,15 @@ abstract: A brief description why and how to use Git.
 **Contents**
 
 * Reasons to use Git
-* Working with Git
-    * Tell Git who you are
-    * Create new local repository
-    * Clone existing repository to local
-    * Status of your Git repository
-    * Stage contents
-    * Commit contents
-    * Branch
-    * Merge
+* Tell Git who you are
+* Create new local repository
+* Clone existing repository to local
+* Status of your Git repository
+* Stage contents
+* Commit contents
+* Branch
+* Merge
+{:.toc}
 
 Reasons to use Git
 ---
@@ -47,14 +47,13 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to get Git installed.
 
-Working with Git
----
 Convenient commands to achieve something with Git are:
+
 <div class="grid">
 <div class="col-1-1 first last"><hr><strong>Tell Git who you are</strong><br>
 <pre><code>git config --global user.name "your name" </code></pre>
 <pre><code>git config --global user.email "your email address" </code></pre>
-Use the <code>-- global</code> option to tell Git that the given configuration will be the default for all projects on your computer. After these settings have been made, they will be added to any of your commits. And when you push your commits to a shared server, your name and email address will also appear on that server.</div>
+Use the <code>--global</code> option to tell Git that the given configuration will be the default for all projects on your computer. After these settings have been made, they will be added to any of your commits. And when you push your commits to a shared server, your name and email address will also appear on that server.</div>
 
 <div class="col-1-3 first"><hr><strong>Create new local repository</strong><br>
 Move to the folder which should contain your project
@@ -87,13 +86,18 @@ To make a snapshot of your current work, which will be stored in the Git reposit
 If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged and uncommitted content remains only on your local computer. <code>[pathspec]</code> specifies the files to be included into the snapshot. Wildcards are allowed. If you omit the <code>[pathspec]</code>, the <code>[-A]</code> option will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
 <div class="col-1-1 first last"><hr><strong>Commit contents</strong><br>
-Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing.
+Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. And each commit contains a reference to its direct predecessor, the parent comit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past.
 <pre><code>git commit [-a] -m "your commit message"</code></pre>
 <code>[-a]</code> is a nice shorthand option to avoid the staging of content with a separate <code>git add</code> command. By using the option <code>[-a]</code> you don´t need the <code>git add</code> command, because all modified files will automatically be staged and subsequently committed. With <code>-m "your commit message"</code> you tell your co-workers and probably yourself why you made the commit.
 </div>
 
-<div class="col-1-2 first"><hr><strong>Branch</strong>
-<pre><code>git branch</code></pre></div>
+<div class="col-1-2 first"><hr><strong>Branch</strong><br>
+While commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository.
+<pre><code>git branch</code></pre>
+will display a list of current branches.
+<pre><code>git branch</code></pre>
+
+</div>
 <div class="col-1-2 last"><hr><strong>Merge</strong>
 <pre><code>git merge</code></pre></div>
 </div>
