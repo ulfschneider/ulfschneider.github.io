@@ -39,8 +39,7 @@ hr {
  * Set `margin-bottom` to maintain vertical rhythm
  */
  h1, h2, h3, h4, h5, h6,
- p, blockquote, pre,
- ul, ol, dl,
+ p, blockquote, ul, ol, dl,
  %vertical-rhythm {
   margin-bottom: $spacing-unit;
 }
@@ -179,13 +178,17 @@ dd {
   font-size: $code-font-size;  
   background:$grey-color-light;
   font-weight:500;  
+  display:inline-block;
+  .lineno {
+    font-family:$thin-font-family;
+    font-weight:normal;
+  }
 }
 
-pre {  
-  padding:3px;
-  background:$grey-color-light;  
+.highlight {
   overflow:scroll;
 }
+
 
 /**
  * Wrapper
