@@ -45,11 +45,11 @@ Technique 1: Use Adobe Lightroom or any software that allows you to correct the 
 
 Choose your motive and take a properly exposed picture without filter. Keep the exposure of that image in mind.
 
-In the next step you take a picture of the same motive but with your filter. In order to do that, if you have not already a filter entry, create one in the Exposure Guide for the filter you want to use and configure as a starting point the theoretical darkening effect for the filter - e.g. f-stop 10 or ND3.0 for a Big Stopper. Let the the Exposure Guide calculate the exposure that is needed for your picture by opening the timer for the filter and selecting the exposure of the image taken before (the one that was taken without filter). The Exposure Guide will calculate the exposure time for your second picture.
+In the next step you take a picture of the same motive but with your filter. In order to do that, if you have not already a filter entry, create one in the Exposure Guide for the filter you want to use and configure as a starting point the theoretical darkening effect for the filter - e.g. f-stop 10 or ND3.0 for a Lee Big Stopper. Let the Exposure Guide calculate the exposure that is needed for your picture by opening the timer for the filter and selecting the exposure of the image taken before (the one that was taken without filter). The Exposure Guide will calculate the exposure time for your second picture. Take the second picture with the calculated exposure time.
 
-Now you have two images of the same motive. One taken with the filter and one without. Import those two images into Adobe Lightroom and compare the histograms. Adjust the exposure of the image that was taken with the filter until both histograms look similar. When you are satisfied with the result you can read the correcting f-stop value of the filter image.
+Now you have two images of the same motive. One taken with the filter and one without. Import those two images into Adobe Lightroom and compare the histograms (or use another software which allows to see histograms of your images). Adjust the exposure of the image that was taken with the filter until both histograms look similar. When you are satisfied with the result you can read the correcting f-stop value of the filter image. The f-stop value should be shown somewhere in your software tool.
 
-This correcting value needs to be added to the f-stop value of your filter entry in the Exposure Guide. If you have taken, for example, the filter image with a Big Stopper wich has a theoretical f-stop of 10, and you needed to brighten you image by 0.5 f-stops, your new f-stop value will be 10.5. If you needed to darken your image by 0.5 f-stops, your new f-stop value will be 9.5.
+Now add the correcting f-stop value to the f-stop value of your filter entry in the Exposure Guide. If you have taken, for example, the filter image with a Big Stopper wich has a theoretical f-stop of 10, and you needed to brighten your image by 0.5 f-stops, your new f-stop value will be 10.5. If you needed to darken your image by 0.5 f-stops, your new f-stop value will be 9.5.
 
 Technique 2: Take experimental images by changing the exposure
 --
@@ -62,6 +62,6 @@ In the next step you take a comparative image of the same motive by using your f
 
 If the filter image has not the right exposure, you need to take more images while making adjustments to the exposure. Choose a longer exposure if your image is underexposed and choose a shorter exposure when your image is overexposed.
 
-After you have taken an image that has the right exposure you need to open the dialog Calibrate with exposure times in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter.
+After you have taken an image that has the right exposure you need to open the dialog **Calibrate with exposure times** in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter.
 
 Have fun taking pictures!
