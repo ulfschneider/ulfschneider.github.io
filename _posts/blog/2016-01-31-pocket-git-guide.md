@@ -5,7 +5,7 @@ subtitle:
 date:   2016-01-31
 permalink: 
 author:
-abstract: A brief description why and how to use Git.
+abstract: A brief description about why and how to use Git.
 ---
 * Reasons to use Git
 * Tell Git who you are
@@ -45,7 +45,7 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to get Git installed.
 
-Convenient commands to achieve something with Git are:
+Convenient commands to achieve something with Git in the command shell are:
 
 Tell Git who you are
 ---
@@ -79,13 +79,13 @@ Then clone the existing repository into the parent
 git clone <repo> [new folder name]
 {% endhighlight %}
 <code>&lt;repo&gt;</code> is the path to the existing repository and has any of the following structures:
-
-* ssh://[user@]host.xz[:port]/path/to/repo/
-* git://host.xz[:port]/path/to/repo/
-* http[s]://host.xz[:port]/path/to/repo/
-* ftp[s]://host.xz[:port]/path/to/repo/
-* rsync://host.xz/path/to/repo/
-
+{% highlight bash linenos %}
+ssh://[user@]host.xz[:port]/path/to/repo/
+git://host.xz[:port]/path/to/repo/
+http[s]://host.xz[:port]/path/to/repo/
+ftp[s]://host.xz[:port]/path/to/repo/
+rsync://host.xz/path/to/repo/
+{% endhighlight %}
 <code>new folder name</code> is the optional folder name of the cloned project on your computer.
 
 Status of your Git repository
@@ -154,6 +154,10 @@ git checkout master
 git merge <your-branch-name>
 {% endhighlight %}
 The first command will bring you into the master branch, the second command will pull in the changes from the named branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy. To be more precise, all commits from your named branch will be merged into your working copy.
+
+fast forward
+merge commit
+merge conflict
 
 
 git merge
