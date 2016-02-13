@@ -165,27 +165,26 @@ dd {
   > :last-child {
     margin-bottom: 0;
   }
+
+  @include media-query($on-narrow) {
+    margin-left: 0;
+  }
 }
 
 /**
  * Code formatting
  */
- pre,
  code {
   font-family:$code-font-family;
-  font-size: $code-font-size;
-}
-
-code {
-  padding:2px;  
-  white-space: normal;
-  background:$grey-color-light;    
+  font-size: $code-font-size;  
+  background:$grey-color-light;
+  font-weight:500;  
 }
 
 pre {  
-  padding:0;
-  margin:$spacing-unit 0;
-  white-space: normal;
+  padding:3px;
+  background:$grey-color-light;  
+  overflow:scroll;
 }
 
 /**

@@ -26,14 +26,12 @@ $spacing-unit: 30px;
 
 $text-color:       #222;
 $background-color: #ffffff;
-$brand-color:      #08c;
 $header-fallback-color: #ffffff;
 $header-background-color: #ffffff;
 $header-color: $text-color;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       lightgray;
+$grey-color-light: #eee;
 
 // Width of the content area
 $content-width:    750px;
