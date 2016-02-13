@@ -93,9 +93,10 @@ Contents which have been staged must be committed in order to reference them. An
 
 <div class="col-1-2 first"><hr><strong>Branch</strong><br>
 While commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository.
-<pre><code>git branch</code></pre>
-will display a list of current branches.
-<pre><code>git branch</code></pre>
+<pre><code>git branch [your branch name] [...]</code></pre>
+<code>git branch</code> allone will display you get the list of branches, where the current branch is indicated by an asterisk.
+
+<pre><code>git branch []</code></pre>
 
 </div>
 <div class="col-1-2 last"><hr><strong>Merge</strong>
