@@ -132,7 +132,7 @@ Will create a new branch for you. Choose a short descriptive branch name.
 {% highlight bash %}
 git checkout <your-branch-name>
 {% endhighlight %}
-after you have created your branch.
+after you have created your branch. Whatever you commit from that point on will be inside of your new branch and nowhere else.
 
 Again, there is a shorthand command for creating a branch and making it the current working copy all at once:
 {% highlight bash %}
@@ -146,6 +146,15 @@ will show you the current list of branches with a * in front of the new created 
 
 Merge
 ---
+Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw your work away, you probably have to bring the contents of your branch into the master branch. That´s what merge is for.
+
+To merge any branch into your master branch, you have to
+{% highlight bash linenos %}
+git checkout master
+git merge <your-branch-name>
+{% endhighlight %}
+The first command will bring you into the master branch, the second command will pull in the changes from the named branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy. To be more precise, all commits from your named branch will be merged into your working copy.
+
 
 git merge
 git log
