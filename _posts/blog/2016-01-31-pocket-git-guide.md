@@ -53,9 +53,12 @@ Tell Git who you are
 git config [--global] user.name ["your name"]
 git config [--global] user.email ["your email address"]
 {% endhighlight %}
-Use the <code>--global</code> option to tell Git that the given configuration will be the default for all projects on your computer. After these settings have been made, they will be added to any of your commits. When you then push commits to a shared server, your name and email address will also appear on that server. 
+Use the <code>--global</code> option to tell Git that the given configuration will be the default for all of your projects on your computer. After these settings have been made, they will be added to your commits. When you then push commits to a shared server, your name and email address will also appear on that server. 
 
-Use the commands without your name or email address to detect the current settings.
+Detect your configuration settings with 
+{% highlight bash %}
+git config --list
+{% endhighlight %}
 
 Create new local repository
 ---
