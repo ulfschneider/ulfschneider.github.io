@@ -5,7 +5,7 @@ subtitle:
 date:   2016-01-31
 permalink: 
 author:
-abstract: A brief description about why and how to use Git.
+abstract: A brief approach on why and how to use Git. Mainly inspired by "Git for Humans".
 ---
 * Reasons to use Git
 * Tell Git who you are
@@ -103,13 +103,17 @@ Stage contents
 ---
 To make a snapshot of your current work, which will be stored in the Git repository, call
 {% highlight bash %}
-git add [pathspec] [-A]
+git add [pathspec]
 {% endhighlight %}
-If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged but uncommitted content remains only on your local computer and will not be send to a shared repository somewhere else. 
-
 <code>pathspec</code> specifies the files to be included into the snapshot. Wildcards are allowed. 
 
-If you omit the <code>pathspec</code>, the <code>-A</code> option will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
+If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged but uncommitted content remains only on your local computer and will not be send to a shared repository somewhere else. 
+
+If you omit the <code>pathspec</code>, use
+{% highlight bash %}
+git add -all
+{% endhighlight %}
+which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
 Commit contents
 ---
@@ -119,7 +123,13 @@ git commit [-a] [-m "your commit message"]
 {% endhighlight %}
 <code>-a</code> is a nice shorthand option to avoid the staging of content with a previous <code>git add</code> command. By using the option <code>-a</code> you don´t need the <code>git add</code> command, because all modified files will automatically be staged and subsequently committed. With <code>-m "your commit message"</code> you tell your co-workers and probably yourself why you made the commit.
 
-If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide a commit message. You can configure what editor to use with the command
+An even shorter form of committing is:
+{% highlight bash %}
+git commit -am "your commit message"
+{% endhighlight %}
+Here the option to stage all unstaged contents and the option to provide a commit message are combined in <code>-am</code>. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
+
+If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the message. You can configure what editor to use with 
 {% highlight bash %}
 git config --global core.editor <editor-name>
 {% endhighlight %}
@@ -129,6 +139,10 @@ To see the currently configured editor, type
 git config --global core.editor
 {% endhighlight %}
 
+To see the history of commits use
+{% highlight bash %}
+git log
+{% endhighlight %}
 
 Branch
 ---
@@ -158,9 +172,15 @@ git branch
 {% endhighlight %}
 will show you the current list of branches with a * in front of the new created and now active branch.
 
+To see the history of commits in a branch-oriented tree format, use
+{% highlight bash %}
+git log --graph --oneline
+{% endhighlight %}
+The <code>--graph</code> option will produce the branch tree and the <code>--oneline</code> option leads to each commit being displayed in a single line of the tree structure.
+
 Merge
 ---
-Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for.
+Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for. All commits that have been made in your source branch have to be merged into your master branch.
 
 To merge any branch into your master branch, you have to
 {% highlight bash linenos %}
@@ -169,10 +189,14 @@ git merge <your-source-branch>
 {% endhighlight %}
 The first command will bring you into the master branch, the second command will pull in the changes from the source branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy by
 {% highlight bash linenos %}
-git checkout <destination-branch>
-git merge <source-branch>
+git checkout <your-destination-branch>
+git merge <your-source-branch>
 {% endhighlight %}
 To be more precise, all commits from your source branch will be merged into your working copy.
+
+The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The head or tip of the destination branch and the head of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
+
+A **true merge** is something different. That´s when both, the source branch and the destination branch have been modified before doing the merge. This will lead to a new so called **merge commit**.
 
 todo
 ---
@@ -184,9 +208,9 @@ todo
 * files not to track
 * git diff
 * git merge
-* git log
 * git rm
 * git mv
+
 
 
 
