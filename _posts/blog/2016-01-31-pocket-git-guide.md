@@ -200,7 +200,7 @@ A **true merge** is something different. That´s when both, the source branch an
 
 todo
 ---
-* fast forward
+* fast  forward
 * merge commit
 * merge conflict
 * remove branch
