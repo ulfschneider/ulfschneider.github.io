@@ -115,9 +115,20 @@ Commit contents
 ---
 Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a reference to its direct predecessor, the parent comit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past.
 {% highlight bash %}
-git commit [-a] -m "your commit message"
+git commit [-a] [-m "your commit message"]
 {% endhighlight %}
 <code>-a</code> is a nice shorthand option to avoid the staging of content with a previous <code>git add</code> command. By using the option <code>-a</code> you don´t need the <code>git add</code> command, because all modified files will automatically be staged and subsequently committed. With <code>-m "your commit message"</code> you tell your co-workers and probably yourself why you made the commit.
+
+If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide a commit message. You can configure what editor to use with the command
+{% highlight bash %}
+git config --global core.editor <editor-name>
+{% endhighlight %}
+
+To see the currently configured editor, type
+{% highlight bash %}
+git config --global core.editor
+{% endhighlight %}
+
 
 Branch
 ---
@@ -149,24 +160,33 @@ will show you the current list of branches with a * in front of the new created 
 
 Merge
 ---
-Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw your work away, you probably have to bring the contents of your branch into the master branch. That´s what merge is for.
+Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for.
 
 To merge any branch into your master branch, you have to
 {% highlight bash linenos %}
 git checkout master
-git merge <your-branch-name>
+git merge <your-source-branch>
 {% endhighlight %}
-The first command will bring you into the master branch, the second command will pull in the changes from the named branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy. To be more precise, all commits from your named branch will be merged into your working copy.
+The first command will bring you into the master branch, the second command will pull in the changes from the source branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy by
+{% highlight bash linenos %}
+git checkout <destination-branch>
+git merge <source-branch>
+{% endhighlight %}
+To be more precise, all commits from your source branch will be merged into your working copy.
 
-fast forward
-merge commit
-merge conflict
-
-
-git merge
-git log
-git rm
-git mv
+todo
+---
+* fast forward
+* merge commit
+* merge conflict
+* remove branch
+* Meaning of HEAD
+* files not to track
+* git diff
+* git merge
+* git log
+* git rm
+* git mv
 
 
 
