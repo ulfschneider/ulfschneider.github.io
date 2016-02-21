@@ -373,12 +373,13 @@ figcaption:before, .figcaption:before {
             }
             [data-scribe="element:screen_name"] {
               font-weight:$title-font-weight;
-            }
-          }
+            }            
+          }          
           img {
             display: none;
           }
         }
+
         p:after {
           margin:0;
         }
@@ -388,6 +389,10 @@ figcaption:before, .figcaption:before {
         p.interact {
           display:none;
         }
+        .tco-ellipsis {
+          display:none;
+        }
+
       }
     }
   }
