@@ -50,7 +50,7 @@
           <h2>{{image.message}}</h2>
           {% elsif image.abstract %}
           <h2>{{image.abstract}}</h2>
-          {% elsif image.title %}
+          {% elsif image.title and image.title != 'notitle' %}
           <h2>{{image.title}}</h2>
           {% endif %}
         </div>
@@ -113,7 +113,7 @@
           <h2>  {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.message}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% elsif image.abstract %}
           <h2> {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.abstract}} {% unless page.autoplay %}</a>{% endunless %}</h2>
-          {% elsif image.title %}
+          {% elsif image.title  and image.title != 'notitle' %}
           <h2> {% unless page.autoplay %}<a href="{{ image.url | prepend: site.baseurl }}">{% endunless %}{{image.title}} {% unless page.autoplay %}</a>{% endunless %}</h2>
           {% endif %}
         </div>
