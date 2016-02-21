@@ -9,11 +9,11 @@ abstract: A brief approach on why and how to use Git. Mainly inspired by "Git fo
 ---
 * Reasons to use Git
 * Tell Git who you are
-* Create new local repository
-* Clone existing repository to local
-* Status of your Git repository
-* Stage contents
-* Commit contents
+* Init 
+* Clone
+* Status 
+* Stage 
+* Commit 
 * Branch
 * Merge
 {:.toc}
@@ -30,13 +30,14 @@ Git will help you doing the following things with a computer:
 <li>No need to give your files version indicating names, like essay_v1.txt, essay_v2.txt and so on.</li>
 <li>It doesn´t play a role if you want to work on a single file or a multi-file project organized in many folders.</li>
 <li>Convert any file or folder structure into a project that is under version control.</li>
+<li>Have the advantage of powerful version control without the need to setup a server or creating an account somewhere.</li>
 <li>Work consistently on multiple different operating systems, like MacOS, Linux and Windows.</li>
 </ul>
 </div>
 <div class="col-1-2 last">
 <strong>Team</strong>
 <ul>
-<li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, like the Linux operating system kernel, but also scales down nicely for a small team.</li>
+<li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
 <li>No centralized locking of files. All team members have their own working copy on their own computers which allows each of them to work independently.</li>
 </ul>
@@ -103,13 +104,13 @@ Stage contents
 ---
 To make a snapshot of your current work, which will be stored in the Git repository, call
 {% highlight bash %}
-git add [pathspec]
+git add [<pathspec>]
 {% endhighlight %}
-<code>pathspec</code> specifies the files to be included into the snapshot. Wildcards are allowed. 
+<code>&lt;pathspec&gt;</code> specifies the files to be included into the snapshot. Wildcards are allowed. 
 
 If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged but uncommitted content remains only on your local computer and will not be send to a shared repository somewhere else. 
 
-If you omit the <code>pathspec</code>, use
+If you omit the <code>&lt;pathspec&gt;</code>, use
 {% highlight bash %}
 git add -all
 {% endhighlight %}
@@ -196,7 +197,7 @@ To be more precise, all commits from your source branch will be merged into your
 
 The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The head or tip of the destination branch and the head of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
-A **true merge** is something different. That´s when both, the source branch and the destination branch have been modified before doing the merge. This will lead to a new so called **merge commit**.
+A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. This will lead to a  so called **merge commit**.
 
 todo
 ---
