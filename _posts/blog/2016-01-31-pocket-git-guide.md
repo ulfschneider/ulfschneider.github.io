@@ -112,7 +112,7 @@ If a version of a file is not staged, Git doesn´t know how to refer to that ver
 
 If you omit the <code>&lt;pathspec&gt;</code>, use
 {% highlight bash %}
-git add -all
+git add --all
 {% endhighlight %}
 which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
