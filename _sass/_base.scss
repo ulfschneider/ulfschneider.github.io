@@ -176,8 +176,12 @@ dd {
  code {
   font-family:$code-font-family;
   font-size: $code-font-size;  
-  background:$grey-color-light;
   display:inline-block;
+  border:1px solid $text-color;
+  padding:0px 3px;
+  white-space:pre;
+  background:$text-color;
+  color:$background-color;
 }
 
 pre.highlight {

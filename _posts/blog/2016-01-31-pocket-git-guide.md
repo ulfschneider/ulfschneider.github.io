@@ -88,7 +88,7 @@ cd /path/to/parent/
 Then clone the existing repository into the parent 
 
 ```
-git clone <repo> [new folder name]
+git clone <repo> [<new-folder-name>]
 ```
 
 `<repo>` is the path to the existing repository and has any of the following structures:
@@ -101,7 +101,7 @@ ftp[s]://host.xz[:port]/path/to/repo/
 rsync://host.xz/path/to/repo/
 ```
 
-`new folder name` is the optional folder name of the cloned project on your computer.
+`<new-folder-name>` is the optional folder name of the cloned project on your computer.
 
 Status of your Git repository
 ---
