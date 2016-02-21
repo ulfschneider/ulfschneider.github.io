@@ -21,7 +21,7 @@
             <img src="{{p.thumburl}}"/>
             {% if p.abstract %}
             <h2>{{p.abstract}}</h2>
-            {% elsif p.title %}
+            {% elsif p.title and p.title != 'notitle' %}
             <h2>{{p.title}}</h2>
             {% endif %}
           </div>
@@ -32,7 +32,7 @@
             <img src="{{p.thumburl}}"/>
             {% if p.abstract %}
             <h2>{{p.abstract}}</h2>
-            {% elsif p.title %}
+            {% elsif p.title and p.title != 'notitle' %}
             <h2>{{p.title}}</h2>
             {% endif %}
           </div>

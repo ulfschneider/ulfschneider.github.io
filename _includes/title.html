@@ -1,7 +1,9 @@
 
 <div class="title-wrapper">
     {% if page.title %}
+    {% unless page.title == 'notitle' %}
     <h1 class="title">{{ page.title }}</h1>
+    {% endunless %}
     {% elsif page.message %}
     <h1 class="title">{{ page.message }}</h1>
     {% endif %}

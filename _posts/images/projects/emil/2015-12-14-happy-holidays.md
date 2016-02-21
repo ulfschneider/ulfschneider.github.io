@@ -1,6 +1,6 @@
 ---
 layout: image
-title: 
+title: notitle
 subtitle: 
 permalink: /happy-holidays
 tags: emil
