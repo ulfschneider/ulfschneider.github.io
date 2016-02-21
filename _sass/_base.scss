@@ -178,14 +178,15 @@ dd {
   font-size: $code-font-size;  
   background:$grey-color-light;
   display:inline-block;
-  .lineno {
-    font-family:$thin-font-family;
-    font-weight:normal;
-  }
 }
 
-.highlight {
+pre.highlight {
+  margin:0;
+}
+
+div.highlighter-rouge {
   overflow:scroll;
+  margin-bottom:$spacing-unit;
 }
 
 
