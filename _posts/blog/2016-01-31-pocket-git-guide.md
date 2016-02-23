@@ -141,15 +141,15 @@ Contents which have been staged must be committed in order to reference them. An
 git commit [-a] [-m "your commit message"]
 ```
 
-`-a` is a nice shorthand option to avoid the staging of content with a previous `git add` command. By using the option `-a` you don´t need the `git add` command, because all modified files will automatically be staged and subsequently committed. With `-m "your commit message"` you tell your co-workers and probably yourself why you made the commit.
+`-a` is a nice shorthand option to even stage content which has been modified or deleted without a previous `git add` command. New contents still need to be staged with the `git add` command. With `-m "your commit message"` you tell your co-workers and probably yourself why you made the commit.
 
-An even shorter form of committing is:
+An even shorter form of committing in that case is:
 
 ```
 git commit -am "your commit message"
 ```
 
-Here the option to stage all unstaged contents and the option to provide a commit message are combined in `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
+Here the option to stage modified and deleted contents and the option to provide a commit message are combined in `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
 
 If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the message. You can configure what editor to use with 
 
@@ -171,11 +171,11 @@ git log
 
 Branch
 ---
-Anything in Git is a branch. The first branch of a Git repository is the master branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
+Any contents in Git must be in a branch. The first branch of a Git repository is the master branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
 
-A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would make a branch to experiment with some new feature inside of your project, to fix a bug or to do other things which you want to have separated from everything else until you have truly found what you are after in your branch. 
+A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would make a branch to experiment with some new feature inside of your project, to fix a bug, develop a new feature or to do other things which you want to have separated from everything else until you have truly found what you are after in your branch. 
 
-While you can have multiple branches in your repository, there is always exact one working branch, which is the one you are currently working on. Any commit you make, will be against the working branch.
+While you can have multiple branches in your repository, there is always exact one working branch in your repository, which is the one you are currently working on. Any commit you make, will be against the working branch.
 
 ```
 git branch <your-branch-name>
@@ -233,9 +233,9 @@ git merge <your-source-branch>
 
 To be more precise, all commits from your source branch will be merged into your working copy.
 
-The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The head or tip of the destination branch and the head of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
+The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The tip (last commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
-A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. This will lead to a  so called **merge commit**.
+A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. A fast-forward then is no longer possible and the situation will lead to a so called **merge commit**.
 
 todo
 ---
