@@ -7,15 +7,15 @@ permalink:
 author:
 abstract: A brief approach on why and how to use Git. Mainly inspired by "Git for Humans".
 ---
-* Reasons to use Git
-* Tell Git who you are
-* Init 
-* Clone
-* Status 
-* Stage 
-* Commit 
-* Branch
-* Merge
+* <a href="#reasons-to-use-git">Reasons to use Git</a>
+* <a href="#tell-git-who-you-are">Tell Git who you are</a>
+* <a href="#create-a-new-local-repository">Create a new local repository</a>
+* <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
+* <a href="#status-of-your-repository">Status of your repository</a>
+* <a href="#stage-to-tell-git-what-to-refer-to">Stage to tell git what to refer to</a>
+* <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
+* <a href="#branch-to-isolate">Branch to isolate</a>
+* <a href="#merge-to-include">Merge to include</a>
 {:.toc}
 
 Reasons to use Git
@@ -77,7 +77,7 @@ Then initialize the Git repository for the project with
 git init
 ```
 
-Clone existing repository to local
+Clone an existing repository to local
 ---
 The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned 
 
@@ -103,7 +103,7 @@ rsync://host.xz/path/to/repo/
 
 `<new-folder-name>` is the optional folder name of the cloned project on your computer.
 
-Status of your Git repository
+Status of your repository
 ---
 When inside of a local Git repository
 
@@ -113,7 +113,7 @@ git status
 
 will tell you what branch you are currently working on and give you an overview about untracked changes and outstanding commits.
 
-Stage contents
+Stage to tell Git what to refer to
 ---
 To make a snapshot of your current work, which will be stored in the Git repository, call
 
@@ -133,7 +133,7 @@ git add --all
 
 which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
 
-Commit contents
+Commit to make a snapshot of your work
 ---
 Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a reference to its direct predecessor, the parent comit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past.
 
@@ -169,7 +169,7 @@ To see the history of commits use
 git log
 ```
 
-Branch
+Branch to isolate
 ---
 Any contents in Git must be in a branch. The first branch of a Git repository is the master branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
 
@@ -213,7 +213,7 @@ git log --graph --oneline
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
 
-Merge
+Merge to include
 ---
 Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for. All commits that have been made in your source branch have to be merged into your master branch.
 
@@ -235,18 +235,16 @@ To be more precise, all commits from your source branch will be merged into your
 
 The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The tip (last commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
-A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. A fast-forward then is no longer possible and the situation will lead to a so called **merge commit**.
+A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. A fast-forward then is no longer possible and Git has to figure out the combined state of the merge, wich will lead to a so called **merge commit**.
 
 todo
 ---
-* fast  forward
 * merge commit
 * merge conflict
 * remove branch
 * Meaning of HEAD
 * files not to track
 * git diff
-* git merge
 * git rm
 * git mv
 
