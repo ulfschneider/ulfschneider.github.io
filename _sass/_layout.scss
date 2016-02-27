@@ -72,7 +72,6 @@
       padding:0;
       margin:0;
       margin-bottom:$spacing-unit;
-      @extend %nolinkstyle;
     }
 
   }
@@ -295,8 +294,6 @@ figcaption:before, .figcaption:before {
   width: $spacing-unit;
   height:0;
   display:block;
-
-  @extend %linkstyle;
 }
 
 .figcaption {
