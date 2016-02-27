@@ -7,18 +7,24 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+ body, h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
   font-size:inherit;
 }
 
+hr {
+  border:0;
+  border-bottom: 1px dotted $text-color;
+  margin:$spacing-unit/2 0;
+}
+
 /**
  * Basic styling
  */
-body {
+ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
@@ -32,10 +38,9 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl,
-%vertical-rhythm {
+ h1, h2, h3, h4, h5, h6,
+ p, blockquote, ul, ol, dl,
+ %vertical-rhythm {
   margin-bottom: $spacing-unit;
 }
 
@@ -55,7 +60,7 @@ h3,h4,h5,h6 {
 /**
  * Images
  */
-img {
+ img {
   max-width: 100%;
   max-height:800px;
   vertical-align: top;
@@ -65,14 +70,14 @@ img {
 /**
  * Figures
  */
-figure > img {
+ figure > img {
   display: block;
 }
 
 /**
  * Lists
  */
-ul {
+ ul {
   list-style: disc outside;
 }
 
@@ -116,7 +121,7 @@ dd {
 /**
  * Links
  */
-a {
+ a {
   @extend %linkstyle;
 }
 
@@ -142,7 +147,7 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
+ blockquote {
   color: $text-color;
   padding-left: $spacing-unit / 2;
   margin-left: -$spacing-unit / 2;
@@ -159,36 +164,40 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
+
+  @include media-query($on-narrow) {
+    margin-left: 0;
+  }
 }
 
 /**
  * Code formatting
  */
-pre,
-code {
-  font-size: $code-font-size;
-  border-radius: 3px;
+ code {
+  font-family:$code-font-family;
+  font-size: $code-font-size;  
+  display:inline-block;
+  border:1px solid $text-color;
+  padding:0px 3px;
+  white-space:pre;
+  background:$text-color;
+  color:$background-color;
 }
 
-code {
-  padding: 1px 5px;
+pre.highlight {
+  margin:0;
 }
 
-pre {
-  padding: 8px 12px;
-  overflow-x: scroll;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
+div.highlighter-rouge {
+  overflow:scroll;
+  margin-bottom:$spacing-unit;
 }
+
 
 /**
  * Wrapper
  */
-.wrapper {
+ .wrapper {
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
@@ -207,7 +216,7 @@ pre {
 /**
  * Clearfix
  */
-%clearfix {
+ %clearfix {
 
   &:after {
     content: "";
@@ -220,12 +229,20 @@ strong, b {
   font-family: $title-font-family;
 }
 
+.small {
+  font-size:$small-font-size;
+}
+
+.extra-small {
+  font-size:$extra-small-font-size;
+}
+
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-sub,
-sup {
+ sub,
+ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -263,4 +280,110 @@ table tbody tr td {
 
 table tbody tr td:last-child, table thead tr th:last-child {
   padding-right: 0;
+}
+
+/* grid */
+.grid {
+  width: 100%;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+.col-2-3, .col-8-12 {
+  width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+  width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+  width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+  width: 25%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+  width: 16.667%;
+}
+
+.col-1-7 {
+  width: 14.28%;
+}
+
+.col-1-8 {
+  width: 12.5%;
+}
+
+.col-1-9 {
+  width: 11.1%;
+}
+
+.col-1-10 {
+  width: 10%;
+}
+
+.col-1-11 {
+  width: 9.09%;
+}
+
+.col-1-12 {
+  width: 8.33%
+}
+
+/* Layout Columns */
+
+.col-11-12 {
+  width: 91.66%
+}
+
+.col-10-12 {
+  width: 83.333%;
+}
+
+.col-9-12 {
+  width: 75%;
+}
+
+.col-5-12 {
+  width: 41.66%;
+}
+
+.col-7-12 {
+  width: 58.33%
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+
+  @include media-query($on-palm) {
+    width:100%;
+    float:none;
+    clear:both;
+    padding:0;
+  } 
+}
+
+.last {
+  padding-right:0;
+}
+
+.first {
+  padding-left:0;
 }
