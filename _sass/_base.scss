@@ -133,12 +133,10 @@ dd {
   background-image: -moz-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
   background-image: -o-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
   background-image: linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
-  /*border-bottom:1px solid $text-color;*/
 }
 
 %nolinkstyle {
   background-image:none;
-  border-bottom:none;
 }
 
 ::selection {
