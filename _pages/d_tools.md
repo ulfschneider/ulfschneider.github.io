@@ -7,7 +7,7 @@ permalink: /tools/
 I build and share these tools:
 
 ### [Exposure Guide]({{site.url}}/xg/)
-An iPhone App that allows you to calibrate the darkening effect of your photographic neutral density filters. Exposure Guide hs a timer for single und combined filter use.
+An iPhone App that allows you to calibrate the darkening effect of your photographic neutral density filters. Exposure Guide has a timer for single und combined filter use.
 
 ### [memYAK]({{site.url}}/memyak/)
 The external memory for innovation teams with special support for agile software development. We use this web application at Wincor Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
