@@ -129,10 +129,10 @@ dd {
   color: $text-color;
   text-decoration: none;
   outline: none;
-  background-image: -webkit-linear-gradient(to bottom, transparent 91%, $text-color 94%, $text-color 100%);
-  background-image: -moz-linear-gradient(to bottom, transparent 91%, $text-color 94%, $text-color 100%);
-  background-image: -o-linear-gradient(to bottom, transparent 91%, $text-color 94%, $text-color 100%);
-  background-image: linear-gradient(to bottom, transparent 91%, $text-color 94%, $text-color 100%);
+  background-image: -webkit-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
+  background-image: -moz-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
+  background-image: -o-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
+  background-image: linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
   /*border-bottom:1px solid $text-color;*/
 }
 
@@ -178,11 +178,9 @@ dd {
   font-family:$code-font-family;
   font-size: $code-font-size;  
   display:inline-block;
-  border:1px solid $text-color;
   padding:0px 3px;
   white-space:pre;
-  background:$text-color;
-  color:$background-color;
+  background:#eee;
 }
 
 pre.highlight {
