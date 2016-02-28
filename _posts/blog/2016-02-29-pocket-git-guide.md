@@ -11,7 +11,6 @@ abstract: A brief approach on why and how to use Git. Mainly inspired by "Git fo
 * <a href="#reasons-to-use-git">Reasons to use Git</a>
 * <a href="#tell-git-who-you-are">Tell Git who you are</a>
 * <a href="#create-a-new-local-repository">Create a new local repository</a>
-* <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
 * <a href="#status-of-your-repository">Status of your repository</a>
 * <a href="#stage-to-tell-git-what-to-refer-to">Stage to tell git what to refer to</a>
 * <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
@@ -78,32 +77,6 @@ Then initialize the Git repository for the project with
 ```
 git init
 ```
-
-Clone an existing repository to local
----
-The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned 
-
-```
-cd /path/to/parent/
-```
-
-Then clone the existing repository into the parent 
-
-```
-git clone <repo> [<new-folder-name>]
-```
-
-`<repo>` is the path to the existing repository and has any of the following structures:
-
-```
-ssh://[user@]host.xz[:port]/path/to/repo/
-git://host.xz[:port]/path/to/repo/
-http[s]://host.xz[:port]/path/to/repo/
-ftp[s]://host.xz[:port]/path/to/repo/
-rsync://host.xz/path/to/repo/
-```
-
-`<new-folder-name>` is the optional folder name of the cloned project on your computer.
 
 Status of your repository
 ---
@@ -271,6 +244,33 @@ commit -am "your merge commit message"
 Working with remotes to share with a team
 ---
 Online connection only eventually
+Offline by default, no need to sign in.
+Clone, push and pull.
+Peer-to-peer or hub-model
+
+The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned 
+
+```
+cd /path/to/parent/
+```
+
+Then clone the existing repository into the parent 
+
+```
+git clone <repo> [<new-folder-name>]
+```
+
+`<repo>` is the path to the existing repository and has any of the following structures:
+
+```
+ssh://[user@]host.xz[:port]/path/to/repo/
+git://host.xz[:port]/path/to/repo/
+http[s]://host.xz[:port]/path/to/repo/
+ftp[s]://host.xz[:port]/path/to/repo/
+rsync://host.xz/path/to/repo/
+```
+
+`<new-folder-name>` is the optional folder name of the cloned project on your computer.
 
 
 
