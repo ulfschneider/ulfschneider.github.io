@@ -7,6 +7,7 @@ permalink:
 author:
 abstract: A brief approach on why and how to use Git. Mainly inspired by "Git for Humans".
 ---
+* **Content**
 * <a href="#reasons-to-use-git">Reasons to use Git</a>
 * <a href="#tell-git-who-you-are">Tell Git who you are</a>
 * <a href="#create-a-new-local-repository">Create a new local repository</a>
@@ -16,6 +17,7 @@ abstract: A brief approach on why and how to use Git. Mainly inspired by "Git fo
 * <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
 * <a href="#branch-to-isolate">Branch to isolate</a>
 * <a href="#merge-to-include">Merge to include</a>
+* <a href="#working-with-remotes-to-share-with-a-team">Working with remotes to share with a team</a>
 {:.toc}
 
 Reasons to use Git
@@ -237,7 +239,6 @@ The simplest kind of merge is, if nothing had been changed in the destination br
 
 A *true merge* is something different. That´s when both, the source branch and the destination branch, have been modified before merging. A fast-forward then is no longer possible and Git has to figure out the combined state of the content, wich will lead to a so called *merge commit*. Starting at the head commits of each branch, Git will search back for the first common ancestor of both branches. This common ancestor is then used as a reference point to determine what has been changed in what order in each branch. Each changed file in each branch is compared against the reference point. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: 
 
-
 ```
 Merge branch '<source-branch-name>' into '<destination-branch-name>'.
 ```
@@ -251,7 +252,7 @@ CONFLICT (content): Merge conflict in <conflicting-file-name-in-destination-bran
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-and put a *conflict marker* into the file of the destination branch, pointing to the conflicting lines.
+and put a *conflict marker* into the file of the destination branch, indicating the conflicting lines.
 
 ```
 <<<<<<< HEAD
@@ -261,14 +262,19 @@ and put a *conflict marker* into the file of the destination branch, pointing to
 >>>>>>> <destination-branch-name>
 ```
 
-To resolve the conflict, this entire section needs to be edited and refactored into the final version you want to see in the file. After that, you can commit the merge with
+To resolve the conflict, this entire section, including the angle brackets, needs to be edited and refactored into the final version you want to see in the file. After that, you can commit the merge with
 
 ```
-commit -am "<your-merge-commit-message>"
+commit -am "your merge commit message"
 ```
+
+Working with remotes to share with a team
+---
+
 
 todo
 ---
+* working with remotes
 * remove branch
 * Meaning of HEAD
 * files not to track

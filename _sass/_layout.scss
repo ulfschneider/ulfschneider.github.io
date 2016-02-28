@@ -264,6 +264,9 @@ li.image-grid h2 {
 
 .toc li { 
   list-style-type: none;
+  a {
+    @extend %nolinkstyle;
+  }
 }
 
 
