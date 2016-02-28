@@ -17,6 +17,7 @@ abstract: A brief approach on why and how to use Git. Mainly inspired by "Git fo
 * <a href="#branch-to-isolate">Branch to isolate</a>
 * <a href="#merge-to-include">Merge to include</a>
 * <a href="#working-with-remotes-to-share-with-a-team">Working with remotes to share with a team</a>
+* <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
 {:.toc}
 
 Reasons to use Git
@@ -247,6 +248,9 @@ Online connection only eventually
 Offline by default, no need to sign in.
 Clone, push and pull.
 Peer-to-peer or hub-model
+
+Clone an existing repository to local
+---
 
 The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned 
 
