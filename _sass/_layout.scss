@@ -131,6 +131,10 @@
   }
 
   .nav {
+    a {
+      @extend %nolinkstyle;
+    }
+    
 
     .direction {
       float: right;
