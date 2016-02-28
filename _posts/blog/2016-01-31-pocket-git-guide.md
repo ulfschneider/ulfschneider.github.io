@@ -231,21 +231,44 @@ git checkout <your-destination-branch>
 git merge <your-source-branch>
 ```
 
-To be more precise, all commits from your source branch will be merged into your working copy.
+To be more precise, all commits from your source branch will be merged into your working copy, which is the checked out branch.
 
-The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called **fast-forward**. The tip (last commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
+The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch. In this case any changes made in the source branch will entirely be added to the destination branch, which is called *fast-forward*. The tip (last commit, or head commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
-A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. A fast-forward then is no longer possible and Git has to figure out the combined state of the merge, wich will lead to a so called **merge commit**.
+A *true merge* is something different. That´s when both, the source branch and the destination branch, have been modified before merging. A fast-forward then is no longer possible and Git has to figure out the combined state of the content, wich will lead to a so called *merge commit*. Starting at the head commits of each branch, Git will search back for the first common ancestor of both branches. This common ancestor is then used as a reference point to determine what has been changed in what order in each branch. Each changed file in each branch is compared against the reference point. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: 
+
+
+```
+Merge branch '<source-branch-name>' into '<destination-branch-name>'.
+```
+
+Unlike a normal commit, which has one parent commit, a merge commit has two parent commits. 
+
+Now when two modified lines of the same file are overlapping during a merge, a *merge conflict* occurs. Git can not automatically solve this conflict. Instead Git indicate the conflict in the console
 
 ```
 CONFLICT (content): Merge conflict in <conflicting-file-name-in-destination-branch>
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
+and put a *conflict marker* into the file of the destination branch, pointing to the conflicting lines.
+
+```
+<<<<<<< HEAD
+  <conflicting content line in destination-branch (the current working copy)>
+=======
+  <conflicting content line in source-branch (the you tried to merge in)>
+>>>>>>> <destination-branch-name>
+```
+
+To resolve the conflict, this entire section needs to be edited and refactored into the final version you want to see in the file. After that, you can commit the merge with
+
+```
+commit -am "<your-merge-commit-message>"
+```
+
 todo
 ---
-* merge commit
-* merge conflict
 * remove branch
 * Meaning of HEAD
 * files not to track
