@@ -237,6 +237,11 @@ The simplest kind of merge is, if nothing had been changed in the destination br
 
 A **true merge** is something different. That´s when both, the source branch and the destination branch, have been modified before doing the merge. A fast-forward then is no longer possible and Git has to figure out the combined state of the merge, wich will lead to a so called **merge commit**.
 
+```
+CONFLICT (content): Merge conflict in <conflicting-file-name-in-destination-branch>
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
 todo
 ---
 * merge commit
