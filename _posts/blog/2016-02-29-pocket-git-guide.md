@@ -270,11 +270,12 @@ commit -am "your merge commit message"
 
 Working with remotes to share with a team
 ---
+Online connection only eventually
+
 
 
 todo
 ---
-* working with remotes
 * remove branch
 * Meaning of HEAD
 * files not to track
