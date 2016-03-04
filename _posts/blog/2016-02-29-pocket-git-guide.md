@@ -7,17 +7,18 @@ permalink:
 author:
 abstract: A brief approach on why and how to use Git. Mainly inspired by "Git for Humans".
 ---
-* **Content**
-* <a href="#reasons-to-use-git">Reasons to use Git</a>
-* <a href="#tell-git-who-you-are">Tell Git who you are</a>
-* <a href="#create-a-new-local-repository">Create a new local repository</a>
-* <a href="#status-of-your-repository">Status of your repository</a>
-* <a href="#stage-to-tell-git-what-to-refer-to">Stage to tell git what to refer to</a>
-* <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
-* <a href="#branch-to-isolate">Branch to isolate</a>
-* <a href="#merge-to-include">Merge to include</a>
-* <a href="#working-with-remotes-to-share-with-a-team">Working with remotes to share with a team</a>
-* <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
+
+- **Content**
+- <a href="#reasons-to-use-git">Reasons to use Git</a>
+- <a href="#tell-git-who-you-are">Tell Git who you are</a>
+- <a href="#create-a-new-local-repository">Create a new local repository</a>
+- <a href="#status-of-your-repository">Status of your repository</a>
+- <a href="#stage-to-tell-git-what-to-refer-to">Stage to tell git what to refer to</a>
+- <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
+- <a href="#branch-to-isolate">Branch to isolate</a>
+- <a href="#merge-to-include">Merge to include</a>
+- <a href="#working-with-remotes-to-share-with-a-team">Working with remotes to share with a team</a>
+- <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
 {:.toc}
 
 Reasons to use Git
