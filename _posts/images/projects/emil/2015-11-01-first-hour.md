@@ -7,5 +7,3 @@ tags: emil
 thumburl: /i/IMG_0445_thumb.jpg
 ---
 ![]({{site.url}}/i/IMG_0445_thumb.jpg)
-
-![]({{site.url}}/i/IMG_1158_thumb.jpg)
