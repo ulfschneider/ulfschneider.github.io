@@ -251,7 +251,7 @@ The Git working mode is offline by default. This is nice because you don´t need
 
 A remote to Git is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team and any new teammate initially will clone the repository from the server to his or her local machine. Git names this remote repository *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
 
-> Embed image of hub remote concept
+<mark>Embed image of hub remote concept</mark>
 
 Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually ```.git``` is being appended to the name of the repository.
 
@@ -291,7 +291,7 @@ cd /path/to/parent/<repo>
 git remote -v
 ```
 
-which will display the *fetch* and *push* addresses of your remote which are bound to the symbolic name *origin*.
+which will display the *fetch* and *push* addresses being bound to the symbolic name *origin*.
 
 Push data to remote
 ---
@@ -302,7 +302,9 @@ If you are working on your local project and committed your changes to a branch 
 git push <remote> <branch-name>
 ```
 
-Assuming you worked on a branch named ```lazyload```, your command is
+This will push the contents of the local branch, your current working copy, into the ```<branch-name>``` on the remote repository.
+
+Assuming you worked on a branch named ```lazyload``` and are currently on that local branch, your command is
 
 ```
 git push origin lazyload
