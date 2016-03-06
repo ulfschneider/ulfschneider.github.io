@@ -1,24 +1,26 @@
 ---
 layout: post
 title: Pocket Git Guide
-subtitle: 
+subtitle: A brief entry-level approach on why and how to use Git
 date:   2016-01-31
 permalink: 
 author:
-abstract: A brief approach on why and how to use Git. Mainly inspired by "Git for Humans".
+abstract: A brief entry-level approach on why and how to use Git. 
 ---
 
 - **Content**
-- <a href="#reasons-to-use-git">Reasons to use Git</a>
-- <a href="#tell-git-who-you-are">Tell Git who you are</a>
-- <a href="#create-a-new-local-repository">Create a new local repository</a>
-- <a href="#status-of-your-repository">Status of your repository</a>
-- <a href="#stage-to-tell-git-what-to-refer-to">Stage to tell git what to refer to</a>
-- <a href="#commit-to-make-a-snapshot-of-your-work">Commit to make a snapshot of your work</a>
-- <a href="#branch-to-isolate">Branch to isolate</a>
-- <a href="#merge-to-include">Merge to include</a>
-- <a href="#working-with-remotes-to-share-with-a-team">Working with remotes to share with a team</a>
-- <a href="#clone-an-existing-repository-to-local">Clone an existing repository to local</a>
+- [Reasons to use Git](#reasons-to-use-git)
+- [Tell Git who you are](#tell-git-who-you-are)
+- [Create a new local repository](#create-a-new-local-repository)
+- [Status of your repository](#status-of-your-repository)
+- [Stage to tell Git what to refer to](#stage-to-tell-git-what-to-refer-to)
+- [Commit to make a snapshot of your work](#commit-to-make-a-snapshot-of-your-work)
+- [Branch to isolate](#branch-to-isolate)
+- [Merge to include](#merge-to-include)
+- [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
+- [Clone a remote repository to local](#clone-a-remote-repository-to-local)
+- [Push data to remote](#push-data-to-remote)
+- [Pull data from remote](#pull-data-from-remote)
 {:.toc}
 
 Reasons to use Git
@@ -47,7 +49,7 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to get Git installed.
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. On other platforms you have to run some setup routine to install Git.
 
 Convenient commands to achieve something with Git in the command shell are:
 
@@ -92,15 +94,15 @@ will tell you what branch you are currently working on and give you an overview 
 
 Stage to tell Git what to refer to
 ---
-To make a snapshot of your current work, which will be stored in the Git repository, call
+To prepare a snapshot of your current work, which will be stored in the Git repository, call
 
 ```
 git add [<pathspec>]
 ```
 
-`<pathspec>` specifies the files to be included into the snapshot. Wildcards are allowed. 
+`<pathspec>` specifies the files to be put into the staging area. Wildcards are allowed. 
 
-If a version of a file is not staged, Git doesn´t know how to refer to that version and therefore can´t commit it. Staged but uncommitted content remains only on your local computer and will not be send to a shared repository somewhere else. 
+If a version of a file is not staged, Git doesn´t know how to refer to that version of the file and therefore you can´t commit it later on. Staged but uncommitted content remains only on your local computer and will not be send to a remote repository somewhere else. 
 
 If you omit the `<pathspec>`, use
 
@@ -112,7 +114,7 @@ which will ensure a snapshot of all untracked files in your current project is b
 
 Commit to make a snapshot of your work
 ---
-Contents which have been staged must be committed in order to reference them. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a reference to its direct predecessor, the parent comit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past.
+Contents which have been staged must be committed to produce a snapshot of your current work. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
 
 ```
 git commit [-a] [-m "your commit message"]
@@ -245,27 +247,32 @@ commit -am "your merge commit message"
 
 Working with remotes to share with a team
 ---
-Online connection only eventually
-Offline by default, no need to sign in.
-Clone, push and pull.
-Peer-to-peer or hub-model
+The Git working mode is offline by default. This is nice because you don´t need to have an account to sign in somewhere, you just can start working with your repository. 
 
-Clone an existing repository to local
+A remote to Git is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team and any new teammate initially will clone the repository from the server to his or her local machine. Git names this remote repository *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
+
+> Embed image of hub remote concept
+
+Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually ```.git``` is being appended to the name of the repository.
+
+A remote may be on [GitHub](https://github.com) or on a self-hosted system you want to use as a hub.
+
+Clone a remote repository to local
 ---
 
-The alternate to creating a new repository from scratch is to clone an already existing. In order to do it, move to the folder under which the existing repository should be cloned 
+On your local machine move to the folder under which the remote repository should be cloned 
 
 ```
 cd /path/to/parent/
 ```
 
-Then clone the existing repository into the parent 
+Then clone the remote repository into the parent 
 
 ```
 git clone <repo> [<new-folder-name>]
 ```
 
-`<repo>` is the path to the existing repository and has any of the following structures:
+`<repo>` is the path to the remote repository and has one of the following structures:
 
 ```
 ssh://[user@]host.xz[:port]/path/to/repo/
@@ -277,16 +284,49 @@ rsync://host.xz/path/to/repo/
 
 `<new-folder-name>` is the optional folder name of the cloned project on your computer.
 
+Once you have cloned the remote to your computer, Git already configured the *origin* for your project. You can check that by
+
+```
+cd /path/to/parent/<repo>
+git remote -v
+```
+
+which will display the *fetch* and *push* addresses of your remote which are bound to the symbolic name *origin*.
+
+Push data to remote
+---
+
+If you are working on your local project and committed your changes to a branch you want to bring  to the remote repository now, the general git command format is
+
+```
+git push <remote> <branch-name>
+```
+
+Assuming you worked on a branch named ```lazyload```, your command is
+
+```
+git push origin lazyload
+```
+
+
+Pull data from remote
+---
 
 
 todo
 ---
+* different protocols
 * remove branch
 * Meaning of HEAD
 * files not to track
 * git diff
 * git rm
 * git mv
+
+
+References
+---
+[Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [https://abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
 
 
