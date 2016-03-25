@@ -22,6 +22,7 @@ abstract: A brief entry-level approach about why and how to use Git.
 - [Clone a remote repository to local](#clone-a-remote-repository-to-local)
 - [Push data to remote](#push-data-to-remote)
 - [Pull data from remote](#pull-data-from-remote)
+- [Fetch data from remote](#fetch-data-from-remote)
 {:.toc}
 
 Reasons to use Git
@@ -163,15 +164,15 @@ A commit will always be done inside of a particular branch. But while commits po
 While you can have multiple branches in your repository, there is always exact one working branch in your repository, which is the one you are currently working on. Any commit you make, will be against the working branch.
 
 ```
-git branch <your-branch-name>
+git branch <branch-name>
 ```
 
 will create a new branch for you. Choose a short descriptive branch name.
 
-`git branch <your-branch-name>` will not make the new branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
+`git branch <branch-name>` will not make the new branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
 
 ```
-git checkout <your-branch-name>
+git checkout <branch-name>
 ```
 
 after you have created your branch. Whatever you commit from that point on will be inside of your new branch and nowhere else.
@@ -179,7 +180,7 @@ after you have created your branch. Whatever you commit from that point on will 
 Again, there is a shorthand command for creating a branch and making it the current working copy all at once:
 
 ```
-git checkout -b <your-branch-name>
+git checkout -b <branch-name>
 ```
 
 will create a new branch and make it the current working copy.
@@ -206,14 +207,14 @@ To merge any branch into your master branch, you have to
 
 ```
 git checkout master
-git merge <your-source-branch>
+git merge <source-branch-name>
 ```
 
 The first command will bring you into the master branch, the second command will pull in the changes from the source branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy by
 
 ```
-git checkout <your-destination-branch>
-git merge <your-source-branch>
+git checkout <destination-branch-name>
+git merge <source-branch-name>
 ```
 
 To be more precise, all commits from your source branch will be merged into your working copy, which is the checked out branch.
@@ -308,10 +309,10 @@ Push data to remote
 If you are working on your local project and committed your changes to a branch you want to bring to the remote repository now, the general Git command format is
 
 ```
-git push <remote> <branch-name>
+git push <remote> <remote-branch-name>
 ```
 
-This will push the contents of the local branch, your current working copy, into the ```<branch-name>``` on the remote repository.
+This will push the contents of the local branch, your current working copy, into the `<remote-branch-name>` on the remote repository.
 
 Assuming you worked on a branch named *lazyload* and are currently on that local branch, your command is
 
@@ -327,34 +328,44 @@ The local branch names and the remote branch names are not related in Git. Even 
 git push -u origin lazyload
 ```
 
-`u`, or `--set-upstream` is the option which will set up the tracking relationship between you current local branch and the remote branch named *lazyload*. You only need to do it once per local branch.
+or, generally
+
+```
+git push -u <remote> <remote-branch-name>
+```
+
+`u`, alternatively `--set-upstream`, is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
 
 Pull data from remote
 ---
 
-If you want to get the latest changes from the *lazyload* branch on the remote repository into your local *lazyload* branch and assuming you are already on that local branch, call
+If you want to get the latest changes, e.g. from the *lazyload* branch on the remote repository, into your local branch, call
 
 ```
 git pull origin lazyload
 ```
 
-or in general
+or, in general
 
 ```
-git pull <remote> <branch-name>
+git pull <remote> <remote-branch-name>
 ```
 
-Git will automatically merge the remote changes into your local repository. In case of a merge conflict, resolve the conflict marker(´s) in your local repository, stage and commit your change and push then to the remote.
+Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage and commit your change and push then to the remote.
+
+Fetch data from remote
+---
 
 
 todo
 ---
 * remove branch
+* git rm
+* git mv
+* fetch
 * Meaning of HEAD
 * files not to track
 * git diff
-* git rm
-* git mv
 
 
 References
