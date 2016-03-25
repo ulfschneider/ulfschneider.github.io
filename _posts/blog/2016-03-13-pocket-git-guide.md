@@ -52,8 +52,6 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm](https://git-scm.com/downloads) to download and install a suitable version of Git.
 
-Convenient commands to achieve something with Git in the command shell are:
-
 Tell Git who you are
 ---
 ```
@@ -137,10 +135,10 @@ If you don´t specify a commit message when firing the commit command, an editor
 git config --global core.editor <editor-name>
 ```
 
-To see the currently configured editor, type
+[GitHub](https://help.github.com/articles/associating-text-editors-with-git/) provides a brief guide to setting up several editors. To see the currently configured editor, type
 
 ```
-git config --global core.editor
+git config [--global] core.editor
 ```
 
 To see the history of commits use
@@ -151,7 +149,10 @@ git log
 
 The commit message
 ---
-<mark>the commit message</mark>
+A ```git log``` of commit messages should give an idea how the project has evolved over time. Commit messages will be shown in the log of commits. The message explains *what* has been accomplished or changed with the commit and *why* the commit was done (the reasoning). The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/).
+
+It should be *short*, because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about. As a rule of thumb, the commit message should contain one line and about 50 characters.
+
 
 Branch to isolate
 ---
@@ -304,7 +305,7 @@ which will display the *fetch* and *push* addresses being bound to the symbolic 
 Push data to remote
 ---
 
-If you are working on your local project and committed your changes to a branch you want to bring  to the remote repository now, the general git command format is
+If you are working on your local project and committed your changes to a branch you want to bring to the remote repository now, the general Git command format is
 
 ```
 git push <remote> <branch-name>
@@ -318,14 +319,36 @@ Assuming you worked on a branch named *lazyload* and are currently on that local
 git push origin lazyload
 ```
 
+Remote repositories do not have working copies or staging areas and no humans who will resolve merge conflicts. Therefore, if you push to a remote and Git can not merge with a simple *fast-forward*, the push will be rejected by Git. The situation needs to be fixed by pulling down the changes from the remote and then trying to push again.
+
+The local branch names and the remote branch names are not related in Git. Even though they share the same name, Git doesn´t know that they logically represent the same piece of work. Therefore in each push you have to tell Git to what branch on the remote you want to push. You can configure each local branch of your Git to *track* its remote counterpart. Once you have done it for a branch, you can push and pull against the remote just by typing `git push`and `git pull` without further specifying the remote and remote branch name.
+
+```
+git push -u origin lazyload
+```
+
+`u`, or `--set-upstream` is the option which will set up the tracking relationship between you current local branch and the remote branch named *lazyload*. You only need to do it once per local branch.
 
 Pull data from remote
 ---
 
+If you want to get the latest changes from the *lazyload* branch on the remote repository into your local *lazyload* branch and assuming you are already on that local branch, call
+
+```
+git pull origin lazyload
+```
+
+or in general
+
+```
+git pull <remote> <branch-name>
+```
+
+Git will automatically merge the remote changes into your local repository. In case of a merge conflict, resolve the conflict marker(´s) in your local repository, stage and commit your change and push then to the remote.
+
 
 todo
 ---
-* different protocols
 * remove branch
 * Meaning of HEAD
 * files not to track
