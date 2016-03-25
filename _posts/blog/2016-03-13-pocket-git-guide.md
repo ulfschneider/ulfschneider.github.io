@@ -15,7 +15,7 @@ abstract: A brief entry-level approach about why and how to use Git.
 - [Status of your repository](#status-of-your-repository)
 - [Stage to tell Git what to refer to](#stage-to-tell-git-what-to-refer-to)
 - [Commit to make a snapshot of your work](#commit-to-make-a-snapshot-of-your-work)
-- [The commit message](k#the-commit-message)
+- [The commit message](#the-commit-message)
 - [Branch to isolate](#branch-to-isolate)
 - [Merge to include](#merge-to-include)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
@@ -50,7 +50,7 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may visit the [git-scm download page](https://git-scm.com/downloads) to get and install a suitable version of Git.
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm](https://git-scm.com/downloads) to download and install a suitable version of Git.
 
 Convenient commands to achieve something with Git in the command shell are:
 
