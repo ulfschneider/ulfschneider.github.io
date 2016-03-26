@@ -293,7 +293,6 @@ li.image-grid h2 {
 
 figcaption, .figcaption {
   margin-top: -$spacing-unit;
-  display: inline-block;
   margin-bottom: $spacing-unit;
 }
 
@@ -317,6 +316,7 @@ figcaption, .figcaption {
   figcaption, .figcaption {
     margin: 0;
     max-width: 40%;
+    display: inline-block;
   }
 
 }
