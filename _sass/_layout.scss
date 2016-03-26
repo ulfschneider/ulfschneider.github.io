@@ -297,13 +297,6 @@ figcaption, .figcaption {
   margin-bottom: $spacing-unit;
 }
 
-figcaption:before, .figcaption:before {
-  content: "";
-  width: $spacing-unit;
-  height:0;
-  display:block;
-}
-
 .figcaption {
   clear: both;
 }
