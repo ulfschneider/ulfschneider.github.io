@@ -355,13 +355,14 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 Fetch data from remote
 ---
-
+While `git pull` will pull down the changes for a single branch, `git fetch` can pull down everything from an entire remote repository. 
 
 todo
 ---
-* remove branch
-* git rm
-* git mv
+* remove branch: git branch -d <branch-name>; git push origin --delete <remote-branch-name>
+* rename branch: git branch -m <new-branch-name>
+* remove file: git rm
+* rename file: git mv
 * fetch
 * Meaning of HEAD
 * files not to track
