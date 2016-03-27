@@ -156,6 +156,12 @@ To see the history of commits use
 git log
 ```
 
+The output of a `git log` can be filtered and formatted. For example `git log --oneline` will display most recent commits organized into one single line per commit. 
+
+`git log <branch-name> --oneline` will display most recent commits in the specified branch, organized into one single line per commit.
+
+A free formatting of the `git log` output can be achieved with 'git log --prett="<your format string"`. A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
+
 The commit message
 ---
 A ```git log``` of commit messages should give an idea how the project has evolved over time. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
@@ -390,7 +396,11 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 Fetch data from remote
 ---
-While `git pull` will pull down the changes for a single branch, `git fetch` can pull down everything from an entire remote repository. 
+While `git pull` will pull down the changes for a single branch and merge the remote branch into the local branch, `git fetch` can pull down everything from the entire remote repository. Each remote branch is then in a local read-only branch named *origin/<branch-name>.* The `git fetch` results in a complete snapshot of the remote repository on your local disk. To understand the concept, you have three master branches then: 
+
+	1. Your local master branch
+	2. The master branch on the remote
+	3. A read-only local master branch which is a identical copy of the remote master branch and will be accessible under name origin/master.
 
 todo
 ---
