@@ -102,7 +102,7 @@ To prepare a snapshot of your current work, which will be stored in the Git repo
 git add [<pathspec>]
 ```
 
-`<pathspec>` specifies the files to be put into the staging area. Wildcards are allowed. 
+`<pathspec>` specifies the files to be put into the staging area (the index). Wildcards are allowed. 
 
 If a version of a file is not staged, Git doesn´t know how to refer to that version of the file and therefore you can´t commit it later on. Staged but uncommitted content remains only on your local computer and will not be send to a remote repository somewhere else. 
 
@@ -180,17 +180,17 @@ If more explanation is needed, let the subject be followed by a blank line and t
 
 Removing files
 ---
-To remove a file from the working copy and the repository, use
+To remove a file from the working copy and from the staging index, use
 
 ```
 git rm <pathspec>
 ```
 
-`<pathspec>` describes the file or even files, which should be deleted. `git rm` will remove the file in your working copy and will stage the remove, so that the removal could be committed. If you forgot to use `git rm` at first hand and instead removed the file with your usual remove command in the shell, the file will be removed from the working copy, but not from Git´s index. In that case you can even call `git rm <pathspec>` afterwards, in order to have the file be removed from the index, as it is already removed from the file system.
+`<pathspec>` describes the file or even files (wildcards allowed), which should be deleted. `git rm` will remove the file in your working copy and will stage the remove, so that the removal can be committed in a subsequent commit. If you forgot to use `git rm` at first hand and instead removed the file with your usual remove command in the shell, the file will be removed from the working copy, but not from the staging index. In that case you can even call `git rm <pathspec>` afterwards, in order to have the file be removed from the index, as it is already removed from the file system.
 
 Renaming files
 ---
-If you rename a file in your command shell with `mv a.txt b.txt`, it will produce a similar situation as if you would remove a file with just the shell command `rm a.txt` and create a new file `b.txt`. Git would still try to keep track of `a.txt`. To fix this, you would have to
+If you rename a file in your command shell with `mv a.txt b.txt`, it will produce a similar situation as if you would remove a file with just the shell command `rm a.txt` and creating a new file `b.txt`. Git would still try to keep track of `a.txt`. To fix this, you would have to
 
 ```
 git rm a.txt
@@ -439,5 +439,7 @@ References
 [Beams 2014] http://chris.beams.io/posts/git-commit/
 
 [Westby 2014] https://24ways.org/2014/dealing-with-emergencies-in-git/
+
+https://rogerdudler.github.io/git-guide/index.de.html
 
 
