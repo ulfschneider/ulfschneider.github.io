@@ -365,6 +365,12 @@ git push -u <remote> <remote-branch-name>
 
 `u`, alternatively `--set-upstream`, is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
 
+A very specific case of pushing is to remove a branch from the remote, as the removing of local branch doesn´t remove the branch on the remote. The command goes
+
+```
+git push origin --delete <remote-branch-name>
+```
+
 Pull data from remote
 ---
 
@@ -388,14 +394,12 @@ While `git pull` will pull down the changes for a single branch, `git fetch` can
 
 todo
 ---
-* git push origin --delete <remote-branch-name>
 * remove file: git rm
 * rename file: git mv
 * fetch
 * Meaning of HEAD
 * files not to track
 * git diff
-* git clean
 
 
 References
