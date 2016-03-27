@@ -119,10 +119,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  img[src="undefined"], img[src=""] {
-    display:none;
-  }
 }
 
 /*Galleries */
@@ -136,10 +132,6 @@
   }
 
   .nav {
-    a {
-      @extend %nolinkstyle;
-    }
-    
 
     .direction {
       float: right;
@@ -273,6 +265,9 @@ li.image-grid h2 {
 
 .toc li { 
   list-style-type: none;
+  a {
+    @extend %nolinkstyle;
+  }
 }
 
 
@@ -294,7 +289,15 @@ li.image-grid h2 {
 
 figcaption, .figcaption {
   margin-top: -$spacing-unit;
+  display: inline-block;
   margin-bottom: $spacing-unit;
+}
+
+figcaption:before, .figcaption:before {
+  content: "";
+  width: $spacing-unit;
+  height:0;
+  display:block;
 }
 
 .figcaption {
@@ -317,7 +320,6 @@ figcaption, .figcaption {
   figcaption, .figcaption {
     margin: 0;
     max-width: 40%;
-    display: inline-block;
   }
 
 }
