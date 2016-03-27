@@ -110,7 +110,15 @@ If you omit the `<pathspec>`, use
 git add --all
 ```
 
-which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository. 
+which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository.
+
+If you edited something without staging it, and you want to get rid of it, use
+
+```
+git clean
+```
+
+to revert your editing. 
 
 Commit to make a snapshot of your work
 ---
@@ -150,10 +158,17 @@ git log
 
 The commit message
 ---
-A ```git log``` of commit messages should give an idea how the project has evolved over time. Commit messages will be shown in the log of commits. The message explains *what* has been accomplished or changed with the commit and *why* the commit was done (the reasoning). The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/).
+A ```git log``` of commit messages should give an idea how the project has evolved over time. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
 
-It should be *short*, because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about. As a rule of thumb, the commit message should contain one line and about 50 characters.
+A properly formed commit subject line should complete the following sentence:
 
+> If applied, this commit will "your subject line"
+
+The commit messages reveals whether a committer is a good collaborator or not.
+
+Because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
+
+If more explanation is needed, let the subject be followed by a blank line and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. [[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate)
 
 Branch to isolate
 ---
@@ -198,6 +213,20 @@ git log --graph --oneline
 ```
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
+
+Sometimes you want to remove a branch, e.g. after all work is done and the branch has been merged into the master. In order to go ahead, use
+
+```
+git branch -d <branch-to-delete>
+```
+
+to remove your branch.
+
+A rename of a branch can be achieved by
+
+```
+git branch -m <new-branch-name>
+```
 
 Merge to include
 ---
@@ -359,20 +388,22 @@ While `git pull` will pull down the changes for a single branch, `git fetch` can
 
 todo
 ---
-* remove branch: git branch -d <branch-name>; git push origin --delete <remote-branch-name>
-* rename branch: git branch -m <new-branch-name>
+* git push origin --delete <remote-branch-name>
 * remove file: git rm
 * rename file: git mv
 * fetch
 * Meaning of HEAD
 * files not to track
 * git diff
+* git clean
 
 
 References
 ---
 [Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [https://abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
+[Beams 2014] http://chris.beams.io/posts/git-commit/
 
+[Westby 2014] https://24ways.org/2014/dealing-with-emergencies-in-git/
 
 
