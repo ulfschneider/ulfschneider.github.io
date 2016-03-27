@@ -16,6 +16,8 @@ abstract: A brief entry-level approach about why and how to use Git.
 - [Stage to tell Git what to refer to](#stage-to-tell-git-what-to-refer-to)
 - [Commit to make a snapshot of your work](#commit-to-make-a-snapshot-of-your-work)
 - [The commit message](#the-commit-message)
+- [Removing files](#removing-files)
+- [Renaming files](#renaming-files)
 - [Branch to isolate](#branch-to-isolate)
 - [Merge to include](#merge-to-include)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
@@ -176,6 +178,32 @@ Because in the output of a ```git log``` is not much space to display text and w
 
 If more explanation is needed, let the subject be followed by a blank line and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. [[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate)
 
+Removing files
+---
+To remove a file from the working copy and the repository, use
+
+```
+git rm <pathspec>
+```
+
+`<pathspec>` describes the file or even files, which should be deleted. `git rm` will remove the file in your working copy and will stage the remove, so that the removal could be committed. If you forgot to use `git rm` at first hand and instead removed the file with your usual remove command in the shell, the file will be removed from the working copy, but not from Git´s index. In that case you can even call `git rm <pathspec>` afterwards, in order to have the file be removed from the index, as it is already removed from the file system.
+
+Renaming files
+---
+If you rename a file in your command shell with `mv a.txt b.txt`, it will produce a similar situation as if you would remove a file with just the shell command `rm a.txt` and create a new file `b.txt`. Git would still try to keep track of `a.txt`. To fix this, you would have to
+
+```
+git rm a.txt
+git add b.txt
+```
+
+Or, use the suitable Git command right from the start:
+
+```
+git mv a.txt b.txt
+```
+
+
 Branch to isolate
 ---
 Any contents in Git must be in a branch. The first branch of a Git repository is the master branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
@@ -226,9 +254,7 @@ Sometimes you want to remove a branch, e.g. after all work is done and the branc
 git branch -d <branch-to-delete>
 ```
 
-to remove your branch.
-
-A rename of a branch can be achieved by
+to remove your branch. A rename of the current local branch can be achieved by
 
 ```
 git branch -m <new-branch-name>
@@ -396,16 +422,10 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 Fetch data from remote
 ---
-While `git pull` will pull down the changes for a single branch and merge the remote branch into the local branch, `git fetch` can pull down everything from the entire remote repository. Each remote branch is then in a local read-only branch named *origin/<branch-name>.* The `git fetch` results in a complete snapshot of the remote repository on your local disk. To understand the concept, you have three master branches then: 
-
-	1. Your local master branch
-	2. The master branch on the remote
-	3. A read-only local master branch which is a identical copy of the remote master branch and will be accessible under name origin/master.
+While `git pull` will pull down the changes for a single branch and merge the remote branch into the local branch, `git fetch` will pull down everything from the entire remote repository. Each remote branch is then in a local read-only branch named `origin/<branch-name>`. The `git fetch` results in a complete snapshot of the remote repository on your local disk. 
 
 todo
 ---
-* remove file: git rm
-* rename file: git mv
 * fetch
 * Meaning of HEAD
 * files not to track
