@@ -18,6 +18,7 @@ abstract: A brief entry-level approach about why and how to use Git.
 - [The commit message](#the-commit-message)
 - [Removing files](#removing-files)
 - [Renaming files](#renaming-files)
+- [Ignoring files](#untracked-files)
 - [Branch to isolate](#branch-to-isolate)
 - [Merge to include](#merge-to-include)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
@@ -203,6 +204,25 @@ Or, use the suitable Git command right from the start:
 git mv a.txt b.txt
 ```
 
+Ignoring files
+---
+If some files in your project should be ignored by Git, for example because
+
+* the files are automatically created by a process belonging to your project, 
+* the files contain credentials or
+* the files are anyway downloaded by package managers,
+
+you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. The `.gitignore` usually is in the root of your Git project.
+
+As an example, for a [Jekyll](http://jekyllrb.com) web site project, your `.gitignore` may contain
+
+```
+_site
+.sass-cache
+.jekyll-metadata
+```
+
+The `.gitignore` file itself should be under version control - so be aware of not putting `.gitignore` as a pattern into the `.gitignore` file.
 
 Branch to isolate
 ---
@@ -428,7 +448,6 @@ todo
 ---
 * fetch
 * Meaning of HEAD
-* files not to track
 * git diff
 
 
