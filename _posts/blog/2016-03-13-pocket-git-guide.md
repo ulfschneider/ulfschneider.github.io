@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Pocket Git Guide
-subtitle: A brief entry-level approach about why and how to use Git
+subtitle: A brief entry-level approach to Git
 date:   2016-03-13
 permalink: 
 author:
-abstract: A brief entry-level approach about why and how to use Git. 
+abstract: A brief entry-level approach to Git. 
 ---
 
-- **Content**
+- **Contents**
 - [Reasons to use Git](#reasons-to-use-git)
 - [Tell Git who you are](#tell-git-who-you-are)
 - [Create a new local repository](#create-a-new-local-repository)
@@ -18,14 +18,16 @@ abstract: A brief entry-level approach about why and how to use Git.
 - [The commit message](#the-commit-message)
 - [Removing files](#removing-files)
 - [Renaming files](#renaming-files)
-- [Ignoring files](#untracked-files)
+- [Ignoring files](#ignoring-files)
 - [Branch to isolate](#branch-to-isolate)
 - [Merge to include](#merge-to-include)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
 - [Clone a remote repository to local](#clone-a-remote-repository-to-local)
 - [Push data to remote](#push-data-to-remote)
 - [Pull data from remote](#pull-data-from-remote)
-- [Fetch data from remote](#fetch-data-from-remote)
+- [The big picture](#the-big-picture)
+- [Command reference](#command-reference)
+- [References](#references)
 {:.toc}
 
 Reasons to use Git
@@ -440,16 +442,16 @@ git pull <remote> <remote-branch-name>
 
 Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage and commit your change and push then to the remote.
 
-Fetch data from remote
+The big picture
 ---
-While `git pull` will pull down the changes for a single branch and merge the remote branch into the local branch, `git fetch` will pull down everything from the entire remote repository. Each remote branch is then in a local read-only branch named `origin/<branch-name>`. The `git fetch` results in a complete snapshot of the remote repository on your local disk. 
+
+Command reference
+---
 
 todo
 ---
-* fetch
 * Meaning of HEAD
 * git diff
-
 
 References
 ---
@@ -460,5 +462,7 @@ References
 [Westby 2014] https://24ways.org/2014/dealing-with-emergencies-in-git/
 
 https://rogerdudler.github.io/git-guide/index.de.html
+
+http://blog.osteele.com/posts/2008/05/my-git-workflow/
 
 
