@@ -4,11 +4,11 @@
 {% include head.html %}
 
 <script src="/r/jquery.min.js"></script>
-<script src="/r/jquery.unveil.js"></script>
 <body>
 
   {% unless page.autoplay %}
   <!-- grid -->
+  <script src="/r/jquery.unveil.js"></script>
   <div class="grid-gallery-content">
 
     {% include header.html %}
@@ -45,7 +45,7 @@
       {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny column gap between images -->
       <a href="{{ image.url | prepend: site.baseurl }}">
         <div class="image">
-          <img data-src="{{image.thumburl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{image.thumburl | prepend: site.baseurl}}"/>
           {% if image.message %}
           <h2>{{image.message}}</h2>
           {% elsif image.abstract %}
@@ -107,9 +107,9 @@
         {% for image in sorted-images %}
         <div class="slide">
           {% if image.slideurl %}
-          <img lazy="{{image.slideurl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== lazy="{{image.slideurl | prepend: site.baseurl}}"/>
           {% else %}
-          <img lazy="{{image.thumburl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== lazy="{{image.thumburl | prepend: site.baseurl}}"/>
           {% endif %}
 
           {% if image.message %}

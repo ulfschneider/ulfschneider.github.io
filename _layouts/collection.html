@@ -20,7 +20,7 @@
       {% for p in site.posts %}{% unless p.nonav %}{% if p.layout contains 'gallery' and p.thumburl %}<li class="image-grid">
       <a href="{{ p.url | prepend: site.baseurl }}">
         <div class="image">
-          <img data-src="{{p.thumburl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{p.thumburl}}"/>
           {% if p.abstract %}
           <h2>{{p.abstract}}</h2>
           {% elsif p.title and p.title != 'notitle' %}
@@ -31,7 +31,7 @@
     </li>{% elsif p.layout contains 'image' and p.thumburl and p.tags contains 'projects' %}<li class="image-grid">
     <a href="{{ p.url | prepend: site.baseurl }}">
       <div class="image">
-        <img data-src="{{p.thumburl}}"/>
+        <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{p.thumburl}}"/>
         {% if p.abstract %}
         <h2>{{p.abstract}}</h2>
         {% elsif p.title and p.title != 'notitle' %}
