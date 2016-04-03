@@ -2,6 +2,8 @@
 <html lang="en">
 
 {% include head.html %}
+<script src="/r/jquery.min.js"></script>
+<script src="/r/jquery.unveil.js"></script>
 
 <body class="gallery">
 
@@ -16,38 +18,43 @@
 
     <ul class="image-grid" id="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny gap in between -->
       {% for p in site.posts %}{% unless p.nonav %}{% if p.layout contains 'gallery' and p.thumburl %}<li class="image-grid">
-        <a href="{{ p.url | prepend: site.baseurl }}">
-          <div class="image">
-            <img src="{{p.thumburl}}"/>
-            {% if p.abstract %}
-            <h2>{{p.abstract}}</h2>
-            {% elsif p.title and p.title != 'notitle' %}
-            <h2>{{p.title}}</h2>
-            {% endif %}
-          </div>
-        </a>
-      </li>{% elsif p.layout contains 'image' and p.thumburl and p.tags contains 'projects' %}<li class="image-grid">
-        <a href="{{ p.url | prepend: site.baseurl }}">
-          <div class="image">
-            <img src="{{p.thumburl}}"/>
-            {% if p.abstract %}
-            <h2>{{p.abstract}}</h2>
-            {% elsif p.title and p.title != 'notitle' %}
-            <h2>{{p.title}}</h2>
-            {% endif %}
-          </div>
-        </a>
-      </li>{% endif %}{% endunless %}{% endfor %}</ul>
+      <a href="{{ p.url | prepend: site.baseurl }}">
+        <div class="image">
+          <img data-src="{{p.thumburl}}"/>
+          {% if p.abstract %}
+          <h2>{{p.abstract}}</h2>
+          {% elsif p.title and p.title != 'notitle' %}
+          <h2>{{p.title}}</h2>
+          {% endif %}
+        </div>
+      </a>
+    </li>{% elsif p.layout contains 'image' and p.thumburl and p.tags contains 'projects' %}<li class="image-grid">
+    <a href="{{ p.url | prepend: site.baseurl }}">
+      <div class="image">
+        <img data-src="{{p.thumburl}}"/>
+        {% if p.abstract %}
+        <h2>{{p.abstract}}</h2>
+        {% elsif p.title and p.title != 'notitle' %}
+        <h2>{{p.title}}</h2>
+        {% endif %}
+      </div>
+    </a>
+  </li>{% endif %}{% endunless %}{% endfor %}</ul>
 
-    </div>
+</div>
 
+<script>
+  $(document).ready(function() {
+    $("img").unveil();
+  });
+</script>
 
-    {% unless page.nofooter %}
-    {% include footer.html %}
-    {% endunless %}
+{% unless page.nofooter %}
+{% include footer.html %}
+{% endunless %}
 
-    {% include footer_scripts.html %}
+{% include footer_scripts.html %}
 
-  </body>
+</body>
 
-  </html>
+</html>
