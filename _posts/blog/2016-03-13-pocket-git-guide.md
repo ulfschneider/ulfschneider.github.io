@@ -109,7 +109,7 @@ While you are working, Git divides your content into three main sections. Your w
 
 - Your working directory is simply the set of files and folders you operate on - your project.
 - The staging area is the set of changes which should go into the next commit.
-- Once you commit, Git will take the contents from the staging area and create a snapshot in the Git repository, which is then the committed revision of your project at the time of the commit.
+- Once you commit, Git will take the contents from the staging area and create a snapshot in the Git repository, which is then the committed revision of your project at the time of the commit. 
 
 ![]({{site.url}}/i/blog/git_areas.jpg)
 {:.double}
@@ -146,6 +146,9 @@ to revert your editing.
 
 Commit to make a snapshot of your work
 ---
+
+You will commit very often, multiple times a day, sometimes within in minutes. It is the action you do most of the time when using Git.
+
 Contents which have been staged must be committed to produce a snapshot of your current work in the Git repository. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the most recent commit, the *tip*, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
 
 ```
