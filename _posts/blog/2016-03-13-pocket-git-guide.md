@@ -21,6 +21,7 @@ abstract: A brief entry-level approach to Git.
 - [Ignoring files](#ignoring-files)
 - [Branch to isolate](#branch-to-isolate)
 - [Merge to include](#merge-to-include)
+- [Remove or rename a branch](#remove-or-rename-a-branch)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
 - [Clone a remote repository to local](#clone-a-remote-repository-to-local)
 - [Push data to remote](#push-data-to-remote)
@@ -38,9 +39,9 @@ Git will help you doing the following things with a computer:
 <strong>Personal</strong>
 <ul>
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
-<li>Safely experiment because you can always step back to the previous save version.</li>
+<li>Safely experiment because you can always step back to the previous version.</li>
 <li>No need to give your files version indicating names, like essay_v1.txt, essay_v2.txt and so on.</li>
-<li>It doesn´t play a role if you want to work on a single file or a multi-file project organized in many folders.</li>
+<li>It doesn´t play a role if you want to work on a single file or a multi-file project organized in multiple folders.</li>
 <li>Convert any file or folder structure into a project that is under version control.</li>
 <li>Have the advantage of powerful version control without the need to setup a server or creating an account somewhere.</li>
 <li>Work consistently on multiple different operating systems, like MacOS, Linux and Windows.</li>
@@ -99,14 +100,14 @@ will tell you what branch you are currently working on and give you an overview 
 
 Working, staging and committing
 ---
-Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a so called *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. 
+Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. 
 
 ![]({{site.url}}/i/blog/taylor_commits_over_time.jpg)
 {:.double}
 Figure: Git produces snapshots of your entire project
 {:.figcaption}
 
-While you are working, Git divides your content into three main sections. Your working directory, your staging area and your committed work. 
+While you are working, Git divides your content into three main sections. Your working directory, your staging area (often referred to as *index*) and your committed work. 
 
 - Your working directory is simply the set of files and folders you operate on - your project.
 - The staging area is the set of changes which should go into the next commit.
@@ -135,7 +136,7 @@ If you omit the `<pathspec>`, use
 git add --all
 ```
 
-which will ensure a snapshot of all untracked files in your current project is being added to your local Git repository.
+which will ensure all untracked files in your current project are being added to your staging area.
 
 If you edited something without staging it, and you want to get rid of it, use
 
@@ -147,7 +148,7 @@ to revert your editing.
 
 Commit to make a snapshot of your work
 ---
-Contents which have been staged must be committed to produce a snapshot of your current work. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the last commit, the tip, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
+Contents which have been staged must be committed to produce a snapshot of your current work in the Git repository. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the most recent commit, the *tip*, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
 
 ```
 git commit [-a] [-m "your commit message"]
@@ -161,9 +162,9 @@ An even shorter form of committing in that case is:
 git commit -am "your commit message"
 ```
 
-Here the option to stage modified and deleted contents and the option to provide a commit message are combined in `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
+Here the option to stage modified and deleted contents and the option to provide a commit message are combined in one option `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
 
-If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the message. You can configure the editor of your preference with 
+If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the commit message. You can configure the editor of your preference with 
 
 ```
 git config --global core.editor <editor-name>
@@ -185,7 +186,7 @@ The output of a `git log` can be filtered and formatted. For example `git log --
 
 `git log <branch-name> --oneline` will display most recent commits in the specified branch, organized into one single line per commit.
 
-A free formatting of the `git log` output can be achieved with 'git log --prett="<your format string"`. A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
+A free formatting of the `git log` output can be achieved with `git log --pretty="<your format string>"`. A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
 
 The commit message
 ---
@@ -193,9 +194,9 @@ A ```git log``` of commit messages should give an idea how the project has evolv
 
 A properly formed commit subject line should complete the following sentence:
 
-> If applied, this commit will "your subject line"
+> If applied, this commit will "your commit subject line"
 
-The commit messages reveals whether a committer is a good collaborator or not.
+The commit messages reveal whether a committer is a good collaborator or not.
 
 Because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
 
@@ -234,7 +235,7 @@ If some files in your project should be ignored by Git, for example because
 - the files contain credentials or
 - the files are anyway downloaded by package managers,
 
-you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. Each pattern is one line in the `.gitignore* file. The `.gitignore` usually is in the root of your Git project.
+you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. Each pattern is one line in the `.gitignore` file. The `.gitignore` usually is in the root of your Git project.
 
 An example of the patterns your `.gitignore` may contain
 
@@ -258,11 +259,11 @@ The `.gitignore` file itself should be under version control - so be aware of no
 
 Branch to isolate
 ---
-Any contents in Git must be in a branch. The first branch of a Git repository is the master branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
+Any contents in Git must be in a branch. The first branch of a Git repository is the *master* branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
 
-A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would make a branch to experiment with some new feature inside of your project, to fix a bug, develop a new feature or to do other things which you want to have separated from everything else until you have truly found what you are after in your branch. 
+A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would make a branch to experiment with some new feature inside of your project, to fix a bug or to do other things which you want to have separated from everything else until you have truly found what you are after in your branch. 
 
-While you can have multiple branches in your repository, there is always exact one working branch in your repository, which is the one you are currently working on. Any commit you make, will be against the working branch.
+While you can have multiple branches in your repository, there is always exact one working branch in your local repository, which is the one you are currently working on. This is what is in your *working directory* or *working copy*. Any commit you make will be against the working branch.
 
 ```
 git branch <branch-name>
@@ -270,7 +271,7 @@ git branch <branch-name>
 
 will create a new branch for you. Choose a short descriptive branch name.
 
-`git branch <branch-name>` will not make the new branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
+`git branch <branch-name>` will not make the new created branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
 
 ```
 git checkout <branch-name>
@@ -299,18 +300,6 @@ git log --graph --oneline
 ```
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
-
-Sometimes you want to remove a branch, e.g. after all work is done and the branch has been merged into the master. In order to go ahead, use
-
-```
-git branch -d <branch-to-delete>
-```
-
-to remove your branch. A rename of the current local branch can be achieved by
-
-```
-git branch -m <new-branch-name>
-```
 
 Merge to include
 ---
@@ -367,13 +356,28 @@ To resolve the conflict, this entire section, including the angle brackets, need
 commit -am "your merge commit message"
 ```
 
+Remove or rename a branch
+---
+
+Sometimes you want to remove a branch, e.g. after all work is done and the branch has been merged into the master. In order to go ahead, use
+
+```
+git branch -d <branch-to-delete>
+```
+
+to remove your branch. 
+
+A rename of the current local branch can be achieved by
+
+```
+git branch -m <new-branch-name>
+```
+
 Working with remotes to share with a team
 ---
 The Git working mode is offline by default. This is nice because you don´t need to have an account to sign in somewhere, you just can start working with your repository. 
 
-A remote to Git is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
-
-<mark>Embed image of hub remote concept</mark>
+A remote in the Git world is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
 
 Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually ```.git``` is being appended to the name of the repository.
 
@@ -433,9 +437,9 @@ Assuming you worked on a branch named *lazyload* and are currently on that local
 git push origin lazyload
 ```
 
-Remote repositories do not have working copies or staging areas and no humans who will resolve merge conflicts. Therefore, if you push to a remote and Git can not merge with a simple *fast-forward*, the push will be rejected by Git. The situation needs to be fixed by pulling down the changes from the remote and then trying to push again.
+As already mentioned, remote repositories do not have working copies or staging areas and no humans who will resolve merge conflicts. Therefore, if you push to a remote and Git can not merge with a simple *fast-forward*, the push will be rejected by Git. The situation needs to be fixed by pulling down the changes from the remote and then trying to push again.
 
-The local branch names and the remote branch names are not related in Git. Even though they share the same name, Git doesn´t know that they logically represent the same piece of work. Therefore in each push you have to tell Git to what branch on the remote you want to push. You can configure each local branch of your Git to *track* its remote counterpart. Once you have done it for a branch, you can push and pull against the remote just by typing `git push`and `git pull` without further specifying the remote and remote branch name.
+The local branch names and the remote branch names are not related in Git. Even though they share the same name, Git doesn´t know that they logically represent the same piece of work. Therefore in each push you have to tell Git to what branch on the remote you want to push. You can configure each local branch of your Git to *track* its remote counterpart. Once you have done it for a branch, you can push and pull against the remote just by typing `git push` and `git pull` without further specifying the remote and remote branch name.
 
 ```
 git push -u origin lazyload
@@ -447,7 +451,7 @@ or, generally
 git push -u <remote> <remote-branch-name>
 ```
 
-`u`, alternatively `--set-upstream`, is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
+`u` (alternatively `--set-upstream`) is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
 
 A very specific case of pushing is to remove a branch from the remote, as the removing of local branch doesn´t remove the branch on the remote. The command goes
 
@@ -474,14 +478,15 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 References
 ---
-[Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [https://abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
+[Beams 2014] C. Beams, "How to Write a Git Commit Message", 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
 
-[Beams 2014] http://chris.beams.io/posts/git-commit/
+[Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
-[Westby 2014] https://24ways.org/2014/dealing-with-emergencies-in-git/
+[GitHub] [github.com](https://github.com) 
 
-https://rogerdudler.github.io/git-guide/index.de.html
+[git-scm] [git-scm.com](https://git-scm.com)
 
-http://blog.osteele.com/posts/2008/05/my-git-workflow/
+[Westby 2014] E. J. Westby, "Dealing with Emergencies in Git", [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
+
 
 
