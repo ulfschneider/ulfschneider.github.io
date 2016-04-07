@@ -113,7 +113,7 @@ While you are working, Git divides your content into three main sections. Your w
 
 ![]({{site.url}}/i/blog/git_areas.jpg)
 {:.double}
-Figure: Working - staging - committing
+Figure: Working - Staging - Committing
 {:.figcaption}
 
 Stage to tell Git what to refer to
