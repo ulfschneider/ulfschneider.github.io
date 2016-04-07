@@ -73,7 +73,7 @@ Detect your configuration settings with
 git config --list
 ```
 
-Create new local repository
+Create a new local repository
 ---
 Move to the folder which should contain your project
 
@@ -96,6 +96,26 @@ git status
 ```
 
 will tell you what branch you are currently working on and give you an overview about untracked changes and outstanding commits.
+
+Working, staging and committing
+---
+Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a so called *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. 
+
+![]({{site.url}}/i/blog/taylor_commits_over_time.jpg)
+{:.double}
+Figure: Git produces snapshots of your entire project
+{:.figcaption}
+
+While you are working, Git divides your content into three main sections. Your working directory, your staging area and your committed work. 
+
+- Your working directory is simply the set of files and folders you operate on - your project.
+- The staging area is the set of changes which should go into the next commit.
+- Once you commit, Git will take the contents from the staging area and create a snapshot in the Git repository, which is then the committed revision of your project at the time of the commit.
+
+![]({{site.url}}/i/blog/git_areas.jpg)
+{:.double}
+Figure: Working - staging - committing
+{:.figcaption}
 
 Stage to tell Git what to refer to
 ---
@@ -143,7 +163,7 @@ git commit -am "your commit message"
 
 Here the option to stage modified and deleted contents and the option to provide a commit message are combined in `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
 
-If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the message. You can configure what editor to use with 
+If you don´t specify a commit message when firing the commit command, an editor will be opened where you have to provide the message. You can configure the editor of your preference with 
 
 ```
 git config --global core.editor <editor-name>
@@ -210,19 +230,29 @@ Ignoring files
 ---
 If some files in your project should be ignored by Git, for example because
 
-* the files are automatically created by a process belonging to your project, 
-* the files contain credentials or
-* the files are anyway downloaded by package managers,
+- the files are automatically created by a process belonging to your project, 
+- the files contain credentials or
+- the files are anyway downloaded by package managers,
 
-you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. The `.gitignore` usually is in the root of your Git project.
+you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. Each pattern is one line in the `.gitignore* file. The `.gitignore` usually is in the root of your Git project.
 
-As an example, for a [Jekyll](http://jekyllrb.com) web site project, your `.gitignore` may contain
+An example of the patterns your `.gitignore` may contain
 
 ```
-_site
-.sass-cache
-.jekyll-metadata
+*.a
+build/
+notes/*.txt
+notes/**/*.txt
+!notes/todo.txt
 ```
+
+The meaning of the patterns:
+
+- `*.a` ignore files with extension `.a`
+- `build/` ignore all contents of the `build` directory
+- `doc/*.txt` ignore all files with extension `.txt` inside of the `doc` directory
+- `doc/**/*.txt` ignore all files with extension `.txt` inside of the `doc` directory and all sub-directories of `doc`
+- `!doc/todo.txt` do not ignore `todo.txt`
 
 The `.gitignore` file itself should be under version control - so be aware of not putting `.gitignore` as a pattern into the `.gitignore` file.
 
@@ -441,17 +471,6 @@ git pull <remote> <remote-branch-name>
 ```
 
 Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage and commit your change and push then to the remote.
-
-The big picture
----
-
-Command reference
----
-
-todo
----
-* Meaning of HEAD
-* git diff
 
 References
 ---
