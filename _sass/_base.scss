@@ -137,7 +137,10 @@ dd {
 %nolinkstyle {
   background-image:none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> pocket-git-guide
 
 /**
  * Blockquotes
@@ -174,7 +177,8 @@ dd {
   display:inline-block;
   padding:0px 3px;
   white-space:pre;
-  background:#eee;
+  background:#f0f0f0;
+  border-radius:2px;
 }
 
 pre.highlight {
