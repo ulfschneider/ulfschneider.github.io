@@ -329,8 +329,6 @@ Merge branch '<source-branch-name>' into '<destination-branch-name>'.
 
 Unlike a normal commit, which has one parent commit, a merge commit has two parent commits. 
 
-<mark>Image of merge commit</mark>
-
 Now when two modified lines of the same file are overlapping during a merge, a *merge conflict* occurs. Git can not automatically solve this conflict. Instead Git indicate the conflict in the console
 
 ```
