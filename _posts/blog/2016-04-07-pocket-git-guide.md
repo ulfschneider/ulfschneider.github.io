@@ -271,7 +271,7 @@ git branch <branch-name>
 
 will create a new branch for you. Choose a short descriptive branch name.
 
-![]({site.url}/i/blog/git_new_branch.jpg)Figure: Creating a new branch with name 'lazyload'
+![]({{site.url}}/i/blog/git_new_branch.jpg)Figure: Creating a new branch with name 'lazyload'
 {:.double}
 
 `git branch <branch-name>` will not make the new created branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
