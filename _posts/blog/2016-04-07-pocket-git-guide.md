@@ -379,7 +379,7 @@ The Git working mode is offline by default. This is nice, because you don´t nee
 A remote in the Git world is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
 
 ![]({{site.url}}/i/blog/git_hub.jpg)
-{.double}
+{:.double}
 Figure: Origin is a hub by convention
 {:.figcaption}
 
