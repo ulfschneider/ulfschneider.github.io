@@ -294,8 +294,8 @@ li.image-grid h2 {
 }
 
 figcaption, .figcaption {
+  font-style:italic;
   margin-top: -$spacing-unit;
-  display: inline-block;
   margin-bottom: $spacing-unit;
 }
 
@@ -326,6 +326,7 @@ figcaption:before, .figcaption:before {
   figcaption, .figcaption {
     margin: 0;
     max-width: 40%;
+    display:inline-block;
   }
 
 }
@@ -338,7 +339,7 @@ figcaption:before, .figcaption:before {
   }
 }
 
-.double img {
+.double img, p.double img {
   max-width: none;
   width: 100%;
 }

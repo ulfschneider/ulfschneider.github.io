@@ -100,10 +100,8 @@ Working, staging and committing
 ---
 Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. 
 
-![]({{site.url}}/i/blog/git_commits_over_time.jpg)
+![]({{site.url}}/i/blog/git_commits_over_time.jpg)Figure: Git produces snapshots of your entire project
 {:.double}
-Figure: Git produces snapshots of your entire project
-{:.figcaption}
 
 While you are working, Git divides your content into three main sections. Your working directory, your staging area (often referred to as *index*) and your committed work. 
 
@@ -113,6 +111,7 @@ While you are working, Git divides your content into three main sections. Your w
 
 ![]({{site.url}}/i/blog/git_areas.jpg)
 {:.double}
+
 Figure: Working - Staging - Committing
 {:.figcaption}
 
@@ -380,6 +379,7 @@ A remote in the Git world is a physical copy of a repository. It may be on the s
 
 ![]({{site.url}}/i/blog/git_hub.jpg)
 {:.double}
+
 Figure: Origin is a hub by convention
 {:.figcaption}
 
