@@ -55,7 +55,9 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm](https://git-scm.com/downloads) to download and install a suitable version of Git.
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm](https://git-scm.com/downloads) to download and install a suitable version of Git. 
+
+> No matter what platform you are using, all of the examples in this document are expected to run from inside a command line shell with access to Git.
 
 Tell Git who you are
 ---
