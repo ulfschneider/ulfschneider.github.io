@@ -100,7 +100,7 @@ will tell you what branch you are currently working on and give you an overview 
 
 Working, staging and committing
 ---
-Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. 
+Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. Technically speaking, Git maintains a *directed acyclic graph* of snapshots of your work. 
 
 ![]({{site.url}}/i/blog/git_commits_over_time.jpg)Figure: Git produces snapshots of your entire project
 {:.double}
