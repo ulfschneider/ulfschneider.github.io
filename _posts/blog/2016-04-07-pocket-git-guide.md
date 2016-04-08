@@ -564,7 +564,8 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 The big picture
 ---
-![]({{site.url}}/i/blog/git_big_picture.jpg)
+![]({{site.url}}/i/blog/git_big_picture.jpg)Figure: Git commands and their fiels of operation
+{:.double}
 
 References
 ---
