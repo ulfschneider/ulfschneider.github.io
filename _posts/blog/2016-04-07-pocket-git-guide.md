@@ -365,7 +365,7 @@ Another way to use ```git checkout``` is to use it for files.
 git checkout <pathspec>
 ```
 
-Will bring the file which is described by ```<pathspec>``` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
+will bring the file which is described by ```<pathspec>``` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
 
 Merge to include
 ---
@@ -560,6 +560,10 @@ git pull <remote> <remote-branch-name>
 ```
 
 Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage and commit your change and push then to the remote.
+
+The big picture
+---
+![]({{site.url}}/i/blog/git_big_picture.jpg)
 
 References
 ---
