@@ -202,7 +202,24 @@ The commit messages reveal whether a committer is a good collaborator or not.
 
 Because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
 
-If more explanation is needed, let the subject be followed by a blank line and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. [[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate)
+Use the imperative mood, which means "spoken or wirtten as if giving a command or instruction". Examples:
+
+- Repair css class assignment for git_hub image
+- No underline for slide navigation
+- Increase line height by a factor of 0.1
+
+If more explanation is needed, let the subject be followed by a blank line and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. 
+
+In other words, follow the seven rules of a great Git commit message
+[[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate):
+
+1. Separate the subject from the the body with a blank line
+2. Limit the subject to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain *what and why* vs. *how*
 
 Removing files
 ---
