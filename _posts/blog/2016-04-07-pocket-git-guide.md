@@ -20,6 +20,7 @@ abstract: A brief entry-level approach to Git.
 - [Renaming files](#renaming-files)
 - [Ignoring files](#ignoring-files)
 - [Branch to isolate](#branch-to-isolate)
+- [Rewind your work](#rewind-your-work)
 - [Merge to include](#merge-to-include)
 - [Remove or rename a branch](#remove-or-rename-a-branch)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
@@ -331,6 +332,40 @@ git log --graph --oneline
 ```
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
+
+Rewind your work
+---
+The ```git checkout``` can not only be used to checkout an entire branch to drive further the work in this isolated branch. ```git checkout``` is also a way to go back in the history of your work. 
+
+```
+git checkout <commit hash>
+```
+
+Will set your working directory into the state of the commit referred to with the commit hash (the code you see for each entry in the ```git log```, something like c04ff32). You are working then in the so-called *detached HEAD* state. Git will inform you about *detached HEAD* with the following output:
+
+```
+$ git checkout c04ff32
+Note: checking out 'c04ff32'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at c04ff32... New image for git committing over time
+```
+
+Another way to use ```git checkout``` is to use it for files. 
+
+```
+git checkout <pathspec>
+```
+
+Will bring the file which is described by ```<pathspec>``` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
 
 Merge to include
 ---
