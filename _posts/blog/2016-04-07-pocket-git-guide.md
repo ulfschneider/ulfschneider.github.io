@@ -104,8 +104,11 @@ Working, staging and committing
 ---
 Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. Technically speaking, Git maintains a *directed acyclic graph* of snapshots of your work. 
 
-![]({{site.url}}/i/blog/git_commits_over_time.jpg)Figure: Git produces snapshots of your entire project
+![]({{site.url}}/i/blog/git_commits_over_time.jpg)
 {:.double}
+
+Figure: Git produces snapshots of your entire project
+{:.figcaption}
 
 While you are working, Git divides your content into three main sections. Your working directory, your staging area (often referred to as *index*) and your committed work. 
 
@@ -292,8 +295,11 @@ git branch <branch-name>
 
 will create a new branch for you. Choose a short descriptive branch name.
 
-![]({{site.url}}/i/blog/git_new_branch.jpg)Figure: Creating a new branch with name 'lazyload'
+![]({{site.url}}/i/blog/git_new_branch.jpg)
 {:.double}
+
+Figure: Creating a new branch with name 'lazyload'
+{:.figcaption}
 
 `git branch <branch-name>` will not make the new created branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to
 
@@ -311,14 +317,23 @@ git checkout -b <branch-name>
 
 will create a new branch and make it the current working copy.
 
-![]({{site.url}}/i/blog/git_branch_first_commit.jpg)Figure: First commit in the 'lazyload' branch
+![]({{site.url}}/i/blog/git_branch_first_commit.jpg)
 {:.double}
 
-![]({{site.url}}/i/blog/git_branch_first_commit_alternate.jpg)Figure: Alternate picture for the first commit in the 'lazyload' branch 
+Figure: First commit in the 'lazyload' branch
+{:.figcaption}
+
+![]({{site.url}}/i/blog/git_branch_first_commit_alternate.jpg)
 {:.double}
 
-![]({{site.url}}/i/blog/git_branch_multiple_commits.jpg)Figure: Multiple commits in the 'lazyload' branch 
+Figure: Alternate picture for the first commit in the 'lazyload' branch 
+{:.figcaption}
+
+![]({{site.url}}/i/blog/git_branch_multiple_commits.jpg)
 {:.double}
+
+Figure: Multiple commits in the 'lazyload' branch 
+{:.figcaption}
 
 ```
 git branch
@@ -390,20 +405,29 @@ To be more precise, all commits from your source branch will be merged into your
 
 The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch.
 
-![]({{site.url}}/i/blog/git_fast_forward.jpg)Figure: Fast-forward merge of 'lazyload' into 'master' branch 
+![]({{site.url}}/i/blog/git_fast_forward.jpg)
 {:.double}
+
+Figure: Fast-forward merge of 'lazyload' into 'master' branch 
+{:.figcaption}
 
 In this case any changes made in the source branch will entirely be added to the destination branch, which is called *fast-forward*. The tip (last commit, or head commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
 A *true merge* is something different. That´s when both, the source branch and the destination branch, have been modified before merging. 
 
-![]({{site.url}}/i/blog/git_true_merge.jpg)Figure: 'master' and 'lazyload' have been modified - a true merge is needed
+![]({{site.url}}/i/blog/git_true_merge.jpg)
 {:.double}
+
+Figure: 'master' and 'lazyload' have been modified - a true merge is needed
+{:.figcaption}
 
 A fast-forward then is no longer possible and Git has to figure out the combined state of the content, wich will lead to a so called *merge commit*. 
 
-![]({{site.url}}/i/blog/git_merge_commit.jpg)Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
+![]({{site.url}}/i/blog/git_merge_commit.jpg)
 {:.double}
+
+Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
+{:.figcaption}
 
 Starting at the head commits of each branch, Git will search back for the first common ancestor of both branches. This common ancestor is then used as a reference point to determine what has been changed in what order in each branch. Each changed file in each branch is compared against the reference point. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: 
 
@@ -564,8 +588,12 @@ Git will automatically merge the remote changes into your local branch. In case 
 
 The big picture
 ---
-![]({{site.url}}/i/blog/git_big_picture.jpg)Figure: Git commands and their fiels of operation
+![]({{site.url}}/i/blog/git_big_picture.jpg)
 {:.double}
+
+Figure: Git commands and their fiels of operation
+{:.figcaption}
+
 
 References
 ---
