@@ -27,6 +27,7 @@ abstract: A brief entry-level approach to Git.
 - [Clone a remote repository to local](#clone-a-remote-repository-to-local)
 - [Push data to remote](#push-data-to-remote)
 - [Pull data from remote](#pull-data-from-remote)
+- [The big picture](#the-big-picture)
 - [References](#references)
 {:.toc}
 
