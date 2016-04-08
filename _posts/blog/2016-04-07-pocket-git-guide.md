@@ -64,7 +64,7 @@ Git is free. When you try to use Git for the first time on a Mac (my preferred e
 Tell Git who you are
 ---
 ```
-git config [--global] user.name ["your name"]
+git config [--global] user.name ["your name or user name"]
 git config [--global] user.email ["your email address"]
 ```
 
