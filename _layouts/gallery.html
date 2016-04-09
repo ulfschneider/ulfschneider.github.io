@@ -4,11 +4,11 @@
 {% include head.html %}
 
 <script src="/r/jquery.min.js"></script>
-
 <body>
 
   {% unless page.autoplay %}
   <!-- grid -->
+  <script src="/r/jquery.unveil.js"></script>
   <div class="grid-gallery-content">
 
     {% include header.html %}
@@ -22,7 +22,7 @@
 
     {% unless page.noslides %}
     <p style="text-align:center;">
-      <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">display slides</a>
+      <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">Display slides</a>
     </p>
     {% endunless %}
 
@@ -45,7 +45,7 @@
       {% for image in sorted-images %}<li class="image-grid"><!-- use this weird way of writing the <li> tags to get rid of the tiny column gap between images -->
       <a href="{{ image.url | prepend: site.baseurl }}">
         <div class="image">
-          <img src="{{image.thumburl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{image.thumburl | prepend: site.baseurl}}"/>
           {% if image.message %}
           <h2>{{image.message}}</h2>
           {% elsif image.abstract %}
@@ -59,6 +59,9 @@
 
     <script>
       $('.slide-gallery-content').hide();
+      $(document).ready(function() {
+        $("img").unveil();
+      });
     </script>
 
   </div>
@@ -75,10 +78,10 @@
 
       {% unless page.autoplay %}
       <div class="nav">
-        <a class="gallery" id="gallery" onclick="displayGrid();">back to gallery</a>
+        <a class="gallery" id="gallery" onclick="displayGrid();">Back to gallery</a>
         <div class="direction">
-          <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;prev</a>
-          <a class="next" id="next" onclick="next();" accesskey="+">next&nbsp;></a>
+          <a class="prev" id="prev" onclick="prev();" accesskey="-"><&nbsp;Prev</a>
+          <a class="next" id="next" onclick="next();" accesskey="+">Next&nbsp;></a>
         </div>
       </div>
       {% endunless %}
@@ -104,9 +107,9 @@
         {% for image in sorted-images %}
         <div class="slide">
           {% if image.slideurl %}
-          <img lazy="{{image.slideurl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== lazy="{{image.slideurl | prepend: site.baseurl}}"/>
           {% else %}
-          <img lazy="{{image.thumburl | prepend: site.baseurl}}"/>
+          <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== lazy="{{image.thumburl | prepend: site.baseurl}}"/>
           {% endif %}
 
           {% if image.message %}

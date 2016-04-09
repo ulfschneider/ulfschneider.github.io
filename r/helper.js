@@ -65,5 +65,9 @@ function figCaption(dom) {
   for(i = 0; i < s.length; i++) {
     figCaption(s[i]);
 	}
+  s = select(".double");
+  for(i = 0; i < s.length; i++) {
+    figCaption(s[i]);
+  }
 
 })();

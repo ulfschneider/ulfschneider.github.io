@@ -64,7 +64,6 @@ h3,h4,h5,h6 {
   max-width: 100%;
   max-height:800px;
   vertical-align: top;
-  border: 0;
 }
 
 /**
@@ -174,7 +173,7 @@ dd {
   display:inline-block;
   padding:0px 3px;
   white-space:pre;
-  background:#f0f0f0;
+  background:#ddd;
   border-radius:2px;
 }
 
@@ -183,7 +182,7 @@ pre.highlight {
 }
 
 div.highlighter-rouge {
-  overflow:scroll;
+  overflow:auto;
   margin-bottom:$spacing-unit;
 }
 
