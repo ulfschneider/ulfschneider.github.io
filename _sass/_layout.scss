@@ -28,6 +28,7 @@
     margin: 0px 10px;
     padding-left:1px;
     padding-right:1px;
+    @extend %nolinkstyle;
   }
 }
 
@@ -71,7 +72,6 @@
       padding:0;
       margin:0;
       margin-bottom:$spacing-unit;
-      @extend %nolinkstyle;
     }
 
   }
@@ -264,6 +264,9 @@ li.image-grid h2 {
 
 .toc li { 
   list-style-type: none;
+  a {
+    @extend %nolinkstyle;
+  }
 }
 
 
@@ -294,8 +297,6 @@ figcaption:before, .figcaption:before {
   width: $spacing-unit;
   height:0;
   display:block;
-
-  @extend %linkstyle;
 }
 
 .figcaption {
