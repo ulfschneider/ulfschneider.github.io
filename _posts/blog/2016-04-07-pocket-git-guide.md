@@ -20,14 +20,15 @@ abstract: A brief entry-level approach to Git.
 - [Renaming files](#renaming-files)
 - [Ignoring files](#ignoring-files)
 - [Branch to isolate](#branch-to-isolate)
-- [Rewind your work](#rewind-your-work)
 - [Merge to include](#merge-to-include)
 - [Remove or rename a branch](#remove-or-rename-a-branch)
+- [Rewind your work](#rewind-your-work)
 - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)
 - [Clone a remote repository to local](#clone-a-remote-repository-to-local)
 - [Push data to remote](#push-data-to-remote)
 - [Pull data from remote](#pull-data-from-remote)
 - [The big picture](#the-big-picture)
+- [Commmand reference](#command-reference)
 - [References](#references)
 {:.toc}
 
@@ -251,6 +252,13 @@ Or, use the suitable Git command right from the start:
 git mv a.txt b.txt
 ```
 
+which can be generalized
+
+```
+git mv <current-path> <new-path>
+```
+
+
 Ignoring files
 ---
 If some files in your project should be ignored by Git, for example because
@@ -349,40 +357,6 @@ git log --graph --oneline
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
 
-Rewind your work
----
-The ```git checkout``` can not only be used to checkout an entire branch to drive further the work in this isolated branch. ```git checkout``` is also a way to go back in the history of your work. 
-
-```
-git checkout <commit hash>
-```
-
-Will set your working directory into the state of the commit referred to with the commit hash (the code you see for each entry in the ```git log```, something like c04ff32). You are working then in the so-called *detached HEAD* state. Git will inform you about *detached HEAD* with the following output:
-
-```
-$ git checkout c04ff32
-Note: checking out 'c04ff32'.
-
-You are in 'detached HEAD' state. You can look around, make experimental
-changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by performing another checkout.
-
-If you want to create a new branch to retain commits you create, you may
-do so (now or later) by using -b with the checkout command again. Example:
-
-  git checkout -b <new-branch-name>
-
-HEAD is now at c04ff32... New image for git committing over time
-```
-
-Another way to use ```git checkout``` is to use it for files. 
-
-```
-git checkout <pathspec>
-```
-
-will bring the file which is described by ```<pathspec>``` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
-
 Merge to include
 ---
 Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for. All commits that have been made in your source branch have to be merged into your master branch.
@@ -477,6 +451,40 @@ A rename of the current local branch can be achieved by
 git branch -m <new-branch-name>
 ```
 
+Rewind your work
+---
+The ```git checkout``` can not only be used to checkout an entire branch to drive further the work in this isolated branch. ```git checkout``` is also a way to go back in the history of your work. 
+
+```
+git checkout <commit hash>
+```
+
+Will set your working directory into the state of the commit referred to with the commit hash (the code you see for each entry in the ```git log```, something like c04ff32). You are working then in the so-called *detached HEAD* state. Git will inform you about *detached HEAD* with the following output:
+
+```
+$ git checkout c04ff32
+Note: checking out 'c04ff32'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at c04ff32... New image for git committing over time
+```
+
+Another way to use ```git checkout``` is to use it for files. 
+
+```
+git checkout <pathspec>
+```
+
+will bring the file which is described by ```<pathspec>``` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
+
 Working with remotes to share with a team
 ---
 The Git working mode is offline by default. This is nice, because you don´t need to have an account to sign in somewhere, you just can start working with your repository. 
@@ -561,7 +569,7 @@ or, generally
 git push -u <remote> <remote-branch-name>
 ```
 
-`u` (alternatively `--set-upstream`) is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
+`-u` (alternatively `--set-upstream`) is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
 
 A very specific case of pushing is to remove a branch from the remote, as the removing of local branch doesn´t remove the branch on the remote. The command goes
 
@@ -591,12 +599,281 @@ The big picture
 ![]({{site.url}}/i/blog/git_big_picture.jpg)
 {:.double}
 
-Figure: Git commands and their fiels of operation
+Figure: Git commands and their fields of operation
 {:.figcaption}
+
+Command reference
+---
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Create new local repo</strong>
+</div>
+<div class="col-2-3 last ">
+<div class="auto">
+<code>cd /path/to/your/prj/
+git init</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Copy existing repo</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>cd /path/to/parent/
+git clone &lt;repo&gt; [&lt;new-folder-name&gt;]</code>
+</div>
+Where <code>&lt;repo&gt;</code> is one of
+<div class="auto">
+<code>/path/to/repo.git
+ssh://[user@]host.xz[:port]/path/to/repo.git
+git://host.xz[:port]/path/to/repo.git
+http[s]://host.xz[:port]/path/to/repo.git</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Status of repo</strong>
+</div>
+<div class="col-2-3 last">
+<code>git status</code>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Stage content</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git add [&lt;pathspec&gt;]</code>
+</div>
+or
+<div class="auto">
+<code>git add --all</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Commit content</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git commit [-a] [-m "your commit message"]</code>
+</div>
+where <code>-a</code> will stage all modified and deleted content and <code>-m</code>indicates the commit message<br><br>
+alternatively
+<div class="auto">
+<code>git commit -am "your commit message"</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Remove file</strong>
+</div>
+<div class="col-2-3 last ">
+<div class="auto">
+<code>git rm &lt;pathspec&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Rename file</strong>
+</div>
+<div class="col-2-3 last ">
+<div class="auto">
+<code>git mv &lt;current-path&gt; &lt;new-path&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Ignore file</strong>
+</div>
+<div class="col-2-3 last ">
+Use one pattern per line in .gitignore file
+<div class="auto">
+<code>*.a
+build/
+notes/*.txt
+notes/**/*.txt
+!notes/todo.txt</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>See what branch you are on</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git branch</code><br><br>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Create a branch</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto bottom-space">
+<code>git branch &lt;branch-name&gt;</code>
+</div>
+or
+<div class="auto">
+<code>git checkout -b &lt;branch-name&gt;</code>
+</div>
+to create and checkout the branch.
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Checkout a branch</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git checkout &lt;branch-name&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Merge</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git checkout &lt;destination-branch-name&gt;
+git merge &lt;source-branch-name&gt;
+</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Rename a branch</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git -m &lt;branch-name&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Delete a branch</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git -d &lt;branch-name&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Activate an older commit</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git checkout &lt;commit-hash&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Discard file changes</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git checkout &lt;pathspec&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Push to server</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git push [-u] &lt;remote&gt; &lt;remote-branch-name&gt;</code>
+</div>
+to push from current branch to remote branch, where <code>-u</code> can be used once to track the remote branch from the current branch. After setting the upstream with <code>-u</code>, it can be pushed and pulled from the current branch without specifying <code>&lt;remote&gt;</code> and <code>&lt;remote-branch-name&gt;</code>.
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Pull from server</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git pull &lt;remote&gt; &lt;remote-branch-name&gt;</code>
+</div>
+to pull from remote branch into current branch. If remote branch tracking has been activated before via <code>-u</code> in a <code>git push</code>, it can be pulled from the remote branch without specifying <code>&lt;remote&gt;</code> and <code>&lt;remote-branch-name&gt;</code>.
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Tell Git who you are</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git config [--global] user.name ["your name or user name"]
+git config [--global] user.email ["your email address"]</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Display your Git config</strong>
+</div>
+<div class="col-2-3 last">
+<code>git config --list</code>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Configure your editor</strong>
+</div>
+<div class="col-2-3 last">
+Set your editor<br>
+<div class="auto bottom-space">
+<code>git config --global core.editor &lt;editor-name&gt;</code>
+</div>
+Display your current editor setting
+<div class="auto">
+<code>git config core.editor</code>
+</div>
+</div>
+</div>
 
 
 References
 ---
+
 [Beams 2014] C. Beams, "How to Write a Git Commit Message", 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
 
 [Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)

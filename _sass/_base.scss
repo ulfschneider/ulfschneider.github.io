@@ -44,6 +44,10 @@ hr {
   margin-bottom: $spacing-unit;
 }
 
+.bottom-space {
+  @extend %vertical-rhythm;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2*$spacing-unit;
   font-family: $title-font-family;
@@ -101,6 +105,7 @@ ul, ol {
       margin-bottom: 0;
     }
   }
+
 }
 
 dl {
@@ -181,7 +186,12 @@ pre.highlight {
   margin:0;
 }
 
-div.highlighter-rouge {
+.auto {
+  overflow:auto;
+  display:block;
+}
+
+.highlighter-rouge {
   overflow:auto;
   margin-bottom:$spacing-unit;
 }
