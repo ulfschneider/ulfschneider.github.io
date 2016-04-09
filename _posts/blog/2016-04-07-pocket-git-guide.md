@@ -880,6 +880,8 @@ References
 
 [GitHub] [github.com](https://github.com) 
 
+[git-ref] [git-scm.com/docs/](https://git-scm.com/docs/)
+
 [git-scm] [git-scm.com](https://git-scm.com)
 
 [Westby 2014] E. J. Westby, "Dealing with Emergencies in Git", 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
