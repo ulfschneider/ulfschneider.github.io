@@ -978,23 +978,19 @@ References
 
 [Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
-[GitHub](https://github.com) 
+[GitHub] "Welcome home, developers", [github.com](https://github.com)
 
-[GitHub Desktop](https://desktop.github.com)
+[GitHub Desktop] "Simple collaboration from your desktop", [desktop.github.com](https://desktop.github.com)
 
-[git-scm.com/docs/](https://git-scm.com/docs/)
+[GitRef] Git command reference, [git-scm.com/docs/](https://git-scm.com/docs/)
 
-[git-scm.com/downloads](https://git-scm.com)
+[Git] Git downloads for different platforms, [git-scm.com/downloads](https://git-scm.com)
 
-[pro-git](https://git-scm.com/book/en/v2)
+[Chacon, Straub 2014] S. Chacon, B. Straub, "Pro Git", 2014, [git-scm.com/book](https://git-scm.com/book)
 
-[Tower](https://www.git-tower.com)
+[Tower] Version control with Git - made easy,
+In a beautiful, efficient, and powerful app, [git-tower.com](https://www.git-tower.com)
 
 [Westby 2014] E. J. Westby, "Dealing with Emergencies in Git", 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
 
 
-
-TODO
----
-
-pro-git 
