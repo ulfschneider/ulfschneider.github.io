@@ -145,13 +145,26 @@ git add --all
 
 which will ensure all untracked files in your current project are being added to your staging area.
 
-If you edited something without staging it, and you want to get rid of it, use
+The opposite of `git add` is 
 
 ```
-git clean
+git reset <pathspec>
 ```
 
-to revert your editing. 
+With `git reset` you can un-stage contents.
+
+
+If you created files or directories without staging them, and you want to get rid of them, use
+
+```
+git clean [-ifd]
+```
+
+`-i` shows what would be done and clean files interactively.
+
+`-f` if the git config `clean.requireForce false` is not set, this option is needed to proceed with the command.
+
+`-d` will also remove directories in addition to files.
 
 Commit to make a snapshot of your work
 ---
@@ -192,7 +205,13 @@ To see the history of commits use
 git log
 ```
 
-The output of a `git log` can be filtered and formatted. For example 
+The output of a `git log` can be filtered and formatted with
+
+```
+git log [--oneline] [--pretty] [<branch-name>]
+```
+
+For example 
 
 ```
 git log --oneline
@@ -200,7 +219,7 @@ git log --oneline
 
 will display most recent commits organized into one single line per commit. 
 
-```git log <branch-name> --oneline``` 
+```git log --oneline <branch-name>``` 
 
 will display most recent commits in the specified branch, organized into one single line per commit.
 
@@ -208,7 +227,7 @@ A free formatting of the `git log` output can be achieved with
 
 ```git log --pretty="<your format string>"``` 
 
-A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
+A list of available formatting options is on [git-scm.com/docs/pretty-formats](https://git-scm.com/docs/pretty-formats).
 
 The commit message
 ---
@@ -312,10 +331,10 @@ A commit will always be done inside of a particular branch. But while commits po
 While you can have multiple branches in your repository, there is always exact one working branch in your local repository, which is the one you are currently working on. This is what is in your *working directory* or *working copy*. Any commit you make will be against the working branch.
 
 ```
-git branch <branch-name>
+git branch <branch-name> [<commit>]
 ```
 
-will create a new branch for you. Choose a short descriptive branch name.
+will create a new branch for you. Choose a short descriptive branch name. The optional `<commit>` specifies a commit to start from. If you don´t give the `<commit>`, the branch will be created from the latest commit in the current branch.
 
 ![]({{site.url}}/i/blog/git_new_branch.jpg)
 {:.double}
@@ -370,6 +389,20 @@ git log --graph --oneline
 ```
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
+
+Compare
+---
+
+```
+git diff [--stat] [<branch-name or commit]
+```
+
+will indicate the differences between your working directory and your staging area. 
+
+`--stat` will display a shorter statistic of changed files with numbers of lines added and removed. 
+
+`<branch-name>` compares your working directory with the given branch in the repository. Same counts if you use `<commit>` instead of branch name.
+
 
 Merge to include
 ---
@@ -687,6 +720,21 @@ or
 <div class="auto">
 <code>git add --all</code>
 </div>
+to un-stage, use
+<div class="auto">
+<code>git reset &lt;pathspec&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Removing files which have not been staged</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git clean [-ifd]</code>
+</div>
 </div>
 </div>
 
@@ -698,10 +746,21 @@ or
 <div class="auto">
 <code>git commit [-a] [-m "your commit message"]</code>
 </div>
-where <code>-a</code> will stage all modified and deleted content and <code>-m</code>indicates the commit message<br><br>
+where <code>-a</code> will stage all modified and deleted content and <code>-m</code> indicates the commit message<br><br>
 alternatively
 <div class="auto">
 <code>git commit -am "your commit message"</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>See history of commits</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git log [--oneline] [--pretty] [&lt;branch-name&gt;]</code>
 </div>
 </div>
 </div>
@@ -761,7 +820,7 @@ notes/**/*.txt
 </div>
 <div class="col-2-3 last">
 <div class="auto bottom-space">
-<code>git branch &lt;branch-name&gt;</code>
+<code>git branch &lt;branch-name&gt; [&lt;commit&gt;]</code>
 </div>
 or
 <div class="auto">
@@ -778,6 +837,17 @@ to create and checkout the branch.
 <div class="col-2-3 last">
 <div class="auto">
 <code>git checkout &lt;branch-name&gt;</code>
+</div>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Compare changes</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto">
+<code>git diff [--stat] [&lt;branch-name or commit&gt;]</code>
 </div>
 </div>
 </div>
@@ -926,12 +996,5 @@ References
 
 TODO
 ---
-
-git log
-git clean
-git commit --amend -m
-git branch with commit
-git diff
-git reset
 
 pro-git 
