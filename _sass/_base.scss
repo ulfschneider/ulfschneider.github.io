@@ -182,8 +182,10 @@ dd {
   border-radius:2px;
 }
 
-pre.highlight {
-  margin:0;
+pre.highlight {  
+  @extend %vertical-rhythm;
+  overflow:auto;
+  display:block;
 }
 
 .auto {
@@ -191,10 +193,6 @@ pre.highlight {
   display:block;
 }
 
-.highlighter-rouge {
-  overflow:auto;
-  margin-bottom:$spacing-unit;
-}
 
 
 /**

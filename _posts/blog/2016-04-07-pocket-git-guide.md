@@ -62,7 +62,7 @@ Git is free. When you try to use Git for the first time on a Mac (my preferred e
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
-You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced and simpler [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Though an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
+You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Though an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
 
 Tell Git who you are
 ---
@@ -130,7 +130,7 @@ Stage to tell Git what to refer to
 To prepare a snapshot of your current work, which will be stored in the Git repository, call
 
 ```
-git add [<pathspec>]
+git add <pathspec>
 ```
 
 `<pathspec>` specifies the files to be put into the staging area (the index). Wildcards are allowed. 
@@ -192,15 +192,27 @@ To see the history of commits use
 git log
 ```
 
-The output of a `git log` can be filtered and formatted. For example `git log --oneline` will display most recent commits organized into one single line per commit. 
+The output of a `git log` can be filtered and formatted. For example 
 
-`git log <branch-name> --oneline` will display most recent commits in the specified branch, organized into one single line per commit.
+```
+git log --oneline
+``` 
 
-A free formatting of the `git log` output can be achieved with `git log --pretty="<your format string>"`. A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
+will display most recent commits organized into one single line per commit. 
+
+```git log <branch-name> --oneline``` 
+
+will display most recent commits in the specified branch, organized into one single line per commit.
+
+A free formatting of the `git log` output can be achieved with
+
+```git log --pretty="<your format string>"``` 
+
+A list of available formatting options is on [GitHub](https://git-scm.com/docs/pretty-formats).
 
 The commit message
 ---
-A ```git log``` of commit messages should give an idea how the project has evolved over time. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
+A `git log` of commit messages should give an idea how the project has evolved over time. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
 
 A properly formed commit subject line should complete the following sentence:
 
@@ -208,7 +220,7 @@ A properly formed commit subject line should complete the following sentence:
 
 The commit messages reveal whether a committer is a good collaborator or not.
 
-Because in the output of a ```git log``` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
+Because in the output of a `git log` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
 
 Use the imperative mood, which means "spoken or wirtten as if giving a command or instruction". Examples:
 
@@ -531,7 +543,7 @@ http[s]://host.xz[:port]/path/to/repo.git
 
 The first protocol is the *local* protocol. This is useful if the remote repository will reside on a shared filesystem to which every team member has access. The other protocols are obviously *ssh, git* and *http*. To learn more about these, please refer to ["Git on the server - the protocols"](https://git-scm.com/book/tr/v2/Git-on-the-Server-The-Protocols). 
 
-Sometimes you try access a server via https and the server is using a self-signed certificate. Git won´t accept this certificate but if you are sure about the server, for example because the server is placed in your local intranet, as one possible solution to overcome the problem you can make the following configuration in Git:
+Sometimes you try access a server via https and the server is using a self-signed certificate. Git won´t accept this certificate but if you are sure about the server, for example because the server is placed in your local intranet, one possible solution is the following configuration in Git:
 
 ```
 cd /path/to/your/repo
@@ -669,7 +681,7 @@ Watch out <code>git config [--global] http.sslVerify false</code> as one possibl
 </div>
 <div class="col-2-3 last">
 <div class="auto">
-<code>git add [&lt;pathspec&gt;]</code>
+<code>git add &lt;pathspec&gt;</code>
 </div>
 or
 <div class="auto">
@@ -896,15 +908,30 @@ References
 
 [Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
-[GitHub] [github.com](https://github.com) 
+[GitHub](https://github.com) 
 
-[git-scm/docs] [git-scm.com/docs/](https://git-scm.com/docs/)
+[GitHub Desktop](https://desktop.github.com)
 
-[git-scm/downloads] [git-scm.com/downloads](https://git-scm.com)
+[git-scm.com/docs/](https://git-scm.com/docs/)
+
+[git-scm.com/downloads](https://git-scm.com)
+
+[pro-git](https://git-scm.com/book/en/v2)
+
+[Tower](https://www.git-tower.com)
 
 [Westby 2014] E. J. Westby, "Dealing with Emergencies in Git", 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
 
 
 
+TODO
+---
 
+git log
+git clean
+git commit --amend -m
+git branch with commit
+git diff
+git reset
 
+pro-git 
