@@ -20,6 +20,7 @@ abstract: A brief entry-level approach to Git.
 - [Renaming files](#renaming-files)
 - [Ignoring files](#ignoring-files)
 - [Branch to isolate](#branch-to-isolate)
+- [Compare your working directory](#compare-your-working-directory)
 - [Merge to include](#merge-to-include)
 - [Remove or rename a branch](#remove-or-rename-a-branch)
 - [Rewind your work](#rewind-your-work)
@@ -193,7 +194,7 @@ If you don´t specify a commit message when firing the commit command, an editor
 git config --global core.editor <editor-name>
 ```
 
-[GitHub](https://help.github.com/articles/associating-text-editors-with-git/) provides a brief guide to setting up several editors. To see the currently configured editor, type
+[help.github.com/articles/associating-text-editors-with-git](https://help.github.com/articles/associating-text-editors-with-git/) provides a brief guide to setting up several editors. To see the currently configured editor, type
 
 ```
 git config [--global] core.editor
@@ -290,7 +291,6 @@ which can be generalized
 ```
 git mv <current-path> <new-path>
 ```
-
 
 Ignoring files
 ---
@@ -390,7 +390,7 @@ git log --graph --oneline
 
 The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
 
-Compare
+Compare your working directory
 ---
 
 ```
