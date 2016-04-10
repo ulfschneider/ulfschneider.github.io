@@ -544,7 +544,7 @@ A remote in the Git world is a physical copy of a repository. It may be on the s
 Figure: Origin is a hub by convention
 {:.figcaption}
 
-Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually ```.git``` is being appended to the name of the repository.
+Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually *.git* is being appended to the name of the repository.
 
 A remote may be on [GitHub](https://github.com) or on a self-hosted system you want to use as a hub.
 
