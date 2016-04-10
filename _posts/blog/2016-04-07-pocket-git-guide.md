@@ -58,9 +58,11 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm](https://git-scm.com/downloads) to download and install a suitable version of Git. 
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For other platforms you may use [git-scm.com/downloads](https://git-scm.com/downloads) to download and install a suitable version of Git. 
 
-> No matter what platform you are using, all of the examples in this document are to be run from inside a command line shell with access to Git.
+> No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
+
+You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the more reduced and simpler [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Though an advantage of using the command shell is, it works the same on all platforms. What you learned here you can use anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
 
 Tell Git who you are
 ---
@@ -516,6 +518,8 @@ Then clone the remote repository into the parent
 git clone <repo> [<new-folder-name>]
 ```
 
+`<new-folder-name>` is the optional folder name of the cloned project on your computer.
+
 `<repo>` is the path to the remote repository and has one of the following structures, each standing for a different protocol:
 
 ```
@@ -525,9 +529,20 @@ git://host.xz[:port]/path/to/repo.git
 http[s]://host.xz[:port]/path/to/repo.git
 ```
 
-The first protocol is the *local* protocol. This is useful if the remote repository will reside on a shared filesystem to which every team member has access. The other protocols are obviously *ssh, git* and *http*. To learn more about these, please refer to ["Git on the server - the protocols"](https://git-scm.com/book/tr/v2/Git-on-the-Server-The-Protocols).
+The first protocol is the *local* protocol. This is useful if the remote repository will reside on a shared filesystem to which every team member has access. The other protocols are obviously *ssh, git* and *http*. To learn more about these, please refer to ["Git on the server - the protocols"](https://git-scm.com/book/tr/v2/Git-on-the-Server-The-Protocols). 
 
-`<new-folder-name>` is the optional folder name of the cloned project on your computer.
+Sometimes you try access a server via https and the server is using a self-signed certificate. Git won´t accept this certificate but if you are sure about the server, for example because the server is placed in your local intranet, as one possible solution to overcome the problem you can make the following configuration in Git:
+
+```
+cd /path/to/your/repo
+git config http.sslVerify false
+```
+
+As a global setting for your entire Git:
+
+```
+git config --global http.sslVerify false
+```
 
 Once you have cloned the remote to your computer, Git already configured the *origin* for your project. You can check that by
 
@@ -605,6 +620,8 @@ Figure: Git commands and their fields of operation
 Command reference
 ---
 
+The following list is by far not complete. Though I found myself using these commands and options most often. For a more complete list please refer to [git-scm.com/docs/](https://git-scm.com/docs/).
+
 <div class="grid bottom-space">
 <div class="col-1-3 first">
 <strong>Create new local repo</strong>
@@ -633,6 +650,7 @@ ssh://[user@]host.xz[:port]/path/to/repo.git
 git://host.xz[:port]/path/to/repo.git
 http[s]://host.xz[:port]/path/to/repo.git</code>
 </div>
+Watch out <code>git config [--global] http.sslVerify false</code> as one possible solution in case Git doesn´t allow you to connect to a repo via https.
 </div>
 </div>
 
@@ -880,11 +898,13 @@ References
 
 [GitHub] [github.com](https://github.com) 
 
-[git-ref] [git-scm.com/docs/](https://git-scm.com/docs/)
+[git-scm/docs] [git-scm.com/docs/](https://git-scm.com/docs/)
 
-[git-scm] [git-scm.com](https://git-scm.com)
+[git-scm/downloads] [git-scm.com/downloads](https://git-scm.com)
 
 [Westby 2014] E. J. Westby, "Dealing with Emergencies in Git", 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
+
+
 
 
 
