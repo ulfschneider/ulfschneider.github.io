@@ -62,7 +62,7 @@ Git is free. When you try to use Git for the first time on a Mac (my preferred e
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
-You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the more reduced and simpler [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Though an advantage of using the command shell is, it works the same on all platforms. What you learned here you can use anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
+You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced and simpler [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Though an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
 
 Tell Git who you are
 ---
