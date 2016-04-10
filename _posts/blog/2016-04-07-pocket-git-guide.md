@@ -380,7 +380,7 @@ Figure: Multiple commits in the 'lazyload' branch
 git branch
 ```
 
-will show you the current list of branches with a `*` in front of the new created and now active branch.
+will show you the current list of branches with a `*` in front of the new created and now active branch. 
 
 To see the history of commits in a branch-oriented tree format, use
 
