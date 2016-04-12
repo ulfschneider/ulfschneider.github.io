@@ -80,6 +80,12 @@ Detect your configuration settings with
 git config --list
 ```
 
+Edit your configuration file with 
+
+```
+git config [--global] --edit
+```
+
 Create a new local repository
 ---
 Move to the folder which should contain your project
@@ -377,10 +383,12 @@ Figure: Multiple commits in the 'lazyload' branch
 {:.figcaption}
 
 ```
-git branch
+git branch [-a|-r]
 ```
 
-will show you the current list of branches with a `*` in front of the new created and now active branch. 
+will show you the current list of local branches with a `*` in front of the currently active branch. Without any option the command will display your *local branches* - the branches you are working on and where your commits go against. With `-r` the *remote tracking branches* will be shown. These are all branches from your remote server (please refer to [Clone a remote repository to local](#clone-a-remote-repository-to-local)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Remote tracking branches are named *origin/<branch-name>*. Don´t checkout such a branch via `git checkout origin/<branch-name>` - instead do `checkout <branch-name>` to make the remote tracking branch a tracking branch.
+
+`-a` will show all tracking branches and all remote tracking branches.
 
 To see the history of commits in a branch-oriented tree format, use
 
@@ -956,6 +964,15 @@ git config [--global] user.email ["your email address"]</code>
 
 <div class="grid bottom-space">
 <div class="col-1-3 first">
+<strong>Edit your Git config file</strong>
+</div>
+<div class="col-2-3 last">
+<code>git config [--global] --edit</code>
+</div>
+</div>
+
+<div class="grid bottom-space">
+<div class="col-1-3 first">
 <strong>Configure your editor</strong>
 </div>
 <div class="col-2-3 last">
@@ -970,6 +987,16 @@ Display your current editor setting
 </div>
 </div>
 
+<div class="grid bottom-space">
+<div class="col-1-3 first">
+<strong>Let Git accept your self-signed certificate</strong>
+</div>
+<div class="col-2-3 last">
+<div class="auto bottom-space">
+<code>git config [--global] http.sslVerify false</code>
+</div>
+</div>
+</div>
 
 References
 ---
