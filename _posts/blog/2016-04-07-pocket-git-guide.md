@@ -386,9 +386,18 @@ Figure: Multiple commits in the 'lazyload' branch
 git branch [-a|-r]
 ```
 
-will show you the current list of local branches with a `*` in front of the currently active branch. Without any option the command will display your *local branches* - the branches you are working on and where your commits go against. With `-r` the *remote tracking branches* will be shown. These are all branches from your remote server (please refer to [Clone a remote repository to local](#clone-a-remote-repository-to-local)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Remote tracking branches are named *origin/<branch-name>*. Don´t checkout such a branch via `git checkout origin/<branch-name>` - instead do `checkout <branch-name>` to make the remote tracking branch a tracking branch.
+will show you the current list of local branches with a `*` in front of the currently active branch. Without any option the command will display your *local branches* - the branches you are working on and where your commits go against. With `-r` the *remote branches* will be shown. `-a` will show all local branches and all remote branches.
 
-`-a` will show all tracking branches and all remote tracking branches.
+Remote branches are all branches from your remote server (please refer to - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Whenever you call `get status` and get a result like
+
+```
+Your branch is ahead of 'origin/<branch-name>' by 1 commit.
+  (use "git push" to publish your local commits)
+```
+
+Git has figured out a difference between your local branch and its counterpart, the remote  branch.
+
+Remote branches are named *origin/<branch-name>*. Don´t checkout such a branch via `git checkout origin/<branch-name>` - instead do `git checkout <branch-name>` to make the remote tracking branch a tracking branch.
 
 To see the history of commits in a branch-oriented tree format, use
 
@@ -498,13 +507,26 @@ Sometimes you want to remove a branch, e.g. after all work is done and the branc
 git branch -d <branch-to-delete>
 ```
 
-to remove your branch. 
+to remove your local branch. To remove a remote branch (refer to - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)), use
+
+```
+git push origin --delete <branch-to-delete>
+``` 
 
 A rename of the current local branch can be achieved by
 
 ```
 git branch -m <new-branch-name>
 ```
+
+To have the renamed branch on the server, do
+
+```
+git push origin <new-branch-name>
+git push origin --delete <old-branch-name>
+```
+
+the second push with the `--delete` option will remove the old branch from the remote.
 
 Rewind your work
 ---
@@ -817,7 +839,7 @@ notes/**/*.txt
 </div>
 <div class="col-2-3 last">
 <div class="auto">
-<code>git branch</code><br><br>
+<code>git branch [-a|-r]</code><br><br>
 </div>
 </div>
 </div>
