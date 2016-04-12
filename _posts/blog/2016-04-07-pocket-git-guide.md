@@ -388,7 +388,7 @@ git branch [-a|-r]
 
 will show you the current list of local branches with a `*` in front of the currently active branch. Without any option the command will display your *local branches* - the branches you are working on and where your commits go against. With `-r` the *remote branches* will be shown. `-a` will show all local branches and all remote branches.
 
-Remote branches are all branches from your remote server (please refer to - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Whenever you call `get status` and get a result like
+Remote branches are all branches from your remote server (please refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Whenever you call `get status` and get a result like
 
 ```
 Your branch is ahead of 'origin/<branch-name>' by 1 commit.
@@ -507,7 +507,7 @@ Sometimes you want to remove a branch, e.g. after all work is done and the branc
 git branch -d <branch-to-delete>
 ```
 
-to remove your local branch. To remove a remote branch (refer to - [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)), use
+to remove your local branch. To remove a remote branch (refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)), use
 
 ```
 git push origin --delete <branch-to-delete>
