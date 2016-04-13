@@ -411,14 +411,18 @@ Compare your working directory
 ---
 
 ```
-git diff [--stat] [<branch-name or commit]
+git diff
 ```
 
 will indicate the differences between your working directory and your staging area. 
 
+```
+git diff [--stat] [<branch-name or commit]
+```
+
 `--stat` will display a shorter statistic of changed files with numbers of lines added and removed. 
 
-`<branch-name>` compares your working directory with the given branch in the repository. Same counts if you use `<commit>` instead of branch name.
+`<branch-name>` compares your working directory with your working copy. Same counts if you use `<commit>` instead of branch name.
 
 ```
 git diff <older-commit> <newer-commit>
