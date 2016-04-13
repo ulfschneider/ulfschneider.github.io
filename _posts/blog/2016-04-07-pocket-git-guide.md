@@ -420,6 +420,12 @@ will indicate the differences between your working directory and your staging ar
 
 `<branch-name>` compares your working directory with the given branch in the repository. Same counts if you use `<commit>` instead of branch name.
 
+```
+git diff <older-commit> <newer-commit>
+```
+
+will indicate the differences between the two commits.
+
 
 Merge to include
 ---
@@ -877,7 +883,9 @@ to create and checkout the branch.
 </div>
 <div class="col-2-3 last">
 <div class="auto">
-<code>git diff [--stat] [&lt;branch-name or commit&gt;]</code>
+<code>git diff [--stat] [&lt;branch-name or commit&gt;]
+git diff &lt;older-commit&gt; &lt;newer-commit&gt;
+</code>
 </div>
 </div>
 </div>
