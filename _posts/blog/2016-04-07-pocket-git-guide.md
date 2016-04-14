@@ -397,7 +397,7 @@ Your branch is ahead of 'origin/<branch-name>' by 1 commit.
 
 Git has figured out a difference between your local branch and its counterpart, the remote tracking branch.
 
-Remote tracking branches are named *origin/<branch-name>*. Don´t checkout such a branch via `git checkout origin/<branch-name>` - instead do `git checkout <branch-name>` to make the remote tracking branch a local branch.
+Remote tracking branches are named *origin/&lt;branch-name&gt;*. Don´t checkout such a branch via `git checkout origin/\<branch-name>` - instead do `git checkout <branch-name>` to make the remote tracking branch a local branch.
 
 To see the history of commits in a branch-oriented tree format, use
 
