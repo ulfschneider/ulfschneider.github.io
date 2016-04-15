@@ -422,7 +422,7 @@ git diff [--stat] [<branch-name or commit]
 
 `--stat` will display a shorter statistic of changed files with numbers of lines added and removed. 
 
-`<branch-name>` compares your working directory with your working copy. Same counts if you use `<commit>` instead of branch name.
+`<branch-name or commit>` compares your working directory with <branch-name or commit>.
 
 ```
 git diff <older-commit> <newer-commit>
