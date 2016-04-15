@@ -261,11 +261,11 @@ If more explanation is needed, let the subject be followed by a blank line and t
 In other words, follow the seven rules of a great Git commit message
 [[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate):
 
-1. Separate the subject from the the body with a blank line
+1. Use the imperative mood in the subject line
 2. Limit the subject to 50 characters
 3. Capitalize the subject line
 4. Do not end the subject line with a period
-5. Use the imperative mood in the subject line
+5. Separate the subject from the the body with a blank line
 6. Wrap the body at 72 characters
 7. Use the body to explain *what and why* vs. *how*
 
