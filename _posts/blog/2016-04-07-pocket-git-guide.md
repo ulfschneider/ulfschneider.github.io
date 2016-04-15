@@ -232,7 +232,9 @@ will display most recent commits in the specified branch, organized into one sin
 
 A free formatting of the `git log` output can be achieved with
 
-```git log --pretty="<your format string>"``` 
+```
+git log --pretty="<your format string>"
+``` 
 
 A list of available formatting options is on [git-scm.com/docs/pretty-formats](https://git-scm.com/docs/pretty-formats).
 
@@ -735,7 +737,11 @@ ssh://[user@]host.xz[:port]/path/to/repo.git
 git://host.xz[:port]/path/to/repo.git
 http[s]://host.xz[:port]/path/to/repo.git</code>
 </div>
-Watch out <code>git config [--global] http.sslVerify false</code> as one possible solution in case Git doesn´t allow you to connect to a repo via https.
+Watch out 
+<div class="auto">
+<code>git config [--global] http.sslVerify false</code>
+</div>
+as one possible solution in case Git doesn´t allow you to connect to a repo via https.
 </div>
 </div>
 
