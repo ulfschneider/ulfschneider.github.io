@@ -315,9 +315,9 @@ An example of the patterns your `.gitignore` may contain
 ```
 *.a
 build/
-notes/*.txt
-notes/**/*.txt
-!notes/todo.txt
+doc/*.txt
+doc/**/*.txt
+!doc/todo.txt
 ```
 
 The meaning of the patterns:
