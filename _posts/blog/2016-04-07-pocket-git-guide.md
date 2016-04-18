@@ -842,9 +842,9 @@ Use one pattern per line in .gitignore file
 <div class="auto">
 <code>*.a
 build/
-notes/*.txt
-notes/**/*.txt
-!notes/todo.txt</code>
+doc/*.txt
+doc/**/*.txt
+!doc/todo.txt</code>
 </div>
 </div>
 </div>
