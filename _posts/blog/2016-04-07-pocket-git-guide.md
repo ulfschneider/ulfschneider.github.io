@@ -59,7 +59,11 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. For Windows it´s nice to install [GitHub Desktop](https://desktop.github.com). GitHub Desktop will install Git, the Git Shell (with an improved command prompt and Git completion) and the GitHub Desktop Client for you. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. Another source to get Git is [git-scm.com/downloads](https://git-scm.com/downloads). 
+Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. 
+
+For Windows it´s nice to install [GitHub Desktop](https://desktop.github.com). GitHub Desktop will install Git, the Git Shell (with an improved command prompt and Git completion) and the GitHub Desktop Client for you. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+
+Another source to get Git is [git-scm.com/downloads](https://git-scm.com/downloads). 
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
