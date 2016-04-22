@@ -388,9 +388,9 @@ Figure: Multiple commits in the 'lazyload' branch
 git branch [-a|-r]
 ```
 
-will show you the current list of local branches with a `*` in front of the currently active branch. Without any option the command will display your *local branches* - the branches you are working on and where your commits go against. With `-r` the *remote tracking branches* will be shown. `-a` will show all local branches and all remote tracking branches.
+without any option this command will show you the current list of local branches with a `*` in front of the currently active branch. Local branches are the branches you are working on and where your commits go against. With `-r` the *remote tracking branches* will be shown. `-a` will show all local branches and all remote tracking branches.
 
-Remote tracking branches are all branches from your remote server (please refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)) which came with your most recent `git fetch` or `git pull` into your local repository. They are used to connect your work with a remote repository. Whenever you call `get status` and get a result like
+Remote tracking branches are all branches from your remote server (please refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)) which came with your most recent `git fetch` or `git pull` into your local repository (so they are called remote tracking, but indeed they are stored in your local repository). They are used to connect your work with a remote repository. Whenever you call `get status` and get a result like
 
 ```
 Your branch is ahead of 'origin/<branch-name>' by 1 commit.
