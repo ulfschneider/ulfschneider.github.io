@@ -80,12 +80,6 @@ Detect your configuration settings with
 git config --list
 ```
 
-Edit your configuration file with 
-
-```
-git config [--global] --edit
-```
-
 Create a new local repository
 ---
 Move to the folder which should contain your project
@@ -205,6 +199,13 @@ git config --global core.editor <editor-name>
 ```
 git config [--global] core.editor
 ```
+
+Once you configured your preferred editor, you can not only write your commit messages by using it, you can also edit all of your configurations easily with the command
+
+```
+git config [--global] --edit
+```
+
 
 To see the history of commits use
 
