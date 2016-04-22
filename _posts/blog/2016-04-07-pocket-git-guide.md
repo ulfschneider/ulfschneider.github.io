@@ -501,7 +501,7 @@ and put a *conflict marker* into the file of the destination branch, indicating 
 <<<<<<< HEAD
   <conflicting content line in destination-branch (the current working copy)>
 =======
-  <conflicting content line in source-branch (the you tried to merge in)>
+  <conflicting content line in source-branch>
 >>>>>>> <destination-branch-name>
 ```
 
