@@ -2,7 +2,7 @@
 layout: post
 title: Pocket Git Guide
 subtitle: A brief entry-level approach to Git
-date:   2016-04-07
+date:   2016-04-23
 permalink: 
 author:
 abstract: A brief entry-level approach to Git. 
