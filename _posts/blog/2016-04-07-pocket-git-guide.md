@@ -493,7 +493,15 @@ A fast-forward then is no longer possible and Git has to figure out the combined
 Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
 {:.figcaption}
 
-Starting at the head commits of each branch, Git will search back for the first common ancestor of both branches. This common ancestor is then used as a reference point to determine what has been changed in what order in each branch. Each changed file in each branch is compared against the reference point. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: 
+Each changed file in each branch is compared. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. 
+
+![]({{site.url}}/i/blog/git_true_merge.jpg)
+{:.double}
+
+Figure: A true merge goes line-by-line
+{:.figcaption}
+
+As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: 
 
 ```
 Merge branch '<source-branch-name>' into '<destination-branch-name>'.
