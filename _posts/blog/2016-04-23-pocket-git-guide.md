@@ -10,6 +10,7 @@ abstract: A brief entry-level approach to Git.
 
 - **Contents**
 - [Reasons to use Git](#reasons-to-use-git)
+- [Get Git](#get-git)
 - [Tell Git who you are](#tell-git-who-you-are)
 - [Create a new local repository](#create-a-new-local-repository)
 - [Status of your repository](#status-of-your-repository)
@@ -59,6 +60,8 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
+Get Git
+---
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. 
 
 On a Mac, though not mandatory, for an improved Git command prompt and Git command completion with the tab key, I like to have the Bash Git Completion configured on my system. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
