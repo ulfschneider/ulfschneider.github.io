@@ -267,7 +267,7 @@ The commit messages reveal whether a committer is a good collaborator or not.
 
 Because in the output of a `git log` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
 
-Use the imperative mood, which means "spoken or wirtten as if giving a command or instruction". Examples:
+Use the imperative mood, which means "spoken or written as if giving a command or instruction". Examples:
 
 - Repair css class assignment for git_hub image
 - No underline for slide navigation
