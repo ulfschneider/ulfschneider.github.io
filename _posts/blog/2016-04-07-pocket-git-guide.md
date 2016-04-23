@@ -61,7 +61,7 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. 
 
-On a Mac, though not mandatory, for an improved Git command prompt and Git command completion with the Tab key, I like to have the Bash Git Completion configured on my system. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
+On a Mac, though not mandatory, for an improved Git command prompt and Git command completion with the tab key, I like to have the Bash Git Completion configured on my system. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
 
 ```
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -70,7 +70,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 PS1='\u@\h \W$(__git_ps1 " (%s)")\$ '
 ```
 
-For Windows it´s nice to install [GitHub Desktop](https://desktop.github.com). GitHub Desktop will install Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client for you. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+For Windows it´s nice to install [GitHub Desktop](https://desktop.github.com). GitHub Desktop will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
 
 Another source to get Git is [git-scm.com/downloads](https://git-scm.com/downloads). 
 
