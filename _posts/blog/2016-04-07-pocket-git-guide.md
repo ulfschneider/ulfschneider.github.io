@@ -61,7 +61,7 @@ Git will help you doing the following things with a computer:
 
 Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. 
 
-Though not mandatory, for an improved Git command prompt and Git command completion with the Tab key, I like to have the Bash Git Completion configured on my system. Follow this [description](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrow, just in case you don´t have Git already on your Mac). In addition the explanations given in the description, add the following lines to your `.bash_profile` to improve your command prompt:
+On a Mac, though not mandatory, for an improved Git command prompt and Git command completion with the Tab key, I like to have the Bash Git Completion configured on my system. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
 
 ```
 export GIT_PS1_SHOWDIRTYSTATE=true
