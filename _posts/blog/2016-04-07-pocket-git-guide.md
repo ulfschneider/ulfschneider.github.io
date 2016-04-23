@@ -495,7 +495,7 @@ Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
 
 Each changed file in each branch is compared. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. 
 
-![]({{site.url}}/i/blog/git_true_merge.jpg)
+![]({{site.url}}/i/blog/git_merge_line_by_line.jpg)
 {:.double}
 
 Figure: A true merge goes line-by-line
