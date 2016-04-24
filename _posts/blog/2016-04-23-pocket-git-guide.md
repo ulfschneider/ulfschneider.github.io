@@ -10,7 +10,9 @@ abstract: A brief entry-level approach to Git.
 
 - **Contents**
 - [Reasons to use Git](#reasons-to-use-git)
-- [Get Git](#get-git)
+- [Get Git on your Mac](#get-git-on-your-mac)
+- [Get Git on Windows](#get-git-on-windows)
+- [The Git shell](#the-git-shell)
 - [Tell Git who you are](#tell-git-who-you-are)
 - [Create a new local repository](#create-a-new-local-repository)
 - [Status of your repository](#status-of-your-repository)
@@ -60,11 +62,20 @@ Git will help you doing the following things with a computer:
 </div>
 </div>
 
-Get Git
----
-Git is free. For either Mac or Windows a very fast way to get Git on your computer is to install [GitHub Desktop](https://desktop.github.com). 
+Git is free. You can get Git for any platform at [git-scm.com/downloads](https://git-scm.com/downloads). 
 
-On a Mac, after installation, open the Preferences screen of GitHub Desktop, go to the advanced tab and activate *Install Command Line Tools* to have the Git console on your Mac. Though not mandatory, for an improved Git command prompt and Git command completion with the tab key, I like to have the Bash Git Completion configured on my Mac. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
+
+Get Git on your Mac
+---
+Personally I find it a little bit faster and more comfortable to use the [GitHub Desktop Installer](https://desktop.github.com) for setting up Git on either Mac or Windows.
+
+On a Mac, after installation, fire up GitHub Desktop, open the Preferences screen, go to the advanced tab and activate *Install Command Line Tools* to have the Git shell on your Mac. If you are using GitHub Desktop the first time, you can either install the command line tools from the welcome screen of GitHub Desktop.
+
+Though not mandatory, for an improved Git experience in the shell, I like to have the following configured:
+
+- The credential helper to cache my username and password so I don´t have to provide it over and over again when using the https port while connecting to Git servers. See [Caching Your Git Password](https://help.github.com/articles/caching-your-github-password-in-git/) for installation advice.
+
+- Bash Git Completion for an improved command prompt and command completion with the tab key. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it set up (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, put the following lines to your `.bash_profile` to improve your command prompt:
 
 ```
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -73,9 +84,13 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 PS1='\u@\h \W$(__git_ps1 " (%s)")\$ '
 ```
 
-On Windows, the installation of [GitHub Desktop](https://desktop.github.com). GitHub Desktop will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+Get Git on Windows
+---
 
-Another source to get Git is [git-scm.com/downloads](https://git-scm.com/downloads). 
+On Windows, the installation of [GitHub Desktop](https://desktop.github.com) will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+
+The Git shell
+---
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
@@ -1068,6 +1083,8 @@ References
 [Bash Git Completion] "Install Bash Git Completion", [github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
 [Beams 2014] C. Beams, "How to Write a Git Commit Message", 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
+
+[Caching Your Git Password] "Caching your GitHub password in Git", [help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 [Cheat Sheet] "Git Cheat Sheet", [www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)
 
