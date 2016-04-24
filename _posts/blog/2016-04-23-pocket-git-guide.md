@@ -62,9 +62,9 @@ Git will help you doing the following things with a computer:
 
 Get Git
 ---
-Git is free. When you try to use Git for the first time on a Mac (my preferred environment), you will be asked to install the command line tools, which will subsequently bring Git on your Mac. 
+Git is free. For either Mac or Windows a very fast way to get Git on your computer is to install [GitHub Desktop](https://desktop.github.com). 
 
-On a Mac, though not mandatory, for an improved Git command prompt and Git command completion with the tab key, I like to have the Bash Git Completion configured on my system. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
+On a Mac, after installation, open the Preferences screen of GitHub Desktop, go to the advanced tab and activate *Install Command Line Tools* to have the Git console on your Mac. Though not mandatory, for an improved Git command prompt and Git command completion with the tab key, I like to have the Bash Git Completion configured on my Mac. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it installed (it includes a Git installation via homebrew, just in case you don´t have Git already on your Mac). In addition to the explanations given, add the following lines to your `.bash_profile` to improve your command prompt:
 
 ```
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -73,13 +73,13 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 PS1='\u@\h \W$(__git_ps1 " (%s)")\$ '
 ```
 
-For Windows it´s nice to install [GitHub Desktop](https://desktop.github.com). GitHub Desktop will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+On Windows, the installation of [GitHub Desktop](https://desktop.github.com). GitHub Desktop will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all will be integrated into your environment with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
 
 Another source to get Git is [git-scm.com/downloads](https://git-scm.com/downloads). 
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
-You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced [GitHub Desktop](https://desktop.github.com), which runs on Mac and Windows. Sometimes things go faster and easier with a GUI client. Anyway an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
+You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Anyway an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
 
 Tell Git who you are
 ---
