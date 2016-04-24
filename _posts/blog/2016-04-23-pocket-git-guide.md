@@ -103,7 +103,7 @@ git config [--global] user.name ["your name or user name"]
 git config [--global] user.email ["your email address"]
 ```
 
-Use the `--global` option to tell Git that the given configuration will be the default for all of your projects on your computer. After these settings have been made, they will be added to your commits. When you then push commits to a shared server, your name and email address will also appear on that server. 
+Use the `--global` option to tell Git that the given configuration will be the default for all of your projects on your computer. After these settings have been made, your user data will be added to your commits. When you then push commits to a shared server, your name and email address will also appear on that server. 
 
 Detect your configuration settings with 
 
