@@ -451,10 +451,8 @@ git diff
 will indicate the differences between your working directory and your staging area. 
 
 ```
-git diff [--stat] [<branch-name or commit]
+git diff [<branch-name or commit]
 ```
-
-`--stat` will display a shorter statistic of changed files with numbers of lines added and removed. 
 
 `<branch-name or commit>` compares your working directory with <branch-name or commit>.
 
@@ -464,6 +462,7 @@ git diff <older-commit> <newer-commit>
 
 will indicate the differences between the two commits.
 
+Sometimes the option `--stat` is of use in conjunction with any of the `git diff` commands, as it will display a short statistic of changed files with numbers of lines added and removed. 
 
 Merge to include
 ---
