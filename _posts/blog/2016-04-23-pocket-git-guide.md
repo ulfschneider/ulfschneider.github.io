@@ -1085,6 +1085,8 @@ References
 
 [Caching Your Git Password] "Caching your GitHub password in Git", [help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/)
 
+[Chacon, Straub 2014] S. Chacon, B. Straub, "Pro Git", 2014, [git-scm.com/book](https://git-scm.com/book)
+
 [Cheat Sheet] "Git Cheat Sheet", [www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)
 
 [Demaree 2016] D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
@@ -1097,7 +1099,7 @@ References
 
 [Git] Git downloads for different platforms, [git-scm.com/downloads](https://git-scm.com)
 
-[Chacon, Straub 2014] S. Chacon, B. Straub, "Pro Git", 2014, [git-scm.com/book](https://git-scm.com/book)
+[Learn] "Learn Git & Version Control", [www.git-tower.com/learn/](https://www.git-tower.com/learn/)
 
 [Tower] Version control with Git - made easy,
 In a beautiful, efficient, and powerful app, [git-tower.com](https://www.git-tower.com)
