@@ -462,7 +462,7 @@ git diff <older-commit> <newer-commit>
 
 will indicate the differences between the two commits.
 
-I find myself using one of the two options `--stat` or `--color-words` now and then in conjunction with any of the above `git diff` commands
+I find myself now and then using one of the two options `--stat` or `--color-words` in conjunction with any of the above `git diff` commands
 
 `--stat` will display a short statistic of changed files with numbers of lines added and removed. 
 
