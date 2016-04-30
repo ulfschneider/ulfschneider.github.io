@@ -1083,6 +1083,8 @@ Display your current editor setting
 
 References
 ---
+[Atlassian Git] "Getting Git Right", Altassian Git Tutorial, [atlassian.com/git](https://www.atlassian.com/git/)
+
 [Bash Git Completion] "Install Bash Git Completion", [github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
 [Beams 2014] C. Beams, "How to Write a Git Commit Message", 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
