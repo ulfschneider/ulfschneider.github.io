@@ -462,7 +462,11 @@ git diff <older-commit> <newer-commit>
 
 will indicate the differences between the two commits.
 
-Sometimes the option `--stat` is of use in conjunction with any of the `git diff` commands, as it will display a short statistic of changed files with numbers of lines added and removed. 
+I find myself using one of the two options `--stat` or `--color-words` now and then in conjunction with any of the above `git diff` commands
+
+`--stat` will display a short statistic of changed files with numbers of lines added and removed. 
+
+`--color-words` will indicate changes in files word by word, instead of line by line, which is default.
 
 Merge to include
 ---
