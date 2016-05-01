@@ -203,6 +203,8 @@ Commit to make a snapshot of your work
 
 You will commit very often, multiple times a day, sometimes within in minutes. It is the action you do most of the time when using Git.
 
+Do not commit half-done, not-functioning work. Any commit should be a tiny solution for its own. As an example, a commit can contain the refactoring of a single method in your code or the rephrasing of a paragraph in a text document.
+
 Contents which have been staged must be committed to produce a snapshot of your current work in the Git repository. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the most recent commit, the *tip*, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
 
 ```
@@ -258,7 +260,9 @@ git log --oneline
 
 will display most recent commits organized into one single line per commit. 
 
-```git log --oneline <branch-name>``` 
+```
+git log --oneline <branch-name>
+``` 
 
 will display most recent commits in the specified branch, organized into one single line per commit.
 
