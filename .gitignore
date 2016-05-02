@@ -3,5 +3,6 @@ _site
 *.sublime*
 *.jekyll-metadata
 .jekyll-metadata
+.DS_Store
 
 
