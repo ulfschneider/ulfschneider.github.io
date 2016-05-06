@@ -7,7 +7,7 @@ permalink:
 author:
 abstract: Do not let scaled agile be your scaled snake oil. Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. 
 ---
-We have to scale agile when more than one team is required to get a thing delivered. Each team not more than 10 members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery, that´s it: multiple teams working on one thing.
+We have to scale agile when more than one team is required to get a thing delivered. Each team not more than 10 members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery, that´s it: *multiple teams working on one thing.*
 
 Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. This is an incredible difficult thing to do. Peter Drucker coined the phrase *"culture eats strategy for breakfast"*. You better prepare for the long run. Is it clear, why you want to change? *"You"* are: managers, who define how the system works, product managers who define what kind of product to build, research and development people who explore possibilities, engineers who build the product, salesforce who will drive sales, project managers who are in charge of leading one-of-a-kind endeavors - you will identify even more people and roles for your organization.
 
