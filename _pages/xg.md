@@ -62,6 +62,6 @@ In the next step you take a comparative image of the same motive by using your f
 
 If the filter image has not the right exposure, you need to take more images while making adjustments to the exposure. Choose a longer exposure if your image is underexposed and choose a shorter exposure when your image is overexposed.
 
-After you have taken an image that has the right exposure you need to open the dialog **Calibrate with exposure times** in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter.
+After you have taken an image that has the right exposure you need to open the dialog *Calibrate with exposure times* in the Exposure Guide. Here you choose the exposure of the image that you took without filter and enter the exposure in seconds that you needed for the correct exposed filter image. From these two values the Exposure Guide calculates the f-stop darkening effect of your filter.
 
 Have fun taking pictures!

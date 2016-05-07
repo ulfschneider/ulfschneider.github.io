@@ -14,6 +14,7 @@ abstract: A brief entry-level approach to Git.
 - [Get Git on Windows](#get-git-on-windows)
 - [The Git shell](#the-git-shell)
 - [Tell Git who you are](#tell-git-who-you-are)
+- [Get help from Git](#get-help-from-git)
 - [Create a new local repository](#create-a-new-local-repository)
 - [Status of your repository](#status-of-your-repository)
 - [Stage to tell Git what to refer to](#stage-to-tell-git-what-to-refer-to)
@@ -109,6 +110,20 @@ Detect your configuration settings with
 
 ```
 git config --list
+```
+
+Get help from Git
+---
+You can type
+
+```
+git help <command>
+```
+
+to get access to a user documentation about the specified `<command>`. To only get a short info about the command syntax, use
+	
+```
+git <command> -h
 ```
 
 Create a new local repository
