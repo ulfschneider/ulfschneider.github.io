@@ -13,7 +13,7 @@
 
 .site-title {
   @extend %nolinkstyle;
-  text-transform:uppercase;
+  font-weight:$title-font-weight;
 }
 
 .site-description {
@@ -40,18 +40,18 @@
 
   .site-title {
     font-family:$base-font-family;
-    font-size: $base-font-size * 1.7;
-    line-height:$base-font-size * 1.7;
+    font-size: $base-font-size * 1.5;
+    line-height:$base-font-size * 1.5;
 
     margin:0;
     margin-right: 2*$spacing-unit;
 
     letter-spacing:1px;
-    text-transform: uppercase;
   }
 
   .site-description {
     font-family:$thin-font-family;
+	font-weight:$thin-font-weight;
     font-size:$base-font-size;
     margin-right: 2*$spacing-unit;
     margin-bottom: $spacing-unit;
