@@ -53,9 +53,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   text-align: center;
-  a {
- 	 @extend %nolinkstyle;
-	}
 }
 
 h3,h4,h5,h6 {
@@ -128,14 +125,17 @@ dd {
 /**
  * Links
  */
- a {
-  @extend %linkstyle;
+a {
+    color: $text-color;
+    text-decoration: none;
+    outline: none;
+}
+
+p a {
+	@extend %linkstyle;
 }
 
 %linkstyle {
-  color: $text-color;
-  text-decoration: none;
-  outline: none;
   background-image: -webkit-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
   background-image: -moz-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);
   background-image: -o-linear-gradient(to bottom, transparent 91%, $text-color 93%, $text-color 100%);

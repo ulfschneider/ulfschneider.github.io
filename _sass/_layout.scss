@@ -12,7 +12,6 @@
 }
 
 .site-title {
-  @extend %nolinkstyle;
   font-weight:$title-font-weight;
 }
 
@@ -28,7 +27,6 @@
     margin: 0px 10px;
     padding-left:1px;
     padding-right:1px;
-    @extend %nolinkstyle;
   }
 }
 
@@ -133,11 +131,7 @@
     text-align: center;
   }
 
-  .nav {
-    a {
-      @extend %nolinkstyle;
-    }
-    
+  .nav {   
     .direction {
       float: right;
 
@@ -175,10 +169,6 @@
         font-family:$base-font-family;
         font-weight:normal;
         margin-top:$spacing-unit/2;
-
-        a {
-          @extend %nolinkstyle;
-        }
       }
     }
 
@@ -197,7 +187,6 @@ ul.image-grid a {
   padding:0;
   margin:0;
   border:0;
-  @extend %nolinkstyle;
 }
 
 li.image-grid {
@@ -243,16 +232,9 @@ li.image-grid h2 {
 
   .prev {
     float: left;
-	
-	a {
-		@extend %nolinkstyle;
-	}
   }
   .next {
     float: right;
-	a {
-		@extend %nolinkstyle;
-	}	
   }
 
 }
@@ -277,9 +259,6 @@ li.image-grid h2 {
 
 .toc li { 
   list-style-type: none;
-  a {
-    @extend %nolinkstyle;
-  }
 }
 
 
