@@ -244,9 +244,16 @@ li.image-grid h2 {
 
   .prev {
     float: left;
+	
+	a {
+		@extend %nolinkstyle;
+	}
   }
   .next {
     float: right;
+	a {
+		@extend %nolinkstyle;
+	}	
   }
 
 }
