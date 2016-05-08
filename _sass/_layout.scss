@@ -8,24 +8,25 @@
     font-weight:$title-font-weight;
     margin-right:20px;
   }
+  
+  .site-nav {
+    line-height: $site-nav-height;
+    display:inline-block;
+    .page-link {
+      margin: 0;
+  	margin-right:20px;
+      padding-left:1px;
+      padding-right:1px;
+    }
+    .page-link:last-child {
+  	  margin-right:0;
+    }
 
   .site-description {
     display: inline-block;
   }
 }
 
-.site-nav {
-  line-height: $site-nav-height;
-  display:inline-block;
-  .page-link {
-    margin: 0;
-	margin-right:20px;
-    padding-left:1px;
-    padding-right:1px;
-  }
-  .page-link:last-child {
-	  margin-right:0;
-  }
 }
 
 .site {
@@ -346,6 +347,9 @@ figcaption:before, .figcaption:before {
   .site-nav {
 	  display:block;
 	  text-align:center;
+	  .page-link {
+		  margin:0 10px;
+	  }
   }
 
   @extend %clearfix;
@@ -430,16 +434,17 @@ figcaption:before, .figcaption:before {
   }
   .site-header {
 	  .site-title {
-	  	  margin-right:10px;
+	  	  margin:0;
+		  display:block;
+		  text-align:center;
 	  }
 	  
     .site-nav {
+		display:block;
+		text-align:center;
       .page-link {
-		  margin-right:10px;		  
+		  margin:0 5px;		  
       }
-	  .page-link:last-child {
-		  margin-right:0;
-	}
     }
   }
   .index {
@@ -453,6 +458,12 @@ figcaption:before, .figcaption:before {
   }
   .site-footer {
     line-height: $site-nav-height;
+	
+	.site-nav {
+		.page-link {
+			margin:0 5px;
+		}
+	}
     /* increase space for touching links */
   }
 
