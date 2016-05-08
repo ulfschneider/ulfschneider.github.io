@@ -18,10 +18,13 @@
   line-height: $site-nav-height;
   display:inline-block;
   .page-link {
-    margin: 0px;
+    margin: 0;
 	margin-right:20px;
     padding-left:1px;
     padding-right:1px;
+  }
+  .page-link:last-child {
+	  margin-right:0;
   }
 }
 
@@ -432,8 +435,11 @@ figcaption:before, .figcaption:before {
 	  
     .site-nav {
       .page-link {
-		  margin-right:10px;
+		  margin-right:10px;		  
       }
+	  .page-link:last-child {
+		  margin-right:0;
+	}
     }
   }
   .index {
