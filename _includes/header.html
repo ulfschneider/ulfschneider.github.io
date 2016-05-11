@@ -1,7 +1,11 @@
 {% unless page.noheader %}
 <div id="siteHeader" class="site-header">
 	<div class="wrapper">
-		<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+		{% if page.nositenav %}
+			<a class="site-title nositenav" href="{{ site.baseurl }}/">{{ site.title }}</a>
+		{% else %}
+			<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+		{% endif %}
 		{% include navigation.html %}
 	</div>
 </div>

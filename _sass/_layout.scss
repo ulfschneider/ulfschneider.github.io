@@ -3,7 +3,35 @@
 */
 .site-header {
   padding-top: $base-font-size;
-  text-align: center;
+  
+  .site-title {
+    font-weight:$title-font-weight;
+    margin-right:$base-font-size;
+  }
+  
+  .nositenav {
+	  display:block;
+	  text-align:center;
+  }
+  
+  .site-description {
+    display: inline-block;
+  }
+}
+
+
+.site-nav {
+  line-height: $site-nav-height;
+  display:inline-block;
+  .page-link {
+    margin: 0;
+	margin-right:$base-font-size;
+    padding-left:1px;
+    padding-right:1px;
+  }
+  .page-link:last-child {
+	  margin-right:0;
+  }
 }
 
 .site {
@@ -11,24 +39,7 @@
   @extend %clearfix;
 }
 
-.site-title {
-  font-weight:$title-font-weight;
-}
 
-.site-description {
-  display: inline-block;
-}
-
-
-.site-nav {
-  line-height: $site-nav-height;
-  text-align: center;
-  .page-link {
-    margin: 0px $base-font-size / 1.618;
-    padding-left:1px;
-    padding-right:1px;
-  }
-}
 
 .index {
 
@@ -36,14 +47,15 @@
     float:left;
   }
 
-  .site-title {
+  .site-title {	  
     font-family:$base-font-family;
     font-size: $large-font-size;
     line-height:$large-font-size;
+	font-weight:bold;
+	    letter-spacing:1px;
     margin:0;
     margin-right: 2*$spacing-unit;
 
-    letter-spacing:1px;
   }
 
   .site-description {
@@ -336,6 +348,14 @@ figcaption:before, .figcaption:before {
   padding: 0;
   clear: both;
   margin-bottom: 2 * $spacing-unit;
+  
+  .site-nav {
+	  display:block;
+	  text-align:center;
+	  .page-link {
+		  margin:0 10px;
+	  }
+  }
 
   @extend %clearfix;
 }
@@ -418,9 +438,17 @@ figcaption:before, .figcaption:before {
     max-height: 400px;
   }
   .site-header {
+	  .site-title {
+	  	  margin:0;
+		  display:block;
+		  text-align:center;
+	  }
+	  
     .site-nav {
+		display:block;
+		text-align:center;
       .page-link {
-        margin: 0px 5px;
+		  margin:0 5px;		  
       }
     }
   }
@@ -435,6 +463,12 @@ figcaption:before, .figcaption:before {
   }
   .site-footer {
     line-height: $site-nav-height;
+	
+	.site-nav {
+		.page-link {
+			margin:0 5px;
+		}
+	}
     /* increase space for touching links */
   }
 
