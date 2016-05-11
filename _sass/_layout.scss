@@ -54,7 +54,7 @@
 	font-weight:bold;
 	    letter-spacing:1px;
     margin:0;
-    margin-right: 2*$spacing-unit;
+    margin-right: $spacing-unit * 1.618;
 
   }
 
@@ -62,7 +62,7 @@
     font-family:$thin-font-family;
 	font-weight:$thin-font-weight;
     font-size:$base-font-size;
-    margin-right: 2*$spacing-unit;
+    margin-right: $spacing-unit * 1.618;
     margin-bottom: $spacing-unit;
   }
 
@@ -106,7 +106,7 @@
 
 
 .title-wrapper {
-  margin-bottom: 2 * $spacing-unit;
+  margin-bottom: $spacing-unit * 1.618;
   text-align: center;
 }
 
@@ -119,11 +119,11 @@
 */
 .page-content {
 
-  margin-top: 4 * $spacing-unit;
+  margin-top: $spacing-unit * 1.618 * 1.618 * 1.618;
 
   img {
-    margin-top: 2*$spacing-unit;
-    margin-bottom: 2*$spacing-unit;
+    margin-top: $spacing-unit * 1.618 * 1.618;
+    margin-bottom: $spacing-unit * 1.618 * 1.618;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +136,7 @@
 /*Galleries */
 .slide-gallery-content {
 
-  margin-top: 2 * $spacing-unit;
+  margin-top: $spacing-unit * 1.618;
   position: relative;
 
   .title {
@@ -162,7 +162,7 @@
     margin-top: $spacing-unit;
     position: relative;
     width:100%;
-    min-height: 3*$spacing-unit;
+    min-height: $spacing-unit * 1.618 * 1.618;
 
     #loading {
       text-align:center;
@@ -180,7 +180,7 @@
         text-align:left;
         font-family:$base-font-family;
         font-weight:normal;
-        margin-top:$spacing-unit/2;
+        margin-top:$base-font-size;
       }
     }
 
@@ -191,8 +191,8 @@ ul.image-grid {
   list-style: none;
   margin: 0 auto;
   max-width: $image-content-width;
-  padding-left: $spacing-unit / 4;
-  padding-right: $spacing-unit / 4;
+  padding-left: $base-font-size / 1.618;
+  padding-right: $base-font-size / 1.618;
 }
 
 ul.image-grid a {
@@ -210,7 +210,7 @@ li.image-grid {
 
   padding: $spacing-unit;
   padding-top: 0;
-  padding-bottom:2*$spacing-unit;
+  padding-bottom:$spacing-unit * 1.618 * 1.618;
   vertical-align:top;
 
   transition: all 0.2s ease-out;
@@ -228,13 +228,11 @@ li.image-grid .image {
 
 li.image-grid h2 {
   color: $text-color;
-  font-size: $extra-small-font-size;
-  line-height: $extra-small-font-size + 5px;
   font-family: $base-font-family;
   font-weight:$base-font-weight;
   text-align: left;
   margin:0;
-  margin-top:$spacing-unit/2;
+  margin-top:$base-font-size;
 }
 
 
@@ -273,7 +271,6 @@ li.image-grid h2 {
   list-style-type: none;
 }
 
-
 .w200 img, img.w200 {
   max-width: 200px;
 }
@@ -290,10 +287,15 @@ li.image-grid h2 {
   max-width: 500px;
 }
 
-figcaption, .figcaption {
-  font-style:italic;
-  margin-top: -$spacing-unit;
+
+.figcaption, figcaption {
+	font-style:italic;
+}
+
+.figcaption {
+  margin-top: -$spacing-unit * 1.618;
   margin-bottom: $spacing-unit;
+	clear:both;
 }
 
 figcaption:before, .figcaption:before {
@@ -303,26 +305,22 @@ figcaption:before, .figcaption:before {
   display:block;
 }
 
-.figcaption {
-  clear: both;
-}
-
 .left, .right {
   @extend %clearfix;
   text-align: left;
-  margin-top: 2*$spacing-unit;
-  margin-bottom: 2*$spacing-unit;
+  margin-top: $spacing-unit * 1.618 * 1.618;
+  margin-bottom: $spacing-unit * 1.618 * 1.618;
 
   img {
     margin: 0;
     float: left;
-    max-width: 60%;
+    max-width: 62%;
     padding-right: $spacing-unit;
   }
 
   figcaption, .figcaption {
     margin: 0;
-    max-width: 40%;
+    max-width: 38%;
     display:inline-block;
   }
 
@@ -347,13 +345,13 @@ figcaption:before, .figcaption:before {
 .site-footer {
   padding: 0;
   clear: both;
-  margin-bottom: 2 * $spacing-unit;
+  margin-bottom: $spacing-unit * 1.618;
   
   .site-nav {
 	  display:block;
 	  text-align:center;
 	  .page-link {
-		  margin:0 10px;
+		  margin:0 $base-font-size / 1.618;
 	  }
   }
 
@@ -417,7 +415,7 @@ figcaption:before, .figcaption:before {
     width: 33%;
   }
   li {
-    margin-top:$spacing-unit / 2;
+    margin-top:$base-font-size;
     list-style-position: inside;
   }
   figcaption:before, .figcaption:before {
@@ -448,7 +446,7 @@ figcaption:before, .figcaption:before {
 		display:block;
 		text-align:center;
       .page-link {
-		  margin:0 5px;		  
+		  margin:0 $base-font-size / 1.618;
       }
     }
   }
@@ -466,7 +464,7 @@ figcaption:before, .figcaption:before {
 	
 	.site-nav {
 		.page-link {
-			margin:0 5px;
+			margin:0 $base-font-size / 1.618;
 		}
 	}
     /* increase space for touching links */
@@ -474,8 +472,8 @@ figcaption:before, .figcaption:before {
 
   li.image-grid {
     width: 50%;
-    padding: $spacing-unit/4;
-    padding-bottom: $spacing-unit;
+    padding: $base-font-size / 1.618;
+    padding-bottom: $spacing-unit * 1.618;
     padding-top: 0;
   }
 }
