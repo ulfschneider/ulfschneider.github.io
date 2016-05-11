@@ -18,7 +18,7 @@
 hr {
   border:0;
   border-bottom: 1px dotted $text-color;
-  margin:$spacing-unit/2 0;
+  margin:1em 0;
 }
 
 /**
@@ -41,7 +41,7 @@ hr {
  h1, h2, h3, h4, h5, h6,
  p, blockquote, ul, ol, dl,
  %vertical-rhythm {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 1em * 1.618;
 }
 
 .bottom-space {
@@ -49,7 +49,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 2*$spacing-unit;
+  margin-top: 1em * 1.618 * 1.618 * 1.618;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   text-align: center;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3,h4,h5,h6 {
   text-align:left;
-  margin-top:$spacing-unit;
+  margin-top:1em * 1.618 * 1.618;
   margin-bottom:0;
 }
 
@@ -96,12 +96,12 @@ ul, ol {
       &:after {
         content: "";
         display: block;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: 1em;
       }
     }
 
     > ul, > ol {
-      margin-left: $spacing-unit;
+      margin-left: 1em * 1.618;
       margin-bottom: 0;
     }
   }
@@ -151,15 +151,15 @@ p a {
  */
  blockquote {
   color: $text-color;
-  padding-left: $spacing-unit / 2;
-  margin-left: -$spacing-unit / 2;
+  padding-left: 1em;
+  margin-left: -1em;
   border-left: 2px solid $text-color;
   p {
     margin-left:0;
   }
 
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin-top: 1em * 1.618;
+  margin-bottom: 1em * 1.618;
   font-family: $base-font-family;
   font-style:italic;
   letter-spacing:1px;
@@ -177,7 +177,6 @@ p a {
  */
  code {
   font-family:$code-font-family;
-  font-size: $code-font-size;  
   display:inline-block;
   padding:0px 3px;
   background: #dddbd8;
@@ -205,15 +204,15 @@ pre.highlight {
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right:1em * 1.618;
+  padding-left: 1em * 1.618;
   word-wrap: break-word;
   position: relative;
   @extend %clearfix;
 
   @include media-query($on-palm) {
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
@@ -239,7 +238,7 @@ strong, b {
 
  sub,
  sup {
-  font-size: 75%;
+  font-size: 1em / 1.618;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -261,16 +260,16 @@ table thead tr th {
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   vertical-align: bottom;
-  padding-right: $spacing-unit;
-  padding-bottom: $spacing-unit/2;
+  padding-right: 1em * 1.618;
+  padding-bottom: 1em;
   text-align: left;
 
 }
 
 table tbody tr td {
   vertical-align: top;
-  padding-right: $spacing-unit;
-  padding-bottom: $spacing-unit/2;
+  padding-right: 1em * 1.618;
+  padding-bottom: 1em;
   text-align: left;
 }
 
@@ -365,8 +364,8 @@ table tbody tr td:last-child, table thead tr th:last-child {
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  padding-left: 1em * 1.618;
+  padding-right: 1em * 1.618;
 
   @include media-query($on-palm) {
     width:100%;
