@@ -426,11 +426,11 @@ figcaption:before, .figcaption:before {
     max-height: 400px;
   }
   .site-header {
-		line-height: 1em * 1.618 * 1.618;
+		line-height: 1em * 2; //more space for tapping
   }
 
   .site-footer {
-    line-height: 1em * 1.618 * 1.618;
+    line-height: 1em * 2; //more space for tapping
 		}
 
   li.image-grid {
