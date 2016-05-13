@@ -52,11 +52,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1em * 1.618 * 1.618 * 1.618;
   font-family: $title-font-family;
   font-weight: $title-font-weight;
-  text-align: center;
 }
 
 h3,h4,h5,h6 {
-  text-align:left;
   margin-top:1em * 1.618 * 1.618;
   margin-bottom:0;
 }
@@ -90,6 +88,7 @@ ol {
 
 ul, ol {
   li {
+		margin-bottom:1em;
     > p {
       display: inline;
 
