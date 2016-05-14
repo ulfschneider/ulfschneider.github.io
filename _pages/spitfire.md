@@ -6,7 +6,7 @@ permalink: /spitfire/
 ---
 Spitfire is a virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. 
 
-For example, Spitfire can be used as a simple task board, in agile retrospectives or in brainstorming sessions, simply whenever teams are working across different locations and want to have immediate feedback on content change. 
+Spitfire can be used as a simple task board, in agile retrospectives or in brainstorming sessions, simply whenever teams are working across different locations and want to have immediate feedback on content change. 
 
 [![]({{site.url}}/i/spitfire/spitfire.jpg)](http://spitfire.peewee.space)
 
