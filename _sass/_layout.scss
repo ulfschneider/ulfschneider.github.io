@@ -120,6 +120,11 @@
   img[src="undefined"] {
     display:none;
   }
+  
+  p:last-child, img:last-child, ul:last-child, li:last-child {
+	  margin-bottom:0;
+  }
+  
 }
 
 /*Galleries */
@@ -167,7 +172,9 @@
       h2 {
         text-align:left;
         font-weight:normal;
+		margin:0;
         margin-top:1em;
+		
       }
     }
 
@@ -196,8 +203,6 @@ li.image-grid {
   width: 25%;
 
   padding: $spacing-1;
-  padding-top: 0;
-  padding-bottom:$spacing-3;
   vertical-align:top;
 
   transition: all 0.2s ease-out;
@@ -334,6 +339,7 @@ figcaption:before, .figcaption:before {
 .site-footer {
   padding: 0;
   clear: both;
+  margin-top: $spacing-3;
   margin-bottom: $spacing-2;  
   @extend %clearfix;
 }
@@ -428,9 +434,7 @@ figcaption:before, .figcaption:before {
 
   li.image-grid {
     width: 50%;
-    padding: $spacing-half;
-    padding-bottom: $spacing-2;
-    padding-top: 0;
+    padding: $spacing-1 $spacing-half;
   }
 }
 @media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
