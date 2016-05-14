@@ -12,13 +12,13 @@ $subtitle-font-weight: normal;
 $code-font-family: "Input Mono", Monospace;
 $code-font-weight: normal;
 
-
 $base-font-size:   16px;
 $large-font-size: $base-font-size * 1.618;
+$small-font-size: $base-font-size - 1;
 $extra-small-font-size: $base-font-size / 1.618;
 $palm-base-font-size: $base-font-size;
-$palm-base-line-height: $palm-base-font-size * 1.618;
-$base-line-height: $base-font-size * 1.618;
+$palm-base-line-height: 1em * 1.618;
+$base-line-height: 1em * 1.618;
 
 $text-color:       #222;
 $background-color: #ffffff;
@@ -26,10 +26,12 @@ $header-fallback-color: #ffffff;
 $header-background-color: #ffffff;
 $header-color: $text-color;
 
-$grey-color:       lightgray;
-$grey-color-light: #eee;
+$spacing-half: 0.81em;
+$spacing-1: 1.618em;
+$spacing-2: 1.618 * 1.618em;
+$spacing-3: 1.618 * 1.618 * 1.618em;
+$spacing-4: 1.618 * 1.618 * 1.618 * 1.618em;
 
-// Width of the content area
 $content-width:    750px;
 $image-content-width: 750px + 300px;
 $on-palm:         600px;
@@ -38,7 +40,6 @@ $on-pc:           1200px;
 $on-widescreen:   1800px;
 $on-extra-widescreen: 10000px;
 $transition-duration: .25s;
-
 
 
 // Using media queries with like this:

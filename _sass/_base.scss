@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  line-height:$spacing-1;
 }
 
 /**
@@ -39,26 +40,21 @@ hr {
  * Set `margin-bottom` to maintain vertical rhythm
  */
  h1, h2, h3, h4, h5, h6,
- p, blockquote, ul, ol, dl,
- %vertical-rhythm {
-  margin-bottom: 1em * 1.618;
-}
-
-.bottom-space {
-  @extend %vertical-rhythm;
+ p, blockquote, ul, ol, dl, .bottom-space, %vertical-rhythm {
+	 margin-bottom: $spacing-1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1em * 1.618 * 1.618 * 1.618;
-  font-family: $title-font-family;
-  font-weight: $title-font-weight;
+	margin-top: $spacing-3;
+	font-family: $title-font-family;
+	font-weight: $title-font-weight;
 	text-align:center;
 }
 
 h3,h4,h5,h6 {
-  margin-top:1em * 1.618 * 1.618;
+  margin-top:$spacing-2;
   margin-bottom:0;
-	text-align:left;
+  text-align:left;
 }
 
 /**
@@ -102,7 +98,7 @@ ul, ol {
     }
 
     > ul, > ol {
-      margin-left: 1em * 1.618;
+      margin-left: $spacing-1;
       margin-bottom: 0;
     }
   }
@@ -158,9 +154,10 @@ p a {
   p {
     margin-left:0;
   }
+  
+  @extend %vertical-rhythm;
+  margin-top: $spacing-1;
 
-  margin-top: 1em * 1.618;
-  margin-bottom: 1em * 1.618;
   font-family: $base-font-family;
   font-style:italic;
   letter-spacing:1px;
@@ -186,7 +183,7 @@ p a {
 }
 
 pre.highlight {  
-  @extend %vertical-rhythm;
+	@extend %vertical-rhythm;
   overflow:auto;
   display:block;
 }
@@ -205,8 +202,8 @@ pre.highlight {
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
-  padding-right:1em * 1.618;
-  padding-left: 1em * 1.618;
+  padding-right:$spacing-1;
+  padding-left: $spacing-1;
   word-wrap: break-word;
   position: relative;
   @extend %clearfix;
@@ -239,7 +236,7 @@ strong, b {
 
  sub,
  sup {
-  font-size: 1em / 1.618;
+  font-size: 1em / $spacing-1;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -255,13 +252,16 @@ sub {
 
 table {
   border-spacing: 0;
+  margin: 0;
+  margin-top:$spacing-1;
+  margin-bottom:$spacing-1 - 1em;
 }
 
 table thead tr th {
   font-family: $title-font-family;
   font-weight: $title-font-weight;
   vertical-align: bottom;
-  padding-right: 1em * 1.618;
+  padding-right: $spacing-1;
   padding-bottom: 1em;
   text-align: left;
 
@@ -269,7 +269,7 @@ table thead tr th {
 
 table tbody tr td {
   vertical-align: top;
-  padding-right: 1em * 1.618;
+  padding-right: $spacing-1;
   padding-bottom: 1em;
   text-align: left;
 }
@@ -365,8 +365,8 @@ table tbody tr td:last-child, table thead tr th:last-child {
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding-left: 1em * 1.618;
-  padding-right: 1em * 1.618;
+  padding-left: $spacing-1;
+  padding-right: $spacing-1;
 
   @include media-query($on-palm) {
     width:100%;
