@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  line-height:$spacing-1;
 }
 
 /**
@@ -29,7 +28,7 @@ hr {
   font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
-  line-height: $base-line-height;
+  line-height: 1em;
   color: $text-color;
   background-color: $background-color;
   -ms-text-size-adjust: 100%;

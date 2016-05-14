@@ -415,11 +415,15 @@ figcaption:before, .figcaption:before {
     max-height: 400px;
   }
   .site-header {
-		line-height: 1em * 2; //more space for tapping
+		line-height: 2em; //more space for tapping
   }
 
   .site-footer {
-    line-height: 1em * 2; //more space for tapping
+    line-height: 2em; //more space for tapping
+		}
+		
+		.toc li {
+			line-height:2em;
 		}
 
   li.image-grid {
