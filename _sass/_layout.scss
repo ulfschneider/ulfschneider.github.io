@@ -120,8 +120,12 @@
 		display: none;
 	}
   
-	p:last-child, img:last-child, ul:last-child, li:last-child {
+	p:last-child, ul:last-child, li:last-child {
 		margin-bottom: 0;
+		
+		img:last-child {
+			margin-bottom:0;
+		}
 	}
 
 }
