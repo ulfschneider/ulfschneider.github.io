@@ -344,6 +344,10 @@ figcaption:before, .figcaption:before {
   @extend %clearfix;
 }
 
+#up {
+	display:none;
+}
+
 /* Twitter timeline */
 .page-content {
 

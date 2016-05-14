@@ -54,10 +54,17 @@ function figCaption(dom) {
     }
 }
 
+
 (function format(){
 
+	window.onscroll= function() {
+		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+			document.getElementById("up").style.display="inline";
+		}
+	}
+	
 	var i = 0;
-  var s = select(".left");
+  	var s = select(".left");
 	for(i = 0; i < s.length; i++) {
     figCaption(s[i]);
 	}
