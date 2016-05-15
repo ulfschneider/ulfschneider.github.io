@@ -17,14 +17,14 @@
       <div class="wrapper">
         {% include title.html %}
         {{ content }}
+    {% unless page.noslides %}
+
+      <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">Display slides</a>
+
+    {% endunless %}
+		
       </div>
     </div>
-
-    {% unless page.noslides %}
-    <p style="text-align:center;">
-      <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">Display slides</a>
-    </p>
-    {% endunless %}
 
     <ul class="image-grid" id="image-grid">
       {% assign images = "" | split:"|"  %}

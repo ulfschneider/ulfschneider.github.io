@@ -95,7 +95,8 @@
 
 .title-wrapper {
 	margin-bottom: $spacing-3;
-	text-align: center;
+	text-align: left;
+	
 }
 
 
@@ -131,6 +132,11 @@
 }
 
 /*Galleries */
+#displaySlides {
+	@extend %nolinkstyle;
+}
+
+
 .slide-gallery-content {
 	margin-top: $spacing-2;
 	position: relative;
@@ -153,7 +159,7 @@
 		}
 		@extend %clearfix;
 	}
-
+	
 	.slides {
 		margin-top: $spacing-1;
 		position: relative;
