@@ -437,8 +437,8 @@ figcaption:before, .figcaption:before {
 	}
 	
 	ul.image-grid {
-		margin-left:-$spacing-half;
-		margin-right:-$spacing-half;
+		padding-left:0;
+		padding-right:0;
 	}
 	
 
@@ -468,8 +468,8 @@ figcaption:before, .figcaption:before {
 	}
 	
 	ul.image-grid {
-		margin-left:-$spacing-half;
-		margin-right:-$spacing-half;
+		padding-left:0;
+		padding-right:0;
 	}
 
 	li.image-grid {
