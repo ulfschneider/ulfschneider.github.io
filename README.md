@@ -5,8 +5,8 @@ The following directories and their contents are Copyright Ulf Schneider. You ma
 * `/_posts`
 * `/i`
 
-The blog is using the font [Input Sans](http://input.fontbureau.com). This font is not for free. I´ve purchased it at [Webtype](http://webtype.com) and included a CSS provided by them into `_includes/head.html`.
-You have to remove this CSS and purchase the font on your own or simply use a different font. In any case you need to remove the link to `//cloud.webtype.com` from the file `/_includes/head.html`. You have to add your own link to Webtype or use an entirely different font. Additional adjustments need to be taken in `/css/main.css`, here you find some variable settings for the font, font-sizes and line-heights.
+The blog is using the typeface [Input](http://input.fontbureau.com). This typeface is not for free. I´ve purchased it at [Webtype](http://webtype.com) and included a CSS provided by them into `_includes/head.html`.
+You have to remove this CSS and purchase the typeface on your own or simply use a different type. In any case you need to remove the link to `//cloud.webtype.com` from the file `/_includes/head.html`. Add your own link to Webtype or use an entirely different typeface. 
 
 The favicon is referred to from the file '/_includes/head.html`. 
 
