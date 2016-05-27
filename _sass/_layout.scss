@@ -41,20 +41,16 @@
 
 	.site {
 		float: left;
+		margin-right: $spacing-3;
 	}
 
 	.site-title {
 		font-size: $large-font-size;
-		font-weight: bold;
-		letter-spacing: 1px;
-		margin: 0;
-		margin-right: $spacing-2;
 	}
 
 	.site-description {
 		font-family: $thin-font-family;
 		font-weight: $thin-font-weight;
-		margin-right: $spacing-2;
 		@extend %vertical-rhythm;
 	}
 
