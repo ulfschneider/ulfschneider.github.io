@@ -90,8 +90,7 @@
 
 .title-wrapper {
 	margin-bottom: $spacing-3;
-	text-align: left;
-	
+	text-align: left;	
 }
 
 
@@ -99,9 +98,16 @@
 	cursor: pointer;
 }
 
-/**
-* Posts
-*/
+
+.post-content {
+	.title-wrapper {
+		h1 {
+			font-size:$large-font-size;
+		}
+	}
+}
+
+
 .page-content {
 	margin-top: $spacing-4;
 
@@ -228,6 +234,7 @@ li.image-grid h2 {
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
 	font-size: $small-font-size;
+	line-height:$small-line-height;
 	text-align: left;
 	margin: 0;
 	margin-top: 1em;
