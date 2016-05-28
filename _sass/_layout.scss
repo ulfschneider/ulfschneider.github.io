@@ -218,7 +218,7 @@ li.image-grid {
 }
 
 li.image-grid .image:after {
-	/* make the .image a square */
+	/* make the .image container a square */
     	content: "";
     	display: block;
     	padding-bottom: 100%;	
@@ -228,19 +228,15 @@ li.image-grid .image {
 	background-color: $background-color;
 	cursor: pointer;	
 	overflow:hidden;
-    	position: relative;
+   	position: relative; 
   
 	img {
-	 /*let the img fill out the entire square of .image */
-      position: absolute;
-      margin: auto; 
-      min-height: 100%;
-      min-width: 100%;
-
-      left: -100%;
-      right: -100%;
-      top: -100%;
-      bottom: -100%;
+	 /*let the img fill out the maximum area of the surrounding .image container */
+	max-height:100%;		
+	width:auto;	
+	position:absolute;
+	margin:0;
+	bottom:0;
   }
 }
 
