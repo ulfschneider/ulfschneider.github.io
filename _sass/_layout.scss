@@ -218,7 +218,7 @@ li.image-grid {
 }
 
 li.image-grid .image:after {
-	/* make the .image container a square */
+	/* make the .image container a responsive square */
     	content: "";
     	display: block;
     	padding-bottom: 100%;	
@@ -231,12 +231,14 @@ li.image-grid .image {
    	position: relative; 
   
 	img {
-	 /*let the img fill out the maximum area of the surrounding .image container */
+	/* absolute position to the bottom in surrounding .image container */	
+	position:absolute;	
+	bottom:0;
+		
+	 /*let the img fill out the maximum area of the surrounding .image container */		
 	max-height:100%;		
 	width:auto;	
-	position:absolute;
 	margin:0;
-	bottom:0;
   }
 }
 
