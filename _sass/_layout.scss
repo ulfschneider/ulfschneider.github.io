@@ -210,26 +210,43 @@ ul.image-grid a {
 li.image-grid {
 	margin: 0;
 	border: 0;
-	overflow: hidden;
 	display: inline-block;
 	width: 25%;
 	padding: $spacing-1 $spacing-1;
 	vertical-align: top;
-	transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;							
+}
+
+li.image-grid .image:after {
+	/* make the .image a square */
+    	content: "";
+    	display: block;
+    	padding-bottom: 100%;	
 }
 
 li.image-grid .image {
 	background-color: $background-color;
-	cursor: pointer;
-
+	cursor: pointer;	
+	overflow:hidden;
+    	position: relative;
+  
 	img {
-		width: 100%;
-		margin: 0;
-	}
+	 /*let the img fill out the entire square of .image */
+      position: absolute;
+      margin: auto; 
+      min-height: 100%;
+      min-width: 100%;
 
+      left: -100%;
+      right: -100%;
+      top: -100%;
+      bottom: -100%;
+  }
 }
 
+
 li.image-grid h2 {
+	position:relative;
 	color: $text-color;
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
