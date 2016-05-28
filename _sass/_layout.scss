@@ -90,7 +90,11 @@
 
 .title-wrapper {
 	margin-bottom: $spacing-3;
-	text-align: left;	
+	text-align: center;
+	
+	h1 {
+		text-align:center;
+	}	
 }
 
 
@@ -135,6 +139,7 @@
 /*Galleries */
 #displaySlides {
 	@extend %nolinkstyle;
+	text-align:center;
 }
 
 
