@@ -101,12 +101,8 @@
 }
 
 
-.post-content {
-	.title-wrapper {
-		h1 {
-			font-size:$large-font-size;
-		}
-	}
+.title-wrapper {
+		@extend %vertical-rhythm;
 }
 
 
@@ -274,14 +270,12 @@ li.image-grid h2 {
 }
 
 .meta, .page-content .meta {
-	@extend %vertical-rhythm;
 	font-family: $subtitle-font-family;
 	font-style: italic;
 }
 
 .blog-content .meta {
 	float:left;
-	margin:0;
 	margin-right:$spacing-1;
 }
 
