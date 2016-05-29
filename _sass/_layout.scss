@@ -257,8 +257,9 @@ li.image-grid h2 {
 
 
 .post-nav {
-	margin: $spacing-1 0;
-
+	margin: $spacing-3 0;
+	font-size:$small-font-size;
+	line-height:$spacing-1;
 	.prev {
 		float: left;
 	}
