@@ -61,7 +61,7 @@ h3,h4,h5,h6 {
 */
 img {
 	max-width: 100%;
-	max-height: 800px;
+	max-height: $content-width;
 	vertical-align: top;
 }
 
