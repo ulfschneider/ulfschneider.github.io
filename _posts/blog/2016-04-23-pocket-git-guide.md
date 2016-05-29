@@ -559,10 +559,8 @@ The following list is by far not complete. Though I found myself using these com
 <strong>Create new local repo</strong>
 </div>
 <div class="col-2-3 last ">
-<div class="auto">
-<code>cd /path/to/your/prj/
-git init</code>
-</div>
+<pre class="highlight">cd /path/to/your/prj/
+git init</pre>
 </div>
 </div>
 
@@ -571,21 +569,15 @@ git init</code>
 <strong>Copy existing repo</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>cd /path/to/parent/
-git clone &lt;repo&gt; [&lt;new-folder-name&gt;]</code>
-</div>
+<pre class="highlight">cd /path/to/parent/
+git clone &lt;repo&gt; [&lt;new-folder-name&gt;]</pre>
 Where <code>&lt;repo&gt;</code> is one of
-<div class="auto">
-<code>/path/to/repo.git
+<pre class="highlight">/path/to/repo.git
 ssh://[user@]host.xz[:port]/path/to/repo.git
 git://host.xz[:port]/path/to/repo.git
-http[s]://host.xz[:port]/path/to/repo.git</code>
-</div>
+http[s]://host.xz[:port]/path/to/repo.git</pre>
 Watch out 
-<div class="auto">
-<code>git config [--global] http.sslVerify false</code>
-</div>
+<pre class="highlight">git config [--global] http.sslVerify false</pre>
 as one possible solution in case Git doesn´t allow you to connect to a repo via https.
 </div>
 </div>
@@ -595,7 +587,7 @@ as one possible solution in case Git doesn´t allow you to connect to a repo via
 <strong>Status of repo</strong>
 </div>
 <div class="col-2-3 last">
-<code>git status</code>
+<pre class="highlight">git status</pre>
 </div>
 </div>
 
@@ -604,17 +596,11 @@ as one possible solution in case Git doesn´t allow you to connect to a repo via
 <strong>Stage content</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git add &lt;pathspec&gt;</code>
-</div>
+<pre class="highlight">git add &lt;pathspec&gt;</pre>
 or
-<div class="auto">
-<code>git add --all</code>
-</div>
+<pre class="highlight">git add --all</pre>
 to un-stage, use
-<div class="auto">
-<code>git reset &lt;pathspec&gt;</code>
-</div>
+<pre class="highlight">git reset &lt;pathspec&gt;</pre>
 </div>
 </div>
 
@@ -623,9 +609,7 @@ to un-stage, use
 <strong>Removing files which have not been staged</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git clean [-ifd]</code>
-</div>
+<pre class="highlight">git clean [-ifd]</pre>
 </div>
 </div>
 
@@ -634,14 +618,10 @@ to un-stage, use
 <strong>Commit content</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git commit [-a] [-m "your commit message"]</code>
-</div>
+<pre class="highlight">git commit [-a] [-m "your commit message"]</pre>
 where <code>-a</code> will stage all modified and deleted content and <code>-m</code> indicates the commit message<br><br>
 alternatively
-<div class="auto">
-<code>git commit -am "your commit message"</code>
-</div>
+<pre class="highlight">git commit -am "your commit message"</pre>
 </div>
 </div>
 
@@ -650,9 +630,7 @@ alternatively
 <strong>See history of commits</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git log [--oneline] [--pretty] [&lt;branch-name&gt;]</code>
-</div>
+<pre class="highlight">git log [--oneline] [--pretty] [&lt;branch-name&gt;]</pre>
 </div>
 </div>
 
@@ -661,9 +639,7 @@ alternatively
 <strong>Remove file</strong>
 </div>
 <div class="col-2-3 last ">
-<div class="auto">
-<code>git rm &lt;pathspec&gt;</code>
-</div>
+<pre class="highlight">git rm &lt;pathspec&gt;</pre>
 </div>
 </div>
 
@@ -672,9 +648,7 @@ alternatively
 <strong>Rename file</strong>
 </div>
 <div class="col-2-3 last ">
-<div class="auto">
-<code>git mv &lt;current-path&gt; &lt;new-path&gt;</code>
-</div>
+<pre class="highlight">git mv &lt;current-path&gt; &lt;new-path&gt;</pre>
 </div>
 </div>
 
@@ -684,13 +658,11 @@ alternatively
 </div>
 <div class="col-2-3 last ">
 Use one pattern per line in .gitignore file
-<div class="auto">
-<code>*.a
+<pre class="highlight">*.a
 build/
 doc/*.txt
 doc/**/*.txt
-!doc/todo.txt</code>
-</div>
+!doc/todo.txt</pre>
 </div>
 </div>
 
@@ -699,9 +671,7 @@ doc/**/*.txt
 <strong>See what branch you are on</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git branch [-a|-r]</code><br><br>
-</div>
+<pre class="highlight">git branch [-a|-r]</pre>
 </div>
 </div>
 
@@ -710,13 +680,9 @@ doc/**/*.txt
 <strong>Create a branch</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git branch &lt;branch-name&gt; [&lt;commit&gt;]</code>
-</div>
+<pre class="highlight">git branch &lt;branch-name&gt; [&lt;commit&gt;]</pre>
 or
-<div class="auto">
-<code>git checkout -b &lt;branch-name&gt;</code>
-</div>
+<pre class="highlight">git checkout -b &lt;branch-name&gt;</pre>
 to create and checkout the branch.
 </div>
 </div>
@@ -726,9 +692,7 @@ to create and checkout the branch.
 <strong>Checkout a branch</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git checkout &lt;branch-name&gt;</code>
-</div>
+<pre class="highlight">git checkout &lt;branch-name&gt;</pre>
 </div>
 </div>
 
@@ -737,11 +701,9 @@ to create and checkout the branch.
 <strong>Compare changes</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git diff [--stat] [&lt;branch-name or commit&gt;]
+<pre class="highlight">git diff [--stat] [&lt;branch-name or commit&gt;]
 git diff &lt;older-commit&gt; &lt;newer-commit&gt;
-</code>
-</div>
+</pre>
 </div>
 </div>
 
@@ -750,11 +712,9 @@ git diff &lt;older-commit&gt; &lt;newer-commit&gt;
 <strong>Merge</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git checkout &lt;destination-branch-name&gt;
+<pre class="highlight">git checkout &lt;destination-branch-name&gt;
 git merge &lt;source-branch-name&gt;
-</code>
-</div>
+</pre>
 </div>
 </div>
 
@@ -763,9 +723,7 @@ git merge &lt;source-branch-name&gt;
 <strong>Rename a branch</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git -m &lt;branch-name&gt;</code>
-</div>
+<pre class="highlight">git -m &lt;branch-name&gt;</pre>
 </div>
 </div>
 
@@ -774,9 +732,7 @@ git merge &lt;source-branch-name&gt;
 <strong>Delete a branch</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git -d &lt;branch-name&gt;</code>
-</div>
+<pre class="highlight">git -d &lt;branch-name&gt;</pre>
 </div>
 </div>
 
@@ -785,9 +741,7 @@ git merge &lt;source-branch-name&gt;
 <strong>Activate an older commit</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git checkout &lt;commit-hash&gt;</code>
-</div>
+<pre class="highlight">git checkout &lt;commit-hash&gt;</pre>
 </div>
 </div>
 
@@ -796,9 +750,7 @@ git merge &lt;source-branch-name&gt;
 <strong>Discard file changes</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git checkout &lt;pathspec&gt;</code>
-</div>
+<pre class="highlight">git checkout &lt;pathspec&gt;</pre>
 </div>
 </div>
 
@@ -807,9 +759,7 @@ git merge &lt;source-branch-name&gt;
 <strong>Push to server</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git push [-u] &lt;remote&gt; &lt;remote-branch-name&gt;</code>
-</div>
+<pre class="highlight">git push [-u] &lt;remote&gt; &lt;remote-branch-name&gt;</pre>
 to push from current branch to remote branch, where <code>-u</code> can be used once to track the remote branch from the current branch. After setting the upstream with <code>-u</code>, it can be pushed and pulled from the current branch without specifying <code>&lt;remote&gt;</code> and <code>&lt;remote-branch-name&gt;</code>.
 </div>
 </div>
@@ -819,9 +769,7 @@ to push from current branch to remote branch, where <code>-u</code> can be used 
 <strong>Pull from server</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git pull &lt;remote&gt; &lt;remote-branch-name&gt;</code>
-</div>
+<pre class="highlight">git pull &lt;remote&gt; &lt;remote-branch-name&gt;</pre>
 to pull from remote branch into current branch. If remote branch tracking has been activated before via <code>-u</code> in a <code>git push</code>, it can be pulled from the remote branch without specifying <code>&lt;remote&gt;</code> and <code>&lt;remote-branch-name&gt;</code>.
 </div>
 </div>
@@ -831,10 +779,8 @@ to pull from remote branch into current branch. If remote branch tracking has be
 <strong>Tell Git who you are</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git config [--global] user.name ["your name or user name"]
-git config [--global] user.email ["your email address"]</code>
-</div>
+<pre class="highlight">git config [--global] user.name ["your name or user name"]
+git config [--global] user.email ["your email address"]</pre>
 </div>
 </div>
 
@@ -843,7 +789,7 @@ git config [--global] user.email ["your email address"]</code>
 <strong>Display your Git config</strong>
 </div>
 <div class="col-2-3 last">
-<code>git config --list</code>
+<pre class="highlight">git config --list</pre>
 </div>
 </div>
 
@@ -852,7 +798,7 @@ git config [--global] user.email ["your email address"]</code>
 <strong>Edit your Git config file</strong>
 </div>
 <div class="col-2-3 last">
-<code>git config [--global] --edit</code>
+<pre class="highlight">git config [--global] --edit</pre>
 </div>
 </div>
 
@@ -862,13 +808,9 @@ git config [--global] user.email ["your email address"]</code>
 </div>
 <div class="col-2-3 last">
 Set your editor<br>
-<div class="auto">
-<code>git config --global core.editor &lt;editor-name&gt;</code>
-</div>
+<pre class="highlight">git config --global core.editor &lt;editor-name&gt;</pre>
 Display your current editor setting
-<div class="auto">
-<code>git config core.editor</code>
-</div>
+<pre class="highlight">git config core.editor</pre>
 </div>
 </div>
 
@@ -877,9 +819,7 @@ Display your current editor setting
 <strong>Let Git accept your self-signed certificate</strong>
 </div>
 <div class="col-2-3 last">
-<div class="auto">
-<code>git config [--global] http.sslVerify false</code>
-</div>
+<pre class="highlight">git config [--global] http.sslVerify false</pre>
 </div>
 </div>
 

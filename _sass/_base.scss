@@ -176,17 +176,19 @@ blockquote {
 */
 code {
 	font-family: $code-font-family;
-	display: inline-block;
-	padding: 0px 3px;
+	display: inline;
 	background: #dddbd8;
-	white-space: pre;
 	border-radius: 2px;
 }
 
 pre.highlight {
 	@extend %vertical-rhythm;
+	font-family: $code-font-family;	
 	overflow: auto;
 	display: block;
+	background: #dddbd8;
+	border-radius: 2px;	
+	padding: 1px 3px;	
 }
 
 .auto {
