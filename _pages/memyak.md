@@ -8,9 +8,9 @@ memYAK is the external memory for innovation teams with special support for agil
 
 We use this web application at Wincor Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
 
-[Download memYAK 2.7.6 - it´s free](http://memyak.com/resource/memyak_2.7.6.zip)
+[Download memYAK 2.7.6 - it´s free](http://peewee.space/resource/memyak_2.7.6.zip)
 
-[![](/i/memyak/burndown.jpg)](http://memyak.com/resource/memyak_2.7.6.zip)
+[![](/i/memyak/burndown.jpg)](http://peewee.space/resource/memyak_2.7.6.zip)
 
 You can store any kind of data in memYAK and use filter and search mechanisms to select the contents that are of relevance for you. Structured navigational concepts like a Kanban Grid or a Product Backlog View support you in your project work. A Product Burndown Diagram indicates the progress of your endeavors.
 
