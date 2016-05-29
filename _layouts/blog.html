@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-
+<div class="blog-content">
 {{ content }}
 
 {% for p in site.posts %}
 {% unless p.nonav %}
 {% if p.layout contains 'post' and p.title %}
-
-<h3><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
+<h3><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>{% if p.date %}<span class="meta">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}
@@ -18,3 +17,4 @@ layout: default
 {% endif %}
 {% endunless %}
 {% endfor %}
+</div>
