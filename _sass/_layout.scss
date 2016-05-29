@@ -136,6 +136,7 @@
 
 /*Galleries */
 #displaySlides {
+	font-size:$small-font-size;
 	@extend %nolinkstyle;
 }
 
@@ -148,6 +149,7 @@
 	}
 
 	.nav {
+		font-size:$small-font-size;
 		.direction {
 			float: right;
 
