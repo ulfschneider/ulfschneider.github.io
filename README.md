@@ -58,6 +58,10 @@ If true for any page or post, that page or post will not appear as a part inside
 
 A short abstract for posts of layout type *post*. Will appear in the blog summary for those posts.
 
+**forward:** A forward URL
+
+To be used in posts of layout type *post*. Will produce an entry in the blog overview but forward not to the post but to the given forward address when clicking on the title.
+
 **autoplay:** true|false|empty
 
 To be used in posts of type *gallery*. Will display all images inside of the gallery as an auto playing slide animation.
