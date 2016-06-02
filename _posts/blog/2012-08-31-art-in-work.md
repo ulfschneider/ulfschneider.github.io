@@ -80,7 +80,7 @@ References
 
 [Godin 2010] S. Godin, "Linchpin, Are You Indespensable?", Penguin Books, 2010
 
-[schneider2012]: {{site.url}}/r/blog/schneider_os_05_12.pdf 
+[schneider2012]: {{site.url}}/assets/schneider_os_05_12.pdf 
 [Schneider 2012] U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo", OBJEKTspektrum, Ausgabe 5, 2012
 
 [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor

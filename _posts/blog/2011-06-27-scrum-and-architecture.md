@@ -337,8 +337,8 @@ References
 [businessmodelcanvas]: http://www.businessmodelgeneration.com
 [Osterwalder] Business Model Canvas, <http://businessmodelgeneration.com/book?_ga=1.264929356.2127012834.1431598082>
 
-[schneider2011]: {{site.url}}/r/blog/schneider_os_04_11.pdf
-[Schneider 2011] [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess", OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/r/blog/schneider_os_04_11.pdf)
+[schneider2011]: {{site.url}}/assets/schneider_os_04_11.pdf
+[Schneider 2011] [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess", OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/assets/schneider_os_04_11.pdf)
 
 [Zörner 2009] S. Zörner, "Historisch gewachsen? - Entscheidungen festhalten", Java Magazin 04/2009
 
