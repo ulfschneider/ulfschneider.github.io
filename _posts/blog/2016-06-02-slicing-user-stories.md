@@ -7,3 +7,4 @@ permalink:
 author:
 abstract: A reveal.js presentation about patterns to slice User Stories into smaller pieces.
 ---
+Please open the [presentation here]({{site.url}}/assets/slicing-user-stories).

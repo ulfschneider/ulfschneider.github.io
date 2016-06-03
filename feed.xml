@@ -15,11 +15,24 @@ layout: null
       <item>
         <title>{% if post.title and post.title != "notitle" %}{{ post.title | xml_escape }}{% elsif post.message %}{{ post.message | xml_escape  }}{% elsif post.menu %}{{ post.menu  | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}</title>        
 				{% if post.forward %}
-        <description><a href="{{ post.forward }}">{{ post.forward }}</a></description>
-        <link>{{ post.forward }}</link>
-        <guid isPermaLink="true">{{ post.forward }}</guid>				
+
+				{% if post.abstract %}
+        <description>{{ post.abstract | xml_escape }}</description>
 				{% else %}
-        <description>{{ post.content | xml_escape }}</description>
+        <description><a href="{{ post.forward | prepend: site.baseurl | prepend: site.url }}">{{ post.forward }}</a></description>
+				{% endif %}
+
+        <link>{{ post.forward | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.forward | prepend: site.baseurl | prepend: site.url }}</guid>				
+
+				{% else %}
+
+				{% if post.abstract %}
+        <description>{{ post.abstract | xml_escape }}</description>
+				{% else %}
+        <description>{{ post.content | xml_escape }}</description>				
+				{% endif %}
+				
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>				
 				{% endif %}

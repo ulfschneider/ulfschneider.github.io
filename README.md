@@ -58,9 +58,9 @@ If true for any page or post, that page or post will not appear as a part inside
 
 A short abstract for posts of layout type *post*. Will appear in the blog summary for those posts.
 
-**forward:** A forward URL
+**forward:** A relative forward URL
 
-To be used in posts of layout type *post*. Will produce an entry in the blog overview but forward not to the post but to the given forward address when clicking on the title.
+To be used in posts of layout type *post*. Will produce an entry in the blog overview but forward not to the post but to the given forward address when clicking on the title. The forward address must be an address relative to your site url.
 
 **autoplay:** true|false|empty
 
