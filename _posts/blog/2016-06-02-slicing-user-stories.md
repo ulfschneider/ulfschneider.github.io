@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slicing User Stories
-forward: http://ulf.codes/assets/slicing-user-stories
+forward: /assets/slicing-user-stories
 date:   2016-06-02
 permalink: 
 author:
