@@ -72,7 +72,7 @@ function figCaption(dom) {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
-	s = select(".double");
+	s = select(".full");
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}

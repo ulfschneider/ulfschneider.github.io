@@ -125,7 +125,7 @@ Working, staging and committing
 Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. Technically speaking, Git maintains a *directed acyclic graph* of snapshots of your work. 
 
 ![]({{site.url}}/i/blog/git_commits_over_time.jpg)
-{:.double}
+{:.full}
 
 Figure: Git produces snapshots of your entire project
 {:.figcaption}
@@ -137,7 +137,7 @@ While you are working, Git divides your content into three main sections. Your w
 - Once you commit, Git will take the contents from the staging area and create a snapshot in the Git repository, which is then the committed revision of your project at the time of the commit. 
 
 ![]({{site.url}}/i/blog/git_areas.jpg)
-{:.double}
+{:.full}
 
 Figure: Working - Staging - Committing
 {:.figcaption}
@@ -285,7 +285,7 @@ While you can have multiple branches in your repository, there is always exact o
 `git branch <branch-name> [<commit>]` will create a new branch for you. Choose a short descriptive branch name. The optional `<commit>` specifies a commit to start from. If you don´t give the `<commit>`, the branch will be created from the latest commit in the current branch.
 
 ![]({{site.url}}/i/blog/git_new_branch.jpg)
-{:.double}
+{:.full}
 
 Figure: Creating a new branch with name 'lazyload'
 {:.figcaption}
@@ -296,19 +296,19 @@ Figure: Creating a new branch with name 'lazyload'
 Again, there is a shorthand command for creating a branch and making it the current working copy all at once: `git checkout -b <branch-name>` will create a new branch and make it the current working copy.
 
 ![]({{site.url}}/i/blog/git_branch_first_commit.jpg)
-{:.double}
+{:.full}
 
 Figure: First commit in the 'lazyload' branch
 {:.figcaption}
 
 ![]({{site.url}}/i/blog/git_branch_first_commit_alternate.jpg)
-{:.double}
+{:.full}
 
 Figure: Alternate picture for the first commit in the 'lazyload' branch 
 {:.figcaption}
 
 ![]({{site.url}}/i/blog/git_branch_multiple_commits.jpg)
-{:.double}
+{:.full}
 
 Figure: Multiple commits in the 'lazyload' branch 
 {:.figcaption}
@@ -368,7 +368,7 @@ To be more precise, all commits from your source branch will be merged into your
 The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch.
 
 ![]({{site.url}}/i/blog/git_fast_forward.jpg)
-{:.double}
+{:.full}
 
 Figure: Fast-forward merge of 'lazyload' into 'master' branch 
 {:.figcaption}
@@ -378,7 +378,7 @@ In this case any changes made in the source branch will entirely be added to the
 A *true merge* is something different. That´s when both, the source branch and the destination branch, have been modified before merging. 
 
 ![]({{site.url}}/i/blog/git_true_merge.jpg)
-{:.double}
+{:.full}
 
 Figure: 'master' and 'lazyload' have been modified - a true merge is needed
 {:.figcaption}
@@ -386,7 +386,7 @@ Figure: 'master' and 'lazyload' have been modified - a true merge is needed
 A fast-forward then is no longer possible and Git has to figure out the combined state of the content, wich will lead to a so called *merge commit*. 
 
 ![]({{site.url}}/i/blog/git_merge_commit.jpg)
-{:.double}
+{:.full}
 
 Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
 {:.figcaption}
@@ -394,7 +394,7 @@ Figure: After a true merge of 'master' and 'lazyload' a merge commit was created
 Each changed file in each branch is compared. When Git identifies a line that has changed in either branch, that line is carried forward for inclusion in the destination merge. 
 
 ![]({{site.url}}/i/blog/git_merge_line_by_line.jpg)
-{:.double}
+{:.full}
 
 Figure: A true merge goes line-by-line
 {:.figcaption}
@@ -472,7 +472,7 @@ The Git working mode is offline by default. This is nice, because you don´t nee
 A remote in the Git world is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
 
 ![]({{site.url}}/i/blog/git_hub.jpg)
-{:.double}
+{:.full}
 
 Figure: Origin is a hub by convention
 {:.figcaption}
@@ -544,7 +544,7 @@ Git will automatically merge the remote changes into your local branch. In case 
 The big picture
 ---
 ![]({{site.url}}/i/blog/git_big_picture.jpg)
-{:.double}
+{:.full}
 
 Figure: Git commands and their fields of operation
 {:.figcaption}
