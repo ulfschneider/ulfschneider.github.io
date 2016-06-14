@@ -93,7 +93,7 @@ function breakout() {
 	for(var i = 0; i < s.length; i++) {
 		if (wi > wr) {
 			s[i].style.marginLeft = margin + "px";
-			s[i].style.marginRight = margin + "px";
+			s[i].style.marginRight = margin + "px";			
 		} else {
 			s[i].style.marginLeft = "0px";
 			s[i].style.marginRight = "0px";
@@ -121,22 +121,23 @@ function up() {
 		breakout();
 	}
 	
-	breakout();
-	
-	//make figcaptions
-	var i = 0;
-	var s = select(".left");	
-	for (i = 0; i < s.length; i++) {
-		figCaption(s[i]);
-	}
-	s = select(".right");
-	for (i = 0; i < s.length; i++) {
-		figCaption(s[i]);
-	}
-	s = select(".full");
-	for (i = 0; i < s.length; i++) {
-		figCaption(s[i]);
-	}
+	window.onload = function() {
+		breakout();
 		
-
+		//make figcaptions
+		var i = 0;
+		var s = select(".left");	
+		for (i = 0; i < s.length; i++) {
+			figCaption(s[i]);
+		}
+		s = select(".right");
+		for (i = 0; i < s.length; i++) {
+			figCaption(s[i]);
+		}
+		s = select(".full");
+		for (i = 0; i < s.length; i++) {
+			figCaption(s[i]);
+		}
+	}
+				
 })();

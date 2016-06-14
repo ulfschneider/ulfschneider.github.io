@@ -370,11 +370,14 @@ figcaption:before, .figcaption:before {
 .breakout {
 	max-height:900px;
 	overflow:hidden;
+	margin-top:$spacing-3;
+	margin-bottom:$spacing-3;
 }
 
 .breakout img {
 	width:100%;
 	max-height:none;
+	margin: 0 auto;
 }
 
 /**
