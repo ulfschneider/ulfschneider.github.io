@@ -1,3 +1,5 @@
+var refWidth = 0;
+
 function windowWidth() {
 	return w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
@@ -86,20 +88,24 @@ function imgVerticalMiddle(dom) {
 
 function breakout() {
 	var wi = windowWidth();
-	var wr = wrapperWidth();
-	var margin = (wr - wi) / 2;
 	
-	var s = select(".breakout");
-	for(var i = 0; i < s.length; i++) {
-		if (wi > wr) {
-			s[i].style.marginLeft = margin + "px";
-			s[i].style.marginRight = margin + "px";			
-		} else {
-			s[i].style.marginLeft = "0px";
-			s[i].style.marginRight = "0px";
-		}
-		imgVerticalMiddle(s[i]);
-	}		
+	if (refWidth !== wi) {
+		refWidth = wi;
+		var wr = wrapperWidth();
+		var margin = (wr - wi) / 2;
+	
+		var s = select(".breakout");
+		for(var i = 0; i < s.length; i++) {
+			if (wi > wr) {
+				s[i].style.marginLeft = margin + "px";
+				s[i].style.marginRight = margin + "px";			
+			} else {
+				s[i].style.marginLeft = "0px";
+				s[i].style.marginRight = "0px";
+			}
+			imgVerticalMiddle(s[i]);
+		}		
+	}
 }
 
 function up() {
