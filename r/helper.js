@@ -122,22 +122,22 @@ function up() {
 	}
 	
 	window.onload = function() {
-		breakout();
-		
-		//make figcaptions
-		var i = 0;
-		var s = select(".left");	
-		for (i = 0; i < s.length; i++) {
-			figCaption(s[i]);
-		}
-		s = select(".right");
-		for (i = 0; i < s.length; i++) {
-			figCaption(s[i]);
-		}
-		s = select(".full");
-		for (i = 0; i < s.length; i++) {
-			figCaption(s[i]);
-		}
+		breakout();		
+	}
+	
+	//make figcaptions
+	var i = 0;
+	var s = select(".left");	
+	for (i = 0; i < s.length; i++) {
+		figCaption(s[i]);
+	}
+	s = select(".right");
+	for (i = 0; i < s.length; i++) {
+		figCaption(s[i]);
+	}
+	s = select(".full");
+	for (i = 0; i < s.length; i++) {
+		figCaption(s[i]);
 	}
 				
 })();
