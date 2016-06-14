@@ -1,3 +1,16 @@
+function windowWidth() {
+	return w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+function wrapperWidth() {
+	var s = select(".wrapper");
+	if (s.length) {
+		return s[0].offsetWidth;
+	} else {
+		return 0;
+	}
+}
+
 function hasClass(selector, elem) {
 	if (selector.charAt(0) === '.') {
 		return (" ." + elem.className + " ").indexOf(" " + selector + " ") > -1;
@@ -54,17 +67,65 @@ function figCaption(dom) {
 	}
 }
 
+function imgVerticalMiddle(dom) {
+	if (dom) {
+		var img = select("img", dom);
+		if (img.length) {
+			var iHeight = img[0].height;
+			var wrapperHeight = dom.offsetHeight;
+			
+			if (iHeight > wrapperHeight) {
+				img[0].style.marginTop = -Math.floor((iHeight - wrapperHeight) / 2) + "px";
+			} else {
+				img[0].style.marginTop = "0px";
+			}
+			img[0].style.marginBottom = "0px";
+		} 
+	}
+}
+
+function breakout() {
+	var wi = windowWidth();
+	var wr = wrapperWidth();
+	var margin = (wr - wi) / 2;
+	
+	var s = select(".breakout");
+	for(var i = 0; i < s.length; i++) {
+		if (wi > wr) {
+			s[i].style.marginLeft = margin + "px";
+			s[i].style.marginRight = margin + "px";
+		} else {
+			s[i].style.marginLeft = "0px";
+			s[i].style.marginRight = "0px";
+		}
+		imgVerticalMiddle(s[i]);
+	}		
+}
+
+function up() {
+	if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		document.getElementById("up").style.display = "inline";
+	}	
+}
+
+
 
 (function format() {
 
 	window.onscroll = function() {
-		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-			document.getElementById("up").style.display = "inline";
-		}
+			up();
+			breakout();
 	}
-
+	
+	window.onresize = function() {
+		breakout();
+	}
+	
+	breakout();
+	
+	//make figcaptions
 	var i = 0;
-	var s = select(".left");
+	var s = select(".left");	
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
@@ -76,5 +137,6 @@ function figCaption(dom) {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
+		
 
 })();

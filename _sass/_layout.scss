@@ -367,6 +367,16 @@ figcaption:before, .figcaption:before {
 	width: 100%;
 }
 
+.breakout {
+	max-height:900px;
+	overflow:hidden;
+}
+
+.breakout img {
+	width:100%;
+	max-height:none;
+}
+
 /**
 * Site footer
 */
