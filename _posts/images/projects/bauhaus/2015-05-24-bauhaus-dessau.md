@@ -15,10 +15,10 @@ This photo series is a result of two visits, the first one in June 2013 and the 
 When you look at the Bauhaus building from 1925/26, it appears like a bunch of boxes spread around but connected to each other.
 
 ![]({{site.url}}/i/IMG_8404.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_8387.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_8488.jpg)
 
@@ -33,8 +33,9 @@ Glass, transparency and straight lines play a huge role.
 {:.right}
 
 
-![]({{site.url}}/i/IMG_8456.jpg)Staircase
-{:.left}
+![]({{site.url}}/i/IMG_8456.jpg)
+Staircase
+{:.breakout .left}
 
 
 Looking inside out
@@ -44,8 +45,9 @@ Looking inside out
 ![]({{site.url}}/i/IMG_8449.jpg)
 {:.left}
 
-![]({{site.url}}/i/IMG_8524.jpg)Marcel Breuer´s B3 Wassily Chair
-{:.right}
+![]({{site.url}}/i/IMG_8524.jpg)
+Marcel Breuer´s B3 Wassily Chair
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_5884.jpg)Marcel Breuer
 {:.left}

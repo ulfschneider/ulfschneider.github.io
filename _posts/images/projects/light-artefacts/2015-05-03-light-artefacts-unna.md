@@ -22,37 +22,39 @@ In case you are in Unna, Germany, this exhibition is worth a visit.
 {:.left}
 
 ![]({{site.url}}/i/IMG_8244.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_8247.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_8367.jpg)
 
 
 ![]({{site.url}}/i/IMG_8248.jpg)
-
 I (IN DIALOGUE) by Jan van Munster
-{:.figcaption}
+{:.breakout}
 
-![]({{site.url}}/i/IMG_8252.jpg)TUNNEL OF TEARS FOR UNNA by Keith Sonnier
+![]({{site.url}}/i/IMG_8252.jpg)
+TUNNEL OF TEARS FOR UNNA by Keith Sonnier
 {:.left}
 
 ![]({{site.url}}/i/IMG_8364.jpg)
 {:.right}
 
 ![]({{site.url}}/i/IMG_8366.jpg)
+{:.breakout}
 
 ![]({{site.url}}/i/IMG_8302.jpg)
-
 LOTUS SHADOWS by Rebecca Horn
-{:.figcaption}
+{:.breakout .left}
 
-![]({{site.url}}/i/IMG_8313.jpg)THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
-{:.right}
+![]({{site.url}}/i/IMG_8313.jpg)
+THEATRE OF SHADOWS: Danse macabre by Christian Boltanski
+{:.breakout .right}
 
-![]({{site.url}}/i/IMG_8308.jpg)FLOATER 99 by James Turrell
-{:.left}
+![]({{site.url}}/i/IMG_8308.jpg)
+FLOATER 99 by James Turrell
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_8265.jpg)
 
@@ -60,7 +62,7 @@ SLOE WHITE AND RAVEN BLACK by Christina Kubisch
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_8354.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_8271.jpg) 
 {:.right}
