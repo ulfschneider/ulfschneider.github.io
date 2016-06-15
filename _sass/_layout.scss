@@ -312,17 +312,20 @@ li.image-grid h2 {
 	max-width: 500px;
 }
 
+.breakout img {
+	width:100%;
+	max-width:none;
+	max-height:none;
+}
 
-.figcaption, figcaption {
+figcaption, .figcaption {
 	font-style: italic;
 	font-size:$small-font-size;
 	line-height:$spacing-1;
-}
-
-.figcaption {
 	margin-top: -$spacing-2;
 	margin-bottom: $spacing-2;
 	clear: both;
+	
 }
 
 figcaption:before, .figcaption:before {
@@ -367,18 +370,11 @@ figcaption:before, .figcaption:before {
 	width: 100%;
 }
 
-.breakout {
-	max-height:800px;
-	overflow:hidden;
-	margin-top:$spacing-3;
-	margin-bottom:$spacing-3;
+.full figcaption, .full .figcaption {
+	margin-top: -$spacing-2;
 }
 
-.breakout img {
-	width:100%;
-	max-height:none;
-	margin: 0 auto;
-}
+
 
 /**
 * Site footer
@@ -488,7 +484,7 @@ figcaption:before, .figcaption:before {
 		line-height: $palm-base-line-height;
 	}
 	img {
-		max-height: 800px;
+		max-height: $content-width;
 	}
 	img.LHOP, .LHOP img {
 		/*Limit Height On Palm*/

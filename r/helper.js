@@ -15,10 +15,9 @@ function wrapperWidth() {
 
 function hasClass(selector, elem) {
 	if (selector.charAt(0) === '.') {
-		return ("." + elem.className + " ").indexOf(selector + " ") > -1; 
-	} else {
-		return (" " + elem.className + " ").indexOf(selector + " ") > -1; 
+		selector = selector.substring(1, selector.length);		
 	}
+	return (" " + elem.className + " ").indexOf(selector + " ") > -1; 
 }
 
 function isTag(selector, elem) {
@@ -61,11 +60,13 @@ function figCaption(dom) {
 		var img = select("img", dom);
 		var i = 0;
 		var html = "";
-		for (i = 0; i < img.length; i++) {
-			html = html + img[i].outerHTML;
-			img[i].parentNode.removeChild(img[i]);
+		if (!dom.innerHTML.includes("/figcaption")) {
+			for (i = 0; i < img.length; i++) {
+				html = html + img[i].outerHTML;
+				img[i].parentNode.removeChild(img[i]);
+			}
+			dom.innerHTML = html + "<figcaption>" + dom.innerHTML + "</figcaption>";
 		}
-		dom.innerHTML = html + "<figcaption>" + dom.innerHTML + "</figcaption>";
 	}
 }
 
@@ -91,22 +92,21 @@ function breakout() {
 	
 	if (refWidth !== wi) {
 		refWidth = wi;
-		var wr = wrapperWidth();
+		var wr = wrapperWidth();		
 		var margin = Math.ceil((wr - wi) / 2);
 		
-	
 		var s = select(".breakout");
 		for(var i = 0; i < s.length; i++) {
-			var half = hasClass("half", s[0]);
 
 			if (wi > wr) {
-				s[i].style.marginLeft = (half ? Math.max(Math.ceil(margin / 2), -200) : margin) + "px";
-				s[i].style.marginRight = (half ? Math.max(Math.ceil(margin / 2), -200) : margin) + "px";			
+				//0.31 = (1.62 - 1) / 2
+				s[i].style.marginLeft = Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px"; 
+				s[i].style.marginRight =  Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px";			
 			} else {
 				s[i].style.marginLeft = "0px";
 				s[i].style.marginRight = "0px";
 			}
-			imgVerticalMiddle(s[i]);
+			//imgVerticalMiddle(s[i]);
 		}		
 	}
 }
@@ -148,5 +148,11 @@ function up() {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
+	s = select(".breakout");
+	for (i = 0; i < s.length; i++) {
+		figCaption(s[i]);
+	}
+	
+	
 				
 })();
