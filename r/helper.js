@@ -60,7 +60,7 @@ function figCaption(dom) {
 		var img = select("img", dom);
 		var i = 0;
 		var html = "";
-		if (!dom.innerHTML.includes("/figcaption")) {
+		if (dom.innerHTML.indexOf("/figcaption") < 0) {
 			for (i = 0; i < img.length; i++) {
 				html = html + img[i].outerHTML;
 				img[i].parentNode.removeChild(img[i]);
