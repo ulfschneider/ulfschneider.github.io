@@ -368,7 +368,7 @@ figcaption:before, .figcaption:before {
 }
 
 .breakout {
-	max-height:900px;
+	max-height:800px;
 	overflow:hidden;
 	margin-top:$spacing-3;
 	margin-bottom:$spacing-3;
@@ -488,7 +488,7 @@ figcaption:before, .figcaption:before {
 		line-height: $palm-base-line-height;
 	}
 	img {
-		max-height: 900px;
+		max-height: 800px;
 	}
 	img.LHOP, .LHOP img {
 		/*Limit Height On Palm*/

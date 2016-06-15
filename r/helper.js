@@ -15,9 +15,9 @@ function wrapperWidth() {
 
 function hasClass(selector, elem) {
 	if (selector.charAt(0) === '.') {
-		return (" ." + elem.className + " ").indexOf(" " + selector + " ") > -1;
+		return ("." + elem.className + " ").indexOf(selector + " ") > -1; 
 	} else {
-		return false;
+		return (" " + elem.className + " ").indexOf(selector + " ") > -1; 
 	}
 }
 
@@ -92,13 +92,16 @@ function breakout() {
 	if (refWidth !== wi) {
 		refWidth = wi;
 		var wr = wrapperWidth();
-		var margin = (wr - wi) / 2;
+		var margin = Math.ceil((wr - wi) / 2);
+		
 	
 		var s = select(".breakout");
 		for(var i = 0; i < s.length; i++) {
+			var half = hasClass("half", s[0]);
+
 			if (wi > wr) {
-				s[i].style.marginLeft = margin + "px";
-				s[i].style.marginRight = margin + "px";			
+				s[i].style.marginLeft = (half ? Math.max(Math.ceil(margin / 2), -200) : margin) + "px";
+				s[i].style.marginRight = (half ? Math.max(Math.ceil(margin / 2), -200) : margin) + "px";			
 			} else {
 				s[i].style.marginLeft = "0px";
 				s[i].style.marginRight = "0px";
