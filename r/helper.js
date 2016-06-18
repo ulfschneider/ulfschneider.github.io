@@ -120,18 +120,18 @@ function up() {
 
 
 (function format() {
-
-	window.onscroll = function() {
-			up();
-			breakout();
-	}
-	
-	window.onresize = function() {
-		breakout();
-	}
 	
 	window.onload = function() {
 		breakout();		
+
+		window.onscroll = function() {
+				up();
+				breakout();
+		}
+	
+		window.onresize = function() {
+			breakout();
+		}		
 	}
 	
 	//make figcaptions
