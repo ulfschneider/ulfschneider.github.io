@@ -40,14 +40,14 @@
 
 
 .index {
-
+	
 	.site {
 		float: left;
 		margin-right: $spacing-3;
 	}
 
 	.site-title {
-		font-size: $large-font-size;
+		font-weight:bold;
 	}
 
 	.site-description {
