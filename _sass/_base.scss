@@ -148,13 +148,9 @@ p a {
 * Blockquotes
 */
 blockquote {
-	color: $text-color;
-	padding-left: 1em;
-	margin-left: -1em;
-	border-left: 2px solid $text-color;
-	p {
-		margin-left: 0;
-	}
+	border-top:2px solid $text-color;
+	border-bottom:2px solid $text-color;
+	padding:.81em 0;
   
 	@extend %vertical-rhythm;
 	margin-top: $spacing-1;
@@ -162,10 +158,6 @@ blockquote {
 	font-style: italic;
 	> :last-child {
 		margin-bottom: 0;
-	}
-
-	@include media-query($on-narrow) {
-		margin-left: 0;
 	}
 
 }
