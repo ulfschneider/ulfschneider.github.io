@@ -152,8 +152,7 @@ blockquote {
 	border-bottom:2px solid $text-color;
 	padding:.81em 0;
   
-	@extend %vertical-rhythm;
-	margin-top: $spacing-1;
+	margin: $spacing-2 0;
 	font-family: $base-font-family;
 	font-style: italic;
 	> :last-child {
