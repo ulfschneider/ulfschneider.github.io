@@ -150,7 +150,7 @@ p a {
 blockquote {
 	border-top:2px solid $text-color;
 	border-bottom:2px solid $text-color;
-	padding:.81em 0;
+	padding:$spacing-1 0;
   
 	margin: $spacing-2 0;
 	font-family: $base-font-family;
