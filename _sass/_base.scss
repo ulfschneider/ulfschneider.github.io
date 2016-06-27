@@ -69,7 +69,7 @@ img {
 * Figures
 */
 figure > img {
-	display: block;
+	display: blo
 }
 
 /**
@@ -134,10 +134,10 @@ p a {
 }
 
 %linkstyle {
-	background-image: -webkit-linear-gradient(to bottom, transparent 91%, $text-color 96%, $text-color 100%);
-	background-image: -moz-linear-gradient(to bottom, transparent 91%, $text-color 96%, $text-color 100%);
-	background-image: -o-linear-gradient(to bottom, transparent 91%, $text-color 96%, $text-color 100%);
-	background-image: linear-gradient(to bottom, transparent 91%, $text-color 96%, $text-color 100%);
+	background-image: -webkit-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
+	background-image: -moz-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
+	background-image: -o-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
+	background-image: linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
 }
 
 %nolinkstyle {
@@ -148,25 +148,15 @@ p a {
 * Blockquotes
 */
 blockquote {
-	color: $text-color;
-	padding-left: 1em;
-	margin-left: -1em;
-	border-left: 2px solid $text-color;
-	p {
-		margin-left: 0;
-	}
+	border-top:1px solid $text-color;
+	border-bottom:1px solid $text-color;
+	padding:$spacing-1/2 0;
   
-	@extend %vertical-rhythm;
-	margin-top: $spacing-1;
+	margin: $spacing-1 0;
 	font-family: $base-font-family;
 	font-style: italic;
-	letter-spacing: 1px;
 	> :last-child {
 		margin-bottom: 0;
-	}
-
-	@include media-query($on-narrow) {
-		margin-left: 0;
 	}
 
 }

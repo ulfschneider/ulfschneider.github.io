@@ -1,9 +1,23 @@
+var refWidth = 0;
+
+function windowWidth() {
+	return w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+function wrapperWidth() {
+	var s = select(".wrapper");
+	if (s.length) {
+		return s[0].offsetWidth;
+	} else {
+		return 0;
+	}
+}
+
 function hasClass(selector, elem) {
 	if (selector.charAt(0) === '.') {
-		return (" ." + elem.className + " ").indexOf(" " + selector + " ") > -1;
-	} else {
-		return false;
+		selector = selector.substring(1, selector.length);		
 	}
+	return (" " + elem.className + " ").indexOf(selector + " ") > -1; 
 }
 
 function isTag(selector, elem) {
@@ -46,25 +60,83 @@ function figCaption(dom) {
 		var img = select("img", dom);
 		var i = 0;
 		var html = "";
-		for (i = 0; i < img.length; i++) {
-			html = html + img[i].outerHTML;
-			img[i].parentNode.removeChild(img[i]);
+		if (dom.innerHTML.indexOf("/figcaption") < 0) {
+			for (i = 0; i < img.length; i++) {
+				html = html + img[i].outerHTML;
+				img[i].parentNode.removeChild(img[i]);
+			}
+			dom.innerHTML = html + "<figcaption>" + dom.innerHTML + "</figcaption>";
 		}
-		dom.innerHTML = html + "<figcaption>" + dom.innerHTML + "</figcaption>";
 	}
 }
 
+function imgVerticalMiddle(dom) {
+	if (dom) {
+		var img = select("img", dom);
+		if (img.length) {
+			var iHeight = img[0].height;
+			var wrapperHeight = dom.offsetHeight;
+			
+			if (iHeight > wrapperHeight) {
+				img[0].style.marginTop = -Math.floor((iHeight - wrapperHeight) / 2) + "px";
+			} else {
+				img[0].style.marginTop = "0px";
+			}
+			img[0].style.marginBottom = "0px";
+		} 
+	}
+}
+
+function breakout() {
+	var wi = windowWidth();
+	
+	if (refWidth !== wi) {
+		refWidth = wi;
+		var wr = wrapperWidth();		
+		var margin = Math.ceil((wr - wi) / 2);
+		
+		var s = select(".breakout");
+		for(var i = 0; i < s.length; i++) {
+
+			if (wi > wr) {
+				//0.31 = (1.62 - 1) / 2
+				s[i].style.marginLeft = Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px"; 
+				s[i].style.marginRight =  Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px";			
+			} else {
+				s[i].style.marginLeft = "0px";
+				s[i].style.marginRight = "0px";
+			}
+			//imgVerticalMiddle(s[i]);
+		}		
+	}
+}
+
+function up() {
+	if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		document.getElementById("up").style.display = "inline";
+	}	
+}
+
+
 
 (function format() {
+	
+	window.onload = function() {
+		breakout();		
 
-	window.onscroll = function() {
-		if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-			document.getElementById("up").style.display = "inline";
+		window.onscroll = function() {
+				up();
+				breakout();
 		}
+	
+		window.onresize = function() {
+			breakout();
+		}		
 	}
-
+	
+	//make figcaptions
 	var i = 0;
-	var s = select(".left");
+	var s = select(".left");	
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
@@ -72,9 +144,15 @@ function figCaption(dom) {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
-	s = select(".double");
+	s = select(".full");
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
-
+	s = select(".breakout");
+	for (i = 0; i < s.length; i++) {
+		figCaption(s[i]);
+	}
+	
+	
+				
 })();

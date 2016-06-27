@@ -40,14 +40,14 @@
 
 
 .index {
-
+	
 	.site {
 		float: left;
 		margin-right: $spacing-3;
 	}
 
 	.site-title {
-		font-size: $large-font-size;
+		font-weight:bold;
 	}
 
 	.site-description {
@@ -84,7 +84,8 @@
 	width: 150px;
 	height: 150px;
 	background-size: 150px 150px;
-	margin: 0 auto;
+	margin: 1.62em auto;
+	margin-top:0;
 	box-sizing: content-box;
 	background-image: url(/r/u150.jpg);
 }
@@ -312,17 +313,21 @@ li.image-grid h2 {
 	max-width: 500px;
 }
 
+.breakout img {
+	width:100%;
+	max-width:none;
+	max-height:none;
+}
 
-.figcaption, figcaption {
+
+figcaption, .figcaption {
 	font-style: italic;
 	font-size:$small-font-size;
 	line-height:$spacing-1;
-}
-
-.figcaption {
 	margin-top: -$spacing-2;
 	margin-bottom: $spacing-2;
 	clear: both;
+	
 }
 
 figcaption:before, .figcaption:before {
@@ -362,10 +367,16 @@ figcaption:before, .figcaption:before {
 
 }
 
-.double img, p.double img {
+.full img, p.full img {
 	max-width: none;
 	width: 100%;
 }
+
+.full figcaption, .full .figcaption {
+	margin-top: -$spacing-2;
+}
+
+
 
 /**
 * Site footer
@@ -475,7 +486,7 @@ figcaption:before, .figcaption:before {
 		line-height: $palm-base-line-height;
 	}
 	img {
-		max-height: 900px;
+		max-height: $content-width;
 	}
 	img.LHOP, .LHOP img {
 		/*Limit Height On Palm*/
