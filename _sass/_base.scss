@@ -39,7 +39,8 @@ body {
 * Set `margin-bottom` to maintain vertical rhythm
 */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, ul, ol, dl, .bottom-space, %vertical-rhythm {
+blockquote, ul, ol, dl, p + p, .bottom-space, %vertical-rhythm {
+	margin-top: $spacing-1;
 	margin-bottom: $spacing-1;
 }
 
@@ -55,6 +56,7 @@ h3,h4,h5,h6 {
 	margin-bottom: 0;
 	text-align: left;
 }
+
 
 /**
 * Images
@@ -85,14 +87,15 @@ ol {
 
 ul, ol {
 	li {
-		margin-bottom: 1em;
+		margin-bottom: $spacing-1 /2;
+		margin-top:$spacing-1 / 2;
 		> p {
 			display: inline;
 
 			&:after {
 				content: "";
 				display: block;
-				margin-bottom: 1em;
+				margin-bottom: $spacing-1 / 2;
 			}
 
 		}
