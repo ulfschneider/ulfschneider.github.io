@@ -52,7 +52,7 @@
 	.site-description {
 		font-family: $thin-font-family;
 		font-weight: $thin-font-weight;
-		@extend %vertical-rhythm;
+		margin-bottom:$spacing-1;
 	}
 
 	.site-nav {
