@@ -3,7 +3,6 @@
 */
 .site-header {
 	padding-top: 1em;
-	font-size:$small-font-size;
 	line-height:$spacing-1;
 	.site-title {
 		display: block;
@@ -258,7 +257,6 @@ li.image-grid h2 {
 
 .post-nav {
 	margin: $spacing-3 0;
-	font-size:$small-font-size;
 	line-height:$spacing-1;
 	.prev {
 		float: left;
@@ -383,7 +381,6 @@ figcaption:before, .figcaption:before {
 */
 .site-footer {
 	padding: 0;
-	font-size:$small-font-size;
 	line-height:$spacing-1;	
 	clear: both;
 	margin-top: $spacing-3;
