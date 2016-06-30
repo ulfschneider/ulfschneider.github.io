@@ -44,6 +44,14 @@ blockquote, ul, ol, dl, p + p, .spacing, %vertical-rhythm {
 	margin-bottom: $spacing-1;
 }
 
+.spacing-top {
+	margin-top:$spacing-1;
+}
+
+.spacing-bottom {
+	margin-bottom:$spacing-1;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin-top: $spacing-3;
 	font-family: $title-font-family;
