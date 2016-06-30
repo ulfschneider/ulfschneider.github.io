@@ -42,7 +42,7 @@ Reasons to use Git
 Git will help you doing the following things with a computer:
 
 <div class="grid"><div class="col-1-2 first">
-<strong>Personal</strong>
+<div class="spacing"><strong>Personal</strong></div>
 <ul>
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
 <li>Safely experiment because you can always step back to the previous version.</li>
@@ -54,7 +54,7 @@ Git will help you doing the following things with a computer:
 </ul>
 </div>
 <div class="col-1-2 last">
-<strong>Team</strong>
+<div class="spacing"><strong>Team</strong></div>
 <ul>
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
