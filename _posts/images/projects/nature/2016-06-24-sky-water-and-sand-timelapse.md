@@ -3,8 +3,8 @@ layout: image
 title: Sky, water and sand timelapse
 date: 2016-06-24
 abstract:
-thumburl: /i/DSCF2638_thumb.jpg
-slideurl: /i/DSCF2638.jpg
+thumburl: /i/DSCF2604_thumb.jpg
+slideurl: /i/DSCF2604.jpg
 tags: [color, nature]
 ---
 During June 12th and June 24th 2016 each day around 8am I took a photo of the same spot on Langeoog.
