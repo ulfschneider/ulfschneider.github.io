@@ -106,16 +106,13 @@
 	margin-top: $spacing-4;
 
 	img {
-		margin-top: $spacing-3;
-		margin-bottom: $spacing-3;
+		margin: $spacing-3 auto;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	img[src="undefined"] {
 		display: none;
 	}
-  
+	  
 	p:last-child {
 		margin-bottom: 0;
 		
