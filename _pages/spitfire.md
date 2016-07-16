@@ -9,6 +9,7 @@ Spitfire is a virtual whiteboard to be shared by multiple persons at the same ti
 Spitfire can be used as a simple task board, in agile retrospectives or in brainstorming sessions, simply whenever teams are working across different locations and want to have immediate feedback on content change. 
 
 [![]({{site.url}}/i/spitfire/spitfire.jpg)](http://spitfire.peewee.space)
+{:.neutral-link}
 
 Just go to [spitfire.peewee.space](http://spitfire.peewee.space), create a whiteboard session and share the URL with the people you want to work with. Anyone who has access to that URL can participate in your work.
 

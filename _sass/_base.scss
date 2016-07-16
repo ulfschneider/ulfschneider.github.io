@@ -145,9 +145,14 @@ p a {
 	@extend %linkstyle;
 }
 
-.no-touch a:hover {
+.no-touch a:hover, a.no-touch:hover {
 	color: $background-color;
 	background:$text-color;
+}
+
+.neutral-link a, .neutral-link a:hover, a.neutral-link:hover {
+	text-decoration:none;
+	background:none;
 }
 
 %linkstyle {

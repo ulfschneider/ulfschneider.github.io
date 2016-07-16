@@ -9,6 +9,7 @@ Photographic neutral density filters let you capture pictures that look differen
 I have written the *Exposure Guide for iPhone* to support this photographic style with a tool to calibrate the darkening effect of neutral density filters.
 
 [![Xg appstore](/assets/appstore.svg)](https://itunes.apple.com/app/exposure-guide/id816163933?mt=8&uo=4)
+{:.neutral-link}
 
 Based on the calibration the Exposure Guide calculates the correct exposure for your filters and gives you a timer to count down in seconds.
 
