@@ -13,23 +13,21 @@ tags: [bw, things, projects]
 {:.breakout .right}
 
 ![]({{site.url}}/i/IMG_6880.jpg)
-{:.breakout}
 
 ![]({{site.url}}/i/IMG_6881.jpg)
 {:.breakout .left}
 
 ![]({{site.url}}/i/IMG_6885.jpg)
-{:.breakout .right}
+{:.right}
 
 ![]({{site.url}}/i/IMG_6889.jpg)
-{:.breakout}
 
 ![]({{site.url}}/i/IMG_6862.jpg)
-{:.breakout .left}
+{:.left}
 
 ![]({{site.url}}/i/IMG_6870.jpg)
-{:.breakout .right}
+{:.right}
 
 ![]({{site.url}}/i/IMG_6872.jpg)
-{:.breakout .left}
+{:.left}
 
