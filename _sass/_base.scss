@@ -137,21 +137,30 @@ a {
 	color: $text-color;
 	text-decoration: none;
 	outline: none;
+	padding: 3px 1px;
+	border-radius: 2px;	
 }
 
 p a {
 	@extend %linkstyle;
 }
 
+.no-touch a:hover {
+	color: $background-color;
+	background:$text-color;
+}
+
 %linkstyle {
-	background-image: -webkit-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
+	text-decoration:underline;
+	/*background-image: -webkit-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
 	background-image: -moz-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
 	background-image: -o-linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
-	background-image: linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);
+	background-image: linear-gradient(to bottom, transparent 94%, $text-color 96%, $text-color 100%);*/
 }
 
 %nolinkstyle {
-	background-image: none;
+	text-decoration:none;
+	/*background-image: none;*/
 }
 
 /**
