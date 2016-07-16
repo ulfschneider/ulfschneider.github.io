@@ -12,32 +12,32 @@ tags: [bw, street, people]
 {:.left}
 
 ![]({{site.url}}/i/DSCF0525.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/DSCF0523.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/DSCF0515.jpg)
 
 ![]({{site.url}}/i/DSCF0507.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/DSCF0487.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/DSCF0486.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/DSCF0471.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/DSCF0468.jpg)
 
 ![]({{site.url}}/i/DSCF0467.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/DSCF0465.jpg)
-{:.left}
+{:.breakout .left}
 
 
 
