@@ -152,6 +152,7 @@ p a {
 .no-touch a:hover, a.no-touch:hover {
 	color: $background-color;
 	background:$text-color;
+	@extend %nolinkstyle;
 }
 
 .neutral-link a, .neutral-link a:hover, a.neutral-link:hover {
