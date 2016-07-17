@@ -12,13 +12,15 @@ $subtitle-font-weight: normal;
 $code-font-family: "Input Mono", Monospace;
 $code-font-weight: normal;
 
+
 $base-font-size:   16px;
 $large-font-size: $base-font-size * 1.62;
-$enlarged-font-size: $base-font-size + 3px;
+$enlarged-font-size: $base-font-size + 2px;
 $small-font-size: $base-font-size - 2;
 $extra-small-font-size: $base-font-size / 1.62;
 $palm-base-font-size: $base-font-size;
 $small-line-height:1em * 1.62;
+$enlarged-line-height: 1em * 1.62;
 $palm-base-line-height: 1em * 1.62;
 $base-line-height: 1em * 1.62;
 
@@ -36,7 +38,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 $spacing-5: 1.62 * 1.62 * 1.62 * 1.62 * 1.62em;
 
 $content-width:    700px;
-$image-content-width: 700px + 300px;
+$image-grid-width: 700px + 300px;
 $on-palm:         600px;
 $on-narrow:       800px;
 $on-pc:           1200px;
