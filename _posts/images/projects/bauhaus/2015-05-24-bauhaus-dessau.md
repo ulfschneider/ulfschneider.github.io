@@ -87,11 +87,11 @@ View from our balcony
 
 ![]({{site.url}}/i/IMG_8394.jpg)
 Our room
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_8505.jpg)
 The café
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_8483.jpg)
 
