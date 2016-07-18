@@ -102,6 +102,38 @@
 		@extend %vertical-rhythm;
 }
 
+/**
+* Site footer
+*/
+.site-footer {
+	padding: 0;
+	line-height:$spacing-1;	
+	clear: both;
+	margin-top: $spacing-3;
+	margin-bottom: $spacing-2;  
+	@extend %clearfix;
+}
+
+#up {
+	display: none;
+}
+
+/**
+* Touch adaption
+*/
+.touch .site-header {
+	line-height: 2em; //more space for tapping
+}
+
+.touch .site-footer {
+	line-height: 2em; //more space for tapping
+}
+
+
+/**
+* Page
+*/
+
 
 .page-content {
 	margin-top: $spacing-4;
@@ -367,23 +399,6 @@ figcaption:before, .figcaption:before {
 	margin-top: -$spacing-2;
 }
 
-
-
-/**
-* Site footer
-*/
-.site-footer {
-	padding: 0;
-	line-height:$spacing-1;	
-	clear: both;
-	margin-top: $spacing-3;
-	margin-bottom: $spacing-2;  
-	@extend %clearfix;
-}
-
-#up {
-	display: none;
-}
 
 /* Twitter timeline */
 .page-content {
