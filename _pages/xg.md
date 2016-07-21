@@ -19,7 +19,7 @@ The Exposure Guide allows you to combine any or all of your filters in order to 
 
 ![Xg filter combi](/i/xg/xg_filter_combi.jpg){:.LHOP}
 
-You do not need conversion tables for your filters anymore. through the calibration process you get exact customized conversion data for your photographic equipment which will result in correct exposures and better images.
+You do not need conversion tables for your filters anymore. Through the calibration process you get exact customized conversion data for your photographic equipment which will result in correct exposures and better images.
 
 Starting point
 --
