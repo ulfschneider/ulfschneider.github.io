@@ -4,6 +4,11 @@
 {% include head.html %}
 </head>
 <body>
+	{% if page.layout %}
+	<div class="{{page.layout}}">
+	{% else %}
+	<div class="default">
+	{% endif %}
 
 	{% include header.html %}
 
@@ -21,6 +26,6 @@
 	{% endunless %}
 
 	{% include footer_scripts.html %}
-
+	</div>
 </body>
 </html>
