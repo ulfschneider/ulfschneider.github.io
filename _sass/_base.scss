@@ -44,11 +44,6 @@ ul, ol, dl, p + p, .spacing, %vertical-rhythm {
 	margin-bottom: $spacing-1;
 }
 
-blockquote {
-	margin-top: $spacing-2;
-	margin-bottom: $spacing-2;
-}
-
 li ul {
 	margin:0;
 }
@@ -182,7 +177,7 @@ blockquote {
 	border-bottom:2px solid $text-color;
 	padding:$spacing-1/2 0;
   
-	margin: $spacing-1 0;
+	margin: $spacing-2 0;
 	font-family: $base-font-family;
 	font-style: italic;
 	> :last-child {
