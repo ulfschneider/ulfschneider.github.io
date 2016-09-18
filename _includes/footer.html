@@ -1,14 +1,5 @@
 <div class="site-footer">
-  <div class="wrapper">
-    <div class="site-nav">
-	<a id="up" class="page-link" href="#siteHeader">Up</a>
-      <a class="page-link" href="{{ "/" | prepend: site.baseurl }}">Home</a>
-      {% if page.url == "/contact/" %}
-      <span class="page-link active" href="{{ "/contact" | prepend: site.baseurl }}">Contact</span>
-      {% else %}
-      <a class="page-link" href="{{ "/contact" | prepend: site.baseurl }}">Contact</a>
-      {% endif %}
-      <a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></div>
-    </div>
-  </div>
+	<div class="wrapper">
+		{% include bottom_navigation.html %}			
+	</div>
 </div>
