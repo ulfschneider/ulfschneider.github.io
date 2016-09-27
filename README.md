@@ -28,7 +28,7 @@ Explanation of used Front Matter variables
 * *tweets* is for a page to display the twitter timeline of the user who is specified in the _config.yml by twitter_username.
 
 **title:** notitle|A text string
-The title of a page or a post. Any page with a title will appear  in the top navigation. Any post of layout type *post* and a value in title will appear on the *blog* page. And any *post* of layout-type *gallery* or *image* will also appear in the navigation structure. A value of *notitle* will hide the display of the title.
+The title of a page or a post. Any post of layout type *post* and a value in title will appear on the *blog* page.  And any *post* of layout-type *gallery* or *image* will also appear in the navigation structure. A value of *notitle* will hide the display of the title.
 
 **subtitle:** A text string
 
@@ -36,7 +36,7 @@ The sub title of a page or a post.
 
 **menu:** A text string
 
-Even a page without a *title* will appear on the top-navigation, if it has a value that describes what the menu entry will be for the page.
+Only pages with *menu* entry or *index* entry will appear on the top-navigation.
 
 **index:** A text string
 
