@@ -8,7 +8,7 @@ The following directories and their contents are Copyright Ulf Schneider. You ma
 The blog is using the typeface [Input](http://input.fontbureau.com). This typeface is not for free. I´ve purchased it at [Webtype](http://webtype.com) and included a CSS provided by them into `_includes/head.html`.
 You have to remove this CSS and purchase the typeface on your own or simply use a different type. In any case you need to remove the link to `//cloud.webtype.com` from the file `/_includes/head.html`. Add your own link to Webtype or use an entirely different typeface. 
 
-The favicon is referred to from the file '/_includes/head.html`. 
+The favicon is referred to from the file `/_includes/head.html`. 
 
 Some configurations, like site title for example, can be made in `/_config.yml`.
 
