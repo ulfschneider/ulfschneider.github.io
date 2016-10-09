@@ -436,6 +436,10 @@ figcaption:before, .figcaption:before {
 
 				}
 				
+				span[data-scribe="element:verified_badge"] {
+					display:none;
+				}
+				
 				//bug fix to hide last empty span in tweet links
 				p.tweet {
 					a {
