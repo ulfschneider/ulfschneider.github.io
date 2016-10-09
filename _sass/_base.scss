@@ -145,7 +145,7 @@ a {
 	border-radius: 2px;	
 }
 
-p a, h1 a, h2 a, h3 a {
+p a, h1 a, h2 a, h3 a, .user a {
 	@extend %linkstyle;
 }
 
