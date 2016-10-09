@@ -119,20 +119,9 @@ function up() {
 	}	
 }
 
-function isTouch() {
-	return "ontouchstart" in window;
-}
-
 
 (function format() {
-	
-	var html = select("<html>");
-	if (isTouch()) {		
-		html[0].setAttribute("class", "touch");
-	} else {
-		html[0].setAttribute("class", "no-touch");
-	}
-	
+		
 	window.onload = function() {
 		breakout();		
 

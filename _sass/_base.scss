@@ -141,25 +141,12 @@ a {
 	color: $text-color;
 	text-decoration: none;
 	outline: none;
-	padding: 3px 1px;
-	border-radius: 2px;	
 }
 
 p a, h1 a, h2 a, h3 a, .user a {
 	@extend %linkstyle;
 }
 
-.no-touch a:hover, a.no-touch:hover {
-	color: $background-color;
-	background:$text-color;
-	@extend %nolinkstyle;
-}
-
-.neutral-link a, .neutral-link a:hover, a.neutral-link:hover {
-	text-decoration:none;
-	background:none;
-	padding:0;
-}
 
 %linkstyle {
 	text-decoration:underline;
