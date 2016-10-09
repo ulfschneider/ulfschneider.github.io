@@ -430,15 +430,6 @@ figcaption:before, .figcaption:before {
 					display:none;
 				}
 				
-				//bug fix to hide last empty span in tweet links
-				p.tweet {
-					a {
-						span:last-child {
-							display:none;
-						}
-					}
-				}
-
 				p:after {
 					margin: 0;
 				}
