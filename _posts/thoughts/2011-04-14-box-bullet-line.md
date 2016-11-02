@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: default
 title:  The Box-Bullet-Line (BBL)
 subtitle: An intuitive and natural notation to communicate flows between components
 permalink: /bbl/
-date:   2011-04-17
-author: 
+categories: thoughts
 abstract: An intuitive and natural notation to communicate flows  between components.
 ---
 Many important aspects of software development are invisible. When creating software we work through different abstraction layers by analyzing symbols and writing code. 

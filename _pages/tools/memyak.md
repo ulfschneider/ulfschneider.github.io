@@ -1,12 +1,13 @@
 ---
 layout: default
 title: memYAK
-nonav: true
 permalink: /memyak/
+categories: tools
+abstract: The external memory for innovation teams with special support for agile software development. We use this web application at Diebold Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
 ---
 memYAK is the external memory for innovation teams with special support for agile software development.
 
-We use this web application at Wincor Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
+We use this web application at Diebold Nixdorf to support our agile product development teams in China, Germany, Netherlands and Poland.
 
 [Download memYAK 2.7.6 - it´s free](http://peewee.space/resource/memyak_2.7.6.zip)
 

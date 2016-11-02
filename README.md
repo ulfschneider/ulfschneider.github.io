@@ -19,12 +19,11 @@ Explanation of used Front Matter variables
 
 **layout:** blog|collection|default|gallery|image|index|post|tweets
 
-* *blog* will summarize posts which are of layout type *post*
+* *list* will summarize posts or pages which have a front matter variable *categories* that contains a value which is equal to the entry *category* inside of the list layout
 * *collection* will summarize all posts which are of layout type *image* or of type *gallery*
-* *default* may be used for any page
+* *default* may be used for any page or any post to be shown inside of the *list* layout
 * *gallery* will summarize posts of layout type *image*
 * *index* is meant for a single page which will be the start or index page of the site
-* *post* is for blog posts
 * *tweets* is for a page to display the twitter timeline of the user who is specified in the _config.yml by twitter_username.
 
 **title:** notitle|A text string

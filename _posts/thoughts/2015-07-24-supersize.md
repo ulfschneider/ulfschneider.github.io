@@ -1,10 +1,8 @@
 ---
-layout: post
+layout: default
 title:  Supersize
 subtitle: Do not let scaled agile be your scaled snake oil
-date:   2015-07-24
-permalink: 
-author:
+categories: thoughts
 abstract: Do not let scaled agile be your scaled snake oil. Agile is about culture and cultural change. Scaling agile means essentially, to scale cultural change. 
 ---
 We have to scale agile when more than one team is required to get a thing delivered. Each team not more than 10 members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery, that´s it: multiple teams working on one thing.

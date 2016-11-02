@@ -1,9 +1,7 @@
 ---
-layout: post
+layout: default
 title: Slicing User Stories
-date:   2016-06-02
-permalink: 
-author:
+categories: thoughts
 abstract: A reveal.js presentation about patterns to slice User Stories into smaller pieces.
 ---
 A collection of patterns to slice User Stories into smaller pieces. Please open the [presentation here]({{site.url}}/assets/slicing-user-stories).
