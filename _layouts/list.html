@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="blog-content">
 {{ content }}
+<!-- posts -->
 {% for p in site.posts %}
 {% unless p.nonav %}
 {% if p.categories contains page.category and p.title %}
@@ -15,6 +16,7 @@ layout: default
 {% endif %}
 {% endunless %}
 {% endfor %}
+<!-- pages -->
 {% for p in site.pages %}
 {% unless p.nonav %}
 {% if p.categories contains page.category and p.title %}
