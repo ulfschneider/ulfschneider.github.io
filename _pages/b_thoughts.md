@@ -1,9 +1,9 @@
 ---
-layout: blog
+layout: list
 menu: Thoughts
 index: Thoughts
 permalink: /thoughts/
-banner:
+category: thoughts
 ---
 Essays about my experiences within the agile movement and the agile value system. It could be you are interested also in [allesagil.net](http://allesagil.net), a blog about agility I was writing some years ago in German language.  
 

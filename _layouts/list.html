@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="blog-content">
+{{ content }}
+{% for p in site.posts %}
+{% unless p.nonav %}
+{% if p.categories contains page.category and p.title %}
+<h3>{% if p.forward %}<a href="{{p.forward}}">{% else %}<a href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h3>{% if p.date %}<span class="meta">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+{% if p.abstract %}
+<p>{{ p.abstract }}</p>
+{% else %}
+<p>&nbsp;{{ p.content | truncatewords:50 | strip_html }}</p>
+{% endif %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+{% for p in site.pages %}
+{% unless p.nonav %}
+{% if p.categories contains page.category and p.title %}
+<h3>{% if p.forward %}<a href="{{p.forward}}">{% else %}<a href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h3>{% if p.date %}<span class="meta">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+{% if p.abstract %}
+<p>{{ p.abstract }}</p>
+{% else %}
+<p>&nbsp;{{ p.content | truncatewords:50 | strip_html }}</p>
+{% endif %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+</div>

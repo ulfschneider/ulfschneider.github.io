@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Exposure Guide
-nonav: true
 permalink: /xg/
+categories: tools
+abstract: An iPhone App that allows you to calibrate the darkening effect of your photographic neutral density filters. Exposure Guide has a timer for single und combined filter use.
 ---
 Photographic neutral density filters let you capture pictures that look different - especially if water and sky are essential elements of your composition. The distinct look is achieved by the long exposure times that can be used by leveraging filters like the [LEE Big Stopper](https://youtu.be/JYxc_G12ogM) or Haida ND3.0 filters.
 

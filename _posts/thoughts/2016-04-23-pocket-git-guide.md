@@ -1,10 +1,8 @@
 ---
-layout: post
+layout: default
 title: Pocket Git Guide
 subtitle: A brief entry-level approach to Git
-date:   2016-04-23
-permalink: 
-author:
+categories: thoughts
 abstract: A brief entry-level approach to Git. 
 ---
 
