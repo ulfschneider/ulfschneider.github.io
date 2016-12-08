@@ -50,7 +50,7 @@ Tracks are being displayed in two ways: as an ordered table, where the most rece
 Query tracks
 ---
 
-Analyze your data by querying specific tracks and time ranges. An example of a query is:
+Analyze your data by querying specific tracks and time ranges. Place your queries in the text entry field labeled **Query tracks**. An example of a query is:
 
 *#bike oct..dec*
 
@@ -60,17 +60,12 @@ You can select multiple tracks in one query, like **#bike #run**, which would se
 
 The time range selector allows you to do the following:
 
-Query an entire year, like 2016: **16** or **2016**
-
-Query a month, like august: **aug**
-
-Query a range of months for the current year, like in the above example october to december: **oct..dec**
-
-Query everything from a given date, like from 1st of march 2015: **2015-03-01..**
-
-Query everything up to a given date, like up to 9th of october 2016: **..2016-10-09**
-
-Query a date range, like from 1st of march 2015 to 9th of october 2016: **2015-03-01..2016-10-09**
+* Query an entire year, like 2016: **16** or **2016**
+* Query a month, like august: **aug**
+* Query a range of months for the current year, like in the above example october to december: **oct..dec**
+* Query everything from a given date, like from 1st of march 2015: **2015-03-01..**
+* Query everything up to a given date, like up to 9th of october 2016: **..2016-10-09**
+* Query a date range, like from 1st of march 2015 to 9th of october 2016: **2015-03-01..2016-10-09**
 
 Submit your query by pressing ENTER or clicking/touching the Query button.
 
