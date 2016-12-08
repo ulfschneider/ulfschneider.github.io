@@ -21,16 +21,22 @@ Step by step:
 
 Just bring the caret into the text entry field which is labeled **File your track**.
 
-* Give your track a name. The name must start with **#** or **@**. E.g. use **#bike** to file your epic bike rides.
-* In the example above the ride took 3 hours and 46 minutes (**3h46m**). To make the time units of your duration
+Give your track a name. The name must start with **#** or **@**. E.g. use **#bike** to file your epic bike rides.
+
+In the example above the ride took 3 hours and 46 minutes (**3h46m**). To make the time units of your duration
     clear, use **d** for days, **h** for hours, **m** for minutes, **s** for seconds or even **i** for milliseconds.
-* Bring in any other unit which is of interest for you by writing down the number first and adding the unit without
+
+Bring in any other unit which is of interest for you by writing down the number first and adding the unit without
     any space between the number and the unit. In the above example we keep track of the distance (**94.6km**), the average
     speed (**25.06km/h**) and the meters up (**995mtr-up**). You decide how your units are being named.
-* Add a comment, if you like. Everything that comes behind the double slash **//** is treated as a
+
+Add a comment, if you like. Everything that comes behind the double slash **//** is treated as a
     comment.
-* If you don´t specify a date or a time, your track will be filed with the current date and time.
-    You can specify a different date or time in the format **YY-MM-DD HH:mm** (omit the the time or the date if either one is not needed). The time format **HH:mm** is 24 hours. If you file a track for the current week, you can use the following shortcuts for the date: **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
+
+If you don´t specify a date or a time, your track will be filed with the current date and time.
+    You can specify a different date or time in the format **YY-MM-DD HH:mm** (omit the the time or the date if either one is not needed).
+    The time format **HH:mm** is 24 hours. If you file a track for the current week, you can use the following shortcuts for the date:
+    **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
 
 Submit your track by pressing ENTER or clicking/touching the Submit button.
 
