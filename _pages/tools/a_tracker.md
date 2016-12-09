@@ -5,7 +5,7 @@ permalink: /tracker/
 categories: tools
 abstract: File your workout routines - called tracks - and get a nice graphical overview of your personal achievements and improvements.
 ---
-File your workout routines - called tracks - and get a nice graphical overview of your personal achievements and improvements. Go to [tracker.peewee.space](http://tracker.peewee.space), sign in and start tracking. Tracker is free.
+File your workout routines and get a nice graphical overview of your personal achievements and improvements. Go to [tracker.peewee.space](http://tracker.peewee.space), sign in and start tracking. Tracker is free.
 
 [![]({{site.url}}/i/tracker/tracker.jpg)](http://tracker.peewee.space)
 {:.neutral-link}
