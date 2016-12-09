@@ -74,10 +74,12 @@ Junkers heating
 The Prellerhaus
 
 ![]({{site.url}}/i/IMG_8411.jpg)
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_8407.jpg)
+{:.breakout .left}
 
-![](/i/IMG_8410.jpg)
+![]({{site.url}}/i/IMG_8410.jpg)
 
 The Prellerhaus nowadays is the overnight accomodation of the Bauhaus and the café in the basement of the Bauhaus building serves breakfast, meals and drinks. We stayed there for one night.
 
