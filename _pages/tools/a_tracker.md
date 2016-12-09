@@ -25,7 +25,7 @@ Give your track a name. The name must start with **#** or **@**. E.g. use **#bik
 
 In the example above the ride took 3 hours and 46 minutes (**3h46m**). To make the time units of your duration clear, use **d** for days, **h** for hours, **m** for minutes, **s** for seconds or even **i** for milliseconds.
 
-Bring in any other unit which is of interest for you by writing down the number first and adding the unit without any space between the number and the unit. In the above example we keep track of the distance (**94.6km**), the average speed (**25.06km/h**) and the meters up (**995mtr-up**). You decide how your units are being named.
+Bring in any other unit which is of interest for you by writing down the number first and adding the unit without a space between the number and the unit. In the above example we keep track of the distance (**94.6km**), the average speed (**25.06km/h**) and the meters up (**995mtr-up**). You decide how your units are being named.
 
 Add a comment, if you like. Everything that comes behind the double slash **//** is treated as a comment. A comment may contain links to web pages.
 
