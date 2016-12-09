@@ -15,7 +15,7 @@ File a track
 
 An example of a filed track is:
 
- *Today 13:30 #bike 3h46m 94.6km 25.06km/h 995mtr-up //cold ride, started at minus 5°C and came back at plus 5°C*
+> *Today 13:30 #bike 3h46m 94.6km 25.06km/h 995mtr-up //cold ride, started at minus 5°C and came back at plus 5°C*
 
 Step by step:
 
@@ -43,7 +43,7 @@ Query tracks
 
 Analyze your data by querying specific tracks and time ranges. Place your queries in the text entry field labeled **Query tracks**. An example of a query is:
 
-*#bike oct..dec*
+> *#bike oct..dec*
 
 This will list all #bike tracks for october, november and december of the current year.
 
