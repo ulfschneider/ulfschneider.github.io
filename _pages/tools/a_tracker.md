@@ -29,7 +29,7 @@ Bring in any other unit which is of interest for you by writing down the number 
 
 Add a comment, if you like. Everything that comes behind the double slash **//** is treated as a comment. A comment may contain links to web pages.
 
-If you don´t specify a date or a time, your track will be filed with the current date and time. You can specify a different date or time in the format **YY-MM-DD HH:mm** (omit the the time or the date if either one is not needed). The time format **HH:mm** is 24 hours. If you file a track for the current week, you can use the following shortcuts for the date: **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
+If you don´t specify a date or a time, your track will be filed with the current date and time. You can specify a different date or time in the format **YY-MM-DD HH:mm** (omit the the time or the date if either one is not needed). The time format **HH:mm** is 24 hours. If you file a track for the last seven days, you can use the following shortcuts for the date: **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
 
 Submit your track by pressing ENTER or clicking/touching the Submit button.
 
