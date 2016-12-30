@@ -29,7 +29,7 @@ Bring in any other unit which is of interest for you by writing down the number 
 
 Add a comment, if you like. Everything that comes behind the double slash **//** is treated as a comment. A comment may contain links to web pages.
 
-If you don´t specify a date or a time, your track will be filed with the current date and time. You can specify a different date or time in the format **YY-MM-DD HH:mm** (omit the the time or the date if either one is not needed). The time format **HH:mm** is 24 hours. If you file a track for the last seven days, you can use the following shortcuts for the date: **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
+If you don´t specify a date or a time, your track will be filed with the current date and time. You can specify a different date or time in the format **D-MMM-YY HH:mm** (omit the the time or the date if either one is not needed). The time format **HH:mm** is 24 hours. If you file a track for the last seven days, you can use the following shortcuts for the date: **today**, **yest**, **yesterday**, **mon**, **tue**, **wed**, **thu**, **fri**, **sat**, **sun**.
 
 Submit your track by pressing ENTER or clicking/touching the Submit button.
 
@@ -59,9 +59,9 @@ The time range selector allows you to do the following:
 * Query an entire year, like 2016: **16** or **2016**
 * Query a month, like august: **aug**
 * Query a range of months for the current year, like in the above example october to december: **oct..dec**
-* Query everything from a given date, like from 1st of march 2015: **2015-03-01..**
-* Query everything up to a given date, like up to 9th of october 2016: **..2016-10-09**
-* Query a date range, like from 1st of march 2015 to 9th of october 2016: **2015-03-01..2016-10-09**
+* Query everything from a given date, like from 1st of march 2015: **1-mar-15..**
+* Query everything up to a given date, like up to 9th of october 2016: **..9-oct-16**
+* Query a date range, like from 1st of march 2015 to 9th of october 2016: **1-mar-15..9-oct-16**
 
 Submit your query by pressing ENTER or clicking/touching the Query button.
 
