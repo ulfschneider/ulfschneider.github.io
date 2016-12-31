@@ -100,7 +100,8 @@
 
 
 .title-wrapper {
-		@extend %vertical-rhythm;
+	@extend %vertical-rhythm;
+	margin-bottom:$spacing-3;
 }
 
 /**
@@ -286,11 +287,6 @@ li.image-grid h2 {
 	font-family: $subtitle-font-family;
 	font-style: italic;	
 }
-
-.title-wrapper .meta {
-	margin-bottom:$spacing-3;
-}
-
 
 
 .blog-content .meta {
