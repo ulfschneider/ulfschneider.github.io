@@ -284,8 +284,13 @@ li.image-grid h2 {
 
 .meta, .page-content .meta {
 	font-family: $subtitle-font-family;
-	font-style: italic;
+	font-style: italic;	
 }
+
+.title-wrapper .meta {
+	margin-bottom:$spacing-3;
+}
+
 
 
 .blog-content .meta {
@@ -296,13 +301,18 @@ li.image-grid h2 {
 .title {
 	margin: 0;
 	font-family: $title-font-family;
-	font-weight: $title-font-weight;
+	font-weight: $title-font-weight;	
 }
 
+h1.title {
+	margin-bottom:.81em;
+}
 
 .subtitle {
-	font-family: $subtitle-font-family;
-	margin: 0;
+	font-family: $base-font-family;
+	font-style:normal;
+	text-transform:uppercase;
+	margin-bottom: .81em;
 }
 
 .toc li {

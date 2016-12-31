@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% include head.html %}
+	{% include head.html %}
 </head>
 <body>
-	{% if page.layout %}
-	<div class="{{page.layout}}">
-	{% else %}
 	<div class="default">
-	{% endif %}
 
-	{% include header.html %}
+		{% include header.html %}
 
-	<div id="pageContent" class="page-content">
-		<div class="wrapper">
-			{% include title.html %}
-			{{ content }}
+		<div id="pageContent" class="page-content">
+			<div class="wrapper">
+				{% include title.html %}
+				{{ content }}
+			</div>
 		</div>
-	</div>
 
-	{% include postnav.html %}
+		{% include postnav.html %}
 
-	{% unless page.nofooter %}
-	{% include footer.html %}
-	{% endunless %}
+		{% unless page.nofooter %}
+		{% include footer.html %}
+		{% endunless %}
 
-	{% include footer_scripts.html %}
+		{% include footer_scripts.html %}
 	</div>
 </body>
 </html>
