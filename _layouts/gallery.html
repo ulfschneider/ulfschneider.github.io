@@ -4,7 +4,7 @@
 {% include head.html %}
 </head>
 <body>
-	<script src="/r/jquery.min.js"></script>
+<script src="/r/jquery.min.js"></script>
   {% unless page.autoplay %}
   <!-- grid -->
   <script src="/r/jquery.unveil.js"></script>
@@ -71,6 +71,7 @@
 
   <!-- slides -->
   {%unless page.noslides %}
+  
   <div style="display:none;" class="slide-gallery-content">
     <div class="wrapper">
 
@@ -147,12 +148,12 @@
     }
 
     function adjustHeight() {
-      var height = $('.slides > :first-child').outerHeight();
-      var minHeight = parseInt($('.slides').css('min-height'));      
-      $('.slides').css('min-height', Math.max(height, minHeight));
+      var height = $('.slides > :first-child').outerHeight(true);
+      $('.slides').css('min-height', height);
     }
 
     function displayImage() {
+	$('.site-footer').hide(0);	
       var slide = $('.slides > :first-child');
       var img = $('.slides > :first-child > img[lazy]');
 
@@ -195,7 +196,6 @@
         adjustHeight();
       });
       {% endif %}
-
     }
 
 
@@ -212,9 +212,10 @@
       displayImage();
     }
 
-    function displayGrid() {
+    function displayGrid() {		
       $('.slide-gallery-content').hide(0);
       $('.grid-gallery-content').show(0);
+	  $('.site-footer').show(0);
     }
 
     function displaySlides() {      
