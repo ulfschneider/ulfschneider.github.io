@@ -4,9 +4,9 @@ title: The balanced organization
 categories: thoughts
 abstract: The agile manifesto defines a collobaration culture. But what if your current environment culture is not collaborative? This article describes alternatives to go ahead into the agile direction.
 ---
-For those of us being part of the agile movement, many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. This assumption is false. 
+For those of us being part of the agile movement, many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. 
 
-For any organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
+This assumption is false. For a organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
 
 In general, William Schneider admits the possibility of a culture transformation, but he is also pointing out the difficulty, the risk and the long-term nature (more than 10 years) of such an endeavor [Schneider 2000]. Schneider believes that at least 75% of the management needs to be convinced about it. For this kind of conviction John Kotter coined the phrase *sense of urgency,* [Kotter 1996]. Such conditions are seldom to be found.
 
@@ -16,15 +16,33 @@ In highly competitive and innovative markets there are real advantages in being 
 
 When a culture transformation towards collaboration is too time consumptive (of course) and ever pushing with the help of an agile coach without sustainable outcome isn´t satisfying (of course), what is a pragmatic way to get some positive results? 
 
-To start a change, you need to know where you are now. This means:
- 
-* Identify the dominant culture of your organization. This will be the starting point for any adoption or transformation. 
-* The change needs to grow from the inside and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable.
-* Organizational change needs time and will never end, it is a continuous game.
+William Schneider´s Core Culture Model will allow us to identify our organizations current culture and classify it into one of four categories. This can be used as a starting point - understand where we are now and slightly balance towards a new direction. Any change will grow from the inside of the organization and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable. Also keep in mind, that organizational change needs time and will never end, it is a continuous game.
 
-William Schneider´s Core Culture Model allows us to identify our organizations current culture and classify it into one of four cultural categories.
+Of course, there are more than four organizational cultures and in reality probably no organization is identical with another, but with the Core Culture Model we can reduce reality to some important characterestics which play a role in this context.
 
-Of course, there are more than four different organizational cultures and in reality probably no organization is identical with another, but with the Core Culture Model we can reduce reality to some important characterestics which play a role in this context.
+Schneider differentiates the following four core cultures:
+
+* Control Culture
+* Collaboration Culture
+* Cultivation Culture
+* Competence Culture
+
+Any of these cultures has specific ways to handle authority, power, leadership, decision making, performance measurement and relations with partners and customers. To understand what that means, we go more into detail for each of the core cultures.
+
+
+Control Culture
+---
+The prototype of this culture is the military. Leadership style is dominant and with power.
+
+
+Collaboration Culture
+---
+
+Cultivation Culture
+---
+
+Competence Culture
+---
 
 
 
