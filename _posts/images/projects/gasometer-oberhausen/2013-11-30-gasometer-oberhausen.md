@@ -23,10 +23,10 @@ tags: [bw, things, projects]
 ![]({{site.url}}/i/IMG_6889.jpg)
 
 ![]({{site.url}}/i/IMG_6862.jpg)
-{:.left}
+{:.breakout .left}
 
 ![]({{site.url}}/i/IMG_6870.jpg)
-{:.right}
+{:.breakout .right}
 
 ![]({{site.url}}/i/IMG_6872.jpg)
 {:.left}
