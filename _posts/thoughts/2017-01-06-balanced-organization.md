@@ -32,6 +32,7 @@ Any of these cultures has specific ways to handle authority, power, leadership, 
 
 Control Culture
 ---
+
 The prototype of this culture is the military. The leadership style is dominant. The more the actions of other people can be influenced and controlled, the better. The more subordinates, the better. Markets are being taken by acquiring, not through innovation.
 
 The system is more important than people. Any person is "... like a hand in a bucket of water - when the hand is removed, the water closes in and there is no trace." [Schneider 2000:31]
@@ -42,12 +43,20 @@ What is now is valued higher than what might be. Predictability counts.
 
 Employees can spend their entire career in one function. People relationships within the same function are close but relationships between functions tend to be distant and formal. Key decisions are being taken by people at the top and if at all, only top management has an integrating effect. Employee performance is measured. Rendered performance is being rewarded, failure to perform will be sanctioned. Individual growth is limited to functional expertise.
 
+Innovation rate is low but operational performance can be very good. Usually customers and partners are being ignored, they have to adopt themselves to the system. Ideas for change will be quickly rejected. There is not much room for having fun at work. 
 
+The control culture is the most widespread organisation culture of the last century.
 
-
+In one sentence: the system is most important and big size counts.
 
 Collaboration Culture
 ---
+
+The prototype of the collaboration culture is the family. In competitive situations it´s about our team against the other team. Synergy is key and 2 plus 2 sums up to 5 when people are working together and support each other towards a shared goal. Positive and mutual emphasizing relationships propel the team. People feel connected and obliged to their organization - and vice versa. Together we win and alone we lose. There is not much distance between top management and work force. If the organization runs fine, all people will participate the financial wealth. It is an egalitarian culture.
+
+Like an orchestra, all individuals try to behave at their best for the optimal overarching result. Excessive egoism or diva-attitude will not be tolerated.
+
+Releationships to customers are partner-oriented. Customers are part of the team and much energy is invested to understand the customers and supply to their real demands and needs.
 
 Cultivation Culture
 ---
