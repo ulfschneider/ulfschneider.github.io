@@ -161,8 +161,8 @@ p a, h1 a, h2 a, h3 a, .user a {
 * *uotes
 */
 blockquote {
-	border-top:1px solid $text-color;
-	border-bottom:1px solid $text-color;
+	border-top:1px dotted $text-color;
+	border-bottom:1px dotted $text-color;
 	padding:$spacing-1/2 0;
   
 	margin: $spacing-2 0;
