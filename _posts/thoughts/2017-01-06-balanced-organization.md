@@ -2,7 +2,7 @@
 layout: default
 title: The balanced organization
 categories: thoughts
-abstract: The agile manifesto defines a collobaration culture. But what if your current environment culture is not collaborative? This article describes alternatives to go ahead into the agile direction.
+abstract: The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to go ahead into the agile direction.
 ---
 For those of us being part of the agile movement, many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. 
 
@@ -32,7 +32,18 @@ Any of these cultures has specific ways to handle authority, power, leadership, 
 
 Control Culture
 ---
-The prototype of this culture is the military. Leadership style is dominant and with power.
+The prototype of this culture is the military. The leadership style is dominant. The more the actions of other people can be influenced and controlled, the better. The more subordinates, the better. Markets are being taken by acquiring, not through innovation.
+
+The system is more important than people. Any person is "... like a hand in a bucket of water - when the hand is removed, the water closes in and there is no trace." [Schneider 2000:31]
+
+The position inside of the hierarchy gives authority. Decisions are being taken impersonal. Information goes top down and bottom up inside of the hierarchy and less horizontal. Managers will be told what they want to hear from their subordinates. Information hiding is part of this culture. Conflicts are not seen as being healthy and are usually suppressed. Large control cultures tend to be bureaucratic. 
+
+What is now is valued higher than what might be. Predictability counts.
+
+Employees can spend their entire career in one function. People relationships within the same function are close but relationships between functions tend to be distant and formal. Key decisions are being taken by people at the top and if at all, only top management has an integrating effect. Employee performance is measured. Rendered performance is being rewarded, failure to perform will be sanctioned. Individual growth is limited to functional expertise.
+
+
+
 
 
 Collaboration Culture
