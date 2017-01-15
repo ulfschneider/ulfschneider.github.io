@@ -16,7 +16,7 @@ In highly competitive and innovative markets there are real advantages in being 
 
 When a culture transformation towards collaboration is too time consumptive (of course) and ever pushing with the help of an agile coach without sustainable outcome isn´t satisfying (of course), what is a pragmatic way to get some positive results? 
 
-William Schneider´s Core Culture Model will allow us to identify our organizations current culture and classify it into one of four categories. This can be used as a starting point - understand where we are now and slightly balance towards a new direction. Any change will grow from the inside of the organization and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable. Also keep in mind, that organizational change needs time and will never end, it is a continuous game.
+William Schneider´s Core Culture Model will allow us to identify our organizations current culture and classify it into one of four categories. This can be used as a starting point - understand where we are and slightly balance towards a new direction. Any change has grow from the inside of the organization and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable. Also keep in mind, that organizational change takes time and will never end, it is a continuous game. In other words, the organization has to adapt or die.
 
 Of course, there are more than four organizational cultures and in reality probably no organization is identical with another, but with the Core Culture Model we can reduce reality to some important characterestics which play a role in this context.
 
@@ -52,11 +52,19 @@ In one sentence: the system is most important and big size counts.
 Collaboration Culture
 ---
 
-The prototype of the collaboration culture is the family. In competitive situations it´s about our team against the other team. Synergy is key and 2 plus 2 sums up to 5 when people are working together and support each other towards a shared goal. Positive and mutual emphasizing relationships propel the team. People feel connected and obliged to their organization - and vice versa. Together we win and alone we lose. There is not much distance between top management and work force. If the organization runs fine, all people will participate the financial wealth. It is an egalitarian culture.
+The prototype of the collaboration culture is the family. In competitive situations it´s about our team against their team. Synergy is key and 2 plus 2 sums up to 5 when people are working together and support each other towards a shared goal. Positive and mutual emphasizing relationships propel the team. People feel connected and obliged to their organization - and vice versa. Attitude is, together we win and alone we lose. There is not much distance between top management and work force. If the organization has commercial success, all people participate in the financial wealth. The collobaration culture is more egalitarian than other cultures.
 
 Like an orchestra, all individuals try to behave at their best for the optimal overarching result. Excessive egoism or diva-attitude will not be tolerated.
 
-Releationships to customers are partner-oriented. Customers are part of the team and much energy is invested to understand the customers and supply to their real demands and needs.
+Releationships to customers are partner-oriented. Customers are part of the team and much energy is invested to understand the customers and supply to their real demands and needs. 
+
+Ideas and concepts are important but it is people who are nurtured. Loyalty and trust are essential while politics, infighting and betrayal erode collaboration.
+
+Whatever works is emphasized, particularly what the team decides will work. Pragmatism is part of daily life and initiative of individuals and teams is high. The collaboration culture sees the need for quick change and reacts accordingly. The culture is more tactical than strategic.
+
+
+
+
 
 Cultivation Culture
 ---
