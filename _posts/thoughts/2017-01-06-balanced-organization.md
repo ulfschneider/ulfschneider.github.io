@@ -47,7 +47,7 @@ Innovation rate is low but operational performance can be very good. Usually cus
 
 The control culture is the most widespread organisation culture of the last century.
 
-In one sentence: the system is most important and big size counts.
+In one sentence: The system is most important and big size counts.
 
 Collaboration Culture
 ---
@@ -62,8 +62,13 @@ Ideas and concepts are important but it is people who are nurtured. Loyalty and 
 
 Whatever works is emphasized, particularly what the team decides will work. Pragmatism is part of daily life and initiative of individuals and teams is high. The collaboration culture sees the need for quick change and reacts accordingly. The culture is more tactical than strategic.
 
+Leaders put a huge fraction of their time and energy into team building with a focus on integration. They value different talents and are willing to make personal sacrifices for the good of the larger organization. Communication is with the entire team. Only leaders who contribute and really make things happen have authority. The authority is rooted in the relationship power and less in role power. Leaders are firsts among equals.
 
+Judgements and decision making are participative and collegial. Informations and people find their way easily to the place where needed. Conflicts are seen to be constructive as the increase the performance of the team.
 
+Collaboration cultures can be found in interdisciplanary work environments where speed and complexity come together.
+
+In one sentence: We are great and the team comes first.
 
 
 Cultivation Culture
