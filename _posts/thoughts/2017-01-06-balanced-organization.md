@@ -6,7 +6,7 @@ abstract: The agile manifesto defines a collobaration culture. But what if your 
 ---
 For those of us being part of the agile movement, many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. 
 
-This assumption is false. For a organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
+This assumption is false. For an organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
 
 In general, William Schneider admits the possibility of a culture transformation, but he is also pointing out the difficulty, the risk and the long-term nature (more than 10 years) of such an endeavor [Schneider 2000]. Schneider believes that at least 75% of the management needs to be convinced about it. For this kind of conviction John Kotter coined the phrase *sense of urgency,* [Kotter 1996]. Such conditions are seldom to be found.
 
@@ -24,8 +24,8 @@ Schneider differentiates the following four core cultures:
 
 * Control Culture
 * Collaboration Culture
-* Cultivation Culture
 * Competence Culture
+* Cultivation Culture
 
 Any of these cultures has specific ways to handle authority, power, leadership, decision making, performance measurement and relations with partners and customers. To understand what that means, we go more into detail for each of the core cultures.
 
@@ -64,18 +64,29 @@ Whatever works is emphasized, particularly what the team decides will work. Prag
 
 Leaders put a huge fraction of their time and energy into team building with a focus on integration. They value different talents and are willing to make personal sacrifices for the good of the larger organization. Communication is with the entire team. Only leaders who contribute and really make things happen have authority. The authority is rooted in the relationship power and less in role power. Leaders are firsts among equals.
 
-Judgements and decision making are participative and collegial. Informations and people find their way easily to the place where needed. Conflicts are seen to be constructive as the increase the performance of the team.
+Judgements and decision making are participative and collegial. Informations and people find their way easily to the place where needed. Conflicts are seen to be constructive as they increase the performance of the team.
 
 Collaboration cultures can be found in interdisciplanary work environments where speed and complexity come together.
 
 In one sentence: We are great and the team comes first.
 
 
-Cultivation Culture
----
-
 Competence Culture
 ---
+The prototype of the competence culture is the university. Important here are expertise and advancement of knowledge. The motivs are excellence, mastery and achievement of goals. One has to be better than others, to *compete*. Authority inside the organization can only be gained through expertise.
+
+Competence cultures supply their customers with the best product at a high price.
+
+Concepts, ideas and theories are important and people have to follow. Relationships are on the impersonal side and are defined by the task which has to be achieved. Communication style is non-formal, unemotional and facts based. The organization ensures a lot of individual freedom as people ask for autonomy and the opportunity for individual achievement. People like to be measured and challenged, to prove they are at the top of their craft. 
+
+While in the control culture organizational s
+
+
+Cultivation Culture
+---
+The prototype of the collaboration culture is the religious community. 
+
+
 
 
 
