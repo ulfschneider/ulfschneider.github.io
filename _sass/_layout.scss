@@ -501,6 +501,12 @@ figcaption:before, .figcaption:before {
 	.site-header {
 		line-height: 2em; //more space for tapping
 	}
+	
+	.index {
+		.wrapper {
+			padding:0 $spacing-2;
+		}		
+	}
 
 	.page-content {
 		margin-top: $spacing-4;
