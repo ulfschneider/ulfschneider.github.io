@@ -73,18 +73,28 @@ In one sentence: We are great and the team comes first.
 
 Competence Culture
 ---
-The prototype of the competence culture is the university. Important here are expertise and advancement of knowledge. The motivs are excellence, mastery and achievement of goals. One has to be better than others, to *compete*. Authority inside the organization can only be gained through expertise.
+The prototype of the competence culture is the university. Important are expertise and advancement of knowledge. The motives are excellence, mastery and achievement of goals. One has to be better than others, to *compete*. Authority inside the organization can only be gained through expertise.
 
 Competence cultures supply their customers with the best product at a high price.
 
 Concepts, ideas and theories are important and people have to follow. Relationships are on the impersonal side and are defined by the task which has to be achieved. Communication style is non-formal, unemotional and facts based. The organization ensures a lot of individual freedom as people ask for autonomy and the opportunity for individual achievement. People like to be measured and challenged, to prove they are at the top of their craft. 
 
-While in the control culture organizational s
+While in the control culture operational systematics are put into focus, the competence culture is giving interest to conceptual systematics. Other than in the control culture will bad quality not be tolerated in the competence culture. Members of competence cultures hate it to deliver poor quality. Usually members of competence culture feel more connected to their profession than to their organization.
+
+The competence culture is a meritocracy. One has to prove and demonstrate competence. You won´t get away with lip service. Behavior is disciplined and goal oriented. Things will be done right and good. The search for improvements is neverending and challenges are welcomed.
+
+The competence culture is future oriented. Strategic considerations are taken seriosly and derived actions will be performed with consequence. Nevertheless, new chances will not be overlooked.
+
+Leaders are never fully satisfied. They are goal minded and willing to take any decision necessery to achieve those goals. Employees are not necessary bound to a function but move quickly to where their expertise is most suitable for the achievement of a goal. Usually conflicts are handled logical with reasoning.
+
+Competence cultures can be found in innovative markets and niche markets. But the niche can be tall and possibly being dominated by only one organization. In any case the produced goods or services are exceptional.
+
+In one sentence: We are exceptional and we can prove it.
 
 
 Cultivation Culture
 ---
-The prototype of the collaboration culture is the religious community. 
+The prototype of the collaboration culture is the religious community. Personal development, to explore personal potentials is the central motive. Values give orientation. There are not many explicit rules, but ethical behavior is important. The functioning of the organization is ensured through mutual commitments to shared values. A member who is not trustworthy or not dedicated to the goals of the organization will have to leave. On the otherhand, if someone is recognized as being trustworthy but has a bad performance a second chance will sure be given. Possibly in another, better suited function with better conditions to grow.
 
 
 
