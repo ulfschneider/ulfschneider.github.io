@@ -503,9 +503,17 @@ figcaption:before, .figcaption:before {
 	}
 	
 	.index {
+		.page-content {
+			margin-top: $spacing-3;
+		}
+		
 		.wrapper {
 			padding:0 $spacing-2;
 		}		
+		
+		.site {
+			margin-right:$spacing-1;
+		}
 	}
 
 	.page-content {
