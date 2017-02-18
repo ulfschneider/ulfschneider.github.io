@@ -427,13 +427,18 @@ figcaption:before, .figcaption:before {
 					margin-top: $spacing-2;
 					margin-bottom: 0;
 					a {
+						@extend %nolinkstyle;
 						[data-scribe="element:name"] {
-							display: none;
+							font-weight: $title-font-weight;
+							margin-right:$spacing-1;
+							@extend %linkstyle;
 						}
 						[data-scribe="element:screen_name"] {
-							font-weight: $title-font-weight;
+							font-weight:$base-font-weight;
+							font-size:$small-font-size;	
+							margin-left:-1em;
 						}
-
+					
 					}
 					img {
 						display: none;
@@ -448,8 +453,11 @@ figcaption:before, .figcaption:before {
 				p:after {
 					margin: 0;
 				}
-				p.timePosted {
-					display: none;
+				p.timePosted a {
+					@extend %nolinkstyle;					
+					font-weight:$base-font-weight;
+					font-size:$small-font-size;	
+					display:none;
 				}
 				p.interact {
 					display: none;
