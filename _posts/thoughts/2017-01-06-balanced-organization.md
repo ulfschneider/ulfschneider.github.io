@@ -94,7 +94,31 @@ In one sentence: We are exceptional and we can prove it.
 
 Cultivation Culture
 ---
-The prototype of the collaboration culture is the religious community. Personal development, to explore personal potentials is the central motive. Values give orientation. There are not many explicit rules, but ethical behavior is important. The functioning of the organization is ensured through mutual commitments to shared values. A member who is not trustworthy or not dedicated to the goals of the organization will have to leave. On the otherhand, if someone is recognized as being trustworthy but has a bad performance a second chance will sure be given. Possibly in another, better suited function with better conditions to grow.
+The prototype of the collaboration culture is the religious community. Personal development, to explore personal potentials is the central motive. Values give orientation. There are not many explicit rules, but ethical behavior is important. The functioning of the organization is ensured through mutual commitments to shared values. A member who is not trustworthy or not dedicated to the goals of the organization will have to leave. On the otherhand, if someone is recognized as being trustworthy but delivered a bad performance, a second chance will sure be given. Possibly in another, better suited function with better conditions to grow.
+
+In the cultivation culture people are oriented towards a higher level. It´s being asked for purpose. Future is an adventure. Releationships are personal, cooperative and interactive. Communication style is open and direct. Ideas of others are enriching own ideas.
+
+Among all four core cultures, the cultivation culture can handle change best. Change is being accepted as a part of human live and change will go hand in hand with learning and development. To serve recognition experimenting is part of the daily live.
+
+Aesthetics, form, harmony and fitness are appreciated. The creation of new, inventing, is a natural affair in the cultivation culture.
+
+Members of the culture are empowered towards autonomy with considerable personal freedom. Attitude is optimistic and positive with loyalty for the goals of the organization.
+
+What could be is more important than what is. Continuous improvement as well as ideal solutions are being searched for and appreciated, while still following values and ethics, which are paramount. Any kind of progress, small or large, will keep things going.
+
+Leaders remove obstacles which would impede others to develop their full potential. They trust their employees, are catalysts and exercise control only at a minimum level. They understand themselves as expanders and not controlers of people. They infuse life into the organization. Eccentricity is allowed. Challenging the status-quo, the questioning of dogmas and traditions, is desired. Often leaders are enthusiastic, positive and insightful. They are charismatic and inspiring and are able to put values into operation. They are more defined by followership than by hierarchical power. Decisions will be taken quick but can be changed just as easily. Conflicts will be managed actively as they are perceived as being valuable and possibly enlightening. Communication style then is calm and polite, yelling and screaming is not okay. Instead the quiete and reasonable exploration of differences is.
+
+Organizational structure is decentralized with minimal lines of authority. People are free and encouraged to interact with anyone else in the organization to create. The presence of good will is assumed. Information flows freely. Internal competition is minimal, because people will help out one another. Individual talent can grow and move in a rather wide range of directions. This is less true of a collaboration culture. Commitment is very high. Employees do the recruiting. Word-of-mouth brings people in. 
+
+In one sentence: Life is fascinating.
+
+
+Culture and leadership
+---
+
+Any pure form of the above four cultures does not exist. Any organization has elements of all four cultures. Nevertheless each organization has a core culture, a dominant cutlure which all others cultures are in service for. E.g. a military think tank might be competence and collaboration driven while serving the general control culture of the military.
+
+
 
 
 
