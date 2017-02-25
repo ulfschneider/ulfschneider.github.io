@@ -116,7 +116,30 @@ In one sentence: Life is fascinating.
 Culture and leadership
 ---
 
-Any pure form of the above four cultures does not exist. Any organization has elements of all four cultures. Nevertheless each organization has a core culture, a dominant cutlure which all others cultures are in service for. E.g. a military think tank might be competence and collaboration driven while serving the general control culture of the military.
+A pure form of the described four cultures does not exist. Any organization has elements of all four cultures. Nevertheless each organization has a core culture, a dominant culture which all other cultures have to serve. E.g. a military think tank might be driven by competence and collaboration while still serving the general control culture of the military.
+
+The connection of leadership and culture is significant. E.g. a cooperative leader will be in struggle when acting inside of a control culture. Control cultures need bold and clear commands, while the leader would try to intensify collaboration. This can lead to an unresolveable conflict between the leader and the organization.
+
+Leadership has to be inline with the problem domain the organization is acting in. Is the domain complex, innovative and competitive, like for example in software development, a control driven leader might not be of much use. Such problem domains demand for cooperation and competence.
+
+Content and process
+---
+
+William Schneider is classifying his four core cultures by using the dimensions of *content* and *process*. *Content* is what the organization pays attention to, on *actuality* or *possibility*. *Process* on the other hand describes the communication and decision taking process, which is *personal* or *impersonal*.
+
+Control culture and collaboration culture are actuality driven, with collaboration culture being actuality-personal and control culture being actuality-impersonal.
+
+Competence and cultuvation culture are possibility driven, with competence culture being possibility-impersonal and cultivation culture being possibility-personal.
+
+Cultures which differ in content focus *and* decision taking process are most opposite, as they have nothing in common in the dimensions of *content* and *process*. An organizational change from one of these cultures to the opposite other one is the biggest challenge. E.g. a culture change from control culture to cultivation culture will carry the biggest risk and high effort. 
+
+It´s more obvious to change to a direct neighbour. It is to decide then what dimension has to be changed. Is it *content* or *process*. Should an actuality driven organization move into possiblity driven behavior or should an impersonal deciding organization transform into a personal deciding organization? This depends on what is necessary for the organization to survive and being successful.
+
+What culture I am living in?
+---
+
+
+
 
 
 
