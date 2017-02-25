@@ -144,7 +144,7 @@ a {
 	outline: none;
 }
 
-p a, h1 a, h2 a, h3 a, .user a {
+p a, h1 a, h2 a, h3 a, .user a, li a {
 	@extend %linkstyle;
 }
 
