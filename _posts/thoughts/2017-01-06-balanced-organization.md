@@ -4,6 +4,22 @@ title: The balanced organization
 categories: thoughts
 abstract: The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to go ahead into the agile direction.
 ---
+
+- **Contents**
+- [Core cultures](#core-cultures)
+- [Control culture](#control-culture)
+- [Collaboration culture](#collaboration-culture)
+- [Competence culture](#competence-culture)
+- [Cultivation culture](#cultivation-culture)
+- [Culture and leadership](#culture-and-leadership)
+- [Content and process](#content-and-process)
+- [What culture am I living in](#what-culture-am-i-living-in)
+- [References](#references)
+{:.toc}
+
+Core cultures
+---
+
 For those of us being part of the agile movement, many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. 
 
 This assumption is false. For an organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
@@ -135,7 +151,7 @@ Cultures which differ in content focus *and* decision taking process are most op
 
 It´s more obvious to change to a direct neighbour. It is to decide then what dimension has to be changed. Is it *content* or *process*. Should an actuality driven organization move into possiblity driven behavior or should an impersonal deciding organization transform into a personal deciding organization? This depends on what is necessary for the organization to survive and being successful.
 
-What culture I am living in?
+What culture am I living in?
 ---
 
 
@@ -149,5 +165,5 @@ What culture I am living in?
 
 
 
-Content Reference
+References
 ---
