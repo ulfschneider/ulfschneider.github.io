@@ -172,7 +172,7 @@ Most corporate structures are characterised by a control culture. It is the cult
 
 On the other hand, in the agile movement a collaboration and cultivation culture is propagated. The organization is expected to be smaller and network oriented, people are much more egalitarian and understand their shared goals. Individuals are important and skill levels are high. 
 
-Agile [Beck et al 2001](http://agilemanifesto.org) is often used as a paramount phrase for methods like Scrum [Scrum](http://scrumguides.org), Kanban [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), XP [XP](http://extremeprogramming.org) and even a value system like the Software Craftsmanship movement [Bradbury et al 2009](http://manifesto.softwarecraftsmanship.org) is sometimes entitled to be agile. If we take a closer look at these different approaches and map them to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
+Agile [[Beck et al 2001](http://agilemanifesto.org)] is often used as a paramount phrase for methods like [Scrum](http://scrumguides.org), [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), [XP](http://extremeprogramming.org) and even a value system like the Software Craftsmanship movement [[Bradbury et al 2009](http://manifesto.softwarecraftsmanship.org)] is sometimes entitled to be agile. If we take a closer look at these different approaches and map them to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
 
 ![]({{site.url}}/i/blog/agile_and_culture.jpg)
 {:.full}
