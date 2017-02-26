@@ -174,6 +174,13 @@ On the other hand, in the agile movement a collaboration and cultivation culture
 
 Agile [Beck et al 2001](http://agilemanifesto.org) is often used as a paramount phrase for methods like Scrum [Scrum](http://scrumguides.org), Kanban [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), XP [XP](http://extremeprogramming.org) and even a value system like the Software Craftsmanship movement [Bradbury et al 2009](http://manifesto.softwarecraftsmanship.org) is sometimes entitled to be agile. If we take a closer look at these different approaches and map them to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
 
+![]({{site.url}}/i/blog/agile_and_culture.jpg)
+{:.full}
+
+Figure: Agile and culture
+{:.figcaption}
+
+
 Kanban for example gives a really low entry into its working model, because Kanban will let you just start where you are now. Kanban will visualize your current workflow without changing it at first. There are no new roles and organizational structures like Sprints or iterations. The cycle time and lead time of the work orders will be measured. At this point waiting queues become visible, are being analysed and actions will be taken to streamline the workflow. Eventually WIP limits (work in progress limits) will be introduced at working steps. This exact measuring and not touching current processes at first is well-suited for a control culture and does not require much of any other culture. Still Kanban could serve as a "gateway drug" for balancing the organization into a collaboration or competence culture, if necessary.
 
 The Software Craftsmanship movement and even XP are well suited in a competence culture. Professional expertise on individual level, holding high of the profession and demanding for quality are essential features of this culture and the same can be said about XP and Software Craftsmanship.
@@ -193,6 +200,12 @@ How to balance the current culture
 Assuming the organization has a control culture, the least change and challenge for the organization is to start with Kanban. The current process will be visualized and performance will be measured.
 
 The next step is to correct the dysfunctions of the process. Is the cycle team to slow? Are there waiting queues at some work steps? To analyse those dysfunctions will provide insights to come up with possible improvements. Would it be of help to intensify collaboration? Is the technical expertise and competence on a desired level? Paths to balance the control culture towards a collaboration or competence culture are being developed by this exercise.
+
+![]({{site.url}}/i/blog/balance_the_culture.jpg)
+{:.full}
+
+Figure: Balance the culture
+{:.figcaption}
 
 In order to get this working, at least the will to understand and share insights about the current situation, the will for transparency, is absolute necessary. But this should be inside of the natural range of a control culture, as this culture is actuality-impersonal driven.
 
