@@ -161,7 +161,7 @@ It´s more obvious to change to a direct neighbour. It is to decide then what di
 What culture am I living in?
 ---
 
-The motive to ask about the core culture can be personal or organizational. On a personal basis you might ask yourself: Do I want to work in this current culture? Am I able to change something with the current culture? Should I leave?
+The motive to ask about the core culture can be personal or organizational. On a personal basis you might ask yourself: What is my preferred culture? Does my preferred culture suit with the culture of my current workplace? Am I able to change something with the current culture? Should I leave?
 
 On the organizational level the question about the core culture will produce some insights about the functioning principles and driving forces of the organization. This insight is a prerequisite to handle issues like: Is the current organization efficient enough? What are current problems? In what environment or market is the organization positioned? Is the culture sufficient for that environment? Organizational changes should be managed with care on top of these insights. 
 
