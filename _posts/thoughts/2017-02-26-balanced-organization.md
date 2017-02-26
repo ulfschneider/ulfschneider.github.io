@@ -22,15 +22,15 @@ abstract: The agile manifesto defines a collobaration culture. But what if your 
 Core cultures
 ---
 
-In the agile movement many consider a collaboration culture as a worthwile goal for any organization and even further assume this goal is shared by the members of those organizations. 
+In the agile movement many consider a collaboration culture as a worthwhile goal for any organization and even further assume this goal is shared by the members of those organizations. 
 
 This assumption is false. For an organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results without understanding what is going on behind the scenes. 
 
-In general, William Schneider is admitting the possibility of a culture transformation, but he is also pointing out the difficulty, the risk and the long-term nature (more than 10 years) of such an endeavor [Schneider 2000]. Schneider believes that at least 75% of the management needs to be convinced about the culture transformation. For this kind of conviction John Kotter coined the phrase *sense of urgency,* [Kotter 1996]. Such conditions are seldom to be found.
+In general, William Schneider is admitting the possibility of a culture transformation, but he is also pointing out the difficulty, the risk and the long-term nature (more than 10 years) of such an endeavour [Schneider 2000]. Schneider believes that at least 75% of the management needs to be convinced about the culture transformation. For this kind of conviction John Kotter coined the phrase *sense of urgency,* [Kotter 1996]. Such conditions are seldom to be found.
 
-If your current organization is not rooted in a collaborative way of thinking and acting, the organization will only endure agility, but not support or emphasize it. Still, agile projects achieve positive outcomes, but only while getting the low hanging fruits during project runtime. Afterwards many of the introduced behavioral changes diminish and daily work is snapping back to how things have always been done around here. As soon as the agile coach is leaving, agile patterns collapse and disappear. 
+If your current organization is not rooted in a collaborative way of thinking and acting, the organization will only endure agility, but not support or emphasize it. Still, agile projects achieve positive outcomes, but only while getting the low hanging fruits during project runtime. Afterwards many of the introduced behavioural changes diminish and daily work is snapping back to how things have always been done around here. As soon as the agile coach is leaving, agile patterns collapse and disappear. 
 
-In highly competitive and innovative markets there are real advantages in being agile. Agile will help here to get feedback fast, to learn, to decide, to produce results early, to connect with customers and increase employee satsifaction. In an environment where more is unknown than known, where the explorer mindset is key, the driving forces of agile help to survive and even succeed. 
+In highly competitive and innovative markets there are real advantages in being agile. Agile will help here to get feedback fast, to learn, to decide, to produce results early, to connect with customers and increase employee satisfaction. In an environment where more is unknown than known, where the explorer mindset is key, the driving forces of agile help to survive and even succeed. 
 
 When a culture transformation towards collaboration is too time consumptive (of course) and ever pushing with the help of an agile coach without sustainable outcome isn´t satisfying (of course), what is a pragmatic way to get some positive results? 
 
@@ -69,11 +69,11 @@ In one sentence: The system is most important and big size counts.
 Collaboration Culture
 ---
 
-The prototype of the collaboration culture is the family. In competitive situations it´s about our team against their team. Synergy is key and 2 plus 2 sums up to 5 when people are working together and support each other towards a shared goal. Positive and mutual emphasizing relationships propel the team. People feel connected and obliged to their organization - and vice versa. Attitude is *"together we win and alone we lose"*. There is not much distance between top management and work force. If the organization is having commercial success, all people participate in the financial wealth. The collobaration culture is more egalitarian than other cultures.
+The prototype of the collaboration culture is the family. In competitive situations it´s about our team against their team. Synergy is key and 2 plus 2 sums up to 5 when people are working together and support each other towards a shared goal. Positive and mutual emphasizing relationships propel the team. People feel connected and obliged to their organization - and vice versa. Attitude is *"together we win and alone we lose"*. There is not much distance between top management and work force. If the organization is having commercial success, all people participate in the financial wealth. The collaboration culture is more egalitarian than other cultures.
 
 Like an orchestra, all individuals try to behave at their best for the optimal overarching result. Excessive egoism or diva-attitude will not be tolerated.
 
-Releationships to customers are partner-oriented. Customers are part of the team and much energy is invested to understand the customers and supply to their real demands and needs. 
+Relationships to customers are partner-oriented. Customers are part of the team and much energy is invested to understand the customers and supply to their real demands and needs. 
 
 Ideas and concepts are important but it is people who are nurtured. Loyalty and trust are essential while politics, infighting and betrayal erode collaboration.
 
@@ -98,9 +98,9 @@ Concepts, ideas and theories are important and people have to follow. Relationsh
 
 While in the control culture operational systematics are put into focus, the competence culture is giving interest to conceptual systematics. Other than in the control culture, bad quality will not be tolerated in the competence culture. Members of competence cultures hate it to deliver poor quality. Usually members of competence cultures feel more connected to their profession than to their organization.
 
-The competence culture is a meritocracy. One has to prove and demonstrate competence. You won´t get away with lip service. Behavior is disciplined and goal oriented. Things will be done right and good. The search for improvements is neverending and challenges are welcomed.
+The competence culture is a meritocracy. One has to prove and demonstrate competence. You won´t get away with lip service. Behaviour is disciplined and goal oriented. Things will be done right and good. The search for improvements is never ending and challenges are welcomed.
 
-The competence culture is future oriented. Strategic considerations are taken seriosly and derived actions will be performed with consequence. Nevertheless, new chances will not be overlooked.
+The competence culture is future oriented. Strategic considerations are taken seriously and derived actions will be performed with consequence. Nevertheless, new chances will not be overlooked.
 
 Leaders are never fully satisfied. They are goal minded and willing to take any decision necessary to achieve those goals. Employees are not bound to a function and move quickly to where their expertise is most suitable for the achievement of a goal. Usually conflicts are handled logical and with reasoning.
 
@@ -111,7 +111,7 @@ In one sentence: We are exceptional and we can prove it.
 
 Cultivation Culture
 ---
-The prototype of the cultivation culture is the religious community. Personal development, the exploration of personal potentials, is the central motive. Values give orientation. There are not many explicit rules, but ethical behavior is important. The functioning of the organization is ensured through mutual commitments to shared values. A member who is not trustworthy or not dedicated to the values of the organization will have to leave. On the otherhand, if someone is recognized as being trustworthy but delivered a bad performance, a second chance will sure be given. Possibly in another, better suited function with better conditions to grow.
+The prototype of the cultivation culture is the religious community. Personal development, the exploration of personal potentials, is the central motive. Values give orientation. There are not many explicit rules, but ethical behaviour is important. The functioning of the organization is ensured through mutual commitments to shared values. A member who is not trustworthy or not dedicated to the values of the organization will have to leave. On the other hand, if someone is recognized as being trustworthy but delivered a bad performance, a second chance will sure be given. Possibly in another, better suited function with better conditions to grow.
 
 In the cultivation culture people are oriented towards a higher level. It´s being asked for purpose. Future is an adventure. Relationships are personal, cooperative and interactive. Communication style is open and direct. Ideas of others are enriching own ideas.
 
@@ -123,7 +123,7 @@ Members of the culture are empowered towards autonomy with considerable personal
 
 What could be is more important than what is. Continuous improvement as well as ideal solutions are being searched for and appreciated, while still following values and ethics, which are paramount. Any kind of progress, small or large, will keep things going.
 
-Leaders remove obstacles which would impede others to develop their full potential. They trust their employees, are catalysts and exercise control only at a minimum level. They understand themselves as expanders and not controlers of people. They infuse life into the organization. Eccentricity is allowed. Challenging the status-quo, the questioning of dogmas and traditions, is desired. Often leaders are enthusiastic, positive and insightful. They are charismatic and inspiring and are able to put values into operation. They are more defined by followership than by hierarchical power. Decisions will be taken quick but can be changed just as easily. Conflicts will be managed actively as they are perceived to be valuable and possibly enlightening. Communication style is calm and polite, yelling and screaming is not okay. Instead the reasonable exploration of differences is.
+Leaders remove obstacles which would impede others to develop their full potential. They trust their employees, are catalysts and exercise control only at a minimum level. They understand themselves as expanders and not controllers of people. They infuse life into the organization. Eccentricity is allowed. Challenging the status-quo, the questioning of dogmas and traditions, is desired. Often leaders are enthusiastic, positive and insightful. They are charismatic and inspiring and are able to put values into operation. They are more defined by followership than by hierarchical power. Decisions will be taken quick but can be changed just as easily. Conflicts will be managed actively as they are perceived to be valuable and possibly enlightening. Communication style is calm and polite, yelling and screaming is not okay. Instead the reasonable exploration of differences is.
 
 Organizational structure is decentralized with minimal lines of authority. People are free and encouraged to interact with anyone else in the organization to create. The presence of good will is assumed. Information flows freely. Internal competition is minimal, because people will help out one another. Individual talent can grow and move in a rather wide range of directions. This is less true of a collaboration culture. Commitment is very high. Employees do the recruiting. Word-of-mouth brings people in. 
 
@@ -135,7 +135,7 @@ Culture and leadership
 
 A pure form of the described four cultures does not exist. Any organization has elements of all four cultures. Nevertheless each organization has a core culture, a dominant culture which all other cultures have to serve. E.g. a military think tank might be driven by competence and collaboration while still serving the general control culture of the military.
 
-The connection of leadership and culture is significant. E.g. a cooperative leader can be in struggle when acting inside of a control culture. Control cultures need bold and clear commands, while the leader would try to intensify collaboration. This can turn to an unresolveable conflict between the leader and the organization.
+The connection of leadership and culture is significant. E.g. a cooperative leader can be in struggle when acting inside of a control culture. Control cultures need bold and clear commands, while the leader would try to intensify collaboration. This can turn to an unresolvable conflict between the leader and the organization.
 
 Leadership has to be in line with the problem domain the organization is acting in. Is the domain complex, innovative and competitive, like for example in software development, a control driven leader might not be of much use. Such problem domains demand for cooperation and competence.
 
@@ -146,11 +146,11 @@ William Schneider is classifying his four core cultures by using the dimensions 
 
 Control culture and collaboration culture are actuality driven, with collaboration culture being actuality-personal and control culture being actuality-impersonal.
 
-Competence and cultuvation culture are possibility driven, with competence culture being possibility-impersonal and cultivation culture being possibility-personal.
+Competence and cultivation culture are possibility driven, with competence culture being possibility-impersonal and cultivation culture being possibility-personal.
 
 Cultures which differ in content focus *and* decision taking process are most opposite, as they have nothing in common in the dimensions of *content* and *process*. An organizational change from one of these cultures to the opposite other one is the biggest challenge. E.g. a culture change from control culture to cultivation culture will carry the biggest risk and highest effort, same is true for a change from collaboration culture to competence culture. 
 
-It´s more obvious to change to a direct neighbour. It is to decide then what dimension has to be changed. Is it *content* or *process*. Should an actuality driven organization move into possiblity driven behavior or should an impersonal deciding organization transform into a personal deciding organization? This depends on what is necessary for the organization to survive and being successful.
+It´s more obvious to change to a direct neighbour. It is to decide then what dimension has to be changed. Is it *content* or *process*. Should an actuality driven organization move into possibility driven behaviour or should an impersonal deciding organization transform into a personal deciding organization? This depends on what is necessary for the organization to survive and being successful.
 
 What culture am I living in?
 ---
@@ -170,7 +170,7 @@ Agile [Beck et al 2001](http://agilemanifesto.org) is often used as a paramount 
 
 Kanban for example gives a really low entry into its working model, because Kanban will let you just start where you are now. Kanban will visualize your current workflow without changing it at first. There are no new roles and organizational structures like Sprints or iterations. The cycle time and lead time of the work orders will be measured. At this point waiting queues become visible, are being analysed and actions will be taken to streamline the workflow. Eventually WIP limits (work in progress limits) will be introduced at working steps. This exact measuring and not touching current processes at first is well-suited for a control culture and does not require much of any other culture. Still Kanban could serve as a "gateway drug" for balancing the organization into a collaboration or competence culture, if necessary.
 
-The Software Craftsmanschip movement and even XP are well suited in a competence culture. Professional expertise on individual level, holding high of the profession and demanding for quality are essential features of this culture and the same can be said about XP and Software Craftsmanship.
+The Software Craftsmanship movement and even XP are well suited in a competence culture. Professional expertise on individual level, holding high of the profession and demanding for quality are essential features of this culture and the same can be said about XP and Software Craftsmanship.
 
 Agile at the core is located in a collaboration and cultivation culture. Michael Sahota deduced this in his "Agile Adoption and Transformation Survival Guide" [Sahota 2012]. The Agile Manifesto reminds us the of the agile values:
 
@@ -179,14 +179,14 @@ Agile at the core is located in a collaboration and cultivation culture. Michael
 * Customer collaboration over contract negotiation
 * Responding to change over following a plan
 
-Scrum is a really good representant of an collaboration and cultivation minded agile method. Work is being delivered by a Scrum Team with less than 10 members by following an iterative delivery approach which is organized into subsequent so called Sprints, which take between 1 to 4 weeks of duration. The Scrum Team will deliver a working product increment in each Sprint and they do it together as a team with a shared Sprint Goal. Progress is being measured in working software and is visualized in burndown diagrams. Of course, being able to achieve such kind of a continuous value delivery requires a lot: a value oriented mindset, a good understanding of customer needs and the ability to break down these needs into functioning pieces which can be delivered in a Sprint. Further a functioning team structure, exceptional expertise on technical site only to be able to come to a product increment every 1 to 4 weeks - here is a strong connection to the competence culture. Transparency is key and progress is clearly being measured and shared with everyone having an interest in the project - here is some kind of connection to the control culture. 
+Scrum is a really good representative of an collaboration and cultivation minded agile method. Work is being delivered by a Scrum Team with less than 10 members by following an iterative delivery approach which is organized into subsequent so called Sprints, which take between 1 to 4 weeks of duration. The Scrum Team will deliver a working product increment in each Sprint and they do it together as a team with a shared Sprint Goal. Progress is being measured in working software and is visualized in burndown diagrams. Of course, being able to achieve such kind of a continuous value delivery requires a lot: a value oriented mindset, a good understanding of customer needs and the ability to break down these needs into functioning pieces which can be delivered in a Sprint. Further a functioning team structure, exceptional expertise on technical site only to be able to come to a product increment every 1 to 4 weeks - here is a strong connection to the competence culture. Transparency is key and progress is clearly being measured and shared with everyone having an interest in the project - here is some kind of connection to the control culture. 
 
 How to balance the current culture
 ---
 
 Assuming the organization has a control culture, the least change and challenge for the organization is to start with Kanban. The current process will be visualized and performance will be measured.
 
-The next step is to correct the dysfunctions of the process. Is the cycle team to slow? Are there waiting queues at some work steps? To analyse those dysfunctions will provide insights to come up with possible improvements. Would it be of help to intensify collaboration? Is the technical expertise and competence on a desired level? Paths to balance the control culture towards a collabaration or competence culture are being developed by this exercise.
+The next step is to correct the dysfunctions of the process. Is the cycle team to slow? Are there waiting queues at some work steps? To analyse those dysfunctions will provide insights to come up with possible improvements. Would it be of help to intensify collaboration? Is the technical expertise and competence on a desired level? Paths to balance the control culture towards a collaboration or competence culture are being developed by this exercise.
 
 In order to get this working, at least the will to understand and share insights about the current situation, the will for transparency, is absolute necessary. But this should be inside of the natural range of a control culture, as this culture is actuality-impersonal driven.
 
