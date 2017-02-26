@@ -144,6 +144,12 @@ Content and process
 
 William Schneider is classifying his four core cultures by using the dimensions of *content* and *process*. *Content* is what the organization pays attention to, it has the two poles *actuality* and *possibility*. *Process* on the other hand describes the communication and decision taking process, which is *personal* or *impersonal*.
 
+![]({{site.url}}/i/blog/content_and_process.jpg)
+{:.full}
+
+Figure: Content and process
+{:.figcaption}
+
 Control culture and collaboration culture are actuality driven, with collaboration culture being actuality-personal and control culture being actuality-impersonal.
 
 Competence and cultivation culture are possibility driven, with competence culture being possibility-impersonal and cultivation culture being possibility-personal.
