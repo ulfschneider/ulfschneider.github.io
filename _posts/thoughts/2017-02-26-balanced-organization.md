@@ -43,7 +43,7 @@ Schneider differentiates the following four core cultures:
 * Competence Culture
 * Cultivation Culture
 
-Of course, there are more than four organizational cultures and in reality probably no organization is identical with another, but with the Core Culture Model we can reduce reality to some important characteristics which play a role in this context.
+Of course, there are more than four organizational cultures and in reality probably no organization is identical with another, but with the Core Culture Model reality can be reduced to some important characteristics which play a role in this context.
 
 Any of the four cultures has specific ways to handle authority, power, leadership, decision making, performance measurement and relations with partners and customers. To understand what that means, let´s go more into detail for each of the core cultures.
 
@@ -98,7 +98,7 @@ Concepts, ideas and theories are important and people have to follow. Relationsh
 
 While in the control culture operational systematics are put into focus, the competence culture is giving interest to conceptual systematics. Other than in the control culture, bad quality will not be tolerated in the competence culture. Members of competence cultures hate it to deliver poor quality. Usually members of competence cultures feel more connected to their profession than to their organization.
 
-The competence culture is a meritocracy. One has to prove and demonstrate competence. You won´t get away with lip service. Behaviour is disciplined and goal oriented. Things will be done right and good. The search for improvements is never ending and challenges are welcomed.
+The competence culture is a meritocracy. One has to prove and demonstrate competence. One won´t get away with lip service. Behaviour is disciplined and goal oriented. Things will be done right and good. The search for improvements is never ending and challenges are welcomed.
 
 The competence culture is future oriented. Strategic considerations are taken seriously and derived actions will be performed with consequence. Nevertheless, new chances will not be overlooked.
 
