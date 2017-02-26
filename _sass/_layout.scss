@@ -454,10 +454,8 @@ figcaption:before, .figcaption:before {
 					margin: 0;
 				}
 				p.timePosted a {
-					@extend %nolinkstyle;					
 					font-weight:$base-font-weight;
 					font-size:$small-font-size;	
-					display:none;
 				}
 				p.interact {
 					display: none;
