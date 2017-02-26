@@ -14,6 +14,8 @@ abstract: The agile manifesto defines a collobaration culture. But what if your 
 - [Culture and leadership](#culture-and-leadership)
 - [Content and process](#content-and-process)
 - [What culture am I living in](#what-culture-am-i-living-in)
+- [Agile methods and core culture](#agile-methods-and-core-culture)
+- [How to balance the current culture](#how-to-balance-the-current-culture)
 - [References](#references)
 {:.toc}
 
@@ -154,16 +156,45 @@ It´s more obvious to change to a direct neighbour. It is to decide then what di
 What culture am I living in?
 ---
 
+The motive to ask about the core culture can be personal or organizational. On a personal basis you might ask yourself: Do I want to work in this current culture? Am I able to change something with the current culture? Should I leave?
 
+On the organizational level the question about the core culture will produce some insights about the functioning principles and driving forces of the organization. This insight is a prerequisite to handle issues like: Is the current organization efficient enough? What are current problems? In what environment or market is the organization positioned? Is the culture sufficient for that environment? Organizational changes should be managed with care on top of these insights. 
 
+Agile methods and core culture
+---
 
+Most corporate structures are characterised by a control culture. It is the culture of the last century, for huge organizations with a tayloristic production approach where a skilled minority at the top will tell all other people - the followers - what to do and how to do it. The individual is not so important, instead the system is.
 
+In the agile movement a collaboration and cultivation culture is propagated. The organization is expected to be smaller and network oriented, people are much more equally and understand their shared goals. Individuals are important and skill levels are high. 
 
+Agile [Beck et al 2001] is often used as a paramount phrase for methods like Scrum, Kanban, XP [http://www.extremeprogramming.org] and even a value system like the Software Craftsmanship movement [Bradbury et al 2009] is sometimes entitled to be agile. If we take a closer look at these different approaches and map it to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
 
+Kanban for example gives a really low entry into its working model, because Kanban let´s you just start where you are now. Kanban will visualize your current workflow without changing it at first. There are no new roles and organizational structures like Sprints or iterations. The cycle time and lead time of the work orders will be measured. At this point waiting queues become visible, are being analyzed and actions will be taken to streamline the workflow. Eventually WIP limits (work in progress limits) will be introduced at working steps. This exact measuring and not touching current processes at first is well-suited for a control culture and does not require much of any other culture. Still Kanban could serve as a "gateway drug" for balancing the organization into a collaboration or competence culture, if necessary.
 
+The Software Craftsmanschip movement and even XP are well suited in a competence culture. Professional expertise on individual level, holding high of the profession and demanding for quality are essential features of this culture and the same can be said about XP and Software Craftsmanship.
 
+Agile at the core is located in a collaboration and cultivation culture. Michael Sahota deduced this in his "Agile Adoption and Transformation Survival Guide" [Sahota 2012]. The Agile Manifesto reminds us the of the agile values:
 
+* Individuals and interections are valued over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
 
+Scrum is a really good representant of an collaboration and cultivation minded agile method. Work is being delivered by a Scrum Team with less than 10 members by following an iterative delivery approach which is organized into subsequent so called Sprints, which take between 1 to 4 weeks of duration. The Scrum Team will deliver a working product increment in each Sprint and they do it together as a team with a shared Sprint Goal. Progress is being measured in working software and is visualized in burndown diagrams. Of course, being able to achieve such kind of a continuous value delivery requires a lot: a value oriented mindset, a good understanding of customer needs and the ability to break down these needs into functioning pieces which can be delivered in a Sprint. A functioning team structure, exceptional expertise on technical site only to be able to come to a product increment every 1 to 4 weeks - here is a strong connection to the competence culture. Transparency is key and progress is clearly being measured and shared with everyone having an interest in the project - here is some kind of connection to the control culture. 
+
+How to balance the current culture
+---
+
+Assuming the organization has a control culture, the least change and challenge for the organization is to start with Kanban. The current process will be visualized and performance will be measured.
+
+The next step is to correct the dysfunctions of the process. Is cycle team to slow? Are there waiting queues at some work steps? To analyse those dysfunctions will provide insights to come to possible improvements. Would it be of help to intensify collaboration? Is the technical expertise and competence on a desired level? Paths to balance the control culture towards a collabaration or competence culture are being developed by this exercise.
+
+In order to get this working, at least the will to understand and share insights about the current situation, the will for transparency, is absolute necessary. But this should be inside of natural range of a control culture, as this culture is actuality-impersonal driven.
+
+The success of the balancing actions is, like always, depending on the dedication of the organization leaders. There might be control cultures which resist any kind of change. 
+
+With some good will, a balancing for the better should be possible inside of the current culture and not against. I see this approach to be a realistic answer for the problems of an imperfect world.
 
 References
 ---
+http://www.extremeprogramming.org
