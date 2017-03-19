@@ -230,6 +230,7 @@ ul.image-grid a {
 	padding: 0;
 	margin: 0;
 	border: 0;
+	@extend %nolinkstyle;
 }
 
 li.image-grid {
