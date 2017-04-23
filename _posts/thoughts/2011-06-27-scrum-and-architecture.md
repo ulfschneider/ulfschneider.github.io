@@ -37,7 +37,7 @@ Architectural decisions are being taken under two premises [Friedrichsen 2010]:
 
 Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks [Brooks 1995:45] states, that
 
-> The architect of a system, like the architect for a building, is the user´s agent
+> The architect of a system, like the architect of a building, is the user´s agent
 
 My impression is, both quotes are true.
 
