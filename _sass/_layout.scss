@@ -308,10 +308,11 @@ li.image-grid h2 {
 	font-size:$small-font-size;	
 }
 
-.title {
+.title {		
 	margin: 0;
 	font-family: $title-font-family;
-	font-weight: $title-font-weight;	
+	font-weight: $base-font-weight;
+	font-size:$large-font-size;
 }
 
 .subtitle {
