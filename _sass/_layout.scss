@@ -301,11 +301,13 @@ li.image-grid h2 {
 
 .blog-content h3 a {
 	margin-right:$spacing-1;
+	display:inline-block;
 }
 
 .blog-content .meta {
 	font-weight:$base-font-weight;
 	font-size:$small-font-size;	
+	display:inline-block;
 }
 
 .title {		
