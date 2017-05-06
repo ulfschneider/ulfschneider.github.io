@@ -436,12 +436,13 @@ figcaption:before, .figcaption:before {
 						[data-scribe="element:name"] {
 							font-weight: $title-font-weight;
 							margin-right:$spacing-1;
+							display:inline-block;
 							@extend %linkstyle;
 						}
 						[data-scribe="element:screen_name"] {
 							font-weight:$base-font-weight;
 							font-size:$small-font-size;	
-							margin-left:-1em;
+							display:inline-block;
 						}
 					
 					}
