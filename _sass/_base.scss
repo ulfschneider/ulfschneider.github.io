@@ -169,6 +169,11 @@ blockquote {
 	margin: $spacing-2 0;
 	font-family: $base-font-family;
 	font-style: italic;
+	
+	* {
+		background:$text-color;
+		color:$background-color;		
+	}
 	> :last-child {
 		margin-bottom: 0;
 	}
