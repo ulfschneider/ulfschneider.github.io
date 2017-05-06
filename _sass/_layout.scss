@@ -435,7 +435,7 @@ figcaption:before, .figcaption:before {
 						@extend %nolinkstyle;
 						[data-scribe="element:name"] {
 							font-weight: $title-font-weight;
-							margin-right:$spacing-1;
+							margin-right:$spacing-half;
 							display:inline-block;
 							@extend %linkstyle;
 						}
