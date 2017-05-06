@@ -163,6 +163,7 @@ p a, h1 a, h2 a, h3 a, .user a, li a {
 blockquote {
 	background:$text-color;
 	color:$background-color;
+	border-radius: 2px;
 	padding:$spacing-half;
   
 	margin: $spacing-3 0;
