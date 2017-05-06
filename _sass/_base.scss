@@ -158,12 +158,12 @@ p a, h1 a, h2 a, h3 a, .user a, li a {
 }
 
 /**
-* *uotes
+* quotes
 */
 blockquote {
-	border-top:1px dotted $text-color;
-	border-bottom:1px dotted $text-color;
-	padding:$spacing-1/2 0;
+	background:$text-color;
+	color:$background-color;
+	padding:$spacing-half;
   
 	margin: $spacing-3 0;
 	font-family: $base-font-family;
