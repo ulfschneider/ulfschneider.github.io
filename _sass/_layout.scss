@@ -380,7 +380,6 @@ figcaption:before, .figcaption:before {
 		margin: 0;
 		float: left;
 		max-width: 62%;
-		padding-right: $spacing-1;
 	}
 
 	figcaption, .figcaption {
@@ -394,10 +393,15 @@ figcaption:before, .figcaption:before {
 .right {
 	img {
 		float: right;
-		padding-right: 0;
-		padding-left: $spacing-1;
 	}
+}
 
+.left figcaption, .left .figcaption {
+	padding-left:$spacing-1;
+}
+
+.right figcaption, .right .figcaption {
+	padding-right:$spacing-1;
 }
 
 .full img, p.full img {
