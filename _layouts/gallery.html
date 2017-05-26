@@ -137,15 +137,6 @@
     <script>
     loadingImage = false; //avoid loading of multiple images due to timeout interferences or timeout throttling
 
-    function center() {
-      var iwidth = $('.slides > :first-child > img').width();
-      var swidth = $('.slides').width();
-
-      if (iwidth && iwidth < swidth) {
-        $('.slides > :first-child').css('width', iwidth).css('margin-left', (swidth - iwidth) / 2);
-        $('.slides > :first-child > img').css('margin-left', 0).css('margin-right', 0);
-      }
-    }
 
     function adjustHeight() {
       var height = $('.slides > :first-child').outerHeight(true);
@@ -165,7 +156,6 @@
       } else {
         $('#loading').remove();
         slide.fadeIn(500);
-        center();
         adjustHeight();        
       }
 
@@ -180,7 +170,6 @@
             img.attr('loaded', 'true');
             $('#loading').remove();
             slide.fadeIn(500);
-            center();            
             adjustHeight();
             setTimeout(next, 4000);
           });
@@ -192,7 +181,6 @@
         img.attr('loaded', 'true');
         $('#loading').remove();
         slide.fadeIn(500);
-        center();        
         adjustHeight();
       });
       {% endif %}
