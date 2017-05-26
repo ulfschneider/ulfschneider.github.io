@@ -9,12 +9,12 @@
 		text-align: center;
 		line-height:2em;
 	}
-  
+
 	.nositenav {
 		display: block;
 		text-align: center;
 	}
-  
+
 	.site-description {
 		display: inline-block;
 	}
@@ -39,15 +39,15 @@
 
 
 .index {
-	
+
 	.page-content {
 		margin-top:$spacing-4;
 	}
-	
+
 	.wrapper {
 		padding:0 $spacing-3;
 	}
-	
+
 	.site {
 		float: left;
 		margin-right: $spacing-3;
@@ -82,7 +82,7 @@
 .active {
 	background:$text-color;
 	color:$background-color;
-	padding:3px;	
+	padding:3px;
 	border-radius:2px;
 }
 
@@ -98,7 +98,7 @@
 
 
 .wrapper {
-	text-align: left;	
+	text-align: left;
 }
 
 
@@ -117,10 +117,10 @@
 */
 .site-footer {
 	padding: 0;
-	line-height:$spacing-1;	
+	line-height:$spacing-1;
 	clear: both;
 	margin-top: $spacing-3;
-	margin-bottom: $spacing-2;  
+	margin-bottom: $spacing-2;
 	@extend %clearfix;
 }
 
@@ -144,10 +144,10 @@
 	img[src="undefined"] {
 		display: none;
 	}
-	  
+
 	p:last-child {
 		margin-bottom: 0;
-		
+
 		img:last-child {
 			margin-bottom:0;
 		}
@@ -184,7 +184,7 @@
 		}
 		@extend %clearfix;
 	}
-	
+
 	.slides {
 		position: relative;
 		width: 100%;
@@ -205,9 +205,9 @@
 				text-align: left;
 				font-weight: normal;
 				font-family:$base-font-family;
-				margin: 0;
+				margin-top:0;				
 			}
-			
+
 			img {
 				@extend %vertical-rhythm;
 			}
@@ -240,30 +240,30 @@ li.image-grid {
 	width: 25%;
 	padding: $spacing-1 $spacing-1;
 	vertical-align: top;
-	transition: all 0.2s ease-out;							
+	transition: all 0.2s ease-out;
 }
 
 li.image-grid .image:after {
 	/* make the .image container a responsive square */
     	content: "";
     	display: block;
-    	padding-bottom: 100%;	
+    	padding-bottom: 100%;
 }
 
 li.image-grid .image {
 	background-color: $background-color;
-	cursor: pointer;	
+	cursor: pointer;
 	overflow:hidden;
-   	position: relative; 
-  
+   	position: relative;
+
 	img {
-	/* absolute position to the bottom in surrounding .image container */	
-	position:absolute;	
+	/* absolute position to the bottom in surrounding .image container */
+	position:absolute;
 	bottom:0;
-		
-	 /*let the img fill out the maximum area of the surrounding .image container */		
-	max-height:100%;		
-	width:auto;	
+
+	 /*let the img fill out the maximum area of the surrounding .image container */
+	max-height:100%;
+	width:auto;
 	margin:0;
   }
 }
@@ -306,11 +306,11 @@ li.image-grid h2 {
 
 .blog-content .meta {
 	font-weight:$base-font-weight;
-	font-size:$small-font-size;	
+	font-size:$small-font-size;
 	display:inline-block;
 }
 
-.title {		
+.title {
 	margin: 0;
 	font-family: $title-font-family;
 	font-weight: $base-font-weight;
@@ -360,7 +360,7 @@ figcaption, .figcaption {
 	margin-top: -$spacing-2;
 	margin-bottom: $spacing-2;
 	clear: both;
-	
+
 }
 
 figcaption:before, .figcaption:before {
@@ -445,27 +445,27 @@ figcaption:before, .figcaption:before {
 						}
 						[data-scribe="element:screen_name"] {
 							font-weight:$base-font-weight;
-							font-size:$small-font-size;	
+							font-size:$small-font-size;
 							display:inline-block;
 						}
-					
+
 					}
 					img {
 						display: none;
 					}
 
 				}
-				
+
 				span[data-scribe="element:verified_badge"] {
 					display:none;
 				}
-				
+
 				p:after {
 					margin: 0;
 				}
 				p.timePosted a {
 					font-weight:$base-font-weight;
-					font-size:$small-font-size;	
+					font-size:$small-font-size;
 				}
 				p.interact {
 					display: none;
@@ -493,13 +493,13 @@ figcaption:before, .figcaption:before {
 		width: $spacing-1;
 		margin-left: 0;
 	}
-	
+
 	ul.image-grid {
 		padding-left:0;
 		padding-right:0;
 	}
-		
-	
+
+
 
 }
 @include media-query($on-palm) {
@@ -517,16 +517,16 @@ figcaption:before, .figcaption:before {
 	.site-header {
 		line-height: 2em; //more space for tapping
 	}
-	
+
 	.index {
 		.page-content {
 			margin-top: $spacing-3;
 		}
-		
+
 		.wrapper {
 			padding:0 $spacing-2;
-		}		
-		
+		}
+
 		.site {
 			margin-right:$spacing-1;
 		}
@@ -535,15 +535,15 @@ figcaption:before, .figcaption:before {
 	.page-content {
 		margin-top: $spacing-4;
 	}
-	
+
 	.site-footer {
 		line-height: 2em; //more space for tapping
 	}
-		
+
 	.toc li {
 		line-height: 2em;
 	}
-	
+
 	ul.image-grid {
 		padding-left:0;
 		padding-right:0;
