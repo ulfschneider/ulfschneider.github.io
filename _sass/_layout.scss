@@ -13,7 +13,7 @@
 	border-bottom:.61em solid $background-color;
 	line-height: $spacing-2; //more space for tapping
 	a {
-			color:$background-color;
+		color:$background-color;
 	}
 
 	.active {
@@ -253,27 +253,27 @@ li.image-grid {
 
 li.image-grid .image:after {
 	/* make the .image container a responsive square */
-    	content: "";
-    	display: block;
-    	padding-bottom: 100%;
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 
 li.image-grid .image {
 	background-color: $background-color;
 	cursor: pointer;
 	overflow:hidden;
-   	position: relative;
+	position: relative;
 
 	img {
-	/* absolute position to the bottom in surrounding .image container */
-	position:absolute;
-	bottom:0;
+		/* absolute position to the bottom in surrounding .image container */
+		position:absolute;
+		bottom:0;
 
-	 /*let the img fill out the maximum area of the surrounding .image container */
-	max-height:100%;
-	width:auto;
-	margin:0;
-  }
+		/*let the img fill out the maximum area of the surrounding .image container */
+		max-height:100%;
+		width:auto;
+		margin:0;
+	}
 }
 
 
@@ -521,6 +521,15 @@ figcaption:before, .figcaption:before {
 		/*Limit Height On Palm*/
 		max-height: 400px;
 	}
+
+	.site-header {
+		position:static;
+	}
+
+	.page-content {
+		margin-top: $spacing-3;
+	}
+
 
 	.index {
 		.page-content {
