@@ -11,7 +11,7 @@
 	color:$background-color;
 	line-height:$spacing-1;
 	border-bottom:.61em solid $background-color;
-
+	line-height: $spacing-2; //more space for tapping
 	a {
 			color:$background-color;
 	}
@@ -126,7 +126,7 @@
 */
 .site-footer {
 	padding: 0;
-	line-height:$spacing-1;
+	line-height: $spacing-2; //more space for tapping
 	clear: both;
 	margin-top: $spacing-3;
 	margin-bottom: $spacing-2;
@@ -521,9 +521,6 @@ figcaption:before, .figcaption:before {
 		/*Limit Height On Palm*/
 		max-height: 400px;
 	}
-	.site-header {
-		line-height: $spacing-2; //more space for tapping
-	}
 
 	.index {
 		.page-content {
@@ -537,10 +534,6 @@ figcaption:before, .figcaption:before {
 		.site {
 			margin-right:$spacing-1;
 		}
-	}
-
-	.site-footer {
-		line-height: $spacing-2; //more space for tapping
 	}
 
 	.toc li {
