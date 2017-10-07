@@ -2,12 +2,30 @@
 * Site header
 */
 .site-header {
-	padding-top: 1em;
+	z-index:10;
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	background:$text-color;
+	color:$background-color;
 	line-height:$spacing-1;
+	border-bottom:.61em solid $background-color;
+
+	a {
+			color:$background-color;
+	}
+
+	.active {
+		background:$background-color;
+		padding:3px;
+		color:$text-color;
+	}
+
 	.site-title {
 		display: block;
 		text-align: center;
-		line-height:2em;
+		line-height:$spacing-2;
 	}
 
 	.nositenav {
@@ -28,7 +46,6 @@
 		margin: 0 $spacing-half;
 		padding:3px;
 	}
-
 }
 
 .site {
@@ -39,7 +56,6 @@
 
 
 .index {
-
 	.page-content {
 		margin-top:$spacing-4;
 	}
@@ -77,13 +93,6 @@
 
 	}
 
-}
-
-.active {
-	background:$text-color;
-	color:$background-color;
-	padding:3px;
-	border-radius:2px;
 }
 
 .portrait {
@@ -204,7 +213,7 @@
 				text-align: left;
 				font-weight: normal;
 				font-family:$base-font-family;
-				margin-top:0;				
+				margin-top:0;
 			}
 
 			img {
@@ -513,7 +522,7 @@ figcaption:before, .figcaption:before {
 		max-height: 400px;
 	}
 	.site-header {
-		line-height: 2em; //more space for tapping
+		line-height: $spacing-2; //more space for tapping
 	}
 
 	.index {
@@ -530,12 +539,8 @@ figcaption:before, .figcaption:before {
 		}
 	}
 
-	.page-content {
-		margin-top: $spacing-4;
-	}
-
 	.site-footer {
-		line-height: 2em; //more space for tapping
+		line-height: $spacing-2; //more space for tapping
 	}
 
 	.toc li {

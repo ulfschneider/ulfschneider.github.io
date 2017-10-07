@@ -48,7 +48,7 @@ Query tracks
 
 Analyze your data by querying specific tracks and time ranges. Place your queries in the text entry field labeled **Query tracks**. An example of a query is:
 
-> #bike oct..dec
+> oct..dec #bike
 
 This will list all #bike tracks for october, november and december of the current year.
 
