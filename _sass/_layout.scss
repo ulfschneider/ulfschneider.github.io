@@ -54,20 +54,21 @@
 	@extend %clearfix;
 }
 
-
-
 .index {
+
 	.page-content {
 		margin-top:$spacing-4;
 	}
 
-	.wrapper {
-		padding:0 $spacing-3;
-	}
-
 	.site {
-		float: left;
-		margin-right: $spacing-3;
+		float:left;
+		background:$text-color;
+		color:$background-color;
+		padding:0 $spacing-half 0 $spacing-1;
+		margin-bottom:$spacing-1;
+		text-align:right;
+		width:33%;
+		min-width:15em;
 	}
 
 	.site-title {
@@ -77,11 +78,12 @@
 	.site-description {
 		font-family: $thin-font-family;
 		font-weight: $thin-font-weight;
-		margin-bottom:$spacing-1;
 	}
 
 	.site-nav {
-		float: left;
+		float:left;
+		padding:0 $spacing-1;
+		background:$background-color;
 
 		.page-link {
 			font-family: $base-font-family;
@@ -522,27 +524,18 @@ figcaption:before, .figcaption:before {
 		max-height: 400px;
 	}
 
+	.index {
+		.site {
+			text-align:left;
+		}
+	}
+
 	.site-header {
 		position:static;
 	}
 
 	.page-content {
 		margin-top: $spacing-3;
-	}
-
-
-	.index {
-		.page-content {
-			margin-top: $spacing-3;
-		}
-
-		.wrapper {
-			padding:0 $spacing-2;
-		}
-
-		.site {
-			margin-right:$spacing-1;
-		}
 	}
 
 	.toc li {
