@@ -1,6 +1,6 @@
 # Site settings
 title: Ulf Schneider #title of the page
-description: Developer • Agile Worker
+description: Agile Worker
 meta: Ulf Schneider Agile Paderborn
 baseurl:  # the subpath of the site, e.g. /blog/
 name: Ulf Schneider
