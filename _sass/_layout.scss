@@ -10,7 +10,7 @@
 	background:$text-color;
 	color:$background-color;
 	line-height:$spacing-1;
-	border-bottom:.61em solid $background-color;
+	border-bottom:$spacing-half solid $background-color;
 	line-height: $spacing-2; //more space for tapping
 	a {
 		color:$background-color;
@@ -99,7 +99,7 @@
 	width: 150px;
 	height: 150px;
 	background-size: 150px 150px;
-	margin: 1.62em auto;
+	margin: $spacing-1 auto;
 	margin-top:0;
 	box-sizing: content-box;
 	background-image: url(/r/u150.jpg);
