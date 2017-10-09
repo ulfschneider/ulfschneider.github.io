@@ -1,4 +1,6 @@
 var refWidth = 0;
+var scrolled = false;
+var resized = false;
 
 function windowWidth() {
 	return w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -15,9 +17,9 @@ function wrapperWidth() {
 
 function hasClass(selector, elem) {
 	if (selector.charAt(0) === '.') {
-		selector = selector.substring(1, selector.length);		
+		selector = selector.substring(1, selector.length);
 	}
-	return (" " + elem.className + " ").indexOf(selector + " ") > -1; 
+	return (" " + elem.className + " ").indexOf(selector + " ") > -1;
 }
 
 function isTag(selector, elem) {
@@ -78,66 +80,76 @@ function imgVerticalMiddle(dom) {
 		if (img.length) {
 			var iHeight = img[0].height;
 			var wrapperHeight = dom.offsetHeight;
-			
+
 			if (iHeight > wrapperHeight) {
 				img[0].style.marginTop = -Math.floor((iHeight - wrapperHeight) / 2) + "px";
 			} else {
 				img[0].style.marginTop = "0px";
 			}
 			img[0].style.marginBottom = "0px";
-		} 
+		}
 	}
 }
 
 function breakout() {
 	var wi = windowWidth();
-	
+
 	if (refWidth !== wi) {
 		refWidth = wi;
-		var wr = wrapperWidth();		
+		var wr = wrapperWidth();
 		var margin = Math.ceil((wr - wi) / 2);
-		
+
 		var s = select(".breakout");
 		for(var i = 0; i < s.length; i++) {
 
 			if (wi > wr) {
 				//0.31 = (1.62 - 1) / 2
-				s[i].style.marginLeft = Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px"; 
-				s[i].style.marginRight =  Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px";			
+				s[i].style.marginLeft = Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px";
+				s[i].style.marginRight =  Math.ceil(Math.max(margin / 2, -wr * 0.31)) + "px";
 			} else {
 				s[i].style.marginLeft = "0px";
 				s[i].style.marginRight = "0px";
 			}
 			//imgVerticalMiddle(s[i]);
-		}		
+		}
 	}
 }
 
 function up() {
 	if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
 		document.getElementById("up").style.display = "inline";
-	}	
+	}
 }
 
 
 (function format() {
-		
-	window.onload = function() {
-		breakout();		
 
+	window.onload = function() {
+		breakout();
 		window.onscroll = function() {
+			scrolled = true;
+		}
+
+		window.onresize = function() {
+			resized = true;
+		}
+
+		setInterval(function() {
+			if (scrolled) {
+				scrolled = false;
 				up();
 				breakout();
-		}
-	
-		window.onresize = function() {
-			breakout();
-		}		
+			}
+			if (resized) {
+				resized = false;
+				breakout();
+			}
+		}, 250);
 	}
-	
+
 	//make figcaptions
 	var i = 0;
-	var s = select(".left");	
+	var s = select(".left");
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
@@ -153,7 +165,7 @@ function up() {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
-	
-	
-				
+
+
+
 })();
