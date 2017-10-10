@@ -1,9 +1,19 @@
-var refWidth = 0;
-var scrolled = false;
-var resized = false;
+
 
 function windowWidth() {
-	return w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+function windowHeight() {
+	return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+}
+
+function documentHeight() {
+	return Math.max(
+		document.body.scrollHeight, document.documentElement.scrollHeight,
+		document.body.offsetHeight, document.documentElement.offsetHeight,
+		document.body.clientHeight, document.documentElement.clientHeight
+	);
 }
 
 function wrapperWidth() {
@@ -115,12 +125,41 @@ function breakout() {
 	}
 }
 
+function moveHeader() {
+	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	if (Math.abs(lastScrollTop - scrollTop) <= delta) return;
+
+
+	var siteHeader = select("#siteHeader");
+	var headerHeight = siteHeader.clientHeight;
+
+	siteHeader.style.transition = "top 0.2s ease-in-out";
+	if (scrollTop > lastScrollTop && scrollTop > headerHeight){
+		// If current position > last position AND scrolled past header
+		// scroll down
+		siteHeader.style.top = "" + -headerHeight + "px";
+	} else {
+		if(scrollTop + windowHeight() < documentHeight()) {
+			siteHeader.style.top = 0;
+		}
+	}
+	lastScrollTop = scrollTop;
+}
+
 function up() {
-	if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-		document.getElementById("up").style.display = "inline";
+	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	if (scrollTop > 150) {
+		select("#up").style.display = "inline";
 	}
 }
 
+
+
+var refWidth = 0;
+var scrolled = false;
+var resized = false;
+var lastScrollTop = 0;
+var delta = 5;
 
 (function format() {
 
@@ -129,7 +168,6 @@ function up() {
 		window.onscroll = function() {
 			scrolled = true;
 		}
-
 		window.onresize = function() {
 			resized = true;
 		}
@@ -137,6 +175,7 @@ function up() {
 		setInterval(function() {
 			if (scrolled) {
 				scrolled = false;
+				moveHeader();
 				up();
 				breakout();
 			}
@@ -165,7 +204,4 @@ function up() {
 	for (i = 0; i < s.length; i++) {
 		figCaption(s[i]);
 	}
-
-
-
 })();
