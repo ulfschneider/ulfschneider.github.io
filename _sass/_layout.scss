@@ -133,6 +133,12 @@
 	margin-top: $spacing-3;
 	margin-bottom: $spacing-2;
 	@extend %clearfix;
+
+	.active {
+		background:$text-color;
+		padding:3px;
+		color:$background-color;
+	}
 }
 
 #up {
