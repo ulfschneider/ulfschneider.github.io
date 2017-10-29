@@ -24,6 +24,6 @@ In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.) and s
 * Lotus: Principal Application Developer, Principal System Administrator
 * IBM: Certified IT Architect
 
-Besides this I´m riding race bikes or the [Bullitt]({{site.url}}/2016-10-02/) with my boy [Emil]({{site.url}}/2016-09-25-2/) and every now and then I´m taking [photographs]({{site.url}}/photography).
+Besides this I´m riding race bikes and the [Bullitt]({{site.url}}/2016-10-02/) with my boy [Emil]({{site.url}}/2016-09-25-2/). Every now and then I´m taking [photographs]({{site.url}}/photography).
 
 
