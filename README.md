@@ -17,7 +17,7 @@ Feel free to use all other HTML and CSS as you please. If you do use them, a lin
 Explanation of used Front Matter variables
 ---
 
-**layout:** blog|collection|default|gallery|image|index|post|tweets
+**layout:** list|collection|default|gallery|image|index|post|tweets
 
 * *list* will summarize posts or pages which have a front matter variable *categories* that contains a value which is equal to the entry *category* inside of the list layout
 * *collection* will summarize all posts which are of layout type *image* or of type *gallery*
@@ -27,7 +27,7 @@ Explanation of used Front Matter variables
 * *tweets* is for a page to display the twitter timeline of the user who is specified in the _config.yml by twitter_username.
 
 **title:** notitle|A text string
-The title of a page or a post. Any post of layout type *post* and a value in title will appear on the *blog* page.  And any *post* of layout-type *gallery* or *image* will also appear in the navigation structure. A value of *notitle* will hide the display of the title.
+The title of a page or a post. Any post of layout type *post* and a value in title will appear on the *blog* page.  And any *post* of layout-type *gallery* or *image* will also appear in the navigation structure. A value of *notitle* or *false* or just empty will hide the display of the title.
 
 **subtitle:** A text string
 
