@@ -126,6 +126,7 @@ function breakout() {
 }
 
 function moveHeader() {
+	//inspired by https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
 	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 	if (Math.abs(lastScrollTop - scrollTop) <= delta) return;
 
