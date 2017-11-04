@@ -18,7 +18,7 @@ dl, dd, ol, ul, figure {
 hr {
 	border: 0;
 	border-bottom: 1px dotted $text-color;
-	margin: 1em 0;
+	margin: $spacing-half 0;
 }
 
 
@@ -166,14 +166,14 @@ blockquote {
 	color:$background-color;
 	border-radius: 2px;
 	padding:$spacing-half;
-  
+
 	margin: $spacing-2 0;
 	font-family: $base-font-family;
 	font-style: italic;
-	
+
 	* {
 		background:$text-color;
-		color:$background-color;		
+		color:$background-color;
 	}
 	> :last-child {
 		margin-bottom: 0;
@@ -193,12 +193,12 @@ code {
 
 pre.highlight {
 	@extend %vertical-rhythm;
-	font-family: $code-font-family;	
+	font-family: $code-font-family;
 	overflow: auto;
 	display: block;
 	background: #dddbd8;
-	border-radius: 2px;	
-	padding: 1px 3px;	
+	border-radius: 2px;
+	padding: 1px 3px;
 }
 
 .auto {
