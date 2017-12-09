@@ -30,6 +30,8 @@
 		line-height: $spacing-2;
 		padding-top: $spacing-half;
 		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
 	.nositenav {
@@ -75,9 +77,12 @@
 
 	.site-title {
 		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
 	.site-description {
+		letter-spacing: 1px;
 		font-family: $thin-font-family;
 		font-weight: $thin-font-weight;
 	}
