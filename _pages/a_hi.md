@@ -1,13 +1,15 @@
 ---
 layout: default
-title:
+title: null
 menu: Hi
 index: Hi
 permalink: /hi/
 ---
-<div></div>
-{:.portrait}
-Hi,
+
+<div>
+</div>
+
+{:.portrait} Hi,
 
 my name is Ulf Schneider and I live in Paderborn, Germany.
 
@@ -15,15 +17,13 @@ I am an agile coach and a software developer. Together with my colleagues at [Di
 
 Here you can find some of my [thoughts]({{site.url}}/thoughts) about agile software development.
 
-Over the course of 20 years in the software industry I was more than 10 years with IBM Global Services as a developer and software architect and more than 7 years self employed as an agile coach and trainer - mainly leveraging the [Scrum](http://www.scrumguides.org) framework.
+Over the course of 20 years in the software industry I was more than 10 years with IBM Global Services as a developer and software architect and more than 7 years self employed as an agile coach and trainer - mainly leveraging the [Scrum](http://www.scrumguides.org) framework. Since 2014 I am employed as an agile coach for the software organization of Diebold Nixdorf.
 
 In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.) and since then gathered the following certificates:
 
-* Scrum Alliance: CSM, CSPO, CSD, CSP
-* Sun: SCJP, SCWCD, SCBCD
-* Lotus: Principal Application Developer, Principal System Administrator
-* IBM: Certified IT Architect
+- Scrum Alliance: CSM, CSPO, CSD, CSP
+- Sun: SCJP, SCWCD, SCBCD
+- Lotus: Principal Application Developer, Principal System Administrator
+- IBM: Certified IT Architect
 
 Besides this I´m riding race bikes and the [Bullitt]({{site.url}}/2016-10-02/) with my boy [Emil]({{site.url}}/2016-09-25-2/). Every now and then I´m taking [photographs]({{site.url}}/photography).
-
-
