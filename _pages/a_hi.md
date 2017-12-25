@@ -1,15 +1,14 @@
 ---
 layout: default
-title: null
+title: 
 menu: Hi
 index: Hi
 permalink: /hi/
 ---
 
-<div>
-</div>
-
-{:.portrait} Hi,
+<div></div>
+{:.portrait}
+Hi,
 
 my name is Ulf Schneider and I live in Paderborn, Germany.
 
