@@ -66,8 +66,8 @@
 		float: left;
 		background: $text-color;
 		color: $background-color;
-		padding: 0 $spacing-half 0 $spacing-1;
-		margin-bottom: $spacing-1;
+		padding: $spacing-half;
+		margin-right: $spacing-half;
 		text-align: right;
 		width: 28%;
 		min-width: 15em;
@@ -86,7 +86,7 @@
 
 	.site-nav {
 		float: left;
-		padding: 0 $spacing-1;
+		padding: $spacing-half;
 		background: $background-color;
 
 		.page-link {
@@ -505,10 +505,6 @@ p.full img {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
-	.site-title {
-		padding-top: $spacing-half;
-	}
 }
 @include media-query($on-palm) {
 	body {
@@ -524,10 +520,6 @@ p.full img {
 	img.LHOP {
 		/*Limit Height On Palm*/
 		max-height: 400px;
-	}
-
-	.site-title {
-		padding-top: $spacing-half;
 	}
 
 	.index {
