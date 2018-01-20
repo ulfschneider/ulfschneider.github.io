@@ -66,8 +66,9 @@
 		float: left;
 		background: $text-color;
 		color: $background-color;
-		padding: $spacing-half;
+		padding: 0 $spacing-half;
 		margin-right: $spacing-half;
+		margin-bottom: $spacing-1;
 		text-align: right;
 		width: 28%;
 		min-width: 15em;
@@ -86,7 +87,7 @@
 
 	.site-nav {
 		float: left;
-		padding: $spacing-half;
+		padding: 0 $spacing-half;
 		background: $background-color;
 
 		.page-link {
