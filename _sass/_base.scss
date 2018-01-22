@@ -3,13 +3,25 @@
 * {
 	box-sizing: border-box;
 }
-
 /**
 * Reset some basic elements
 */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
 	margin: 0;
 	padding: 0;
 	font-size: inherit;
@@ -20,8 +32,6 @@ hr {
 	border-bottom: 1px dotted $text-color;
 	margin: $spacing-half 0;
 }
-
-
 /**
 * Basic styling
 */
@@ -35,42 +45,57 @@ body {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-
 /**
 * Set `margin` to maintain vertical rhythm
 */
-h1, h2, h3, h4, h5, h6,
-ul, ol, dl, p + p, .spacing, %vertical-rhythm {
+%vertical-rhythm,
+.spacing,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p + p,
+ul {
 	margin-top: $spacing-1;
 	margin-bottom: $spacing-1;
 }
 
 li ul {
-	margin:0;
+	margin: 0;
 }
 
 .spacing-top {
-	margin-top:$spacing-1;
+	margin-top: $spacing-1;
 }
 
 .spacing-bottom {
-	margin-bottom:$spacing-1;
+	margin-bottom: $spacing-1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-top: $spacing-3;
 	font-family: $title-font-family;
 	font-weight: $title-font-weight;
 	text-align: left;
 }
 
-h3,h4,h5,h6 {
+h3,
+h4,
+h5,
+h6 {
 	margin-top: $spacing-2;
 	margin-bottom: 0;
 	text-align: left;
 }
-
-
 /**
 * Images
 */
@@ -78,16 +103,14 @@ img {
 	max-width: 100%;
 	max-height: $content-width;
 	vertical-align: top;
-	border-radius:2px;
+	border-radius: 2px;
 }
-
 /**
 * Figures
 */
 figure > img {
 	display: block;
 }
-
 /**
 * Lists
 */
@@ -99,27 +122,27 @@ ol {
 	list-style-position: outside;
 }
 
-ul, ol {
+ol,
+ul {
 	li {
-		margin:0;
+		margin: 0;
+
 		> p {
 			display: inline;
-			margin:0;
+			margin: 0;
 
 			&:after {
 				content: "";
 				display: block;
 			}
-
 		}
 
-		> ul, > ol {
+		> ul,
+		> ol {
 			margin-left: $spacing-1;
 			margin-bottom: 0;
 		}
-
 	}
-
 }
 
 dl {
@@ -134,8 +157,6 @@ dt {
 dd {
 	display: block;
 }
-
-
 /**
 * Links
 */
@@ -145,42 +166,46 @@ a {
 	outline: none;
 }
 
-p a, h1 a, h2 a, h3 a, .user a, li a {
+.user a,
+h1 a,
+h2 a,
+h3 a,
+li a,
+p a {
 	@extend %linkstyle;
 }
 
-
 %linkstyle {
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
 %nolinkstyle {
-	text-decoration:none;
+	text-decoration: none;
 }
-
 /**
 * quotes
 */
 blockquote {
-	background:$text-color;
-	color:$background-color;
-	border-radius: 2px;
-	padding:$spacing-half;
-
 	margin: $spacing-2 0;
 	font-family: $base-font-family;
 	font-style: italic;
 
 	* {
-		background:$text-color;
-		color:$background-color;
+		background: $text-color;
+		color: $background-color;
+		display: inline;
 	}
+
+	p:after {
+		content: "";
+		display: block;
+		margin-bottom: $spacing-half;
+	}
+
 	> :last-child {
 		margin-bottom: 0;
 	}
-
 }
-
 /**
 * Code formatting
 */
@@ -205,9 +230,6 @@ pre.highlight {
 	overflow: auto;
 	display: block;
 }
-
-
-
 /**
 * Wrapper
 */
@@ -220,35 +242,29 @@ pre.highlight {
 	word-wrap: break-word;
 	position: relative;
 	@extend %clearfix;
-
 	@include media-query($on-palm) {
 		padding-right: 1em;
 		padding-left: 1em;
 	}
-
 }
-
 /**
 * Clearfix
 */
 %clearfix {
-
 	&:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-
 }
 
-strong, b {
+b,
+strong {
 	font-family: $title-font-family;
 }
-
 /**
 * Prevent `sub` and `sup` affecting `line-height` in all browsers.
 */
-
 sub,
 sup {
 	font-size: 1em / $spacing-1;
@@ -267,9 +283,7 @@ sub {
 
 table {
 	border-spacing: 0;
-	margin: 0;
-	margin-top: $spacing-1;
-	margin-bottom: $spacing-1 - 1em;
+	margin: $spacing-1 0 $spacing-1 - 1em;
 }
 
 table thead tr th {
@@ -288,10 +302,10 @@ table tbody tr td {
 	text-align: left;
 }
 
-table tbody tr td:last-child, table thead tr th:last-child {
+table tbody tr td:last-child,
+table thead tr th:last-child {
 	padding-right: 0;
 }
-
 /* grid */
 .grid {
 	width: 100%;
@@ -306,19 +320,24 @@ table tbody tr td:last-child, table thead tr th:last-child {
 .col-1-1 {
 	width: 100%;
 }
-.col-2-3, .col-8-12 {
+
+.col-2-3,
+.col-8-12 {
 	width: 66.66%;
 }
 
-.col-1-2, .col-6-12 {
+.col-1-2,
+.col-6-12 {
 	width: 50%;
 }
 
-.col-1-3, .col-4-12 {
+.col-1-3,
+.col-4-12 {
 	width: 33.33%;
 }
 
-.col-1-4, .col-3-12 {
+.col-1-4,
+.col-3-12 {
 	width: 25%;
 }
 
@@ -326,7 +345,8 @@ table tbody tr td:last-child, table thead tr th:last-child {
 	width: 20%;
 }
 
-.col-1-6, .col-2-12 {
+.col-1-6,
+.col-2-12 {
 	width: 16.667%;
 }
 
@@ -351,13 +371,11 @@ table tbody tr td:last-child, table thead tr th:last-child {
 }
 
 .col-1-12 {
-	width: 8.33%
+	width: 8.33%;
 }
-
 /* Layout Columns */
-
 .col-11-12 {
-	width: 91.66%
+	width: 91.66%;
 }
 
 .col-10-12 {
@@ -373,7 +391,7 @@ table tbody tr td:last-child, table thead tr th:last-child {
 }
 
 .col-7-12 {
-	width: 58.33%
+	width: 58.33%;
 }
 
 [class*='col-'] {
@@ -381,14 +399,12 @@ table tbody tr td:last-child, table thead tr th:last-child {
 	min-height: 1px;
 	padding-left: $spacing-1;
 	padding-right: $spacing-1;
-
 	@include media-query($on-palm) {
 		width: 100%;
 		float: none;
 		clear: both;
 		padding: 0;
 	}
-
 }
 
 .last {
