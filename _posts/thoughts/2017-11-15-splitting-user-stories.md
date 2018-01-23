@@ -10,7 +10,7 @@ abstract: >-
   there are good reasons why you should do it.
 ---
 
-User Stories are short and simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It´s called User Story because you put the user into focus. Therefore a User Story should lead to a product increment that can be seen valuable from the user- or business perspective
+User Stories are short and simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It´s called User Story because you put the user into focus. Therefore a User Story should lead to a product increment that can be seen valuable from the user- or business perspective.
 
 # The advantage of splitting
 
