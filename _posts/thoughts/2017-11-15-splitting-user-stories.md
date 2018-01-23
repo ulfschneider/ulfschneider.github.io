@@ -12,7 +12,7 @@ abstract: >-
 
 User Stories are short and simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It´s called User Story because you put the user into focus. Therefore a User Story should lead to a product increment that can be seen valuable from the user- or business perspective
 
-# The Advantage of Splitting
+# The advantage of splitting
 
 A User Story can cover huge amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done (often called epic). Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it:
 
@@ -24,7 +24,7 @@ A User Story can cover huge amounts of functionality with a single sentence, whi
 - Your daily scrums become far more interesting and useful. Instead of "yeah, I'm 20% done adding all of the new schema to the DB", you get "for that story we got the time stamps working in the UI, and today we're going to make the data persist".
 - A smaller size tends to make estimates more accurate.
 
-# JIRA is Time-Consuming for Splitting
+# JIRA is time-consuming for splitting
 
 Trying to break down a User Story within JIRA is very time-consuming and sometimes counter-intuitive. Not to mention that interaction and conversations among people are to be avoided when following this approach, which is the opposite of what you should thrive for. Use a whiteboard or a wall and sticky notes to do the split work, be prepared to quickly change, sketch, refactor and enhance. Only after you have understood what the story is about and how to split in a good way, bring the parts into JIRA.
 
