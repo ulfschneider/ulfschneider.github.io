@@ -7,21 +7,20 @@
 	left: 0;
 	top: 0;
 	right: 0;
-	background: $text-color;
-	color: $background-color;
+	background: $background-color;
 	line-height: $spacing-1;
 	border-bottom: $spacing-half solid $background-color;
 	line-height: $spacing-2; //more space for tapping
 	font-size: $small-font-size;
 
 	a {
-		color: $background-color;
+		color: $text-color;
 	}
 
 	.active {
-		background: $background-color;
+		background: $text-color;
+		color: $background-color;		
 		padding: 3px;
-		color: $text-color;
 	}
 
 	.site-title {
