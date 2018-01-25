@@ -50,7 +50,8 @@ Try the following patterns to split your User Stories:
 - _Roles:_ In case a User Story describes something that has to be used by different people, groups or roles (e.g. customer, shopper, admin, editor), a split by role might be a good choice. Often you can combine this splitting strategy with the workflow step pattern below, as workflows tend to connect roles via action steps.
 - _Workflow Steps:_ If a User Story describes a workflow, elaborate if you can make at first two stories, one for the start of the workflow and one for the ending. Followed by subsequent stories which fill the gaps from both endpoints up to the middle.
 - _Simple and Complex:_ Sometimes you can do a simple core first and subsequently do complex enhancements in additional stories. The workflow steps pattern is some kind of simple and complex pattern, but you can apply simple/complex even without thinking in workflows.
-- _Platform:_ If you have to support different devices or operating systems (more general: platforms) with a User Story, a natural split is by platform. Vague Terms Vague terms offer splitting opportunities by asking what exactly is meant, turning the vagueness into concrete and then applying the above patterns.
+- _Platform:_ If you have to support different devices or operating systems (more general: platforms) with a User Story, a natural split is by platform. 
+- _Vague Terms:_ Vague terms offer splitting opportunities by asking what exactly is meant, turning the vagueness into concrete and then applying the above patterns.
 
 # Concerns
 
