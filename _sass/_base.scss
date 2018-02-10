@@ -137,8 +137,8 @@ ul {
 			}
 		}
 
-		> ul,
-		> ol {
+		> ol,
+		> ul {
 			margin-left: $spacing-1;
 			margin-bottom: 0;
 		}
@@ -194,6 +194,7 @@ blockquote {
 		background: $text-color;
 		color: $background-color;
 		display: inline;
+		padding: 0.15em 0;
 	}
 
 	p:after {
