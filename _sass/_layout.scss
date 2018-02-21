@@ -1,6 +1,7 @@
 /*
 * Site header
 */
+
 .site-header {
 	z-index: 10;
 	position: fixed;
@@ -9,8 +10,7 @@
 	right: 0;
 	padding-top: $spacing-half;
 	background: $background-color;
-	//border-bottom: $spacing-half solid $background-color;
-	border-bottom: 1px solid $background-color;
+	border-bottom: $spacing-half solid $background-color;
 	line-height: $spacing-2; //more space for tapping
 	font-size: $small-font-size;
 
@@ -124,6 +124,7 @@
 /**
 * Site footer
 */
+
 .site-footer {
 	padding: 0;
 	line-height: $spacing-2; //more space for tapping
@@ -145,6 +146,7 @@
 /**
 * Page
 */
+
 .page-content {
 	margin-top: $spacing-5;
 
@@ -166,6 +168,7 @@
 	}
 }
 /*Galleries */
+
 #displaySlides {
 	@extend %nolinkstyle;
 }
@@ -420,6 +423,7 @@ p.full img {
 	margin-top: -$spacing-2;
 }
 /* Twitter timeline */
+
 .page-content {
 	.twitter-timeline {
 		img {
