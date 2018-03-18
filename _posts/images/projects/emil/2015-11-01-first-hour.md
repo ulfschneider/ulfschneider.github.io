@@ -5,5 +5,8 @@ subtitle:
 permalink: /first-hour
 tags: emil
 thumburl: /i/IMG_0445_thumb.jpg
+slideurl: /i/IMG_0445.jpg
 ---
-![]({{site.url}}/i/IMG_0445_thumb.jpg)
+![]({{site.url}}/i/IMG_0445.jpg)
+
+![]({{site.url}}/i/IMG_1158.jpg)
