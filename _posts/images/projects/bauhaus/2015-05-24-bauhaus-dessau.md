@@ -108,9 +108,8 @@ A short walk of 2 kilometers will bring you from the Bauhaus building to the Kor
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_5889.jpg)
-
 A Laubenganghaus, built by Hannes Meyer 1929 - 1930
-{:.figcaption}
+{:.left}
 
 ![]({{site.url}}/i/IMG_5888.jpg)
 
