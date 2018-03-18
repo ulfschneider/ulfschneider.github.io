@@ -9,4 +9,4 @@ slideurl: /i/IMG_0445.jpg
 ---
 ![]({{site.url}}/i/IMG_0445.jpg)
 
-![]({{site.url}}/i/IMG_1158.jpg)
+
