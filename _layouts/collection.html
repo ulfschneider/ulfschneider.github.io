@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
 {% include head.html %}
-<script src="/r/jquery.min.js"></script>
-<script src="/r/jquery.unveil.js"></script>
 </head>
 <body class="gallery">
 
@@ -27,7 +25,7 @@
 			  <h2>{{p.abstract}}</h2>
 			  {% elsif p.title and p.title != 'notitle' %}
 			  <h2>{{p.title}}</h2>
-			  {% endif %}		
+			  {% endif %}
 		  </div>
 	  </a>
     </li>{% elsif p.layout contains 'image' and p.thumburl and p.tags contains 'projects' %}<li class="image-grid">
@@ -40,7 +38,7 @@
 			<h2>{{p.abstract}}</h2>
 			{% elsif p.title and p.title != 'notitle' %}
 			<h2>{{p.title}}</h2>
-			{% endif %}	  
+			{% endif %}
 		</div>
     </a>
   </li>{% endif %}{% endunless %}{% endfor %}</ul>
@@ -48,11 +46,17 @@
 </div>
 
 <script>
-  $(document).ready(function() {
-    $("img").unveil(100);
-  });
+    /* lazyload */
+    (function(w, d) {
+        var b = d.getElementsByTagName('body')[0];
+        var s = d.createElement("script");
+        s.async = false;
+        var v = !("IntersectionObserver" in w) ? "8.7.0" : "10.5.1";
+        s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+        w.lazyLoadOptions = {}; // Your options here. See "recipes" for more information about async.
+        b.appendChild(s);
+    }(window, document));
 </script>
-
 {% unless page.nofooter %}
 {% include footer.html %}
 {% endunless %}

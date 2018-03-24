@@ -7,7 +7,6 @@
 <script src="/r/jquery.min.js"></script>
   {% unless page.autoplay %}
   <!-- grid -->
-  <script src="/r/jquery.unveil.js"></script>
   <div class="grid-gallery-content">
 
     {% include header.html %}
@@ -21,7 +20,7 @@
       <a id="displaySlides" style="cursor:pointer;" onclick="displaySlides();">Display slides</a>
 
     {% endunless %}
-		
+
       </div>
     </div>
 
@@ -30,9 +29,9 @@
       {% for tag in page.tags %}
       {% for p in site.tags[tag] %}
       {% unless p.nonav %}
-      {% if p.layout contains 'image' and p.thumburl %}      
+      {% if p.layout contains 'image' and p.thumburl %}
       {% assign images = images | push: p %}
-      {% endif %}      
+      {% endif %}
       {% endunless %}
       {% endfor %}
       {% endfor %}
@@ -53,16 +52,13 @@
 			  <h2>{{image.abstract}}</h2>
 			  {% elsif image.title and image.title != 'notitle' %}
 			  <h2>{{image.title}}</h2>
-			  {% endif %}		
+			  {% endif %}
 		  </div>
       </a>
     </li>{% endfor %}</ul>
 
     <script>
       $('.slide-gallery-content').hide();
-      $(document).ready(function() {
-        $("img").unveil(100);
-      });
     </script>
 
   </div>
@@ -71,7 +67,7 @@
 
   <!-- slides -->
   {%unless page.noslides %}
-  
+
   <div style="display:none;" class="slide-gallery-content">
     <div class="wrapper">
 
@@ -144,7 +140,7 @@
     }
 
     function displayImage() {
-	$('.site-footer').hide(0);	
+	$('.site-footer').hide(0);
       var slide = $('.slides > :first-child');
       var img = $('.slides > :first-child > img[lazy]');
 
@@ -156,7 +152,7 @@
       } else {
         $('#loading').remove();
         slide.fadeIn(500);
-        adjustHeight();        
+        adjustHeight();
       }
 
       //autoplay
@@ -200,16 +196,16 @@
       displayImage();
     }
 
-    function displayGrid() {		
+    function displayGrid() {
       $('.slide-gallery-content').hide(0);
       $('.grid-gallery-content').show(0);
 	  $('.site-footer').show(0);
     }
 
-    function displaySlides() {      
+    function displaySlides() {
       $('.grid-gallery-content').hide(0);
       $('.slide-gallery-content').show(0);
-      displayImage();      
+      displayImage();
     }
 
 
@@ -243,12 +239,24 @@
 </script>
 {% endif %}
 {% endunless %}
-
+<script>
+    /* lazyload */
+    (function(w, d) {
+        var b = d.getElementsByTagName('body')[0];
+        var s = d.createElement("script");
+        s.async = false;
+        var v = !("IntersectionObserver" in w) ? "8.7.0" : "10.5.1";
+        s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+        w.lazyLoadOptions = {}; // Your options here. See "recipes" for more information about async.
+        b.appendChild(s);
+    }(window, document));
+</script>
 {% unless page.nofooter %}
 {% include footer.html %}
 {% endunless %}
 
 {% include footer_scripts.html %}
+
 </body>
 
 </html>
