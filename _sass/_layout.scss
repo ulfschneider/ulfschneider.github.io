@@ -114,8 +114,16 @@
 
 .next,
 .prev {
+	label: {
+		font-size:$small-font-size;
+	}
 	cursor: pointer;
 }
+
+.next .label {
+	text-align:right;
+}
+
 
 .title-wrapper {
 	@extend %vertical-rhythm;
