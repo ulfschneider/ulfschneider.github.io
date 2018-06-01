@@ -1,16 +1,14 @@
 /*
 * Site header
 */
-
 .site-header {
 	z-index: 10;
 	position: fixed;
 	left: 0;
 	top: 0;
 	right: 0;
-	padding-top: $spacing-half;
+	padding: $spacing-half 0;
 	background: $background-color;
-	border-bottom: $spacing-half solid $background-color;
 	line-height: $spacing-2; //more space for tapping
 	font-size: $small-font-size;
 
@@ -115,15 +113,14 @@
 .next,
 .prev {
 	label: {
-		font-size:$small-font-size;
+		font-size: $small-font-size;
 	}
 	cursor: pointer;
 }
 
 .next .label {
-	text-align:right;
+	text-align: right;
 }
-
 
 .title-wrapper {
 	@extend %vertical-rhythm;
@@ -132,7 +129,6 @@
 /**
 * Site footer
 */
-
 .site-footer {
 	padding: 0;
 	line-height: $spacing-2; //more space for tapping
@@ -154,7 +150,6 @@
 /**
 * Page
 */
-
 .page-content {
 	margin-top: $spacing-5;
 
@@ -176,7 +171,6 @@
 	}
 }
 /*Galleries */
-
 #displaySlides {
 	@extend %nolinkstyle;
 }
@@ -432,7 +426,6 @@ p.full img {
 	margin-top: -$spacing-2;
 }
 /* Twitter timeline */
-
 .page-content {
 	.twitter-timeline {
 		img {
