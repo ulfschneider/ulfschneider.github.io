@@ -137,8 +137,8 @@ ul {
 			}
 		}
 
-		> ol,
-		> ul {
+		> ul,
+		> ol {
 			margin-left: $spacing-1;
 			margin-bottom: 0;
 		}
@@ -188,20 +188,10 @@ p a {
 blockquote {
 	margin: $spacing-2 0;
 	font-family: $base-font-family;
-	font-style: italic;
-
-	* {
-		background: $text-color;
-		color: $background-color;
-		display: inline;
-		padding: 0.15em 0;
-	}
-
-	p:after {
-		content: "";
-		display: block;
-		margin-bottom: $spacing-half;
-	}
+	border-radius: 2px;
+	background: $text-color;
+	color: $background-color;
+	padding: 1px 3px;
 
 	> :last-child {
 		margin-bottom: 0;
