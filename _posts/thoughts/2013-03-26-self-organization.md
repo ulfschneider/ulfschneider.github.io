@@ -13,7 +13,10 @@ The affirmation of the evolutionary approach is rewarding, but will challenge tr
 
 Leaders in agile organizations have the important function of actively giving self-organizational forces a direction. This seems to be conflicting with the evolutionary approach and to span the tension field even further, here are two quotes I found in [Malik 2009:137]:
 
-> <p>The only things that evolve by themselves in an organization are disorder, friction, and malperformance. Peter F. Drucker</p><p>... the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. Friedrich A. von Hayek [Hayek 2011:54]</p>
+> The only things that evolve by themselves in an organization are disorder, friction, and malperformance. Peter F. Drucker
+
+
+> ... the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. Friedrich A. von Hayek [Hayek 2011:54]
 
 Past and present
 ---
