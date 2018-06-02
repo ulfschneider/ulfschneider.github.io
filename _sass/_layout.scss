@@ -500,6 +500,10 @@ p.full img {
 		list-style-position: inside;
 	}
 
+	blockquote {
+		margin-left:0;
+	}
+	
 	.figcaption:before,
 	figcaption:before {
 		width: $spacing-1;

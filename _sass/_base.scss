@@ -187,18 +187,21 @@ p a {
 */
 blockquote {
 	margin: $spacing-2 0;
-	font-family: $base-font-family;
-	border-radius: 2px;
-	background: $text-color;
-	color: $background-color;
-	padding: 1px 3px;
+	margin-left: -$spacing-1;
+	border-left: $spacing-half solid $text-color;
+	padding-left: $spacing-half;
+
 
 	> :last-child {
 		margin-bottom: 0;
 	}
 
-	a {
-		color:$background-color;
+	> :first-child:before {
+		content: "“";
+  		font-size: $spacing-2;
+  		line-height: 0.1em;
+  		margin-right: 0.25em;
+  		vertical-align: -0.4em;
 	}
 }
 /**
