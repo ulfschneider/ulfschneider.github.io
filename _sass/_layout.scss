@@ -340,7 +340,7 @@ li.image-grid h2 {
 		display: inline;
 		line-height:$spacing-2;
 		&:before {
-			content: " • ";
+			content: " · "; 
 		}
 	}
 }
@@ -552,10 +552,6 @@ p.full img {
 		.page-content {
 			margin-top: $spacing-3;
 		}
-	}
-
-	.toc li {
-		line-height: 2em;
 	}
 
 	ul.image-grid {

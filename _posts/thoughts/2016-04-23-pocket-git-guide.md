@@ -200,7 +200,7 @@ A `git log` of commit messages should give an idea how the project has evolved o
 
 A properly formed commit subject line should complete the following sentence:
 
-> If applied, this commit will "your commit subject line"
+> If applied, this commit will `<your commit subject line>`
 
 The commit messages reveal whether a committer is a good collaborator or not.
 
