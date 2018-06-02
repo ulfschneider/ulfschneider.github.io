@@ -329,10 +329,23 @@ li.image-grid h2 {
 	font-size: $base-font-size;
 }
 
-.toc li {
-	list-style-type: none;
-	margin: $spacing-half 0;
+.toc {
+	:first-child:before {
+		content:"";
+	}
+
+	li {
+		list-style-type: none;
+		margin: $spacing-half 0;
+		display: inline;
+		line-height:$spacing-2;
+		&:before {
+			content: " • ";
+		}
+	}
 }
+
+
 
 .w200 img,
 img.w200 {
@@ -503,7 +516,7 @@ p.full img {
 	blockquote {
 		margin-left:0;
 	}
-	
+
 	.figcaption:before,
 	figcaption:before {
 		width: $spacing-1;
