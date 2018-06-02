@@ -196,12 +196,14 @@ blockquote {
 		margin-bottom: 0;
 	}
 
+/**
 	> :first-child:before {
 		content: "»";
   		font-size: $spacing-2;
   		margin-right: .2em;
   		vertical-align: -0.2em;
 	}
+	*/
 }
 
 /**
