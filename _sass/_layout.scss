@@ -336,11 +336,11 @@ li.image-grid h2 {
 
 	li {
 		list-style-type: none;
-		margin: $spacing-half 0;
+		margin: $spacing-third 0;
 		display: inline;
 		line-height:$spacing-2;
 		&:before {
-			content: " · "; 
+			content: " · ";
 		}
 	}
 }

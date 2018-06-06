@@ -30,7 +30,7 @@ ul {
 hr {
 	border: 0;
 	border-bottom: 1px dotted $text-color;
-	margin: $spacing-half 0;
+	margin: $spacing-neutral 0;
 }
 /**
 * Basic styling
@@ -188,8 +188,8 @@ p a {
 blockquote {
 	margin: $spacing-2 0;
 	margin-left: -$spacing-1;
-	border-left: $spacing-half solid $text-color;
-	padding-left: $spacing-half;
+	border-left: $spacing-third solid $text-color;
+	padding-left: $spacing-neutral;
 
 
 	> :last-child {
