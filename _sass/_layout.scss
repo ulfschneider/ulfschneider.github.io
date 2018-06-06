@@ -7,10 +7,9 @@
 	left: 0;
 	top: 0;
 	right: 0;
-	padding: $spacing-half 0;
+	padding: $spacing-third 0;
+	line-height: $spacing-2;
 	background: $background-color;
-	line-height: $spacing-2; //more space for tapping
-	font-size: $small-font-size;
 
 	a {
 		color: $text-color;
@@ -44,7 +43,7 @@
 	text-align: center;
 
 	.page-link {
-		margin: 0 $spacing-half;
+		margin: 0 $spacing-third;
 		padding: 3px;
 	}
 }
@@ -63,7 +62,7 @@
 		float: left;
 		background: $text-color;
 		color: $background-color;
-		padding: 2px $spacing-half 0 $spacing-1;
+		padding: 2px $spacing-third 0 $spacing-1;
 		margin-bottom: $spacing-1;
 		text-align: right;
 		width: 28%;
@@ -114,6 +113,7 @@
 .prev {
 	label: {
 		font-size: $small-font-size;
+		display:inline-block;
 	}
 	cursor: pointer;
 }
@@ -230,8 +230,8 @@ ul.image-grid {
 	list-style: none;
 	margin: 0 auto;
 	max-width: $image-grid-width;
-	padding-left: $spacing-half;
-	padding-right: $spacing-half;
+	padding-left: $spacing-third;
+	padding-right: $spacing-third;
 }
 
 ul.image-grid a {
