@@ -86,7 +86,7 @@ PS1='\u@\h \W$(__git_ps1 " (%s)")\$ '
 Get Git on Windows
 ---
 
-On Windows, the installation of [GitHub Desktop](https://desktop.github.com) will bring Git, the Git Shell (with an improved Git command prompt and Git completion) and the GitHub Desktop Client on your machine. This all with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
+On Windows, the installation of [GitHub Desktop](https://desktop.github.com) will bring Git and the GitHub Desktop Client on your machine. This all with minimal configuration effort for yourself. I think it´s a good starting point for your Git experience on Windows. 
 
 The Git shell
 ---
@@ -200,7 +200,7 @@ A `git log` of commit messages should give an idea how the project has evolved o
 
 A properly formed commit subject line should complete the following sentence:
 
-> If applied, this commit will "your commit subject line"
+> If applied, this commit will `<your commit subject line>`
 
 The commit messages reveal whether a committer is a good collaborator or not.
 

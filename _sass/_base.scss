@@ -30,7 +30,7 @@ ul {
 hr {
 	border: 0;
 	border-bottom: 1px dotted $text-color;
-	margin: $spacing-half 0;
+	margin: $spacing-neutral 0;
 }
 /**
 * Basic styling
@@ -187,16 +187,25 @@ p a {
 */
 blockquote {
 	margin: $spacing-2 0;
-	font-family: $base-font-family;
-	border-radius: 2px;
-	background: $text-color;
-	color: $background-color;
-	padding: 1px 3px;
+	margin-left: -$spacing-1;
+	border-left: $spacing-third solid $text-color;
+	padding-left: $spacing-neutral;
+
 
 	> :last-child {
 		margin-bottom: 0;
 	}
+
+/**
+	> :first-child:before {
+		content: "»";
+  		font-size: $spacing-2;
+  		margin-right: .2em;
+  		vertical-align: -0.2em;
+	}
+	*/
 }
+
 /**
 * Code formatting
 */
