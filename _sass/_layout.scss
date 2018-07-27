@@ -340,7 +340,7 @@ li.image-grid h2 {
 		display: inline;
 		line-height:$spacing-2;
 		&:before {
-			content: " · ";
+			content: " - ";
 		}
 	}
 }
