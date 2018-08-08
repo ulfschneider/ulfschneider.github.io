@@ -329,22 +329,40 @@ li.image-grid h2 {
 	font-size: $base-font-size;
 }
 
+
 .toc {
-	:first-child:before {
-		content:"";
-	}
+    font-size: $small-font-size;
+    margin: $spacing-1 0;
 
-	li {
-		list-style-type: none;
-		margin: $spacing-third 0;
-		display: inline;
-		line-height:$spacing-2;
-		&:before {
-			content: " - ";
-		}
-	}
+    &:after {
+        position: relative;
+        height: $spacing-quart;
+        width: $spacing-3;
+        background: $text-color;
+        content: "";
+        display: block;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    li:after {
+        content: " - ";
+    }
+
+    li:last-child:after {
+        content: "";
+    }
 }
-
 
 
 .w200 img,
