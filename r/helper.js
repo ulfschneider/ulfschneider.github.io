@@ -27,7 +27,8 @@ function hasClass(selector, elem) {
     if (selector.charAt(0) === '.') {
         selector = selector.substring(1, selector.length);
     }
-    return (" " + elem.className + " ").indexOf(selector + " ") > -1;
+    return (" " + elem.className + " ")
+        .indexOf(selector + " ") > -1;
 }
 
 function isTag(selector, elem) {
@@ -148,7 +149,8 @@ function moveHeader() {
 function up() {
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     if (scrollTop > 150) {
-        select("#up").style.display = "inline";
+        select("#up")
+            .style.display = "inline";
     }
 }
 
@@ -180,6 +182,8 @@ var delta = 5;
             }
             if (resized) {
                 resized = false;
+                var siteHeader = select("#siteHeader");
+                siteHeader.style.top = 0;
                 breakout();
             }
         }, 250);
