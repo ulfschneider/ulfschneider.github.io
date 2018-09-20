@@ -10,7 +10,6 @@
 	padding: $spacing-third 0;
 	line-height: $spacing-2;
 	background: $background-color;
-	border-bottom: .5px solid $text-color;
 
 	a {
 		color: $text-color;
@@ -42,6 +41,7 @@
 .site-nav {
 	display: block;
 	text-align: center;
+	border-bottom: 1px solid $text-color;
 
 	.page-link {
 		margin: 0 $spacing-third;
