@@ -15,4 +15,4 @@ Most often read:
 
 Probably you are also interested in [allesagil.net](http://allesagil.net), a blog about agility I was writing some years ago in German language.  
 
-If you are looking for faster reading, perhaps these [tweets]({{site.url}}/tweets/) are for you. 
+If you are looking for faster reading, perhaps these [tweets](https://twitter.com/ulfeed) are for you. 
