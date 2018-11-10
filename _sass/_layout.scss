@@ -28,6 +28,10 @@
 		letter-spacing: 1px;
 	}
 
+	.site-nav {
+		border-bottom: 1px solid $text-color;
+	}
+
 	.nositenav {
 		display: block;
 		text-align: center;
@@ -41,7 +45,6 @@
 .site-nav {
 	display: block;
 	text-align: center;
-	border-bottom: 1px solid $text-color;
 
 	.page-link {
 		margin: 0 $spacing-third;
