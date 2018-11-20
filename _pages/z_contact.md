@@ -1,6 +1,5 @@
 ---
 layout: default
-noheader: true
 index: Contact
 footer: true
 permalink: contact/
