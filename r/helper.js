@@ -142,7 +142,7 @@ function moveHeader() {
 
 
     var siteHeader = select("#siteHeader");
-    var headerHeight = siteHeader.clientHeight;
+    var headerHeight = siteHeader.offsetHeight;
 
     siteHeader.style.transition = "top 0.2s ease-in-out";
     if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
