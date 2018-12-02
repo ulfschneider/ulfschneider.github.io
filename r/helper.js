@@ -24,11 +24,22 @@ function wrapperWidth() {
 }
 
 function hasClass(selector, elem) {
-    if (selector.charAt(0) === '.') {
+    if (selector.charAt(0) === ".") {
         selector = selector.substring(1, selector.length);
     }
     return (" " + elem.className + " ")
         .indexOf(selector + " ") > -1;
+}
+
+function addClass(cssClass, elem) {
+    var classes = elem.className.split(" ");
+    if (classes.indexOf(cssClass) == -1) {
+        elem.className += ' ' + cssClass;
+    }
+}
+
+function removeClass(cssClass, elem) {
+    elem.className = elem.className.replace(new RegExp(cssClass, "g"), "");
 }
 
 function isTag(selector, elem) {
@@ -141,6 +152,11 @@ function moveHeader() {
     } else {
         if (scrollTop + windowHeight() < documentHeight()) {
             siteHeader.style.top = 0;
+        }
+        if (scrollTop <= headerHeight) {
+            removeClass("slide-in", siteHeader);
+        } else {
+            addClass("slide-in", siteHeader);
         }
     }
     lastScrollTop = scrollTop;

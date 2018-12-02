@@ -28,10 +28,6 @@
 		letter-spacing: 1px;
 	}
 
-	.site-nav {
-		border-bottom: 1px solid $light-border-color;
-	}
-
 	.nositenav {
 		display: block;
 		text-align: center;
@@ -50,6 +46,10 @@
 		margin: 0 $spacing-third;
 		padding: 3px;
 	}
+}
+
+.slide-in .site-nav {
+	border-bottom: 1px solid $light-border-color;
 }
 
 .site {
