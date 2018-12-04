@@ -7,8 +7,6 @@
 	left: 0;
 	top: 0;
 	right: 0;
-	padding: $spacing-third 0 $spacing-half 0;
-	line-height: $spacing-2;
 	background: $background-color;
 
 	a {
@@ -26,6 +24,7 @@
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+		padding: $spacing-half 0;
 	}
 
 	.nositenav {
@@ -41,6 +40,7 @@
 .site-nav {
 	display: block;
 	text-align: center;
+	padding-bottom: $spacing-half;
 
 	.page-link {
 		margin: 0 $spacing-third;
