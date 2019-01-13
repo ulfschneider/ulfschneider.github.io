@@ -24,8 +24,8 @@
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		padding-top: $spacing-1;
-		padding-bottom: $spacing-half;
+		padding-top: $spacing-half;		
+		line-height: $spacing-2;
 	}
 
 	.nositenav {
@@ -41,7 +41,7 @@
 .site-nav {
 	display: block;
 	text-align: center;
-	padding-bottom: $spacing-half;
+	line-height: $spacing-2;
 
 	.page-link {
 		margin: 0 $spacing-third;
