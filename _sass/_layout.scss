@@ -58,7 +58,7 @@
 	@extend %clearfix;
 }
 
-.index {
+.index {	
 	.page-content {
 		margin-top: $spacing-4;
 	}
@@ -86,6 +86,7 @@
 	}
 
 	.site-nav {
+		line-height: $spacing-1;
 		float: left;
 		padding: 2px $spacing-1 0;
 		background: $background-color;
@@ -96,7 +97,7 @@
 			text-align: left;
 			display: block;
 			margin: 0 0 $spacing-1;
-			padding: 0;
+			padding: 0;			
 		}
 	}
 }
@@ -568,11 +569,18 @@ p.full img {
 
 	.index {
 		.site {
+			float:none;
+			width:100%;
 			text-align: left;
+		}
+
+		.site-nav {
+			width:100%;
 		}
 
 		.page-content {
 			margin-top: $spacing-3;
+			margin-left: 18%;
 		}
 	}
 
