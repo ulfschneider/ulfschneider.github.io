@@ -9,7 +9,7 @@ Essays about my experiences within the agile movement and the agile value system
 
 Most often read:
 
-- [Scrum and Architecture](http://ulf.codes/scrum-and-architecture/)
+- [The balanced organization](http://ulf.codes/balanced-organization/)
 - [The art in our work](http://ulf.codes/art-in-work/)
 - [Self-organization](http://ulf.codes/self-organization/)
 
