@@ -44,7 +44,7 @@
 	line-height: $spacing-2;
 
 	.page-link {
-		margin: 0 $spacing-third;
+		margin: 0 $spacing-half;
 		padding: 3px;
 	}
 }
@@ -67,7 +67,7 @@
 		float: left;
 		background: $text-color;
 		color: $background-color;
-		padding: 2px $spacing-third 0 $spacing-1;
+		padding: 2px $spacing-half 0 $spacing-1;
 		margin-bottom: $spacing-1;
 		text-align: right;
 		width: 28%;
@@ -572,10 +572,12 @@ p.full img {
 			float:none;
 			width:100%;
 			text-align: left;
+			padding: 2px $spacing-half;
 		}
 
 		.site-nav {
 			width:100%;
+			padding: 2px $spacing-half;
 		}
 
 		.page-content {
