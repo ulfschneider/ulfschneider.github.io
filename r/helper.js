@@ -192,14 +192,14 @@ var delta = 5;
         setInterval(function() {
             if (scrolled) {
                 scrolled = false;
-                moveHeader();
+                //moveHeader();
                 up();
                 breakout();
             }
             if (resized) {
                 resized = false;
-                var siteHeader = select("#siteHeader");
-                siteHeader.style.top = 0;
+                //var siteHeader = select("#siteHeader");
+                //siteHeader.style.top = 0;
                 breakout();
             }
         }, 250);

@@ -1,5 +1,6 @@
 {% unless page.noheader %}
 <div id="siteHeader" class="site-header">
+	<div class="left-fill"></div>
 	<div class="wrapper">
 		{% if page.nositenav %}
 			<div class="site-title nositenav"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
@@ -8,5 +9,6 @@
 		{% endif %}
 		{% include navigation.html %}
 	</div>
+	<div class="right-fill"></div>
 </div>
 {% endunless %}

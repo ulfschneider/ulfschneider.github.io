@@ -1,16 +1,9 @@
 ---
 layout: default
+permalink: /
 title: 
-menu: Hi
-index: Hi
-permalink: /hi/
 ---
-
-<div></div>
-{:.portrait}
-Hi,
-
-my name is Ulf Schneider and I live in Paderborn, Germany.
+Hi, my name is Ulf Schneider and I live in Paderborn, Germany.
 
 Here you can find some of my [thoughts]({{site.url}}/thoughts) about agile software development.
 

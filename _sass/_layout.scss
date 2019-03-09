@@ -2,12 +2,8 @@
 * Site header
 */
 .site-header {
-	z-index: 10;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	background: $background-color;
+	font-size: $small-font-size;
+	background: $background-color;	
 
 	a {
 		color: $text-color;
@@ -21,16 +17,14 @@
 
 	.site-title {
 		display: block;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		text-transform: uppercase;		
 		padding-top: $spacing-half;		
-		line-height: $spacing-2;
+		line-height: $spacing-2; //more space for tapping
+		display: inline-block;
 	}
 
 	.nositenav {
 		display: block;
-		text-align: center;
 	}
 
 	.site-description {
@@ -40,11 +34,11 @@
 
 .site-nav {
 	display: block;
-	text-align: center;
 	line-height: $spacing-2;
+	font-size: $small-font-size;
 
 	.page-link {
-		margin: 0 $spacing-half;
+		margin: 0 $spacing-half 0 -3px;
 		padding: 3px;
 	}
 }
@@ -151,7 +145,7 @@
 * Page
 */
 .page-content {
-	margin-top: $spacing-5;
+	margin-top: $spacing-3;
 
 	img {
 		margin: $spacing-2 auto;
