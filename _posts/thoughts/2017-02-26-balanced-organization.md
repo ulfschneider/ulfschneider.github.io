@@ -2,7 +2,7 @@
 layout: default
 title: The balanced organization
 categories: thoughts
-abstract: The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.
+abstract: The agile manifesto defines a collaboration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.
 ---
 
 - **Contents**
@@ -13,7 +13,7 @@ abstract: The agile manifesto defines a collobaration culture. But what if your 
 - [Cultivation culture](#cultivation-culture)
 - [Culture and leadership](#culture-and-leadership)
 - [Content and process](#content-and-process)
-- [What culture am I living in](#what-culture-am-i-living-in)
+- [In what culture am I living](#in-what-culture-am-i-living)
 - [Agile methods and core culture](#agile-methods-and-core-culture)
 - [How to balance the current culture](#how-to-balance-the-current-culture)
 - [References](#references)
@@ -22,7 +22,7 @@ abstract: The agile manifesto defines a collobaration culture. But what if your 
 Core cultures
 ---
 
-In the agile movement, many consider a collaboration culture as a worthwhile goal for any organization and even further assume this goal is shared by the members of those organizations.
+In the agile movement, many consider a collaboration culture as a worthwhile goal for any organization and even further assume the members of those organizations share this goal.
 This assumption is false. For an organization lacking the heritage of a collaboration culture, turning towards agile will bring only limited results and will not produce insights about what is going on behind the scenes.
 
 In general, William Schneider is admitting the possibility of a cultural transformation, but he is also pointing out the difficulty, the risk and the long-term nature (more than ten years) of such an endeavor [Schneider 2000]. Schneider believes that at least 75% of the management has to be convinced about the necessity of a cultural transformation. For this kind of conviction, John Kotter coined the phrase *sense of urgency,* [Kotter 1996]. Such conditions are seldom to be found.
@@ -43,7 +43,7 @@ Schneider differentiates the following four core cultures:
 - Cultivation Culture
 
 Of course, there are more than four organizational cultures, and in reality, probably no organization is identical with another, but with the Core Culture Model reality can be reduced to some important characteristics which play a role in this context.
-Any of the four cultures has specific ways to handle authority, power, leadership, decision making, performance measurement and relations with partners and customers. To understand what that means, let´s go more into detail for each of the core cultures.
+All of the four cultures have specific ways to handle authority, power, leadership, decision making, performance measurement and relations with partners and customers. To understand what that means, let´s go more into detail for each of the core cultures.
 
 Control Culture
 ---
@@ -51,11 +51,11 @@ Control Culture
 The prototype of this culture is the military. The leadership style is dominant. The more the actions of other people can be influenced and controlled, the better. The more subordinates, the better. Markets are being taken by acquiring, not through innovation.
 The system is more important than people. Any person is *“… like a hand in a bucket of water - when the hand is removed, the water closes in, and there is no trace.”* [Schneider 2000:31]
 
-The position inside of the hierarchy gives authority. Decisions are being taken impersonally. Information goes top down and bottom up and less horizontal. Managers will be told what they want to hear from their subordinates. Information hiding is part of this culture. Conflicts are not seen as being healthy and are usually suppressed. Large control cultures tend to be bureaucratic.
+The position inside of the hierarchy gives authority. Decisions are being taken impersonally. Information goes top down and bottoms up and less horizontal. Managers will be told what they want to hear from their subordinates. Information hiding is part of this culture. Conflicts are not seen as being healthy and are usually suppressed. Large control cultures tend to be bureaucratic.
 
 What is now is valued higher than what might be. Predictability counts.
 
-Employees can spend their entire career in one function. People relationships within the same function are close, but relationships between functions tend to be distant and formal. People at the top are taking key decisions, and if at all, only top management has an integrating effect. Employee performance is measured. Rendered performance is being rewarded; failure to perform will be sanctioned. Individual growth is limited to functional expertise.
+Employees can spend their entire career in one function. People relationships within the same function are close, but relations between functions tend to be distant and formal. People at the top are taking crucial decisions, and if at all, only top management has an integrating effect. Employee performance is measured. Rendered performance is being rewarded; failure to perform will be sanctioned. Individual growth is limited to functional expertise.
 
 Innovation rate is low but operational performance can be outstanding. Usually, customers and partners are being ignored, they have to adapt themselves to the system. Ideas for change will quickly be rejected. There is not much room for having fun at work.
 
@@ -71,7 +71,7 @@ Like an orchestra, all individuals try to behave at their best for the optimal o
 
 Relationships with customers are partner-oriented. Customers are part of the team, and much energy is invested in understanding the customers and supply to their real demands and needs.
 
-Ideas and concepts are important, but it is people who are nurtured. Loyalty and trust are essential while politics, infighting and betrayal erode collaboration.
+Ideas and concepts are essential, but it is people who are nurtured. Loyalty and trust are essential while politics, infighting, and betrayal erode collaboration.
 
 Whatever works, is emphasized, particularly what the team decides will work. Pragmatism is part of daily life and initiative of individuals and teams is high. The collaboration culture sees the need for quick change and reacts accordingly. The culture is more tactical than strategic.
 
@@ -89,13 +89,13 @@ Competence Culture
 The prototype of the competence culture is the university. Important are expertise and advancement of knowledge. The motives are excellence, mastery, and achievement of goals. One has to be better than others, has to compete. Authority inside the organization can only be gained through expertise.
 Competence cultures supply their customers with the best product at a high price.
 
-Concepts, ideas and theories are important and people have to follow. Relationships are on the impersonal side and are defined by the task which has to be achieved. Communication style is informal, unemotional and facts based. The organization ensures a lot of individual freedom as people ask for autonomy and the opportunity for personal achievement. People like to be measured and challenged, to prove they are at the top of their craft.
+Concepts, ideas and theories are important, and people have to follow. Relationships are on the impersonal side and are defined by the task which has to be achieved. Communication style is informal, unemotional and facts based. The organization ensures a lot of individual freedom as people ask for autonomy and the opportunity for personal achievement. People like to be measured and challenged, to prove they are at the top of their craft.
 
 While in the control culture operational systematics are put into focus, the competence culture is giving interest to conceptual systematics. Other than in the control culture, lousy quality will not be tolerated in the competence culture. Members of competence cultures hate it to deliver poor quality. Usually, members of competence cultures feel more connected to their profession than to their organization.
 
-The competence culture is a meritocracy. One has to prove and demonstrate competence. One won´t get away with lip service. Behaviour is disciplined and goal oriented. Things will be done right and proper. The search for improvements is never ending, and challenges are welcomed.
+The competence culture is a meritocracy. One has to prove and demonstrate competence. One won´t get away with lip service. Behaviour is disciplined and goal oriented. Things will be done right and proper. The search for improvements is never-ending, and challenges are welcomed.
 
-The competence culture is future-oriented. Strategic considerations are taken seriously, and derived actions will be performed with consequence. Nevertheless, new chances will not be overlooked.
+The competence culture is future-oriented. Strategic considerations are taken seriously, and derived actions will be performed with consequence. Nevertheless, the new chance will not be overlooked.
 
 Leaders are never fully satisfied. They are goal minded and willing to take any decision necessary to achieve those goals. Employees are not bound to a function and move quickly to where their expertise is most suitable for the achievement of a target. Usually, conflicts are handled logical and with reasoning.
 
@@ -117,7 +117,7 @@ Members of the culture are empowered towards autonomy with considerable personal
 
 What could be, is more important than what is. Continuous improvement, as well as ideal solutions, are being searched for and appreciated, while still following values and ethics, which are paramount. Any kind of progress, small or large, will keep things going.
 
-Leaders remove obstacles which would impede others to develop their full potential. They trust their employees, are catalysts and exercise control only at a minimum level. They understand themselves as expanders and not controllers of people. They infuse life into the organization. Eccentricity is allowed. Challenging the status-quo, the questioning of dogmas and traditions, is desired. Often leaders are enthusiastic, positive and insightful. They are charismatic and inspiring and can put values into operation. They are more defined by followership than by hierarchical power. Decisions will be taken quick but can be changed just as quickly. Conflicts will be managed actively as they are perceived to be valuable and possibly enlightening. Communication style is calm and polite; yelling and screaming are not okay. Instead, the thoughtful exploration of differences is.
+Leaders remove obstacles which would impede others to develop their full potential. They trust their employees, are catalysts and exercise control only at a minimum level. They understand themselves as expanders and not controllers of people. They infuse life into the organization. Eccentricity is allowed. Challenging the status-quo, the questioning of dogmas and traditions is desired. Often leaders are enthusiastic, positive and insightful. They are charismatic and inspiring and can put values into operation. They are more defined by followership than by hierarchical power. Decisions will be taken quick but can be changed just as quickly. Conflicts will be managed actively as they are perceived to be valuable and possibly enlightening. Communication style is calm and polite; yelling and screaming are not okay. Instead, the thoughtful exploration of differences is.
 
 Organizational structure is decentralized with minimal lines of authority. People are free and encouraged to interact with anyone else in the organization to create. The presence of goodwill is assumed. Information flows freely. Internal competition is minimal because people will help out one another. Individual talent can grow and move in a rather wide range of directions. This is less true of a collaboration culture. Commitment is very high. Employees do the recruiting. Word-of-mouth brings people in.
 
@@ -134,7 +134,7 @@ Leadership has to be in line with the problem domain the organization is acting 
 Content and process
 ---
 
-William Schneider is classifying his four core cultures by using the dimensions of *content* and *process*. *Content* is what the organization pays attention to; it has the two poles *actuality* and *possibility*. *Process*, on the other hand, describes the communication and decision making process, which is *personal* or *impersonal*.
+William Schneider is classifying his four core cultures by using the dimensions of *content* and *process*. *Content* is what the organization pays attention to; it has the two poles *actuality* and *possibility*. *Process*, on the other hand, describes the communication and decision-making process, which is *personal* or *impersonal*.
 
 ![]({{site.url}}/i/blog/content_and_process.jpg)
 {:.full}
@@ -146,11 +146,11 @@ Control culture and collaboration culture are actuality driven, with collaborati
 
 Competence and cultivation culture are possibility driven, with competence culture being possibility-impersonal and cultivation culture being possibility-personal.
 
-Cultures which differ in content focus *and* decision taking process are most opposite, as they have nothing in common in the dimensions of *content* and *process*. An organizational change from one of these cultures to the opposite other one is the biggest challenge. E.g., a culture change from control culture to cultivation culture will carry the most significant risk and highest effort, the same is true for a change from collaboration culture to competence culture. 
+Cultures which differ in content focus *and* decision taking process are most opposite, as they have nothing in common in the dimensions of *content* and *process*. An organizational change from one of these cultures to the opposite other one is the biggest challenge. E.g., a culture change from a control culture to cultivation culture will carry the most significant risk and highest effort, the same is true for a change from collaboration culture to competence culture. 
 
 It´s more obvious to change to a direct neighbor. It is to decide then what dimension has to be changed. Is it *content* or *process*. Should an actuality driven organization move into possibility driven behavior or should an impersonal deciding organization transform into a personal deciding organization? This depends on what is necessary for the organization to survive and to be successful.
 
-What culture am I living in?
+In what culture am I living?
 ---
 
 The motive to ask about the core culture can be personal or organizational. On an individual basis, you might ask yourself: What is my preferred culture? Does my preferred culture suit with the culture of my current workplace? Am I able to change something with the current culture? Should I leave?
@@ -160,9 +160,9 @@ On the organizational level, the question about the core culture will produce so
 Agile methods and core culture
 ---
 
-A control culture characterises most corporate structures. It is the culture of the last century, for large organizations with a tayloristic production approach with a skilled minority at the top and many followers below which are being told what to do and how to do it. The individual is not so important. Instead, the system is.
+A control culture characterizes most corporate structures. It is the culture of the last century, for large organizations with a tayloristic production approach with a skilled minority at the top and many followers below which are being told what to do and how to do it. The individual is not so important. Instead, the system is.
 
-On the other hand, in the agile movement a collaboration and cultivation culture is propagated. The organization is expected to be smaller and network oriented; people are much more egalitarian and understand their shared goals. Individuals are essential, and skill levels are high. 
+On the other hand, in the agile movement a collaboration and cultivation culture is propagated. The organization is expected to be smaller and network-oriented; people are much more egalitarian and understand their shared goals. Individuals are essential, and skill levels are high. 
 
 Agile [[Beck et al 2001](http://agilemanifesto.org)] is often used as a paramount phrase for methods like [Scrum](http://scrumguides.org), [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), [XP](http://extremeprogramming.org) and even a value system like the Software Craftsmanship movement [[Bradbury et al 2009](http://manifesto.softwarecraftsmanship.org)] is sometimes entitled to be agile. If we take a closer look at these different approaches and map them to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
 
@@ -199,7 +199,7 @@ The next step is to correct the dysfunctions of the process. Is the cycle time t
 Figure: Balance the culture
 {:.figcaption}
 
-To get this working, at least the will to understand and share insights about the current situation, the will for transparency, is absolutely necessary. But this should be inside of the natural range of a control culture, as this culture is actuality-impersonal driven.
+To get this working, at least the will to understand and share insights about the current situation, the will for transparency, is necessary. But this should be inside of the natural range of a control culture, as this culture is actuality-impersonal driven.
 
 The success of the balancing actions is, like always, depending on the dedication of the organization leaders. There might be control cultures which resist any change. 
 
@@ -208,9 +208,9 @@ But with some good will, balancing for the better should be possible inside of a
 References
 ---
 
-[Beck et al. 2001] K. Beck et. al., "Agile Manifesto", 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
+[Beck et al. 2001] K. Beck et al., "Agile Manifesto", 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
 
-[Bradbury et al. 2009] D. Bradbury et. al., "Manifesto for Software Craftsmanship", 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
+[Bradbury et al. 2009] D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
 
 [Cottmeyer 2011] M. Cottmeyer, "Untangling Adoption and Transformation", 2011, [http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation](http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation)
 
