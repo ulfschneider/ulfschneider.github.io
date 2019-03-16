@@ -1,22 +1,22 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$base-font-family:  "Input Sans", Sans-Serif;
+$base-font-family:  "IBM Plex Sans", Sans-Serif;
 $base-font-weight: normal;
-$thin-font-family: "Input Sans Thin", Sans-Serif;
+$thin-font-family: "IBM Plex Ans", Sans-Serif;
 $thin-font-weight: normal;
-$title-font-family: "Input Sans", Sans-Serif;
+$title-font-family: "IBM Plex Sans", Sans-Serif;
 $title-font-weight: bold;
-$subtitle-font-family: "Input Sans", Sans-Serif;
+$subtitle-font-family: "IBM Plex Sans", Sans-Serif;
 $subtitle-font-weight: normal;
-$code-font-family: "Source Code Pro", Monospace;
+$code-font-family: "IBM Plex Mono", Monospace;
 $code-font-weight: normal;
 
 
-$base-font-size:   17px;
+$base-font-size:   18px;
 $small-font-size: 15px;
 $extra-small-font-size: $base-font-size / 1.62;
-$palm-base-font-size: 16px;
+$palm-base-font-size: 17px;
 $large-font-size: $base-font-size * 1.62;
 $enlarged-font-size: $base-font-size + 2px;
 $large-line-height:1em * 1.62;
