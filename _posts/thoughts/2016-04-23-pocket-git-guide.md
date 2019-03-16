@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Pocket Git Guide
-subtitle: A brief entry-level approach to Git
+subtitle: A short entry-level approach to Git
 categories: thoughts
-abstract: A brief entry-level approach to Git. 
+abstract: A short entry-level approach to Git. 
 ---
 
 - **Contents**
@@ -66,13 +66,13 @@ Git is free. You can get Git for any platform at [git-scm.com/downloads](https:/
 
 Get Git on your Mac
 ---
-Personally I find it a little bit faster and more comfortable to use the [GitHub Desktop Installer](https://desktop.github.com) for setting up Git on either Mac or Windows.
+I find it a little bit faster and more comfortable to use the [GitHub Desktop Installer](https://desktop.github.com) for setting up Git on either Mac or Windows.
 
 On a Mac, after installation, fire up GitHub Desktop, open the Preferences screen, go to the advanced tab and activate *Install Command Line Tools* to have the Git shell on your Mac. If you are using GitHub Desktop the first time, you can either install the command line tools from the welcome screen of GitHub Desktop.
 
 Though not mandatory, for an improved Git experience in the shell, I like to have the following configured:
 
-- The credential helper to cache my username and password so I don´t have to provide it over and over again when using the https port while connecting to Git servers. See [Caching Your Git Password](https://help.github.com/articles/caching-your-github-password-in-git/) for installation advice.
+- The credential helper to cache my username and password, so I don´t have to provide it over and over again when using the https port while connecting to Git servers. See [Caching Your Git Password](https://help.github.com/articles/caching-your-github-password-in-git/) for installation advice.
 
 - Bash Git Completion for an improved command prompt and command completion with the tab key. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it set up (it includes a Git installation via homebrew, but you won´t need that one if you already installed GitHub Desktop like mentioned before). In addition to the explanations given, put the following lines to your `.bash_profile` to improve your command prompt:
 
@@ -93,7 +93,7 @@ The Git shell
 
 > No matter what platform you are using, all of the examples in this document are to be run from inside a command shell with access to Git.
 
-You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Anyway an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. And I assume it´s not so bad to start at the bottom to understand the tool right.
+You can use a slick GUI client on top of Git, like for example [Tower](https://www.git-tower.com) on a Mac or the reduced [GitHub Desktop](https://desktop.github.com). Sometimes things go faster and easier with a GUI client. Anyway, an advantage of the command shell is, it works the same on all platforms. What you learned here can be used anywhere. I assume it´s not so bad to start at the bottom to understand the tool right.
 
 Tell Git who you are
 ---
@@ -108,7 +108,7 @@ Detect your configuration settings with `git config --list`.
 
 Get help from Git
 ---
-You can type `git help <command>` to get access to a user documentation about the specified `<command>`. To only get a short info about the command syntax, use `git <command> -h`.
+You can type `git help <command>` to get access to user documentation about the specified `<command>`. To only get short info about the command syntax, use `git <command> -h`.
 
 Create a new local repository
 ---
@@ -116,7 +116,7 @@ Move to the folder which should contain your project `cd /path/to/your/prj/`, th
 
 Status of your repository
 ---
-When inside of a local Git repository `git status` will tell you what branch you are currently working on and give you an overview about untracked changes and outstanding commits.
+When inside of a local Git repository `git status` will tell you what branch you are currently working on and give you an overview of untracked changes and outstanding commits.
 
 Working, staging and committing
 ---
@@ -130,7 +130,7 @@ Figure: Git produces snapshots of your entire project
 
 While you are working, Git divides your content into three main sections. Your working directory, your staging area (often referred to as *index*) and your committed work. 
 
-- Your working directory is simply the set of files and folders you operate on - your project.
+- Your working directory is merely the set of files and folders you operate on - your project.
 - The staging area is the set of changes which should go into the next commit.
 - Once you commit, Git will take the contents from the staging area and create a snapshot in the Git repository, which is then the committed revision of your project at the time of the commit. 
 
@@ -146,7 +146,7 @@ To prepare a snapshot of your current work, which will be stored in the Git repo
 
 `<pathspec>` specifies the files to be put into the staging area (the index). Wildcards are allowed. 
 
-If a version of a file is not staged, Git doesn´t know how to refer to that version of the file and therefore you can´t commit it later on. Staged but uncommitted content remains only on your local computer and will not be send to a remote repository somewhere else. 
+If a version of a file is not staged, Git doesn´t know how to refer to that version of the file and therefore you can´t commit it later on. Staged but uncommitted content remains only on your local computer and will not be sent to a remote repository somewhere else. 
 
 If you omit the `<pathspec>`, use `git add --all` which will ensure all untracked files in your current project are being added to your staging area.
 
@@ -155,7 +155,7 @@ The opposite of `git add` is `git reset <pathspec>`. With `git reset` you can un
 
 If you created files or directories without staging them, and you want to get rid of them, use `git clean [-ifd]`.
 
-`-i` shows what would be done and clean files interactively.
+`-i` show what would be done and clean files interactively.
 
 `-f` if the git config `clean.requireForce false` is not set, this option is needed to proceed with the command.
 
@@ -166,15 +166,15 @@ Commit to make a snapshot of your work
 
 You will commit very often, multiple times a day, sometimes within in minutes. It is the action you do most of the time when using Git.
 
-Do not commit half-done, not-functioning work. Any commit should be a tiny solution for its own. As an example, a commit can contain the refactoring of a single method in your code or the rephrasing of a paragraph in a text document.
+Do not commit half-done, not-functioning work. Any commit should be a small solution for its own. As an example, a commit can contain the refactoring of a single method in your code or the rephrasing of a paragraph in a text document.
 
-Contents which have been staged must be committed to produce a snapshot of your current work in the Git repository. Any commit is self-contained, it does not only reference your current changes, but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the most recent commit, the *tip*, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
+Contents which have been staged must be committed to produce a snapshot of your current work in the Git repository. Any commit is self-contained, it does not only reference your current changes but everything which makes up the state of your current project at the time you are committing. This is because each commit contains a pointer to its direct predecessor, the parent commit. Beginning at the most recent commit, the *tip*, the list of commits is a sequence pointing to the past, defining your entire project at the current time.
 
 Commit with `git commit [-a] [-m "your commit message"]`.
 
-`-a` is a nice shorthand option to even stage content which has been modified or deleted without a previous `git add` command. New contents still need to be staged with the `git add` command. With `-m "your commit message"` you tell your co-workers and probably yourself why you made the commit.
+`-a` is a nice shorthand option even to stage content which has been modified or deleted without a previous `git add` command. New contents still need to be staged with the `git add` command. With `-m "your commit message"` you tell your co-workers and probably yourself why you made the commit.
 
-An even shorter form of committing in that case is `git commit -am "your commit message"`.
+An even shorter form of committing, in that case, is `git commit -am "your commit message"`.
 
 Here the option to stage modified and deleted contents and the option to provide a commit message are combined in one option `-am`. You can combine multiple options in a single one like here, the only restriction is that only the last option can take an argument, like the commit message. 
 
@@ -196,7 +196,7 @@ A list of available formatting options is on [git-scm.com/docs/pretty-formats](h
 
 The commit message
 ---
-A `git log` of commit messages should give an idea how the project has evolved over time. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
+A `git log` of commit messages should give an idea of how the project has evolved. Each message explains *what* has been accomplished or changed with the commit. The message should describe a whole idea of completed work [[Westby 2014]](https://24ways.org/2014/dealing-with-emergencies-in-git/). Don´t describe *how* the change was accomplished - that´s in the code.
 
 A properly formed commit subject line should complete the following sentence:
 
@@ -204,7 +204,7 @@ A properly formed commit subject line should complete the following sentence:
 
 The commit messages reveal whether a committer is a good collaborator or not.
 
-Because in the output of a `git log` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or less characters. Start the subject with a capital letter and do not end with a period. 
+Because in the output of a `git log` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or fewer characters. Start the subject with a capital letter and do not end with a period. 
 
 Use the imperative mood, which means "spoken or written as if giving a command or instruction". Examples:
 
@@ -212,7 +212,7 @@ Use the imperative mood, which means "spoken or written as if giving a command o
 - No underline for slide navigation
 - Increase line height by a factor of 0.1
 
-If more explanation is needed, let the subject be followed by a blank line and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. 
+If more explanation is needed, let a blank line follow the subject and then write the body of the commit message, wrapped at 72 characters per line, as Git will not wrap text automatically. Explain *why* the commit was made, again, not *how*. 
 
 In other words, follow the seven rules of a great Git commit message
 [[Beams 2014]](http://chris.beams.io/posts/git-commit/#separate):
@@ -221,15 +221,15 @@ In other words, follow the seven rules of a great Git commit message
 2. Limit the subject to 50 characters
 3. Capitalize the subject line
 4. Do not end the subject line with a period
-5. Separate the subject from the the body with a blank line
+5. Separate the subject from the body with a blank line
 6. Wrap the body at 72 characters
 7. Use the body to explain *what and why* vs. *how*
 
 Removing files
 ---
-To remove a file from the working copy and from the staging index, use `git rm <pathspec>`.
+To delete a file from the working copy and the staging index, use `git rm <pathspec>`.
 
-`<pathspec>` describes the file or even files (wildcards allowed), which should be deleted. `git rm` will remove the file in your working copy and will stage the remove, so that the removal can be committed in a subsequent commit. If you forgot to use `git rm` at first hand and instead removed the file with your usual remove command in the shell, the file will be removed from the working copy, but not from the staging index. In that case you can even call `git rm <pathspec>` afterwards, in order to have the file be removed from the index, as it is already removed from the file system.
+`<pathspec>` describes the file or even files (wildcards allowed), which should be deleted. `git rm` will remove the file in your working copy and will stage the remove so that the removal can be committed in a subsequent commit. If you forgot to use `git rm` at first hand and instead removed the file with your usual remove command in the shell, the file will be removed from the working copy, but not from the staging index. In that case, you can even call `git rm <pathspec>` afterward, to have the file be removed from the index, as it is already removed from the file system.
 
 Renaming files
 ---
@@ -244,11 +244,11 @@ Or, use the suitable Git command right from the start: `git mv a.txt b.txt` whic
 
 Ignoring files
 ---
-If some files in your project should be ignored by Git, for example because
+If Git should ignore some files in your project, for example, because
 
-- the files are automatically created by a process belonging to your project, 
+- a process belonging to your project automatically creates the files, 
 - the files contain credentials or
-- the files are anyway downloaded by package managers,
+- package managers anyway download the files,
 
 you can specify patterns inside of the `.gitignore` file to exclude these from Git version control. Each pattern is one line in the `.gitignore` file. The `.gitignore` usually is in the root of your Git project.
 
@@ -276,19 +276,19 @@ Branch to isolate
 ---
 Any contents in Git must be in a branch. The first branch of a Git repository is the *master* branch. Technically it is a branch like all other branches, but conceptually it is the primary, stable version of whatever is stored in the repository. 
 
-A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would make a branch to experiment with some new feature inside of your project, to fix a bug or to do other things which you want to have separated from everything else until you have truly found what you are after in your branch. 
+A commit will always be done inside of a particular branch. But while commits point to the past, a branch is a concept for the future. A branch is a virtual copy of your project, where commits can be made freely in isolation from whatever else may happen in the repository. You would create a branch to experiment with some new feature inside of your project, to fix a bug or to do other things which you want to have separated from everything else until you have indeed found what you are after in your branch. 
 
-While you can have multiple branches in your repository, there is always exact one working branch in your local repository, which is the one you are currently working on. This is what is in your *working directory* or *working copy*. Any commit you make will be against the working branch.
+While you can have multiple branches in your repository, there is always exactly one working branch in your local repository, which is the one you are currently working on. This is what is in your *working directory* or *working copy*. Any commit you make will be against the working branch.
 
 `git branch <branch-name> [<commit>]` will create a new branch for you. Choose a short descriptive branch name. The optional `<commit>` specifies a commit to start from. If you don´t give the `<commit>`, the branch will be created from the latest commit in the current branch.
 
 ![]({{site.url}}/i/blog/git_new_branch.jpg)
 {:.full}
 
-Figure: Creating a new branch with name 'lazyload'
+Figure: Creating a new branch with the name 'lazyload'
 {:.figcaption}
 
-`git branch <branch-name>` will not make the new created branch your current working copy, therefore your next commit would not be against the new branch. In order to make the new branch the active working copy, you need to `git checkout <branch-name>
+`git branch <branch-name>` will not make the newly created branch your current working copy; therefore your next commit would not be against the new branch. To make the new branch the active working copy, you need to `git checkout <branch-name>
 ` after you have created your branch. Whatever you commit from that point on will be inside of your new branch and nowhere else.
 
 Again, there is a shorthand command for creating a branch and making it the current working copy all at once: `git checkout -b <branch-name>` will create a new branch and make it the current working copy.
@@ -322,11 +322,11 @@ Your branch is ahead of 'origin/<branch-name>' by 1 commit.
 
 Git has figured out a difference between your local branch and its counterpart, the remote tracking branch.
 
-Remote tracking branches are named *origin/&lt;branch-name&gt;*. Don´t checkout such a branch via ```git checkout origin/<branch-name>``` - instead do `git checkout <branch-name>` to make the remote tracking branch a local branch.
+Remote tracking branches are named *origin/&lt;branch-name&gt;*. Don´t checkout such a branch via ```git checkout origin/<branch-name>``` - instead, do `git checkout <branch-name>` to make the remote tracking branch a local branch.
 
 To see the history of commits in a branch-oriented tree format, use `git log --graph --oneline`.
 
-The `--graph` option will produce the branch tree and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
+The `--graph` option will produce the branch tree, and the `--oneline` option leads to each commit being displayed in a single line of the tree structure.
 
 Compare your working directory
 ---
@@ -337,15 +337,15 @@ Compare your working directory
 
 `git diff <older-commit> <newer-commit>` will indicate the differences between the two commits.
 
-I find myself every now and then using one of the two options `--stat` or `--color-words` in conjunction with any of the above `git diff` commands.
+I find myself now and then using one of the two options `--stat` or `--color-words` in conjunction with any of the above `git diff` commands.
 
-`--stat` will display a short statistic of changed files with numbers of lines added and removed. 
+`--stat` will display a little statistic of changed files with numbers of lines added and removed. 
 
-`--color-words` will indicate changes in files word by word, instead of line by line, which is default.
+`--color-words` will indicate changes in files word by word, instead of line by line, which is the default.
 
 Merge to include
 ---
-Sometimes the work which has been done in a branch will be thrown away. You delete the branch and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for. All commits that have been made in your source branch have to be merged into your master branch.
+Sometimes the work which has been done in a branch will be thrown away. You delete the branch, and everything is as if the branch never existed. If you don´t want to throw away your work, you probably have to bring the contents of your branch into the master branch. That´s what merge is for. All commits that have been made in your source branch have to be merged into your master branch.
 
 To merge any branch into your master branch, you have to
 
@@ -354,7 +354,7 @@ git checkout master
 git merge <source-branch-name>
 ```
 
-The first command will bring you into the master branch, the second command will pull in the changes from the source branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy by
+The first command will bring you into the master branch; the second command will pull in the changes from the source branch into the master branch. The principle is always the same - make the branch into which you want to merge the working copy and then pull changes from any other branch into your working copy by
 
 ```
 git checkout <destination-branch-name>
@@ -363,7 +363,7 @@ git merge <source-branch-name>
 
 To be more precise, all commits from your source branch will be merged into your working copy, which is the checked out branch.
 
-The simplest kind of merge is, if nothing had been changed in the destination branch while you were working inside of the source branch.
+The simplest kind of merge is if nothing had been changed in the destination branch while you were working inside of the source branch.
 
 ![]({{site.url}}/i/blog/git_fast_forward.jpg)
 {:.full}
@@ -371,7 +371,7 @@ The simplest kind of merge is, if nothing had been changed in the destination br
 Figure: Fast-forward merge of 'lazyload' into 'master' branch 
 {:.figcaption}
 
-In this case any changes made in the source branch will entirely be added to the destination branch, which is called *fast-forward*. The tip (last commit, or head commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
+In this case, any changes made in the source branch will entirely be added to the destination branch, which is called *fast-forward*. The tip (last commit, or head commit) of the destination branch and the tip of the source branch will point to the same commit then, which is the last commit that was made in the source branch. After that, both branches, the source branch and the destination branch, are identical except in their branch names.
 
 A *true merge* is something different. That´s when both, the source branch and the destination branch, have been modified before merging. 
 
@@ -381,7 +381,7 @@ A *true merge* is something different. That´s when both, the source branch and 
 Figure: 'master' and 'lazyload' have been modified - a true merge is needed
 {:.figcaption}
 
-A fast-forward then is no longer possible and Git has to figure out the combined state of the content, wich will lead to a so called *merge commit*. 
+A fast-forward then is no longer possible, and Git has to figure out the combined state of the content, which will lead to a so-called *merge commit*. 
 
 ![]({{site.url}}/i/blog/git_merge_commit.jpg)
 {:.full}
@@ -399,9 +399,9 @@ Figure: A true merge goes line-by-line
 
 As long as the branches don´t both contain changes to the same line, Git will merge and commit automatically with a generated commit message: `Merge branch '<source-branch-name>' into '<destination-branch-name>'.`
 
-Unlike a normal commit, which has one parent commit, a merge commit has two parent commits. 
+Unlike a regular commit, which has one parent commit, a merge commit has two parent commits. 
 
-Now, when two modified lines of the same file are overlapping during a merge, a *merge conflict* occurs. Git can not automatically solve this conflict. Instead Git indicate the conflict in the console
+Now, when two modified lines of the same file are overlapping during a merge, a *merge conflict* occurs. Git can not automatically solve this conflict. Instead, Git indicate the conflict in the console
 
 ```
 CONFLICT (content): Merge conflict in <conflicting-file-name-in-destination-branch>
@@ -424,7 +424,7 @@ To resolve the conflict, this entire section, including the angle brackets, need
 Remove or rename a branch
 ---
 
-Sometimes you want to remove a branch, e.g. after all work is done and the branch has been merged into the master. In order to go ahead, use `git branch -d <branch-to-delete>` to remove your local branch. To remove a remote branch (refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)), use `git push origin --delete <branch-to-delete>`. 
+Sometimes you want to remove a branch, e.g., after all work is done and the branch has been merged into the master. In order to go ahead, use `git branch -d <branch-to-delete>` to remove your local branch. To remove a remote branch (refer to [Working with remotes to share with a team](#working-with-remotes-to-share-with-a-team)), use `git push origin --delete <branch-to-delete>`. 
 
 A rename of the current local branch can be achieved by `git branch -m <new-branch-name>`.
 
@@ -439,7 +439,7 @@ the second push with the `--delete` option will remove the old branch from the r
 
 Rewind your work
 ---
-The `git checkout` can not only be used to checkout an entire branch to drive further the work in this isolated branch. `git checkout` is also a way to go back in the history of your work. 
+The `git checkout` can not only be used to checkout an entire branch to drive further the work in this separate branch. `git checkout` is also a way to go back to the history of your work. 
 
 `git checkout <commit hash>` will set your working directory into the state of the commit referred to with the commit hash (the code you see for each entry in the `git log`, something like c04ff32). You are working then in the so-called *detached HEAD* state. Git will inform you about *detached HEAD* with the following output:
 
@@ -461,13 +461,13 @@ HEAD is now at c04ff32... New image for git committing over time
 
 Another way to use `git checkout` is to use it for files. 
 
-`git checkout <pathspec>` will bring the file which is described by `<pathspec>` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the the changes of other files you just modified in your working directory.
+`git checkout <pathspec>` will bring the file which is described by `<pathspec>` from the head of your current branch back into your working directory. This is useful to revert changes you did on a file while keeping the changes of other files you just modified in your working directory.
 
 Working with remotes to share with a team
 ---
-The Git working mode is offline by default. This is nice, because you don´t need to have an account to sign in somewhere, you just can start working with your repository. 
+The Git working mode is offline by default. This is nice because you don´t need to have an account to sign in somewhere, you can start working with your repository. 
 
-A remote in the Git world is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually synchronize with the remote repository on the hub server by *pulling* and *pushing* committed content.
+A remote in the Git world is a physical copy of a repository. It may be on the same computer as the repository it was copied from (copying is named *cloning* in Git) or on a different computer far away. The essential part is, you can exchange data between the two repositories and keep them synchronized. Usually, a remote repository is placed on a server which is accessible by your team. Any new teammate initially will clone the repository from the server to his or her local machine. The Git name for this remote repository is usually *origin*. The origin has nothing special and is not distinct from the local repositories on the machines of each team member, except only by convention it is used as a hub to which the team members connect to synchronize their work with all others. This will happen in a way that team members are working locally on their own computers and eventually sync with the remote repository on the hub server by *pulling* and *pushing* committed content.
 
 ![]({{site.url}}/i/blog/git_hub.jpg)
 {:.full}
@@ -475,7 +475,7 @@ A remote in the Git world is a physical copy of a repository. It may be on the s
 Figure: Origin is a hub by convention
 {:.figcaption}
 
-Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories, because no one is working directly on the remote repository. To indicate a bare repository usually *.git* is being appended to the name of the repository.
+Remote repositories are usually *bare* repositories, they have no staging area and no working copy like local repositories because no one is working directly on the remote repository. To indicate a bare repository usually *.git* is being appended to the name of the repository.
 
 A remote may be on [GitHub](https://github.com) or on a self-hosted system you want to use as a hub.
 
@@ -497,7 +497,7 @@ http[s]://host.xz[:port]/path/to/repo.git
 
 The first protocol is the *local* protocol. This is useful if the remote repository will reside on a shared filesystem to which every team member has access. The other protocols are obviously *ssh, git* and *http*. To learn more about these, please refer to ["Git on the server - the protocols"](https://git-scm.com/book/tr/v2/Git-on-the-Server-The-Protocols). 
 
-Sometimes you try access a server via https and the server is using a self-signed certificate. Git won´t accept this certificate but if you are sure about the server, for example because the server is placed in your local intranet, one possible solution is the following configuration in Git:
+Sometimes you try to access a server via https, and the server is using a self-signed certificate. Git won´t accept this certificate but if you are sure about the server, for example, because the server is located in your local intranet, one possible solution is the following configuration in Git:
 
 ```
 cd /path/to/your/repo
@@ -518,26 +518,26 @@ which will display the *fetch* and *push* addresses being bound to the symbolic 
 Push data to remote
 ---
 
-If you are working on your local project and committed your changes to a branch you want to bring to the remote repository now, the general Git command format is `git push <remote> <remote-branch-name>`. This will push the contents of the local branch, your current working copy, into the `<remote-branch-name>` on the remote repository.
+If you are working on your local project and committed your changes to a branch you want to bring to the remote repository now; the general Git command format is `git push <remote> <remote-branch-name>`. This will push the contents of the local branch, your current working copy, into the `<remote-branch-name>` on the remote repository.
 
 Assuming you worked on a branch named *lazyload* and are currently on that local branch, your command is `git push origin lazyload`.
 
-As already mentioned, remote repositories do not have working copies or staging areas and no humans who will resolve merge conflicts. Therefore, if you push to a remote and Git can not merge with a simple *fast-forward*, the push will be rejected by Git. The situation needs to be fixed by pulling down the changes from the remote and then trying to push again.
+As already mentioned, remote repositories do not have working copies or staging areas and no humans who will resolve merge conflicts. Therefore, if you push to a remote and Git can not merge with a simple *fast-forward*, Git will reject the push. The situation needs to be fixed by pulling down the changes from the remote and then trying to push again.
 
-The local branch names and the remote branch names are not related in Git. Even though they share the same name, Git doesn´t know that they logically represent the same piece of work. Therefore in each push you have to tell Git to what branch on the remote you want to push. You can configure each local branch of your Git to *track* its remote counterpart. Once you have done it for a branch, you can push and pull against the remote just by typing `git push` and `git pull` without further specifying the remote and remote branch name.
+The local branch names and the remote branch names are not related in Git. Even though they share the same name, Git doesn´t know that they logically represent the same piece of work. Therefore in each push, you have to tell Git to what branch on the remote you want to push. You can configure each local branch of your Git to *track* its remote counterpart. Once you have done it for a branch, you can push and pull against the remote just by typing `git push` and `git pull` without further specifying the remote and remote branch name.
 
 Specify the tracking with `git push -u origin lazyload` or, generally `git push -u <remote> <remote-branch-name>`.
 
 `-u` (alternatively `--set-upstream`) is the option which will set up the tracking relationship between your current local branch and the remote branch. You only need to do it once per local branch.
 
-A very specific case of pushing is to remove a branch from the remote, as the removing of local branch doesn´t remove the branch on the remote. The command goes `git push origin --delete <remote-branch-name>`.
+A particular case of pushing is to remove a branch from the remote, as the removing of the local branch doesn´t remove the branch on the remote. The command goes `git push origin --delete <remote-branch-name>`.
 
 Pull data from remote
 ---
 
-If you want to get the latest changes, e.g. from the *lazyload* branch on the remote repository, into your local branch, call `git pull origin lazyload` or, in general `git pull <remote> <remote-branch-name>`.
+If you want to get the latest changes, e.g. from the *lazyload* branch on the remote repository, into your local branch, call `git pull origin lazyload` or, in general, `git pull <remote> <remote-branch-name>`.
 
-Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage and commit your change and push then to the remote.
+Git will automatically merge the remote changes into your local branch. In case of a merge conflict, resolve the conflict marker in your local branch, stage, commit your change and push to the remote.
 
 The big picture
 ---
@@ -548,7 +548,7 @@ Figure: Git commands and their fields of operation
 Command reference
 ---
 
-The following list is by far not complete. Though I found myself using these commands and options most often. For a more complete list please refer to [git-scm.com/docs/](https://git-scm.com/docs/).
+The following list is by far not complete. Though I found myself using these commands and options most often, for a complete list, please refer to [git-scm.com/docs/](https://git-scm.com/docs/).
 
 <div class="grid bottom-space">
 <div class="col-1-3 first">
