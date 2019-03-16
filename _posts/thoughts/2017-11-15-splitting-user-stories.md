@@ -55,6 +55,6 @@ Try the following patterns to split your User Stories:
 
 # Concerns
 
-Of course, there are teams considering the splitting process to be wasteful and instead of finding the implementation of a not-splitted functionality to its completeness to be more straightforward and efficient. Recalling one of the named advantages from the beginning: Smaller pieces allow faster feedback. Correction at an early point is more direct, much cheaper and will improve your results.
+Of course, there are teams considering the splitting process to be wasteful and instead of finding the implementation of an unsplit functionality to its completeness to be more straightforward and efficient. Recalling one of the named advantages from the beginning: Smaller pieces allow faster feedback. Correction at an early point is more direct, much cheaper and will improve your results.
 
 Everything in agile software development is about feedback and results. This is because learning is an outcome of feedback and learning on all levels (individual and team) is considered to be the essential ingredient of good software development. Therefore you should give splitting a try!
