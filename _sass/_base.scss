@@ -210,11 +210,13 @@ code {
 	display: inline;
 	background: #dddbd8;
 	border-radius: 2px;
+	font-size: $small-font-size;
 }
 
 pre.highlight {
 	@extend %vertical-rhythm;
 	font-family: $code-font-family;
+	font-size: $small-font-size;
 	overflow: auto;
 	display: block;
 	background: #dddbd8;
