@@ -36,7 +36,7 @@ By Seth Godin's definition an artist is
 
 > … someone who uses bravery, insight, creativity, and boldness to challenge the status quo. And an artist takes it personally. [Godin 2010:83]
 
-Art is not decoration, and it is a motor of change. And art will only be made by artists. In this sense, the heads behind the agile movement can be seen as artists.
+Art is not decoration - it is a motor of change. And art will only be made by artists. In this sense, the heads behind the agile movement can be seen as artists.
 
 This interpretation of art in work is not only about individual expertise, but it is also about cooperation and social capabilities. Expertise and cooperation bring us to an up-movement, while in the opposite incompetence and egoistic driven acting bring us into a down-movement.
 
