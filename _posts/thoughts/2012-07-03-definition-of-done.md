@@ -16,7 +16,7 @@ E.g., a short list of possible steps that are needed to get a piece of software 
 
 |Work steps|
 |----------|
-|Requirement in User Story syntax|
+|The requirement in User Story syntax|
 |Discussion about solution|
 |Testcases developed|
 |Implemented|
@@ -29,7 +29,7 @@ E.g., a short list of possible steps that are needed to get a piece of software 
 |Deployed|
 |Documented|
 
-The team has to discuss, negotiate and conclude on the proper work steps. As a result, the team earns a clear understanding of "done" software in the specific context. This is an important contract to ensure not to break the product during iterated delivery and to have defined quality for any "done" piece of software in each iteration.
+The team has to discuss, negotiate and conclude on the proper work steps. As a result, the team earns a clear understanding of "done" software in a specific context. This is an important contract to ensure not to break the product during iterated delivery and to have defined quality for any "done" piece of software in each iteration.
 
 > Write down your current *Definition of Done* and provide it somewhere so that anyone can immediately access it. Make it explicit. Stick to it. 
 
@@ -39,7 +39,7 @@ This will show very soon if the right people with the right skills to deliver ar
 
 If the team cannot perform some work steps, it needs to be decided if the team has to reshape with different team members or if interface contracts with *external* providers are to be concluded on. The definition of interfaces will anchor the team inside the surrounding organization. This not only makes clear the external dependencies of the team but also gives a lever to change the organization. Many external interfaces provide a hint that the team structure is not optimal to get the work done.
 
-The delivery team as a whole is responsible for performing the work steps and for delivering "done" work. Albeit, usually for some tasks specialized skills are needed, and only some of the team members can perform these tasks. This is backed up with some good reasons. E.g., the appropriation of the relevant knowledge takes a lot of time and energy - sometimes a work life - or because the task is so complex that interdisciplinary collaboration of different team members is required. To understand team responsibility in terms of *everyone in the team can do everything* is an error in reasoning. Instead, the team should focus on fearless communication and leverage different talents. Use the differences and find ways to come together.  Heterogenous tasks demand heterogenous teams. Keep up the professions because the work ethics that typically come along with a profession will enhance the teams' capabilities.  
+The delivery team as a whole is responsible for performing the work steps and for delivering "done" work. Albeit, usually for some tasks specialized skills are needed, and only some of the team members can perform these tasks. This is backed up with some good reasons. E.g., the appropriation of the relevant knowledge takes a lot of time and energy - sometimes a work life - or because the task is so complex that the interdisciplinary collaboration of different team members is required. To understand team responsibility in terms of *everyone in the team can do everything* is an error in reasoning. Instead, the team should focus on fearless communication and leverage different talents. Use the differences and find ways to come together.  Heterogenous tasks demand heterogenous teams. Keep up the professions because the work ethics that typically come along with a profession will enhance the teams' capabilities.  
 
 I do not speak for total specialization with only one specialist for each work step. Where ever possible, work should be performed by the next team member who can do it. Everyone should be prepared to help out each other. But to demand everyone in the team being able to do the same things, in my impression would mean that the team can do only average work. Talents in their specific area of competency can perform better and achieve more. 
 
