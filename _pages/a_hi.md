@@ -14,4 +14,4 @@ In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.). Thro
 - Sun: SCJP, SCWCD, SCBCD
 - Lotus: Principal Application Developer, Principal System Administrator
 
-I am [riding race bikes]({{site.url}}/after-ride-party) and the [Bullitt]({{site.url}}/2016-10-02/) together with my boy [Emil]({{site.url}}/2016-09-25-2/). Now and then I´m taking [photographs]({{site.url}}/photography).
+I am [riding race bikes]({{site.url}}/after-ride-party) and the [Bullitt]({{site.url}}/2016-10-02/) together with my boy [Emil]({{site.url}}/2016-09-25-2/). Now and then I am taking [photographs]({{site.url}}/photography).
