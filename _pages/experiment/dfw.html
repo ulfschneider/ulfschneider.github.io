@@ -6,8 +6,8 @@ permalink: /dfw/
 
 <head>
     <title>DFW</title>
-   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 </head>
 
 <body>
@@ -16,6 +16,7 @@ permalink: /dfw/
             outline: none;
             color: #004b87;
             font-family: 'IBM Plex Sans', sans-serif;
+            line-height: 1.62em;
         }
 
         body {
@@ -46,7 +47,7 @@ permalink: /dfw/
             max-width: 100%;
             border: none;
             border-bottom: 1px solid #004b87;
-            font-weight: 600;            
+            font-weight: 600;
         }
 
         .navigation {
@@ -84,6 +85,18 @@ permalink: /dfw/
         .navigation ul li:last-child {
             margin: 0;
         }
+
+        @media only screen and (max-width: 500px) {
+            .navigation h1 {
+                float: unset;
+                display: block;
+                margin-bottom: 1em;
+            }
+            .navigation ul {
+                display:block;
+                margin: 0;                
+            }
+        }
     </style>
 
     <div class="navigation">
@@ -93,7 +106,7 @@ permalink: /dfw/
                 <li><a href="#">Quickstart</a></li>
                 <li><a href="#">Documentation</a></li>
                 <li><a href="#">Support</a></li>
-                <li>Search: <input id="search" type="text" autocomplete="off"/></li>
+                <li>Search: <input id="search" type="text" autocomplete="off" /></li>
             </ul>
         </div>
     </div>
