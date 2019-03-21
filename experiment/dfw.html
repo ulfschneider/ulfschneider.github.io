@@ -11,13 +11,11 @@ permalink: /dfw
 
 <body>
     <style>
-
         * {
-        outline: none;
-        overflow-y: scroll;
-        color: #004b87;
-        font-family: 'IBM Plex Sans', sans-serif;
-    }
+            outline: none;
+            color: #004b87;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
 
         body {
             margin: 0;
@@ -42,13 +40,12 @@ permalink: /dfw
 
         #search {
             font-size: 19px;
-            line-height: 1em;
-            padding:0;
-            margin:0;
+            padding: 0;
+            margin: 0;
             max-width: 100%;
             border: none;
             border-bottom: 1px solid #004b87;
-            font-weight: 600;
+            font-weight: 600;            
         }
 
         .navigation {
@@ -61,11 +58,11 @@ permalink: /dfw
             margin: auto;
         }
 
-        .navigation  h1 {
+        .navigation h1 {
             float: left;
             display: inline;
             line-height: 1em;
-            margin:0;
+            margin: 0;
             padding: 0;
         }
 
@@ -94,7 +91,7 @@ permalink: /dfw
                 <li><a href="#">Quickstart</a></li>
                 <li><a href="#">Documentation</a></li>
                 <li><a href="#">Support</a></li>
-                <li>Search: <input id="search" type="text"/></li>
+                <li>Search: <input id="search" type="text" autocomplete="off"/></li>
             </ul>
         </div>
     </div>
@@ -103,7 +100,7 @@ permalink: /dfw
 
     <script src="/r/dfw/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', '/r/dfw/particles.json', function() {
+        particlesJS.load('particles-js', '/r/dfw/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
     </script>
