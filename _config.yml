@@ -4,9 +4,9 @@ description:      Agile Worker
 meta:             Ulf Schneider Agile Paderborn
 baseurl:          # the subpath of the site, e.g. /blog/
 name:             Ulf Schneider
-url:              http://ulf.codes # the base hostname & protocol for the site
-mail:             
-twitter_username: ulfeed 
+url:              https://ulf.codes # the base hostname & protocol for the site
+mail:
+twitter_username: ulfeed
 phone:            +49 163 2505164
 
 # Build settings
