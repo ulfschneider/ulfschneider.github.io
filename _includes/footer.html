@@ -1,5 +1,10 @@
 <div class="site-footer">
-	<div class="wrapper">
-		{% include bottom_navigation.html %}			
+	<div class="wrapper">		
+		<div style="float:left;">Ulf Schneider</div>
+		<ul class="contact">
+			<li><a href="https://twitter.com/{{site.twitter_username}}">twitter.com/{{site.twitter_username}}</a></li>
+			<li>{{site.phone}}</li>
+			<li>{% include bottom_navigation.html %}</li>
+		</ul>
 	</div>
 </div>
