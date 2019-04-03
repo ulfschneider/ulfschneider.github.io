@@ -17,7 +17,6 @@
         display: block;
         text-transform: uppercase;
         padding-top: $spacing-half;
-        line-height: $spacing-2; //more space for tapping
         display: inline-block;
     }
     .nositenav {
@@ -116,8 +115,7 @@
 */
 
 .site-footer {
-    padding: 0;
-    line-height: $spacing-2; 
+    padding: 0;    
     font-size: $small-font-size;
     clear: both;
     margin-top: $spacing-3;
