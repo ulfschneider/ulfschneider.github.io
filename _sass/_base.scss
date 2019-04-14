@@ -194,7 +194,7 @@ blockquote {
 	margin-left: -$spacing-1;
 	border: none;
 	border-left: $spacing-quart solid $text-color;
-	padding-left: $spacing-1;
+	padding-left: ($spacing-1 - $spacing-quart);
 	font-weight: $bold;
 
 	> :last-child {
