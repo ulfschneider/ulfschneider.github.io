@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cumulative Flow
+title: cumulative-flow
 permalink: /cfd/
 categories: tools
 abstract: Draw SVG Cumulative Flow Diagrams and predict the anticipated completion of work.
