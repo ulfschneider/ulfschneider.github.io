@@ -5,7 +5,7 @@
 }
 
 html {
-	overflow-y: scroll;	
+	overflow-y: scroll;
 }
 /**
 * Reset some basic elements
@@ -119,7 +119,7 @@ figure > img {
 * Lists
 */
 ul {
-	list-style: disc outside;
+	list-style: square outside;
 }
 
 ol {
@@ -194,7 +194,7 @@ blockquote {
 	margin-left: -$spacing-1;
 	border: none;
 	border-left: $spacing-quart solid $text-color;
-	padding-left: $spacing-neutral;
+	padding-left: ($spacing-1 - $spacing-quart);
 	font-weight: $bold;
 
 	> :last-child {
