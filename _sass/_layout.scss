@@ -3,7 +3,6 @@
 */
 
 .site-header {
-    font-size: $small-font-size;
     background: $background-color;
     a {
         color: $text-color;
@@ -29,7 +28,6 @@
 
 .site-nav {
     display: block;
-    font-size: $small-font-size;
     .page-link {
         margin: 0 $spacing-half 0 -3px;
         padding: 3px;
@@ -95,7 +93,6 @@
 .next,
 .prev {
     label: {
-        font-size: $small-font-size;
         display: inline-block;
     }
     cursor: pointer;
@@ -116,7 +113,6 @@
 
 .site-footer {
     padding: 0;    
-    font-size: $small-font-size;
     clear: both;
     margin-top: $spacing-3;
     margin-bottom: $spacing-2;
