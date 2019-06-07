@@ -519,6 +519,9 @@ p.full img {
         /*Limit Height On Palm*/
         max-height: 400px;
     }
+    .page-content {
+        margin-top: $spacing-4;
+    }
     .index {
         .site {
             float: none;
@@ -531,7 +534,6 @@ p.full img {
             padding: 2px $spacing-half;
         }
         .page-content {
-            margin-top: $spacing-4;
             margin-left: 18%;
         }
     }
