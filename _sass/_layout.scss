@@ -486,6 +486,9 @@ p.full img {
 /* Media */
 
 @include media-query($on-narrow) {
+    .page-content {
+        margin-top: $spacing-4;
+    }
     li.image-grid {
         width: 33%;
     }
