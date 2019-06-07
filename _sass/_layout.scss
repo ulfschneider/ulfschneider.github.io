@@ -45,7 +45,7 @@
 
 .index {
     .page-content {
-        margin-top: $spacing-4;
+        margin-top: $spacing-5;
     }
     .site {
         float: left;
@@ -112,7 +112,7 @@
 */
 
 .site-footer {
-    padding: 0;    
+    padding: 0;
     clear: both;
     margin-top: $spacing-3;
     margin-bottom: $spacing-2;
@@ -143,7 +143,7 @@
 */
 
 .page-content {
-    margin-top: $spacing-3;
+    margin-top: $spacing-5;
     img {
         margin: $spacing-2 auto;
         display: block;
@@ -531,7 +531,7 @@ p.full img {
             padding: 2px $spacing-half;
         }
         .page-content {
-            margin-top: $spacing-3;
+            margin-top: $spacing-4;
             margin-left: 18%;
         }
     }
