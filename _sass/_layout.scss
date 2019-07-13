@@ -45,7 +45,7 @@
 
 .index {
     .page-content {
-        margin-top: $spacing-5;
+        margin-top: $spacing-4;
     }
     .site {
         float: left;
@@ -143,7 +143,7 @@
 */
 
 .page-content {
-    margin-top: $spacing-5;
+    margin-top: $spacing-4;
     img {
         margin: $spacing-2 auto;
         display: block;
@@ -486,9 +486,6 @@ p.full img {
 /* Media */
 
 @include media-query($on-narrow) {
-    .page-content {
-        margin-top: $spacing-4;
-    }
     li.image-grid {
         width: 33%;
     }
@@ -521,9 +518,6 @@ p.full img {
     img.LHOP {
         /*Limit Height On Palm*/
         max-height: 400px;
-    }
-    .page-content {
-        margin-top: $spacing-4;
     }
     .index {
         .site {
