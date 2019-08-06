@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|IBM+Plex+Sans:400,400i,600");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|IBM+Plex+Sans:400,400i,500");
 
 * {
 	box-sizing: border-box;
@@ -49,6 +49,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+
 /**
 * Set `margin` to maintain vertical rhythm
 */
@@ -263,6 +264,7 @@ pre.highlight {
 b,
 strong {
 	font-family: $title-font-family;
+	font-weight: $bold;
 }
 /**
 * Prevent `sub` and `sup` affecting `line-height` in all browsers.
