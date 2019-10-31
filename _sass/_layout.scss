@@ -117,16 +117,15 @@
     margin-top: $spacing-3;
     margin-bottom: $spacing-2;
     @extend %clearfix;
-    .active {
-        background: $text-color;
-        padding: 3px;
-        color: $background-color;
+
+    .site {
+        text-decoration: none;
     }
+
     ul.contact {
         list-style-type: none;
         margin: 0;
 		padding: 0;
-		margin-left: 10em;
         li {
             margin: 0;
 			padding: 0;

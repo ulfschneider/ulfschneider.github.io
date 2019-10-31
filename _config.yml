@@ -1,17 +1,17 @@
 # Site settings
-title:            Ulf Schneider #title of the page
-description:      Agile Worker
-meta:             Ulf Schneider Agile Paderborn
-baseurl:          # the subpath of the site, e.g. /blog/
-name:             Ulf Schneider
-url:              https://ulf.codes # the base hostname & protocol for the site
-mail:
-twitter_username: 
-phone:            +49 163 2505164
+title:       Ulf Schneider #title of the page
+description: Agile Worker
+meta:        Ulf Schneider Agile Paderborn
+# baseurl:   the subpath of the site, e.g. /blog/
+name:        Ulf Schneider
+url:         https://ulf.codes # the base hostname & protocol for the site
+# mail:
+# twitter_username:
+phone:       +49 163 2505164
 
 # Build settings
-markdown:         kramdown
-include:          ['_pages']
-permalink:        '/:title/'
+markdown:    kramdown
+include:     ['_pages']
+permalink:   '/:title/'
 plugins:
   - jekyll-feed
