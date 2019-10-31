@@ -14,5 +14,3 @@ Most often read:
 - [Self-organization](http://ulf.codes/self-organization/)
 
 Probably you are also interested in [allesagil.net](http://allesagil.net), a blog about agility I was writing some years ago in the German language.  
-
-If you are looking for a faster reading, perhaps these [tweets](https://twitter.com/ulfeed) are for you. 

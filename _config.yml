@@ -6,7 +6,7 @@ baseurl:          # the subpath of the site, e.g. /blog/
 name:             Ulf Schneider
 url:              https://ulf.codes # the base hostname & protocol for the site
 mail:
-twitter_username: ulfeed
+twitter_username: 
 phone:            +49 163 2505164
 
 # Build settings
