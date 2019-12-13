@@ -27,11 +27,12 @@
 }
 
 .site-nav {
-    display: block;
-    .page-link {
-        margin: 0 $spacing-half 0 -3px;
-        padding: 3px;
-    }
+    display: inline-block;
+}
+
+.page-link {
+    margin: 0 $spacing-half 0 -3px;
+    padding: 3px;
 }
 
 .slide-in .site-nav {
@@ -114,7 +115,6 @@
 .site-footer {
     padding: 0;
     clear: both;
-    margin-top: $spacing-3;
     margin-bottom: $spacing-2;
     @extend %clearfix;
 
