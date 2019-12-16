@@ -27,11 +27,12 @@
 }
 
 .site-nav {
-    display: block;
-    .page-link {
-        margin: 0 $spacing-half 0 -3px;
-        padding: 3px;
-    }
+    display: inline-block;
+}
+
+.page-link {
+    margin: 0 $spacing-half 0 -3px;
+    padding: 3px;
 }
 
 .slide-in .site-nav {
@@ -114,19 +115,17 @@
 .site-footer {
     padding: 0;
     clear: both;
-    margin-top: $spacing-3;
     margin-bottom: $spacing-2;
     @extend %clearfix;
-    .active {
-        background: $text-color;
-        padding: 3px;
-        color: $background-color;
+
+    .site {
+        text-decoration: none;
     }
+
     ul.contact {
         list-style-type: none;
         margin: 0;
 		padding: 0;
-		margin-left: 10em;
         li {
             margin: 0;
 			padding: 0;
