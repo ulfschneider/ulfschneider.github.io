@@ -488,10 +488,7 @@ p.full img {
 @include media-query($on-narrow) {
     li.image-grid {
         width: 33%;
-    }
-    li {
-        list-style-position: inside;
-    }
+    }  
     blockquote {
         margin-left: 0;
     }
