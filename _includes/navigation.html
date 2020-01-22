@@ -1,21 +1,21 @@
 {% unless page.nositenav %}
-<div id="navigation" class="site-nav">
+<div class="inline-block">
 	{% assign last = {{site.pages | last}} %}
 	{% for p in site.pages %}
 	{% unless p.nonav or p.footer %}
 
 	{% if p.menu %}
 	{% if page.url == p.url %}
-	<span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
+	<span class="tag bg-base-color white no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
 	{% else %}
-	<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
+	<a class="tag no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
 	{% endif %}
 
 	{% elsif p.index %}
 	{% if page.url == p.url %}
-	<span class="page-link active" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</span>
+	<span class="tag bg-base-color white no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</span>
 	{% else %}
-	<a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</a>
+	<a class="tag no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</a>
 	{% endif %}
 
 	{% endif %}

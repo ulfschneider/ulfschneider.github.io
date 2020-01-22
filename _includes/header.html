@@ -1,14 +1,10 @@
 {% unless page.noheader %}
-<div id="siteHeader" class="site-header">
-	<div class="left-fill"></div>
-	<div class="wrapper">
-		{% if page.nositenav %}
-			<div class="site-title nositenav"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
-		{% else %}
-			<div class="site-title page-link"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
-		{% endif %}
-		{% include navigation.html %}
-	</div>
-	<div class="right-fill"></div>
+<div class="mrt mrb-4 caps small">
+	{% if page.nositenav %}
+	<span class="mrr-1"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+	{% else %}
+	<span class="mrr-1"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+	{% endif %}
+	{% include navigation.html %}
 </div>
 {% endunless %}

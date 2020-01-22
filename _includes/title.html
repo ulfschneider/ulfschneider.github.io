@@ -1,16 +1,16 @@
-
-<div class="title-wrapper">
+{% if page.title or page.message %}
+<div class="mrb-1">
     {% if page.title %}
     {% unless page.title == 'notitle' %}
-    <h1 class="title">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
     {% endunless %}
     {% elsif page.message %}
-    <h1 class="title">{{ page.message }}</h1>
+    <h1>{{ page.message }}</h1>
     {% endif %}
     {%if page.subtitle or page.date or page.author or page.meta %}
-    <div class="meta">
+    <div class="small">
         {% if page.subtitle %}
-        <div class="subtitle">{{page.subtitle}}</div>
+        <div class="lh-2">{{page.subtitle}}</div>
         {% endif %}
 
         {% unless page.layout contains 'gallery' or page.layout contains 'collection' %}
@@ -21,3 +21,4 @@
     </div>
     {% endif %}
 </div>
+{% endif %}

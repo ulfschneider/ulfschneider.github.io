@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	{% include head.html %}
 </head>
-<body>
-	<div class="default">
 
-		{% include header.html %}
+<body class="xl default pdb-3">
 
-		<div id="pageContent" class="page-content">
-			<div class="wrapper">
-				{% include title.html %}
-				{{ content }}
-			</div>
-		</div>
+	{% include header.html %}
 
-		{% include postnav.html %}
+	{% include title.html %}
+	
+	{{ content }}
 
-		{% unless page.nofooter %}
-		{% include footer.html %}
-		{% endunless %}
+	{% include postnav.html %}	
 
-		{% include footer_scripts.html %}
-	</div>
 </body>
+
 </html>

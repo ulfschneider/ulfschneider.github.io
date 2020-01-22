@@ -5,8 +5,7 @@ subtitle: A short entry-level approach to Git
 categories: thoughts
 abstract: A short entry-level approach to Git. 
 ---
-
-- **Contents**
+**Contents**
 - [Reasons to use Git](#reasons-to-use-git)
 - [Get Git on your Mac](#get-git-on-your-mac)
 - [Get Git on Windows](#get-git-on-windows)
@@ -33,15 +32,15 @@ abstract: A short entry-level approach to Git.
 - [The big picture](#the-big-picture)
 - [Commmand reference](#command-reference)
 - [References](#references)
-{:.toc}
 
 Reasons to use Git
 ---
 Git will help you doing the following things with a computer:
 
-<div class="grid"><div class="col-1-2 first">
-<div class="spacing-top"><strong>Personal</strong></div>
-<ul>
+<div class="x-12">
+<div class="xx-12 rg-xx-6">
+<strong>Personal</strong>
+<ul class="indent">
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
 <li>Safely experiment because you can always step back to the previous version.</li>
 <li>No need to give your files version indicating names, like essay_v1.txt, essay_v2.txt and so on.</li>
@@ -51,14 +50,16 @@ Git will help you doing the following things with a computer:
 <li>Work consistently on multiple different operating systems, like MacOS, Linux and Windows.</li>
 </ul>
 </div>
-<div class="col-1-2 last">
-<div class="spacing-top"><strong>Team</strong></div>
-<ul>
+
+<div class="xx-12 rg-xx-6">
+<strong>Team</strong>
+<ul class="indent">
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
 <li>No central locking of files. All team members have their own working copy on their own computers which allows each of them to work independently.</li>
 </ul>
 </div>
+
 </div>
 
 Git is free. You can get Git for any platform at [git-scm.com/downloads](https://git-scm.com/downloads). 
@@ -73,7 +74,6 @@ On a Mac, after installation, fire up GitHub Desktop, open the Preferences scree
 Though not mandatory, for an improved Git experience in the shell, I like to have the following configured:
 
 - The credential helper to cache my username and password, so I don´t have to provide it over and over again when using the https port while connecting to Git servers. See [Caching Your Git Password](https://help.github.com/articles/caching-your-github-password-in-git/) for installation advice.
-
 - Bash Git Completion for an improved command prompt and command completion with the tab key. Follow [Install Bash Git Completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion) to get it set up (it includes a Git installation via homebrew, but you won´t need that one if you already installed GitHub Desktop like mentioned before). In addition to the explanations given, put the following lines to your `.bash_profile` to improve your command prompt:
 
 ```
@@ -122,11 +122,13 @@ Working, staging and committing
 ---
 Versioning in Git is achieved by creating snapshots of your entire working directory. A snapshot is created with a *commit*. For files without changes, Git will maintain a reference to the previous snapshot. This means, each commit represents your entire working directory at that time, but stores only the files which have been changed. Technically speaking, Git maintains a *directed acyclic graph* of snapshots of your work. 
 
-![]({{site.url}}/i/blog/git_commits_over_time.jpg)
-{:.full}
-
+<figure class="breakout-r">
+<img src="{{site.url}}/i/blog/git_commits_over_time.jpg" />
+<figcaption>
 Figure: Git produces snapshots of your entire project
-{:.figcaption}
+</figcaption>
+</figure>
+
 
 While you are working, Git divides your content into three main sections. Your working directory, your staging area (often referred to as *index*) and your committed work. 
 

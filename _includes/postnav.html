@@ -1,48 +1,51 @@
- {% for post in site.posts %}
+{% for post in site.posts %}
 
- 	{% if post.url == page.url %}
- 		{% assign current = post %}
-		{% assign index = forloop.index %}
- 	 {% endif %}
+{% if post.url == page.url %}
+{% assign current = post %}
+{% assign index = forloop.index %}
+{% endif %}
 
-	{% if current and current.layout != "image" and current.layout != "gallery" and current.layout != "collection "%}
+{% if current and current.layout != "image" and current.layout != "gallery" and current.layout != "collection "%}
 
 
-		{% unless prev %}
-		{% for p in site.posts offset:index   %}
-			{% unless prev %}
-				{% if p.layout == current.layout %}
-					{% assign prev = p %}
-				{% endif %}
-			{% endunless %}
-		{% endfor %}
-		{% endunless %}
+{% unless prev %}
+{% for p in site.posts offset:index   %}
+{% unless prev %}
+{% if p.layout == current.layout %}
+{% assign prev = p %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+{% endunless %}
 
-		{% unless next %}
-		{% for p in site.posts %}
-				{% if p.layout == current.layout and forloop.index < index  %}
-					{% assign next = p %}
-				{% endif %}
-		{% endfor %}
-		{% endunless %}
+{% unless next %}
+{% for p in site.posts %}
+{% if p.layout == current.layout and forloop.index < index  %}
+{% assign next = p %}
+{% endif %}
+{% endfor %}
+{% endunless %}
 
-		{% break %}
+{% break %}
+{% endif %}
+
+{% endfor %}
+
+{% if prev or next %}
+
+
+<div class="clear-fix mrt-2 small">
+	{% if prev  %}
+	<div class="float-left">
+		<a accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span> {{ prev.title }}</a>
+	</div>
 	{% endif %}
 
- {% endfor %}
+	{% if next  %}
+	<div class="float-right">
+		<a accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span> {{ next.title }}</a>
+	</div>
+	{% endif %}
 
- {% if prev or next %}
-	<div class="post-nav">
-		<div class="wrapper">
-
-			 {% if prev  %}
-				 <span class="prev"><a accesskey="-" href="{{ site.url }}{{ prev.url }}"><div class="label"><&nbsp;Prev</div>{{ prev.title }}</a></span>
-			 {% endif %}
-
-			{% if next  %}
-        <span class="next"><a accesskey="+" href="{{ site.url }}{{ next.url }}"><div class="label">Next&nbsp;></div>{{ next.title }}</a></span>
- 			{% endif %}
-
-	 </div>
+	{% endif %}
 </div>
-{% endif %}

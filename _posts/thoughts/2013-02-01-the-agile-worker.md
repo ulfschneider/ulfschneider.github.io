@@ -76,11 +76,16 @@ Ideas change the world. Taylorism has done that and left us behind with apriori 
 
 References
 ---
-[Appelo 2011] J. Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
+[Appelo 2011] 
+: J. Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
 
-[Kaner 2007] S. Kaner et al., "Facilitator´s Guide to Participatory Decision Making", Second Edition, Jossey-Bass 2007
+[Kaner 2007] 
+: S. Kaner et al., "Facilitator´s Guide to Participatory Decision Making", Second Edition, Jossey-Bass 2007
 
-[Marquet 2012] L. David Marquet, "Turn the ship around, A true story of turning followers into leaders", Penguin 2012
+[Marquet 2012] 
+: L. David Marquet, "Turn the ship around, A true story of turning followers into leaders", Penguin 2012
+
+[Wujec 2010]
+: T. Wujec, "The Marshmallow Challenge", <http://marshmallowchallenge.com/Welcome.html>
 
 [wujec]: http://marshmallowchallenge.com/Welcome.html
-[Wujec 2010] T. Wujec, "The Marshmallow Challenge", <http://marshmallowchallenge.com/Welcome.html>

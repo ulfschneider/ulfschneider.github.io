@@ -5,7 +5,6 @@ categories: thoughts
 abstract: The agile manifesto defines a collaboration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.
 ---
 
-- **Contents**
 - [Core cultures](#core-cultures)
 - [Control culture](#control-culture)
 - [Collaboration culture](#collaboration-culture)
@@ -17,7 +16,7 @@ abstract: The agile manifesto defines a collaboration culture. But what if your 
 - [Agile methods and core culture](#agile-methods-and-core-culture)
 - [How to balance the current culture](#how-to-balance-the-current-culture)
 - [References](#references)
-{:.toc}
+
 
 Core cultures
 ---
@@ -136,11 +135,10 @@ Content and process
 
 William Schneider is classifying his four core cultures by using the dimensions of *content* and *process*. *Content* is what the organization pays attention to; it has the two poles *actuality* and *possibility*. *Process*, on the other hand, describes the communication and decision-making process, which is *personal* or *impersonal*.
 
-![]({{site.url}}/i/blog/content_and_process.jpg)
-{:.full}
-
-Figure: Content and process
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/content_and_process.jpg" />
+<figcaption>Figure: Content and process</figcaption>
+</figure>
 
 Control culture and collaboration culture are actuality driven, with collaboration culture being actuality-personal and control culture being actuality-impersonal.
 
@@ -166,12 +164,10 @@ On the other hand, in the agile movement a collaboration and cultivation culture
 
 Agile [[Beck et al 2001](http://agilemanifesto.org)] is often used as a paramount phrase for methods like [Scrum](http://scrumguides.org), [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), [XP](http://extremeprogramming.org) and even a value system like the Software Craftsmanship movement [[Bradbury et al 2009](http://manifesto.softwarecraftsmanship.org)] is sometimes entitled to be agile. If we take a closer look at these different approaches and map them to William Schneiders core cultures on the dimensions of *content* and *process*, some interesting insights reveal.
 
-![]({{site.url}}/i/blog/agile_and_culture.jpg)
-{:.full}
-
-Figure: Agile and culture
-{:.figcaption}
-
+<figure>
+<img src="{{site.url}}/i/blog/agile_and_culture.jpg" />
+<figcaption>Figure: Agile and culture</figcaption>
+</figure>
 
 Kanban, for example, gives a low-level entry into its working model, because Kanban will let you start where you are now. Kanban will visualize your current workflow without changing it at first. There are no new roles and organizational structures like Sprints or iterations. The cycle time and lead time of the work orders will be measured. At this point waiting queues become visible, are being analyzed and actions will be taken to streamline the workflow. Eventually, WIP limits (work in progress limits) will be introduced at working steps. This exact measuring and not touching current processes at first is well-suited for a control culture and does not require much of any other culture. Still, Kanban could serve as a "gateway drug" for balancing the organization into a collaboration or competence culture, if necessary.
 
@@ -193,11 +189,10 @@ Assuming the organization has a control culture, the least change and challenge 
 
 The next step is to correct the dysfunctions of the process. Is the cycle time to slow? Are there waiting queues at some work steps? To analyze those dysfunctions will provide insights to come up with possible improvements. Would it be of help to intensify collaboration? Is the technical expertise and competence on the desired level? This exercise is developing paths to balance the control culture towards a collaboration or competence culture.
 
-![]({{site.url}}/i/blog/balance_the_culture.jpg)
-{:.full}
-
-Figure: Balance the culture
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/balance_the_culture.jpg" />
+<figcaption>Figure: Balance the culture</figcaption>
+</figure>
 
 To get this working, at least the will to understand and share insights about the current situation, the will for transparency, is necessary. But this should be inside of the natural range of a control culture, as this culture is actuality-impersonal driven.
 
@@ -208,20 +203,38 @@ But with some good will, balancing for the better should be possible inside of a
 References
 ---
 
-[Beck et al. 2001] K. Beck et al., "Agile Manifesto", 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
 
-[Bradbury et al. 2009] D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
+[Beck et al. 2001] 
+: K. Beck et al., "Agile Manifesto", 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
 
-[Cottmeyer 2011] M. Cottmeyer, "Untangling Adoption and Transformation", 2011, [http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation](http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation)
 
-[Kanban], "Kanban Development", [https://en.wikipedia.org/wiki/Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development))
+[Bradbury et al. 2009] 
+: D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
 
-[Kotter 1996] John P. Kotter, "Leading Change", Harvard Business School Press, 1996
 
-[Sahota 2012] Michael Sahota, "An Agile Adoption and Transformation Survival Guide", 2012
+[Cottmeyer 2011] 
+: M. Cottmeyer, "Untangling Adoption and Transformation", 2011, [http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation](http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation)
 
-[Schneider 2000] William E. Schneider, "The Reengineering Alternative", McGraw-Hill, 2000
 
-[Scrum], "Scrum Guides", [http://www.scrumguides.org](http://www.scrumguides.org)
+[Kanban]
+: "Kanban Development", [https://en.wikipedia.org/wiki/Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development))
 
-[XP], "Extreme Programming, A gentle introduction", [http://extremeprogramming.org](http://extremeprogramming.org)
+
+[Kotter 1996] 
+: John P. Kotter, "Leading Change", Harvard Business School Press, 1996
+
+
+[Sahota 2012] 
+: Michael Sahota, "An Agile Adoption and Transformation Survival Guide", 2012
+
+
+[Schneider 2000] 
+: William E. Schneider, "The Reengineering Alternative", McGraw-Hill, 2000
+
+
+[Scrum]
+: "Scrum Guides", [http://www.scrumguides.org](http://www.scrumguides.org)
+
+
+[XP]
+: "Extreme Programming, A gentle introduction", [http://extremeprogramming.org](http://extremeprogramming.org)

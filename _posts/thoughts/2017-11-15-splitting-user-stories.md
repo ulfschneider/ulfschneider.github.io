@@ -4,17 +4,15 @@ title: Splitting User Stories
 categories: thoughts
 abstract:  A User Story can cover vast amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done (often called epic). Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it.
 ---
-User Stories are short and simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It´s called User Story because you put the user into focus. Therefore a User Story should lead to a product increment that can be seen valuable from the user- or business perspective.
+User Stories are short and simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It´s called User Story because you put the user into focus. Therefore a User Story should lead to a product increment that can be seen valuable from the user- or business perspective. Contents:
 
-- **Contents**
 - [The advantage of splitting](#the-advantage-of-splitting)
 - [JIRA is time-consuming for splitting](#jira-is-time-consuming-for-splitting)
 - [Layers](#layers)
 - [Patterns](#patterns)
 - [Concerns](#concerns)
-{:.toc}
 
-# The advantage of splitting
+## The advantage of splitting
 
 A User Story can cover vast amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done (often called epic). Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it:
 
@@ -26,11 +24,11 @@ A User Story can cover vast amounts of functionality with a single sentence, whi
 - Your daily scrums become far more exciting and useful. Instead of "yeah, I'm 20% done adding all of the new schemas to the DB", you get "for that story we got the time stamps working in the UI, and today we're going to make the data persist".
 - A smaller size tends to make estimates more accurate (though estimates are not too important, as your stories should be small).
 
-# JIRA is time-consuming for splitting
+## JIRA is time-consuming for splitting
 
 Trying to break down a User Story within JIRA is very time-consuming and sometimes counter-intuitive. Not to mention that interaction and conversations among people are to be avoided when following this approach, which is the opposite of what you should thrive for. Use a whiteboard or a wall and sticky notes to do the split work, be prepared to change quickly, sketch, refactor and enhance. Only after you have understood what the story is about and how to split in a good way, bring the parts into JIRA.
 
-# Layers
+## Layers
 
 For engineers who are new to the splitting approach, breaking down stories and still delivering end-to-end functionality within a Sprint is among the most challenging things. That´s because engineers are mostly concerned about finding a way for how to solve the given problem. Their thinking tools have to do with architectural layers, technical components, frameworks and programming languages. Naturally, engineers start splitting by layers, like UI, Business Logic, DB Access, DB, Operating System. Following this approach, they end up with stories for the different architectural layers which will be implemented separately and eventually have to be integrated, which will allow only very late feedback. None of these architecture-layer stories alone will bring value for the user, and in most cases, it´s impossible to come up with a solution during a single Sprint.
 
@@ -38,7 +36,7 @@ Also, organizational structures are often formed by their corresponding architec
 
 Therefore, when talking about splitting User Stories, it´s meant to cut across all layers to come up with end-to-end solutions in each Sprint. The organizational structures have to follow to achieve a delivery-oriented organization. Which leads to small, cross-functional teams, having every skill on-board that is needed to split, design, build, describe, test and deliver an end-to-end feature. This will speed up the feedback loop drastically and thus allows to speed up learning accordingly. The organizational change, of course, is difficult and requires experience and insight. The goal is to have teams being able to operate quick, with minimal interdependencies and end-to-end.
 
-# Patterns
+## Patterns
 
 Try the following patterns to split your User Stories:
 
@@ -53,7 +51,7 @@ Try the following patterns to split your User Stories:
 - _Platform:_ If you have to support different devices or operating systems (more general: platforms) with a User Story, a natural split is by platform. 
 - _Vague Terms:_ Vague terms offer splitting opportunities by asking what exactly is meant, turning the vagueness into concrete and then applying the above patterns.
 
-# Concerns
+## Concerns
 
 Of course, there are teams considering the splitting process to be wasteful and instead finding the implementation of an unsplit functionality to its completeness to be more straightforward and efficient. Recalling one of the advantages from the beginning: Smaller pieces allow faster feedback. Correction at an early point is more direct, much cheaper and will improve your results.
 
