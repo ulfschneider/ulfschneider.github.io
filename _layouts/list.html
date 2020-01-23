@@ -10,7 +10,7 @@ layout: default
 	<span>
 		<h2 class="inline">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
 					href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-			class="small">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+			class="small no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
 	</span>
 	{% if p.abstract %}
 	<p>{{ p.abstract }}</p>
@@ -30,7 +30,7 @@ layout: default
 	<span>
 		<h2 class="inline">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
 					href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-			class="small">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+			class="small no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
 	</span>
 	{% if p.abstract %}
 	<p>{{ p.abstract }}</p>
