@@ -5,19 +5,6 @@ categories: thoughts
 abstract: The agile manifesto defines a collaboration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.
 ---
 
-- [Core cultures](#core-cultures)
-- [Control culture](#control-culture)
-- [Collaboration culture](#collaboration-culture)
-- [Competence culture](#competence-culture)
-- [Cultivation culture](#cultivation-culture)
-- [Culture and leadership](#culture-and-leadership)
-- [Content and process](#content-and-process)
-- [In what culture am I living](#in-what-culture-am-i-living)
-- [Agile methods and core culture](#agile-methods-and-core-culture)
-- [How to balance the current culture](#how-to-balance-the-current-culture)
-- [References](#references)
-
-
 Core cultures
 ---
 

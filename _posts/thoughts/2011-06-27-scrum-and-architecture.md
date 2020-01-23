@@ -106,10 +106,10 @@ Architecture by committee
 ---
 Don´t do it. Companywide architecture committees that are being fed with decisions from under-ordinated projects and that guard, release or reject architectural decisions are a bottleneck for the enterprise and the involved projects. The parties are blocking themselves on the search for synergy. Responsibility is being carved out of the projects into the superordinated committee where focus, involvement, competence, and understanding are not bound to the projects that need the decisions.
 
-![]({{site.url}}/i/blog/architecture_committee.jpg)
-
-Figure: Architecture by committee is the guarantee for a bloated product
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/architecture_committee.jpg"/>
+<figcaption>Figure: Architecture by committee is the guarantee for a bloated product</figcaption>
+</figure>
 
 Because of too many players with different interests the decisions being taken are often not focused enough and for none of the involved projects optimal.
 
@@ -132,17 +132,11 @@ The Product Vision contains and communicates the strategic goals of the endeavor
 One approach for developing such a vision is Geoffrey Moore´s elevator pitch. The basic idea behind is that you should be able to explain the greatness of your product idea during an elevator ride. You can use the following template to prepare the elevator pitch:
 
 > For [customer, user]
->
 > with [needs]
->
 > is [productname]
->
 > a [productcategory]
->
 > that has [attributes, values, a reason to buy].
->
 > Other than [competitor alternatives]
->
 > is [productname] a [differentiation of the product].
 
 To go even one step further and anchor the vision within your business model, the [Business Model Canvas][businessmodelcanvas] by Alexander Osterwalder and Yves Pigneur may be of use.
@@ -161,10 +155,10 @@ As an architect you should not jump into a project if this work can not be done,
 
 How important the knowledge of architectural goals are, can be seen in the following figures, that stand for different architectural goals:
 
-![]({{site.url}}/i/blog/architecture_goals.jpg)
-
-Figure: The importance of architecture goals
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/architecture_goals.jpg" />
+<figcaption>Figure: The importance of architecture goals</figcaption>
+</figure>
 
 Sometimes an Architecture Overview Diagram is part of the Architecture Vision. The [Box-Bullet-Line]({{site.url}}/bbl) notation can be of help to draw the diagram and visualize process flows between architecture components.
 
@@ -172,10 +166,10 @@ System Context Diagram
 ---
 The System Context Diagram explains the environment of the system. The system itself will be seen as a black box. The important part is to understand the surrounding forces that affect the system with their input- and output-interfaces, system boundaries and responsibilities. Such forces are users as well as resources and other systems.
 
-![]({{site.url}}/i/blog/system_context.jpg)
-
-Figure: System Context Diagram. Understand the environmental forces that are affecting the system.
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/system_context.jpg" />
+<figcaption>Figure: System Context Diagram. Understand the environmental forces that are affecting the system.</figcaption>
+</figure>
 
 The system itself will be drawn as a circle in the middle of the diagram. All surrounding components, systems, and resources acting upon the system will be illustrated as boxes and users will be drawn as stick figures. Communication and data streams will be depicted as arrows between the system and the environmental forces.
 
@@ -215,10 +209,10 @@ Constraining resource
 ---
 When crafting a system, the non-functional requirements, constraints and architecture goals will lead the project team to the limiting or restraining resources.
 
-![]({{site.url}}/i/blog/constraining_resource.jpg)
-
-Figure: The constraining resource gives the key limit that determines the performance of the system
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/constraining_resource.jpg" />
+<figcaption>Figure: The constraining resource gives the key limit that determines the performance of the system</figcaption>
+</figure>
 
 These resources give the fundamental limits that determine the performance of the system. The architect has to identify the scarce resources and derive allowable targets that can be used to measure and compare.
 
@@ -251,10 +245,10 @@ A User Story does not explain how to build it. That is intentional. The User Sto
 
 You start with a BBL diagram that contains the components you think are needed to build the Story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
 
-![]({{site.url}}/i/blog/storyboard.jpg)
-
-Figure: Storyboard. The relevant tasks for a specific User Story will be visualized in the context of the components they belong to.
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/storyboard.jpg" />
+<figcaption>Figure: Storyboard. The relevant tasks for a specific User Story will be visualized in the context of the components they belong to.</figcaption>
+</figure>
 
 This visualization helps all involved team members to identify the connection of the tasks. The mapping from User Story to tasks supports the goal of any architecture as an intermediary between business requirements and the concrete solution structure. The Storyboard improves the understanding of the solution structure for your User Stories.
 
@@ -315,29 +309,47 @@ The essay is a plea for the rights and obligations of the architect acting insid
 
 References
 ---
+
+[K. Beck et al.] 
+: Agile Manifesto, 2001, <http://agilemanifesto.org>
+
+[Beedle and Schwaber 2002] 
+: K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+
+[Brooks 1995] 
+: F. P. Brooks, "The Mythical Man Month", Addison Wesley 1995
+
+[Brooks 2010] 
+: F. P. Brooks, "The Design of Design", Addison Wesley 2010
+
+[Conway 1968] 
+: M. E. Conway, "How Do Committees Invent?", 1968, <http://www.melconway.com/Home/Conways_Law.html>
+
+
+[Fowler 2007] 
+: M. Fowler, "Mocks Aren´t Stubs", 2007, <http://www.martinfowler.com/articles/mocksArentStubs.html>
+
+[Friedrichsen 2010] 
+: U. Friedrichsen, "Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten", OBJEKTspektrum, Ausgabe 3, 2010
+
+[Osterwalder] 
+: Business Model Canvas, <http://businessmodelgeneration.com/book?_ga=1.264929356.2127012834.1431598082>
+
+[Schneider 2011] 
+: [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess", OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/assets/schneider_os_04_11.pdf)
+
+[Zörner 2009] 
+: S. Zörner, "Historisch gewachsen? - Entscheidungen festhalten", Java Magazin 04/2009
+
+[Zörner 2010] 
+: S. Zörner, "Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?", Java Magazin 10/2010
+
 [agilemanifesto]: http://agilemanifesto.org
-[K. Beck et al.] Agile Manifesto, 2001, <http://agilemanifesto.org>
-
-[Beedle and Schwaber 2002] K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
-
-[Brooks 1995] F. P. Brooks, "The Mythical Man Month", Addison Wesley 1995
-
-[Brooks 2010] F. P. Brooks, "The Design of Design", Addison Wesley 2010
 
 [conway1968]: http://www.melconway.com/Home/Conways_Law.html
-[Conway 1968] M. E. Conway, "How Do Committees Invent?", 1968, <http://www.melconway.com/Home/Conways_Law.html>
 
 [fowler2007]: http://www.martinfowler.com/articles/mocksArentStubs.html
-[Fowler 2007] M. Fowler, "Mocks Aren´t Stubs", 2007, <http://www.martinfowler.com/articles/mocksArentStubs.html>
-
-[Friedrichsen 2010] U. Friedrichsen, "Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten", OBJEKTspektrum, Ausgabe 3, 2010
 
 [businessmodelcanvas]: http://www.businessmodelgeneration.com
-[Osterwalder] Business Model Canvas, <http://businessmodelgeneration.com/book?_ga=1.264929356.2127012834.1431598082>
 
 [schneider2011]: {{site.url}}/assets/schneider_os_04_11.pdf
-[Schneider 2011] [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess", OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/assets/schneider_os_04_11.pdf)
-
-[Zörner 2009] S. Zörner, "Historisch gewachsen? - Entscheidungen festhalten", Java Magazin 04/2009
-
-[Zörner 2010] S. Zörner, "Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?", Java Magazin 10/2010

@@ -140,26 +140,38 @@ Think about. Act. Repeat.
 
 References
 ---
-[Appelo 2011] Jurgen Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
+[Appelo 2011] 
+: Jurgen Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
 
-[Beedle and Schwaber 2002] K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+[Beedle and Schwaber 2002] 
+: K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+
+[Bendel 2006] 
+: Sylvia Bendel, "Grenzen der Steuerung: Umgang mit Komplexität und Selbstorganisation", Referat für die KFH-Tagung "Kommunikation von Fachhochschulen" Luzern 2006, <http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf>
+
+[Hayek 1969] 
+: Friedrich A. von Hayek, "Arten der Ordnung, Freiburger Studien, gesammelte Aufsätze", Siebeck 1969
+
+[Hayek 2011] 
+: Friedrich A. von Hayek, "Law, Legislation and Liberty", Volume 1: Rules and Order, University of Chicago Press, 2011
+
+[Kaner et al. 2007] 
+: Sam Kaner et al., "Facilitators Guide to Participatory Decision Making", Jossey-Bass 2007, Second Edition
+
+[Malik 2009] 
+: Fredmund Malik, "Systemisches Management, Evolution, Selbstorganisation", Haupt 2009
+
+[Pink 2009] 
+: Daniel Pink, TED Talk: "The puzzle of motivation", TED 2009, <http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html>
+
+[Taleb 2012] 
+: Nassim Nicholas Taleb, "Anti-Fragility", ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
+
+[Wohland and Wiemeyer 2007] 
+: Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
 
 [bendel2006]: http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf
-[Bendel 2006] Sylvia Bendel, "Grenzen der Steuerung: Umgang mit Komplexität und Selbstorganisation", Referat für die KFH-Tagung "Kommunikation von Fachhochschulen" Luzern 2006, <http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf>
-
-[Hayek 1969] Friedrich A. von Hayek, "Arten der Ordnung, Freiburger Studien, gesammelte Aufsätze", Siebeck 1969
-
-[Hayek 2011] Friedrich A. von Hayek, "Law, Legislation and Liberty", Volume 1: Rules and Order, University of Chicago Press, 2011
-
-[Kaner et al. 2007] Sam Kaner et al., "Facilitators Guide to Participatory Decision Making", Jossey-Bass 2007, Second Edition
-
-[Malik 2009] Fredmund Malik, "Systemisches Management, Evolution, Selbstorganisation", Haupt 2009
 
 [pink2009]: http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html
-[Pink 2009] Daniel Pink, TED Talk: "The puzzle of motivation", TED 2009, <http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html>
 
 [taleb2012]: https://www.youtube.com/watch?v=zOUph1JpLlk
-[Taleb 2012] Nassim Nicholas Taleb, "Anti-Fragility", ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
-
-[Wohland and Wiemeyer 2007] Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
- — 

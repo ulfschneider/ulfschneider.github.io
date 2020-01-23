@@ -50,10 +50,10 @@ This perspective does not correspond with the model by that we have been sociali
 
 The centralized planning, disassembly, and automation of work brought us to the integration of human work into precise production timing and to an understanding of companies as automatic production machines. Wohland and Wiemeyer explain the concept with their model of the Taylor-Tub.
 
-![]({{site.url}}/i/blog/taylor_tub.jpg)
-
-Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/taylor_tub.jpg"/>
+<figcaption>Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]</figcaption>
+</figure>
 
 In the Taylor-Tub the thoughts of the individual are not of importance, because all workflows, procedures, and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which brought up disruptive productivity growth and inert mass markets during the last century. The biggest problem to solve for these markets: how to produce as much as possible at the lowest price.
 
@@ -69,22 +69,31 @@ It is not about even more working. Instead, we need to care about a more suitabl
 
 References
 ---
-[Aicher 1992] O. Aicher, "analog und digital", Ernst & Sohn, 1992
+[Aicher 1992] 
+: O. Aicher, "analog und digital", Ernst & Sohn, 1992
+
+[K. Beck et al.] 
+: "Agile Manifesto", 2001, <http://agilemanifesto.org>
+
+[Bradbury et al. 2009] 
+: D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, <http://manifesto.softwarecraftsmanship.org>
+
+[Godin 2010] 
+: S. Godin, "Linchpin, Are You Indespensable?", Penguin Books, 2010
+
+[Schneider 2012] 
+: U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo", OBJEKTspektrum, Ausgabe 5, 2012
+
+[Wiki] 
+: Wikipedia, "Frederick Winslow Taylor", <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
+
+[Wohland and Wiemeyer 2007] 
+: G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen", Murmann Verlag, 2007
 
 [agilemanifesto]: http://agilemanifesto.org 
-[K. Beck et al.] "Agile Manifesto", 2001, <http://agilemanifesto.org>
 
 [craftsmanship]: http://manifesto.softwarecraftsmanship.org
-[Bradbury et al. 2009] D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, <http://manifesto.softwarecraftsmanship.org>
-
-[Godin 2010] S. Godin, "Linchpin, Are You Indespensable?", Penguin Books, 2010
 
 [schneider2012]: {{site.url}}/assets/schneider_os_05_12.pdf 
-[Schneider 2012] U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo", OBJEKTspektrum, Ausgabe 5, 2012
 
 [wikitaylor]: http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor
-[Wiki] Wikipedia, "Frederick Winslow Taylor", <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
-
-[Wohland and Wiemeyer 2007] G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen", Murmann Verlag, 2007
-
-

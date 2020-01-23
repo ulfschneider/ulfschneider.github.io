@@ -1,9 +1,14 @@
 {% unless page.noheader %}
-<div class="mrt mrb-4 caps small">
+{% if page.url == "/" %}
+{% assign style = "mrr-1 tag bg-base-color white" %}
+{% else %}
+{% assign  style = "mrr-1 pd-d4" %}
+{% endif %}
+<div class="mrt mrb-4 caps small" style="margin-left: - var(--space-d4);">	
 	{% if page.nositenav %}
-	<span class="mrr-1"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+	<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
 	{% else %}
-	<span class="mrr-1"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+	<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
 	{% endif %}
 	{% include navigation.html %}
 </div>

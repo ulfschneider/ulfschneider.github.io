@@ -36,60 +36,60 @@ Dependency
 
 Let´s start with the basics. A line between two boxes indicates a dependency between two system components. A box is a component. In early phases, when you explore an existing system or design a new one when directions of communication are not of highest importance, the undirected dependency between components is a good starting point.
 
-![Dependency]({{site.url}}/i/blog/bbl_dependency.png)
-
-Figure: A dependency between A and B
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/bbl_dependency.png" />
+<figcaption>Figure: A dependency between A and B</figcaption>
+</figure>
 
 Flow
 ---
 
 The directed connection from A to B has the meaning of „data flow from A to B“. 
 
-![Flow]({{site.url}}/i/blog/bbl_flow.png)
-
-Figure: The directed connection between A and B models a data flow from A to B.
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/bbl_flow.png" />
+<figcaption>Figure: The directed connection between A and B models a data flow from A to B</figcaption>
+</figure>
 
 Caller
 ---
 
 The caller can be marked with a tiny bullet.
 
-![Caller pushing]({{site.url}}/i/blog/bbl_caller_push.png)
+<figure>
+<img src="{{site.url}}/i/blog/bbl_caller_push.png" />
+<figcaption>Figure: A is calling B and handing over data to B</figcaption>
+</figure>
 
-Figure: A is calling B and handing over data to B
-{:.figcaption}
-
-![Caller pulling]({{site.url}}/i/blog/bbl_caller_pull.png)
-
-Figure: B is calling A and requesting data
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/bbl_caller_pull.png"/>
+<figcaption>Figure: B is calling A and requesting data</figcaption>
+</figure>
 
 Sequences
 ---
 
 By using numbers beside the connections, calling sequences can be modeled.
 
-![Caller and flow with sequence]({{site.url}}/i/blog/bbl_caller_flow_sequence.png)
-
-Figure: Modeling data flow with a calling sequence
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/bbl_caller_flow_sequence.png" />
+<figcaption>Figure: Modeling data flow with a calling sequence</figcaption>
+</figure>
 
 Synchronous and asynchronous
 ---
 
 Synchronous and asynchronous communication can be modeled with single and doubled connections.
 
-![Synchronous request and response]({{site.url}}/i/blog/bbl_sync.png)
+<figure>
+<img src="{{site.url}}/i/blog/bbl_sync.png" />
+<figcaption>Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.</figcaption>
+</figure>
 
-Figure: A request initiated by A, synchronous communication. If A writes first and gets a response or A reads first and writes back is not defined.
-{:.figcaption}
-
-![Request with asynchronous response]({{site.url}}/i/blog/bbl_async.png)
-
-Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.
-{:.figcaption}
+<figure>
+<img src="{{site.url}}/i/blog/bbl_async.png" />
+<figcaption>Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.</figcaption>
+</figure>
 
 This simple Box-Bullet-Line notation can grow with your needs. For example, you can start modeling only undirected connections, add data flow by giving your relationships a direction and extend even more by adding caller indication with calling sequences later. You can also use a swim-lane structure and place the components into those lanes, to communicate categories or domains that the components belong to.
 
