@@ -8,9 +8,9 @@
     <h1>{{ page.message }}</h1>
     {% endif %}
     {%if page.subtitle or page.date or page.author or page.meta %}
-    <div class="small">
+    <div class="small lh-2">
         {% if page.subtitle %}
-        <div class="lh-2">{{page.subtitle}}</div>
+        <div>{{page.subtitle}}</div>
         {% endif %}
 
         {% unless page.layout contains 'gallery' or page.layout contains 'collection' %}
