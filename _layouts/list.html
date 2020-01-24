@@ -9,7 +9,7 @@ layout: default
 <div>
 	<h2 class="mrb-0">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
 				href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-		class="small no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+		class="no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
 	{% if p.abstract %}
 	<p>{{ p.abstract }}</p>
 	{% else %}
@@ -27,7 +27,7 @@ layout: default
 <div>
 	<h2 class="mrb-0">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
 				href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-		class="small no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+		class="no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
 	{% if p.abstract %}
 	<p>{{ p.abstract }}</p>
 	{% else %}
