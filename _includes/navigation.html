@@ -6,14 +6,14 @@
 
 	{% if p.menu %}
 	{% if page.url == p.url %}
-	<span class="tag bg-base-color white no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
+	<span class="tag bg-base-color white no-deco mrr" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
 	{% else %}
 	<a class="tag no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
 	{% endif %}
 
 	{% elsif p.index %}
 	{% if page.url == p.url %}
-	<span class="tag bg-base-color white no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</span>
+	<span class="tag bg-base-color white no-deco mrr" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</span>
 	{% else %}
 	<a class="tag no-deco mrr-1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</a>
 	{% endif %}
