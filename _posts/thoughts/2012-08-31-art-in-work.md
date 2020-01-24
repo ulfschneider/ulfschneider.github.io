@@ -34,7 +34,7 @@ By claiming our work as being art, the development opportunities will expand for
 <blockquote>
 There used to be two teams in every workplace: management and labor. Now there’s a third team, the linchpins. These people invent, lead (regardless of title), connect others, make things happen, and create order out of chaos. They figure out what to do when there’s no rule book. They delight and challenge their customers and peers. They love their work, pour their best selves into it, and turn each day into a kind of art. 
 <figcaption>Seth Godin [Godin 2010]</figcaption>
-<blockquote>
+</blockquote>
 </figure>
 
 By Seth Godin's definition an artist is 
