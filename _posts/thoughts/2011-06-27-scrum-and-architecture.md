@@ -282,30 +282,26 @@ All aspects and tools that we have touched so far influence how architecture dec
 
 Architecture decisions need to be communicated. Besides the spoken language, which is a central part, the written form cannot be omitted. By writing down architecture decisions, the entire team or project will be enabled to trace even long in the past taken decisions. Stefan Zörner [Zörner 2009] has a real practical approach for the derivation and documentation of architecture decisions, which goes merely by writing down the answers to the following questions:
 
-1. Problem
+* Problem
     * What in detail is the problem?
     * Why is it of relevance for the architecture?
     * Which impacts does the decision have?
 
-
-2. Constraints
+* Constraints
     * What constraints need to be considered?
     * What influencing factors need to be considered?
 
-
-3. Assumptions
+* Assumptions
     * What assumptions have been made?
     * What assumptions can be validated?
     * What risks exist?
 
-
-4. Alternatives
+* Alternatives
     * What alternatives have been examined?
     * How is each of the other options being assessed?
     * What alternatives are by intent being skipped?
 
-
-5. Decision
+* Decision
     * What is the decision?
     * Who took the decision?
     * How is the decision being reasoned?
