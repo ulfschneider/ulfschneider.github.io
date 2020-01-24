@@ -287,19 +287,23 @@ Architecture decisions need to be communicated. Besides the spoken language, whi
     * Why is it of relevance for the architecture?
     * Which impacts does the decision have?
 
+
 2. Constraints
     * What constraints need to be considered?
     * What influencing factors need to be considered?
+
 
 3. Assumptions
     * What assumptions have been made?
     * What assumptions can be validated?
     * What risks exist?
 
+
 4. Alternatives
     * What alternatives have been examined?
     * How is each of the other options being assessed?
     * What alternatives are by intent being skipped?
+
 
 5. Decision
     * What is the decision?
