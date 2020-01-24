@@ -31,13 +31,19 @@ Architectural decisions are strategic for the solution space. They affect many a
 
 Architectural decisions are being taken under two premises [Friedrichsen 2010]:
 
-> Represent and balance the interests of all stakeholders over the entire system lifecycle and
->
-> Minimize the total cost of ownership for the system during the whole lifecycle
+<blockquote>
+Represent and balance the interests of all stakeholders over the entire system lifecycle and<br>
+Minimize the total cost of ownership for the system during the whole lifecycle
+</blockquote>
 
 Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks [Brooks 1995:45] states, that
 
-> The architect of a system, like the architect of a building, is the user´s agent
+<figure>
+<blockquote>
+The architect of a system, like the architect of a building, is the user´s agent
+<figcaption>Frederick Brooks</figcaption>
+</blockquote>
+</figure>
 
 My impression is, both quotes are correct.
 
@@ -131,13 +137,15 @@ The Product Vision contains and communicates the strategic goals of the endeavor
 
 One approach for developing such a vision is Geoffrey Moore´s elevator pitch. The basic idea behind is that you should be able to explain the greatness of your product idea during an elevator ride. You can use the following template to prepare the elevator pitch:
 
-> For [customer, user]
-> with [needs]
-> is [productname]
-> a [productcategory]
-> that has [attributes, values, a reason to buy].
-> Other than [competitor alternatives]
-> is [productname] a [differentiation of the product].
+<blockquote>
+For [customer, user]<br>
+with [needs]<br>
+is [productname]<br>
+a [productcategory]<br>
+that has [attributes, values, a reason to buy].<br>
+Other than [competitor alternatives]<br>
+is [productname] a [differentiation of the product].
+</blockquote>
 
 To go even one step further and anchor the vision within your business model, the [Business Model Canvas][businessmodelcanvas] by Alexander Osterwalder and Yves Pigneur may be of use.
 
