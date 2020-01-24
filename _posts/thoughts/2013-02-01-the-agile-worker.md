@@ -13,7 +13,12 @@ The agile worker is searching for insights. If insights should have a meaning, t
 
 The agile worker is acting best inside of a system where decisions will be taken at the level with most profound insights and not necessarily at the level with the most formal power.
 
-> Do not move information to authority. Move the authority to where the information lives. [Marquet 2012:49]
+<figure>
+<blockquote>
+Do not move information to authority. Move the authority to where the information lives. 
+<figcaption>David Marquet [Marquet 2012:49]</figcaption>
+</blockquote>
+</figure>
 
 Such kind of authority is a central part of the leadership process in agile organizations. It also means the ability to take risks, to change the organization and to develop. This is not primarily to reduce the work of managers but to come to the best possible decisions [Appelo 2011:114].
 
