@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Breakdown for Atom
-permalink: /breakdown/
+permalink: /breakdown
 categories: tools
 abstract: Display and manipulate a breakdown structure of your JIRA Scrum project - even offline and only eventually connected to your JIRA system.
 ---
