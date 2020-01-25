@@ -40,7 +40,7 @@ With the dawning industrialization, a new type of organization arises. Reading a
 
 But how can this new world be connected to the evolution principle?
 
-> The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design [Hayek 1969:33,35]
+> The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design. [Hayek 1969:33,35]
 
 The connection is, 150 years ago as well as today no mastermind can overview this world, to construct it and to plan it. The system organized itself in evolutionary steps.
 
