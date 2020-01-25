@@ -24,7 +24,7 @@ The only things that evolve by themselves in an organization are disorder, frict
 <figure>
 <blockquote>
 … the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. 
-<figcaption>Friedrich A. von Hayek [Hayek 2011:54]</figcaption>
+<figcaption>Friedrich A. von Hayek</figcaption>
 </blockquote>
 </figure>
 

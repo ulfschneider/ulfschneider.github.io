@@ -38,12 +38,10 @@ Minimize the total cost of ownership for the system during the whole lifecycle
 
 Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks [Brooks 1995:45] states, that
 
-<figure>
+
 <blockquote>
 The architect of a system, like the architect of a building, is the user´s agent
-<figcaption>Frederick Brooks</figcaption>
 </blockquote>
-</figure>
 
 My impression is, both quotes are correct.
 
