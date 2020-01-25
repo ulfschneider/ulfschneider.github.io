@@ -1,7 +1,7 @@
 ---
 layout: default
 title: stacked-area
-permalink: /stacked-area
+permalink: /stacked-area/
 categories: tools
 abstract: Draw SVG stacked area diagrams with a day-based x-axis.
 ---

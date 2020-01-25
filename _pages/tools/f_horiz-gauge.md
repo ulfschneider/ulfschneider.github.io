@@ -1,7 +1,7 @@
 ---
 layout: default
 title: horiz-gauge
-permalink: /horiz-gauge
+permalink: /horiz-gauge/
 categories: tools
 abstract: Draw a SVG horizontal gauge.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tracker
-permalink: /tracker
+permalink: /tracker/
 categories: tools
 abstract: File your workout routines and get a nice graphical overview of your achievements and improvements.
 ---

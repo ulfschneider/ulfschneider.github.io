@@ -1,7 +1,7 @@
 ---
 layout: default
 title: somap
-permalink: /somap
+permalink: /somap/
 categories: tools
 abstract: A sorted map and a sorted set, implemented as a binary tree.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: dheader
-permalink: /dheader
+permalink: /dheader/
 categories: tools
 abstract: Make the header of your web pages dynamic.
 ---

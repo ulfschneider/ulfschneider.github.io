@@ -2,7 +2,7 @@
 layout: list
 menu: Thoughts
 index: Thoughts
-permalink: /thoughts
+permalink: /thoughts/
 category: thoughts
 ---
 Essays about my experiences within the agile movement and the agile value system. 
