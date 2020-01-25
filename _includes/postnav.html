@@ -32,19 +32,19 @@
 {% endfor %}
 
 {% if prev or next %}
-<div class="clear-fix mry-2 small">
+<div class="clearfix mry-2 lh-4">
 	{% if prev  %}
 	<div class="float-left">
-		<a accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span> {{ prev.title }}</a>
+		<a class="no-deco" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span> {{ prev.title }}</a>
 	</div>
 	{% endif %}
 
 	{% if next  %}
 	<div class="float-right">
-		<a accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span> {{ next.title }}</a>
+		<a class="no-deco" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span> {{ next.title }}</a>
 	</div>
 	{% endif %}
 </div>
 {% else %}
-<div class="mrt-1 mrb-2 width-d1 height-d1 rounded bg-base-color"></div>
+<div class="mrt-1 mrb-2">—</div>
 {% endif %}
