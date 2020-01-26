@@ -2,7 +2,7 @@
 layout: default
 title:  The Box-Bullet-Line (BBL)
 subtitle: An intuitive and natural notation to communicate flows between components
-permalink: /bbl/
+permalink: /bbl
 categories: thoughts
 abstract: An intuitive and natural notation to communicate flows between components.
 ---
