@@ -18,3 +18,4 @@ In 1996 I graduated from the University of Paderborn (Dipl.-Wirt. Inform.). Thro
 I am riding race bikes and the [Bullitt]({{site.url}}/2016-10-02/) together with my boy [Emil]({{site.url}}/2016-09-25-2/).
 
 Contact me via +49 163 2505164.
+{:.mrb-0}
