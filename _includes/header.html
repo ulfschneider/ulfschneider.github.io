@@ -4,12 +4,17 @@
 {% else %}
 {% assign  style = "mrr tag" %}
 {% endif %}
-<div class="mrt mrb-4 caps lh-4" style="margin-left: - var(--space-d4);">	
-	{% if page.nositenav %}
-	<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
-	{% else %}
-	<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
-	{% endif %}
-	{% include navigation.html %}
-</div>
+<header class="full bg-base-background pdy">
+	<div class="xl">
+		<div class="caps lh-4" style="margin-left: - var(--space-d4);">
+			{% if page.nositenav %}
+			<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+			{% else %}
+			<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+			{% endif %}
+			{% include navigation.html %}
+		</div>
+	</div>
+</header>
+<div class="mrb-4"></div>
 {% endunless %}
