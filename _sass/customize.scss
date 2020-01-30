@@ -10,3 +10,7 @@
     --fs-h3: 1rem;    
     --lh-h3: 1.62em;
 }
+
+.is-dynamic .navigation {
+    border-bottom: 1px solid var(--base-color);
+}
