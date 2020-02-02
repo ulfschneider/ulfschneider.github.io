@@ -81,8 +81,8 @@ abstract: Highlight your TOC entries while scrolling.
 
 <div class="breakout-l content">
 <h1>active-toc</h1>
-<p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries
-of your table of contents while scrolling your website.</p>
+<p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries of your table of contents while scrolling your website.</p>
+
 
 <h2 id="one-morning">One morning</h2>
 
