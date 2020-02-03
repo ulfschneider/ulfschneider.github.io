@@ -2,20 +2,33 @@
 layout: default
 ---
 {{ content }}
+
 <!-- posts -->
 {% for p in site.posts %}
 {% unless p.nonav %}
 {% if p.categories contains page.category and p.title %}
 
-<h2 class="mrb-0">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
-			href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-	class="no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+{% if p.layout == "blank" %}
+{% assign target = "" %}
+{% endif %}
+
+{% if p.forward %}
+{% assign href = p.forward %}
+{% else %}
+{% assign href = p.url | prepend: site.baseurl  %}
+{% endif %}
+
+<h2 class="mrb-0"><a class="no-deco" target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
+{% if p.date %}
+<span class=" no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>
+{% endif %}
+
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}
 <p>{{ p.content | truncatewords:50 | strip_html }}</p>
-
 {% endif %}
+
 {% endif %}
 {% endunless %}
 {% endfor %}
@@ -25,9 +38,20 @@ layout: default
 {% unless p.nonav %}
 {% if p.categories contains page.category and p.title %}
 
-<h2 class="mrb-0">{% if p.forward %}<a class="no-deco" href="{{p.forward}}">{% else %}<a class="no-deco"
-			href="{{ p.url | prepend: site.baseurl }}">{% endif %}{{ p.title }}</a></h2>{% if p.date %} <span
-	class="no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>{% endif %}
+{% if p.layout == "blank" %}
+{% assign target = "" %}
+{% endif %}
+
+{% if p.forward %}
+{% assign href = p.forward %}
+{% else %}
+{% assign href = p.url | prepend: site.baseurl  %}
+{% endif %}
+
+<h2 class="mrb-0"><a class="no-deco" target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
+{% if p.date %}
+<span class="no-wrap">{{ p.date | date: '%B %d, %Y' }}</span>
+{% endif %}
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}

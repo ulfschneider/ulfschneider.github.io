@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: blank
 title: active-toc
-hidetitle: true
 permalink: /active-toc
 categories: tools
 abstract: Highlight your TOC entries while scrolling.
@@ -12,13 +11,13 @@ abstract: Highlight your TOC entries while scrolling.
         color: unset;
         text-decoration: unset;
         display: block;
-        margin-top: 1rem;
+        margin-top: var(--space);
     }
 
     #toc {
         position: fixed;
         width: 9rem;
-        top: 160px;
+        top: 0;
         left: 0;
         font-weight: normal;
         line-height: 1rem;
@@ -62,6 +61,7 @@ abstract: Highlight your TOC entries while scrolling.
 </style>
 
 <div id="toc">
+        <a href="/tools" class="mrb-2">Back to ulf.codes</a>
         <a href="#one-morning">One morning</a>
         <a href="#he-thought">He thought</a>
         <a href="#gregor-then">Gregor then</a>
@@ -80,9 +80,10 @@ abstract: Highlight your TOC entries while scrolling.
 </div>
 
 <div class="breakout-l content">
-<h1>active-toc</h1>
+<h1 class="mrt" >active-toc</h1>
 <p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries of your table of contents while scrolling your website.</p>
 
+<hr>
 
 <h2 id="one-morning">One morning</h2>
 
