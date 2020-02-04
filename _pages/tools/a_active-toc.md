@@ -8,10 +8,24 @@ abstract: Highlight your TOC entries while scrolling.
 
 <style>
   #toc a {
-        color: unset;
+      color: unset;
         text-decoration: unset;
         display: block;
         margin-top: var(--space);
+    }
+
+    #toc .is-active {
+        color: #FF851B;
+    }
+
+
+   #toc .is-visible {
+        color: #7FDBFF;
+    }
+     
+    #toc .is-highlight {
+        font-weight: bold;
+        color: #85144b;
     }
 
     #toc {
@@ -28,36 +42,6 @@ abstract: Highlight your TOC entries while scrolling.
         margin-left: 9rem;
     }
 
-    [class^="is-"]:after {
-        font-weight: normal;
-        color: white;
-        background: #AAAAAA;
-        margin: .25em 0;
-        padding: 0 .25em;
-        border-radius: .25em;
-        text-align: center;
-        font-size: small;
-        white-space: nowrap;
-        display: block;
-    }
-
-    .is-highlight {
-        font-weight: bold;
-    }
-
-    .is-active:after {
-        content: "is-active";
-    }
-
-    .is-visible:after {
-        content: "is-visible";
-        background: #7FDBFF;
-    }
-
-    .is-highlight:after {
-        content: "is-highlight";
-        background: #FF851B;
-    }
 </style>
 
 <div id="toc">
@@ -80,7 +64,7 @@ abstract: Highlight your TOC entries while scrolling.
 </div>
 
 <div class="breakout-l content">
-<h1 class="mrt" >active-toc</h1>
+<h1 class="mrt-4" >active-toc</h1>
 <p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries of your table of contents while scrolling your website. active-toc is leveraging the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">Intersection Observer API</a>.</p>
 
 <hr>
