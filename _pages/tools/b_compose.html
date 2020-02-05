@@ -1,6 +1,6 @@
 ---
-permalink: /compose
 title: Compose CSS
+permalink: /compose
 categories: tools
 abstract: A composable CSS Toolkit to build fast, maintainable, and responsive websites.
 ---
@@ -9,9 +9,9 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/compose.css">
-    <title>COMPOSE CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/compose.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>COMPOSE CSS</title>
 </head>
 <style>
     .is-highlight {
@@ -30,6 +30,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     .is-dynamic {
         border-bottom: var(--space-d2) solid white;
     }
+
 
     .bookmark a {
         position: fixed;
@@ -52,8 +53,6 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     :root {
         --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
         --mrt-h3: var(--space-4);
-        --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
-        --mrt-h3: var(--space-4);
         --fs-h1: var(--fs-5);
         --fs-h2: var(--fs-4);
     }
@@ -70,7 +69,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.2.0</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.3.1</span></div>
                 </div>
             </div>
         </div>
@@ -87,16 +86,14 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
                 <div><a href="#images" class="no-deco">Images</a></div>
                 <div><a href="#layout-grid" class="no-deco">Layout Grid</a></div>
                 <div><a href="#column-grid" class="no-deco">12 Col Grid</a></div>
+                <div><a href="#flex-box" class="no-deco">Flex-Box</a></div>
                 <div><a href="#layout" class="no-deco">Layout</a></div>
                 <div><a href="#width" class="no-deco">Width</a></div>
                 <div><a href="#height" class="no-deco">Height</a></div>
                 <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
                 <div><a href="#forms" class="no-deco">Forms</a></div>
-                <div>&nbsp;</div>
-                <div class="only-when-dynamic"><a href="#top" class="caps small lsp no-deco mrt">Go to top</a>
-                </div>
-                <div><a href="/tools" class="no-deco">ulf.codes</a></div>
+                <div><a href="/tools" class="no-deco">– ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">– Go to top</a></div>
             </div>
 
             <div class="bookmark small">
@@ -111,6 +108,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
                 <a href="#images" class="no-deco">Images</a>
                 <a href="#layout-grid" class="no-deco">Layout Grid</a>
                 <a href="#column-grid" class="no-deco">12 Col Grid</a>
+                <a href="#flex-box" class="no-deco">Flex-Box</a>
                 <a href="#layout" class="no-deco">Layout</a>
                 <a href="#width" class="no-deco">Width</a>
                 <a href="#height" class="no-deco">Height</a>
@@ -122,17 +120,17 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     </div>
 
 
-    <h2 class="pdt-2 mrt-0" id="start">Quickstart</h2>
+    <h2 class="pdt-3 mrt-0" id="start">Quickstart</h2>
     <p>Compose CSS is on <a href="https://github.com/ulfschneider/compose-css">GitHub</a>.</p>
     <p>Download the <a href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/compose.css"
-            download="compose.css" class="caps lsp bold">compose
+            class="caps lsp bold">compose
             CSS</code></a> file and put
         it into the css folder of your website project. </p>
     <p>Reference the CSS file in your HTML:</p>
     <pre>&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
     <p class="mrb-4">By then you are ready to use Compose CSS.</p>
     <p>There is also a <a href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/base-compose.css"
-            download="base-compose.css" class="bold caps lsp">base
+            class="bold caps lsp">base
             compose CSS</a> available – with only half the size.</p>
     <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
         it has the following limitations:</p>
@@ -856,7 +854,6 @@ figure
         </table>
     </div>
 
-
     <h3>Edge Values</h3>
     <p>In addition there are the following color classes available:</p>
 
@@ -1541,17 +1538,27 @@ figure
         <div class="xx-4 br radius radius-t pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.radius.radius-t</code></div>
 
+        <div class="xx-4 br radius radius-tl pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-tl</code></div>
+
+        <div class="xx-4 br radius radius-tr pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-tr</code></div>
+
         <div class="xx-4 br radius radius-r pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.radius.radius-r</code></div>
 
         <div class="xx-4 br radius radius-b pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.radius.radius-b</code></div>
 
+        <div class="xx-4 br radius radius-bl pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-bl</code></div>
+
+        <div class="xx-4 br radius radius-br pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-br</code></div>
+
         <div class="xx-4 br radius radius-l pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.radius.radius-l</code></div>
     </div>
-
-
 
     <h2 id="tables">Tables</h2>
 
@@ -1739,7 +1746,7 @@ figure
 
     <h2 id="figures">Figures</h2>
     <figure>
-        <img loading="lazy" src="/_pages/tools/compose/pierre-chatel-innocenti-unsplash.jpg" />
+        <img loading="lazy" src="/i/compose/pierre-chatel-innocenti-unsplash.jpg" />
         <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
     </figure>
     <pre>figure
@@ -1758,7 +1765,7 @@ figure
 
     <div class="wide">
         <figure>
-            <img loading="lazy" class="fit-cover width-100" src="/_pages/tools/compose/swan-leroi-unsplash.jpg" />
+            <img loading="lazy" class="fit-cover width-100" src="/i/compose/swan-leroi-unsplash.jpg" />
             <figcaption>Photo by Swan Leroi on Unsplash</figcaption>
         </figure>
         <pre>img/
@@ -1789,8 +1796,8 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         <div class="xx-12 rg-xx-6">
             <figure>
 
-                <img loading="lazy" src="/_pages/tools/compose/jayden-chong-unsplash.jpg"
-                    style="height:400px; width:100%" class="fit-contain br" />
+                <img loading="lazy" src="/i/compose/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-contain br" />
 
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
             </figure>
@@ -1799,8 +1806,8 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
         <div class="xx-12 rg-xx-6">
             <figure>
-                <img loading="lazy" src="/_pages/tools/compose/jayden-chong-unsplash.jpg"
-                    style="height:400px; width:100%" class="fit-contain fit-tl br" />
+                <img loading="lazy" src="/i/compose/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-contain fit-tl br" />
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
             </figure>
             <pre>img/ .fit-contain.fit-tl</pre>
@@ -1813,8 +1820,8 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
                 while preserving aspect-ratio.</p>
             <p>The image might be stretched to cover.</p>
             <figure>
-                <img loading="lazy" src="/_pages/tools/compose/jayden-chong-unsplash.jpg"
-                    style="height:400px; width:100%" class="fit-cover br" />
+                <img loading="lazy" src="/i/compose/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-cover br" />
 
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
             </figure>
@@ -1830,8 +1837,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         hero banners.
     </p>
 
-    <div class="full fit-cover x"
-        style="height: 600px; background-image: url('/_pages/tools/compose/swan-leroi-unsplash.jpg')">
+    <div class="full fit-cover x" style="height: 600px; background-image: url('/r/swan-leroi-unsplash.jpg')">
         <div class="breakout-l fs-8 bold mry-4 caps lsp">Hero</div>
     </div>
 
@@ -1927,7 +1933,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
         horizontal layout grid.</p>
 
-    <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
+    <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy ">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
 
@@ -2052,8 +2058,6 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
-
-
     <h3>Responsive Breakpoints</h3>
     <p class="mrt">The column count can vary based on available screen width.
         Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
@@ -2153,6 +2157,249 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
+    <h2 id="flex-box">Flex-Box</h2>
+
+    <div class="flex justify-start height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
+
+    <pre class="mry">div .flex.justify-start.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+    <div class="mrt-2 flex justify-center height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
+
+    <pre class="mry">div .flex.justify-center.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 div .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-end.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 div .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-between.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-around.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-evenly.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-start.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-center.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-end.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
+    <div class="width-3 mr bg-neutral-d4">1</div>
+    <div class="width-1 mr bg-neutral-d4">2</div>
+    <div class="width-2 mr bg-neutral-d4">3</div>
+    <div class="width-1 mr bg-neutral-d4">4</div>
+    <div class="width-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-stretch.height-5
+    div 1 /div .width-3 
+    div 2 /div .width-1 
+    div 3 /div .width-2 
+    div 4 /div .width-1 
+    div 5 /div .width-3
+/div</pre>
+
+<div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
+    <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
+    <div class="square-2 mr bg-neutral-d4"></div>
+    <div class="square-1 mr bg-neutral-d4"></div>
+    <div class="square-3 mr bg-neutral-d4"></div>
+</div>
+
+<pre class="mry">div .flex.align-baseline.height-5
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex-wrap bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-3 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+    <div class="square-3 mr bg-neutral-d4">6</div>
+    <div class="square-2 mr bg-neutral-d4">7</div>
+    <div class="square-1 mr bg-neutral-d4">8</div>
+    <div class="square-3 mr bg-neutral-d4">9</div>    
+</div>
+
+<pre class="mry">div .flex-wrap
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+    div 6 /div .square-3 
+    div 7 /div .square-2 
+    div 8 /div .square-1 
+    div 9 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex-column
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+/div</pre>
+
+<div class="mrt-2 flex-column flex-wrap height-6 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-3 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+    <div class="square-3 mr bg-neutral-d4">6</div>
+    <div class="square-2 mr bg-neutral-d4">7</div>
+    <div class="square-1 mr bg-neutral-d4">8</div>
+    <div class="square-3 mr bg-neutral-d4">9</div>    
+</div>
+
+<pre class="mry">div .flex-column.flex-wrap.height-6
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+    div 6 /div .square-3 
+    div 7 /div .square-2 
+    div 8 /div .square-1 
+    div 9 /div .square-3
+/div</pre>
+
+
     <h2 id="layout">Layout</h2>
 
     <h3>Display</h3>
@@ -2199,18 +2446,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </tr>
         <tr>
             <td class="no-wrap"><code>.top</code></td>
-            <td><code> vertical-align: top;
-                    align-items: start;</code></td>
+            <td><code> vertical-align: top;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.middle</code></td>
-            <td><code> vertical-align: middle;
-                    align-items: center;</code></td>
+            <td><code> vertical-align: middle;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.bottom</code></td>
-            <td><code> vertical-align: bottom;
-                    align-items: end;</code></td>
+            <td><code> vertical-align: bottom;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.left</code></td>
@@ -2240,12 +2484,12 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
             <td><code>overflow: hidden;</code></td>
         </tr>
         <tr>
-            <td class="no-wrap"><code>.overflow-scroll</code></td>
-            <td><code>overflow: scroll;</code></td>
-        </tr>
-        <tr>
             <td class="no-wrap"><code>.overflow-auto</code></td>
             <td><code>overflow: auto;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-scroll</code></td>
+            <td><code>overflow: scroll;</code></td>
         </tr>
     </table>
     <h3>Box Sizing</h3>
@@ -2373,6 +2617,9 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div/ .float-left 
     div/ .float-right 
 /div</pre>
+
+    <h2 id="width">Width, Max-Width, and Min-Width</h2>
+
 
     <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
@@ -2763,7 +3010,6 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
 
 
 
-
     <h2 id="forms">Forms</h2>
 
     <form class="mry-3 mxw-sm">
@@ -2809,7 +3055,6 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
             <textarea class="block width-100 height-3"></textarea>
         </dl>
     </form>
-
 </body>
 
 <script src="/r/dynamic-header.min.js"></script>
