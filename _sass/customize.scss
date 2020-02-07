@@ -11,6 +11,7 @@
     --lh-h3: 1.62em;
 }
 
-.is-dynamic .navigation {
-    border-bottom: 1px solid var(--base-color);
+header.is-dynamic {
+    background: #eee;
+    border-bottom: 1px solid #ccc;
 }
