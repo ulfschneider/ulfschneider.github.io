@@ -1,17 +1,14 @@
 {% unless page.noheader %}
-{% if page.url == "/" %}
-{% assign style = "mrr tag bg-base-color white" %}
-{% else %}
-{% assign  style = "mrr tag" %}
-{% endif %}
 <div class="full">
 	<header class="bg-base-background xl z-1">
 		<div class="caps navigation lh-4 pdy" style="margin-left: - var(--space-d4);">
-			{% if page.nositenav %}
-			<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+
+			{% if page.url == "/" %}
+			<span class="mrr tag bg-base-color white">{{ site.title }}</span>
 			{% else %}
-			<span class="{{style}}"><a class="no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+			<a class="mrr tag no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a>
 			{% endif %}
+
 			{% include navigation.html %}
 		</div>
 	</header>
