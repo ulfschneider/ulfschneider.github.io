@@ -17,7 +17,7 @@ ul li::before {
   min-width: var(--space-d2);
   height: var(--space-d2);
   vertical-align: baseline;
-  margin-bottom: var(--space-d3);
+  margin-bottom: var(--space-d4);
   margin-right: calc(var(--horizontal-rhythm) - var(--space-d2));
   background: var(--base-color);
 }
