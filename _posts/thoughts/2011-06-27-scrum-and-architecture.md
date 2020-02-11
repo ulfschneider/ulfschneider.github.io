@@ -97,11 +97,8 @@ The architect in Scrum
 Coming from the organization to the individual, we have to think about the architects' role. Here are some suggestions to embed the architect into a Scrum endeavor:
 
 * Embedding: If the architect is part of the Scrum Development Team or if a more separate position is needed, depends on the size of the project. If the entire project is made up of a single Scrum team, the architect will merely take his role inside of the Development Team. In case more than one Scrum Team is needed, the architect will have a more exposed position which is comparable to the exposure of the Product Owner.
-
 * Decision competency: Analogous to the decision competency of the Product Owner regarding business decisions, the architect has the final word regarding architecture decisions. He helps to define the product.
-
 * Member of the project: The architect is proactively responsible for the architecture of the solution space. And she is expected to have the same willingness to collaborate and drive to improve the development process as it is expected from all other team members.
-
 * Coding skills: The Scrum Team accepts the architect. Her contributions enrich the product, and she provides benefits to the team. For software development projects it is inevitable that the architect can write code to understand technical details and working dynamics. In most cases, the background of an architect is technical. This requires her to be open and to be willing to learn the essential aspects of the business or problem domain.
 
 This is a lot to expect from an architect. But the same is true for all other members of a Scrum Team. A developer is supposed to be on top of his craft, and a Product Owner must be able to influence his organization and have high competence in making business-relevant decisions to serve the product. The business experts need to be able to develop concise requirements and even test cases. Vice versa the architect must be able to fill out his role or at least has to learn the relevant aspects throughout the project.
