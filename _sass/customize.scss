@@ -22,12 +22,6 @@ ul li::before {
   background: var(--base-color);
 }
 
-.eof {
-  width: var(--space);
-  height: .3rem;
-  background: var(--base-color);
-  display:block;
-}
 
 header.is-dynamic {
   background: #eee;
