@@ -14,11 +14,11 @@
 }
 
 ul li::before {
-  min-width: .3rem;
-  height: .3rem;
+  min-width: .3em;
+  height: .3em;
   vertical-align: baseline;
   margin-bottom: var(--space-d4);
-  margin-right: calc(var(--horizontal-rhythm) - .4rem);
+  margin-right: calc(var(--horizontal-rhythm) - .3em);
   background: var(--base-color);
 }
 
