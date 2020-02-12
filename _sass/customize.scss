@@ -14,17 +14,17 @@
 }
 
 ul li::before {
-  min-width: var(--space-d2);
-  height: var(--space-d2);
+  min-width: .3rem;
+  height: .3rem;
   vertical-align: baseline;
   margin-bottom: var(--space-d4);
-  margin-right: calc(var(--horizontal-rhythm) - var(--space-d2));
+  margin-right: calc(var(--horizontal-rhythm) - .4rem);
   background: var(--base-color);
 }
 
 .eof {
   width: var(--space);
-  height: var(--space-d3);
+  height: .3rem;
   background: var(--base-color);
   display:block;
 }
