@@ -47,7 +47,7 @@ Innovation rate is low but operational performance can be outstanding. Usually, 
 
 The control culture is the most widespread organization culture of the last century.
 
-> *In one sentece:* The system is most important, and big size counts.
+> *In one sentence:* The system is most important, and big size counts.
 
 Collaboration Culture
 ---
@@ -87,7 +87,7 @@ Leaders are never fully satisfied. They are goal minded and willing to take any 
 
 Competence cultures can be found in innovative markets and niche markets. But the niche can be tall and possibly being dominated by only one organization. In any case, the produced goods or services are exceptional.
 
-> *In one sentece:* We are exceptional, and we can prove it.
+> *In one sentence:* We are exceptional, and we can prove it.
 
 Cultivation Culture
 ---
@@ -107,7 +107,7 @@ Leaders remove obstacles which would impede others to develop their full potenti
 
 Organizational structure is decentralized with minimal lines of authority. People are free and encouraged to interact with anyone else in the organization to create. The presence of goodwill is assumed. Information flows freely. Internal competition is minimal because people will help out one another. Individual talent can grow and move in a rather wide range of directions. This is less true of a collaboration culture. Commitment is very high. Employees do the recruiting. Word-of-mouth brings people in.
 
-> *In one sentece:* Life is fascinating.
+> *In one sentence:* Life is fascinating.
 
 Culture and leadership
 ---
