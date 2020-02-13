@@ -14,11 +14,17 @@
 }
 
 ul li::before {
-  min-width: var(--space-d2);
-  height: var(--space-d2);
+  min-width: var(--space-d1);
+  height: var(--space-d3);
   vertical-align: baseline;
   margin-bottom: var(--space-d4);
-  margin-right: calc(var(--horizontal-rhythm) - var(--space-d2));
+  margin-right: calc(var(--horizontal-rhythm) - var(--space-d1));
+  background: var(--base-color);
+}
+
+.eof {
+  width: var(--space);
+  height: var(--space-d3);
   background: var(--base-color);
 }
 
