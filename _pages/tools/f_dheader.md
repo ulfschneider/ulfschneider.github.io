@@ -7,4 +7,6 @@ abstract: Make the header of your web pages dynamic.
 ---
 An [npm package](https://www.npmjs.com/package/dheader) to make the header of your web pages dynamic.
 
-![dheader Demo](/i/dheader/dynamic-header.gif)
+<figure>
+<img src="/i/dheader/dynamic-header.gif" />
+</figcaption>

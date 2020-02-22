@@ -14,19 +14,19 @@ The affirmation of the evolutionary approach is rewarding but will challenge tra
 
 Leaders in agile organizations have the vital function of actively giving self-organizational forces a direction. This seems to be conflicting with the evolutionary approach and to span the tension field even further, here are two quotes I found in [Malik 2009:137]:
 
-<figure class="mrt-1">
+
 <blockquote>
 The only things that evolve by themselves in an organization are disorder, friction, and malperformance. 
 <figcaption>Peter F. Drucker</figcaption>
 </blockquote>
-</figure>
 
-<figure class="mrt-2">
+
+
 <blockquote>
 … the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. 
 <figcaption>Friedrich A. von Hayek</figcaption>
 </blockquote>
-</figure>
+
 
 ## Past and present
 
@@ -146,7 +146,7 @@ Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragilit
 
 I want to close with a suggestion for a reflection exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118].
 
-Think about. Act. Repeat.
+> Think about. Act. Repeat.
 
 ## References
 

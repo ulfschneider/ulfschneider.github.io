@@ -5,9 +5,7 @@ index: Thoughts
 permalink: /thoughts
 category: thoughts
 ---
-Essays about my experiences within the agile movement and the agile value system. 
-
-Most often read:
+Essays about my experiences within the agile movement and the agile value system. Most often read:
 
 - [The balanced organization](http://ulf.codes/balanced-organization/)
 - [The art in our work](http://ulf.codes/art-in-work/)
