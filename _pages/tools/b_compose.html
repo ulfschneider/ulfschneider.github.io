@@ -37,7 +37,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
         left: 0;
         bottom: 0;
 
-        background: var(--base-color);
+        background: var(--heading-color);
         color: var(--base-background);
         padding-left: var(--space);
         padding-right: var(--space-d2);
@@ -54,7 +54,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     div>h2::before {
         content: "";
         display: block;
-        background: var(--base-color);
+        background: var(--heading-color);
         width: var(--space-4);
         height: var(--space-d1);
     }
@@ -78,7 +78,7 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.22.1</span></div>
+                    <div class="pd inline-block bg-black rounded white"><span id="version">v0.22.1</span></div>
                 </div>
             </div>
         </div>
@@ -255,7 +255,6 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     <div>
         <h3>Indented Paragraph</h3>
         <div class="indent">
-            <h4>Headings within indentation-blocks are completely indented</h4>
             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                 into a
                 horrible vermin.</p>
@@ -274,9 +273,6 @@ abstract: A composable CSS Toolkit to build fast, maintainable, and responsive w
     h4/
     p/
 /div
-
-h4/ .indent 
-h4/ .no-indent //remove indentation for this heading
 
 p/ .indent
 p/ .no-indent //remove indentation for this p</pre>
@@ -336,13 +332,7 @@ p/ .no-indent //remove indentation for this p</pre>
     </ul>
     <pre class="mid">ul .indent
     li/
-/ul
-
-div .indent
-    ul
-        li/
-    /ul 
-/div</pre>
+/ul</pre>
 
 
 
@@ -404,13 +394,7 @@ div .indent
         </ol>
         <pre class="mid">ol .indent
     li/
-/ol
-
-div .indent
-    ol
-        li/
-    /ol 
-/div</pre>
+/ol</pre>
     </div>
 
 
@@ -678,19 +662,19 @@ figure
         prefix values
         of:</p>
     <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
+        <dt><code>.sm-</code></dt>
         <dd>The size is applied only if the screen is at least of small width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
+        <dt><code>.rg-</code></dt>
         <dd>The size is applied only if the screen is at least of regular size.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.md-</code></dt>
+        <dt><code>.md-</code></dt>
         <dd>The size is applied only if the screen is at least of mid size.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
+        <dt><code>.lg-</code></dt>
         <dd>The size is applied only if the screen is at least of large size.</dd>
     </dl>
     <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
@@ -1020,7 +1004,7 @@ figure
     <pre class="mid">:root {
     --neutral-h: 0;
     --neutral-s: 0%;
-    --neutral-l: 53%;              
+    --neutral-l: 55%;              
     
     --primary-h: 213;
     --primary-s: 19%;
@@ -1955,7 +1939,7 @@ figure
     </p>
 
     <div class="full fit-cover x height-rg bg-fixed" style='background-image: url("/i/compose/swan-leroi-unsplash.jpg")'>
-        <div class="breakout-l fs-8 bold mry-4 caps lsp overflow-hidden">Hero</div>
+        <div class="breakout-l fs-8 bold mry-4 caps lsp overflow-hidden black">Hero</div>
     </div>
 
     <pre class="breakout mrt">div/ .fit-cover.bg-fixed.height-rg style="background-image: url('image.jpg')" </pre>
@@ -2022,19 +2006,19 @@ figure
         screen width.
         Address the different minimum screen sizes with column prefix values of</p>
     <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
+        <dt><code>.sm-</code></dt>
         <dd>The grid structure is applied only if the screen is at least of small width</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
+        <dt><code>.rg-</code></dt>
         <dd>The grid structure is applied only if the screen is at least of regular width</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.md-</code></dt>
+        <dt><code>.md-</code></dt>
         <dd>The grid structure is applied only if the screen is at least of mid width</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
+        <dt><code>.lg-</code></dt>
         <dd>The grid structure is applied only if the screen is at least of large width</dd>
     </dl>
     <p>
@@ -2180,19 +2164,19 @@ figure
         Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
         prefix values values of:</p>
     <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
+        <dt><code>.sm-</code></dt>
         <dd>The column count is applied only if the screen is at least of small width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
+        <dt><code>.rg-</code></dt>
         <dd>The column count is applied only if the screen is at least of regular width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.md-</code></dt>
+        <dt><code>.md-</code></dt>
         <dd>The column count is applied only if the screen is at least of mid width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
+        <dt><code>.lg-</code></dt>
         <dd>The column count is applied only if the screen is at least of large width.</dd>
     </dl>
     <p>A column class without a prefix will be used in case the
@@ -2244,19 +2228,19 @@ figure
         Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
         prefix values of:</p>
     <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
+        <dt><code>.sm-</code></dt>
         <dd>The column width is applied only if the screen is at least of small width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
+        <dt><code>.rg-</code></dt>
         <dd>The column width is applied only if the screen is at least of regular width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.md-</code></dt>
+        <dt><code>.md-</code></dt>
         <dd>The column width is applied only if the screen is at least of mid width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
+        <dt><code>.lg-</code></dt>
         <dd>The column width is applied only if the screen is at least of large width.</dd>
     </dl>
     <p>
@@ -2858,19 +2842,19 @@ figure
             be altered with responsive breakpoints, wich are indicated by CSS class
             prefix values of:</p>
         <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
+            <dt><code>.sm-</code></dt>
             <dd>The width is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
+            <dt><code>.rg-</code></dt>
             <dd>The width is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.md-</code></dt>
+            <dt><code>.md-</code></dt>
             <dd>The width is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
+            <dt><code>.lg-</code></dt>
             <dd>The width is applied only if the screen is at least of large width.</dd>
         </dl>
     </div>
@@ -2989,19 +2973,19 @@ figure
             prefix values
             of:</p>
         <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
+            <dt><code>.sm-</code></dt>
             <dd>The height is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
+            <dt><code>.rg-</code></dt>
             <dd>The height is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.md-</code></dt>
+            <dt><code>.md-</code></dt>
             <dd>The height is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
+            <dt><code>.lg-</code></dt>
             <dd>The height is applied only if the screen is at least of large width.</dd>
         </dl>
 
@@ -3090,19 +3074,19 @@ figure
         prefix values
         of:</p>
     <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
+        <dt><code>.sm-</code></dt>
         <dd>The square is applied only if the screen is at least of small width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
+        <dt><code>.rg-</code></dt>
         <dd>The square is applied only if the screen is at least of regular width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.md-</code></dt>
+        <dt><code>.md-</code></dt>
         <dd>The square is applied only if the screen is at least of mid width.</dd>
     </dl>
     <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
+        <dt><code>.lg-</code></dt>
         <dd>The square is applied only if the screen is at least of large width.</dd>
     </dl>
 
@@ -3238,7 +3222,7 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
 <script src="/r/active-toc.min.js"></script>
 
 <script>
-    DynamicHeader.init();
+    DynamicHeader.init({ delta: 100 });
     ActiveToc.init();
 </script>
 
