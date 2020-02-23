@@ -39,10 +39,10 @@ abstract: A short entry-level approach to Git.
 
 Git will help you doing the following things with a computer:
 
-<div class="x-12">
+<div class="x-12 mrt">
 <div class="xx-12 rg-xx-6">
 <strong>Personal</strong>
-<ul class="indent">
+<ul class="indent mrt-0">
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
 <li>Safely experiment because you can always step back to the previous version.</li>
 <li>No need to give your files version indicating names, like essay_v1.txt, essay_v2.txt and so on.</li>
@@ -55,7 +55,7 @@ Git will help you doing the following things with a computer:
 
 <div class="xx-12 rg-xx-6">
 <strong>Team</strong>
-<ul class="indent">
+<ul class="indent mrt-0">
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
 <li>No central locking of files. All team members have their own working copy on their own computers which allows each of them to work independently.</li>
