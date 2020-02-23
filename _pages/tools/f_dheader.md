@@ -9,4 +9,4 @@ An [npm package](https://www.npmjs.com/package/dheader) to make the header of yo
 
 <figure>
 <img src="/i/dheader/dynamic-header.gif" />
-</figcaption>
+</figure>
