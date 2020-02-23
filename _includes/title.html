@@ -1,4 +1,3 @@
-
 {% if page.title or page.message %}
 <div class="mrb-2">
     {% if page.title %}
@@ -11,14 +10,12 @@
     {%if page.subtitle or page.date or page.author or page.meta %}
     <div>
         {% if page.subtitle %}
-        <div>{{page.subtitle}}</div>
+        <div class="mxw-sm">{{page.subtitle}}</div>
         {% endif %}
 
-        {% unless page.layout contains 'gallery' or page.layout contains 'collection' %}
         {% if page.date %}<span>{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
-        {% endunless %}
 
-        {% if page.author %}<span> by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
+        {% if page.author %}<span>by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
     </div>
     {% endif %}
 </div>
