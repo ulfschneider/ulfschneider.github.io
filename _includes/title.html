@@ -10,12 +10,12 @@
     {%if page.subtitle or page.date or page.author or page.meta %}
     <div>
         {% if page.subtitle %}
-        <div class="mxw-sm">{{page.subtitle}}</div>
+        <div class="mxw-sm lh-2">{{page.subtitle}}</div>
         {% endif %}
 
-        {% if page.date %}<span>{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
+        {% if page.date %}<span class="small neutral-1 lh-2">{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
 
-        {% if page.author %}<span>by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
+        {% if page.author %}<span class="small neutral-1 lh-2">by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
     </div>
     {% endif %}
 </div>

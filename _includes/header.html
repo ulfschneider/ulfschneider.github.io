@@ -1,10 +1,10 @@
 {% unless page.noheader %}
 <div class="full">
 	<header class="bg-base-background xl z-1">
-		<div class="navigation lh-4 pdy-d2">
+		<div class="navigation lh-4 small mrt">
 
 			{% if page.url == "/" %}
-			<span class="mrr base-color">{{ site.title }}</span>
+			<span class="mrr base-color bold">{{ site.title }}</span>
 			{% else %}
 			<a class="mrr neutral-1 no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a>
 			{% endif %}
