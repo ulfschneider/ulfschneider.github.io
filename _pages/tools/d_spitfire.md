@@ -2,7 +2,7 @@
 layout: default
 title: Spitfire
 permalink: /spitfire
-categories: tools
+category: tools
 abstract: A virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. 
 ---
 Spitfire is a virtual whiteboard to be shared by multiple persons at the same time. Users will be anonymous - so no one needs to sign in. 

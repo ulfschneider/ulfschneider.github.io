@@ -1,7 +1,6 @@
 ---
 layout: list
 menu: Thoughts
-index: Thoughts
 permalink: /thoughts
 category: thoughts
 ---

@@ -2,7 +2,7 @@
 layout: default
 title: Pocket Git Guide
 subtitle: A short entry-level approach to Git
-categories: thoughts
+category: thoughts
 abstract: A short entry-level approach to Git.
 ---
 

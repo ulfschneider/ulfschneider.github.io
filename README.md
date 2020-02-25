@@ -14,7 +14,7 @@ Feel free to use all other HTML and CSS as you like. If you do use them, a link 
 
 **layout:** list|default
 
--   _list_ will summarize posts or pages which have a front matter variable _categories_ that contains a value which is equal to the entry _category_ inside of the list layout
+-   _list_ will summarize posts or pages which have a front matter variable _category_ that contains a value which is equal to the entry _category_ inside of the list layout
 -   _default_ may be used for any page or any post to be shown inside of the _list_ layout
 
 **title:** notitle|A text string

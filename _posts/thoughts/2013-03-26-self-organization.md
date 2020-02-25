@@ -2,7 +2,7 @@
 layout: default
 title: Self-organization
 subtitle: A force of life
-categories: thoughts
+category: thoughts
 abstract: Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.
 ---
 
@@ -14,19 +14,15 @@ The affirmation of the evolutionary approach is rewarding but will challenge tra
 
 Leaders in agile organizations have the vital function of actively giving self-organizational forces a direction. This seems to be conflicting with the evolutionary approach and to span the tension field even further, here are two quotes I found in [Malik 2009:137]:
 
-
 <blockquote>
 The only things that evolve by themselves in an organization are disorder, friction, and malperformance. 
 <figcaption>Peter F. Drucker</figcaption>
 </blockquote>
 
-
-
 <blockquote>
 … the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. 
 <figcaption>Friedrich A. von Hayek</figcaption>
 </blockquote>
-
 
 ## Past and present
 

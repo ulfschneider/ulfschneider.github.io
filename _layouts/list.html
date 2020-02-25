@@ -6,7 +6,7 @@ layout: default
 <!-- posts -->
 {% for p in site.posts %}
 {% unless p.nonav %}
-{% if p.categories contains page.category and p.title %}
+{% if p.category contains page.category and p.title %}
 
 {% if p.layout == "blank" %}
 {% assign target = "" %}
@@ -36,7 +36,7 @@ layout: default
 <!-- pages -->
 {% for p in site.pages %}
 {% unless p.nonav %}
-{% if p.categories contains page.category and p.title %}
+{% if p.category contains page.category and p.title %}
 
 {% if p.layout == "blank" %}
 {% assign target = "" %}

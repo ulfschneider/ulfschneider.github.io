@@ -1,3 +1,5 @@
+
+
 {% for post in site.posts %}
 
 {% if post.url == page.url %}
@@ -11,7 +13,7 @@
 {% unless prev %}
 {% for p in site.posts offset:index   %}
 {% unless prev %}
-{% if p.layout == current.layout %}
+{% if p.category == current.category %}
 {% assign prev = p %}
 {% endif %}
 {% endunless %}
@@ -20,7 +22,7 @@
 
 {% unless next %}
 {% for p in site.posts %}
-{% if p.layout == current.layout and forloop.index < index  %}
+{% if p.category == current.category and forloop.index < index  %}
 {% assign next = p %}
 {% endif %}
 {% endfor %}
