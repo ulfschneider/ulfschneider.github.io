@@ -1,12 +1,12 @@
 {% unless page.noheader %}
 <div class="full">
 	<header class="bg-base-background xl z-1">
-		<div class="caps navigation lh-4 pdy-d2" style="margin-left: - var(--space-d4);">
+		<div class="navigation lh-4 pdy-d2">
 
 			{% if page.url == "/" %}
-			<span class="mrr tag bg-base-color white">{{ site.title }}</span>
+			<span class="mrr base-color">{{ site.title }}</span>
 			{% else %}
-			<a class="mrr tag no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a>
+			<a class="mrr neutral-1 no-deco" href="{{ site.baseurl }}/">{{ site.title }}</a>
 			{% endif %}
 
 			{% include navigation.html %}

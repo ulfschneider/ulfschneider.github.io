@@ -8,11 +8,12 @@
   --lh-h2: 1.62em;
 
   --fs-h3: 1rem;
-  --lh-h3: 1.62em;
-  --list-item-type: "•";
+  --lh-h3: 1.62em;  
+
+  --heading-text-transform: unset;
 }
 
 header.is-dynamic {
-  background: #eee;
-  border-bottom: 1px solid #ccc;
+  background:white;
+  border-bottom: 1px solid var(--neutral-4);
 }
