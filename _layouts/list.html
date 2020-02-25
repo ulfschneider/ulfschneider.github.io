@@ -26,7 +26,8 @@ layout: default
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}
-<p>{{ p.content | truncatewords:50 | strip_html }}
+<p>
+    {{ p.content | truncatewords:50 | strip_html }}
     {% capture words %}
     {{ page.content | number_of_words | minus: 50 }}
     {% endcapture %}
@@ -61,7 +62,14 @@ layout: default
 {% if p.abstract %}
 <p>{{ p.abstract }}</p>
 {% else %}
-<p>{{ p.content | truncatewords:50 | strip_html }}</p>
+<p>
+    {{ p.content | truncatewords:50 | strip_html }}
+    {% capture words %}
+    {{ page.content | number_of_words | minus: 50 }}
+    {% endcapture %}
+
+    {%unless words contains "-" %}…{% endunless %}
+</p>
 
 {% endif %}
 {% endif %}
