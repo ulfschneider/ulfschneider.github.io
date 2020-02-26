@@ -1,7 +1,5 @@
 {% if page.title or page.message %}
 <div class="mrb-2">
-    {% if page.date %}<span class="small neutral-1">{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
-    {% if page.author %}<span class="small neutral-1">by {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}</span>{% endif %}
     {% if page.title %}
     {% unless page.title == 'notitle' %}
     <h1>{{ page.title }}</h1>
@@ -13,8 +11,12 @@
     <div>
         {% if page.subtitle %}
         <div class="mxw-sm">{{page.subtitle}}</div>
-        {% endif %}     
+        {% endif %}
     </div>
     {% endif %}
+    {% if page.date %}<span class="small neutral-1">{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}
+    {% if page.author %}<span class="small neutral-1">by {{ page.author }}{% endif %}{% if page.meta %} |
+        {{ page.meta }}</span>{% endif %}
+
 </div>
 {% endif %}
