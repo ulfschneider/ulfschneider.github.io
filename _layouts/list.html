@@ -19,7 +19,7 @@ layout: default
 {% endif %}
 
 {% if content.size > 1 %}
-{% assign headingStyle = "mrb-0" %}
+{% assign headingStyle = "mrt-1 mrb-0" %}
 {% else %}
 {% assign headingStyle = "mry-0" %}
 {% endif %}
@@ -28,7 +28,7 @@ layout: default
 <p>
     {% unless page.hidedate %}
     {% if p.date %}
-    <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+    <span class="no-wrap neutral-d1 mrr">{{ p.date | date: '%B %d, %Y' }}</span>
     {% endif %}
     {% endunless %}
 
@@ -67,7 +67,7 @@ layout: default
 <p>
     {% unless page.hidedate %}
     {% if p.date %}
-    <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+    <span class="no-wrap neutral-d1 mrr">{{ p.date | date: '%B %d, %Y' }}</span>
     {% endif %}
     {% endunless %}
 
