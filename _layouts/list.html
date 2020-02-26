@@ -3,6 +3,18 @@ layout: default
 ---
 {{ content }}
 
+<style>
+    @media (hover: hover) {
+        a:hover h2 {
+            color: var(--link-hover-color);
+        }
+    }
+
+    a:active:focus h2 {
+        color: var(--link-active-color);
+    }
+</style>
+
 <!-- posts -->
 {% for p in site.posts %}
 {% unless p.nonav %}
@@ -24,25 +36,26 @@ layout: default
 {% assign headingStyle = "mry-0" %}
 {% endif %}
 
-<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
-<p>
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
+<a target="{{target}}" href="{{href}}" class="no-deco">
+    <h2 class="{{headingStyle}}">{{ p.title }}</h2>
+    <p class="base-color">
+        {% unless page.hidedate %}
+        {% if p.date %}
+        <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+        {% endif %}
+        {% endunless %}
 
-    {% if p.abstract %}
-    {{ p.abstract }}
-    {% else %}
-    {{ p.content | truncatewords:50 | strip_html }}
-    {% capture words %}
-    {{ page.content | number_of_words | minus: 50 }}
-    {% endcapture %}
-    {% unless words contains "-" %}…{% endunless %}
-    {% endif %}
-</p>
-
+        {% if p.abstract %}
+        {{ p.abstract }}
+        {% else %}
+        {{ p.content | truncatewords:50 | strip_html }}
+        {% capture words %}
+        {{ page.content | number_of_words | minus: 50 }}
+        {% endcapture %}
+        {% unless words contains "-" %}…{% endunless %}
+        {% endif %}
+    </p>
+</a>
 {% endif %}
 {% endunless %}
 {% endfor %}
@@ -62,26 +75,27 @@ layout: default
 {% assign href = p.url | prepend: site.baseurl  %}
 {% endif %}
 
-<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
+<a target="{{target}}" href="{{href}}" class="no-deco">
+    <h2 class="{{headingStyle}}">{{ p.title }}</h2>
 
-<p>
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
+    <p class="base-color">
+        {% unless page.hidedate %}
+        {% if p.date %}
+        <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+        {% endif %}
+        {% endunless %}
 
-    {% if p.abstract %}
-    {{ p.abstract }}
-    {% else %}
-    {{ p.content | truncatewords:50 | strip_html }}
-    {% capture words %}
-    {{ page.content | number_of_words | minus: 50 }}
-    {% endcapture %}
-    {% unless words contains "-" %}…{% endunless %}
-    {% endif %}
-</p>
-
+        {% if p.abstract %}
+        {{ p.abstract }}
+        {% else %}
+        {{ p.content | truncatewords:50 | strip_html }}
+        {% capture words %}
+        {{ page.content | number_of_words | minus: 50 }}
+        {% endcapture %}
+        {% unless words contains "-" %}…{% endunless %}
+        {% endif %}
+    </p>
+</a>
 
 {% endif %}
 {% endunless %}
