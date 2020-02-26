@@ -1,111 +1,114 @@
 ---
 layout: default
 ---
-{{ content }}
+<div class="list">
+    {{ content }}
 
-<style>
-    @media (hover: hover) {
-        a:hover {
+    <style>
+        @media (hover: hover) {
+            .list .abstract a:hover {
+                color: var(--base-color);
+                text-decoration-color: var(--base-color);
+            }
+        }
+
+        .list .abstract a {
             color: var(--base-color);
         }
 
-        h2 a:hover {
-            color: var(--link-hover-color)
+        .list .abstract a:active:focus {
+            color: var(--base-color);
+            text-decoration-color: var(--base-color);
         }
-    }
+    </style>
 
-    a:active:focus {
-        color: var(--base-color);
-    }
+    <!-- posts -->
+    {% for p in site.posts %}
+    {% unless p.nonav %}
+    {% if p.category contains page.category and p.title %}
 
-    h2 a:active:focus h2 {
-        color: var(--link-active-color);
-    }
-</style>
+    {% if p.layout == "blank" %}
+    {% assign target = "" %}
+    {% endif %}
 
-<!-- posts -->
-{% for p in site.posts %}
-{% unless p.nonav %}
-{% if p.category contains page.category and p.title %}
+    {% if p.forward %}
+    {% assign href = p.forward %}
+    {% else %}
+    {% assign href = p.url | prepend: site.baseurl  %}
+    {% endif %}
 
-{% if p.layout == "blank" %}
-{% assign target = "" %}
-{% endif %}
-
-{% if p.forward %}
-{% assign href = p.forward %}
-{% else %}
-{% assign href = p.url | prepend: site.baseurl  %}
-{% endif %}
-
-{% if content.size > 1 %}
-{% assign headingStyle = "mrt-1 mrb-0" %}
-{% else %}
-{% assign headingStyle = "mry-0" %}
-{% endif %}
+    {% if content.size > 1 %}
+    {% assign headingStyle = "mrt-1 mrb-0" %}
+    {% else %}
+    {% assign headingStyle = "mry-0" %}
+    {% endif %}
 
 
-<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
-<a target="{{target}}" href="{{href}}" class="no-deco">
-    <p class="base-color">
-        {% unless page.hidedate %}
-        {% if p.date %}
-        <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-        {% endif %}
-        {% endunless %}
+    <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+    <div class="abstract">
+        <a target="{{target}}" href="{{href}}" class="no-deco">
+            <p>
+                {% unless page.hidedate %}
+                {% if p.date %}
+                <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+                {% endif %}
+                {% endunless %}
 
-        {% if p.abstract %}
-        {{ p.abstract }}
-        {% else %}
-        {{ p.content | truncatewords:50 | strip_html }}
-        {% capture words %}
-        {{ page.content | number_of_words | minus: 50 }}
-        {% endcapture %}
-        {% unless words contains "-" %}…{% endunless %}
-        {% endif %}
-    </p>
-</a>
-{% endif %}
-{% endunless %}
-{% endfor %}
+                {% if p.abstract %}
+                {{ p.abstract }}
+                {% else %}
+                {{ p.content | truncatewords:50 | strip_html }}
+                {% capture words %}
+                {{ page.content | number_of_words | minus: 50 }}
+                {% endcapture %}
+                {% unless words contains "-" %}…{% endunless %}
+                {% endif %}
+            </p>
+        </a>
+    </div>
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
 
-<!-- pages -->
-{% for p in site.pages %}
-{% unless p.nonav %}
-{% if p.category contains page.category and p.title %}
+    <!-- pages -->
+    {% for p in site.pages %}
+    {% unless p.nonav %}
+    {% if p.category contains page.category and p.title %}
 
-{% if p.layout == "blank" %}
-{% assign target = "" %}
-{% endif %}
+    {% if p.layout == "blank" %}
+    {% assign target = "" %}
+    {% endif %}
 
-{% if p.forward %}
-{% assign href = p.forward %}
-{% else %}
-{% assign href = p.url | prepend: site.baseurl  %}
-{% endif %}
+    {% if p.forward %}
+    {% assign href = p.forward %}
+    {% else %}
+    {% assign href = p.url | prepend: site.baseurl  %}
+    {% endif %}
 
 
-<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
-<a target="{{target}}" href="{{href}}" class="no-deco">
-    <p class="base-color">
-        {% unless page.hidedate %}
-        {% if p.date %}
-        <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-        {% endif %}
-        {% endunless %}
+    <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+    <div class="abstract">
+        <a target="{{target}}" href="{{href}}" class="no-deco">
+            <p>
+                {% unless page.hidedate %}
+                {% if p.date %}
+                <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
+                {% endif %}
+                {% endunless %}
 
-        {% if p.abstract %}
-        {{ p.abstract }}
-        {% else %}
-        {{ p.content | truncatewords:50 | strip_html }}
-        {% capture words %}
-        {{ page.content | number_of_words | minus: 50 }}
-        {% endcapture %}
-        {% unless words contains "-" %}…{% endunless %}
-        {% endif %}
-    </p>
-</a>
-
-{% endif %}
-{% endunless %}
-{% endfor %}
+                {% if p.abstract %}
+                {{ p.abstract }}
+                {% else %}
+                {{ p.content | truncatewords:50 | strip_html }}
+                {% capture words %}
+                {{ page.content | number_of_words | minus: 50 }}
+                {% endcapture %}
+                {% unless words contains "-" %}…{% endunless %}
+                {% endif %}
+            </p>
+        </a>
+    </div>
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+</div>
