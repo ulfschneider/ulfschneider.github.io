@@ -18,20 +18,11 @@ layout: default
 {% assign href = p.url | prepend: site.baseurl  %}
 {% endif %}
 
-{% if content.size > 1 %}
 <h2 class="mrt-1 mrb-0"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
-{% else %}
-<h2 class="mrt-1 mry-0"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
-{% endif %}
 
 {% if p.abstract %}
 <p>
     {{ p.abstract }}
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="mrl-1 no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
 </p>
 {% else %}
 <p>
@@ -41,13 +32,13 @@ layout: default
     {% endcapture %}
 
     {% unless words contains "-" %}…{% endunless %}
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="mrl-1 no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
 </p>
 {% endif %}
+{% unless page.hidedate %}
+{% if p.date %}
+<span class="no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
+{% endif %}
+{% endunless %}
 
 {% endif %}
 {% endunless %}
@@ -68,20 +59,11 @@ layout: default
 {% assign href = p.url | prepend: site.baseurl  %}
 {% endif %}
 
-{% if content.size > 1 %}
 <h2 class="mrt-1 mrb-0"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
-{% else %}
-<h2 class="mrt-1 mry-0"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
-{% endif %}
 
 {% if p.abstract %}
 <p>
     {{ p.abstract }}
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="mrl-1 no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
 </p>
 {% else %}
 <p>
@@ -91,14 +73,13 @@ layout: default
     {% endcapture %}
 
     {% unless words contains "-" %}…{% endunless %}
-    {% unless page.hidedate %}
-    {% if p.date %}
-    <span class="mrl-1 no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
-    {% endif %}
-    {% endunless %}
 </p>
-
 {% endif %}
+{% unless page.hidedate %}
+{% if p.date %}
+<span class="no-wrap small neutral-1">{{ p.date | date: '%B %d, %Y' }}</span>
+{% endif %}
+{% endunless %}
 {% endif %}
 {% endunless %}
 {% endfor %}
