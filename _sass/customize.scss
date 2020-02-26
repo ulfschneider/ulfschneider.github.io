@@ -17,10 +17,6 @@
   --lh-h3: 1.62em;    
 
   --heading-text-transform: unset;
-
-  ul li::before {
-    padding-left: var(--space-d1);
-  }
 }
 
 header.is-dynamic {
