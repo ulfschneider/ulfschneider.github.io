@@ -34,16 +34,16 @@ Therefore, when talking about splitting User Stories, it´s meant to cut across 
 
 Try the following patterns to split your User Stories:
 
-- _Testing:_ When identifying and describing the testable aspects of a User Story, you are already in the kind of thinking that is needed to split the story end-to-end. Thus you have an excellent indication of how to break the story down. Often the essential testable aspects of a Story are described in the so-called acceptance criteria. Just pick that up and use it for your split. This is a perfect way to have QA engineers engaged right from the start.
-- _CRUD Operations:_ Sometimes you can split a story by its CRUD operations. Watch out for the phrase "manage" in a User Story description – often this indicates a splitting opportunity into Create, Read, Update and Delete parts.
-- _Happy and Unhappy:_ If you have to take care about things that might go wrong in a User Story, you can use a split for the light flow, where everything goes well and in addition split into the exceptions (unhappy flows), where you handle the problems.
-- _Connectors:_ User Story descriptions containing connectors like AND, OR, WHEN, IF point you to splitting opportunities.
-- _Parameters and Result:_ Parameters which determine the function and possible result of a User Story can be used to divide the story. Depending on the number of parameters or the contents of a setting, or the different expected results, you can split along those parameter and result lines.
-- _Roles:_ In case a User Story describes something that has to be used by different people, groups or roles (e.g. customer, shopper, admin, editor), a split by role might be a good choice. Often you can combine this splitting strategy with the workflow step pattern below, as workflows tend to connect roles via action steps.
-- _Workflow Steps:_ If a User Story describes a workflow, elaborate if you can make at first two stories, one for the start of the workflow and one for the ending. Followed by subsequent stories which fill the gaps from both endpoints up to the middle.
-- _Simple and Complex:_ Sometimes you can do a pure core first and subsequently do complex enhancements in additional stories. The workflow steps pattern is some kind of simple and complex pattern, but you can apply simple/complex even without thinking in workflows.
-- _Platform:_ If you have to support different devices or operating systems (more general: platforms) with a User Story, a natural split is by platform. 
-- _Vague Terms:_ Vague terms offer splitting opportunities by asking what exactly is meant, turning the vagueness into concrete and then applying the above patterns.
+- **Testing:** When identifying and describing the testable aspects of a User Story, you are already in the kind of thinking that is needed to split the story end-to-end. Thus you have an excellent indication of how to break the story down. Often the essential testable aspects of a Story are described in the so-called acceptance criteria. Just pick that up and use it for your split. This is a perfect way to have QA engineers engaged right from the start.
+- **CRUD Operations:** Sometimes you can split a story by its CRUD operations. Watch out for the phrase "manage" in a User Story description – often this indicates a splitting opportunity into Create, Read, Update and Delete parts.
+- **Happy and Unhappy:** If you have to take care about things that might go wrong in a User Story, you can use a split for the light flow, where everything goes well and in addition split into the exceptions (unhappy flows), where you handle the problems.
+- **Connectors:** User Story descriptions containing connectors like AND, OR, WHEN, IF point you to splitting opportunities.
+- **Parameters and Result:** Parameters which determine the function and possible result of a User Story can be used to divide the story. Depending on the number of parameters or the contents of a setting, or the different expected results, you can split along those parameter and result lines.
+- **Roles:** In case a User Story describes something that has to be used by different people, groups or roles (e.g. customer, shopper, admin, editor), a split by role might be a good choice. Often you can combine this splitting strategy with the workflow step pattern below, as workflows tend to connect roles via action steps.
+- **Workflow Steps:** If a User Story describes a workflow, elaborate if you can make at first two stories, one for the start of the workflow and one for the ending. Followed by subsequent stories which fill the gaps from both endpoints up to the middle.
+- **Simple and Complex:** Sometimes you can do a pure core first and subsequently do complex enhancements in additional stories. The workflow steps pattern is some kind of simple and complex pattern, but you can apply simple/complex even without thinking in workflows.
+- **Platform:** If you have to support different devices or operating systems (more general: platforms) with a User Story, a natural split is by platform. 
+- **Vague Terms:** Vague terms offer splitting opportunities by asking what exactly is meant, turning the vagueness into concrete and then applying the above patterns.
 
 ## Concerns
 
