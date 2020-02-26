@@ -18,6 +18,8 @@ layout: default
 {% assign href = p.url | prepend: site.baseurl  %}
 {% endif %}
 
+{{content.size}}
+
 <h2 class="mrt-1 mrb-0"><a target="{{target}}" href="{{href}}">{{ p.title }}</a></h2>
 
 {% if p.abstract %}
