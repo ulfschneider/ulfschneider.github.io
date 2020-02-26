@@ -5,12 +5,20 @@ layout: default
 
 <style>
     @media (hover: hover) {
-        a:hover h2 {
-            color: var(--link-hover-color);
+        a:hover {
+            color: var(--base-color);
+        }
+
+        h2 a:hover {
+            color: var(--link-hover-color)
         }
     }
 
-    a:active:focus h2 {
+    a:active:focus {
+        color: var(--base-color);
+    }
+
+    h2 a:active:focus h2 {
         color: var(--link-active-color);
     }
 </style>
@@ -36,8 +44,9 @@ layout: default
 {% assign headingStyle = "mry-0" %}
 {% endif %}
 
+
+<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
 <a target="{{target}}" href="{{href}}" class="no-deco">
-    <h2 class="{{headingStyle}}">{{ p.title }}</h2>
     <p class="base-color">
         {% unless page.hidedate %}
         {% if p.date %}
@@ -75,9 +84,9 @@ layout: default
 {% assign href = p.url | prepend: site.baseurl  %}
 {% endif %}
 
-<a target="{{target}}" href="{{href}}" class="no-deco">
-    <h2 class="{{headingStyle}}">{{ p.title }}</h2>
 
+<h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+<a target="{{target}}" href="{{href}}" class="no-deco">
     <p class="base-color">
         {% unless page.hidedate %}
         {% if p.date %}
