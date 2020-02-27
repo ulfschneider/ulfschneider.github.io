@@ -1,5 +1,3 @@
-
-
 {% for post in site.posts %}
 
 {% if post.url == page.url %}
@@ -37,16 +35,19 @@
 <div class="clearfix mry-2 lh-4 small">
 	{% if prev  %}
 	<div class="float-left mrr">
-		<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span> {{ prev.title }}</a>
+		<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
+			{{ prev.title }}</a>
 	</div>
 	{% endif %}
 
 	{% if next  %}
 	<div class="float-right mrl">
-		<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span> {{ next.title }}</a>
+		<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
+			{{ next.title }}</a>
 	</div>
 	{% endif %}
 </div>
-{% else %}
-<div class="mry-2 eof">—</div>
 {% endif %}
+
+<a href="/"
+	class="logo no-deco mry-2 radius-100 bg-base-color white width height small flex align-center justify-center">U</a>

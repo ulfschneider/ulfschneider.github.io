@@ -5,22 +5,26 @@
 	{% include head.html %}
 </head>
 
-<body class="xl word-wrap indent">
+<body class="bg-primary">
 
-	{% include header.html %}
+	<div class="mih-vh100 bg-base-background">
+		<div class="xl indent word-wrap">
 
-	<article>
+			{% include header.html %}
 
-		{% include title.html %}
+			<article>
 
-		{{ content }}
+				{% include title.html %}
 
-		{% include postnav.html %}
+				{{ content }}
 
-	</article>
+				{% include postnav.html %}
 
-	{% include scripts.html %}
+			</article>
 
+			{% include scripts.html %}
+		</div>
+	</div>
 </body>
 
 </html>

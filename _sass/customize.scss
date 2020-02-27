@@ -1,5 +1,3 @@
-
-
 :root {
   --fs-h1: 1.4rem;
   --lh-h1: 1.25em;
@@ -16,7 +14,7 @@
   --lh-h2: 1.62em;
 
   --fs-h3: 1rem;
-  --lh-h3: 1.62em;    
+  --lh-h3: 1.62em;
 
   --heading-text-transform: unset;
   --heading-font-weight: 600;
@@ -24,6 +22,32 @@
 }
 
 header.is-dynamic {
-  background:white;
+  background: white;
   border-bottom: 1px solid var(--neutral-4);
 }
+
+.article-list .abstract a {
+  color: var(--base-color);
+}
+
+.article-list .abstract a:active:focus {
+  color: var(--base-color);
+  text-decoration-color: var(--base-color);
+}
+
+@media (hover: hover) {
+  .article-list .abstract a:hover {
+    color: var(--base-color);
+    text-decoration-color: var(--base-color);
+  }
+
+  a.logo:hover {
+    color: white;
+    background: var(--link-hover-color);
+  }
+}
+
+a.logo:active:focus {
+  background: var(--link-active-color) !important;
+}
+

@@ -1,26 +1,8 @@
 ---
 layout: default
 ---
-<div class="list">
+<div class="article-list">
     {{ content }}
-
-    <style>
-        @media (hover: hover) {
-            .list .abstract a:hover {
-                color: var(--base-color);
-                text-decoration-color: var(--base-color);
-            }
-        }
-
-        .list .abstract a {
-            color: var(--base-color);
-        }
-
-        .list .abstract a:active:focus {
-            color: var(--base-color);
-            text-decoration-color: var(--base-color);
-        }
-    </style>
 
     <!-- posts -->
     {% for p in site.posts %}
@@ -42,8 +24,7 @@ layout: default
     {% else %}
     {% assign headingStyle = "mry-0" %}
     {% endif %}
-
-
+    
     <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
     <div class="abstract">
         <a target="{{target}}" href="{{href}}" class="no-deco">
