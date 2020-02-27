@@ -32,7 +32,7 @@
 {% endfor %}
 
 {% if prev or next %}
-<div class="clearfix mry-2 lh-4 small">
+<nav class="clearfix mry-2 lh-4 small">
 	{% if prev  %}
 	<div class="float-left mrr">
 		<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
@@ -46,7 +46,7 @@
 			{{ next.title }}</a>
 	</div>
 	{% endif %}
-</div>
+</nav>
 {% endif %}
 
 <a href="/" class="logo no-deco mry-2 radius-100 bg-base-color white width height inline-block lh-1 small bold center">U</a>

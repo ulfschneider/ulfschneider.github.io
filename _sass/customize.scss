@@ -26,17 +26,17 @@ header.is-dynamic {
   border-bottom: 1px solid var(--neutral-4);
 }
 
-.article-list .abstract a {
+.article-list section a {
   color: var(--base-color);
 }
 
-.article-list .abstract a:active:focus {
+.article-list section a:active:focus {
   color: var(--base-color);
   text-decoration-color: var(--base-color);
 }
 
 @media (hover: hover) {
-  .article-list .abstract a:hover {
+  .article-list section a:hover {
     color: var(--base-color);
     text-decoration-color: var(--base-color);
   }

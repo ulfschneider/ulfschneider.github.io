@@ -1,7 +1,7 @@
 {% unless page.noheader %}
 <div class="full">
 	<header class="bg-base-background xl z-1">
-		<div class="navigation lh-4 small mry">
+		<nav class="navigation lh-4 small mry">
 
 			{% if page.url == "/" %}
 			<span class="mrr base-color bold">{{ site.title }}</span>
@@ -10,7 +10,7 @@
 			{% endif %}
 
 			{% include navigation.html %}
-		</div>
+		</nav>
 	</header>
 </div>
 <div class="mrb-4"></div>

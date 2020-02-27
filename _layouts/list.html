@@ -24,9 +24,10 @@ layout: default
     {% else %}
     {% assign headingStyle = "mry-0" %}
     {% endif %}
-    
+
+
     <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
-    <div class="abstract">
+    <section>
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
                 {% unless page.hidedate %}
@@ -46,7 +47,7 @@ layout: default
                 {% endif %}
             </p>
         </a>
-    </div>
+    </section>
     {% endif %}
     {% endunless %}
     {% endfor %}
@@ -66,9 +67,8 @@ layout: default
     {% assign href = p.url | prepend: site.baseurl  %}
     {% endif %}
 
-
-    <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
-    <div class="abstract">
+    <h2 class=class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+    <section>
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
                 {% unless page.hidedate %}
@@ -88,7 +88,7 @@ layout: default
                 {% endif %}
             </p>
         </a>
-    </div>
+    </section>
     {% endif %}
     {% endunless %}
     {% endfor %}
