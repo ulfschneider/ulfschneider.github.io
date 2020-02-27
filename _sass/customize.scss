@@ -35,6 +35,20 @@ header.is-dynamic {
   text-decoration-color: var(--base-color);
 }
 
+a.logo {
+  width:18px;
+  height:18px;
+  line-height:18px;
+  font-size:14px;
+  background: var(--base-color);
+  color: var(--base-background);
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50%;
+  display:inline-block;
+  text-decoration: none;
+}
+
 @media (hover: hover) {
   .article-list section a:hover {
     color: var(--base-color);
