@@ -6,21 +6,20 @@
 </head>
 
 <body class="bg-primary">
-
 	<div class="mih-vh100 bg-base-background">
 		<div class="xl indent word-wrap">
 
 			{% include header.html %}
 
-			<article>
+			<div>
 
 				{% include title.html %}
 
 				{{ content }}
 
 				{% include postnav.html %}
-								
-			</article>			
+
+			</div>
 		</div>
 	</div>
 	{% include scripts.html %}
