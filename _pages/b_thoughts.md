@@ -3,7 +3,6 @@ layout: list
 menu: Thoughts
 permalink: /thoughts
 category: thoughts
-hidedate: true
 ---
 Essays about my experiences within the agile movement and the agile value system. Popular articles:
 
