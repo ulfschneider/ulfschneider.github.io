@@ -26,15 +26,6 @@ header.is-dynamic {
   border-bottom: 1px solid var(--neutral-4);
 }
 
-.article-list section a {
-  color: var(--base-color);
-}
-
-.article-list section a:active:focus {
-  color: var(--base-color);
-  text-decoration-color: var(--base-color);
-}
-
 a.logo {
   width:18px;
   height:18px;
@@ -45,14 +36,19 @@ a.logo {
   font-weight: 500;
   text-align: center;
   border-radius: 50%;
-  display:block;
+  display:inline-block;
   text-decoration: none;
 }
 
+
 @media (hover: hover) {
-  .article-list section a:hover {
+  .article-list a:hover {
     color: var(--base-color);
     text-decoration-color: var(--base-color);
+  }
+
+  .article-list h2 a:hover {
+    color: var(--link-hover-color);
   }
 
   a.logo:hover {
@@ -61,7 +57,12 @@ a.logo {
   }
 }
 
-a.logo:active:focus {
+.article-list a:focus:active {
+  color: var(--base-color);
+  text-decoration-color: var(--base-color);
+}
+
+a.logo:focus:active {
   background: var(--link-active-color) !important;
 }
 

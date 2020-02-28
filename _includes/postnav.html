@@ -32,21 +32,24 @@
 {% endfor %}
 
 {% if prev or next %}
-<nav class="clearfix mrt-2 lh-4 small">
-	{% if prev  %}
-	<div class="float-left mrr">
-		<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
-			{{ prev.title }}</a>
-	</div>
-	{% endif %}
+<footer>
+	<nav class="clearfix mrt-2 lh-4 small">
+		{% if prev  %}
+		<div class="float-left mrr">
+			<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
+				{{ prev.title }}</a>
+		</div>
+		{% endif %}
 
-	{% if next  %}
-	<div class="float-right mrl">
-		<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
-			{{ next.title }}</a>
-	</div>
+		{% if next  %}
+		<div class="float-right mrl">
+			<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
+				{{ next.title }}</a>
+		</div>
+		{% endif %}
+	</nav>
 	{% endif %}
-</nav>
-{% endif %}
-
-<a href="/" class="logo mry-2">U</a>
+	<div class="mry-2">
+		<a href="/" class="logo">U</a>
+	</div>
+</footer

@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
+{{ content }}
 <div class="article-list">
-    {{ content }}
 
     <!-- posts -->
     {% for p in site.posts %}
@@ -26,8 +26,8 @@ layout: default
     {% endif %}
 
 
-    <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
     <section>
+        <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
                 {% unless page.hidedate %}
@@ -67,8 +67,8 @@ layout: default
     {% assign href = p.url | prepend: site.baseurl  %}
     {% endif %}
 
-    <h2 class=class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
     <section>
+        <h2 class=class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
                 {% unless page.hidedate %}
