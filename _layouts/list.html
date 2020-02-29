@@ -18,13 +18,12 @@ layout: default
     {% else %}
     {% assign href = p.url | prepend: site.baseurl  %}
     {% endif %}
-
-    {% if content.size > 1 %}
+    
     {% assign headingStyle = "mrt-1 mrb-0" %}
-    {% else %}
+    {% if content.size <= 1 and forloop.first == true %}
     {% assign headingStyle = "mry-0" %}
     {% endif %}
-
+    
     {% unless p.draft %}
     <section>
         <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
@@ -66,6 +65,11 @@ layout: default
     {% assign href = p.forward %}
     {% else %}
     {% assign href = p.url | prepend: site.baseurl  %}
+    {% endif %}
+
+    {% assign headingStyle = "mrt-1 mrb-0" %}
+    {% if content.size <= 1 and forloop.first == true %}
+    {% assign headingStyle = "mry-0" %}
     {% endif %}
 
     {% unless p.draft %}
