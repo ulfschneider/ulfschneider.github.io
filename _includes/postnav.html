@@ -31,9 +31,10 @@
 
 {% endfor %}
 
-{% if prev or next %}
-<footer>
-	<nav class="clearfix mrt-2 lh-4 small">
+
+<footer class="mrt-2">
+	{% if prev or next %}
+	<nav class="clearfix mrb-2 lh-4 small">
 		{% if prev  %}
 		<div class="float-left mrr">
 			<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
@@ -49,7 +50,7 @@
 		{% endif %}
 	</nav>
 	{% endif %}
-	<div class="mry-2">
+	<div class="mrb-2">
 		<a href="/" class="logo">U</a>
 	</div>
 </footer
