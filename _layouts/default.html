@@ -11,15 +11,13 @@
 
 			{% include header.html %}
 
-			<article>
+			{% include title.html %}
 
-				{% include title.html %}
+			{{ content }}
 
-				{{ content }}
+			{% include postnav.html %}
 
-				{% include postnav.html %}
 
-			</article>
 		</div>
 	</div>
 	{% include scripts.html %}
