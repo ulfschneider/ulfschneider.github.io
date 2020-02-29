@@ -1,4 +1,26 @@
----
-layout: default
----
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% include head.html %}
+</head>
+
+<body class="bg-primary">
+	<div class="min-vh100 bg-base-background">
+		<div class="xl indent word-wrap">
+
+			{% include header.html %}
+
+			{% include title.html %}
+
+			{{ content }}
+
+			{% include footer.html %}
+
+
+		</div>
+	</div>
+	{% include scripts.html %}
+</body>
+
+</html>
