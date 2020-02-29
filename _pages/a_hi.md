@@ -4,7 +4,7 @@ permalink: /
 title:
 ---
 
-<h1 class="fs-3 md-fs-4 lh-1 fw-400 mrb-2 breakout-r"><strong>Ulf Schneider</strong> is a developer and agile coach living in Paderborn, Germany.</h1>
+<h1 class="fs-3 lh-1 fw-400 mrb-2"><strong>Ulf Schneider</strong> is a developer and agile coach living in Paderborn, Germany.</h1>
 
 In 1996 I graduated at the University of Paderborn (Dipl.-Wirt. Inform.). Throughout 25 years in the software industry, I was more than ten years with IBM Global Services as a developer and software architect and more than seven years self-employed as an agile coach and trainer. Since 2014 I am employed as an agile coach at the software organization of Diebold Nixdorf. I gathered the following certificates:
 
