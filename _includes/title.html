@@ -7,16 +7,24 @@
     {% elsif page.message %}
     <h1>{{ page.message }}</h1>
     {% endif %}
-    {%if page.subtitle or page.date or page.author or page.meta %}
+    {%if page.subtitle  %}
     <div>
-        {% if page.subtitle %}
         <div class="mxw-sm">{{page.subtitle}}</div>
-        {% endif %}
     </div>
     {% endif %}
-    {% unless page.hidedate %}{% if page.date %}<span class="small neutral-d1">{{ page.date | date: '%B %d, %Y' }}</span>{% endif %}{% endunless %}
-    {% if page.author %}<span class="small neutral-d1">by {{ page.author }}{% endif %}{% if page.meta %} |
-        {{ page.meta }}</span>{% endif %}
+
+    {% if page.author %}
+    <span class="small neutral-d1">
+        by {{ page.author }}
+    </span>
+    {% endif %}
+
+    {% unless page.hidedate %}
+    {% if page.date %}
+    {% if page.author %}<span class="small neutral-d1">•</span>{% endif %}
+    <span class="small neutral-d1">{{ page.date | date: '%B %d, %Y' }}</span>
+    {% endif %}
+    {% endunless %}
 
 </div>
 {% endif %}

@@ -2,25 +2,20 @@
 <div class="inline-block">
 	{% assign last = {{site.pages | last}} %}
 	{% for p in site.pages %}
-	{% unless p.nonav or p.footer %}
-
 	{% if p.menu %}
-	{% if page.url == p.url %}
-	<span class="base-color bold no-deco mrr" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</span>
-	{% else %}
-	<a class="neutral-d1 no-deco mrr" href="{{ p.url | prepend: site.baseurl }}">{{p.menu }}</a>
-	{% endif %}
+	{% unless p.nonav %}
 
-	{% elsif p.index %}
 	{% if page.url == p.url %}
-	<span class="base-color bold no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</span>
+	<span class="base-color bold no-deco mrr inline-block pdb-d1"
+		href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</span>
+	{% elsif page.category contains p.category %}
+	<a class="base-color bold no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
 	{% else %}
-	<a class="neutral-d1 no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.index }}</a>
-	{% endif %}
-
+	<a class="neutral-d1 no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
 	{% endif %}
 
 	{% endunless %}
+	{% endif %}
 	{% endfor %}
 
 </div>

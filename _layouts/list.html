@@ -50,12 +50,15 @@ layout: default
                 {% endif %}
             </p>
         </a>
-
+        {% unless page.hidedate %}
+        {% unless p.hidedate %}
         {% if p.date %}
-        <aside class="no-wrap neutral-d1 small">
-            {{ p.date | date: '%b %d, %Y' }}
+        <aside class="no-wrap neutral-d1 small">          
+            {{ p.date | date: '%B %d, %Y' }}
         </aside>
         {% endif %}
+        {% endunless %}
+        {% endunless %}
 
     </article>
 
