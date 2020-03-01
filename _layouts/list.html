@@ -5,57 +5,13 @@ layout: default
 <div class="article-list">
 
     <!-- posts -->
+    {% assign count = 0 %}
     {% for p in site.posts %}
     {% unless p.nonav %}
-    {% if p.category contains page.category and p.title %}
-
-    {% if p.layout == "blank" %}
-    {% assign target = "" %}
-    {% endif %}
-
-    {% if p.forward %}
-    {% assign href = p.forward %}
-    {% else %}
-    {% assign href = p.url | prepend: site.baseurl  %}
-    {% endif %}
-    
-    {% assign headingStyle = "mrt-1 mrb-0" %}
-    {% if content.size <= 1 and forloop.first == true %}
-    {% assign headingStyle = "mry-0" %}
-    {% endif %}
-    
     {% unless p.draft %}
-    <section>
-        <h2 class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
-        <a target="{{target}}" href="{{href}}" class="no-deco">
-            <p>
-                {% unless page.hidedate %}
-                {% if p.date %}
-                <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-                {% endif %}
-                {% endunless %}
 
-                {% if p.abstract %}
-                {{ p.abstract }}
-                {% else %}
-                {{ p.content | truncatewords:50 | strip_html }}
-                {% capture words %}
-                {{ page.content | number_of_words | minus: 50 }}
-                {% endcapture %}
-                {% unless words contains "-" %}…{% endunless %}
-                {% endif %}
-            </p>
-        </a>
-    </section>
-    {% endunless %}
-    {% endif %}
-    {% endunless %}
-    {% endfor %}
-
-    <!-- pages -->
-    {% for p in site.pages %}
-    {% unless p.nonav %}
-    {% if p.category contains page.category and p.title %}
+    {% if p.category contains page.category %}
+    {% assign count = count | plus: 1 %}
 
     {% if p.layout == "blank" %}
     {% assign target = "" %}
@@ -67,22 +23,22 @@ layout: default
     {% assign href = p.url | prepend: site.baseurl  %}
     {% endif %}
 
-    {% assign headingStyle = "mrt-1 mrb-0" %}
-    {% if content.size <= 1 and forloop.first == true %}
-    {% assign headingStyle = "mry-0" %}
+    {% assign articleStyle = "mrt-1 mrb-0" %}
+    {% if content.size <= 1 and count == 1 %}
+    {% assign articleStyle = "mry-0" %}
     {% endif %}
 
-    {% unless p.draft %}
-    <section>
-        <h2 class=class="{{headingStyle}}"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+    <article class="{{articleStyle}}">
+        <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
+
+        {% if p.author %}
+        <aside class="no-wrap neutral-d1 small">
+            by {{ p.author }}
+        </aside>
+        {% endif %}
+
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
-                {% unless page.hidedate %}
-                {% if p.date %}
-                <span class="no-wrap neutral-d1 small mrr">{{ p.date | date: '%B %d, %Y' }}</span>
-                {% endif %}
-                {% endunless %}
-
                 {% if p.abstract %}
                 {{ p.abstract }}
                 {% else %}
@@ -94,9 +50,19 @@ layout: default
                 {% endif %}
             </p>
         </a>
-    </section>
-    {% endunless %}
+
+        {% if p.date %}
+        <aside class="no-wrap neutral-d1 small">
+            {{ p.date | date: '%b %d, %Y' }}
+        </aside>
+        {% endif %}
+
+    </article>
+
     {% endif %}
+
+    {% endunless %}
     {% endunless %}
     {% endfor %}
+
 </div>
