@@ -1,12 +1,24 @@
 {% unless page.nositenav %}
+
+{% for p in site.pages %}
+{% if p.menu %}
+{% unless p.nonav %}
+{% assign last = p %}
+{% endunless %}
+{% endif%}
+{% endfor %}
+
 <div class="inline-block">
-	
+
 	{% for p in site.pages %}
 	{% if p.menu %}
 	{% unless p.nonav %}
 
-	{% assign menuStyle = "no-deco inline-block mrr" %}
-	
+	{% assign menuStyle = "no-deco inline-block" %}
+	{% if p.url != last.url %}
+	{% assign menuStyle = menuStyle | append: " mrr" %}
+	{% endif %}
+
 	{% if page.url == p.url %}
 	{% assign menuStyle = menuStyle | append: " base-color bold" %}
 	<span class="{{menuStyle}}">{{p.menu}}</span>
