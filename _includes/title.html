@@ -22,7 +22,7 @@
     {% unless page.hidedate %}
     {% if page.date %}
     {% if page.author %}<span class="small neutral-d1">•</span>{% endif %}
-    <span class="small neutral-d1">{{ page.date | date: '%B %d, %Y' }}</span>
+    <span class="small neutral-d1">{{ page.date | date: '%B %e, %Y' }}</span>
     {% endif %}
     {% endunless %}
 
