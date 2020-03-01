@@ -1,17 +1,21 @@
 {% unless page.nositenav %}
 <div class="inline-block">
-	{% assign last = {{site.pages | last}} %}
+	
 	{% for p in site.pages %}
 	{% if p.menu %}
 	{% unless p.nonav %}
 
+	{% assign menuStyle = "no-deco inline-block mrr" %}
+	
 	{% if page.url == p.url %}
-	<span class="base-color bold no-deco mrr inline-block pdb-d1"
-		href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</span>
+	{% assign menuStyle = menuStyle | append: " base-color bold" %}
+	<span class="{{menuStyle}}">{{p.menu}}</span>
 	{% elsif page.category contains p.category %}
-	<a class="base-color bold no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+	{% assign menuStyle = menuStyle | append: " base-color bold" %}
+	<a class="{{menuStyle}}" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
 	{% else %}
-	<a class="neutral-d1 no-deco mrr inline-block pdb-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+	{% assign menuStyle = menuStyle | append: " neutral-d1" %}
+	<a class="{{menuStyle}}" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
 	{% endif %}
 
 	{% endunless %}
