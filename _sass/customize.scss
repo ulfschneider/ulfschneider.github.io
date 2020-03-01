@@ -40,10 +40,6 @@ a.logo {
   text-decoration: none;
 }
 
-a.logo {
-  transition: transform .6s ease-in-out;
-}
-
 @media (hover: hover) {
   .article-list a:hover {
     color: var(--base-color);
@@ -57,7 +53,6 @@ a.logo {
   a.logo:hover {
     color: white;
     background: var(--link-hover-color);
-    transform: rotate(360deg);
   }
 }
 
