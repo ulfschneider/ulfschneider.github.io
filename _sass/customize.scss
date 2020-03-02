@@ -66,6 +66,10 @@ a.logo {
   margin-bottom: 0;
 }
 
+.image figure+.title {
+  margin-top: 0;
+}
+
 .image .title h1 {
   font-size: var(--fs);
 }
