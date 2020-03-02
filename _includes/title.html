@@ -5,9 +5,7 @@
     <h1>{{ page.title }}</h1>
 
     {%if page.subtitle  %}
-    <div>
-        <div class="neutral-d1">{{page.subtitle}}</div>
-    </div>
+    <div class="neutral-d1">{{page.subtitle}}</div>
     {% endif %}
 
     {% if page.author %}
@@ -18,7 +16,9 @@
 
     {% unless page.hidedate %}
     {% if page.date %}
-    {% if page.author %}<span class="neutral-d1">•</span>{% endif %}
+    {% if page.author %}
+    <span class="neutral-d1">•</span>
+    {% endif %}
     <span class="neutral-d1">{{ page.date | date: '%B %e, %Y' }}</span>
     {% endif %}
     {% endunless %}
