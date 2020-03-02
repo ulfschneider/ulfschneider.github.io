@@ -61,6 +61,15 @@ a.logo {
   text-decoration-color: var(--base-color);
 }
 
+.image .title {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+.image .title h1 {
+  font-size: var(--fs);
+}
+
 a.logo:focus:active {
   background: var(--link-active-color) !important;
 }

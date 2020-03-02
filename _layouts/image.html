@@ -5,15 +5,15 @@
 	{% include head.html %}
 </head>
 
-<body class="bg-primary">
+<body class="bg-primary image">
 	<div class="min-vh100 bg-base-background">
 		<div class="xl indent word-wrap">
 
 			{% include header.html %}
 
-			{% include title.html %}
-
 			{{ content }}
+
+			{% include title.html %}
 
 			{% include footer.html %}
 

@@ -24,7 +24,8 @@ layout: default
     {% endif %}
 
     {% assign articleStyle = "mrt-1 mrb-0" %}
-    {% if content.size <= 1 and count == 1 %}
+    {% assign strippedContent = content | strip %}
+    {% if strippedContent.size <= 1 and count == 1 %}
     {% assign articleStyle = "mry-0" %}
     {% endif %}
 
