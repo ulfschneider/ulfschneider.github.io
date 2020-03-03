@@ -33,10 +33,24 @@ layout: default
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco">{{ p.title }}</a></h2>
 
         {% if p.author %}
-        <aside class="no-wrap neutral-d1 small">
-            by {{ p.author }}
+        <aside>
+            <span class="neutral-d1 small">
+                by {{ p.author }}
+            </span>
+            {% unless page.hidedate %}
+            {% unless p.hidedate %}
+            {% if p.date %}
+            {% if p.author %}
+            <span class="neutral-d1 small">•</span>
+            {% endif %}
+            <span class="neutral-d1 small">{{ p.date | date: '%B %e, %Y' }}</span>
+            {% endif %}
+            {% endunless %}
+            {% endunless %}
         </aside>
         {% endif %}
+
+
 
         <a target="{{target}}" href="{{href}}" class="no-deco">
             <p>
@@ -51,15 +65,19 @@ layout: default
                 {% endif %}
             </p>
         </a>
+
+        {% assign strippedAuthor = p.author | strip %}
+        {% if strippedAuthor.size == 0 %}
         {% unless page.hidedate %}
         {% unless p.hidedate %}
         {% if p.date %}
-        <aside class="no-wrap neutral-d1 small">          
+        <aside class="no-wrap neutral-d1 small">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
         {% endif %}
         {% endunless %}
         {% endunless %}
+        {% endif %}
 
     </article>
 
