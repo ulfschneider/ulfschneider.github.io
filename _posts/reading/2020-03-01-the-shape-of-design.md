@@ -16,7 +16,7 @@ hidedate: true
 
 <p>judgment is an important part of the creative process, but when improvising, self-criticism and evaluation from others must be avoided in order to let ideas develop from their delicate state. Criticism has a crucial role in the creative process, but its rigor should match the heartiness of the ideas, which become stronger as they develop. The more real an idea becomes, the less suspension of disbelief is required, and the more criticism it should withstand. But all ideas, both good and bad, start young and fragile. […]</p>
 
-<p>The way one creatively wanders is through improvisation. […] The first maxim of improv is “Yes and….” This rule is easy to understand, but like most cardinal virtues, it is much more difficult to execute than to grasp.</p>
+<p>The way one creatively wanders is through improvisation. […] The first maxim of improv is “Yes and….” This rule is easy to understand, but like most cardinal virtues, it is much more difficult to execute than to grasp. […]</p>
 
 <p>Limitations narrow a big process into a smaller, more understandable space to explore. It’s the difference between swimming in a pool and being dropped off in the middle of the ocean with no land in sight. […]</p>
 
