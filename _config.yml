@@ -1,10 +1,13 @@
 # Site settings
-title:       Ulf Schneider #title of the page
-meta:        Ulf Schneider Agile Paderborn
-# baseurl:   the subpath of the site, e.g. /blog/
-name:        Ulf Schneider
+title:       Ulf Schneider 
+description: Hi, I am Ulf Schneider. I am a developer and agile coach living in Paderborn, Germany.
+author:      Ulf Schneider
 url:         https://ulf.codes # the base hostname & protocol for the site
 
 markdown:    kramdown
-include:     ['_pages']
-permalink:   '/:title/'
+permalink:   '/:title'
+
+plugins:
+  - jekyll-feed
+
+
