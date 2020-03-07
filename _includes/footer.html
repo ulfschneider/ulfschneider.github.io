@@ -50,7 +50,10 @@
 		{% endif %}
 	</nav>
 	{% endif %}
-	<div class="mrb-2">
-		<a href="/" class="logo">U</a>
-	</div>
+	<ul class="mrt-0 mrb-2 reset">
+		<li class="inline-block"><a href="/" class="logo">U</a></li>
+		{{#if site.rss}}
+		<li class="inline-block"><a href="{{site.rss}}" class="small no-deco neutral-d1">rss</a></li>
+		{{/if}}
+	</ul>
 </footer

@@ -8,6 +8,8 @@ markdown:    kramdown
 include:     ['_pages']
 permalink:   '/:title/'
 
+rss:          /feed.xml
+
 plugins:
   - jekyll-feed
 

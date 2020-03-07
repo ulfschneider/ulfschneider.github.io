@@ -8,31 +8,26 @@
 {% endif%}
 {% endfor %}
 
-<div class="inline-block">
+<ul class="reset inline-block">
 
 	{% for p in site.pages %}
 	{% if p.menu %}
 	{% unless p.nonav %}
 
-	{% assign menuStyle = "no-deco inline-block" %}
-	{% if p.url != last.url %}
-	{% assign menuStyle = menuStyle | append: " mrr" %}
-	{% endif %}
-
 	{% if page.url == p.url %}
-	{% assign menuStyle = menuStyle | append: " base-color bold" %}
-	<span class="{{menuStyle}}">{{p.menu}}</span>
+	<li class="inline-block base-color bold">{{p.menu}}</li>
 	{% elsif page.category contains p.category %}
-	{% assign menuStyle = menuStyle | append: " base-color bold" %}
-	<a class="{{menuStyle}}" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+	<li class="inline-block">
+		<a class="no-deco base-color bold" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a></li>
 	{% else %}
-	{% assign menuStyle = menuStyle | append: " neutral-d1" %}
-	<a class="{{menuStyle}}" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+	<li class="inline-block">
+		<a class="no-deco neutral-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+	</li>
 	{% endif %}
 
 	{% endunless %}
 	{% endif %}
 	{% endfor %}
 
-</div>
+</ul>
 {% endunless %}
