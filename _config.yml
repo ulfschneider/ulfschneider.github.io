@@ -5,7 +5,8 @@ author:      Ulf Schneider
 url:         https://ulf.codes # the base hostname & protocol for the site
 
 markdown:    kramdown
-permalink:   '/:title'
+include:     ['_pages']
+permalink:   '/:title/'
 
 plugins:
   - jekyll-feed
