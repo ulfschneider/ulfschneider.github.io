@@ -9,6 +9,7 @@ include:     ['_pages']
 permalink:   '/:title/'
 
 rss:          /feed.xml
+colophon:     /colophon
 
 plugins:
   - jekyll-feed
