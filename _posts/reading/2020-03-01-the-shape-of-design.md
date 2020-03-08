@@ -6,21 +6,23 @@ category: reading
 hidedate: true
 ---
 
-<figure><i><p>Painting’s near and far states are akin to How and Why: the artist, when close to the canvas, is asking How questions related to craft; when he steps back, he raises Why questions concerned with the whole of the work and its purpose. Near and Far may be rephrased as Craft and Analysis, which describe the kinds of questions the artist asks while in each mode. This relationship can be restated in many different ways, each addressing a necessary balance: How and Why, Near and Far, Making and Thinking, Execution and Strategy, Craft and Analysis […] </p>
+From the book:
 
-<p>How enables, but Why motivates, and the space between the two could be described by the gap of enthusiasm between simply understanding phonics and reading a book that one identifies with and loves. […]</p>
+*Painting’s near and far states are akin to How and Why: the artist, when close to the canvas, is asking How questions related to craft; when he steps back, he raises Why questions concerned with the whole of the work and its purpose. Near and Far may be rephrased as Craft and Analysis, which describe the kinds of questions the artist asks while in each mode. This relationship can be restated in many different ways, each addressing a necessary balance: How and Why, Near and Far, Making and Thinking, Execution and Strategy, Craft and Analysis […]*
 
-<p>The first step of any process should be to define the objectives of the work with Why-based questions. The second step, however, should be to put those objectives in a drawer. Objectives guide the process toward an effective end, but they don’t do much to help one get going. In fact, the weight of the objectives can crush the seeds of thought necessary to begin down an adventurous path.</p>
+*How enables, but Why motivates, and the space between the two could be described by the gap of enthusiasm between simply understanding phonics and reading a book that one identifies with and loves. […]*
 
-<p>The creative process, like a good story, needs to start with a great leap of lightness, and that is only attainable through a suspension of disbelief. The objectives shouldn’t be ignored forever, but they should be defined ahead of time, set aside, and then deployed at the appropriate moment so that we may be audacious with our ideas. […]</p>
+*The first step of any process should be to define the objectives of the work with Why-based questions. The second step, however, should be to put those objectives in a drawer. Objectives guide the process toward an effective end, but they don’t do much to help one get going. In fact, the weight of the objectives can crush the seeds of thought necessary to begin down an adventurous path.*
 
-<p>judgment is an important part of the creative process, but when improvising, self-criticism and evaluation from others must be avoided in order to let ideas develop from their delicate state. Criticism has a crucial role in the creative process, but its rigor should match the heartiness of the ideas, which become stronger as they develop. The more real an idea becomes, the less suspension of disbelief is required, and the more criticism it should withstand. But all ideas, both good and bad, start young and fragile. […]</p>
+*The creative process, like a good story, needs to start with a great leap of lightness, and that is only attainable through a suspension of disbelief. The objectives shouldn’t be ignored forever, but they should be defined ahead of time, set aside, and then deployed at the appropriate moment so that we may be audacious with our ideas. […]*
 
-<p>The way one creatively wanders is through improvisation. […] The first maxim of improv is “Yes and….” This rule is easy to understand, but like most cardinal virtues, it is much more difficult to execute than to grasp. […]</p>
+*judgment is an important part of the creative process, but when improvising, self-criticism and evaluation from others must be avoided in order to let ideas develop from their delicate state. Criticism has a crucial role in the creative process, but its rigor should match the heartiness of the ideas, which become stronger as they develop. The more real an idea becomes, the less suspension of disbelief is required, and the more criticism it should withstand. But all ideas, both good and bad, start young and fragile. […]*
 
-<p>Limitations narrow a big process into a smaller, more understandable space to explore. It’s the difference between swimming in a pool and being dropped off in the middle of the ocean with no land in sight. […]</p>
+*The way one creatively wanders is through improvisation. […] The first maxim of improv is “Yes and….” This rule is easy to understand, but like most cardinal virtues, it is much more difficult to execute than to grasp. […]*
 
-<p>My body and mind are linked. This is hardly a ground-breaking discovery, but for the longest time, it was a bit of knowledge that never changed my behavior. If my mind needed to wander to think about a project, I’d typically sit in a chair, furrow my brow, sip my coffee, and scribble a few things into my sketchbook. That’s no good, though: if the mind needs to wander, best let the body do the same. A short walk is more effective in coming up with an idea than pouring all the coffee in the world down your gullet. […]</p>
-</i></figure>
+*Limitations narrow a big process into a smaller, more understandable space to explore. It’s the difference between swimming in a pool and being dropped off in the middle of the ocean with no land in sight. […]*
+
+*My body and mind are linked. This is hardly a ground-breaking discovery, but for the longest time, it was a bit of knowledge that never changed my behavior. If my mind needed to wander to think about a project, I’d typically sit in a chair, furrow my brow, sip my coffee, and scribble a few things into my sketchbook. That’s no good, though: if the mind needs to wander, best let the body do the same. A short walk is more effective in coming up with an idea than pouring all the coffee in the world down your gullet. […]*
+
 
 The book is available online: [The Shape of Design](https://shapeofdesignbook.com)
