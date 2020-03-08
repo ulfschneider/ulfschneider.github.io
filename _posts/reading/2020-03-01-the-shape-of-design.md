@@ -23,6 +23,14 @@ hidedate: true
 <p>Limitations narrow a big process into a smaller, more understandable space to explore. It’s the difference between swimming in a pool and being dropped off in the middle of the ocean with no land in sight. […]</p>
 
 <p>My body and mind are linked. This is hardly a ground-breaking discovery, but for the longest time, it was a bit of knowledge that never changed my behavior. If my mind needed to wander to think about a project, I’d typically sit in a chair, furrow my brow, sip my coffee, and scribble a few things into my sketchbook. That’s no good, though: if the mind needs to wander, best let the body do the same. A short walk is more effective in coming up with an idea than pouring all the coffee in the world down your gullet. […]</p>
+
+<p>All design work seems to have three common traits: there is a message to the work, the tone of that message, and the format that the work takes. Successful design has all three elements working in co-dependence to achieve a whole greater than the sum of the individual parts. […]</p>
+
+<p>Evolution occurs one step at a time, and the size of each step is limited: nature must first create the cells in leaves that can capture the energy of the sun before it can produce a flower. […]</p>
+
+<p>… our collective ideas advance with the same limitations. […]</p>
+
+<p>Our magicians—our Henry Fords, our Billie Holidays, our Gutenbergs, Disneys, and Marie Curies—do not stand on the inside of what is possible and push; they imagine what is just outside of what we deem possible and pull us towards their vision of what is better. </p>
 </i>
 </figure>
 
