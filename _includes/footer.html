@@ -52,11 +52,11 @@
 	{% endif %}
 	<ul class="mrt-0 mrb-2 reset">
 		<li class="inline-block"><a href="/" class="logo">U</a></li>
-		{{#if site.rss}}
+		{%if site.rss %}
 		<li class="inline-block"><a href="{{site.rss}}" class="small no-deco neutral-d1">rss</a></li>
-		{{/if}}
-		{{#if site.colophon}}
+		{% endif %}
+		{%if site.colophon and site.colophon != page.url %}
 		<li class="inline-block"><a href="{{site.colophon}}" class="small no-deco neutral-d1">colophon</a></li>
-		{{/if}}
+		{% endif %}
 	</ul>
-</footer
+</footer>
