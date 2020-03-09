@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600&display=swap");
 
 :root {
-  --font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;  
   font-feature-settings: "calt", "case", "rlig", "kern", "frac", "ss01";
 
   --fs-h1: 1.4rem;
@@ -29,6 +29,8 @@
   --neutral-s: 0%;
   --neutral-l: 58%;
 }
+
+
 
 header.is-dynamic {
   background: white;
