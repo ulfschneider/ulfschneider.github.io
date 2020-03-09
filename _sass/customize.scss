@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600&display=swap");
+
 :root {
+  --font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "calt", "case", "rlig", "kern", "frac", "ss01";
+
   --fs-h1: 1.4rem;
   --lh-h1: 1.25em;
   --mrt-h1: 0em;
@@ -22,7 +27,7 @@
 
   --neutral-h: 0;
   --neutral-s: 0%;
-  --neutral-l: 58%;  
+  --neutral-l: 58%;
 }
 
 header.is-dynamic {
@@ -30,7 +35,8 @@ header.is-dynamic {
   border-bottom: 1px solid var(--neutral-4);
 }
 
-li.inline, li.inline-block {
+li.inline,
+li.inline-block {
   margin-right: var(--space);
 }
 
@@ -74,7 +80,7 @@ a.logo {
   margin-bottom: 0;
 }
 
-.image figure+.title {
+.image figure + .title {
   margin-top: 0;
 }
 
