@@ -50,21 +50,18 @@ layout: default
         </aside>
         {% endif %}
 
+        <p>
+            {% if p.abstract %}
+            {{ p.abstract }}
+            {% else %}
+            {{ p.content | truncatewords:50 | strip_html }}
+            {% capture words %}
+            {{ page.content | number_of_words | minus: 50 }}
+            {% endcapture %}
+            {% unless words contains "-" %}…{% endunless %}
+            {% endif %}
+        </p>
 
-
-        <a target="{{target}}" href="{{href}}" class="no-deco">
-            <p>
-                {% if p.abstract %}
-                {{ p.abstract }}
-                {% else %}
-                {{ p.content | truncatewords:50 | strip_html }}
-                {% capture words %}
-                {{ page.content | number_of_words | minus: 50 }}
-                {% endcapture %}
-                {% unless words contains "-" %}…{% endunless %}
-                {% endif %}
-            </p>
-        </a>
 
         {% assign strippedAuthor = p.author | strip %}
         {% if strippedAuthor.size == 0 %}
