@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600&display=swap");
 
 :root {
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;  
-    font-feature-settings: "frac" 1, "calt" 1, "rlig" 1, "kern" 1, "zero" 1;
-    
-    --color-step-factor: 0.23;
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
+
+  --color-step-factor: 0.23;
 
   --fs-h1: 1.4rem;
   --lh-h1: 1.25em;
@@ -32,12 +32,12 @@
   --neutral-l: 58%;
 }
 
+
 @media (min-width: 1000px) {
   :root {
     font-size: calc(var(--base-font-size) + 2px);
   }
 }
-
 
 header.is-dynamic {
   background: white;
@@ -61,6 +61,11 @@ a.logo {
   border-radius: 50%;
   display: inline-block;
   text-decoration: none;
+}
+
+a.logo:visited:active {
+  color: white;
+  background: var(--link-hover-color);
 }
 
 @media (hover: hover) {
