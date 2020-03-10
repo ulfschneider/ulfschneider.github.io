@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,600&display=swap');
+
 :root {
-  --font-family:  -apple-system, BlinkMacSystemFont, sans-serif;  
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;  
+  
+    font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
 
   --fs-h1: 1.4rem;
   --lh-h1: 1.25em;
