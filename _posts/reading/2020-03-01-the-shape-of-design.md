@@ -3,7 +3,7 @@ layout: default
 title: The Shape of Design
 author: Frank Chimero
 category: reading
-hidedate: true
+nodate: true
 ---
 <figure>
 <p>From the book:</p>

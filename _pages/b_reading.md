@@ -3,5 +3,5 @@ layout: list
 menu: Reading
 permalink: /reading
 category: reading
-hidedate: true
+nodate: true
 ---

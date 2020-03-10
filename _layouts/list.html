@@ -37,16 +37,17 @@ layout: default
             <span class="neutral-d1 small">
                 by {{ p.author }}
             </span>
-            {% unless page.hidedate %}
-            {% unless p.hidedate %}
-            {% if p.date %}
+            {% unless page.nodate %}
+
+            {% unless p.nodate %}
             {% if p.author %}
             <span class="neutral-d1 small">•</span>
             {% endif %}
             <span class="neutral-d1 small">{{ p.date | date: '%B %e, %Y' }}</span>
-            {% endif %}
             {% endunless %}
+
             {% endunless %}
+
         </aside>
         {% endif %}
 
@@ -65,13 +66,13 @@ layout: default
 
         {% assign strippedAuthor = p.author | strip %}
         {% if strippedAuthor.size == 0 %}
-        {% unless page.hidedate %}
-        {% unless p.hidedate %}
-        {% if p.date %}
+        {% unless page.nodate %}
+        {% unless p.nodate %}
+
         <aside class="no-wrap neutral-d1 small">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
-        {% endif %}
+
         {% endunless %}
         {% endunless %}
         {% endif %}

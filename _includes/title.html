@@ -14,13 +14,11 @@
     </span>
     {% endif %}
 
-    {% unless page.hidedate %}
-    {% if page.date %}
+    {% unless page.nodate %}
     {% if page.author %}
     <span class="neutral-d1">•</span>
     {% endif %}
-    <span class="neutral-d1">{{ page.date | date: '%B %e, %Y' }}</span>
-    {% endif %}
+    <span class="neutral-d1">{{ page.date | date: '%B %e, %Y' }}</span>    
     {% endunless %}
 
 </div>
