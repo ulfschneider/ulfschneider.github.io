@@ -2,7 +2,7 @@
 layout: default
 title: The Birth of Inter
 category: reading
-author: Rasmus Andersson
+author: Rasmus Andersson and Carmel DeAmicis
 hidedate: true
 ---
 In [The Birth of Inter](https://www.figma.com/blog/the-birth-of-inter/), [Rasmus Andersson](https://rsms.me) is explaining his (work)flow and tool usage while developing [Inter](https://rsms.me/inter/), a sans-serif typeface designed for reading text on screens. 
