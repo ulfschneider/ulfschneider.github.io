@@ -2,8 +2,8 @@
 
 :root {
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;  
-    font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
-
+    font-feature-settings: "frac" 1, "calt" 1, "rlig" 1, "kern" 1, "zero" 1;
+    
     --color-step-factor: 0.23;
 
   --fs-h1: 1.4rem;
@@ -64,24 +64,10 @@ a.logo {
 }
 
 @media (hover: hover) {
-  .article-list a:hover {
-    color: var(--base-color);
-    text-decoration-color: var(--base-color);
-  }
-
-  .article-list h2 a:hover {
-    color: var(--link-hover-color);
-  }
-
   a.logo:hover {
     color: white;
     background: var(--link-hover-color);
   }
-}
-
-.article-list a:focus:active {
-  color: var(--base-color);
-  text-decoration-color: var(--base-color);
 }
 
 .image .title {
