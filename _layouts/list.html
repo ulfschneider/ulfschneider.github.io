@@ -3,7 +3,7 @@ layout: default
 ---
 {{ content }}
 <div class="article-list">
-
+ 
     <!-- posts -->
     {% assign count = 0 %}
     {% assign siteYear = site.time | date: '%Y' %}
@@ -12,7 +12,6 @@ layout: default
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
     {% unless p.nonav %}
-
     {% if p.category contains page.category %}
     {% assign count = count | plus: 1 %}
 
