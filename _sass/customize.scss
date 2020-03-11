@@ -27,9 +27,6 @@
   --heading-font-weight: 600;
   --font-weight-normal: 400;
 
-  --neutral-h: 0;
-  --neutral-s: 0%;
-  --neutral-l: 58%;
 }
 
 
@@ -41,7 +38,7 @@
 
 header.is-dynamic {
   background: white;
-  border-bottom: 1px solid var(--neutral-4);
+  border-bottom: 1px solid var(--neutral-3);
 }
 
 li.inline,

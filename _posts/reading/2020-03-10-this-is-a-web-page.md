@@ -1,6 +1,6 @@
 ---
 layout: default
-title: This is a web page.
+title: ★ This is a web page
 author: Justin Jackson
 nodate: true
 category: reading
