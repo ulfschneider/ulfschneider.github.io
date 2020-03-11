@@ -3,13 +3,13 @@ layout: default
 ---
 {{ content }}
 <div class="article-list">
-
+ 
     <!-- posts -->
     {% assign count = 0 %}
     {% for p in site.posts %}
     {% unless p.nonav %}
     {% unless p.draft %}
-
+    
     {% if p.category contains page.category %}
     {% assign count = count | plus: 1 %}
 
