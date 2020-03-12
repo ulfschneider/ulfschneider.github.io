@@ -14,9 +14,7 @@
 {% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
 {% endif %}
 
-{%if headerStyle %}
-<div class="{{headerClass}}" style="{{headerStyle}}">
-	{% endif %}
+{%if headerStyle %}<div class="{{headerClass}}" style="{{headerStyle}}">{% endif %}
 
 	<header class="bg-base-background z-1 pdy">
 		<nav class="navigation xl lh-4 small">
@@ -31,9 +29,8 @@
 		</nav>
 	</header>
 
-	{%if headerStyle %}
-</div>
-{% endif %}
+	{%if headerStyle %}</div>{% endif %}
+
 {% unless heroImage %}
 <div class="mrb-4"></div>
 {% endunless %}
