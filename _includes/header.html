@@ -10,15 +10,16 @@
 {% endif %}
 
 {% if headerClass %}
-{% assign headerClass = headerClass | append: " breakout-full bg-cover bg-center bg-no-repeat mrb-3 bg-primary" %}
+{% assign headerClass = headerClass | append: "bg-cover bg-center bg-no-repeat mrb-3 bg-primary" %}
 {% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
-{% else %}
-{% assign headerClass = "breakout-full" %}
 {% endif %}
 
+{%if headerStyle %}
 <div class="{{headerClass}}" style="{{headerStyle}}">
-	<header class="bg-base-background xl z-1 pdy">
-		<nav class="navigation lh-4 small mrr">
+	{% endif %}
+
+	<header class="bg-base-background z-1 pdy">
+		<nav class="navigation xl lh-4 small">
 
 			{% if page.url == "/" %}
 			<span class="mrr black bold">{{ site.title }}</span>
@@ -29,7 +30,10 @@
 			{% include navigation.html %}
 		</nav>
 	</header>
+
+	{%if headerStyle %}
 </div>
+{% endif %}
 {% unless heroImage %}
 <div class="mrb-4"></div>
 {% endunless %}
