@@ -1,20 +1,22 @@
 {% unless page.noheader %}
 
 {% if page.hero %}
-{% assign headerClass = "vh-100 mih-sm" %}
+{% assign headerClass = "vh-100 mih-sm " %}
 {% assign heroImage = page.hero %}
 {% endif %}
-{% if page.smallHero %}
-{% assign headerClass = "height-sm" %}
-{% assign heroImage = page.smallHero %}
+{% if page.smallhero %}
+{% assign headerClass = "height-sm " %}
+{% assign heroImage = page.smallhero %}
 {% endif %}
 
 {% if headerClass %}
 {% assign headerClass = headerClass | append: "bg-cover bg-center bg-no-repeat mrb-3 bg-primary" %}
 {% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
+{% else %}
+{% assign headerClass = "mrb-4" %}
 {% endif %}
 
-{%if headerStyle %}<div class="{{headerClass}}" style="{{headerStyle}}">{% endif %}
+<div class="{{headerClass}}" {% if headerStyle %}style="{{headerStyle}}"{% endif %}>
 
 	<header class="bg-base-background z-1 pdy">
 		<nav class="navigation xl lh-4 small">
@@ -29,9 +31,6 @@
 		</nav>
 	</header>
 
-	{%if headerStyle %}</div>{% endif %}
+</div>
 
-{% unless heroImage %}
-<div class="mrb-4"></div>
-{% endunless %}
 {% endunless %}
