@@ -36,14 +36,14 @@
 	{% if prev or next %}
 	<nav class="clearfix mry-2 lh-4 small">
 		{% if prev  %}
-		<div class="float-left mrr" style="min-width: 45%">
+		<div class="float-left mrr">
 			<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
 				{{ prev.title }}</a>
 		</div>
 		{% endif %}
 
 		{% if next  %}
-		<div class="float-right mrl" style="min-width: 45%">
+		<div class="float-right mrl">
 			<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
 				{{ next.title }}</a>
 		</div>
