@@ -29,13 +29,6 @@
 
 }
 
-
-@media (min-width: 1000px) {
-  :root {
-    font-size: calc(var(--base-font-size) + 2px);
-  }
-}
-
 header.is-dynamic {
   background: white;
   border-bottom: 1px solid var(--neutral-3);
@@ -72,13 +65,13 @@ a.logo:visited:active {
   }
 }
 
+img {
+  max-height: 80vh;
+}
+
 .image .title {
   margin-top: var(--space-2);
   margin-bottom: 0;
-}
-
-.image figure + .title {
-  margin-top: 0;
 }
 
 .image .title h1 {
