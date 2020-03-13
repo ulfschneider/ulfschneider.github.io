@@ -29,12 +29,6 @@
 
 }
 
-@media (--breakpoint-type-scale-3) {
-  :root {
-    font-size: calc(var(--base-font-size) + 2px);
-  }
-}
-
 
 header.is-dynamic {
   background: white;
