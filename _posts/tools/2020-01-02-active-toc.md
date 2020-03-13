@@ -42,6 +42,10 @@ abstract: Highlight your TOC entries while scrolling.
         margin-left: 9rem;
     }
 
+    h2 {
+        scroll-margin-top: var(--space-1);
+    }
+
 </style>
 
 <div id="toc">
@@ -63,8 +67,8 @@ abstract: Highlight your TOC entries while scrolling.
         <a href="#however-hard">However hard</a>
 </div>
 
-<div class="breakout-l content mrb-2">
-<h1 class="mrt-4" >active-toc</h1>
+<div class="breakout-l content pdy-3    ">
+<h1 class="mrt-0" >active-toc</h1>
 <p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries of your table of contents while scrolling your website. active-toc is leveraging the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">Intersection Observer API</a>.</p>
 
 <hr>
