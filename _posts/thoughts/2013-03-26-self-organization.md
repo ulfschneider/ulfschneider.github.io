@@ -42,7 +42,7 @@ But how can this new world be connected to the evolution principle?
 
 <figure>
 <blockquote>The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design. </blockquote>
-<figcaption>[Hayek 1969:33,35]</figcaption>
+<figcaption>Friedrich A. von Hayek</figcaption>
 </figure>
 
 The connection is, 150 years ago as well as today no mastermind can overview this world, to construct it and to plan it. The system organized itself in evolutionary steps.
@@ -83,7 +83,7 @@ The reaction to unforeseeable events affords ad-hoc negotiation, the breakdown o
 
 <figure>
 <blockquote>Radically one has to leave behind the idea that everything in the organization can be ruled and controlled </blockquote>
-<figcaption>[[Bendel 2006:2f]][bendel2006]</figcaption>
+<figcaption>Sylvia Bendel</figcaption>
 </figure>
 
 One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms, and regulations. Instead one has to trust in self-organizational forces and the emancipation of employees to take local and autonomous decisions where needed.
