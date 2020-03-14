@@ -2,8 +2,6 @@
 
 :root {
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
-
   --color-step-factor: 0.23;
 
   --fs-h1: 1.4rem;
@@ -29,6 +27,10 @@
   --heading-font-weight: 600;
   --font-weight-normal: 400;
 
+}
+
+html {
+  font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
 }
 
 
