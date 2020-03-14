@@ -8,19 +8,33 @@
 {% endif%}
 {% endfor %}
 
+
+{% for p in site.pages %}
+{% if p.menu %}
+{% unless p.nonav or p.url != "/" %}
+{% if page.url == p.url %}
+<span class="inline-block black bold mrr">{{p.menu}}</span>
+{% else %}
+<a href="/" class="inline-block no-deco neutral-d1 mrr">{{p.menu}}</a>
+{% endif %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+
 <ul class="reset inline-block mry-0">
 
 	{% for p in site.pages %}
 	{% if p.menu %}
-	{% unless p.nonav %}
+	{% unless p.nonav or p.url == "/" %}
 
 	{% if page.url == p.url %}
-	<li class="inline-block black bold">{{p.menu}}</li>
+	<li class="inline-block black bold mrr">{{p.menu}}</li>
 	{% elsif page.category contains p.category %}
-	<li class="inline-block">
+	<li class="inline-block mrr">
 		<a class="no-deco black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a></li>
 	{% else %}
-	<li class="inline-block">
+	<li class="inline-block mrr">
 		<a class="no-deco neutral-d1" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
 	</li>
 	{% endif %}

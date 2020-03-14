@@ -51,12 +51,12 @@
 	</nav>
 	{% endif %}
 	<ul class="mrb-0 pdb-2 reset">
-		<li class="inline-block"><a href="/" class="logo">U</a></li>
+		<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 		{%if site.rss %}
-		<li class="inline-block"><a href="{{site.rss}}" class="small no-deco neutral-d1">rss</a></li>
+		<li class="inline-block mrr"><a href="{{site.rss}}" class="small no-deco neutral-d1">rss</a></li>
 		{% endif %}
 		{%if site.colophon and site.colophon != page.url %}
-		<li class="inline-block"><a href="{{site.colophon}}" class="small no-deco neutral-d1">colophon</a></li>
+		<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco neutral-d1">colophon</a></li>
 		{% endif %}
 	</ul>
 </footer>
