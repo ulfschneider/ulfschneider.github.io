@@ -41,9 +41,10 @@ nodate: true
 <p>… Design can speak the tongue of art with the force of commerce. The products of design maneuver in the streets of the city where people live, rather than the halls of a museum where they must be visitors. There needn’t be the pressure of artistic credibility or commercial profitability always present, which means that the work of the designer can go further in shaping culture than a traditional piece of art, and make money in a way that has more soul and spill-over benefits than straight commerce.</p>
 
 <p>… It means that the products of design are not autonomous objects, but are creations that bridge in-between spaces to provide a way toward an intended outcome. The design must be transformative for it to be successful. It must take us somewhere. Airports and train stations are other examples of non-autonomous creations that exist as in-between spaces, because they have been built out of our desire to go somewhere else. Even cathedrals could be considered spaces of transit, because they seek to connect the physical world with the spiritual realm. Design is akin to these places in that their usefulness is defined by the consequences of the connections they facilitate. A train station that doesn’t create a lust for exploration is flawed, just as a cathedral that doesn’t inspire awe is a failure.</p>
-</i>
 
 <p>… The necessities and influence of subject and context, whether in portraiture, installation, or design, take time to unfold. It is the designer’s job to figure out a way to have a problem show its actual self so that he can respond to the truth that has emerged. Getting to know a problem is a bit like getting to know a person: it’s a gradual process that requires patience, and there is no state of completion. You can never know the full of a problem, because there is never comprehensive information available. You have to simply draw the line somewhere and make up the rest as you go along.</p>
+
+</i>
 </figure>
 
 The book is available online: [The Shape of Design](https://shapeofdesignbook.com)
