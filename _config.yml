@@ -1,5 +1,5 @@
 # Site settings
-title:       Ulf Schneider 
+title:       Hi, I am Ulf Schneider 
 description: Hi, I am Ulf Schneider. I am a developer and agile coach living in Paderborn, Germany.
 author:      Ulf Schneider
 url:         https://ulf.codes # the base hostname & protocol for the site
@@ -10,6 +10,13 @@ permalink:   '/:title/'
 
 rss:          /feed.xml
 colophon:     /colophon
+
+defaults:
+  -
+    scope:
+      path: "" 
+    values:
+      layout: "default"
 
 plugins:
   - jekyll-feed

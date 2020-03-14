@@ -1,7 +1,9 @@
 ---
 layout: default
 permalink: /
-title:
+title: Hi, I´m Ulf Schneider
+notitle: true
+menu: Ulf Schneider
 ---
 
 <h1 class="fs-3 lh-1 mrb-2">Hi, I am <strong class="inline-block">Ulf Schneider</strong>.<br>I am a developer and agile coach living in Paderborn, Germany.</h1>
