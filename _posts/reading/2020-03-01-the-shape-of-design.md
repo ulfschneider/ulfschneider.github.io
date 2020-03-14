@@ -31,7 +31,19 @@ nodate: true
 <p>… our collective ideas advance with the same limitations.</p>
 
 <p>… Our magicians—our Henry Fords, our Billie Holidays, our Gutenbergs, Disneys, and Marie Curies—do not stand on the inside of what is possible and push; they imagine what is just outside of what we deem possible and pull us towards their vision of what is better. </p>
+
+<p>… the primary position in conversation is the one listening rather than the speaker …</p>
+
+<p>… Web design connects the user to the site’s owner and offers a venue for the connection to develop and grow.</p>
+
+<p>… The qualities of design consistently change, because there is a wide variety of characteristics in what design connects. It means that design lives in the borderlands – it connects, but it does not anchor. </p>
+
+<p>… Design can speak the tongue of art with the force of commerce. The products of design maneuver in the streets of the city where people live, rather than the halls of a museum where they must be visitors. There needn’t be the pressure of artistic credibility or commercial profitability always present, which means that the work of the designer can go further in shaping culture than a traditional piece of art, and make money in a way that has more soul and spill-over benefits than straight commerce.</p>
+
+<p>… It means that the products of design are not autonomous objects, but are creations that bridge in-between spaces to provide a way toward an intended outcome. The design must be transformative for it to be successful. It must take us somewhere. Airports and train stations are other examples of non-autonomous creations that exist as in-between spaces, because they have been built out of our desire to go somewhere else. Even cathedrals could be considered spaces of transit, because they seek to connect the physical world with the spiritual realm. Design is akin to these places in that their usefulness is defined by the consequences of the connections they facilitate. A train station that doesn’t create a lust for exploration is flawed, just as a cathedral that doesn’t inspire awe is a failure.</p>
 </i>
+
+<p>… The necessities and influence of subject and context, whether in portraiture, installation, or design, take time to unfold. It is the designer’s job to figure out a way to have a problem show its actual self so that he can respond to the truth that has emerged. Getting to know a problem is a bit like getting to know a person: it’s a gradual process that requires patience, and there is no state of completion. You can never know the full of a problem, because there is never comprehensive information available. You have to simply draw the line somewhere and make up the rest as you go along.</p>
 </figure>
 
 The book is available online: [The Shape of Design](https://shapeofdesignbook.com)
