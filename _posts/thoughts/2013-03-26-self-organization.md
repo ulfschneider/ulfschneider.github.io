@@ -17,15 +17,15 @@ Leaders in agile organizations have the vital function of actively giving self-o
 <figure>
 <blockquote>
 The only things that evolve by themselves in an organization are disorder, friction, and malperformance. 
-<figcaption>Peter F. Drucker</figcaption>
 </blockquote>
+<figcaption>Peter F. Drucker</figcaption>
 </figure>
 
 <figure>
 <blockquote>
 … the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. 
-<figcaption>Friedrich A. von Hayek</figcaption>
 </blockquote>
+<figcaption>Friedrich A. von Hayek</figcaption>
 </figure>
 
 ## Past and present
@@ -40,7 +40,10 @@ With the dawning industrialization, a new type of organization arises. Reading a
 
 But how can this new world be connected to the evolution principle?
 
-> The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design. [Hayek 1969:33,35]
+<figure>
+<blockquote>The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design. </blockquote>
+<figcaption>[Hayek 1969:33,35]</figcaption>
+</figure>
 
 The connection is, 150 years ago as well as today no mastermind can overview this world, to construct it and to plan it. The system organized itself in evolutionary steps.
 
@@ -78,13 +81,16 @@ Knowledge organizations are not able to survive without large degrees of freedom
 
 The reaction to unforeseeable events affords ad-hoc negotiation, the breakdown of routines and goal-oriented development of new rules to modify current structures.
 
-> Radically one has to leave behind the idea that everything in the organization can be ruled and controlled [[Bendel 2006:2f]][bendel2006].
+<figure>
+<blockquote>Radically one has to leave behind the idea that everything in the organization can be ruled and controlled </blockquote>
+<figcaption>[[Bendel 2006:2f]][bendel2006]</figcaption>
+</figure>
 
 One has to withstand the reflex of responding to uncertainty and ambiguity with ever new rules, forms, and regulations. Instead one has to trust in self-organizational forces and the emancipation of employees to take local and autonomous decisions where needed.
 
 Still, not all decisions are being taken autonomously on local levels. Self-organization can be accompanied with hierarchic structures. Lower levels build up higher levels and higher levels adapt with a slower pace. Lower levels will get their orientation from higher levels and not the other way around. In self-organizing systems, impulse and input from lower levels will be integrated into decision processes. It is not the question if centralized or decentralized decision patterns are better in self-organizing systems. Instead, both patterns can be observed and are needed.
 
-> This is a theory – but what can we _do_ to give self-organizational forces a direction?
+This is a theory – but what can we _do_ to give self-organizational forces a direction?
 
 ## Cooperation and communication
 
@@ -120,7 +126,7 @@ Done work has momentum. Let your task permeate yourself until a solution arises.
 
 This all comes down to, that in this complex self-organizing universe where always more is unknown than known theoretical models are not enough.
 
-> Do the things that produce results now. Repeat.
+Do the things that produce results now. Repeat.
 
 ## Divergent-convergent thinking and responsibility
 
