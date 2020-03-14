@@ -146,8 +146,6 @@ Nassim Nicholas Taleb coined the term anti-fragility [Taleb 2012]. Anti-fragilit
 
 I want to close with a suggestion for a reflection exercise from Jurgen Appelo. As a leader, write down two lists: One list with decisions that your team can make without you and one list with decisions you will make without involving your team [Appelo 2011:118].
 
-> Think about. Act. Repeat.
-
 ## References
 
 [Appelo 2011]

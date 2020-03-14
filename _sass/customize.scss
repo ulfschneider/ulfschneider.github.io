@@ -23,12 +23,23 @@
   --fs-h3: 1rem;
   --lh-h3: 1.62em;
 
+  --blockquote-indicator: "";  
+
   --heading-text-transform: unset;
   --heading-font-weight: 600;
   --font-weight-normal: 400;
 
 }
 
+
+blockquote {
+  line-height: 1.3em;
+  font-size: var(--space-1);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-weight: bold;
+
+}
 
 header.is-dynamic {
   background: white;
