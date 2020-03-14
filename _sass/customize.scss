@@ -40,7 +40,11 @@ blockquote {
   margin-top: var(--space-2);
   margin-bottom: var(--space-2);
   font-weight: bold;
+}
 
+figure blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 header.is-dynamic {
