@@ -37,14 +37,14 @@
 	<nav class="clearfix mry-2 lh-4 small">
 		{% if prev  %}
 		<div class="float-left mrr nowrap truncate">
-			<a class="no-deco neutral-d1" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
+			<a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
 				{{ prev.title }}</a>
 		</div>
 		{% endif %}
 
 		{% if next  %}
 		<div class="float-right mrl nowrap truncate">
-			<a class="no-deco neutral-d1" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
+			<a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
 				{{ next.title }}</a>
 		</div>
 		{% endif %}
@@ -53,10 +53,10 @@
 	<ul class="mrb-0 pdb-2 reset">
 		<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 		{%if site.rss %}
-		<li class="inline-block mrr"><a href="{{site.rss}}" class="small no-deco neutral-d1">rss</a></li>
+		<li class="inline-block mrr"><a href="{{site.rss}}" class="small no-deco meta">rss</a></li>
 		{% endif %}
 		{%if site.colophon and site.colophon != page.url %}
-		<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco neutral-d1">colophon</a></li>
+		<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco meta">colophon</a></li>
 		{% endif %}
 	</ul>
 </footer>
