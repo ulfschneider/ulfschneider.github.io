@@ -1,5 +1,4 @@
 ---
-layout: default
 title: horiz-gauge
 permalink: /horiz-gauge
 category: tools

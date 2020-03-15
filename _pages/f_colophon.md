@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /colophon
 title: Colophon
 notitle: true

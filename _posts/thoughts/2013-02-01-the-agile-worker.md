@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The agile worker
 subtitle: The agile worker exists because of discrepancies between theory and reality
 category: thoughts

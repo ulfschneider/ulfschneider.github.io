@@ -11,6 +11,13 @@ permalink:   '/:title/'
 rss:          /feed.xml
 colophon:     /colophon
 
+defaults:
+  -
+    scope:
+      path: "" 
+    values:
+      layout: "default"
+
 plugins:
   - jekyll-feed
 

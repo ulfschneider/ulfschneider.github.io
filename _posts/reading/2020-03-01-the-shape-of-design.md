@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The Shape of Design
 author: Frank Chimero
 category: reading

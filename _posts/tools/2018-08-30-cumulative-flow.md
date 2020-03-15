@@ -1,5 +1,4 @@
 ---
-layout: default
 title: cumulative-flow
 permalink: /cfd
 category: tools

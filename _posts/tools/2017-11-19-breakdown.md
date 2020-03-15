@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Breakdown for Atom
 permalink: /breakdown
 category: tools

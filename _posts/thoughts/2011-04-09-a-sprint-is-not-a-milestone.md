@@ -1,5 +1,4 @@
 ---
-layout: default
 title:  A Sprint is not a milestone
 date:   2011-04-09
 category: thoughts

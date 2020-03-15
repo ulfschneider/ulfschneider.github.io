@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Scrum and Architecture
 subtitle: The architect and his tools in the Scrum process
 category: thoughts

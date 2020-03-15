@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /
 title: Hi, I´m Ulf Schneider
 notitle: true

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The art in our work
 subtitle: Challenging the status quo is art
 category: thoughts

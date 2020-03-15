@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The Birth of Inter
 category: reading
 author: Rasmus Andersson and Carmel DeAmicis

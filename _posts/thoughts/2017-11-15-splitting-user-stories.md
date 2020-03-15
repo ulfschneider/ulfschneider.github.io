@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Splitting User Stories
 category: thoughts
 abstract:  A User Story can cover vast amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done (often called epic). Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it.

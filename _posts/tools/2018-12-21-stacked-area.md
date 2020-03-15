@@ -1,5 +1,4 @@
 ---
-layout: default
 title: stacked-area
 permalink: /stacked-area
 category: tools
