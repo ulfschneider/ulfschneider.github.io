@@ -5,12 +5,12 @@
 {% assign heroImage = page.hero %}
 {% endif %}
 {% if page.smallhero %}
-{% assign headerClass = "height-sm " %}
+{% assign headerClass = "vh-70 mih-sm " %}
 {% assign heroImage = page.smallhero %}
 {% endif %}
 
 {% if headerClass %}
-{% assign headerClass = headerClass | append: "bg-cover bg-center bg-no-repeat mrb-3 bg-primary" %}
+{% assign headerClass = headerClass | append: "bg-cover bg-center bg-no-repeat mrb-2 bg-primary" %}
 {% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
 {% else %}
 {% assign headerClass = "mrb-4" %}
