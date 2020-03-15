@@ -26,7 +26,7 @@ layout: default
     {% endif %}
 
     {% if indexYear != pageYear %}
-    <div class="mrt-3 mrb-1 fs-3 neutral-d1 fw-200">
+    <div class="mrt-3 mrb-1 fs-3 meta fw-200">
         {{pageYear}}
         {% assign indexYear = pageYear %}
     </div>
@@ -37,16 +37,16 @@ layout: default
 
         {% if p.author %}
         <aside>
-            <span class="neutral-d1 small">
+            <span class="meta small">
                 by {{ p.author }}
             </span>
             {% unless page.nodate %}
 
             {% unless p.nodate %}
             {% if p.author %}
-            <span class="neutral-d1 small">•</span>
+            <span class="meta small">•</span>
             {% endif %}
-            <span class="neutral-d1 small">{{ p.date | date: '%B %e, %Y' }}</span>
+            <span class="meta small">{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
 
             {% endunless %}
@@ -72,7 +72,7 @@ layout: default
         {% unless page.nodate %}
         {% unless p.nodate %}
 
-        <aside class="no-wrap neutral-d1 small">
+        <aside class="no-wrap meta small">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
 
