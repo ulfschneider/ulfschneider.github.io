@@ -48,7 +48,8 @@ figure blockquote {
 }
 
 header.is-dynamic {
-  background: var(--neutral-4);  
+  background: var(--neutral-4);
+  border-bottom: 1.5px solid var(--neutral-3);  
 }
 
 a.logo {
