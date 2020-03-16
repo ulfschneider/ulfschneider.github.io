@@ -58,9 +58,9 @@ layout: default
             {% if p.abstract %}
             {{ p.abstract }}
             {% else %}
-            {{ p.content | truncatewords:50 | strip_html }}
+            {{ p.content | truncatewords:25 | strip_html }}
             {% capture words %}
-            {{ page.content | number_of_words | minus: 50 }}
+            {{ page.content | number_of_words | minus: 25 }}
             {% endcapture %}
             {% unless words contains "-" %}…{% endunless %}
             {% endif %}
