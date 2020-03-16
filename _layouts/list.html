@@ -3,7 +3,7 @@ layout: default
 ---
 {{ content }}
 <div class="article-list mrt-3">
- 
+
     <!-- posts -->
     {% assign count = 0 %}
     {% assign siteYear = site.time | date: '%Y' %}
@@ -59,10 +59,6 @@ layout: default
             {{ p.abstract }}
             {% else %}
             {{ p.content | truncatewords:25 | strip_html }}
-            {% capture words %}
-            {{ page.content | number_of_words | minus: 25 }}
-            {% endcapture %}
-            {% unless words contains "-" %}…{% endunless %}
             {% endif %}
         </p>
 
