@@ -39,7 +39,7 @@ abstract: A short entry-level approach to Git.
 Git will help you doing the following things with a computer:
 
 <div class="x-12 mrt">
-<div class="xx-12 rg-xx-6">
+<div class="xx-12 rg:xx-6">
 <strong>Personal</strong>
 <ul class="indent mrt-0">
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
@@ -52,7 +52,7 @@ Git will help you doing the following things with a computer:
 </ul>
 </div>
 
-<div class="xx-12 rg-xx-6">
+<div class="xx-12 rg:xx-6">
 <strong>Team</strong>
 <ul class="indent mrt-0">
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
