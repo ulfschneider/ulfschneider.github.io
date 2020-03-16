@@ -2,7 +2,7 @@
 layout: default
 ---
 {{ content }}
-<div class="article-list mrt-3">
+<div class="article-list mrt-2">
 
     <!-- posts -->
     {% assign count = 0 %}
@@ -26,13 +26,13 @@ layout: default
     {% endif %}
 
     {% if indexYear != pageYear %}
-    <div class="mrt-3 mrb-1 fs-3 meta fw-200">
+    <div class="mrt-2 mrb fs-3 meta fw-200">
         {{pageYear}}
         {% assign indexYear = pageYear %}
     </div>
     {% endif %}
 
-    <article class="mrt-1 mrb-0">
+    <article class="mrt mrb-0">
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a></h2>
 
         {% if p.author %}
