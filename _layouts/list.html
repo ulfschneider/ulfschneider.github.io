@@ -57,12 +57,8 @@ layout: default
         <p>
             {% if p.abstract %}
             {{ p.abstract }}
-            {% else %}
-            {% if p.content | slice 24 == "." %}
-            {{ p.content | truncatewords:24 | strip_html }}
-            {% else %}
-            {{ p.content | truncatewords:24 | strip_html }}
-            {% endif %}
+            {% else %}            
+            {{ p.content | truncatewords:25, " …" | strip_html }}            
             {% endif %}
         </p>
 
