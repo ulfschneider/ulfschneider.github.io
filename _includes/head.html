@@ -10,5 +10,5 @@
     content="{{ site.meta }} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 
 <title>
-    {% if page.title and page.title != "notitle" %}{{ page.title }}{% elsif page.menu %}{{ page.menu }}{% else %}{{ site.title }}{% endif %}
+    {% if page.title and page.title != "notitle" %}{{ page.title }}{% elsif page.topnav %}{{ page.topnav }}{% else %}{{ site.title }}{% endif %}
 </title>

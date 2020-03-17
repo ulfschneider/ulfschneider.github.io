@@ -2,7 +2,7 @@
 title: The Box-Bullet-Line (BBL)
 subtitle: An intuitive and natural notation to communicate flows between components
 permalink: /bbl
-category: thoughts
+tags: thoughts
 abstract: An intuitive and natural notation to communicate flows between components.
 ---
 
@@ -86,7 +86,7 @@ Synchronous and asynchronous communication can be modeled with single and double
 <figcaption>Figure: A call initiated by A, giving data to B. The asynchronous response with data from B follows.</figcaption>
 </figure>
 
-This simple Box-Bullet-Line notation can grow with your needs. For example, you can start modeling only undirected connections, add data flow by giving your relationships a direction and extend even more by adding caller indication with calling sequences later. You can also use a swim-lane structure and place the components into those lanes, to communicate category or domains that the components belong to.
+This simple Box-Bullet-Line notation can grow with your needs. For example, you can start modeling only undirected connections, add data flow by giving your relationships a direction and extend even more by adding caller indication with calling sequences later. You can also use a swim-lane structure and place the components into those lanes, to communicate tags or domains that the components belong to.
 
 <figure>
 <a href="{{site.url}}/assets/bbl.pdf"><img src="{{site.url}}/i/blog/bbl_model_natural.jpg"></a>

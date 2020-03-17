@@ -14,7 +14,7 @@ Feel free to use all other HTML and CSS as you like. If you do use them, a link 
 
 **layout:** list|default
 
--   _list_ will summarize posts or pages which have a front matter variable _category_ that contains a value which is equal to the entry _category_ inside of the list layout
+-   _list_ will summarize posts or pages which have a front matter variable _tags_ that contains a value which is equal to the entry _tags_ inside of the list layout
 -   _default_ may be used for any page or any post to be shown inside of the _list_ layout
 
 **title:** notitle|A text string
@@ -24,17 +24,9 @@ The title of a page or a post. Any post of layout type _post_ and a value in tit
 
 The sub title of a page or a post.
 
-**menu:** A text string
+**topnav:** A text string
 
-Only pages with _menu_ entry or _index_ entry will appear on the top-navigation.
-
-**nositenav:** true|false|empty
-
-To be used in pages. If true, no site navigation will be displayed for the page.
-
-**nonav:** true|false|empty
-
-If true for any page or post, that page or post will not appear as a part inside of the site navigation. But _nonav_ will not override the _index_ setting.
+Only pages with _topnav_ entry will appear on the top-navigation.
 
 **abstract:** A paragraph.
 

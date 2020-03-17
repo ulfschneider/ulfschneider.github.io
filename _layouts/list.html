@@ -9,10 +9,12 @@ layout: default
     {% assign siteYear = site.time | date: '%Y' %}
     {% assign indexYear = siteYear %}
 
+
+    {% for tag in page.tags %}
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
-    {% unless p.nonav %}
-    {% if p.category contains page.category %}
+
+    {% if p.tags contains tag %}
     {% assign count = count | plus: 1 %}
 
     {% if p.layout == "blank" %}
@@ -40,25 +42,20 @@ layout: default
             <span class="meta small">
                 by {{ p.author }}
             </span>
-            {% unless page.nodate %}
-
-            {% unless p.nodate %}
+            {% unless page.nodate or p.nodate %}
             {% if p.author %}
             <span class="meta small">•</span>
             {% endif %}
             <span class="meta small">{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
-
-            {% endunless %}
-
         </aside>
         {% endif %}
 
         <p>
             {% if p.abstract %}
             {{ p.abstract }}
-            {% else %}            
-            {{ p.content | truncatewords:25, " …" | strip_html }}            
+            {% else %}
+            {{ p.content | truncatewords:25, " …" | strip_html }}
             {% endif %}
         </p>
 
@@ -67,20 +64,17 @@ layout: default
         {% if strippedAuthor.size == 0 %}
         {% unless page.nodate %}
         {% unless p.nodate %}
-
         <aside class="no-wrap meta small">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
-
         {% endunless %}
         {% endunless %}
         {% endif %}
 
     </article>
-
+    
     {% endif %}
-
-    {% endunless %}
+    {% endfor %}
     {% endfor %}
 
 </div>

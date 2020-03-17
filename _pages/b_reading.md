@@ -1,7 +1,7 @@
 ---
 layout: list
-menu: Reading
+topnav: Reading
 permalink: /reading
-category: reading
+tags: reading
 nodate: true
 ---

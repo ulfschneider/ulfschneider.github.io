@@ -1,6 +1,6 @@
 ---
 layout: list
-menu: Journal
+topnav: Journal
 permalink: /journal
-category: journal
+tags: journal
 ---

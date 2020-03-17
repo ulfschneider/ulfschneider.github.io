@@ -1,6 +1,6 @@
 ---
 title: The Birth of Inter
-category: reading
+tags: reading
 author: Rasmus Andersson and Carmel DeAmicis
 nodate: true
 ---

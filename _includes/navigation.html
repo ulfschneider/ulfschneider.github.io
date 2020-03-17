@@ -1,21 +1,10 @@
-{% unless page.nositenav %}
-
 {% for p in site.pages %}
-{% if p.menu %}
-{% unless p.nonav %}
-{% assign last = p %}
-{% endunless %}
-{% endif%}
-{% endfor %}
-
-
-{% for p in site.pages %}
-{% if p.menu %}
-{% unless p.nonav or p.url != "/" %}
+{% if p.topnav %}
+{% unless p.url != "/" %}
 {% if page.url == p.url %}
-<span class="inline-block meta black bold mrr">{{p.menu}}</span>
+<span class="inline-block meta black bold mrr">{{p.topnav}}</span>
 {% else %}
-<a href="/" class="inline-block no-deco meta mrr">{{p.menu}}</a>
+<a href="/" class="inline-block no-deco meta mrr">{{p.topnav}}</a>
 {% endif %}
 {% endunless %}
 {% endif %}
@@ -25,17 +14,17 @@
 <ul class="reset inline-block mry-0">
 
 	{% for p in site.pages %}
-	{% if p.menu %}
-	{% unless p.nonav or p.url == "/" %}
+	{% if p.topnav %}
+	{% unless p.url == "/" %}
 
 	{% if page.url == p.url %}
-	<li class="inline-block meta black bold mrr">{{p.menu}}</li>
-	{% elsif page.category contains p.category %}
+	<li class="inline-block meta black bold mrr">{{p.topnav}}</li>
+	{% elsif page.tags contains p.tags %}
 	<li class="inline-block mrr">
-		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a></li>
+		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
 	{% else %}
 	<li class="inline-block mrr">
-		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.menu}}</a>
+		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a>
 	</li>
 	{% endif %}
 
@@ -44,4 +33,3 @@
 	{% endfor %}
 
 </ul>
-{% endunless %}

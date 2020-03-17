@@ -2,7 +2,7 @@
 layout: blank
 title: active-toc
 permalink: /active-toc
-category: tools
+tags: tools
 abstract: Highlight your TOC entries while scrolling.
 ---
 

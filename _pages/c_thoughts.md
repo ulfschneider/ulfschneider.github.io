@@ -1,8 +1,8 @@
 ---
 layout: list
-menu: Thoughts
+topnav: Thoughts
 permalink: /thoughts
-category: thoughts
+tags: thoughts
 ---
 Essays about my experiences within the agile movement and the agile value system. Popular articles:
 
