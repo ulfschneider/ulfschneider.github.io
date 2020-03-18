@@ -36,16 +36,14 @@ layout: default
 
     <article class="mry-1">
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a></h2>
-
-        {% if p.author %}
+        {% assign strippedAuthor = p.author | strip %}
+        {% if strippedAuthor.size > 0 %}
         <aside>
             <span class="meta small">
                 by {{ p.author }}
             </span>
-            {% unless page.nodate or p.nodate %}
-            {% if p.author %}
-            <span class="meta small">•</span>
-            {% endif %}
+            {% unless page.nodate or p.nodate %}            
+            <span class="meta small">•</span>            
             <span class="meta small">{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
         </aside>
@@ -60,7 +58,7 @@ layout: default
         </p>
 
 
-        {% assign strippedAuthor = p.author | strip %}
+        
         {% if strippedAuthor.size == 0 %}
         {% unless page.nodate %}
         {% unless p.nodate %}
