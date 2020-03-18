@@ -2,6 +2,6 @@
 layout: gallery
 title: My hometown, Paderborn
 permalink: /paderborn
-tags: paderborn
+categories: paderborn
 nodate: true
 ---

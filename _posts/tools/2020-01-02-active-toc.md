@@ -1,8 +1,6 @@
 ---
 layout: blank
-title: active-toc
-permalink: /active-toc
-tags: tools
+categories: tools
 abstract: Highlight your TOC entries while scrolling.
 ---
 

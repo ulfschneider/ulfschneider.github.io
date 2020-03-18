@@ -5,7 +5,7 @@ subtitle:
 date:   2005-07-27
 thumburl: /i/dolomites_thumb.jpg
 slideurl: /i/dolomites.jpg
-tags: [bw, nature]
+categories: [bw, nature]
 ---
 ![]({{site.url}}/i/dolomites.jpg)
 {:.left}

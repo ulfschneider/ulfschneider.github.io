@@ -5,7 +5,7 @@ date: 2016-06-18
 abstract:
 thumburl: /i/DSCF2614_thumb.jpg
 slideurl: /i/DSCF2614.jpg
-tags: [bw, nature]
+categories: [bw, nature]
 ---
 ![]({{site.url}}/i/DSCF2614.jpg)
 {:.breakout}

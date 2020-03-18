@@ -2,6 +2,6 @@
 layout: list
 topnav: Reading
 permalink: /reading
-tags: reading
+categories: reading
 nodate: true
 ---

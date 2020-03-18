@@ -4,7 +4,7 @@ title: Bauhaus Dessau
 date:   2015-05-24
 abstract:
 thumburl: /i/IMG_8440_thumb.jpg
-tags: [bw, things, projects]
+categories: [bw, things, projects]
 ---
 The Bauhaus Dessau is a great place to experience the open-mindedness, the idealistic, adventuresome new thinking and the architectural style that influenced almost every architect and designer in the last 90 years. An icon of the modern era.
 

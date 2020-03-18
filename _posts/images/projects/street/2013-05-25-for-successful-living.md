@@ -6,7 +6,7 @@ date:   2013-05-25
 abstract: 
 thumburl: /i/IMG_5318_thumb.jpg
 slideurl: /i/IMG_5318.jpg
-tags: [bw, street, people]
+categories: [bw, street, people]
 ---
 ![]({{site.url}}/i/IMG_5318.jpg)
 

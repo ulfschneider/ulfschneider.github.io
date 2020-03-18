@@ -1,6 +1,6 @@
 ---
 title: The balanced organization
-tags: thoughts
+categories: thoughts
 abstract: The agile manifesto defines a collaboration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.
 ---
 
@@ -18,7 +18,7 @@ In highly competitive and innovative markets there are real advantages in being 
 
 When a culture transformation towards collaboration is to time consumptive (of course) and ever pushing with the help of an agile coach without sustainable outcome isn´t satisfying (of course), what is a pragmatic way to get some positive results?
 
-William Schneider´s Core Culture Model will allow us to identify the organizations' current culture and classify it into one of four tags. This can be used as a starting point – understand where the organization is and balance towards a new direction. Any change has to grow from the inside of the organization and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable. Also keep in mind, that organizational change takes time and will never end; it is a continuous game.
+William Schneider´s Core Culture Model will allow us to identify the organizations' current culture and classify it into one of four categories. This can be used as a starting point – understand where the organization is and balance towards a new direction. Any change has to grow from the inside of the organization and has to rely on the strengths of the current culture. Imitating or copying the culture of another organization will not be sustainable. Also keep in mind, that organizational change takes time and will never end; it is a continuous game.
 
 Schneider differentiates the following four core cultures:
 

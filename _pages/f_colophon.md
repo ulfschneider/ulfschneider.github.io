@@ -1,5 +1,5 @@
 ---
-permalink: /colophon
+permalink: /colophon/
 title: Colophon
 notitle: true
 ---

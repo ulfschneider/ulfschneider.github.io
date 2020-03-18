@@ -1,3 +1,4 @@
+{% if page.nostepnav != true %}
 {% for post in site.posts %}
 
 {% if post.url == page.url %}
@@ -5,13 +6,12 @@
 {% assign index = forloop.index %}
 {% endif %}
 
-{% if current and current.layout != "image" and current.layout != "gallery" and current.layout != "collection "%}
-
+{% if current and current.layout != "gallery" and current.layout != "collection "%}
 
 {% unless prev %}
 {% for p in site.posts offset:index   %}
 {% unless prev %}
-{% if p.tags == current.tags %}
+{% if p.categories == current.categories %}
 {% assign prev = p %}
 {% endif %}
 {% endunless %}
@@ -20,7 +20,7 @@
 
 {% unless next %}
 {% for p in site.posts %}
-{% if p.tags == current.tags and forloop.index < index %}
+{% if p.categories == current.categories and forloop.index < index %}
 {% assign next = p %}
 {% endif %}
 {% endfor %}
@@ -30,22 +30,24 @@
 {% endif %}
 
 {% endfor %}
-
+{% endif %}
 
 <footer class="mrt-2">
 	{% if prev or next %}
 	<nav class="clearfix mrt-2 small">
 		{% if prev  %}
 		<div class="float-left mrr nowrap truncate">
-			<a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}"><span>Prev:</span>
-				{{ prev.title }}</a>
+			<a class="no-deco meta" accesskey="-"
+				href="{{ site.url }}{{ prev.url }}"><span>Prev{% if prev.title != "notitle" && prev.notitle != true %}:
+					{{ prev.title }}{% endif %}</span></a>
 		</div>
 		{% endif %}
 
 		{% if next  %}
 		<div class="float-right mrl nowrap truncate">
-			<a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}"><span>Next:</span>
-				{{ next.title }}</a>
+			<a class="no-deco meta" accesskey="+"
+				href="{{ site.url }}{{ next.url }}"><span>Next{% if next.title != "notitle" && next.notitle != true %}:
+					{{ next.title }}{% endif %}</span></a>
 		</div>
 		{% endif %}
 	</nav>

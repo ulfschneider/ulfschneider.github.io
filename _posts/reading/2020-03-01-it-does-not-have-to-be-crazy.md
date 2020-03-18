@@ -1,7 +1,7 @@
 ---
 title: It Doesn't Have to Be Crazy at Work
 author: Jason Fried and David Heinemeier Hansson
-tags: reading
+categories: reading
 nodate: true
 ---
 <figure>

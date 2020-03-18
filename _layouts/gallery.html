@@ -1,14 +1,15 @@
 ---
-layout: default
+layout: image
 ---
 {{ content }}
+
 <div class="breakout gallery mrt-2">
 
     <!-- posts -->
 
-    {% for tag in page.tags %}
+    {% for category in page.categories %}
     {% for p in site.posts %}
-    {% if p.tags contains tag %}
+    {% if p.categories contains category %}
     {% assign foundImage = 0 %}
     {% assign images = p.content | split:"<img " %}
     {% for image in images %}

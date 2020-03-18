@@ -73,14 +73,18 @@ a.logo:visited:active {
   }
 }
 
-
-.image .title h1 {
-  font-size: var(--fs);
-}
-
-.image img {
-  width: 100%;
-  object-fit: cover;
+.image {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .title {
+    padding-top: var(--space-2);
+    h1 {
+      font-size: var(--fs);
+      font-weight: normal;
+    }
+  }
 }
 
 a.logo:focus:active {
@@ -134,5 +138,3 @@ article:nth-child(16n + 10) {
     flex-direction: column;
   }
 }
-
-

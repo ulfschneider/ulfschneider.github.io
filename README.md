@@ -48,9 +48,9 @@ To be used in posts of type _image_. Will be used inside of a gallery to display
 
 To be used in posts of type _image_. Will be displayed when the image is part of a slide show in a gallery, no matter if autoplay or not.
 
-**tags:** A comma-separated text string list
+**categories:** A comma-separated text string list
 
-Tagging for the content. When you specify a tag for a post of type _gallery_, the gallery will display all posts of type _image_ that contain the same tag.
+Tagging for the content. When you specify a category for a post of type _gallery_, the gallery will display all posts of type _image_ that contain the same category.
 
 **noslides:** true|false|empty
 

@@ -4,7 +4,7 @@ title: Gasometer Oberhausen
 date:   2013-11-30
 abstract: 
 thumburl: /i/IMG_6854_thumb.jpg
-tags: [bw, things, projects]
+categories: [bw, things, projects]
 ---
 ![]({{site.url}}/i/IMG_6854.jpg)
 {:.breakout .left}
