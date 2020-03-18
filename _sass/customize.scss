@@ -47,6 +47,15 @@ header.is-dynamic {
   border-bottom: 1px solid var(--neutral-3);
 }
 
+nav ul li {
+  margin-right: var(--space);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
 a.logo {
   width: 18px;
   height: 18px;

@@ -1,29 +1,28 @@
-{% for p in site.pages %}
-{% if p.topnav %}
-{% unless p.url != "/" %}
-{% if page.url == p.url %}
-<span class="inline-block meta black bold mrr">{{p.topnav}}</span>
-{% else %}
-<a href="/" class="inline-block no-deco meta mrr">{{p.topnav}}</a>
-{% endif %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-
 <ul class="reset inline-block mry-0">
+	{% for p in site.pages %}
+	{% if p.topnav %}
+	{% unless p.url != "/" %}
+	{% if page.url == p.url %}
+	<li class="inline-block meta black bold">{{p.topnav}}</li>
+	{% else %}
+	<li class="inline-block"><a href="/" class="no-deco meta">{{p.topnav}}</a></li>
+	{% endif %}
+	{% endunless %}
+	{% endif %}
+	{% endfor %}
+
 
 	{% for p in site.pages %}
 	{% if p.topnav %}
 	{% unless p.url == "/" %}
 
 	{% if page.url == p.url %}
-	<li class="inline-block meta black bold mrr">{{p.topnav}}</li>
+	<li class="inline-block meta black bold">{{p.topnav}}</li>
 	{% elsif page.categories contains p.categories %}
-	<li class="inline-block mrr">
+	<li class="inline-block">
 		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
 	{% else %}
-	<li class="inline-block mrr">
+	<li class="inline-block">
 		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a>
 	</li>
 	{% endif %}
