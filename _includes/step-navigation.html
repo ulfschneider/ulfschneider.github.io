@@ -32,7 +32,12 @@
 {% endfor %}
 {% endif %}
 {% if prev or next %}
-<nav class="clearfix mrt-2 small lh-1">
+
+{% assign navClass = "clearfix mrt-2 small" %}
+{% if include.shortLink %}
+{% assign navClass = navClass | append: "lh-1" %}
+{% endif %}
+<nav class="{{navClass}}">
     {% if prev  %}
     <div class="float-left mrr nowrap truncate">
         <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
