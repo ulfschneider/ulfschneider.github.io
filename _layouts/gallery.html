@@ -9,13 +9,17 @@ layout: image
         grid-row-gap: var(--space-3);
         grid-auto-flow: dense;
         align-items: flex-end;
-    }    
+    }
+
+    .gallery .step-navigation *,
+    .gallery .title * {
+        font-size: var(--fs-d1);
+        line-height: var(--lh-2);
+    }
 
     .gallery .title .sub-title {
-			font-size: var(--fs-d1);
-            color: var(--meta-color);
-            line-height: var(--lh-2);
-		}
+        color: var(--meta-color);
+    }
 
     @media (max-width: 400px) {
         .gallery {

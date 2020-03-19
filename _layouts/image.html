@@ -10,20 +10,18 @@
 			object-fit: cover;
 		}
 
-		.image .step-navigation * {
+		.image .step-navigation *,
+		.image .title * {
 			line-height: var(--lh-2);
+			font-size: var(--fs-d1);
 		}
 
 		.image .title h1 {
-
-			font-size: var(--fs-d1);
 			font-weight: normal;
 		}
 
 		.image .title .sub-title {
-			font-size: var(--fs-d1);
 			color: var(--meta-color);
-			line-height: var(--lh-2);
 		}
 
 		@media (min-width: 650px) {
@@ -56,7 +54,7 @@
 				</div>
 
 
-				<nav class="navigation lh-4 small">
+				<nav class="navigation small">
 					{% include navigation.html %}
 				</nav>
 				{% include footer.html %}

@@ -12,23 +12,24 @@
 	{% endfor %}
 
 
-	{% for p in site.pages %}
-	{% if p.topnav %}
-	{% unless p.url == "/" %}
+	<div class="inline-block">
+		{% for p in site.pages %}
+		{% if p.topnav %}
+		{% unless p.url == "/" %}
 
-	{% if page.url == p.url %}
-	<li class="inline-block meta black bold">{{p.topnav}}</li>
-	{% elsif page.categories contains p.categories %}
-	<li class="inline-block">
-		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
-	{% else %}
-	<li class="inline-block">
-		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a>
-	</li>
-	{% endif %}
+		{% if page.url == p.url %}
+		<li class="inline-block meta black bold">{{p.topnav}}</li>
+		{% elsif page.categories contains p.categories %}
+		<li class="inline-block">
+			<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
+		{% else %}
+		<li class="inline-block">
+			<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a>
+		</li>
+		{% endif %}
 
-	{% endunless %}
-	{% endif %}
-	{% endfor %}
-
+		{% endunless %}
+		{% endif %}
+		{% endfor %}
+	</div>
 </ul>
