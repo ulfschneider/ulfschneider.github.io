@@ -3,6 +3,33 @@
 
 <head>
 	{% include head.html %}
+	<style>
+		.image img {
+
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.image .step-navigation * {
+			line-height: var(--lh-1);
+		}
+
+		.image .title h1 {
+
+			font-size: var(--fs-d1);
+			font-weight: normal;
+		}
+
+		@media (min-width: 600px) {
+			.image img {
+				width: unset;
+				max-height: 70vh;
+
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+	</style>
 </head>
 
 <body class="bg-primary-3">
@@ -14,9 +41,11 @@
 				{{ content }}
 
 				<div class="flex justify-space-between">
-					{% include title.html %}
-					<div class="mrl-1">
-						{% include step-navigation.html shortLink=true %}
+					<div class="mrr">
+						{% include title.html %}
+					</div>
+					<div>
+						{% include step-navigation.html shortNav=true %}
 					</div>
 				</div>
 

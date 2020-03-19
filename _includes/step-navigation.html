@@ -33,15 +33,11 @@
 {% endif %}
 {% if prev or next %}
 
-{% assign navClass = "clearfix mrt-2 small" %}
-{% if include.shortLink %}
-{% assign navClass = navClass | append: "lh-1" %}
-{% endif %}
-<nav class="{{navClass}}">
+<nav class="step-navigation mrt-2 small">
     {% if prev  %}
     <div class="float-left mrr nowrap truncate">
         <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
-            {% if include.shortLink %}
+            {% if include.shortNav %}
             <span>Prev</span>
             {% else %}
             <span>Prev{% if prev.title != "notitle" && prev.notitle != true %}:
@@ -54,7 +50,7 @@
     {% if next  %}
     <div class="float-right nowrap truncate">
         <a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}">
-            {% if include.shortLink %}
+            {% if include.shortNav %}
             <span>Next</span>
             {% else %}
             <span>Next{% if next.title != "notitle" && next.notitle != true %}:

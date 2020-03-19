@@ -100,28 +100,4 @@ a.logo:focus:active {
   }
 }
 
-.image {
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-  .title {
-    h1 {
-      font-size: var(--fs-d1);
-      font-weight: normal;      
-    }
-  }
-}
 
-@media (min-width: 600px) {
-  .image {
-    img {
-      width: unset;
-      max-height: 70vh;
-
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  }
-}
