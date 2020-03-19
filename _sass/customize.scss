@@ -106,10 +106,9 @@ a.logo:focus:active {
     object-fit: cover;
   }
   .title {
-    padding-top: var(--space-2);
     h1 {
       font-size: var(--fs-d1);
-      font-weight: normal;
+      font-weight: normal;      
     }
   }
 }
@@ -119,7 +118,7 @@ a.logo:focus:active {
     img {
       width: unset;
       max-height: 70vh;
-      
+
       margin-left: auto;
       margin-right: auto;
       display: block;

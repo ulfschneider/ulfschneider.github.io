@@ -13,13 +13,17 @@
 
 				{{ content }}
 
-				{% include title.html %}
+				<div class="flex justify-space-between">
+					{% include title.html %}
+					<div class="mrl-1">
+						{% include step-navigation.html shortLink=true %}
+					</div>
+				</div>
 
-				{% include step-navigation.html %}
 
 				<nav class="navigation lh-4 small">
 					{% include navigation.html %}
-				</nav>				
+				</nav>
 				{% include footer.html %}
 			</div>
 		</div>

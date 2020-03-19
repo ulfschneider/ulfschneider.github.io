@@ -1,24 +1,24 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 
 {% if page.title  %}
-<div class="mrb-2 title">
-    <h1>{{ page.title }}</h1>
+<div class="mry-2 title">
+    <h1 class="lh-1">{{ page.title }}</h1>
 
     {%if page.subtitle  %}
     <div>{{page.subtitle}}</div>
     {% endif %}
 
     {% if page.author %}
-    <span class="meta small">
+    <span class="meta small lh-1">
         by {{page.author}}
     </span>
     {% endif %}
 
     {% unless page.nodate %}
     {% if page.author %}
-    <span class="meta small">•</span>
+    <span class="meta small lh-1">•</span>
     {% endif %}
-    <span class="meta small">{{ page.date | date: '%B %e, %Y' }}</span>
+    <span class="meta small lh-1">{{ page.date | date: '%B %e, %Y' }}</span>
     {% endunless %}
 
 </div>
