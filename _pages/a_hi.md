@@ -12,3 +12,4 @@ In 1996 I graduated at the University of Paderborn (Dipl.-Wirt. Inform.). Throug
 I am [riding](/bike/cross-the-alps) race bikes and the [Bullitt](/emil/2016-10-02) together with my boy [Emil](/emil/emil-is-ready-for-the-beach). Emil is very concerned about the Coronavirus pandemic and pictured the [virus](/emil/emil-pictured-the-coronavirus). 
 
 Contact me via +49 163 2505164.
+

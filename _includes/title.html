@@ -5,20 +5,20 @@
     <h1 class="lh-1">{{ page.title }}</h1>
 
     {%if page.subtitle  %}
-    <div class="sub-title small lh-2">{{page.subtitle}}</div>
+    <div class="sub-title meta lh-2">{{page.subtitle}}</div>
     {% endif %}
-    <div class="meta small lh-2">
+    <div class="meta lh-2">
         {% if page.author %}
-        <span class="meta small lh-2">
+        <span class="meta lh-2">
             by {{page.author}}
         </span>
         {% endif %}
 
         {% unless page.nodate %}
         {% if page.author %}
-        <span class="meta small lh-2">•</span>
+        <span class="meta lh-2">•</span>
         {% endif %}
-        <span class="meta small lh-2">{{ page.date | date: '%B %e, %Y' }}</span>
+        <span class="meta lh-2">{{ page.date | date: '%B %e, %Y' }}</span>
         {% endunless %}
     </div>
 

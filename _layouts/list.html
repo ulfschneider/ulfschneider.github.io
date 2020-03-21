@@ -39,12 +39,12 @@ layout: default
         {% assign strippedAuthor = p.author | strip %}
         {% if strippedAuthor.size > 0 %}
         <aside>
-            <span class="meta small">
+            <span class="meta">
                 by {{ p.author }}
             </span>
             {% unless page.nodate or p.nodate %}            
-            <span class="meta small">•</span>            
-            <span class="meta small">{{ p.date | date: '%B %e, %Y' }}</span>
+            <span class="meta">•</span>            
+            <span class="meta">{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
         </aside>
         {% endif %}
@@ -62,7 +62,7 @@ layout: default
         {% if strippedAuthor.size == 0 %}
         {% unless page.nodate %}
         {% unless p.nodate %}
-        <aside class="no-wrap meta small">
+        <aside class="no-wrap meta">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
         {% endunless %}

@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:200,400,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@200;400;700&display=swap');
 
 :root {
-  --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-feature-settings: "frac", "calt", "rlig", "kern", "zero";
+  --font-family: "IBM Plex Serif", Georgia, serif;  
+  --heading-font-family: "Inter", sans-serif;
+  --meta-font-family: "Inter", sans-serif;
+  --mono-font-family: "IBM Plex Mono", monospase;
   --font-weight-normal: 400;
+  --font-weight-bold: 700;
   --color-step-factor: 0.23;
+
 
   --fs-h1: var(--fs-3);
   --lh-h1: 1.25em;
+  --lh-3: 1.75em;
   --mrt-h1: 0em;
   --mrb-h1: 0;
 
@@ -62,6 +67,7 @@ a.logo {
   font-size: 14px;
   background: black;
   color: var(--base-background);
+  font-family: var(--meta-font-family);
   font-weight: 500;
   text-align: center;
   border-radius: 50%;

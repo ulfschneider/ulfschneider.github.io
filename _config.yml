@@ -8,7 +8,7 @@ markdown:    kramdown
 include:     ["_pages"]
 
 rss:          /feed.xml
-colophon:     /colophon
+colophon:     /colophon/
 
 defaults:
   - 
