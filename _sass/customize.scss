@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:wght@400;700&family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@200;400;700&display=swap');
 
 :root {
-  --font-family: "IBM Plex Serif", Georgia, serif;  
-  --heading-font-family: "Inter", sans-serif;
-  --meta-font-family: "Inter", sans-serif;
-  --mono-font-family: "IBM Plex Mono", monospase;
+  --font-family: "IBM Plex Serif", serif;
+  --heading-font-family: "IBM Plex Sans", sans-serif;
+  --meta-font-family: "IBM Plex Sans", sans-serif;
+  --mono-font-family: "IBM Plex Mono", monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --color-step-factor: 0.23;
@@ -12,7 +12,6 @@
 
   --fs-h1: var(--fs-3);
   --lh-h1: 1.25em;
-  --lh-3: 1.75em;
   --mrt-h1: 0em;
   --mrb-h1: 0;
 
