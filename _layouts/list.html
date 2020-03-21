@@ -9,8 +9,8 @@ layout: default
     {% assign siteYear = site.time | date: '%Y' %}
     {% assign indexYear = siteYear %}
 
-
     {% for category in page.categories %}
+    
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
 
