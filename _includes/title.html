@@ -1,26 +1,26 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% assign titleClass = "title" %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = titleClass | append: " mrtn-5 mih-4 mrb-2" %}
+{% assign titleClass = titleClass | append: " mrtn-5 mih-4 mrb-2 " %}
 {% else %}
 {% assign titleClass = titleClass | append: " mry-2" %}
 {% endif %}
 
 {% if page.title  %}
 <div class="mrln-d3 {{titleClass}}">
-    <div>
-        <h1 class="pdx-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
+    <div class="lh-1">
+        <h1 class="pd-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
     </div>
 
     {%if page.subtitle  %}
-    <div>
-        <div class="pdx-d3 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
+    <div class="lh-2">
+        <div class="pdx-d3 pdy-d4 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
     {% if page.author or page.date and page.nodate != true%}
 
-    <div>
-        <div class="pdx-d3 meta lh-2 inline-block bg-base-background">
+    <div class="lh-2"> 
+        <div class="pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
             {% if page.author %}
             <span>
                 by {{page.author}}

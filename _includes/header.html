@@ -10,22 +10,22 @@
 {% endif %}
 
 {% if headerClass %}
-{% assign headerClass = headerClass | append: "mrx mrb-2 bg-cover bg-center bg-no-repeat bg-primary-4" %}
+{% assign headerClass = headerClass | append: "mrb-2 bg-cover bg-center bg-no-repeat bg-primary-4" %}
 {% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
 {% else %}
 {% assign headerClass = "mrb-3" %}
 {% endif %}
 
 <div class="{{headerClass}}" {% if headerStyle %}style="{{headerStyle}}" {% endif %}>
-	<div class="breakout-full">
-		<header class="bg-base-background z-1 pdy">
-			<nav class="navigation xl small">
-				{% include navigation.html %}
-			</nav>
-		</header>
 
-		{% include fight-corona.html %}
-	</div>
+	<header class="bg-base-background z-1 pdy">
+		<nav class="navigation xl small">
+			{% include navigation.html %}
+		</nav>
+	</header>
+
+	{% include fight-corona.html %}
+
 </div>
 
 {% endunless %}
