@@ -1,26 +1,38 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
+{% assign titleClass = "title" %}
+{% if page.hero or page.smallhero %}
+{% assign titleClass = titleClass | append: " mrtn-5 mih-4 mrb-2" %}
+{% else %}
+{% assign titleClass = titleClass | append: " mry-2" %}
+{% endif %}
 
 {% if page.title  %}
-<div class="mry-2 title">
-    <h1 class="lh-1">{{ page.title }}</h1>
+<div class="mrln-d3 {{titleClass}}">
+    <h1 class="pdx-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
 
     {%if page.subtitle  %}
-    <div class="sub-title meta lh-2">{{page.subtitle}}</div>
-    {% endif %}
-    <div class="meta lh-2">
-        {% if page.author %}
-        <span class="meta lh-2">
-            by {{page.author}}
-        </span>
-        {% endif %}
-
-        {% unless page.nodate %}
-        {% if page.author %}
-        <span class="meta lh-2">•</span>
-        {% endif %}
-        <span class="meta lh-2">{{ page.date | date: '%B %e, %Y' }}</span>
-        {% endunless %}
+    <div>
+        <div class="pdx-d3 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
+    {% endif %}
+    {% if page.author or page.nodate != true %}
+    <div>
+        <div class="pdx-d3 meta lh-2 inline-block bg-base-background">
+            {% if page.author %}
+            <span>
+                by {{page.author}}
+            </span>
+            {% endif %}
+
+            {% unless page.nodate %}
+            {% if page.author %}
+            <span>•</span>
+            {% endif %}
+            <span>{{ page.date | date: '%B %e, %Y' }}</span>
+            {% endunless %}
+        </div>
+    </div>
+    {% endif %}
 
 </div>
 {% endif %}
