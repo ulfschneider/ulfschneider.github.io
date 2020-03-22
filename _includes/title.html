@@ -8,8 +8,10 @@
 
 {% if page.title  %}
 <div class="mrln-d3 {{titleClass}}">
-    <h1 class="pdx-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
-
+    <div>
+        <h1 class="pdx-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
+    </div>
+    
     {%if page.subtitle  %}
     <div>
         <div class="pdx-d3 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
