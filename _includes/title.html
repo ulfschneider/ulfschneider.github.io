@@ -11,13 +11,14 @@
     <div>
         <h1 class="pdx-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
     </div>
-    
+
     {%if page.subtitle  %}
     <div>
         <div class="pdx-d3 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
-    {% if page.author or page.nodate != true %}
+    {% if page.author or page.date %}
+    {% unless page.nodate == true %}
     <div>
         <div class="pdx-d3 meta lh-2 inline-block bg-base-background">
             {% if page.author %}
@@ -34,6 +35,7 @@
             {% endunless %}
         </div>
     </div>
+    {% endunless %}
     {% endif %}
 
 </div>
