@@ -8,7 +8,6 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --heading-letter-spacing: 0;
-  --color-step-factor: 0.23;
 
 
   --fs-h1: var(--fs-3);
@@ -48,8 +47,8 @@ figure blockquote {
 }
 
 header.is-dynamic {
-  background: var(--neutral-4);
-  border-bottom: 1px solid var(--neutral-3);
+  background: var(--neutral-5);
+  border-bottom: 1px solid var(--neutral-4);
 }
 
 nav ul li {
