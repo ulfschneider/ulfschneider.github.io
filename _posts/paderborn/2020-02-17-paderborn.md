@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: My hometown, Paderborn
-permalink: /paderborn
+permalink: /paderborn/
 categories: paderborn
 nodate: true
 ---
