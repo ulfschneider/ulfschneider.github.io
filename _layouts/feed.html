@@ -23,7 +23,7 @@
         {% if p.published != false %}
         <item>
             <title>{{ p.title | xml_escape }}</title>
-            <author>{% if p.author%}{{p.author}}{% else %}{{site.author}}{% endif %}</author>
+            <author></author>
             <description>
                 {%if p.subtitle %}&lt;p&gt;{{p.subtitle}}&lt;/p&gt;{% endif %}
                 {{ p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}
