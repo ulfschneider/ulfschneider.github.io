@@ -1,9 +1,7 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% assign titleClass = "title" %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = titleClass | append: " mrtn-5 mih-4 mrb-2 " %}
-{% else %}
-{% assign titleClass = titleClass | append: " mrb-2" %}
+{% assign titleClass = titleClass | append: " mrtn-5 mih-5" %}
 {% endif %}
 
 {% if page.title  %}
@@ -18,8 +16,7 @@
     </div>
     {% endif %}
     {% if page.author or page.date and page.nodate != true%}
-
-    <div class="lh-2"> 
+    <div class="lh-2">
         <div class="pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
             {% if page.author %}
             <span>
@@ -35,9 +32,16 @@
             {% endunless %}
         </div>
     </div>
-    
     {% endif %}
 
+
+    {% if page.nostepnav != true and page.categories %}
+    <div class="lh-2">
+        <div class="pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
+            {% include categories.html %}
+        </div>
+    </div>
+    {% endif %}
 </div>
 {% endif %}
 

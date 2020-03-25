@@ -1,0 +1,9 @@
+{% if page.categories %}
+<nav class="meta inline-block lh-2">
+    {% for c in page.categories %}
+    <ul class="reset mry-0 inline ">
+        <li class="inline"><a class="meta no-deco" href="/{{c}}">#{{c}}</a></li>
+    </ul>
+    {% endfor %}
+</nav>
+{% endif %}
