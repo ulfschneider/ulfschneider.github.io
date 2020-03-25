@@ -15,33 +15,26 @@
         <div class="pdx-d3 pdy-d4 sub-title meta lh-2 inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
-    {% if page.author or page.date and page.nodate != true%}
-    <div class="lh-2">
+    {% if page.author or page.date and page.nodate != true or page.nostepnav != true and page.categories %}
+    <div class="lh-2 small">
         <div class="pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
             {% if page.author %}
-            <span>
+            <span class="mrr">
                 by {{page.author}}
             </span>
             {% endif %}
 
-            {% unless page.nodate %}
-            {% if page.author %}
-            <span>•</span>
-            {% endif %}
-            <span>{{ page.date | date: '%B %e, %Y' }}</span>
+            {% unless page.nodate %}                      
+            <span class="mrr">{{ page.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
-        </div>
-    </div>
-    {% endif %}
 
-
-    {% if page.nostepnav != true and page.categories %}
-    <div class="lh-2">
-        <div class="pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
+            {% if page.nostepnav != true and page.categories %}
             {% include categories.html %}
+            {% endif %}
         </div>
     </div>
     {% endif %}
+
 </div>
 {% endif %}
 
