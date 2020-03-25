@@ -30,7 +30,4 @@ defaults:
       permalink: /:categories/:title/
 
 
-plugins:
-  - jekyll-feed
-
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>{{site.title}}</title>
+        <description>{{site.description}}</description>
+        <link>{{site.url}}{{site.baseurl}}</link>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+
+
+        {% assign imageUrl = "src=&quot;" %}
+        {% assign imageUrl = imageUrl | append: site.url %}
+        {% assign imageUrl = imageUrl | append: site.baseurl %}
+        {% assign imageUrl = imageUrl | append: "/" %}
+
+        {% assign posturl = "href=&quot;" %}
+        {% assign postUrl = postUrl | append: site.url %}
+        {% assign posturl = postUrl | append: site.baseurl %}
+        {% assign posturl = postUrl | append: "/" %}
+
+
+        {% for p in site.posts %}
+        <item>
+            <title>{{ p.title | xml_escape }}</title>
+            <author>{% if p.author%}{{p.author}}{% else %}{{site.author}}{% endif %}</author>
+            <description>            
+            {%if p.subtitle %}&lt;p&gt;{{p.subtitle}}&lt;/p&gt;{% endif %}
+            {{ p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}</description>
+            <pubDate>{{ p.date | date_to_rfc822 }}</pubDate>
+            <link>{{ p.url | prepend: site.baseurl | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
+                {% for tag in p.tags %}
+            <category>{{ tag | xml_escape }}</category>
+                {% endfor %}
+                {% for c in p.categories %}
+            <category>{{ c | xml_escape }}</category>
+                {% endfor %}
+        </item>
+        {% endfor %}
+
+    </channel>
+</rss>
