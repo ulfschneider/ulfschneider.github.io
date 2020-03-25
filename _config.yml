@@ -7,7 +7,7 @@ url:         https://ulf.codes # the base hostname & protocol for the site
 markdown:    kramdown
 include:     ["_pages"]
 
-rss:          /feed.xml
+rss:          /feed.rss
 colophon:     /colophon/
 
 defaults:
