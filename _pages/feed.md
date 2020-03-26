@@ -1,6 +1,5 @@
 ---
 layout: postfeed
 permalink: /feed.rss
-tags: .
-categories: .
+categories: [thoughts, tools, reading, journal]
 ---
