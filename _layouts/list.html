@@ -9,12 +9,17 @@ layout: default
     {% assign siteYear = site.time | date: '%Y' %}
     {% assign indexYear = siteYear %}
 
-    {% for tag in page.tags %}
+    {% assign pageMeta = "" | split: ""%}
+    {% assign pageMeta = pageMeta | push: page.tags %}
+    {% assign pageMeta = pageMeta | push: page.categories %}
+    {% assign pageMeta = pageMeta | uniq %}
+
+    {% for meta in pageMeta %}
     
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
 
-    {% if p.tags contains tag %}
+    {% if p.tags contains meta or p.categories contains meta %}
     {% assign count = count | plus: 1 %}
 
     {% if p.layout == "blank" %}

@@ -1,7 +1,7 @@
 ---
 title: The Shape of Design
 author: Frank Chimero
-tags: reading
+categories: reading
 nodate: true
 ---
 <figure>

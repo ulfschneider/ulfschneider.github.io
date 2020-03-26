@@ -1,4 +1,5 @@
-{% if page.nostepnav != true %}
+{% if page.nostepnav != true and page.categories %}
+
 {% for post in site.posts %}
 
 {% if post.url == page.url %}
@@ -11,7 +12,7 @@
 {% unless prev %}
 {% for p in site.posts offset:index   %}
 {% unless prev %}
-{% if p.tags == current.tags %}
+{% if p.categories == current.categories %}
 {% assign prev = p %}
 {% endif %}
 {% endunless %}
@@ -20,7 +21,7 @@
 
 {% unless next %}
 {% for p in site.posts %}
-{% if p.tags == current.tags and forloop.index < index %}
+{% if p.categories == current.categories and forloop.index < index %}
 {% assign next = p %}
 {% endif %}
 {% endfor %}

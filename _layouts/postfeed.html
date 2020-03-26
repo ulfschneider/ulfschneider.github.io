@@ -18,46 +18,35 @@
         {% assign posturl = postUrl | append: site.baseurl %}
         {% assign posturl = postUrl | append: "/" %}
 
-        {% assign items = "" | split: "" %}
-        
-        {% for c in page.categories %}
+        {% assign pageMeta = "" | split: ""%}
+        {% assign pageMeta = pageMeta | push: page.tags %}
+        {% assign pageMeta = pageMeta | push: page.categories %}
+        {% assign pageMeta = pageMeta | uniq %}
+
+        {% for meta in pageMeta %}
         {% for p in site.posts %}
         {% if p.published != false%}
-        {% if c == "." or p.categories contains c %}
-        {% assign items = items | push: p %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
-
-        {% for t in page.tags %}
-        {% for p in site.posts %}
-        {% if p.published != false %}
-        {% if t == "." or p.tags contains t%}
-        {% assign items = items | push: p %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        {% endfor %}        
-        {% assign items = items | uniq %}
-        {% for i in items %}
+        {% if meta == "." or p.tags contains meta or p.categories contains meta %}
         <item>
-            <title>{{ i.title | xml_escape }}</title>
-            <author>{{ i.author }}</author>
+            <title>{{ p.title | xml_escape }}</title>
+            <author>{{ p.author }}</author>
             <description>
-                {% if i.subtitle %}&lt;p&gt;{{ i.subtitle }}&lt;/p&gt;{% endif %}
-                {{ i.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}
+                {% if p.subtitle %}&lt;p&gt;{{ p.subtitle }}&lt;/p&gt;{% endif %}
+                {{ p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}
             </description>
-            <pubDate>{{ i.date | date_to_rfc822 }}</pubDate>
-            <link>{{ i.url | prepend: site.baseurl | prepend: site.url }}</link>
-            <guid isPermaLink="true">{{ i.url | prepend: site.baseurl | prepend: site.url }}</guid>
-            {% for tag in i.tags %}
+            <pubDate>{{ p.date | date_to_rfc822 }}</pubDate>
+            <link>{{ p.url | prepend: site.baseurl | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
+            {% for tag in p.tags %}
             <category>{{ tag | xml_escape }}</category>
             {% endfor %}
-            {% for c in i.categories %}
+            {% for c in p.categories %}
             <category>{{ c | xml_escape }}</category>
             {% endfor %}
         </item>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
         {% endfor %}
     </channel>
 </rss>

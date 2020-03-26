@@ -1,6 +1,6 @@
 ---
 layout: blank
-tags: tools
+categories: tools
 abstract: Highlight your TOC entries while scrolling.
 ---
 

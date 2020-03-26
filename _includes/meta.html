@@ -1,0 +1,14 @@
+{% assign pageMeta = "" | split: ""%}
+{% assign pageMeta = pageMeta | push: page.tags %}
+{% assign pageMeta = pageMeta | push: page.categories %}
+{% assign pageMeta = pageMeta | uniq %}
+
+{% if pageMeta.size > 0 %}
+<nav class="meta inline-block lh-1">
+    {% for meta in pageMeta %}
+    <ul class="reset mry-0 inline ">
+        <li class="inline"><a class="meta no-deco" href="/{{meta}}">#{{meta}}</a></li>
+    </ul>
+    {% endfor %}
+</nav>
+{% endif %}

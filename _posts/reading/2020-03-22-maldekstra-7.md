@@ -1,6 +1,6 @@
 ---
 title: maldekstra 7
-tags: reading
+categories: reading
 author: Rosa Luxemburg Stiftung
 nodate: true
 ---
