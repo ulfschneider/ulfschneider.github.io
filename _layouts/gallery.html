@@ -42,11 +42,11 @@ layout: image
 
     <!-- posts -->
 
-    {% for category in page.categories %}
+    {% for category in page.tags %}
     
     {% for p in site.posts %}    
     
-    {% if p.categories contains category %}
+    {% if p.tags contains category %}
     
     {% assign foundImage = 0 %}
     {% assign excerpt = p.excerpt | truncatewords:300 %}

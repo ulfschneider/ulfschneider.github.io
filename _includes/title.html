@@ -15,7 +15,7 @@
         <div class="pdx-d3 pdy-d4 sub-title meta inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
-    {% if page.author or page.date and page.nodate != true or page.nostepnav != true and page.categories %}
+    {% if page.author or page.date and page.nodate != true or page.nostepnav != true and page.tags %}
     <div class="lh-2">
         <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
             {% if page.author %}
@@ -28,8 +28,8 @@
             <span class="mrr">{{ page.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
 
-            {% if page.nostepnav != true and page.categories %}
-            {% include categories.html %}
+            {% if page.nostepnav != true and page.tags %}
+            {% include tags.html %}
             {% endif %}
         </div>
     </div>

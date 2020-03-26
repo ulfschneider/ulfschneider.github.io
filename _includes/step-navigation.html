@@ -11,7 +11,7 @@
 {% unless prev %}
 {% for p in site.posts offset:index   %}
 {% unless prev %}
-{% if p.categories == current.categories %}
+{% if p.tags == current.tags %}
 {% assign prev = p %}
 {% endif %}
 {% endunless %}
@@ -20,7 +20,7 @@
 
 {% unless next %}
 {% for p in site.posts %}
-{% if p.categories == current.categories and forloop.index < index %}
+{% if p.tags == current.tags and forloop.index < index %}
 {% assign next = p %}
 {% endif %}
 {% endfor %}

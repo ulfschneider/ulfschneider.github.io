@@ -1,6 +1,6 @@
 ---
 layout: image
-categories: bike
+tags: bike
 nostepnav: true
 ---
 ![](/i/cross-the-alps.jpg)

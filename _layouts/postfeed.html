@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>{{ site.title }}</title>
+        <description></description>
+        <link>{{ site.url }}{{ site.baseurl }}</link>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+
+        {% assign imageUrl = "src=&quot;" %}
+        {% assign imageUrl = imageUrl | append: site.url %}
+        {% assign imageUrl = imageUrl | append: site.baseurl %}
+        {% assign imageUrl = imageUrl | append: "/" %}
+
+        {% assign posturl = "href=&quot;" %}
+        {% assign postUrl = postUrl | append: site.url %}
+        {% assign posturl = postUrl | append: site.baseurl %}
+        {% assign posturl = postUrl | append: "/" %}
+
+        {% assign items = "" | split: "" %}
+        
+        {% for c in page.categories %}
+        {% for p in site.posts %}
+        {% if p.published != false%}
+        {% if c == "." or p.categories contains c %}
+        {% assign items = items | push: p %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+
+        {% for t in page.tags %}
+        {% for p in site.posts %}
+        {% if p.published != false %}
+        {% if t == "." or p.tags contains t%}
+        {% assign items = items | push: p %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% endfor %}        
+        {% assign items = items | uniq %}
+        {% for i in items %}
+        <item>
+            <title>{{ i.title | xml_escape }}</title>
+            <author>{{ i.author }}</author>
+            <description>
+                {% if i.subtitle %}&lt;p&gt;{{ i.subtitle }}&lt;/p&gt;{% endif %}
+                {{ i.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}
+            </description>
+            <pubDate>{{ i.date | date_to_rfc822 }}</pubDate>
+            <link>{{ i.url | prepend: site.baseurl | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ i.url | prepend: site.baseurl | prepend: site.url }}</guid>
+            {% for tag in i.tags %}
+            <category>{{ tag | xml_escape }}</category>
+            {% endfor %}
+            {% for c in i.categories %}
+            <category>{{ c | xml_escape }}</category>
+            {% endfor %}
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

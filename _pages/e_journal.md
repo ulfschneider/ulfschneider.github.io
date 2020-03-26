@@ -2,5 +2,5 @@
 layout: list
 topnav: Journal
 permalink: /journal
-categories: journal
+tags: journal
 ---

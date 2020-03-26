@@ -18,7 +18,7 @@
 
 	{% if page.url == p.url %}
 	<li class="inline-block meta black bold">{{p.topnav}}</li>
-	{% elsif page.categories contains p.categories %}
+	{% elsif page.tags contains p.tags %}
 	<li class="inline-block">
 		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
 	{% else %}
