@@ -13,7 +13,7 @@ layout: default
     {% assign pageMeta = pageMeta | push: page.tags %}
     {% assign pageMeta = pageMeta | push: page.categories %}
     {% assign pageMeta = pageMeta | uniq %}
-
+{{pageMeta}}
     {% for meta in pageMeta %}
     
     {% for p in site.posts %}
