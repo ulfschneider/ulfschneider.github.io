@@ -35,27 +35,27 @@
 {% if prev or next %}
 
 <nav class="clearfix step-navigation small">
-    {% if prev  %}
-    <div class="float-left mrr nowrap truncate">
-        <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
-            {% if include.shortNav %}
-            <span>Prev</span>
-            {% else %}
-            <span>Prev{% if prev.title != "notitle" && prev.notitle != true %}:
-                {{ prev.title }}{% endif %}</span>
-            {% endif %}
-        </a>
-    </div>
-    {% endif %}
-
     {% if next  %}
-    <div class="float-right nowrap truncate">
+    <div class="float-left mrr nowrap truncate">
         <a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}">
             {% if include.shortNav %}
             <span>Next</span>
             {% else %}
             <span>Next{% if next.title != "notitle" && next.notitle != true %}:
                 {{ next.title }}{% endif %}</span>
+            {% endif %}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if prev  %}
+    <div class="float-right nowrap truncate">
+        <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
+            {% if include.shortNav %}
+            <span>Prev</span>
+            {% else %}
+            <span>Prev{% if prev.title != "notitle" && prev.notitle != true %}:
+                {{ prev.title }}{% endif %}</span>
             {% endif %}
         </a>
     </div>
