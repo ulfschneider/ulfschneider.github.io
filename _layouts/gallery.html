@@ -51,7 +51,7 @@ layout: image
     {% if p.tags contains meta or p.categories contains meta %}
 
     {% assign foundImage = 0 %}
-    {% assign excerpt = p.excerpt | truncatewords:300 %}
+    {% assign excerpt = p.excerpt %}
     {% assign images = excerpt | split:"<img " %}
 
     {% for image in images %}
