@@ -6,7 +6,7 @@ permalink: 2014/04/14/sit-and-watch
 abstract: 
 thumburl: /i/DSCF0314_thumb.jpg
 slideurl: /i/DSCF0314.jpg
-categories: [bw, street, people]
+tags: [bw, street, people]
 ---
 ![]({{site.url}}/i/DSCF0314.jpg)
 

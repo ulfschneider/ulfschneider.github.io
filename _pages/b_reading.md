@@ -1,7 +1,7 @@
 ---
 layout: list
 topnav: Reading
-permalink: /reading
-categories: reading
+permalink: /reading/
+tags: reading
 nodate: true
 ---

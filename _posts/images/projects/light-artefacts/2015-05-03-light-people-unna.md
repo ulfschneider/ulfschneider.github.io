@@ -4,7 +4,7 @@ title: People at the Centre for International Light Art Unna
 date:   2015-05-03
 abstract: 
 thumburl: /i/IMG_8374_thumb.jpg
-categories: [bw, color, people, projects]
+tags: [bw, color, people, projects]
 ---
 You will find some people moving around at the Centre for International Light Art in Unna. There is another page [light-artefacts-unna]({{site.url}}/light-artefacts-unna) emphasizing the artefacts at the same location. 
 

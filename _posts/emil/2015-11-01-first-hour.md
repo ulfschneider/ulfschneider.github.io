@@ -3,7 +3,7 @@ layout: image
 title: First Hour
 subtitle: 
 permalink: /first-hour
-categories: emil
+tags: emil
 thumburl: /i/IMG_0445_thumb.jpg
 slideurl: /i/IMG_0445.jpg
 ---

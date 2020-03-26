@@ -9,12 +9,12 @@ layout: default
     {% assign siteYear = site.time | date: '%Y' %}
     {% assign indexYear = siteYear %}
 
-    {% for category in page.tags %}
+    {% for tag in page.tags %}
     
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
 
-    {% if p.tags contains category %}
+    {% if p.tags contains tag %}
     {% assign count = count | plus: 1 %}
 
     {% if p.layout == "blank" %}

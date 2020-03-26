@@ -4,7 +4,7 @@ title: Iceland highland
 date:   2014-07-04
 abstract: 
 thumburl: /i/DSCF0922_thumb.jpg
-categories: [bw, landscape]
+tags: [bw, landscape]
 ---
 ![]({{site.url}}/i/DSCF0922.jpg)
 

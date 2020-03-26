@@ -4,7 +4,7 @@ title: Artefacts at the Centre for International Light Art Unna
 date:   2015-05-03
 abstract: 
 thumburl: /i/IMG_8370_thumb.jpg
-categories: [bw, color, things, projects]
+tags: [bw, color, things, projects]
 ---
 The photos emphasize the artefacts at the Centre for International Light Art in Unna, they are without people. There is another page [light-people-unna]({{site.url}}/light-people-unna) showing some people at the same location. 
 

@@ -4,7 +4,7 @@ title: New Master´s Houses Dessau
 date:   2015-05-24
 abstract:
 thumburl: /i/IMG_8538_thumb.jpg
-categories: [bw, things, projects]
+tags: [bw, things, projects]
 ---
 Have a look at <http://bauhaus-online.de/en/magazin/artikel/new-master’s-houses-in-dessau> and (in German) <http://www.bauhaus-dessau.de/bauhaus-neue-meisterhauser-dessau-wiedereroeffnet.html>.
 

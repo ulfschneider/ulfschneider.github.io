@@ -1,5 +1,5 @@
 ---
 layout: image
-categories: paderborn
+tags: paderborn
 ---
 ![](/i/paderborn/DSCF3757.jpg)

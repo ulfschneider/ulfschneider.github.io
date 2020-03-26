@@ -1,6 +1,6 @@
 ---
 layout: list
 topnav: Journal
-permalink: /journal
+permalink: /journal/
 tags: journal
 ---
