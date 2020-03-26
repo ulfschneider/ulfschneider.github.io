@@ -58,7 +58,7 @@ layout: default
             {% if p.abstract %}
             {{ p.abstract }}
             {% else %}
-            {{ p.content | truncatewords:25, " …" | strip_html }}
+            {{ p.excerpt | truncatewords:25, " …" | strip_html }}
             {% endif %}
         </p>
 
