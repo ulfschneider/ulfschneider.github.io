@@ -1,6 +1,5 @@
 ---
 title:  A Sprint is not a milestone
-date:   2011-04-09
 tags: thoughts
 abstract: A Sprint is a sensor that allows us to see what has been done, what impediments are in our way and how we did better in comparison to previous Sprints.
 ---
