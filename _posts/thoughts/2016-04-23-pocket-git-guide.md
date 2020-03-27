@@ -5,7 +5,7 @@ categories: thoughts
 abstract: A short entry-level approach to Git.
 ---
 
-**Contents**
+<h2>Contents</h2>
 
 - [Reasons to use Git](#reasons-to-use-git)
 - [Get Git on your Mac](#get-git-on-your-mac)
@@ -40,7 +40,7 @@ Git will help you doing the following things with a computer:
 
 <div class="x-12 mrt">
 <div class="xx-12 rg:xx-6">
-<strong>Personal</strong>
+<h2 class="inline">Personal</h2>
 <ul class="indent mrt-0">
 <li>Keep track of file revisions when working iteratively (this is often referred to as version control).</li>
 <li>Safely experiment because you can always step back to the previous version.</li>
@@ -53,7 +53,7 @@ Git will help you doing the following things with a computer:
 </div>
 
 <div class="xx-12 rg:xx-6">
-<strong>Team</strong>
+<h2 class="inline">Team</h2>
 <ul class="indent mrt-0">
 <li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
