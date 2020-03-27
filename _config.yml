@@ -3,7 +3,7 @@ title:       Hi, I´m Ulf Schneider
 description: Hi, I´m Ulf Schneider, a developer and agile coach living in Paderborn, Germany.
 author:      Ulf Schneider
 url:         https://ulf.codes # the base hostname & protocol for the site
-excerpt_separator: "excerpt_separator"
+excerpt_separator: "<!-- more -->"
 markdown:    kramdown
 include:     ["_pages"]
 

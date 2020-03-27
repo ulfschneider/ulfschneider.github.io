@@ -15,7 +15,7 @@ layout: default
     {% assign pageMeta = pageMeta | uniq %}
 
     {% for meta in pageMeta %}
-    
+
     {% for p in site.posts %}
     {% assign pageYear = p.date | date: '%Y' %}
 
@@ -43,39 +43,37 @@ layout: default
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a></h2>
         {% assign strippedAuthor = p.author | strip %}
         {% if strippedAuthor.size > 0 %}
-        <aside>
-            <span class="meta">
+        <aside class="small meta">
+            <span>
                 by {{ p.author }}
             </span>
-            {% unless page.nodate or p.nodate %}            
-            <span class="meta">•</span>            
-            <span class="meta">{{ p.date | date: '%B %e, %Y' }}</span>
+            {% unless page.nodate or p.nodate %}
+            <span>•</span>
+            <span>{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
         </aside>
-        {% endif %}
-
-        <p>
-            {% if p.abstract %}
-            {{ p.abstract }}
-            {% else %}
-            {{ p.excerpt | truncatewords:25, " …" | strip_html }}
-            {% endif %}
-        </p>
-
-
-        
-        {% if strippedAuthor.size == 0 %}
+        {% else %}
         {% unless page.nodate %}
         {% unless p.nodate %}
-        <aside class="no-wrap meta">
+        <aside class="small no-wrap meta">
             {{ p.date | date: '%B %e, %Y' }}
         </aside>
         {% endunless %}
         {% endunless %}
         {% endif %}
 
+        <p>
+
+            {% if p.abstract %}
+            {{ p.abstract }}
+            {% else %}
+            {{ p.excerpt | truncatewords:25, "&nbsp;…" | strip_html }}
+            {% endif %}
+        </p>
+        <a class="small meta inline-block" href="{{p.url}}">Continue reading →</a>
+
     </article>
-    
+
     {% endif %}
     {% endfor %}
     {% endfor %}
