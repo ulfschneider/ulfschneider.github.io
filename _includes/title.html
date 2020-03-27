@@ -1,7 +1,8 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
-{% assign titleClass = "title" %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = titleClass | append: " mrtn-5 mih-5" %}
+{% assign titleClass = "title mrtn-5 mih-5" %}
+{% else %}
+{% assign titleClass = "title mrb-1" %}
 {% endif %}
 
 {% if page.title  %}
