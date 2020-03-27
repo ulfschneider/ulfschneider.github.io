@@ -1,4 +1,4 @@
-{% if page.nostepnav != true and page.categories %}
+{% if page.nostepnav != true and page.categories != empty %}
 
 {% for post in site.posts %}
 
@@ -12,7 +12,7 @@
 {% unless prev %}
 {% for p in site.posts offset:index   %}
 {% unless prev %}
-{% if p.categories == current.categories %}
+{% if p.categories != empty and current.categories != empty and p.categories == current.categories %}
 {% assign prev = p %}
 {% endif %}
 {% endunless %}
@@ -21,7 +21,7 @@
 
 {% unless next %}
 {% for p in site.posts %}
-{% if p.categories == current.categories and forloop.index < index %}
+{% if p.categories != empty and current.categories != empty and p.categories == current.categories and forloop.index < index %}
 {% assign next = p %}
 {% endif %}
 {% endfor %}
