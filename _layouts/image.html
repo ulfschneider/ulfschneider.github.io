@@ -24,10 +24,6 @@
 			.image img {
 				width: unset;
 				max-height: 70vh;
-
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
 			}
 	</style>
 </head>
@@ -35,37 +31,37 @@
 <body>
 	<div class="min-vh-100 bg-base-background">
 
-		<div class="xl word-wrap image">
-			<div class="breakout pdt-1">
+		<div class="xl word-wrap image pdt-1">
 
-				{{ content }}
 
-				<div class="flex justify-space-between">
-					<div class="small lh-2 mrr mxw-5">
-						{% include title.html %}
+			{{ content }}
 
-						{% if page.notitle == true or page.title == "notitle" %}
-						{% if page.tags %}
-						<div class="mrln-d3 pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
-							{% include meta.html %}
-						</div>
-						{% endif %}
-						{% endif %}
-					</div>
-					{% if page.nostepnav != true %}
-					<div class="mrb-1 pdy-d4 lh-2 small">
-						{% include step-navigation.html shortNav=true %}
+			<div class="flex justify-space-between">
+				<div class="small lh-2 mrr mxw-5">
+					{% include title.html %}
+
+					{% if page.notitle == true or page.title == "notitle" %}
+					{% if page.tags %}
+					<div class="mrln-d3 pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
+						{% include meta.html %}
 					</div>
 					{% endif %}
+					{% endif %}
 				</div>
-
-				<nav class="navigation small mrt-1">
-					{% include navigation.html %}
-				</nav>
-				{% include footer.html %}
+				{% if page.nostepnav != true %}
+				<div class="mrb-1 pdy-d4 lh-2 small">
+					{% include step-navigation.html shortNav=true %}
+				</div>
+				{% endif %}
 			</div>
+
+			<nav class="navigation small mrt-1">
+				{% include navigation.html %}
+			</nav>
+			{% include footer.html %}
 		</div>
-	</div>	
+	</div>
+
 </body>
 
 </html>
