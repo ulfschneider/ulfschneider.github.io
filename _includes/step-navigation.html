@@ -39,9 +39,9 @@
     <div class="float-left mrr nowrap truncate">
         <a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}">
             {% if include.shortNav %}
-            <span>Next</span>
+            <span>←</span>
             {% else %}
-            <span>Next{% if next.title != "notitle" && next.notitle != true %}:
+            <span>← {% if next.title != "notitle" && next.notitle != true %}
                 {{ next.title }}{% endif %}</span>
             {% endif %}
         </a>
@@ -52,10 +52,10 @@
     <div class="float-right nowrap truncate">
         <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
             {% if include.shortNav %}
-            <span>Prev</span>
+            <span>→</span>
             {% else %}
-            <span>Prev{% if prev.title != "notitle" && prev.notitle != true %}:
-                {{ prev.title }}{% endif %}</span>
+            <span>{% if prev.title != "notitle" && prev.notitle != true %}
+                {{ prev.title }}{% endif %} →</span>
             {% endif %}
         </a>
     </div>
