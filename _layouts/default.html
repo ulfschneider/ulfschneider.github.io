@@ -12,14 +12,16 @@
 
 		<div class="xl indent word-wrap default">
 
-			{% include title.html %}
-						
-			<div class="mry-1">
-				{{ content }}
+			<div class="mrb-1">
+				{% include title.html %}
 			</div>
-			{% include step-navigation.html %}
-			{% include footer.html %}
 
+			{{ content }}
+
+			<div class="mrt-1">
+				{% include step-navigation.html %}
+				{% include footer.html %}
+			</div>
 		</div>
 	</div>
 	{% include scripts.html %}
