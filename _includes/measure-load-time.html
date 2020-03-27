@@ -1,0 +1,13 @@
+<script>
+    var startLoading = Date.now();
+    window.onload = function () {
+        var now = Date.now();
+        var duration = now.valueOf() - startLoading.valueOf();
+        var loadTime = document.getElementById('load-time');
+        if (loadTime) {
+            loadTime.innerHTML = 'Page loaded in ' + (duration / 1000) + ' seconds';
+        } else {
+            console.error('Could not find dom element with id load-time to indicate the page load time');
+        }
+    }
+</script>
