@@ -5,6 +5,7 @@ author:      Ulf Schneider
 url:         https://ulf.codes # the base hostname & protocol for the site
 excerpt_separator: "<!-- more -->"
 markdown:    kramdown
+highlighter: none
 include:     ["_pages"]
 
 rss:          /feed.rss
