@@ -18,7 +18,7 @@ Once Jekyll rebuilds your site with the plugin activated, your RSS feed is avail
 However, <code>jekyll-feed</code> has some limitations:
 - It makes all pages and posts available in your feed. You cannot exclude anything, or have different feeds, like for links, a reading list, and maybe your journal.
 - Even posts that have a front matter setting of <code>published: no</code> are immediately visible in your feed.
-- I´m referencing things inside of my blog with relative URLs. E.g., <code>/tools</code>, or <code>/images/we-are-riding-the-bullitt.jpg</code>. Those relative links remain so in your feed. But a relative link doesn´t work inside of an RSS reader, which means an image is not displayed or a link to an article is not functioning. In the RSS reader, you need absolute links.
+- I´m referencing things inside of my blog with relative URLs. E.g., <code>/tools</code>, or <code>/images/we-are-riding-the-bullitt.jpg</code>. Those relative links remain so in your feed. But a relative link doesn´t work inside of an RSS reader, which means an image is not displayed or a link to an article is not functioning. In the RSS reader, you need absolute URLs.
 
 ## My own feed generator
 To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts and no pages. Here is what you have to do to use it:
