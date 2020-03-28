@@ -6,10 +6,11 @@ RSS is a good thing. It simplifies to overview information that is produced by p
 
 I´m building my blog with Jekyll, and hosting it via GitHub Pages. Out of the box, Jekyll doesn´t have RSS feed support. One way to publish a feed is to use the <code>jekyll-feed</code> plugin, which is supported by GitHub Pages. You only need to activate it in your <code>_config.yml</code>:
 
-~~~
-plugins:
-  - jekyll-feed
-~~~
+<figure>
+<figcaption>_config.yml</figcaption>
+<pre>plugins:
+  - jekyll-feed</pre>
+</figure>
 
 Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml</code>.
 
@@ -24,13 +25,14 @@ To overcome those limitations, I decided not to use <code>jekyll-feed</code> and
 
 For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the name <code>/feed.rss</code> that publishes the categories *thoughts, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
 
-~~~
----
+<figure>
+<figcaption>_pages/feed.md</figcaption>
+<pre>---
 layout: postfeed
 permalink: /feed.rss
 categories: [thoughts, tools, reading, journal]
----
-~~~
+---</pre>
+</figure>
 
 The address of the published feed, <code>/feed.rss</code> in this case, doesn´t need to correspond to the name of the feed definition file, <code>feed.md</code> in our example. You define the feed address with the <code>permalink</code> setting inside of the feed definition file. 
 
@@ -38,26 +40,31 @@ You can have multiple feed definition files with different content filters and s
 
 The filtering of posts is not only working for categories. You can also filter for tags. The following feed definition is valid:
 
-~~~
----
+<figure>
+<figcaption>_pages/feed.md</figcaption>
+<pre>---
 layout: postfeed
 permalink: /feed.rss
 tags: [thoughts, tools, reading, journal]
----
-~~~
+---</pre>
+</figure>
 
 A logical OR filter combination of categories and tags is in the form:
 
-~~~
----
+<figure>
+<figcaption>_pages/feed.md</figcaption>
+<pre>---
 layout: postfeed
 permalink: /feed.rss
 categories: [tools]
 tags: [reading, journal]
----
-~~~
+---</pre>
+</figure>
 
 In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is referenced. The layout file needs to be available under the name <code>postfeed.html</code> in the <code>_layouts</code> folder. The content of <code>postfeed.html</code> is the tiny programm that creates the feed. It is this:
+
+
+<figcaption class="mrt-1">_layouts/postfeed.html</figcaption>
 
 ~~~
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
@@ -113,5 +120,6 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
  </channel>
 </rss>{% endraw %}
 ~~~
+
 
 Just copy the code above, store it inside of <code>_layouts/postfeed.html</code>, and you are ready to use your new RSS feed.
