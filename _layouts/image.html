@@ -17,7 +17,7 @@
 		}
 
 		.image .title .sub-title {
-			color: var(--meta-color);
+			color: var(--meta-color);			
 		}
 
 		@media (min-width: 650px) {
@@ -41,7 +41,7 @@
 					{% include title.html %}
 
 					{% if page.notitle == true or page.title == "notitle" %}
-					{% if page.tags %}
+					{% if page.categories != empty or page.tags != empty %}
 					<div class="mrln-d3 pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
 						{% include meta.html %}
 					</div>

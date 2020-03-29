@@ -12,7 +12,7 @@
     </div>
 
     {%if page.subtitle  %}
-    <div class="lh-2">
+    <div class="lh-2 mxw-rg">
         <div class="pdx-d3 pdy-d4 sub-title meta inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
@@ -29,7 +29,7 @@
             <span class="mrr">{{ page.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
 
-            {% if page.nostepnav != true and page.tags %}
+            {% if page.nostepnav != true %}
             {% include meta.html %}
             {% endif %}
         </div>
