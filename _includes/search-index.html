@@ -14,7 +14,7 @@
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {   
             'id': {{node.url | jsonify }},
-            'title': {{node.title | xml_escape | jsonify }},
+            'title': {%if node.title %}{{node.title | jsonify }}{% else %}{{ node.topnav | jsonify }}{% endif %},
             'excerpt': {{node.content | strip_html | truncatewords:25, "&nbsp;…" | jsonify }},
             'date': {{node.date | jsonify}},
             'author': {{node.author | jsonify }},

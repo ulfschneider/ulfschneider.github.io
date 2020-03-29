@@ -1,7 +1,5 @@
 ---
 permalink: /
-notitle: true
-title: Ulf Schneider
 topnav: Ulf Schneider
 categories: [home]
 ---
