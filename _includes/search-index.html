@@ -17,18 +17,21 @@
     {%- endfor -%}
 ];
 
-    var searchIndex = lunr(function () {
-        this.ref('id');
-        this.field('title', { boost: 10 });
-        this.field('author');
-        this.field('categories');
-        this.field('tags');
-        this.field('content');
+    var searchIndex;
+    function buildSearchIndex() {
+        return lunr(function () {
+            this.ref('id');
+            this.field('title', { boost: 10 });
+            this.field('author');
+            this.field('categories');
+            this.field('tags');
+            this.field('content');
 
-        for (let data of searchData) {
-            this.add(data);
-        }
-    });
+            for (let data of searchData) {
+                this.add(data);
+            }
+        });
+    }
 
     function getParameterByName(name, url) {
         url = url ? url : window.location.href;
@@ -54,6 +57,7 @@
     }
 
     window.addEventListener('load', function (event) {
+        searchIndex = buildSearchIndex();
         let query = getParameterByName('query');
         if (query) {
             search(query);
