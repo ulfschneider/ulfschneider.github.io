@@ -60,10 +60,10 @@ nav ul li {
 }
 
 a.logo {
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
-  font-size: 14px;
+  width: var(--base-font-size);
+  height: var(--base-font-size);
+  line-height: var(--base-font-size);
+  font-size: calc(var(--base-font-size) - 4px);
   background: black;
   color: var(--base-background);
   font-family: var(--meta-font-family);
