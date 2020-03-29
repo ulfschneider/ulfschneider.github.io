@@ -1,7 +1,9 @@
 ---
 permalink: /
 notitle: true
+title: Ulf Schneider
 topnav: Ulf Schneider
+categories: [home]
 ---
 
 <h1 class="breakout normal mrb-1">Hi, I am <span class="inline-block"><strong>Ulf Schneider</strong>,</span><br> a developer and agile coach living in Paderborn, Germany.</h1>

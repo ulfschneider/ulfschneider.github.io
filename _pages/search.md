@@ -2,6 +2,8 @@
 layout: default
 permalink: /search
 title: Search – Work In Progress
+categories: [home, colophon, thoughts, tools, reading, journal]
+nosearch: true
 ---
 To Do to complete:
 

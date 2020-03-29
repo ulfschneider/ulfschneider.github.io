@@ -1,23 +1,35 @@
 {%- assign contentNodes = site.posts -%}
 {%- assign contentNodes = contentNodes | concat: site.pages -%}
+{%- assign pageMeta = "" | split: "" -%}
+{%- assign pageMeta = pageMeta | push: page.tags -%}
+{%- assign pageMeta = pageMeta | push: page.categories -%}
+{%- assign pageMeta = pageMeta | uniq -%}
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     var searchData = [
-    {%-  for node in contentNodes -%}
-    {%-  if node.nosearch != true -%}
-    {
-        "id": "{{node.url}}",
-        "title": "{{ node.title | xml_escape }}",
-        "author": "{{ node.author | xml_escape }}",
-        "categories": {{ node.categories | jsonify }},
-        "tags": {{ node.tags | jsonify }},
-        "content": {{ node.content | strip_html | jsonify }}
-    } {%- unless forloop.last -%}, {%- endunless -%}
-    {%- endif -%}
-    {%- endfor -%}
+        {%- for meta in pageMeta -%}
+        {%- for node in contentNodes -%}
+        {%- if node.published != false and node.nosearch != true -%}
+        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
+        {   
+            'id': {{node.url | jsonify }},
+            'title': {{node.title | xml_escape | jsonify }},
+            'excerpt': {{node.content | strip_html | truncatewords:25, "&nbsp;…" | jsonify }},
+            'date': {{node.date | jsonify}},
+            'author': {{node.author | jsonify }},
+            'categories': {{ node.categories | jsonify }},
+            'tags': {{ node.tags | jsonify }},
+            'content': {{ node.content | strip_html | jsonify }}
+        } ,
+        {%- endif -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {%- endfor -%}
 ];
 
     var searchIndex;
+    var friendlyMap = new Map();
     function buildSearchIndex() {
         return lunr(function () {
             this.ref('id');
@@ -29,6 +41,7 @@
 
             for (let data of searchData) {
                 this.add(data);
+                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, date: data.date, categories: data.categories, tags: data.tags });
             }
         });
     }
@@ -47,13 +60,99 @@
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-    function search(query) {
-        let resultSet = searchIndex.search(query);
-        if (resultSet.length) {
-            for(let entry of resultSet) {
-                console.log(entry)
+    function removeChildren(parent) {
+        if (parent) {
+            let child = parent.lastElementChild;
+            while (child) {
+                parent.removeChild(child);
+                child = parent.lastElementChild;
             }
         }
+    }
+
+    function printResultEntry(parent, entry) {
+        if (parent) {
+            let friend = friendlyMap.get(entry.ref);
+
+            let article = document.createElement('article');
+            article.classList = 'mry-1';
+            parent.appendChild(article);
+
+            let title = document.createElement('h2');
+            title.className = 'mry-0'
+            article.appendChild(title);
+
+            let anchor = document.createElement('a');
+            anchor.href = entry.ref;
+            if (friend.title && friend.title != 'notitle') {
+                anchor.innerHTML = friend.title;
+            } else {
+                anchor.innerHTML = 'Without Title';
+            }
+            anchor.className = "no-deco";
+            title.appendChild(anchor);
+
+            let aside = document.createElement('aside');
+            aside.classList = "meta small";
+            article.append(aside);
+
+            if (friend.author) {
+                let author = document.createElement('span');
+                author.classList = "mrr";
+                author.innerHTML = 'by ' + friend.author;
+                aside.append(author);
+            }
+
+            if (friend.date) {
+                let date = document.createElement('span');
+                aside.append(date);
+                let dateParts = friend.date.split(' ');
+                let dateString = dateParts[0];
+                dateString += 'T';
+                dateString += dateParts[1];
+                dateString += dateParts[2].substring(0, 3);
+                dateString += ':';
+                dateString += dateParts[2].substring(3);
+                date.innerHTML = (new Date(dateString)).toDateString();
+            }
+
+            if (friend.excerpt) {
+                let excerpt = document.createElement('p');
+                article.append(excerpt);
+                excerpt.innerHTML = friend.excerpt;
+            }
+        }
+    }
+
+    function printHeading(resultSet, query) {
+        let heading = document.getElementsByTagName('h1');
+        if (heading.length) {
+            if (resultSet.length) {
+                heading[0].innerHTML = 'Search results for query "' + query + '"';
+            } else {
+                heading[0].innerHTML = 'No search results found for query "' + query + '"';
+            }
+        }
+    }
+
+    function printSearchResults(resultSet, query) {
+        let searchResults = document.getElementById('search-results');
+        if (!searchResults) {
+            console.error("The page does not have a DOM element with id=search-results");
+            return;
+        }
+        removeChildren(searchResults);
+        printHeading(resultSet, query);
+        if (resultSet.length) {
+            for (let entry of resultSet) {
+                printResultEntry(searchResults, entry);
+            }
+        }
+    }
+
+    function search(query) {
+        let resultSet = searchIndex.search(query);
+        printSearchResults(resultSet, query);
     }
 
     window.addEventListener('load', function (event) {
@@ -69,3 +168,5 @@
     <input id="query" type="text" />
     <input type="submit" value="Search" />
 </form>
+
+<div id="search-results"></div>

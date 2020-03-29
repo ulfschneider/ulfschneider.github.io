@@ -44,12 +44,11 @@ layout: default
         {% assign strippedAuthor = p.author | strip %}
         {% if strippedAuthor.size > 0 %}
         <aside class="small meta">
-            <span>
+            <span class="mrr">
                 by {{ p.author }}
             </span>
-            {% unless page.nodate or p.nodate %}
-            <span>•</span>
-            <span>{{ p.date | date: '%B %e, %Y' }}</span>
+            {% unless page.nodate or p.nodate %}            
+            <span class="no-wrap">{{ p.date | date: '%B %e, %Y' }}</span>
             {% endunless %}
         </aside>
         {% else %}
@@ -67,7 +66,7 @@ layout: default
             {% if p.abstract %}
             {{ p.abstract }}
             {% else %}
-            {{ p.excerpt | truncatewords:25, "&nbsp;…" | strip_html }}
+            {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
             {% endif %}
         </p>
         <a class="small meta inline-block" href="{{p.url}}">Continue reading →</a>

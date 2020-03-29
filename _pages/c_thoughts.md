@@ -1,6 +1,8 @@
 ---
 layout: list
 topnav: Thoughts
+title: Thoughts
+notitle: true
 permalink: /thoughts/
 categories: thoughts
 ---

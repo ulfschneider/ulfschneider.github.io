@@ -1,6 +1,8 @@
 ---
 layout: list
 topnav: Tools
+title: Tools
+notitle: true
 permalink: /tools/
 categories: tools
 ---

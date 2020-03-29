@@ -1,12 +1,12 @@
 <script>
     window.addEventListener('load', function (event) {
-        var loadTime = document.getElementById('load-time');
+        let loadTime = document.getElementById('load-time');
         if (!loadTime) {
             console.log('Could not find dom element with id load-time to indicate the page load time');
         }
-        var duration = 0;
+        let duration = 0;
         //PerformanceNavigationTiming API
-        var entries = performance.getEntriesByType("navigation")
+        let entries = performance.getEntriesByType("navigation")
         if (entries && entries.length) {
             duration = entries[0].loadEventStart;
         } else if (performance && performance.timing) {
