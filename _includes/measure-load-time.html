@@ -1,5 +1,5 @@
 <script>
-    window.onload = function () {
+    window.addEventListener('load', function (event) {
         var loadTime = document.getElementById('load-time');
         if (!loadTime) {
             console.log('Could not find dom element with id load-time to indicate the page load time');
@@ -18,5 +18,5 @@
         if (duration) {
             loadTime.innerHTML = 'This page loaded in ' + (duration / 1000).toFixed(3) + ' seconds';
         }
-    }
+    });
 </script>

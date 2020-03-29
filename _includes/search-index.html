@@ -1,0 +1,67 @@
+{%- assign contentNodes = site.posts -%}
+{%- assign contentNodes = contentNodes | concat: site.pages -%}
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+    var searchData = [
+    {%-  for node in contentNodes -%}
+    {%-  if node.nosearch != true -%}
+    {
+        "id": "{{node.url}}",
+        "title": "{{ node.title | xml_escape }}",
+        "author": "{{ node.author | xml_escape }}",
+        "categories": {{ node.categories | jsonify }},
+        "tags": {{ node.tags | jsonify }},
+        "content": {{ node.content | strip_html | jsonify }}
+    } {%- unless forloop.last -%}, {%- endunless -%}
+    {%- endif -%}
+    {%- endfor -%}
+];
+
+    var searchIndex = lunr(function () {
+        this.ref('id');
+        this.field('title', { boost: 10 });
+        this.field('author');
+        this.field('categories');
+        this.field('tags');
+        this.field('content');
+
+        for (let data of searchData) {
+            this.add(data);
+        }
+    });
+
+    function getParameterByName(name, url) {
+        url = url ? url : window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        let results = regex.exec(url);
+        if (!results) {
+            return null;
+        }
+        if (!results[2]) {
+            return '';
+        }
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function search(query) {
+        let resultSet = searchIndex.search(query);
+        if (resultSet.length) {
+            for(let entry of resultSet) {
+                console.log(entry)
+            }
+        }
+    }
+
+    window.addEventListener('load', function (event) {
+        let query = getParameterByName('query');
+        if (query) {
+            search(query);
+        }
+    }); 
+</script>
+
+<form onsubmit="event.preventDefault(); search(event.target.query.value);">
+    <input id="query" type="text" />
+    <input type="submit" value="Search" />
+</form>
