@@ -2,11 +2,11 @@
 	<ul class="mry-0 pdb-2 reset">
 		<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 		{%if site.rss %}
-		<li class="inline-block mrr lowercase"><a href="{{site.rss}}" class="small no-deco meta">rss</a></li>
+		<li class="inline-block mrr"><a href="{{site.rss}}" class="small no-deco meta">RSS</a></li>
 		{% endif %}
 		{%if site.colophon and site.colophon != page.url %}
-		<li class="inline-block mrr lowercase"><a href="{{site.colophon}}" class="small no-deco meta">colophon</a></li>
+		<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco meta">Colophon</a></li>
 		{% endif %}
-		<li id="load-time" class="inline-block small meta lowercase"></li>
+		<li id="load-time" class="inline-block small meta"></li>
 	</ul>
 </footer>
