@@ -69,55 +69,55 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
 ~~~
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
- <channel>
-   <title>{{ site.title }}</title>
-   <description></description>
-   <link>{{ site.url }}{{ site.baseurl }}</link>
-   <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-   <generator>Jekyll v{{ jekyll.version }}</generator>
+    <channel>
+        <title>{{- site.title -}}</title>
+        <description></description>
+        <link>{{- site.url -}}{{- site.baseurl -}}</link>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <lastBuildDate>{{- site.time | date_to_rfc822 -}}</lastBuildDate>
+        <generator>Jekyll v{{- jekyll.version -}}</generator>
 
-   {% assign imageUrl = "src=&quot;" %}
-   {% assign imageUrl = imageUrl | append: site.url %}
-   {% assign imageUrl = imageUrl | append: site.baseurl %}
-   {% assign imageUrl = imageUrl | append: "/" %}
+        {%- assign imageUrl = "src=&quot;" -%}
+        {%- assign imageUrl = imageUrl | append: site.url -%}
+        {%- assign imageUrl = imageUrl | append: site.baseurl -%}
+        {%- assign imageUrl = imageUrl | append: "/" -%}
 
-   {% assign posturl = "href=&quot;" %}
-   {% assign postUrl = postUrl | append: site.url %}
-   {% assign posturl = postUrl | append: site.baseurl %}
-   {% assign posturl = postUrl | append: "/" %}
+        {%- assign posturl = "href=&quot;" -%}
+        {%- assign postUrl = postUrl | append: site.url -%}
+        {%- assign posturl = postUrl | append: site.baseurl -%}
+        {%- assign posturl = postUrl | append: "/" -%}
 
-   {% assign pageMeta = "" | split: ""%}
-   {% assign pageMeta = pageMeta | push: page.tags %}
-   {% assign pageMeta = pageMeta | push: page.categories %}
-   {% assign pageMeta = pageMeta | uniq %}
+        {%- assign pageMeta = "" | split: "" -%}
+        {%- assign pageMeta = pageMeta | push: page.tags -%}
+        {%- assign pageMeta = pageMeta | push: page.categories -%}
+        {%- assign pageMeta = pageMeta | uniq -%}
 
-   {% for meta in pageMeta %}
-     {% for p in site.posts %}
-       {% if p.published != false%}
-         {% if meta == "." or p.tags contains meta or p.categories contains meta %}
-           <item>
-             <title>{{ p.title | xml_escape }}</title>
-             <author>{{ p.author }}</author>
-             <description>
-               {% if p.subtitle %}&lt;p&gt;{{ p.subtitle }}&lt;/p&gt;{% endif %}
-               {{ p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl}}
-             </description>
-             <pubDate>{{ p.date | date_to_rfc822 }}</pubDate>
-             <link>{{ p.url | prepend: site.baseurl | prepend: site.url }}</link>
-             <guid>{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
-             {% for tag in p.tags %}
-               <category>{{ tag | xml_escape }}</category>
-             {% endfor %}
-             {% for c in p.categories %}
-               <category>{{ c | xml_escape }}</category>
-             {% endfor %}
-           </item>
-         {% endif %}
-       {% endif %}
-     {% endfor %}
-   {% endfor %}
- </channel>
+        {%- for meta in pageMeta -%}
+        {%- for p in site.posts -%}
+        {%- if p.published != false -%}
+        {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
+        <item>
+            <title>{{ p.title | xml_escape }}</title>
+            <author>{{ p.author }}</author>
+            <description>
+                {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
+                {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
+            </description>
+            <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>
+            <link>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</link>
+            <guid>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</guid>
+            {%- for tag in p.tags -%}
+            <category>{{- tag | xml_escape -}}</category>
+            {%- endfor -%}
+            {%- for c in p.categories -%}
+            <category>{{- c | xml_escape -}}</category>
+            {%- endfor -%}
+        </item>
+        {%- endif -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {%- endfor -%}
+    </channel>
 </rss>{% endraw %}
 ~~~
 
