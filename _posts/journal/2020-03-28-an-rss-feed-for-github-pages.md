@@ -73,6 +73,7 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         <title>{{- site.title -}}</title>
         <description></description>
         <link>{{- site.url -}}{{- site.baseurl -}}</link>
+        <atom:link href="{{- site.url -}}{{- site.baseurl -}}" rel="self" type="application/rss+xml" />                        
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <lastBuildDate>{{- site.time | date_to_rfc822 -}}</lastBuildDate>
         <generator>Jekyll v{{- jekyll.version -}}</generator>
