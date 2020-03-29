@@ -105,7 +105,7 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
              </description>
              <pubDate>{{ p.date | date_to_rfc822 }}</pubDate>
              <link>{{ p.url | prepend: site.baseurl | prepend: site.url }}</link>
-             <guid isPermaLink="true">{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
+             <guid>{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
              {% for tag in p.tags %}
                <category>{{ tag | xml_escape }}</category>
              {% endfor %}
