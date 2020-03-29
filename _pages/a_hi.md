@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: Hi, I´m Ulf Schneider
 notitle: true
 topnav: Ulf Schneider
 ---
