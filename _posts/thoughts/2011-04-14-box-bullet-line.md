@@ -90,5 +90,5 @@ This simple Box-Bullet-Line notation can grow with your needs. For example, you 
 
 <figure>
 <a href="{{site.url}}/assets/bbl.pdf"><img src="{{site.url}}/i/blog/bbl_model_natural.jpg"></a>
-<figcaption>Click on the above image to get a short presentation about the BBL concepts.</figcaption>
+<figcaption>Click on the above image to get a short presentation of the BBL concepts.</figcaption>
 </figure>
