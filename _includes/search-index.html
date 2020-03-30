@@ -11,24 +11,24 @@
     const SEARCH_QUERY_ID = 'search-query';
 
     var searchData = [
-        {%- for meta in pageMeta -%}
-        {%- for node in contentNodes -%}
-        {%- if node.published != false and node.nosearch != true -%}
-        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
-        {
-        'id': {{ node.url | jsonify }},
-        'title': {%if node.title %} {{ node.title | jsonify }} {% else %} {{ node.topnav | jsonify }} {% endif %},
-        'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
-        'date': {{ node.date | jsonify }},
-        'author': {{ node.author | jsonify }},
-        'categories': {{ node.categories | jsonify }},
-        'tags': {{ node.tags | jsonify }},
-        'content': {{ node.content | strip_html | jsonify }}
-        } ,
-        {%- endif -%}
-        {%- endif -%}
-        {%- endfor -%}
-        {%- endfor -%}
+        {% - for meta in pageMeta -%}
+    {% - for node in contentNodes -%}
+    {% - if node.published != false and node.nosearch != true -%}
+    {% - if meta == "." or node.tags contains meta or node.categories contains meta -%}
+    {
+        'id': { { node.url | jsonify } },
+        'title': {%if node.title %} { { node.title | jsonify } } {% else %} { { node.topnav | jsonify } } {% endif %},
+        'excerpt': { { node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify } },
+        'date': { { node.date | jsonify } },
+        'author': { { node.author | jsonify } },
+        'categories': { { node.categories | jsonify } },
+        'tags': { { node.tags | jsonify } },
+        'content': { { node.content | strip_html | jsonify } }
+    } ,
+    {% - endif -%}
+    {% - endif -%}
+    {% - endfor -%}
+    {% - endfor -%}
 ];
 
     var searchIndex;
@@ -179,7 +179,7 @@
 
     function search(query) {
         let resultSet = [];
-        if (query) {
+        if (query && query.trim().length) {
             resultSet = searchIndex.search(query);
         }
         printSearchResults(resultSet, query);
@@ -200,8 +200,7 @@
 </script>
 
 <div>
-    <form class="flex mxw-sm"
-        onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);">
+    <form class="flex mxw-sm" onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);">
         <input id="search-query" class="bold width-100 mrr-d3" type="text" />
         <input type="submit" class="button" value="Search" />
     </form>
