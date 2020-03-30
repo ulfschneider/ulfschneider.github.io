@@ -1,4 +1,7 @@
 <footer>
+	{% if page.hidesearch != true %}
+	{% include search-field.html %}
+	{% endif %}
 	<ul class="mry-0 pdb-2 reset">
 		<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 		{%if site.rss %}

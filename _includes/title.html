@@ -16,15 +16,23 @@
         <div class="pdx-d3 pdy-d4 sub-title meta inline-block bg-base-background">{{page.subtitle}}</div>
     </div>
     {% endif %}
-    {% if page.author or page.date and page.nodate != true or page.nostepnav != true and page.tags %}
-    <div class="lh-2">
-        <aside class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
+ 
+    {% if page.date and page.nodate != true %}{% assign date = true %}{% else %}{% assign date = false%}{% endif %}
+    {% if page.tags != empty or page.categories != empty %}{% assign meta = true %}{% else %}{% assign meta = false%}{% endif %}    
+    {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
+    {% if page.author or date or meta  %}
+    <aside class="lh-2">
+        {% if page.author or date %}
+        <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background mrr">
             {% include author-and-date.html %}
-            {% if page.nostepnav != true %}
+        </div>
+        {% endif %}
+        {% if meta %}
+        <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
             {% include categories.html %}
-            {% endif %}
-        </aside>
-    </div>
+        </div>
+        {% endif %}
+    </aside>
     {% endif %}
 
 </div>

@@ -7,6 +7,9 @@
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
+    const SEARCH_RESULTS_ID = 'search-results';
+    const SEARCH_QUERY_ID = 'search-query';
+
     var searchData = [
         {%- for meta in pageMeta -%}
         {%- for node in contentNodes -%}
@@ -94,23 +97,23 @@
 
             let aside = document.createElement('aside');
             aside.classList = "meta small";
-            article.append(aside);
+            article.appendChild(aside);
 
             if (friend.author) {
                 let author = document.createElement('span');
                 author.innerHTML = 'by ' + friend.author;
-                aside.append(author);
+                aside.appendChild(author);
             }
 
             if (friend.author && friend.date) {
                 let on = document.createElement('span');
-                on.innerHTML = 'on';
-                aside.append(on);
+                on.innerHTML = ' on ';
+                aside.appendChild(on);
             }
 
             if (friend.date) {
                 let date = document.createElement('span');
-                aside.append(date);
+                aside.appendChild(date);
                 let dateParts = friend.date.split(' ');
                 let dateString = dateParts[0];
                 dateString += 'T';
@@ -123,12 +126,12 @@
 
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
-                article.append(excerpt);
+                article.appendChild(excerpt);
                 excerpt.innerHTML = friend.excerpt;
             }
 
             let cont = document.createElement('a');
-            article.append(cont);
+            article.appendChild(cont);
             cont.href = entry.ref;
             cont.classList = 'small meta inline-block';
             cont.innerHTML = 'Continue reading →';
@@ -140,21 +143,33 @@
         let heading = document.getElementsByTagName('h1');
         if (heading.length) {
             if (resultSet.length) {
-                heading[0].innerHTML = 'Search results for query "' + query + '"';
+                heading[0].innerHTML = 'Search results for "' + query + '"';
             } else {
-                heading[0].innerHTML = 'No search results found for query "' + query + '"';
+                heading[0].innerHTML = 'No search results for "' + query + '"';
             }
         }
     }
 
+    function printResultCount(searchResults, resultSet, query) {
+        let count = document.createElement('p');
+        if (resultSet.length == 0) {
+            count.innerHTML = 'Your search for "' + query + '" did not return any results.'
+        } else {
+            count.innerHTML = resultSet.length + ' results:';
+        }
+        count.classList = "small meta mry no-indent";
+        searchResults.append(count);
+    }
+
     function printSearchResults(resultSet, query) {
-        let searchResults = document.getElementById('search-results');
+        let searchResults = document.getElementById(SEARCH_RESULTS_ID);
         if (!searchResults) {
-            console.error("The page does not have a DOM element with id=search-results");
+            console.error('The page does not have a DOM element with id=' + SEARCH_RESULTS_ID);
             return;
         }
         removeChildren(searchResults);
         printHeading(resultSet, query);
+        printResultCount(searchResults, resultSet, query);
         if (resultSet.length) {
             for (let entry of resultSet) {
                 printResultEntry(searchResults, entry);
@@ -163,22 +178,42 @@
     }
 
     function search(query) {
-        let resultSet = searchIndex.search(query);
+        let resultSet = [];
+        if (query) {
+            resultSet = searchIndex.search(query);
+        }
         printSearchResults(resultSet, query);
     }
 
     window.addEventListener('load', function (event) {
         searchIndex = buildSearchIndex();
         let query = getParameterByName('query');
+        let input = document.getElementById(SEARCH_QUERY_ID);
+        if (input) {
+            input.value = query;
+        }
+
         if (query) {
             search(query);
         }
     }); 
 </script>
 
-<form onsubmit="event.preventDefault(); search(event.target.query.value);">
-    <input id="query" type="text" />
-    <input type="submit" value="Search" />
-</form>
-
+<div>
+    <form class="flex mxw-sm"
+        onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);">
+        <input id="search-query" class="bold width-100 mrr-d3" type="text" />
+        <input type="submit" class="button" value="Search" />
+    </form>
+</div>
 <div id="search-results"></div>
+
+<!--
+To Do to complete:
+
+- Format the search result
+- Provide an input field that can be used on any page
+- Use a git commit hook to create the search search index 
+- When searching, request that index with a javascript get request
+- Create the index on the client only as a fallback solution
+-->
