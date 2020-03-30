@@ -18,10 +18,10 @@
     {% endif %}
  
     {% if page.date and page.nodate != true %}{% assign date = true %}{% else %}{% assign date = false%}{% endif %}
-    {% if page.tags != empty or page.categories != empty %}{% assign meta = true %}{% else %}{% assign meta = false%}{% endif %}    
+    {% if page.tags != empty or page.categories != empty %}{% assign meta = true %}{% else %}{% assign meta = false%}{% endif %}            
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
     {% if page.author or date or meta  %}
-    <aside class="lh-2">
+    <aside class="lh-2">        
         {% if page.author or date %}
         <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background mrr">
             {% include author-and-date.html %}
