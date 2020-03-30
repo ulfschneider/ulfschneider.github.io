@@ -73,6 +73,16 @@
         }
     }
 
+    function formatDate(date) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let parts = date.split('-');
+        let year = parseInt(parts[0]);
+        let month = parseInt(parts[1]);
+        let day = parseInt(parts[2]);
+
+        return months[month - 1] + ' ' + day + ', ' + year;
+    }
+
     function printResultEntry(parent, entry) {
         if (parent) {
             let friend = friendlyMap.get(entry.ref);
@@ -114,14 +124,7 @@
             if (friend.date) {
                 let date = document.createElement('span');
                 aside.appendChild(date);
-                let dateParts = friend.date.split(' ');
-                let dateString = dateParts[0];
-                dateString += 'T';
-                dateString += dateParts[1];
-                dateString += dateParts[2].substring(0, 3);
-                dateString += ':';
-                dateString += dateParts[2].substring(3);
-                date.innerHTML = (new Date(dateString)).toDateString();
+                date.innerHTML = formatDate(friend.date);
             }
 
             if (friend.excerpt) {
