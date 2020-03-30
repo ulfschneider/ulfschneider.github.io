@@ -1,7 +1,8 @@
 <div>
-    <form class="flex mxw-sm mry"
-        onsubmit="event.preventDefault(); location.href='/search?query=' + event.target['search-query'].value;">
+    {% assign onsubmit = "event.preventDefault(); location.href='/search?query=' + event.target['search-query'].value;"%}
+    {% if include.onsubmit %}{% assign onsubmit = include.onsubmit %}{% endif %}    
+    <form class="flex mxw-sm mry" onsubmit="{{onsubmit}}">
         <input id="search-query" class="bold width-100" type="text" />
-        <input type="submit" class="button" value="Search" />
+        <input type="submit" class="button radius-r" value="Search" />
     </form>
 </div>

@@ -199,13 +199,7 @@
     }); 
 </script>
 
-<div>
-    <form class="flex mxw-sm mry"
-        onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);">
-        <input id="search-query" class="bold width-100" type="text" />
-        <input type="submit" class="button" value="Search" />
-    </form>
-</div>
+{% include search-field.html onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
 
 <!--
