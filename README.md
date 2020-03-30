@@ -36,22 +36,7 @@ A short abstract for posts of layout type _post_. Will appear in the blog summar
 
 To be used in posts of layout type _post_. Will produce an entry in the blog overview but forward not to the post but to the given forward address when clicking on the title.
 
-**reversed:** true|false|empty
-
-To be used in posts of type _gallery_. Will order the images in reversed order, which means oldest first.
-
-**thumburl:** A path to an image
-
-To be used in posts of type _image_. Will be used inside of a gallery to display a thumb image link to the post.
-
-**slideurl:** A path to an image
-
-To be used in posts of type _image_. Will be displayed when the image is part of a slide show in a gallery, no matter if autoplay or not.
-
 **categories:** A comma-separated text string list
 
 Tagging for the content. When you specify a category for a post of type _gallery_, the gallery will display all posts of type _image_ that contain the same category.
 
-**noslides:** true|false|empty
-
-To be used in galleries to indicate if a slide show is allowed or not. By default slide shows are allowed.

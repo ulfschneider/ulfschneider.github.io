@@ -18,7 +18,7 @@
     {% endif %}
  
     {% if page.date and page.nodate != true %}{% assign date = true %}{% else %}{% assign date = false%}{% endif %}
-    {% if page.tags != empty or page.categories != empty %}{% assign meta = true %}{% else %}{% assign meta = false%}{% endif %}            
+    {% if page.tags != nil or page.categories != nil %}{% assign meta = true %}{% else %}{% assign meta = false%}{% endif %}            
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
     {% if page.author or date or meta  %}
     <aside class="lh-2">        

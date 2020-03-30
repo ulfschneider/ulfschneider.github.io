@@ -41,7 +41,7 @@
 					{% include title.html %}
 
 					{% if page.notitle == true or page.title == "notitle" %}
-					{% if page.categories != empty or page.tags != empty %}
+					{% if page.categories != nil or page.tags != nil %}
 					<div class="mrln-d3 pdx-d3 pdy-d4 meta lh-2 inline-block bg-base-background">
 						{% include categories-and-tags.html %}
 					</div>
