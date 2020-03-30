@@ -1,7 +1,18 @@
-{% assign onsubmit = "event.preventDefault(); location.href='/search?query=' + event.target['search-query'].value;"%}
+{% assign onsubmit = "submitQuery(event);"%}
 {% if include.onsubmit %}{% assign onsubmit = include.onsubmit %}{% endif %}
+<script>
+    function submitQuery(event) { 
+        event.preventDefault(); 
+        let query = event.target['search-query'].value; 
+        if (query && query.trim()) {
+            location.href='/search?query=' + query.trim();
+        } else {
+            location.href ='/search';
+        }        
+    }
+</script>
 <form class="mry" onsubmit="{{onsubmit}}">
-    <label for="search-query" class="meta small">Search this site:</label>
+    <label for="search-query" class="small">Search this site:</label>
     <div class="flex mxw-sm">
         <input id="search-query" class="width-100" type="text" />
         <input type="submit" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;" value="Search" />
