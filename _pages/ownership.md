@@ -2,7 +2,7 @@
 layout: default
 permalink: /ownership/
 title: Content Ownership
-subtitle: This Impressum as required by German law
+subtitle: Impressum as required by German law
 categories: [ownership]
 nometa: true
 ---
