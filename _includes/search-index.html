@@ -13,7 +13,7 @@
     var searchData = [
         {%- for meta in pageMeta -%}
         {%- for node in contentNodes -%}
-        {%- if node.published != false and node.nosearch != true -%}
+        {%- if node.published != false and node.excludesearch != true -%}
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
         'id': {{ node.url | jsonify }},

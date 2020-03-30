@@ -2,5 +2,5 @@
 layout: postfeed
 permalink: /feed.xml
 categories: [thoughts, tools, reading, journal]
-nosearch: true
+excludesearch: true
 ---
