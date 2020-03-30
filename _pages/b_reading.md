@@ -4,4 +4,5 @@ topnav: Reading
 permalink: /reading/
 categories: reading
 nodate: true
+nometa: true
 ---

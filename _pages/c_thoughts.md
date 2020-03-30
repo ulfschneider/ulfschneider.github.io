@@ -3,6 +3,7 @@ layout: list
 topnav: Thoughts
 permalink: /thoughts/
 categories: thoughts
+nometa: true
 ---
 Essays about my experiences within the agile movement and the agile value system. Popular articles:
 

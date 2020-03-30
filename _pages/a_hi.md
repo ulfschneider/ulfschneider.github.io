@@ -2,6 +2,7 @@
 permalink: /
 topnav: Ulf Schneider
 categories: [home]
+nometa: true
 ---
 
 <h1 class="fs-2 rg:fs-4 breakout normal mrb-1">Hi, I am <span class="inline-block"><strong>Ulf Schneider</strong>,</span><br> a developer and agile coach living in Paderborn, Germany.</h1>
