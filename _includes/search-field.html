@@ -1,8 +1,9 @@
-<div>
-    {% assign onsubmit = "event.preventDefault(); location.href='/search?query=' + event.target['search-query'].value;"%}
-    {% if include.onsubmit %}{% assign onsubmit = include.onsubmit %}{% endif %}    
-    <form class="flex mxw-sm mry" onsubmit="{{onsubmit}}">
-        <input id="search-query" class="bold width-100" type="text" />
+{% assign onsubmit = "event.preventDefault(); location.href='/search?query=' + event.target['search-query'].value;"%}
+{% if include.onsubmit %}{% assign onsubmit = include.onsubmit %}{% endif %}
+<form class="mry" onsubmit="{{onsubmit}}">
+    <label for="search-query" class="meta small">Search this site:</label>
+    <div class="flex mxw-sm">
+        <input id="search-query" class="width-100" type="text" />
         <input type="submit" class="button radius-r bg-black" value="Search" />
-    </form>
-</div>
+    </div>
+</form>
