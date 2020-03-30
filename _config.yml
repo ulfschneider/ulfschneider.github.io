@@ -12,6 +12,7 @@ include:     ["_pages"]
 
 rss:          /feed.rss
 colophon:     /colophon/
+ownership:    /ownership/
 
 defaults:
   - 

@@ -1,4 +1,4 @@
-<footer>	
+<footer>
 	{% if page.nosearch != true %}
 	{% include search-field.html %}
 	{% endif %}
@@ -9,6 +9,9 @@
 		{% endif %}
 		{%if site.colophon and site.colophon != page.url %}
 		<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco meta">Colophon</a></li>
+		{% endif %}
+		{% if site.ownership and site.ownership != page.url %}
+		<li class="inline-block mrr"><a href="{{site.ownership}}" class="small no-deco meta">Ownership</a></li>
 		{% endif %}
 		<li id="load-time" class="inline-block small meta"></li>
 	</ul>

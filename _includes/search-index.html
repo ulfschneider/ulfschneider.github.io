@@ -18,6 +18,7 @@
         {
         'id': {{ node.url | jsonify }},
         'title': {%if node.title %} {{ node.title | jsonify }} {% else %} {{ node.topnav | jsonify }} {% endif %},
+        'subtitle': {{node.subtitle | jsonify}},
         'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
         'date': {{ node.date | jsonify }},
         'author': {{ node.author | jsonify }},
@@ -37,6 +38,7 @@
         return lunr(function () {
             this.ref('id');
             this.field('title', { boost: 10 });
+            this.field('subtitle', {boost: 10});
             this.field('author');
             this.field('categories');
             this.field('tags');
