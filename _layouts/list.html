@@ -41,28 +41,13 @@ layout: default
 
     <article class="mry-1">
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a></h2>
-        {% assign strippedAuthor = p.author | strip %}
-        {% if strippedAuthor.size > 0 %}
+        {% if p.author or p.date and p.nodate != true and page.nodate != true %}
         <aside class="small meta">
-            <span class="mrr">
-                by {{ p.author }}
-            </span>
-            {% unless page.nodate or p.nodate %}            
-            <span class="no-wrap">{{ p.date | date: '%B %e, %Y' }}</span>
-            {% endunless %}
+            {% include author-and-date.html author=p.author date=p.date nodate=p.nodate%}
         </aside>
-        {% else %}
-        {% unless page.nodate %}
-        {% unless p.nodate %}
-        <aside class="small no-wrap meta">
-            {{ p.date | date: '%B %e, %Y' }}
-        </aside>
-        {% endunless %}
-        {% endunless %}
         {% endif %}
 
         <p>
-
             {% if p.abstract %}
             {{ p.abstract }}
             {% else %}

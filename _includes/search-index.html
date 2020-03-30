@@ -12,15 +12,15 @@
         {%- for node in contentNodes -%}
         {%- if node.published != false and node.nosearch != true -%}
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
-        {   
-            'id': {{node.url | jsonify }},
-            'title': {%if node.title %}{{node.title | jsonify }}{% else %}{{ node.topnav | jsonify }}{% endif %},
-            'excerpt': {{node.content | strip_html | truncatewords:25, "&nbsp;…" | jsonify }},
-            'date': {{node.date | jsonify}},
-            'author': {{node.author | jsonify }},
-            'categories': {{ node.categories | jsonify }},
-            'tags': {{ node.tags | jsonify }},
-            'content': {{ node.content | strip_html | jsonify }}
+        {
+        'id': {{ node.url | jsonify }},
+        'title': {%if node.title %} {{ node.title | jsonify }} {% else %} {{ node.topnav | jsonify }} {% endif %},
+        'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
+        'date': {{ node.date | jsonify }},
+        'author': {{ node.author | jsonify }},
+        'categories': {{ node.categories | jsonify }},
+        'tags': {{ node.tags | jsonify }},
+        'content': {{ node.content | strip_html | jsonify }}
         } ,
         {%- endif -%}
         {%- endif -%}
@@ -98,9 +98,14 @@
 
             if (friend.author) {
                 let author = document.createElement('span');
-                author.classList = "mrr";
                 author.innerHTML = 'by ' + friend.author;
                 aside.append(author);
+            }
+
+            if (friend.author && friend.date) {
+                let on = document.createElement('span');
+                on.innerHTML = 'on';
+                aside.append(on);
             }
 
             if (friend.date) {
@@ -121,6 +126,13 @@
                 article.append(excerpt);
                 excerpt.innerHTML = friend.excerpt;
             }
+
+            let cont = document.createElement('a');
+            article.append(cont);
+            cont.href = entry.ref;
+            cont.classList = 'small meta inline-block';
+            cont.innerHTML = 'Continue reading →';
+
         }
     }
 

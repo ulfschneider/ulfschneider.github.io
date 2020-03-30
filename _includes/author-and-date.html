@@ -1,0 +1,17 @@
+{%if include.author%}
+<span>by {{include.author}}</span>
+{% elsif page.author %}
+<span>by {{page.author}}</span>
+{% endif %}
+
+{% if include.author or page.aughor %}
+{% if include.date and include.nodate != true or page.date and page.nodate != true %}
+<span>on</span>
+{% endif %}
+{% endif %}
+
+{% if include.date and include.nodate != true%}
+<span class="no-wrap">{{ include.date | date: '%B %e, %Y' }}</span>
+{% elsif page.date and page.nodate != true %}
+<span class="no-wrap">{{ page.date | date: '%B %e, %Y' }}</span>
+{% endif %}

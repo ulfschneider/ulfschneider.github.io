@@ -18,21 +18,12 @@
     {% endif %}
     {% if page.author or page.date and page.nodate != true or page.nostepnav != true and page.tags %}
     <div class="lh-2">
-        <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
-            {% if page.author %}
-            <span class="mrr">
-                by {{page.author}}
-            </span>
-            {% endif %}
-
-            {% unless page.nodate %}                      
-            <span class="no-wrap mrr">{{ page.date | date: '%B %e, %Y' }}</span>
-            {% endunless %}
-
+        <aside class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
+            {% include author-and-date.html %}
             {% if page.nostepnav != true %}
-            {% include meta.html %}
+            {% include categories.html %}
             {% endif %}
-        </div>
+        </aside>
     </div>
     {% endif %}
 
