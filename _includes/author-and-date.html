@@ -11,7 +11,7 @@
 {% endif %}
 
 {% if include.date and include.nodate != true%}
-<span class="no-wrap">{{ include.date | date: '%B %e, %Y' }}</span>
+<time class="no-wrap">{{ include.date | date: '%B %e, %Y' }}</time>
 {% elsif page.date and page.nodate != true %}
-<span class="no-wrap">{{ page.date | date: '%B %e, %Y' }}</span>
+<time class="no-wrap">{{ page.date | date: '%B %e, %Y' }}</time>
 {% endif %}
