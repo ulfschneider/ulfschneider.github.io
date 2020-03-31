@@ -1,6 +1,6 @@
 ---
 layout: postfeed
-permalink: /feed.xml/
+permalink: /feed.xml
 categories: [thoughts, tools, reading, journal]
 excludesearch: true
 ---

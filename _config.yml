@@ -10,7 +10,7 @@ kramdown:
     disable : true
 include:     ["_pages"]
 
-rss:          /feed.xml/
+rss:          /feed.xml
 colophon:     /colophon/
 ownership:    /ownership/
 
