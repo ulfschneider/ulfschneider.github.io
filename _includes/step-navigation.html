@@ -50,12 +50,12 @@
     {% endif %}
 
     {% if prev  %}
-    <div class="float-right nowrap truncate">
+    <div class="float-right nowrap truncate right">
         <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
             {% if include.shortNav %}
-            <span>→</span>
+            <div>→</div>
             {% else %}
-            <div class="right">Older</div>
+            <div>Older</div>
             <div>{% if prev.title != "notitle" && prev.notitle != true %}
                 {{ prev.title }}{% endif %}</div>
             {% endif %}
