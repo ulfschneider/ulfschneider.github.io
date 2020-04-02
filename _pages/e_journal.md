@@ -1,6 +1,6 @@
 ---
 layout: list
-topnav: Journal
+mainnav: Journal
 permalink: /journal/
 categories: journal
 nometa: true

@@ -24,9 +24,9 @@ The title of a page or a post. Any post of layout type _post_ and a value in tit
 
 The sub title of a page or a post.
 
-**topnav:** A text string
+**mainnav:** A text string
 
-Only pages with _topnav_ entry will appear on the top-navigation.
+Only pages with _mainnav_ entry will appear on the top-navigation.
 
 **abstract:** A paragraph.
 

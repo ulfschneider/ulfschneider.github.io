@@ -1,6 +1,6 @@
 ---
 layout: list
-topnav: Tools
+mainnav: Tools
 permalink: /tools/
 categories: tools
 nometa: true

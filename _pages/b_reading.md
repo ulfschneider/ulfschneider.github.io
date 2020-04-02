@@ -1,6 +1,6 @@
 ---
 layout: list
-topnav: Reading
+mainnav: Reading
 permalink: /reading/
 categories: reading
 nodate: true

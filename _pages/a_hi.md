@@ -1,6 +1,6 @@
 ---
 permalink: /
-topnav: Ulf Schneider
+mainnav: Ulf Schneider
 categories: [home]
 nometa: true
 ---

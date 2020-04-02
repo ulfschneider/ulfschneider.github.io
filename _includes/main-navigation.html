@@ -1,10 +1,10 @@
 {% for p in site.pages %}
-{% if p.topnav %}
+{% if p.mainnav %}
 {% unless p.url != "/" %}
 {% if page.url == p.url %}
-<span class="inline-block meta black bold mrr">{{p.topnav}}</span>
+<span class="inline-block meta black bold mrr">{{p.mainnav}}</span>
 {% else %}
-<span class="inline-block mrr"><a href="/" class="no-deco meta">{{p.topnav}}</a></span>
+<span class="inline-block mrr"><a href="/" class="no-deco meta">{{p.mainnav}}</a></span>
 {% endif %}
 {% endunless %}
 {% endif %}
@@ -13,17 +13,17 @@
 
 <ul class="reset inline-block mry-0">
 	{% for p in site.pages %}
-	{% if p.topnav %}
+	{% if p.mainnav %}
 	{% unless p.url == "/" %}	
 	{% if page.url == p.url %}
-	<li class="inline-block meta black bold">{{p.topnav}}</li>
+	<li class="inline-block meta black bold">{{p.mainnav}}</li>
 	{% elsif page.categories contains p.categories and page.categories.size == 1 %}
 	
 	<li class="inline-block">
-		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a></li>
+		<a class="no-deco meta black bold" href="{{ p.url | prepend: site.baseurl }}">{{p.mainnav}}</a></li>
 	{% else %}
 	<li class="inline-block">
-		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.topnav}}</a>
+		<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.mainnav}}</a>
 	</li>
 	{% endif %}
 

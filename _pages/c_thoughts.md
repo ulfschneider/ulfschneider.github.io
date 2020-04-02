@@ -1,6 +1,6 @@
 ---
 layout: list
-topnav: Thoughts
+mainnav: Thoughts
 permalink: /thoughts/
 categories: thoughts
 nometa: true
