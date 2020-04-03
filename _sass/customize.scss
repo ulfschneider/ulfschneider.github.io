@@ -30,9 +30,9 @@
   --lh-h3: 1.62em;
 
   --blockquote-indicator: "";
-
   --heading-text-transform: unset;
-  --heading-font-weight: 600;
+  --heading-font-weight: 700;
+  --pre-background: var(--neutral-5);
 }
 
 blockquote {
@@ -47,6 +47,7 @@ figure blockquote {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 
 header.is-dynamic {
   background: var(--neutral-5);
