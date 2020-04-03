@@ -3,16 +3,16 @@
 {%- assign pageMeta = "" | split: "" -%}
 {%- assign pageMeta = pageMeta | push: page.tags -%}
 {%- assign pageMeta = pageMeta | push: page.categories -%}
-{%- assign pageMeta = pageMeta | uniq -%}
+{%- assign pageMeta = pageMeta | compact | uniq -%}
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
     const SEARCH_QUERY_ID = 'search-query';
 
-    var searchData = [
-        {%- for meta in pageMeta -%}
+    var searchData = [        
         {%- for node in contentNodes -%}
+        {%- for meta in pageMeta -%}
         {%- if node.published != false and node.excludesearch != true -%}
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
@@ -26,6 +26,7 @@
         'tags': {{ node.tags | jsonify }},
         'content': {{ node.content | strip_html | jsonify }}
         } ,
+        {%- break -%}
         {%- endif -%}
         {%- endif -%}
         {%- endfor -%}

@@ -21,7 +21,7 @@
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
-        {%- assign pageMeta = pageMeta | uniq -%}
+        {%- assign pageMeta = pageMeta | compact | uniq -%}
 
         {%- for meta in pageMeta -%}
         {%- for p in site.posts -%}
@@ -44,6 +44,7 @@
             <category>{{- c | xml_escape -}}</category>
             {%- endfor -%}
         </item>
+        {%- break -%}
         {%- endif -%}
         {%- endif -%}
         {%- endfor -%}

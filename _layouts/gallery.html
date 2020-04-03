@@ -47,10 +47,10 @@ layout: image
     {% assign pageMeta = "" | split: ""%}
     {% assign pageMeta = pageMeta | push: page.tags %}
     {% assign pageMeta = pageMeta | push: page.categories %}
-    {% assign pageMeta = pageMeta | uniq %}
+    {% assign pageMeta = pageMeta | compact | uniq %}
 
-    {% for meta in pageMeta %}
     {% for p in site.posts %}
+    {% for meta in pageMeta %}
     {% if p.tags contains meta or p.categories contains meta %}
 
     {% assign foundImage = 0 %}
@@ -70,14 +70,16 @@ layout: image
             <img class="fit-cover width-100" loading="lazy" {{ htmlTag }} />
         </a>
     </article>
-
+    
     {% endif %}
     {% endfor %}
     {% assign foundImage = 1 %}
     {% endif %}
+    
     {% endif %}
     {% endfor %}
-
+    
+    {%- break -%}
     {% endif %}
     {% endfor %}
     {% endfor %}

@@ -90,10 +90,10 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
-        {%- assign pageMeta = pageMeta | uniq -%}
+        {%- assign pageMeta = pageMeta | compact | uniq -%}
 
-        {%- for meta in pageMeta -%}
         {%- for p in site.posts -%}
+        {%- for meta in pageMeta -%}
         {%- if p.published != false -%}
         {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
         <item>
@@ -113,6 +113,7 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
             <category>{{- c | xml_escape -}}</category>
             {%- endfor -%}
         </item>
+        {%- break -%}
         {%- endif -%}
         {%- endif -%}
         {%- endfor -%}
