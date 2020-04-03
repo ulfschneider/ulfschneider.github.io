@@ -120,5 +120,6 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
     </channel>
 </rss>{% endraw %}
 ~~~
+{:.breakout}
 
 Just copy the code above, store it inside of <code>_layouts/postfeed.html</code>, and you are ready to use your new RSS feed.
