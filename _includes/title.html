@@ -1,12 +1,10 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = "mrtn-4 mih-4 mrb-1" %}
-{% else %}
-{% assign titleClass = "mrb-1" %}
+{% assign titleClass = " mrtn-4 mih-4 mrb-1" %}
 {% endif %}
 
 {% if page.title  %}
-<div class="mrln-d3 title {{titleClass}}">
+<div class="mrln-d3 mrb-1 title{{titleClass}}">
     <div class="lh-1">
         <h1 class="pd-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
     </div>
