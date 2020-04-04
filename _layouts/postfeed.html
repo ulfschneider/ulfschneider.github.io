@@ -22,6 +22,9 @@
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
         {%- assign pageMeta = pageMeta | compact | uniq -%}
+        {%- if pageMeta.size == 0 -%}
+        {%- assign pageMeta = pageMeta | push: "." -%}
+        {%- endif -%}
 
         {%- for meta in pageMeta -%}
         {%- for p in site.posts -%}

@@ -13,6 +13,9 @@ layout: default
     {% assign pageMeta = pageMeta | push: page.tags %}
     {% assign pageMeta = pageMeta | push: page.categories %}
     {% assign pageMeta = pageMeta | compact | uniq %}
+    {% if pageMeta.size == 0 %}
+    {% assign pageMeta = pageMeta | push: "." %}
+    {% endif %}
 
     {% for p in site.posts %}
     {% for meta in pageMeta %}
@@ -47,7 +50,7 @@ layout: default
             {% if p.hero or p.smallhero %}
             <img src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
                 class="mry-d2 height-4 width-100 fit-cover" />
-            {% endif %}    
+            {% endif %}
         </aside>
         {% endif %}
 

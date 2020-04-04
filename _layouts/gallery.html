@@ -48,6 +48,9 @@ layout: image
     {% assign pageMeta = pageMeta | push: page.tags %}
     {% assign pageMeta = pageMeta | push: page.categories %}
     {% assign pageMeta = pageMeta | compact | uniq %}
+    {%- if pageMeta.size == 0-%}
+    {%- assign pageMeta = pageMeta | push: "." -%}
+    {%- endif -%}
 
     {% for p in site.posts %}
     {% for meta in pageMeta %}
@@ -70,15 +73,15 @@ layout: image
             <img class="fit-cover width-100" loading="lazy" {{ htmlTag }} />
         </a>
     </article>
-    
+
     {% endif %}
     {% endfor %}
     {% assign foundImage = 1 %}
     {% endif %}
-    
+
     {% endif %}
     {% endfor %}
-    
+
     {% break %}
     {% endif %}
     {% endfor %}
