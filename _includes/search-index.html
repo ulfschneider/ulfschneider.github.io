@@ -1,5 +1,6 @@
 {%- assign contentNodes = site.posts -%}
 {%- assign contentNodes = contentNodes | concat: site.pages -%}
+{%- assign lastNode = contentNode | last -%}
 {%- assign pageMeta = "" | split: "" -%}
 {%- assign pageMeta = pageMeta | push: page.tags -%}
 {%- assign pageMeta = pageMeta | push: page.categories -%}
@@ -21,15 +22,15 @@
         {
         'id': {{ node.url | jsonify }},
         'title': {%if node.title %} {{ node.title | jsonify }} {% else %} {{ node.mainnav | jsonify }} {% endif %},
-        'subtitle': {{node.subtitle | jsonify}},
+        {%- if node.subtitle -%}'subtitle': {{node.subtitle | jsonify}},{%- endif -%}
         'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
-        'date': {{ node.date | jsonify }},
-        'author': {{ node.author | jsonify }},
-        'categories': {{ node.categories | jsonify }},
-        'tags': {{ node.tags | jsonify }},
-        'hero': {%if node.hero %}{{node.hero | jsonify }}{% elsif node.smallhero %}{{node.smallhero | jsonify }}{% else %}''{% endif %},
+        {%- if node.date -%}'date': {{ node.date | jsonify }},{%- endif -%}
+        {%- if node.author -%}'author': {{ node.author | jsonify }},{%- endif -%}
+        {%- if node.categories != empty -%}'categories': {{ node.categories | jsonify }},{%- endif -%}
+        {%- if node.tags != empty -%}'tags': {{ node.tags | jsonify }},{%- endif -%}
+        {%- if node.hero or node.smallhero -%}'hero': {%- if node.hero -%}{{node.hero | jsonify }}{%- elsif node.smallhero -%}{{node.smallhero | jsonify }}{%- endif -%},{%- endif -%}
         'content': {{ node.content | strip_html | jsonify }}
-        } ,
+        }{%- if node != lastNode -%},{%- endif -%}        
         {%- break -%}
         {%- endif -%}
         {%- endif -%}
