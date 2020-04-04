@@ -1,7 +1,6 @@
 ---
 layout: default
 permalink: /search
-mainnav: Search
 title: Search
 nosearch: true
 exclude_search: true
