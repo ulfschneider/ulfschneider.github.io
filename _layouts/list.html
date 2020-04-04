@@ -44,11 +44,11 @@ layout: default
         {% if p.author or p.date and p.nodate != true and page.nodate != true %}
         <aside class="small meta">
             {% include author-and-date.html author=p.author date=p.date nodate=p.nodate%}
+            {% if p.hero or p.smallhero %}
+            <img src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+                class="mry-d2 height-4 width-100 fit-cover" />
+            {% endif %}    
         </aside>
-        {% endif %}
-        {% if p.hero or p.smallhero %}
-        <img src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-            class="height-4 width-100 fit-cover" />
         {% endif %}
 
         <p class="md">
