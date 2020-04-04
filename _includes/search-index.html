@@ -27,6 +27,7 @@
         'author': {{ node.author | jsonify }},
         'categories': {{ node.categories | jsonify }},
         'tags': {{ node.tags | jsonify }},
+        'hero': {%if node.hero %}{{node.hero | jsonify }}{% elsif node.smallhero %}{{node.smallhero | jsonify }}{% else %}''{% endif %},
         'content': {{ node.content | strip_html | jsonify }}
         } ,
         {%- break -%}
@@ -50,7 +51,7 @@
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, date: data.date, categories: data.categories, tags: data.tags });
+                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, date: data.date, categories: data.categories, tags: data.tags, hero: data.hero });
             }
         });
     }
@@ -132,6 +133,14 @@
                 aside.appendChild(date);
                 date.innerHTML = formatDate(friend.date);
             }
+
+            if (friend.hero) {
+                let hero = document.createElement('img');
+                aside.appendChild(hero);
+                hero.src = friend.hero;
+                hero.classList = 'mry-d2 height-5 width-100 fit-cover';
+            }
+
 
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
