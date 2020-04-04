@@ -46,6 +46,10 @@ layout: default
             {% include author-and-date.html author=p.author date=p.date nodate=p.nodate%}
         </aside>
         {% endif %}
+        {% if p.hero or p.smallhero %}
+        <img src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+            class="height-4 width-100 fit-cover" />
+        {% endif %}
 
         <p class="md">
             {% if p.abstract %}
