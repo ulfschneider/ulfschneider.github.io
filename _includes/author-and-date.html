@@ -5,8 +5,10 @@
 {% endif %}
 
 {% if include.author or page.author %}
-{% if include.date and include.nodate != true or page.date and page.nodate != true %}
-<span>on</span>
+{% if include.date and include.nodate != true %}
+<span> on </span>
+{% elsif page.date and page.nodate != true%}
+<span> on </span>
 {% endif %}
 {% endif %}
 
