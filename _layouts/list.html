@@ -44,7 +44,11 @@ layout: default
     <article class="mry-1">
         <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a>
         </h2>
-        {% assign date = p.date and p.nodate != true and page.nodate != true %}
+        {% if p.date and p.nodate != true and page.nodate != true %}
+        {% assign date = true %}
+        {% else %}
+        {% assign date = false %}
+        {% endif %}        
         {% if p.author or date or p.hero or p.smallhero%}
         <aside class="small meta">
             {% if p.author or date %}

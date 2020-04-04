@@ -26,9 +26,10 @@
         {%- assign pageMeta = pageMeta | push: "." -%}
         {%- endif -%}
 
-        {%- for meta in pageMeta -%}
         {%- for p in site.posts -%}
-        {%- if p.published != false -%}
+        {%- if p.published != false and p.exclude_feed != true -%}
+        {%- unless page.exclude_layouts contains p.layout -%}
+        {%- for meta in pageMeta -%}
         {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
         <item>
             <title>{{ p.title | xml_escape }}</title>
@@ -49,8 +50,9 @@
         </item>
         {%- break -%}
         {%- endif -%}
-        {%- endif -%}
         {%- endfor -%}
+        {%- endunless -%}
+        {%- endif -%}        
         {%- endfor -%}
     </channel>
 </rss>

@@ -2,9 +2,8 @@
 layout: default
 permalink: /search
 title: Search
-categories: [home, ownership, colophon, thoughts, tools, reading, journal]
 nosearch: true
-nometa: true
-excludesearch: true
+exclude_search: true
+exclude_layouts: [image, gallery, postfeed]
 ---
 {% include search-index.html %}

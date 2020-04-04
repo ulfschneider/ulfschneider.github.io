@@ -1,6 +1,5 @@
 {%- assign contentNodes = site.posts -%}
 {%- assign contentNodes = contentNodes | concat: site.pages -%}
-{%- assign lastNode = contentNode | last -%}
 {%- assign pageMeta = "" | split: "" -%}
 {%- assign pageMeta = pageMeta | push: page.tags -%}
 {%- assign pageMeta = pageMeta | push: page.categories -%}
@@ -9,6 +8,11 @@
 {%- assign pageMeta = pageMeta | push: "." -%}
 {%- endif -%}
 
+{%- assign excludeMeta = "" | split: "" -%}
+{%- assign excludeMeta = excludeMeta | push: page.exclude_tags -%}
+{%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
+{%- assign excludeMeta = excludeMeta | compact | uniq -%}
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
@@ -16,8 +20,10 @@
 
     var searchData = [        
         {%- for node in contentNodes -%}
-        {%- for meta in pageMeta -%}
-        {%- if node.published != false and node.excludesearch != true -%}
+        {%- if node.published != false and node.exclude_search != true -%}
+        {%- unless page.exclude_layouts contains node.layout -%}        
+        {%- for meta in pageMeta -%}   
+        {%- unless excludeMeta contains meta -%}        
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
         'id': {{ node.url | jsonify }},
@@ -30,11 +36,13 @@
         {%- if node.tags != empty -%}'tags': {{ node.tags | jsonify }},{%- endif -%}
         {%- if node.hero or node.smallhero -%}'hero': {%- if node.hero -%}{{node.hero | jsonify }}{%- elsif node.smallhero -%}{{node.smallhero | jsonify }}{%- endif -%},{%- endif -%}
         'content': {{ node.content | strip_html | jsonify }}
-        }{%- if node != lastNode -%},{%- endif -%}        
+        },        
         {%- break -%}
         {%- endif -%}
-        {%- endif -%}
+        {%- endunless -%}
         {%- endfor -%}
+        {%- endunless -%}
+        {%- endif -%}   
         {%- endfor -%}
 ];
 
@@ -139,7 +147,7 @@
                 let hero = document.createElement('img');
                 aside.appendChild(hero);
                 hero.src = friend.hero;
-                hero.classList = 'mry-d2 height-5 width-100 fit-cover';
+                hero.classList = 'mry-d2 height-4 width-100 fit-cover';
             }
 
 
@@ -217,7 +225,6 @@
         }
     }); 
 </script>
-
 {% include search-field.html onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
 
