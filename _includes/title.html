@@ -1,12 +1,10 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = "title mrtn-5 mrb-1" %}
-{% else %}
-{% assign titleClass = "title mrb-1" %}
+{% assign titleStyle = "margin-top: calc(-1 * var(--space-5)); min-height:calc(var(--space-4) + var(--space)); " %}
 {% endif %}
 
 {% if page.title  %}
-<div class="mrln-d3 {{titleClass}}" {%if page.hero or page.smallhero%}style="min-height:calc(var(--space-4) + var(--space));"{% endif %}>
+<div class="mrln-d3 mrb-1 title" {%if titleStyle %}style="{{titleStyle}}" {% endif %}>
     <div class="lh-1">
         <h1 class="pd-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
     </div>
