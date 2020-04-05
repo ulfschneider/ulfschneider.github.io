@@ -1,4 +1,9 @@
 <footer class="breakout mrt-1 mrb-2">
+	{% if include.mainnav %}
+	<nav class="navigation small">
+		{% include main-navigation.html %}
+	</nav>
+	{% endif %}
 	<ul class="mry-0 reset">
 		<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 		{%if site.rss %}
