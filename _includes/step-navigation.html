@@ -1,16 +1,23 @@
 {% if page.nostepnav != true and page.categories != empty %}
 
-{% for post in site.posts %}
+{% assign posts = "" | split: "" %}
+{% for p in site.posts %}
+{% if p.layout != "gallery" and p.layout != "list" %}
+{% assign posts = posts | push: p %}
+{% endif %}
+{% endfor %}
+
+{% for post in posts %}
 
 {% if post.url == page.url %}
 {% assign current = post %}
 {% assign index = forloop.index %}
 {% endif %}
 
-{% if current and current.layout != "gallery" %}
+{% if current %}
 
 {% unless prev %}
-{% for p in site.posts offset:index   %}
+{% for p in posts offset:index   %}
 {% unless prev %}
 {% if p.categories != empty and current.categories != empty and p.categories == current.categories %}
 {% assign prev = p %}
@@ -20,7 +27,7 @@
 {% endunless %}
 
 {% unless next %}
-{% for p in site.posts %}
+{% for p in posts %}
 {% if p.categories != empty and current.categories != empty and p.categories == current.categories and forloop.index < index %}
 {% assign next = p %}
 {% endif %}
