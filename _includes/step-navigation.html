@@ -34,7 +34,9 @@
 {% endif %}
 {% if prev or next %}
 
-<nav class="clearfix step-navigation small lh-2">
+{% if include.shortNav != true %}{% assign stepNavClass = "mry-1" %}{% endif %}
+
+<nav class="clearfix step-navigation small lh-2 {{stepNavClass}}">
     {% if next  %}
     <div class="float-left mrr nowrap truncate">
         <a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}">

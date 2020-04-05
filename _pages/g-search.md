@@ -1,6 +1,7 @@
 ---
 layout: default
-permalink: /search
+permalink: /search/
+mainnav: Search
 title: Search
 nosearch: true
 exclude_search: true

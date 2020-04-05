@@ -225,7 +225,7 @@
         }
     }); 
 </script>
-{% include search-field.html onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
+{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
 
 <!--

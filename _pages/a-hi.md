@@ -11,3 +11,5 @@ I am [riding](/bike/cross-the-alps/) race bikes and the [Bullitt](/emil/2016-10-
 
 Contact me via +49 163 2505164.
 
+{% include search-field.html %}
+
