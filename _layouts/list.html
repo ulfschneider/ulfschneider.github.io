@@ -46,13 +46,15 @@ layout: default
         </h2>
         {% if p.date and p.nodate != true and page.nodate != true %}
         {% assign date = true %}
+        {% assign nodate = false %}
         {% else %}
         {% assign date = false %}
+        {% assign nodate = true %}
         {% endif %}        
         {% if p.author or date or p.hero or p.smallhero%}
         <aside class="small meta">
             {% if p.author or date %}
-            {% include author-and-date.html author=p.author date=p.date nodate=p.nodate%}
+            {% include author-and-date.html author=p.author date=p.date nodate=nodate %}
             {% endif %}            
             {% if p.hero or p.smallhero %}
             <img alt="Hero image from post" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
