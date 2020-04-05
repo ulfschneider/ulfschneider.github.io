@@ -12,7 +12,7 @@ I´m building my blog with Jekyll, and hosting it via GitHub Pages. Out of the b
   - jekyll-feed</pre>
 </figure>
 
-Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml</code>.
+Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml/</code>.
 
 ## Limitations of jekyll-feed
 However, <code>jekyll-feed</code> has some limitations:
@@ -29,12 +29,12 @@ For each feed you want to publish, you have to create a markdown file inside of 
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: postfeed
-permalink: /feed.rss
+permalink: /feed.xml/
 categories: [thoughts, tools, reading, journal]
 ---</pre>
 </figure>
 
-The address of the published feed, <code>/feed.rss</code> in this case, doesn´t need to correspond to the name of the feed definition file, <code>feed.md</code> in our example. You define the feed address with the <code>permalink</code> setting inside of the feed definition file. 
+The address of the published feed, <code>/feed.xml/</code> in this case, doesn´t need to correspond to the name of the feed definition file, <code>feed.md</code> in our example. You define the feed address with the <code>permalink</code> setting inside of the feed definition file. 
 
 You can have multiple feed definition files with different content filters and subsequently different feed addresses.
 
@@ -44,7 +44,7 @@ The filtering of posts is not only working for categories. You can also filter f
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: postfeed
-permalink: /feed.rss
+permalink: /feed.xml/
 tags: [thoughts, tools, reading, journal]
 ---</pre>
 </figure>
@@ -55,7 +55,7 @@ A logical OR filter combination of categories and tags is in the form:
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: postfeed
-permalink: /feed.rss
+permalink: /feed.xml/
 categories: [tools]
 tags: [reading, journal]
 ---</pre>
