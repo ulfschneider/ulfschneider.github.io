@@ -7,6 +7,9 @@
 		.image img {
 			width: 100%;
 			object-fit: cover;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.image .step-navigation *,
@@ -33,8 +36,9 @@
 
 		<div class="xl word-wrap image pdt-1">
 
-
-			{{ content }}
+			<div class="breakout">
+				{{ content }}
+			</div>
 
 			<div class="flex justify-space-between">
 				<div class="small lh-2 mrr mxw-5">
