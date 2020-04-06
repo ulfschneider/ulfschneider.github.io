@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{{ content }}
-<div class="article-list mry-1">
+<div class="article-list breakout">
+    {{ content }}
 
     <!-- posts -->
     {% assign count = 0 %}
@@ -41,38 +41,37 @@ layout: default
     </div>
     {% endif %}
 
-    <article class="mry-1">
-        <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a>
-        </h2>
-        {% if p.date and p.nodate != true and page.nodate != true %}
-        {% assign date = true %}
-        {% assign nodate = false %}
-        {% else %}
-        {% assign date = false %}
-        {% assign nodate = true %}
-        {% endif %}        
-        {% if p.author or date or p.hero or p.smallhero%}
-        <aside class="small meta">
-            {% if p.author or date %}
-            {% include author-and-date.html author=p.author date=p.date nodate=nodate %}
-            {% endif %}            
-            {% if p.hero or p.smallhero %}
-            <img alt="Hero image from post" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-                class="mry-d2 height-4 width-100 fit-cover" />
-            {% endif %}
+    <article class="mry-1 x-12">
+        <aside class="md:xx-3 meta small">
+            {% include author-and-date.html date=p.date  %}
         </aside>
-        {% endif %}
-
-        <p class="md">
-            {% if p.abstract %}
-            {{ p.abstract }}
-            {% else %}
-            {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
+        <div class="md:xx-9 mxw-rg">
+            <h2 class="mry-0"><a target="{{target}}" href="{{href}}" class="no-deco black">{{ p.title }}</a>
+            </h2>
+            {% if p.author or p.hero or p.smallhero%}
+            <aside class="small meta">
+                {% if p.author %}
+                {% include author-and-date.html author=p.author %}
+                {% endif %}
+                {% if p.hero or p.smallhero %}
+                <img alt="Hero image from post"
+                    src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+                    class="mry-d2 height-4 width-100 fit-cover" />
+                {% endif %}
+            </aside>
             {% endif %}
-        </p>
-        <a class="small meta inline-block" href="{{p.url}}">Continue reading →</a>
 
+            <p>
+                {% if p.abstract %}
+                {{ p.abstract }}
+                {% else %}
+                {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
+                {% endif %}
+            </p>
+            <a class="small meta inline-block" href="{{p.url}}">Continue reading →</a>
+        </div>
     </article>
+
     {% break %}
     {% endif %}
     {% endfor %}
