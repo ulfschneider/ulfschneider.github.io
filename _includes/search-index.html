@@ -104,25 +104,21 @@
             let friend = friendlyMap.get(entry.ref);
 
             let article = document.createElement('article');
-            article.classList = 'mry-1 x-12';
+            article.classList = 'mry-1';
             parent.appendChild(article);
 
-            let col1 = document.createElement('aside');
-            col1.classList = "md:xx-3 small meta";
             if (friend.date) {
+                let aside = document.createElement('aside');
+                aside.classList = "small meta";            
                 let date = document.createElement('time');
                 date.innerHTML = formatDate(friend.date);
-                col1.appendChild(date);
+                aside.appendChild(date);
+                article.append(aside);
             }
-            article.append(col1);
-
-            let col2 = document.createElement('div');
-            col2.classList = "md:xx-9 mxw-rg";
-            article.appendChild(col2);
-
+            
             let title = document.createElement('h2');
             title.className = 'mry-0'
-            col2.appendChild(title);
+            article.appendChild(title);
 
             let anchor = document.createElement('a');
             anchor.href = entry.ref;
@@ -134,26 +130,28 @@
             anchor.className = "no-deco";
             title.appendChild(anchor);
 
-            let aside = document.createElement('aside');
-            aside.classList = "meta small";
-            col2.appendChild(aside);
+            if (friend.author || friend.hero) {
+                let aside = document.createElement('aside');
+                aside.classList = "meta small";
+                article.appendChild(aside);
 
-            if (friend.author) {
-                let author = document.createElement('span');
-                author.innerHTML = 'by ' + friend.author;
-                aside.appendChild(author);
-            }
+                if (friend.author) {
+                    let author = document.createElement('span');
+                    author.innerHTML = 'by ' + friend.author;
+                    aside.appendChild(author);
+                }
 
-            if (friend.hero) {
-                let hero = document.createElement('img');
-                aside.appendChild(hero);
-                hero.src = friend.hero;
-                hero.classList = 'mry-d2 height-4 width-100 fit-cover';
+                if (friend.hero) {
+                    let hero = document.createElement('img');
+                    aside.appendChild(hero);
+                    hero.src = friend.hero;
+                    hero.classList = 'mry-d2 height-4 width-100 fit-cover';
+                }
             }
 
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
-                col2.appendChild(excerpt);
+                article.appendChild(excerpt);
                 excerpt.innerHTML = friend.excerpt;
             }
 
@@ -161,7 +159,7 @@
             cont.href = entry.ref;
             cont.classList = 'small meta inline-block';
             cont.innerHTML = 'Continue reading →';
-            col2.appendChild(cont);
+            article.appendChild(cont);
         }
     }
 
@@ -225,7 +223,7 @@
     }); 
 </script>
 {% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
-<div id="search-results" class="breakout"></div>
+<div id="search-results"></div>
 
 <!--
 To Do to complete:
