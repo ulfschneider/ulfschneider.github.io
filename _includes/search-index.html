@@ -18,31 +18,31 @@
     const SEARCH_RESULTS_ID = 'search-results';
     const SEARCH_QUERY_ID = 'search-query';
 
-    var searchData = [        
+    var searchData = [
         {%- for node in contentNodes -%}
         {%- if node.published != false and node.exclude_search != true -%}
-        {%- unless page.exclude_layouts contains node.layout -%}        
-        {%- for meta in pageMeta -%}   
-        {%- unless excludeMeta contains meta -%}        
+        {%- unless page.exclude_layouts contains node.layout -%}
+        {%- for meta in pageMeta -%}
+        {%- unless excludeMeta contains meta -%}
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
         'id': {{ node.url | jsonify }},
-        'title': {%if node.title %} {{ node.title | jsonify }} {% else %} {{ node.mainnav | jsonify }} {% endif %},
-        {%- if node.subtitle -%}'subtitle': {{node.subtitle | jsonify}},{%- endif -%}
+        'title': {%- if node.title -%} {{ node.title | jsonify }} {%- else -%} {{ node.mainnav | jsonify }} {%- endif -%},
+        {%- if node.subtitle -%} 'subtitle': {{ node.subtitle | jsonify }}, {%- endif -%}
         'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
-        {%- if node.date -%}'date': {{ node.date | jsonify }},{%- endif -%}
-        {%- if node.author -%}'author': {{ node.author | jsonify }},{%- endif -%}
-        {%- if node.categories != empty -%}'categories': {{ node.categories | jsonify }},{%- endif -%}
-        {%- if node.tags != empty -%}'tags': {{ node.tags | jsonify }},{%- endif -%}
-        {%- if node.hero or node.smallhero -%}'hero': {%- if node.hero -%}{{node.hero | jsonify }}{%- elsif node.smallhero -%}{{node.smallhero | jsonify }}{%- endif -%},{%- endif -%}
+        {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
+        {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
+        {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
+        {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
+        {%- if node.hero or node.smallhero -%} 'hero': {%- if node.hero -%} {{ node.hero | jsonify }} {%- elsif node.smallhero -%} {{ node.smallhero | jsonify }} {%- endif -%}, {%- endif -%}
         'content': {{ node.content | strip_html | jsonify }}
-        },        
+        },
         {%- break -%}
         {%- endif -%}
         {%- endunless -%}
         {%- endfor -%}
         {%- endunless -%}
-        {%- endif -%}   
+        {%- endif -%}
         {%- endfor -%}
 ];
 
@@ -52,7 +52,7 @@
         return lunr(function () {
             this.ref('id');
             this.field('title', { boost: 10 });
-            this.field('subtitle', {boost: 10});
+            this.field('subtitle', { boost: 10 });
             this.field('author');
             this.field('categories');
             this.field('tags');
@@ -104,12 +104,25 @@
             let friend = friendlyMap.get(entry.ref);
 
             let article = document.createElement('article');
-            article.classList = 'mry-1';
+            article.classList = 'mry-1 x-12';
             parent.appendChild(article);
+
+            let col1 = document.createElement('aside');
+            col1.classList = "md:xx-3 small meta";
+            if (friend.date) {
+                let date = document.createElement('time');
+                date.innerHTML = formatDate(friend.date);
+                col1.appendChild(date);
+            }
+            article.append(col1);
+
+            let col2 = document.createElement('div');
+            col2.classList = "md:xx-9 mxw-rg";
+            article.appendChild(col2);
 
             let title = document.createElement('h2');
             title.className = 'mry-0'
-            article.appendChild(title);
+            col2.appendChild(title);
 
             let anchor = document.createElement('a');
             anchor.href = entry.ref;
@@ -123,24 +136,12 @@
 
             let aside = document.createElement('aside');
             aside.classList = "meta small";
-            article.appendChild(aside);
+            col2.appendChild(aside);
 
             if (friend.author) {
                 let author = document.createElement('span');
                 author.innerHTML = 'by ' + friend.author;
                 aside.appendChild(author);
-            }
-
-            if (friend.author && friend.date) {
-                let on = document.createElement('span');
-                on.innerHTML = ' on ';
-                aside.appendChild(on);
-            }
-
-            if (friend.date) {
-                let date = document.createElement('time');
-                aside.appendChild(date);
-                date.innerHTML = formatDate(friend.date);
             }
 
             if (friend.hero) {
@@ -150,19 +151,17 @@
                 hero.classList = 'mry-d2 height-4 width-100 fit-cover';
             }
 
-
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
-                article.appendChild(excerpt);
+                col2.appendChild(excerpt);
                 excerpt.innerHTML = friend.excerpt;
             }
 
             let cont = document.createElement('a');
-            article.appendChild(cont);
             cont.href = entry.ref;
             cont.classList = 'small meta inline-block';
             cont.innerHTML = 'Continue reading →';
-
+            col2.appendChild(cont);
         }
     }
 
@@ -226,7 +225,7 @@
     }); 
 </script>
 {% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
-<div id="search-results"></div>
+<div id="search-results" class="breakout"></div>
 
 <!--
 To Do to complete:
