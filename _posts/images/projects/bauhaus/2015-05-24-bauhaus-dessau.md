@@ -61,7 +61,7 @@ Marcel Breuer´s B3 Wassily Chair
 {:.right}
 
 ![]({{site.url}}/i/IMG_5848.jpg)
-The directors office by Walter Gropius - the visitor takes a seat in the armchair, the director is sitting on the chair.
+The directors office by Walter Gropius – the visitor takes a seat in the armchair, the director is sitting on the chair.
 {:.left}
 
 ![]({{site.url}}/i/IMG_5833.jpg)
@@ -105,7 +105,7 @@ A short walk of 2 kilometers will bring you from the Bauhaus building to the Kor
 {:.figcaption}
 
 ![]({{site.url}}/i/IMG_5889.jpg)
-Laubenganghaus, built by Hannes Meyer 1929 - 1930
+Laubenganghaus, built by Hannes Meyer 1929 – 1930
 {:.breakout .left}
 
 ![]({{site.url}}/i/IMG_5888.jpg)

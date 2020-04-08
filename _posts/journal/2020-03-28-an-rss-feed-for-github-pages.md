@@ -9,7 +9,7 @@ I´m building my blog with Jekyll, and hosting it via GitHub Pages. Out of the b
 <figure>
 <figcaption>_config.yml</figcaption>
 <pre>plugins:
-  - jekyll-feed</pre>
+  – jekyll-feed</pre>
 </figure>
 
 Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml/</code>.
