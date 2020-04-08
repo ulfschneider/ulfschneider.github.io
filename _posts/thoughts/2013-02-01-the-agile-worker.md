@@ -13,7 +13,7 @@ The agile worker is searching for insights. If insights should have a meaning, t
 
 The agile worker is acting best inside of a system where decisions will be taken at the level with most profound insights and not necessarily at the level with the most formal power.
 
-<blockquote>
+<blockquote class="breakout">
 Do not move information to authority. Move the authority to where the information lives. [Marquet 2012:49]
 </blockquote>
 

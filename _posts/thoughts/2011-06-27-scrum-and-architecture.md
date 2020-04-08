@@ -30,7 +30,7 @@ Architectural decisions are strategic for the solution space. They affect many a
 
 Architectural decisions are being taken under two premises [Friedrichsen 2010]:
 
-<blockquote>
+<blockquote class="breakout">
 Represent and balance the interests of all stakeholders over the entire system lifecycle and<br>
 Minimize the total cost of ownership for the system during the whole lifecycle
 </blockquote>
@@ -38,7 +38,7 @@ Minimize the total cost of ownership for the system during the whole lifecycle
 Here the balancing aspect of the interests of all stakeholders is emphasized. The famous Frederick Brooks [Brooks 1995:45] states, that
 
 
-<blockquote>
+<blockquote class="breakout">
 The architect of a system, like the architect of a building, is the user´s agent
 </blockquote>
 
@@ -131,7 +131,7 @@ The Product Vision contains and communicates the strategic goals of the endeavor
 
 One approach for developing such a vision is Geoffrey Moore´s elevator pitch. The basic idea behind is that you should be able to explain the greatness of your product idea during an elevator ride. You can use the following template to prepare the elevator pitch:
 
-<blockquote>
+<blockquote class="breakout">
 For [customer, user]<br>
 with [needs]<br>
 is [productname]<br>
