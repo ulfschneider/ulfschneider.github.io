@@ -41,6 +41,7 @@ blockquote {
   margin-top: var(--space-2);
   margin-bottom: var(--space-2);
   font-weight: normal;
+  max-width: unset !important; //will lead to breakout size in xl layout
 }
 
 figure blockquote {
