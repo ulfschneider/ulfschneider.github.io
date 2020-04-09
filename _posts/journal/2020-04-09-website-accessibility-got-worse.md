@@ -18,7 +18,7 @@ I quote some lowlights of the report as mentioned on their [summary page](https:
 - 56% of the 3.4 million form inputs identified were unlabeled.
 - There were significant differences in the number of errors based on the content category of home pages. News, weather, and information sites, for example, had twice as many errors as governmental sites.
 
-WebAIM provides a [Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org) which is *"… a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content."*
+WebAIM provides a [Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org), which is *"… a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content."*
 
 I immediately [checked my site](https://wave.webaim.org/report#/https://ulf.codes/) by using the tool and got hints for improvements.
 
