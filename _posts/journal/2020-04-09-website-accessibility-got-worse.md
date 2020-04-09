@@ -24,4 +24,4 @@ I immediately [checked my site](https://wave.webaim.org/report#/https://ulf.code
 
 The accessibility situation also seems to resonate with others. For example, Ethan Marcotte explains his approach of writing an [Accessibility Statement](https://ethanmarcotte.com/wrote/an-accessibility-statement/) for his site. 
 
-I like the idea of writing an accessibility statement. I want to focus on accessibility and writing the statement is an excellent way of making me conscious, and to set a level to reach. 
+I like the idea of writing an accessibility statement. I want to focus on accessibility. Writing the statement is an excellent way of making me conscious, and to set a level to reach. 
