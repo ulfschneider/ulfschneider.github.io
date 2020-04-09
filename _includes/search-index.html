@@ -19,31 +19,31 @@
     const SEARCH_QUERY_ID = 'search-query';
 
     var searchData = [
-        {% - for node in contentNodes -%}
-    {% - if node.published != false and node.exclude_search != true -%}
-    {% - unless page.exclude_layouts contains node.layout -%}
-    {% - for meta in pageMeta -%}
-    {% - unless excludeMeta contains meta -%}
-    {% - if meta == "." or node.tags contains meta or node.categories contains meta -%}
-    {
-        'id': { { node.url | jsonify } },
-        'title': {% - if node.title -%} { { node.title | jsonify } } {% - else -%} { { node.mainnav | jsonify } } {% - endif -%},
-        {% - if node.subtitle -%} 'subtitle': { { node.subtitle | jsonify } }, {% - endif -%}
-        'excerpt': { { node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify } },
-        {% - if node.date -%} 'date': { { node.date | jsonify } }, {% - endif -%}
-        {% - if node.author -%} 'author': { { node.author | jsonify } }, {% - endif -%}
-        {% - if node.categories != empty -%} 'categories': { { node.categories | jsonify } }, {% - endif -%}
-        {% - if node.tags != empty -%} 'tags': { { node.tags | jsonify } }, {% - endif -%}
-        {% - if node.hero or node.smallhero -%} 'hero': {% - if node.hero -%} { { node.hero | jsonify } } {% - elsif node.smallhero -%} { { node.smallhero | jsonify } } {% - endif -%}, {% - endif -%}
-        'content': { { node.content | strip_html | jsonify } }
-    },
-    {% - break -%}
-    {% - endif -%}
-    {% - endunless -%}
-    {% - endfor -%}
-    {% - endunless -%}
-    {% - endif -%}
-    {% - endfor -%}
+        {%- for node in contentNodes -%}
+        {%- if node.published != false and node.exclude_search != true -%}
+        {%- unless page.exclude_layouts contains node.layout -%}
+        {%- for meta in pageMeta -%}
+        {%- unless excludeMeta contains meta -%}
+        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
+        {
+        'id': {{ node.url | jsonify }},
+        'title': {%- if node.title -%} {{ node.title | jsonify }} {%- else -%} {{ node.mainnav | jsonify }} {%- endif -%},
+        {%- if node.subtitle -%} 'subtitle': {{ node.subtitle | jsonify }}, {%- endif -%}
+        'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
+        {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
+        {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
+        {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
+        {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
+        {%- if node.hero or node.smallhero -%} 'hero': {%- if node.hero -%} {{ node.hero | jsonify }} {%- elsif node.smallhero -%} {{ node.smallhero | jsonify }} {%- endif -%}, {%- endif -%}
+        'content': {{ node.content | strip_html | jsonify }}
+        },
+        {%- break -%}
+        {%- endif -%}
+        {%- endunless -%}
+        {%- endfor -%}
+        {%- endunless -%}
+        {%- endif -%}
+        {%- endfor -%}
 ];
 
     var searchIndex;
@@ -109,7 +109,7 @@
 
             if (friend.date) {
                 let aside = document.createElement('aside');
-                aside.classList = "small meta";
+                aside.classList = "small meta";            
                 let date = document.createElement('time');
                 date.innerHTML = formatDate(friend.date);
                 aside.appendChild(date);
@@ -121,7 +121,7 @@
                 title.className = 'mry-0'
                 article.appendChild(title);
                 title.innerHTML = friend.title;
-            }
+            }                  
 
             if (friend.author || friend.hero) {
                 let aside = document.createElement('aside');
@@ -151,7 +151,7 @@
             let cont = document.createElement('a');
             cont.href = entry.ref;
             cont.classList = 'small meta inline-block';
-            cont.innerHTML = 'Read the entire article →';
+            cont.innerHTML = 'Read the entire →';
             article.appendChild(cont);
         }
     }
