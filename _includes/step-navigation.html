@@ -46,7 +46,7 @@
 <nav class="clearfix step-navigation small lh-2 {{stepNavClass}}">
     {% if next  %}
     <div class="float-left mrr nowrap truncate">
-        <a class="no-deco meta" accesskey="+" href="{{ site.url }}{{ next.url }}">
+        <a class="no-deco meta" href="{{ site.url }}{{ next.url }}">
             {% if include.shortNav %}
             <div>←</div>
             {% else %}
@@ -60,7 +60,7 @@
 
     {% if prev  %}
     <div class="float-right nowrap truncate right">
-        <a class="no-deco meta" accesskey="-" href="{{ site.url }}{{ prev.url }}">
+        <a class="no-deco meta" href="{{ site.url }}{{ prev.url }}">
             {% if include.shortNav %}
             <div>→</div>
             {% else %}
