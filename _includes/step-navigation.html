@@ -50,7 +50,7 @@
             {% if include.shortNav %}
             <div>←</div>
             {% else %}
-            <div>Newer</div>
+            <div>Newer:</div>
             <div>{% if next.title != "notitle" && next.notitle != true %}
                 {{ next.title }}{% endif %}</div>
             {% endif %}
@@ -64,7 +64,7 @@
             {% if include.shortNav %}
             <div>→</div>
             {% else %}
-            <div>Older</div>
+            <div>Older:</div>
             <div>{% if prev.title != "notitle" && prev.notitle != true %}
                 {{ prev.title }}{% endif %}</div>
             {% endif %}
