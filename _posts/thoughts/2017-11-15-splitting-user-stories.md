@@ -7,15 +7,15 @@ User Stories are short and simple descriptions of a feature told from the perspe
 
 ## The advantage of splitting
 
-A User Story can cover vast amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done (often called epic). Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it:
+A User Story can cover vast amounts of functionality with a single sentence, which requires a team many weeks or even months of work to get it done. Such stories are often called epics. Splitting such stories into pieces which are valuable for users and still deliverable within a Sprint is challenging for many teams. However, there are good reasons why you should do it:
 
 - A smaller piece is faster to be delivered than a bigger one, which will bring you in a quicker feedback loop to spot defects in design, code, usability and integration. The sooner a mistake is identified, the less it will cost to fix, and the more time you have to adapt.
-- As you work on small pieces, which can flow smoothly among the professions, like developers, QA engineers, UX/UI engineers (as an example), no one has to wait for long while a considerable bunch of work has to get done until the next person can take over.
+- As you work on small pieces, which can flow smoothly among the professions, like developers, QA engineers, UX/UI engineers, no one has to wait for long while a considerable bunch of work has to get done until the next person can take over.
 - A smaller feature is much easier to understand, and there is less likelihood of a lack of consensus between team members.
 - When slicing a significant function into smaller pieces, you will often realize that not every single bit is required, this will help you to reduce coding, testing, documentation and everything else you need to do to get your software delivered.
 - Small slices allow the team to get small wins on an almost daily basis, leading to much higher engagement.
 - Your daily scrums become far more exciting and useful. Instead of "yeah, I'm 20% done adding all of the new schemas to the DB", you get "for that story we got the time stamps working in the UI, and today we're going to make the data persist".
-- A smaller size tends to make estimates more accurate (though estimates are not too important, as your stories should be small).
+- A smaller size tends to make estimates more accurate (though estimates are not too important, as your stories should be small anyway).
 
 ## JIRA is time-consuming for splitting
 
