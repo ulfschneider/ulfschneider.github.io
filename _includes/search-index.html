@@ -118,9 +118,13 @@
 
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
-                title.className = 'mry-0'
+                title.className = 'mry-0'                
                 article.appendChild(title);
-                title.innerHTML = friend.title;
+                let linkToArticle = document.createElement('a');
+                linkToArticle.href = entry.ref;
+                linkToArticle.classList = 'no-deco';
+                linkToArticle.innerHTML = friend.title;
+                title.appendChild(linkToArticle);
             }                  
 
             if (friend.author || friend.hero) {
@@ -148,11 +152,11 @@
                 excerpt.innerHTML = friend.excerpt;
             }
 
-            let cont = document.createElement('a');
-            cont.href = entry.ref;
-            cont.classList = 'small meta inline-block';
-            cont.innerHTML = 'Read the entire article →';
-            article.appendChild(cont);
+            let linkToArticle = document.createElement('a');
+            linkToArticle.href = entry.ref;
+            linkToArticle.classList = 'small meta inline-block';
+            linkToArticle.innerHTML = 'Read the entire article →';
+            article.appendChild(linkToArticle);
         }
     }
 

@@ -47,7 +47,9 @@ layout: default
     </aside>
     <div class="md:xx-9 mxw-rg">
         {% if p.title and p.title != "notitle" and p.notitle != true %}
-        <h2 class="mry-0">{{ p.title }}</h2>
+        <h2 class="mry-0">
+            <a href="{{p.url}}" class="no-deco">{{ p.title }}</a>
+        </h2>
         {% endif %}
         {% if p.author or p.hero or p.smallhero%}
         <aside class="small meta">
