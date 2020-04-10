@@ -20,8 +20,10 @@
   --mrt-h2: var(--space-1);
   --mrt-h3: var(--space-1);
 
-  --mrt-figure: var(--space-1);
-  --mrb-figure: var(--space-1);
+  --mrt-figure: var(--space-3);
+  --mrb-figure: var(--space-3);
+  --mrt-blockquote: var(--space-3);
+  --mrb-blockquote: var(--space-3);
 
   --fs-h2: 1rem;
   --lh-h2: 1.62em;
@@ -37,9 +39,7 @@
 
 blockquote {
   line-height: 1.3em;
-  font-size: var(--space-1);
-  margin-top: var(--space-2);
-  margin-bottom: var(--space-2);
+  font-size: var(--space-1);  
   font-weight: normal;
   max-width: unset !important; //will lead to breakout size in xl layout
 }
