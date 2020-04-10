@@ -1,7 +1,7 @@
 ---
 categories: journal
 title: Newspaper designs during the pandemic
-smallhero: /i/EVKWEzgUEAMP-sb.jpeg
+hero: /i/EVKWEzgUEAMP-sb.jpeg
 ---
 Some remarkable newspaper designs a got aware of via Twitter.
 
