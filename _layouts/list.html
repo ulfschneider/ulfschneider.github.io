@@ -63,11 +63,10 @@ layout: default
         {% else %}
         {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
         {% endif %}
+        {% if p.title == nil or p.title == "notitle" or p.notitle == true %}
+        <a class="small meta inline-block" href="{{p.url}}">Read the entire article →</a>
+        {% endif %}
     </p>
-
-    {% if p.title == nil or p.title == "notitle" or p.notitle == true %}
-    <a class="meta inline-block" href="{{p.url}}">Read the entire article →</a>
-    {% endif %}
     
 </article>
 

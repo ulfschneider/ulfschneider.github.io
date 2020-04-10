@@ -147,14 +147,15 @@
                 let excerpt = document.createElement('p');
                 article.appendChild(excerpt);
                 excerpt.innerHTML = friend.excerpt;
-            }
 
-            if (!friend.title || friend.title == 'notitle') {
-                let linkToArticle = document.createElement('a');
-                linkToArticle.href = entry.ref;
-                linkToArticle.classList = 'small meta inline-block';
-                linkToArticle.innerHTML = 'Read the entire article →';
-                article.appendChild(linkToArticle);
+                if (!friend.title || friend.title == 'notitle') {
+                    excerpt.innerHTML += ' ';
+                    let linkToArticle = document.createElement('a');
+                    linkToArticle.href = entry.ref;
+                    linkToArticle.classList = 'small meta inline-block';
+                    linkToArticle.innerHTML = 'Read the entire article →';
+                    excerpt.appendChild(linkToArticle);
+                }
             }
         }
     }
