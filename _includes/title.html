@@ -1,17 +1,19 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = " mrtn-5 mih-5 mrb-1" %}
+{% assign titleClass = "mrln-d3 mrtn-5 mih-5 mrb-1" %}
+{% assign heroAdjust = "pdx-d3 box-break-clone inline bg-base-background" %}
+{% assign heroSubAdjust = " pdy-d2 " %}
 {% endif %}
 
 {% if page.title  %}
-<div class="mrln-d3 title{{titleClass}}">
-    <div class="lh-1">
-        <h1 class="fs-2 md:fs-4 pd-d3 lh-1 bg-base-background inline-block">{{ page.title }}</h1>
+<div class="title{{titleClass}}">
+    <div>
+        <h1 class="fs-2 md:fs-4 {{heroAdjust}}">{{ page.title }}</h1>
     </div>
 
     {%if page.subtitle  %}
-    <div class="lh-2 mxw-rg">
-        <div class="pdx-d3 pdy-d4 sub-title meta inline-block bg-base-background">{{page.subtitle}}</div>
+    <div class="mxw-rg">
+        <div class="sub-title meta {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</div>
     </div>
     {% endif %}
 
@@ -20,9 +22,9 @@
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
 
     {% if page.author or date or meta  %}
-    <aside class="lh-2">
+    <aside>
         {% if page.author or date or meta %}
-        <div class="pdx-d3 pdy-d4 meta inline-block bg-base-background">
+        <div class="meta {{heroAdjust}} {{heroSubAdjust}}">
             {% include author-and-date.html %}
             {% include categories-and-tags.html %}
         </div>
