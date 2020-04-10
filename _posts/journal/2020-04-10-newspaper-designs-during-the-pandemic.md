@@ -5,6 +5,7 @@ smallhero: /i/EVKYGEBU0AIQsDg.jpeg
 ---
 Some remarkable newspaper designs a got aware of via Twitter.
 
+<div class="breakout">
 <figure>
 <img src="/i/EVKWEzgUEAMP-sb.jpeg" alt="A map of North America with red cones symbolizing by their height the amount of deaths caused by COVID-19"/>
 <figcaption>The New York Times, <a href="https://twitter.com/michaelbierut/status/1248225064992026624">tweeted</a> by Michael Bierut on April 9th, 2020</figcaption>
@@ -24,4 +25,6 @@ Some remarkable newspaper designs a got aware of via Twitter.
 <img src="/i/EVKyriTUUAA9QEr.jpeg" alt="An entire newspaper page with only some words spread around, forming the sentence: It´s practically this easy to stop the virus from spreading."/>
 <figcaption>The Hindu, <a href="https://twitter.com/purvamichaels/status/1248256576231743489">tweeted</a> by Purva Michaels on April 9th, 2020</figcaption>
 </figure>
+
+</div>
 
