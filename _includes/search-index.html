@@ -106,28 +106,18 @@
             let article = document.createElement('article');
             article.classList = 'mry-1';
             parent.appendChild(article);
-
-            if (friend.date) {
-                let aside = document.createElement('aside');
-                aside.classList = "small meta";            
-                let date = document.createElement('time');
-                date.innerHTML = formatDate(friend.date);
-                aside.appendChild(date);
-                article.append(aside);
-            }
-
+            
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
                 title.className = 'mry-0'                
                 article.appendChild(title);
                 let linkToArticle = document.createElement('a');
                 linkToArticle.href = entry.ref;
-                linkToArticle.classList = 'no-deco';
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
             }                  
 
-            if (friend.author || friend.hero) {
+            if (friend.author || friend.hero || friend.date) {
                 let aside = document.createElement('aside');
                 aside.classList = "meta small";
                 article.appendChild(aside);
@@ -136,6 +126,12 @@
                     let author = document.createElement('span');
                     author.innerHTML = 'by ' + friend.author;
                     aside.appendChild(author);
+                }
+
+                if (friend.date) {
+                    let date = document.createElement('time');
+                    date.innerHTML = formatDate(friend.date);
+                    aside.appendChild(date);
                 }
 
                 if (friend.hero) {
@@ -153,11 +149,13 @@
                 excerpt.innerHTML = friend.excerpt;
             }
 
-            let linkToArticle = document.createElement('a');
-            linkToArticle.href = entry.ref;
-            linkToArticle.classList = 'small meta inline-block';
-            linkToArticle.innerHTML = 'Read the entire article →';
-            article.appendChild(linkToArticle);
+            if (!friend.title || friend.title == 'notitle') {
+                let linkToArticle = document.createElement('a');
+                linkToArticle.href = entry.ref;
+                linkToArticle.classList = 'small meta inline-block';
+                linkToArticle.innerHTML = 'Read the entire article →';
+                article.appendChild(linkToArticle);
+            }
         }
     }
 

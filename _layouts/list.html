@@ -41,37 +41,34 @@ layout: default
 </div>
 {% endif %}
 
-<article class="mry-1 x-12 breakout">
-    <aside class="md:xx-3 meta small">
-        {% include author-and-date.html date=p.date  %}
-    </aside>
-    <div class="md:xx-9 mxw-rg">
-        {% if p.title and p.title != "notitle" and p.notitle != true %}
-        <h2 class="mry-0">
-            <a href="{{p.url}}" class="no-deco">{{ p.title }}</a>
-        </h2>
-        {% endif %}
-        {% if p.author or p.hero or p.smallhero%}
-        <aside class="small meta">
-            {% if p.author %}
-            {% include author-and-date.html author=p.author %}
-            {% endif %}
-            {% if p.hero or p.smallhero %}
-            <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}"
-                loading="lazy" class="mry-d2 height-4 width-100 fit-cover" />
-            {% endif %}
-        </aside>
-        {% endif %}
+<article class="mry-1">
+    {% if p.title and p.title != "notitle" and p.notitle != true %}
+    <h2 class="mry-0">
+        <a href="{{p.url}}">{{ p.title }}</a>
+    </h2>
+    {% endif %}
 
-        <p>
-            {% if p.abstract %}
-            {{ p.abstract }}
-            {% else %}
-            {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
-            {% endif %}
-        </p>
-        <a class="small meta inline-block" href="{{p.url}}">Read the entire article →</a>
-    </div>
+    <aside class="small meta">
+        {% include author-and-date.html author=p.author date=p.date %}
+        {% if p.hero or p.smallhero %}
+        <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+            class="mry-d2 height-4 width-100 fit-cover" />
+        {% endif %}
+    </aside>
+
+
+    <p>
+        {% if p.abstract %}
+        {{ p.abstract }}
+        {% else %}
+        {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
+        {% endif %}
+    </p>
+
+    {% if p.title == nil or p.title == "notitle" or p.notitle == true %}
+    <a class="meta inline-block" href="{{p.url}}">Read the entire article →</a>
+    {% endif %}
+    
 </article>
 
 {% break %}
