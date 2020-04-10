@@ -1,6 +1,6 @@
 ---
 categories: journal
-title: Website Accessibility got Worse
+title: Website accessibility got worse
 ---
 Dave Rupert made me aware with his [tweet](https://twitter.com/davatron5000/status/1247179071890640896): 
 
