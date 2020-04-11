@@ -104,16 +104,19 @@
             let friend = friendlyMap.get(entry.ref);
 
             let article = document.createElement('article');
-            article.classList = 'mry-1';
+            article.classList = 'mry-2';
             parent.appendChild(article);
+            
+            if (friend.hero) {
+                let placeholder = document.createElement('div');                
+                article.appendChild(placeholder);
+                placeholder.classList = 'clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4';
 
-            if (friend.date) {
-                let aside = document.createElement('aside');
-                aside.classList = "small meta";            
-                let date = document.createElement('time');
-                date.innerHTML = formatDate(friend.date);
-                aside.appendChild(date);
-                article.append(aside);
+                let hero = document.createElement('img');
+                placeholder.appendChild(hero);
+                hero.src = friend.hero;
+                hero.alt = '';
+                hero.classList = 'width-100 height-4 sm:square-4 fit-cover';
             }
 
             if (friend.title && friend.title != 'notitle') {
@@ -122,12 +125,11 @@
                 article.appendChild(title);
                 let linkToArticle = document.createElement('a');
                 linkToArticle.href = entry.ref;
-                linkToArticle.classList = 'no-deco';
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
-            }                  
+            }              
 
-            if (friend.author || friend.hero) {
+             if (friend.author || friend.date) {
                 let aside = document.createElement('aside');
                 aside.classList = "meta small";
                 article.appendChild(aside);
@@ -138,26 +140,27 @@
                     aside.appendChild(author);
                 }
 
-                if (friend.hero) {
-                    let hero = document.createElement('img');
-                    aside.appendChild(hero);
-                    hero.src = friend.hero;
-                    hero.alt = '';
-                    hero.classList = 'mry-d2 height-4 width-100 fit-cover';
-                }
-            }
+                if (friend.date) {
+                    let date = document.createElement('time');
+                    date.innerHTML = formatDate(friend.date);
+                    aside.appendChild(date);
+                }                
+            }   
 
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
                 article.appendChild(excerpt);
                 excerpt.innerHTML = friend.excerpt;
-            }
 
-            let linkToArticle = document.createElement('a');
-            linkToArticle.href = entry.ref;
-            linkToArticle.classList = 'small meta inline-block';
-            linkToArticle.innerHTML = 'Read the entire article →';
-            article.appendChild(linkToArticle);
+                if (!friend.title || friend.title == 'notitle') {
+                    excerpt.innerHTML += ' ';
+                    let linkToArticle = document.createElement('a');
+                    linkToArticle.href = entry.ref;
+                    linkToArticle.classList = 'small meta inline-block';
+                    linkToArticle.innerHTML = 'Read the entire article →';
+                    excerpt.appendChild(linkToArticle);
+                }
+            }
         }
     }
 

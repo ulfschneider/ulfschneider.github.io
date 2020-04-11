@@ -29,36 +29,36 @@
 </head>
 
 <body>
-	<div class="min-vh-100 bg-base-background">
 
-		<div class="xl word-wrap image pdt-1">
 
-			<div class="breakout">
-				{{ content }}
-			</div>
+	<main class="xl word-wrap image mrt-3">
 
-			<div class="flex justify-space-between mrt-1">
-				<div class="small lh-2 mrr mxw-5">
-					{% include title.html %}
+		<div class="breakout">
+			{{ content }}
+		</div>
 
-					{% if page.notitle == true or page.title == "notitle" %}
-					{% if page.categories != nil or page.tags != nil %}
-					<div class="meta lh-2 inline-block bg-base-background">
-						{% include categories-and-tags.html %}
-					</div>
-					{% endif %}
-					{% endif %}
-				</div>
-				{% if page.nostepnav != true %}
-				<div class="mrb-1 lh-2 small">
-					{% include step-navigation.html shortNav=true %}
+		<div class="breakout flex justify-space-between mrt-2">
+			<div class="small lh-2 mrr mxw-5">
+				{% include title.html %}
+
+				{% if page.notitle == true or page.title == "notitle" %}
+				{% if page.categories != nil or page.tags != nil %}
+				<div class="meta lh-2 inline-block bg-base-background">
+					{% include categories-and-tags.html %}
 				</div>
 				{% endif %}
+				{% endif %}
 			</div>
-
-			{% include footer.html mainnav=true %}
+			{% if page.nostepnav != true %}
+			<div class="mrb-1 lh-2 small">
+				{% include step-navigation.html shortNav=true %}
+			</div>
+			{% endif %}
 		</div>
-	</div>
+
+
+	</main>
+	{% include footer.html mainnav=true %}
 
 </body>
 
