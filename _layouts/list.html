@@ -44,7 +44,7 @@ layout: default
 <article class="mry-2">
     {% if p.hero or p.smallhero %}
     <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-        class="mrb-d2 mrr width-100 height-4 sm:square-4 fit-cover float-left" />
+        class="mry-d2 mrr width-100 height-4 sm:square-4 fit-cover float-left" />
     {% endif %}
 
     {% if p.title and p.title != "notitle" and p.notitle != true %}
