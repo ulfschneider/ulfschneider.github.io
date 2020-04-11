@@ -27,13 +27,9 @@ Some remarkable newspaper designs I got aware of via Twitter.
 </figure>
 
 <figure>
-<img class="width-100" src="/i/EVPj1dVUEAE2oCc.jpeg" alt=The New York Times Magazine with a double page with isolated portraits."/>
+<img class="width-100" src="/i/EVPj1dVUEAE2oCc.jpeg" alt="The New York Times Magazine with a double page with isolated portraits."/>
 <figcaption>The New York Times Magazine, <a href="https://twitter.com/sarahmsears/status/1248592035793309698">tweeted</a> by Sarah Mason Sears on April 10th, 2020</figcaption>
 </figure>
-
-
-
-
 
 </div>
 
