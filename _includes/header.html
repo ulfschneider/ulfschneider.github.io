@@ -17,11 +17,9 @@
 {% endif %}
 
 <div class="{{headerClass}}" {% if headerStyle %}style="{{headerStyle}}" {% endif %}>
-	<header class="bg-base-background z-1 pdy-d1 lh-4">
-		<div class="navigation xl small">
-			<div class="breakout">
-				{% include main-navigation.html %}
-			</div>
+	<header class="bg-base-background z-1 pdy-d1 lh-4 small">
+		<div class="xl">
+			{% include main-navigation.html %}
 		</div>
 	</header>
 </div>
