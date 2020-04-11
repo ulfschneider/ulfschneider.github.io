@@ -107,6 +107,14 @@
             article.classList = 'mry-2';
             parent.appendChild(article);
             
+            if (friend.hero) {
+                let hero = document.createElement('img');
+                article.appendChild(hero);
+                hero.src = friend.hero;
+                hero.alt = '';
+                hero.classList = 'mrb-d2 mrr width-100 height-4 sm:square-4 fit-cover float-left';
+            }
+
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
                 title.className = 'mry-0'                
@@ -115,32 +123,9 @@
                 linkToArticle.href = entry.ref;
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
-            }      
+            }              
 
-            if (friend.hero) {
-                let hero = document.createElement('img');
-                article.appendChild(hero);
-                hero.src = friend.hero;
-                hero.alt = '';
-                hero.classList = 'mry-d2 height-4 width-100 fit-cover';
-            }
-
-            if (friend.excerpt) {
-                let excerpt = document.createElement('p');
-                article.appendChild(excerpt);
-                excerpt.innerHTML = friend.excerpt;
-
-                if (!friend.title || friend.title == 'notitle') {
-                    excerpt.innerHTML += ' ';
-                    let linkToArticle = document.createElement('a');
-                    linkToArticle.href = entry.ref;
-                    linkToArticle.classList = 'small meta inline-block';
-                    linkToArticle.innerHTML = 'Read the entire article →';
-                    excerpt.appendChild(linkToArticle);
-                }
-            }
-
-            if (friend.author || friend.date) {
+             if (friend.author || friend.date) {
                 let aside = document.createElement('aside');
                 aside.classList = "meta small";
                 article.appendChild(aside);
@@ -156,6 +141,21 @@
                     date.innerHTML = formatDate(friend.date);
                     aside.appendChild(date);
                 }                
+            }   
+
+            if (friend.excerpt) {
+                let excerpt = document.createElement('p');
+                article.appendChild(excerpt);
+                excerpt.innerHTML = friend.excerpt;
+
+                if (!friend.title || friend.title == 'notitle') {
+                    excerpt.innerHTML += ' ';
+                    let linkToArticle = document.createElement('a');
+                    linkToArticle.href = entry.ref;
+                    linkToArticle.classList = 'small meta inline-block';
+                    linkToArticle.innerHTML = 'Read the entire article →';
+                    excerpt.appendChild(linkToArticle);
+                }
             }
         }
     }

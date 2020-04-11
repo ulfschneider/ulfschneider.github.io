@@ -42,15 +42,21 @@ layout: default
 {% endif %}
 
 <article class="mry-2">
+    {% if p.hero or p.smallhero %}
+    <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+        class="mrb-d2 mrr width-100 height-4 sm:square-4 fit-cover float-left" />
+    {% endif %}
+
     {% if p.title and p.title != "notitle" and p.notitle != true %}
     <h2 class="mry-0">
         <a href="{{p.url}}">{{ p.title }}</a>
     </h2>
     {% endif %}
-    {% if p.hero or p.smallhero %}
-    <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-        class="mry-d2 height-4 width-100 fit-cover" />
-    {% endif %}    
+
+    <aside class="small meta">
+        {% include author-and-date.html author=p.author date=p.date %}
+    </aside>
+
     <p>
         {% if p.abstract %}
         {{ p.abstract }}
@@ -61,9 +67,6 @@ layout: default
         <a class="small meta inline-block" href="{{p.url}}">Read the entire article →</a>
         {% endif %}
     </p>
-    <aside class="small meta">
-        {% include author-and-date.html author=p.author date=p.date %}
-    </aside>
 
 </article>
 

@@ -12,7 +12,7 @@
     </div>
 
     {%if page.subtitle  %}
-    <div class="lh-2 mxw-rg">
+    <div class="mxw-rg">
         <div class="sub-title meta {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</div>
     </div>
     {% endif %}
@@ -22,7 +22,7 @@
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
 
     {% if page.author or date or meta  %}
-    <aside class="lh-2">
+    <aside>
         {% if page.author or date or meta %}
         <div class="meta {{heroAdjust}} {{heroSubAdjust}}">
             {% include author-and-date.html %}
