@@ -115,32 +115,14 @@
                 linkToArticle.href = entry.ref;
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
-            }                  
+            }      
 
-            if (friend.author || friend.hero || friend.date) {
-                let aside = document.createElement('aside');
-                aside.classList = "meta small";
-                article.appendChild(aside);
-
-                if (friend.author) {
-                    let author = document.createElement('span');
-                    author.innerHTML = 'by ' + friend.author;
-                    aside.appendChild(author);
-                }
-
-                if (friend.date) {
-                    let date = document.createElement('time');
-                    date.innerHTML = formatDate(friend.date);
-                    aside.appendChild(date);
-                }
-
-                if (friend.hero) {
-                    let hero = document.createElement('img');
-                    aside.appendChild(hero);
-                    hero.src = friend.hero;
-                    hero.alt = '';
-                    hero.classList = 'mry-d2 height-4 width-100 fit-cover';
-                }
+            if (friend.hero) {
+                let hero = document.createElement('img');
+                article.appendChild(hero);
+                hero.src = friend.hero;
+                hero.alt = '';
+                hero.classList = 'mry-d2 height-4 width-100 fit-cover';
             }
 
             if (friend.excerpt) {
@@ -156,6 +138,24 @@
                     linkToArticle.innerHTML = 'Read the entire article →';
                     excerpt.appendChild(linkToArticle);
                 }
+            }
+
+            if (friend.author || friend.date) {
+                let aside = document.createElement('aside');
+                aside.classList = "meta small";
+                article.appendChild(aside);
+
+                if (friend.author) {
+                    let author = document.createElement('span');
+                    author.innerHTML = 'by ' + friend.author;
+                    aside.appendChild(author);
+                }
+
+                if (friend.date) {
+                    let date = document.createElement('time');
+                    date.innerHTML = formatDate(friend.date);
+                    aside.appendChild(date);
+                }                
             }
         }
     }

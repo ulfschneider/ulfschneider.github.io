@@ -47,16 +47,10 @@ layout: default
         <a href="{{p.url}}">{{ p.title }}</a>
     </h2>
     {% endif %}
-
-    <aside class="small meta">
-        {% include author-and-date.html author=p.author date=p.date %}
-        {% if p.hero or p.smallhero %}
-        <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-            class="mry-d2 height-4 width-100 fit-cover" />
-        {% endif %}
-    </aside>
-
-
+    {% if p.hero or p.smallhero %}
+    <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+        class="mry-d2 height-4 width-100 fit-cover" />
+    {% endif %}    
     <p>
         {% if p.abstract %}
         {{ p.abstract }}
@@ -67,7 +61,10 @@ layout: default
         <a class="small meta inline-block" href="{{p.url}}">Read the entire article →</a>
         {% endif %}
     </p>
-    
+    <aside class="small meta">
+        {% include author-and-date.html author=p.author date=p.date %}
+    </aside>
+
 </article>
 
 {% break %}
