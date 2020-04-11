@@ -44,6 +44,12 @@ blockquote {
   max-width: unset !important; //will lead to breakout size in xl layout
 }
 
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figure blockquote {
   margin-top: 0;
   margin-bottom: 0;
