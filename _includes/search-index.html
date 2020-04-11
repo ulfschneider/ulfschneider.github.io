@@ -108,11 +108,15 @@
             parent.appendChild(article);
             
             if (friend.hero) {
+                let placeholder = document.createElement('div');                
+                article.appendChild(placeholder);
+                placeholder.classList = 'clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4';
+
                 let hero = document.createElement('img');
-                article.appendChild(hero);
+                placeholder.appendChild(hero);
                 hero.src = friend.hero;
                 hero.alt = '';
-                hero.classList = 'mry-d2 mrr width-100 height-4 sm:square-4 fit-cover float-left';
+                hero.classList = 'width-100 height-4 sm:square-4 fit-cover';
             }
 
             if (friend.title && friend.title != 'notitle') {
