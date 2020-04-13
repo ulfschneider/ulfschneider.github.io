@@ -110,11 +110,13 @@
             if (friend.hero) {
                 let placeholder = document.createElement('div');                
                 article.appendChild(placeholder);
+                placeholder.setAttribute('aria-hidden', 'true');
                 placeholder.classList = 'clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4';
 
                 let hero = document.createElement('img');
                 placeholder.appendChild(hero);
                 hero.src = friend.hero;
+                hero.setAttribute('loading', 'lazy');
                 hero.alt = '';
                 hero.classList = 'width-100 height-4 sm:square-4 fit-cover';
             }
