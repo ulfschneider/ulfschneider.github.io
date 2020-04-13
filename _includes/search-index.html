@@ -147,7 +147,8 @@
 
             if (friend.author || friend.date) {
                 let aside = document.createElement('aside');
-                aside.classList = "meta small inline";
+                aside.classList = "meta small inline-block";
+                article.innerHTML += ' ';
                 article.appendChild(aside);
                 aside.innerHTML = '<span aria-hidden="true"> — </span>';
 
