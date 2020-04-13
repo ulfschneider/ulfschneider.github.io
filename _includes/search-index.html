@@ -149,20 +149,19 @@
                 let aside = document.createElement('aside');
                 aside.classList = "meta small inline";
                 article.appendChild(aside);
+                aside.innerHTML = '<span aria-hidden="true"> — </span>';
 
                 if (friend.author) {
                     let author = document.createElement('span');
-                    author.innerHTML = ' By ' + friend.author;
+                    author.innerHTML = 'By ' + friend.author;
                     aside.appendChild(author);
                 }
 
-                if (friend.date) {                     
-                    let date = document.createElement('time');
+                if (friend.date) {   
                     if (friend.author) {
-                        date.innerHTML = ' – ';
-                    } else {
-                        date.innerHTML = ' ';
-                    }
+                        aside.innerHTML += '<span aria-hidden="true"> · </span>';
+                    }                   
+                    let date = document.createElement('time');                   
                     date.innerHTML += formatDate(friend.date);
                     aside.appendChild(date);
                 }                

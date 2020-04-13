@@ -13,7 +13,7 @@
 
     {%if page.subtitle  %}
     <div class="mxw-rg">
-        <div class="sub-title meta {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</div>
+        <p class="mr-0 sub-title meta {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</p>
     </div>
     {% endif %}
 
@@ -22,13 +22,9 @@
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
 
     {% if page.author or date or meta  %}
-    <aside>
-        {% if page.author or date or meta %}
-        <div class="meta {{heroAdjust}} {{heroSubAdjust}}">
-            {% include author-and-date.html %}
-            {% include categories-and-tags.html %}
-        </div>
-        {% endif %}
+    <aside class="meta {{heroAdjust}} {{heroSubAdjust}}">
+        {% include author-and-date.html %}
+        {% include categories-and-tags.html %}
     </aside>
     {% endif %}
 

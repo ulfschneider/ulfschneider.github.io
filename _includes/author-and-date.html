@@ -6,9 +6,9 @@
 
 {% if include.author or page.author %}
 {% if include.date and include.nodate != true %}
-<span> – </span>
+<span aria-hidden="true">·</span>
 {% elsif page.date and page.nodate != true%}
-<span> – </span>
+<span aria-hidden="true">·</span>
 {% endif %}
 {% endif %}
 
