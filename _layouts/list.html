@@ -45,7 +45,7 @@ layout: default
     {% if p.hero or p.smallhero %}
     <div class="clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4">
         <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
-            class="width-100 height-4 sm:square-4 fit-cover"/>
+            class="width-100 height-4 sm:square-4 fit-cover" />
     </div>
     {% endif %}
 
@@ -55,11 +55,7 @@ layout: default
     </h2>
     {% endif %}
 
-    <aside class="small meta">
-        {% include author-and-date.html author=p.author date=p.date %}
-    </aside>
-
-    <p>
+    <p class="inline">
         {% if p.abstract %}
         {{ p.abstract }}
         {% else %}
@@ -69,6 +65,11 @@ layout: default
         <a class="small meta inline-block" href="{{p.url}}">Read the entire article →</a>
         {% endif %}
     </p>
+
+    <aside class="small meta inline">
+        – {% include author-and-date.html author=p.author date=p.date %}
+    </aside>
+
 
 </article>
 

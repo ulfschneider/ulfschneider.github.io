@@ -1,14 +1,14 @@
 {%if include.author%}
-<span>by {{include.author}}</span>
+<span>By {{include.author}}</span>
 {% elsif page.author %}
-<span>by {{page.author}}</span>
+<span>By {{page.author}}</span>
 {% endif %}
 
 {% if include.author or page.author %}
 {% if include.date and include.nodate != true %}
-<span> – </span>
+<span> • </span>
 {% elsif page.date and page.nodate != true%}
-<span> – </span>
+<span> • </span>
 {% endif %}
 {% endif %}
 

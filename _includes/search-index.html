@@ -129,27 +129,10 @@
                 title.appendChild(linkToArticle);
             }              
 
-             if (friend.author || friend.date) {
-                let aside = document.createElement('aside');
-                aside.classList = "meta small";
-                article.appendChild(aside);
-
-                if (friend.author) {
-                    let author = document.createElement('span');
-                    author.innerHTML = 'by ' + friend.author;
-                    aside.appendChild(author);
-                }
-
-                if (friend.date) {
-                    let date = document.createElement('time');
-                    date.innerHTML = formatDate(friend.date);
-                    aside.appendChild(date);
-                }                
-            }   
-
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
                 article.appendChild(excerpt);
+                excerpt.classList = 'inline';
                 excerpt.innerHTML = friend.excerpt;
 
                 if (!friend.title || friend.title == 'notitle') {
@@ -161,6 +144,25 @@
                     excerpt.appendChild(linkToArticle);
                 }
             }
+
+            if (friend.author || friend.date) {
+                let aside = document.createElement('aside');
+                aside.classList = "meta small inline";
+                aside.innerHTML = ' – ';
+                article.appendChild(aside);
+
+                if (friend.author) {
+                    let author = document.createElement('span');
+                    author.innerHTML = 'By ' + friend.author;
+                    aside.appendChild(author);
+                }
+
+                if (friend.date) {
+                    let date = document.createElement('time');
+                    date.innerHTML = formatDate(friend.date);
+                    aside.appendChild(date);
+                }                
+            }   
         }
     }
 
