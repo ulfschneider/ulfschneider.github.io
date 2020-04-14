@@ -7,13 +7,11 @@ categories: [ownership]
 nometa: true
 ---
 Verantwortlich für den Inhalt gemäß § 55 Abs.2 RStV:
-{:.no-indent}
 
-Ulf Schneider  
-Winfriedstr. 78  
-33098 Paderborn  
-Germany
-{:.no-indent}
-
+<address class="mry">
+Ulf Schneider<br>
+Winfriedstr. 78<br>
+33098 Paderborn<br>
+Germany<br>
 Phone +49 163 2505164
-{:.no-indent}
+</address>
