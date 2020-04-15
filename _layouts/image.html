@@ -31,13 +31,11 @@
 <body>
 
 
-	<main class="xl word-wrap image mrt-2">
+	<main class="x breakout word-wrap image mrt-2">
 
-		<div class="breakout">
-			{{ content }}
-		</div>
+		{{ content }}
 
-		<div class="breakout flex justify-space-between mrt-2">
+		<div class="flex justify-space-between mrt-2">
 			<div class="small lh-2 mrr mxw-5">
 				{% include title.html %}
 
@@ -58,7 +56,10 @@
 
 
 	</main>
-	{% include footer.html mainnav=true %}
+
+	<div class="x breakout">
+		{% include footer.html mainnav=true %}
+	</div>
 
 </body>
 

@@ -8,9 +8,9 @@
 <body>
 	{% include header.html %}
 
-	<main class="xl indent word-wrap default">
+	<main class="x indent word-wrap default">
 		{% if page.notitle != true and page.title != "notitle" %}
-		<div class="breakout mrb-1">
+		<div class="breakout-r mrb-1">
 			{% include title.html %}
 		</div>
 		{% endif %}
@@ -20,8 +20,10 @@
 		{% include step-navigation.html %}
 	</main>
 
-	{% include footer.html %}
-	
+	<div class="x breakout-r">
+			{% include footer.html %}
+	</div>
+
 	{% include scripts.html %}
 </body>
 

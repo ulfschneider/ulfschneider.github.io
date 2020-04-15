@@ -5,7 +5,7 @@ hero: /i/EVKWEzgUEAMP-sb.jpeg
 ---
 Some remarkable newspaper designs I got aware of via Twitter.
 
-<div class="breakout">
+<div class="breakout-r">
 <figure>
 <img class="width-100" src="/i/EVKWEzgUEAMP-sb.jpeg" alt="A map of North America with red cones symbolizing by their height the amount of deaths caused by COVID-19"/>
 <figcaption>The New York Times, <a href="https://twitter.com/michaelbierut/status/1248225064992026624">tweeted</a> by Michael Bierut on April 9th, 2020</figcaption>
