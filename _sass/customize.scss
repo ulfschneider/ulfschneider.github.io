@@ -60,6 +60,8 @@ figure blockquote {
 header.is-dynamic {
   background: var(--neutral-5);
   border-bottom: 1px solid var(--neutral-4);
+  padding-left: var(--space);
+  padding-right: var(--space);
 }
 
 nav ul li {
