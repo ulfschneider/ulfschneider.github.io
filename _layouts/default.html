@@ -9,12 +9,6 @@
 	{% include header.html %}
 
 	<main class="x indent word-wrap default">
-		{% if page.notitle != true and page.title != "notitle" %}
-		<div class="breakout-l mrb-1">
-			{% include title.html %}
-		</div>
-		{% endif %}
-
 		{{ content }}
 
 		{% include step-navigation.html %}
