@@ -10,3 +10,5 @@ published: no
 - How to test
 - How to write an accessibility statements
 - What are quick wins
+
+https://webaccess.berkeley.edu/resources/tips/web-accessibility

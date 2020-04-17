@@ -8,12 +8,19 @@
 {% if page.title  %}
 <div class="title {{titleClass}}">
     <div>
-        <h1 class="fs-2 md:fs-4 {{heroAdjust}}">{{ page.title }}</h1>
+        <h1 class="fs-2 md:fs-4 {{heroAdjust}}">{{ page.title }}</h1>       
     </div>
 
-    {%if page.subtitle  %}
+    {%if page.subtitle or page.refer %}
     <div class="mxw-rg">
-        <p class="mr-0 sub-title meta {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</p>
+        {% if page.subtitle %}
+        <div class="sub-title {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</div>
+        {% endif %}
+        {% if page.refer %}
+        <div class="refer meta small {{heroAdjust}} {{heroSubAdjust}}">
+            {% include refer.html %}
+        </div>
+        {% endif %}
     </div>
     {% endif %}
 
@@ -22,7 +29,7 @@
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
 
     {% if page.author or date or meta  %}
-    <aside class="meta {{heroAdjust}} {{heroSubAdjust}}">
+    <aside class="meta small {{heroAdjust}} {{heroSubAdjust}}">
         {% include author-and-date.html %}
         {% include categories-and-tags.html %}
     </aside>

@@ -51,8 +51,11 @@ layout: default
 
     {% if p.title and p.title != "notitle" and p.notitle != true %}
     <h2 class="mry-0">
-        <a href="{{p.url}}">{{ p.title }}</a>
+        <a href="{{p.url}}">{{ p.title }}</a>       
     </h2>
+    {% endif %}
+    {% if p.refer %}
+    <div class="meta small">{% include refer.html refer=p.refer %}</div>
     {% endif %}
 
     <p class="inline">
