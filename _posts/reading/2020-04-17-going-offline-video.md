@@ -1,5 +1,5 @@
 ---
-title: Going Offline – Video
+title: Going Offline
 categories: reading
 refer: A talk by Jeremy Keith
 ---
@@ -13,9 +13,5 @@ Jeremy explains the logic of the Service Worker very well and presents some Java
 
 He is also giving a nice example for what content could be presented with an offline page.
 
-<figure>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RVdW-P_oAJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Jeremy Keith: Going offline</figcaption>
-<figure>
 
 
