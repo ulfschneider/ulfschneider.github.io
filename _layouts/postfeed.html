@@ -36,6 +36,7 @@
             <author>{{ p.author }}</author>
             <description>
                 {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
+                {%- if p.refer -%}&lt;p&gt;{{- p.refer -}}&lt;/p&gt;{%- endif -%}
                 {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
             </description>
             <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>

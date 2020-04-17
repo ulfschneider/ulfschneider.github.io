@@ -32,6 +32,7 @@
         'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
         {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
         {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
+        {%- if node.refer -%} 'refer': {{ node.refer | jsonify }}, {%- endif -%}
         {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
         {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
         {%- if node.hero or node.smallhero -%} 'hero': {%- if node.hero -%} {{ node.hero | jsonify }} {%- elsif node.smallhero -%} {{ node.smallhero | jsonify }} {%- endif -%}, {%- endif -%}
@@ -54,13 +55,14 @@
             this.field('title', { boost: 10 });
             this.field('subtitle', { boost: 10 });
             this.field('author');
+            this.field('refer');
             this.field('categories');
             this.field('tags');
             this.field('content');
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, date: data.date, categories: data.categories, tags: data.tags, hero: data.hero });
+                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags, hero: data.hero });
             }
         });
     }
@@ -123,13 +125,20 @@
 
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
-                title.className = 'mry-0'                
+                title.classList = 'mry-0'                
                 article.appendChild(title);
                 let linkToArticle = document.createElement('a');
                 linkToArticle.href = entry.ref;
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
-            }              
+            } 
+            
+            if (friend.refer) {
+                let refer = document.createElement('div');
+                refer.classList = 'small meta';
+                refer.innerHTML = friend.refer;                
+                article.appendChild(refer);                
+            }
 
             if (friend.excerpt) {
                 let excerpt = document.createElement('p');
