@@ -35,7 +35,6 @@
         {%- if node.refer -%} 'refer': {{ node.refer | jsonify }}, {%- endif -%}
         {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
         {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
-        {%- if node.hero -%} 'hero': {{ node.hero | jsonify }}, {%- endif -%}
         'content': {{ node.content | strip_html | jsonify }}
         },
         {%- break -%}
@@ -62,7 +61,7 @@
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags, hero: data.hero });
+                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags });
             }
         });
     }
@@ -108,21 +107,7 @@
             let article = document.createElement('article');
             article.classList = 'mry-2';
             parent.appendChild(article);
-            
-            if (friend.hero) {
-                let placeholder = document.createElement('div');                
-                article.appendChild(placeholder);
-                placeholder.setAttribute('aria-hidden', 'true');
-                placeholder.classList = 'clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4';
-
-                let hero = document.createElement('img');
-                placeholder.appendChild(hero);
-                hero.src = friend.hero;
-                hero.setAttribute('loading', 'lazy');
-                hero.alt = '';
-                hero.classList = 'width-100 height-4 sm:square-4 fit-cover';
-            }
-
+                     
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
                 title.classList = 'mry-0'                

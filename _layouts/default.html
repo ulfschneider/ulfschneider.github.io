@@ -8,7 +8,11 @@
 <body class="pdx">
 	{% include header.html %}
 
-	<main class="x indent word-wrap default">
+	<main class="x indent word-wrap default">		
+		<div class="breakout-l mrb-1">
+			{% include title.html  %}
+		</div>
+		
 		{{ content }}
 
 		{% include step-navigation.html %}
