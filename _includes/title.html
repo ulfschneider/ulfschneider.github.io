@@ -1,14 +1,17 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
 {% if page.hero or page.smallhero %}
-{% assign titleClass = "mrln-d3 mrtn-5 mih-5 mrb-1" %}
-{% assign heroAdjust = "pdx-d3 box-break-clone inline bg-base-background" %}
+{% assign titleClass = " mrln-d3 mrtn-5 mih-5 mrb-1" %}
+{% assign heroAdjust = " pdx-d3 box-break-clone inline bg-base-background" %}
+{% assign titleSize = " fs-3 rg:fs-4 md:fs-5" %}
 {% assign heroSubAdjust = " pdy-d3 " %}
+{% else %}
+{% assign titleSize = " fs-2 md:fs-4" %}
 {% endif %}
 
 {% if page.title  %}
-<div class="title {{titleClass}}">
+<div class="title{{titleClass}}">
     <div>
-        <h1 class="fs-2 md:fs-4 {{heroAdjust}}">{{ page.title }}</h1>       
+        <h1 class="{{titleSize}}{{heroAdjust}}">{{ page.title }}</h1>
     </div>
 
     {%if page.subtitle or page.refer %}

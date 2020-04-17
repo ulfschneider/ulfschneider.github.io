@@ -8,13 +8,17 @@
 			width: 100%;
 			object-fit: cover;
 		}
-
-		.image .step-navigation *,
+		
 		.image .title * {
 			line-height: var(--lh-2);
 			font-size: var(--fs-d1);
 			font-weight: normal;
 		}
+		.image .step-navigation * {
+			font-size: var(--fs-3);
+			font-weight: 100;
+		}
+
 
 		.image .title .sub-title {
 			color: var(--meta-color);
@@ -28,16 +32,14 @@
 	</style>
 </head>
 
-<body>
+<body class="pdx">
 
 
-	<main class="xl word-wrap image mrt-2">
+	<main class="x breakout word-wrap image mrt-2">
 
-		<div class="breakout">
-			{{ content }}
-		</div>
+		{{ content }}
 
-		<div class="breakout flex justify-space-between mrt-2">
+		<div class="flex justify-space-between mrt-2">
 			<div class="small lh-2 mrr mxw-5">
 				{% include title.html %}
 
@@ -58,7 +60,10 @@
 
 
 	</main>
-	{% include footer.html mainnav=true %}
+
+	<div class="x breakout">
+		{% include footer.html mainnav=true %}
+	</div>
 
 </body>
 
