@@ -1,28 +1,15 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
-{% if page.hero or page.smallhero %}
-{% assign titleClass = " mrln-d3 mrtn-5 mih-5 mrb-1" %}
-{% assign heroAdjust = " pdx-d3 box-break-clone inline bg-base-background" %}
-{% assign titleSize = " fs-3 rg:fs-4 md:fs-5" %}
-{% assign heroSubAdjust = " pdy-d2" %}
-{% else %}
-{% assign titleSize = " fs-2 md:fs-4" %}
-{% endif %}
+<div class="title">
+    {% if page.title  %}
+    <h1 class="fs-2 md:fs-4 lh-1 mrb-d2">{{ page.title }}</h1>
+    {% endif %}
 
-{% if page.title  %}
-<div class="title {{titleClass}}">
-    <div>
-        <h1 class="{{titleSize}} {{heroAdjust}}">{{ page.title }}</h1>
-    </div>
+    {% if page.subtitle %}
+    <div class="lh-2 mrb sub-title heading-font mxw-rg">{{page.subtitle}}</div>
+    {% endif %}
 
-    {%if page.subtitle or page.refer %}
-    <div class="mxw-rg">
-        {% if page.subtitle %}
-        <div class="sub-title {{heroAdjust}} {{heroSubAdjust}}">{{page.subtitle}}</div>
-        {% endif %}
-        {% if page.refer %}
-        <div class="refer meta small {{heroAdjust}} {{heroSubAdjust}}">{% include refer.html %}</div>
-        {% endif %}
-    </div>
+    {% if page.refer %}
+    <div class="lh-2 small meta refer">{% include refer.html %}</div>
     {% endif %}
 
     {% if page.date and page.nodate != true %}{% assign date = true %}{% else %}{% assign date = false%}{% endif %}
@@ -30,13 +17,11 @@
     {% if page.nostepnav == true or page.nometa == true %}{% assign meta = false %}{% endif %}
 
     {% if page.author or date or meta  %}
-    <aside class="meta small {{heroAdjust}} {{heroSubAdjust}}">
+    <aside class="lh-2 small meta">
         {% include author-and-date.html %}
         {% include categories-and-tags.html %}
     </aside>
     {% endif %}
-
+ 
 </div>
-{% endif %}
-
 {% endunless %}

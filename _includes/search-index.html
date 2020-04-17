@@ -35,7 +35,7 @@
         {%- if node.refer -%} 'refer': {{ node.refer | jsonify }}, {%- endif -%}
         {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
         {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
-        {%- if node.hero or node.smallhero -%} 'hero': {%- if node.hero -%} {{ node.hero | jsonify }} {%- elsif node.smallhero -%} {{ node.smallhero | jsonify }} {%- endif -%}, {%- endif -%}
+        {%- if node.hero -%} 'hero': {{ node.hero | jsonify }}, {%- endif -%}
         'content': {{ node.content | strip_html | jsonify }}
         },
         {%- break -%}

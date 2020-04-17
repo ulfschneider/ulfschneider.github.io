@@ -42,9 +42,9 @@ layout: default
 {% endif %}
 
 <article class="mry-2">
-    {% if p.hero or p.smallhero %}
+    {% if p.hero %}
     <div aria-hidden="true" class="clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4">
-        <img alt="" src="{%- if p.hero -%}{{p.hero}}{%- else -%}{{p.smallhero}}{%- endif -%}" loading="lazy"
+        <img alt="" src="{{p.hero}}" loading="lazy"
             class="width-100 height-4 sm:square-4 fit-cover" />
     </div>
     {% endif %}

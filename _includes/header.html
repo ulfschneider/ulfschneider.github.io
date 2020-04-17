@@ -1,17 +1,12 @@
 {% unless page.noheader %}
 
 {% if page.hero %}
-{% assign headerClass = "vh-100 mih-sm " %}
-{% assign heroImage = page.hero %}
-{% endif %}
-{% if page.smallhero %}
-{% assign headerClass = "vh-70 mih-sm " %}
-{% assign heroImage = page.smallhero %}
+{% assign headerClass = "vh-90 mih-sm " %}
 {% endif %}
 
 {% if headerClass %}
-{% assign headerClass = headerClass | append: "bg-cover bg-center bg-no-repeat bg-primary-4" %}
-{% assign headerStyle = "background-image: url(" | append: heroImage  | append: ")" %}
+{% assign headerClass = "mih-sm bg-cover bg-center bg-no-repeat bg-primary-4 mrb-3" %}
+{% assign headerStyle = "height: calc(100vh - var(--vertical-rhythm)); background-image: url(" | append: page.hero  | append: ")" %}
 {% else %}
 {% assign headerClass = "mrb-3" %}
 {% endif %}
