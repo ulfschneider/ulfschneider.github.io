@@ -227,10 +227,3 @@
 </script>
 {% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
-
-<!--
-To Do to complete:
-- Use a git commit hook to create the search search index 
-- When searching, request that index with a javascript get request
-- Create the index on the client only as a fallback solution
--->
