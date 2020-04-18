@@ -1,15 +1,15 @@
 {% unless page.title == 'notitle' or page.notitle == true %}
-<div class="title">
+<div class="title no-indent">
     {% if page.title  %}
-    <h1 class="lh-2 fs-2 md:fs-4 md:lh-1">{{ page.title }}</h1>
+    <h1 class="lh-2 fs-2 md:fs-4 md:lh-1 mrb-d2">{{ page.title }}</h1>
     {% endif %}
 
     {% if page.subtitle %}
-    <div class="lh-2 sub-title heading-font mxw-rg">{{page.subtitle}}</div>
+    <p class="mr-0 lh-2 sub-title heading-font mxw-rg">{{page.subtitle}}</p>
     {% endif %}
 
     {% if page.refer %}
-    <div class="lh-2 small meta refer">{% include refer.html %}</div>
+    <p class="mr-0 lh-2 small meta refer">{% include refer.html %}</p>
     {% endif %}
 
     {% if page.date and page.nodate != true %}{% assign date = true %}{% else %}{% assign date = false%}{% endif %}
