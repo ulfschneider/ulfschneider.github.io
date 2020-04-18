@@ -13,7 +13,7 @@
 {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
 {%- assign excludeMeta = excludeMeta | compact | uniq -%}
 
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/r/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
     const SEARCH_QUERY_ID = 'search-query';

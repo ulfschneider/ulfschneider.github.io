@@ -7,19 +7,28 @@ if (!workbox) {
 if (workbox) {
 
     const { registerRoute } = workbox.routing;
+    const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
+    precacheAndRoute([
+        { url: '/search/', revision: null },
+    ], {
+        // Ignore all URL parameters.
+        ignoreURLParametersMatching: [/.*/]
+    });
+
+
     //For everything that´s to be loaded from this site, use stale-while-revalidate strategy
     registerRoute(
-        new RegExp('/'),
+        new RegExp('/.*'),
         new StaleWhileRevalidate()
     );
 
     // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
     registerRoute(
-        /^https:\/\/fonts\.googleapis\.com/,
+        new RegExp('^https:\/\/fonts\.googleapis\.com'),
         new StaleWhileRevalidate({
             cacheName: 'google-fonts-stylesheets',
         })
@@ -27,7 +36,7 @@ if (workbox) {
 
     // Cache the underlying font files with a cache-first strategy for 1 year.
     registerRoute(
-        /^https:\/\/fonts\.gstatic\.com/,
+        new RegExp('^https:\/\/fonts\.gstatic\.com'),
         new CacheFirst({
             cacheName: 'google-fonts-webfonts',
             plugins: [
@@ -43,7 +52,7 @@ if (workbox) {
     );
 
     registerRoute(
-        /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
+        new RegExp('\.(?:png|gif|jpg|jpeg|webp|svg)$'),
         new CacheFirst({
             cacheName: 'images',
             plugins: [
@@ -56,7 +65,7 @@ if (workbox) {
     );
 
     registerRoute(
-        /\.(?:js|css)$/,
+        new RegExp('\.(?:js|css)$'),
         new StaleWhileRevalidate({
             cacheName: 'static-resources',
         })
