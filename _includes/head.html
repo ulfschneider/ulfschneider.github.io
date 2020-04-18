@@ -1,7 +1,7 @@
 {% include measure-load-time.html %}
+
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="/css/main.css" />
-
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
 <meta charset="utf-8">
@@ -10,3 +10,12 @@
 <title>
     {% if page.title and page.title != "notitle" %}{{ page.title }}{% elsif page.mainnav %}{{ page.mainnav }}{% else %}{{ site.title }}{% endif %}
 </title>
+
+<script>
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('/serviceworker.js')
+            .catch(error => {
+                console.error(error);
+            });
+    } 
+</script>
