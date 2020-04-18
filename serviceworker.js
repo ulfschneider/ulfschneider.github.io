@@ -8,12 +8,13 @@ if (workbox) {
 
     const { registerRoute } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
-    const { CacheFirst, StaleWhileRevalidate } = workbox.strategies;
+    const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
 
     //Caching for the search
+    /*
     precacheAndRoute([
         { url: '/reading/', revision: null },
         { url: '/articles/', revision: null },
@@ -27,7 +28,7 @@ if (workbox) {
         cacheName: 'base-cache',
         ignoreURLParametersMatching: [new RegExp('.*')]
     });
-
+*/
     precacheAndRoute([
         { url: '/r/lunr.js', revision: null }
     ], {
@@ -81,10 +82,9 @@ if (workbox) {
 
     //As a general rule, 
     //for everything that´s to be loaded from this site, 
-    //use stale-while-revalidate strategy
     registerRoute(
         new RegExp('\/.*'),
-        new StaleWhileRevalidate({
+        new NetworkFirst({
             cacheName: 'base-cache'
         })
     );
