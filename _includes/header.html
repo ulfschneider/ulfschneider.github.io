@@ -1,35 +1,11 @@
 {% unless page.noheader %}
 
-{% if page.hero %}
-{% assign headerClass = "vh-90 mih-sm " %}
-{% endif %}
-
-{% if headerClass %}
-{% assign headerClass = "mih-sm bg-cover bg-center bg-no-repeat bg-primary-4 mrb-2" %}
-{% assign headerStyle = "height: calc(100vh - var(--vertical-rhythm)); background-image: url(" | append: page.hero  | append: ")" %}
-{% else %}
-{% assign headerClass = "mrb-3" %}
-{% endif %}
-
-<div class="{{headerClass}}" {% if headerStyle %}style="{{headerStyle}}" {% endif %}>
+<div class="mrb-3">
 	<header class="bg-base-background z-1 pdy-d1 lh-4 small">
 		<div class="x breakout-r">
 			{% include main-navigation.html %}
 		</div>
 	</header>
-
-	{% if page.hero and page.notitle != true and page.title != "notitle" %}
-	<div class="inline-block pdr pdy-d1 bg-base-background">
-		{% include title.html %}
-	</div>
-	{% endif %}
 </div>
-
-{% if page.hero == nil and page.notitle != true and page.title != "notitle" %}
-<div class="x breakout-l mrb-1">
-	{% include title.html  %}
-</div>
-{% endif %}
-
 
 {% endunless %}

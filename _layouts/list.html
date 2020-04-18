@@ -42,13 +42,6 @@ layout: default
 {% endif %}
 
 <article class="mry-2">
-    {% if p.hero %}
-    <div aria-hidden="true" class="clearfix mry-d2 mrr width-100 height-4 sm:square-4 float-left bg-primary-4">
-        <img alt="" src="{{p.hero}}" loading="lazy"
-            class="width-100 height-4 sm:square-4 fit-cover" />
-    </div>
-    {% endif %}
-
     {% if p.title and p.title != "notitle" and p.notitle != true %}
     <h2 class="mry-0">
         <a href="{{p.url}}">{{ p.title }}</a>       
