@@ -79,7 +79,7 @@ if (workbox) {
         })
     );
 
-        //As a general rule, 
+    //As a general rule, 
     //for everything that´s to be loaded from this site, 
     //use stale-while-revalidate strategy
     registerRoute(
