@@ -13,6 +13,9 @@
 {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
 {%- assign excludeMeta = excludeMeta | compact | uniq -%}
 
+{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
+<div id="search-results"></div>
+
 <script src="/r/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
@@ -225,5 +228,3 @@
         }
     }); 
 </script>
-{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
-<div id="search-results"></div>
