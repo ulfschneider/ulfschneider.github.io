@@ -7,28 +7,10 @@ if (!workbox) {
 if (workbox) {
 
     const { registerRoute } = workbox.routing;
-    const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
-
-    //Caching for the search
-    /*
-    precacheAndRoute([
-        { url: '/reading/', revision: null },
-        { url: '/articles/', revision: null },
-        { url: '/tools/', revision: null },
-        { url: '/journal/', revision: null },
-        { url: '/search/', revision: null },
-        { url: '/feed.xml/', revision: null },
-        { url: '/colophon/', revision: null },        
-        { url: '/ownership/', revision: null }
-    ], {
-        cacheName: 'base-cache',
-        ignoreURLParametersMatching: [new RegExp('.*')]
-    });
-*/
     precacheAndRoute([
         { url: '/r/lunr.js', revision: null }
     ], {
