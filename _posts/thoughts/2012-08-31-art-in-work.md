@@ -1,7 +1,7 @@
 ---
 title: The art in our work
 subtitle: Challenging the status quo is art
-categories: thoughts
+categories: articles
 abstract: The Agile Manifesto represents a force that is behind any particular agile procedure like XP, Scrum or Kanban. This force, the culture to challenge the status quo, attracts certain people and companies.
 ---
 
@@ -64,7 +64,7 @@ The centralized planning, disassembly, and automation of work brought us to the 
 <figcaption>Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]</figcaption>
 </figure>
 
-In the Taylor-Tub the thoughts of the individual are not of importance, because all workflows, procedures, and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which brought up disruptive productivity growth and inert mass markets during the last century. The biggest problem to solve for these markets: how to produce as much as possible at the lowest price.
+In the Taylor-Tub the articles of the individual are not of importance, because all workflows, procedures, and processes are already defined upfront and have to be followed. This makes the system robust but inflexible. We have been educated for this world of working, which brought up disruptive productivity growth and inert mass markets during the last century. The biggest problem to solve for these markets: how to produce as much as possible at the lowest price.
 
 Narrowness and/or complexity characterizes Today's markets. This complexity requires a better understanding of customer needs, higher flexibility and often interdisciplinary approaches. Those companies that can create such dynamics, the top performers, set the less capable companies under pressure. Companies that can not create the dynamics will suffer the pressure. The biggest problem to solve for these markets: how to connect to the customer, identify what delivers real value and be able to do it fast.
 

@@ -23,14 +23,14 @@ However, <code>jekyll-feed</code> has some limitations:
 ## My own feed generator
 To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts and no pages. Here is what you have to do to use it:
 
-For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the name <code>/feed.rss</code> that publishes the categories *thoughts, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
+For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the name <code>/feed.rss</code> that publishes the categories *articles, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
 
 <figure>
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: postfeed
 permalink: /feed.xml/
-categories: [thoughts, tools, reading, journal]
+categories: [articles, tools, reading, journal]
 ---</pre>
 </figure>
 
@@ -45,7 +45,7 @@ The filtering of posts is not only working for categories. You can also filter f
 <pre>---
 layout: postfeed
 permalink: /feed.xml/
-tags: [thoughts, tools, reading, journal]
+tags: [articles, tools, reading, journal]
 ---</pre>
 </figure>
 

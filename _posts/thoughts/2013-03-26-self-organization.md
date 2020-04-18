@@ -1,7 +1,7 @@
 ---
 title: Self-organization
 subtitle:   A force of life
-categories: thoughts
+categories: articles
 ---
 Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.
 
@@ -66,7 +66,7 @@ The spontaneous development of new system properties will happen while these pro
 
 We can find many examples in nature for strong self-organizational forces. The heart is a complex, self-organizing system. Single heart cells generate a synchronized electrical pulse excitation, leading to contractions in a steady rhythm.
 
-The neurons of the human brain can be described. Even their communication protocols can be analyzed. But who, by looking at these components of the system called a brain, could predict that from these neurons and synapses something like thoughts, feelings, music, dreams, and consciousness will develop? And isn´t it astonishing that the total number of neurons is determined with our birth – no further will be added — only the connections between the neurons and by that the possibility of interdependencies will increase during our lifetime.
+The neurons of the human brain can be described. Even their communication protocols can be analyzed. But who, by looking at these components of the system called a brain, could predict that from these neurons and synapses something like articles, feelings, music, dreams, and consciousness will develop? And isn´t it astonishing that the total number of neurons is determined with our birth – no further will be added — only the connections between the neurons and by that the possibility of interdependencies will increase during our lifetime.
 
 Language develops in the same manner. The interdependencies within our brains continue in the outer world. Thinking and speaking are connected and speaking – as only being one of many ways to communicate – connects our thinking with the thought of others. The language we use is not the result of a central construction process with the grammar specified upfront. Language evolves and can function without a primary constructing instance.
 

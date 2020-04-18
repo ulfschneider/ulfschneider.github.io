@@ -1,7 +1,7 @@
 ---
 title: The agile worker
 subtitle: The agile worker exists because of discrepancies between theory and reality
-categories: thoughts
+categories: articles
 abstract: The agile worker exists because differences exist between theory and reality and because insights can be gained through these discrepancies.
 ---
 
@@ -60,7 +60,7 @@ The defined process model, in which the apriori planning allows to predict which
 
 Stop. This is too simple. Defined processes, when functioning, are mental models that are anchored in reality. Functioning defined processes are part of the agile worker's toolbox. They are building blocks that can be combined to new solutions. They lower the amount of energy that is needed to come to results. Indeed they are to some extent part of the professional identity of the agile worker because this is what has been learned and what can be picked up to come to results faster, with lower risk and less energy input. The learning process is empiric; the learned is defined and will be reused to learn the new.
 
-Compare it to a child learning to tie the shoes. At first, this is an empiric process with all senses sharp. From the first success to the automatic procedure some time is required, and then no further thoughts go into it. Higher goals are to reach.
+Compare it to a child learning to tie the shoes. At first, this is an empiric process with all senses sharp. From the first success to the automatic procedure some time is required, and then no further articles go into it. Higher goals are to reach.
 
 Sometimes the most difficult task is in the questioning of the already learned. What was successful in the past may no longer help in the future. The agile worker should be prepared to move out of the comfort zone and to stand in for new insights. The new insight often does not have a lobby nor is it mainstream. Instead, the new insight will challenge the status quo. This will move boundaries, and it comes along with giving up personal safety. Because all new has to cleave its way.
 

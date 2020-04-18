@@ -16,7 +16,7 @@ if (workbox) {
     //Caching for the search
     precacheAndRoute([
         { url: '/reading/', revision: null },
-        { url: '/thoughts/', revision: null },
+        { url: '/articles/', revision: null },
         { url: '/tools/', revision: null },
         { url: '/journal/', revision: null },
         { url: '/search/', revision: null },

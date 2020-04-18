@@ -1,7 +1,7 @@
 ---
 title:  Supersize
 subtitle: Do not let scaled agile be your scaled snake oil
-categories: thoughts
+categories: articles
 ---
 We have to scale agile when more than one team is required to get a thing delivered. Each team, not more than ten members. There will be adjacent topics which belong to an agile organization, but when we focus just on delivery, that´s it: multiple teams working on one thing.
 
@@ -50,7 +50,7 @@ The centralized planning, disassembly, and automation of work brought us to the 
 <figcaption>Figure: The Taylor-Tub [Wohland and Wiemeyer 2007:23]</figcaption>
 </figure>
 
-In the Taylor-Tub the thoughts of the individual are not of importance, because all workflows, procedures, and processes are already defined upfront and have to be followed. This makes the system robust, but inflexible. We have been educated for this world of working, which means we have been taught to follow. This brought up disruptive productivity growth and inert mass markets during the last century. The biggest problem to solve for these markets: how to produce as much as possible at the lowest price.
+In the Taylor-Tub the articles of the individual are not of importance, because all workflows, procedures, and processes are already defined upfront and have to be followed. This makes the system robust, but inflexible. We have been educated for this world of working, which means we have been taught to follow. This brought up disruptive productivity growth and inert mass markets during the last century. The biggest problem to solve for these markets: how to produce as much as possible at the lowest price.
 
 Today's markets are more and more characterized by their narrowness and/or complexity. This complexity requires a better understanding of customer needs, higher flexibility and often interdisciplinary approaches. Those companies that can create and live up to such dynamics, the top performers, set the less capable companies under pressure. The biggest problem to solve for these markets: how to connect to the customer, identify what delivers real value and be able to do it fast. Companies that can not create the dynamics will suffer the pressure. 
 
