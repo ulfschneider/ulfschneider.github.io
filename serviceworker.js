@@ -12,20 +12,27 @@ if (workbox) {
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
+
+    //Caching for the search
     precacheAndRoute([
+        { url: '/reading/', revision: null },
+        { url: '/thoughts/', revision: null },
+        { url: '/tools/', revision: null },
+        { url: '/journal/', revision: null },
         { url: '/search/', revision: null },
-        { url: '/r/lunr.js', revision: null }
+        { url: '/feed.xml/', revision: null },
+        { url: '/colophon/', revision: null },        
+        { url: '/ownership/', revision: null }
     ], {
-        // Ignore all URL parameters.
-        ignoreURLParametersMatching: [/.*/]
+        cacheName: 'base-cache',
+        ignoreURLParametersMatching: [new RegExp('.*')]
     });
 
-
-    //For everything that´s to be loaded from this site, use stale-while-revalidate strategy
-    registerRoute(
-        new RegExp('\/.*'),
-        new StaleWhileRevalidate()
-    );
+    precacheAndRoute([
+        { url: 'https://unpkg.com/lunr/lunr.js', revision: null }
+    ], {
+        cacheName: 'static-resources'
+    });
 
     // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
     registerRoute(
@@ -69,6 +76,16 @@ if (workbox) {
         new RegExp('\.(?:js|css)$'),
         new StaleWhileRevalidate({
             cacheName: 'static-resources',
+        })
+    );
+
+        //As a general rule, 
+    //for everything that´s to be loaded from this site, 
+    //use stale-while-revalidate strategy
+    registerRoute(
+        new RegExp('\/.*'),
+        new StaleWhileRevalidate({
+            cacheName: 'base-cache'
         })
     );
 
