@@ -14,6 +14,7 @@ if (workbox) {
 
     precacheAndRoute([
         { url: '/search/', revision: null },
+        { url: '/r/lunr.js', revision: null }
     ], {
         // Ignore all URL parameters.
         ignoreURLParametersMatching: [/.*/]
