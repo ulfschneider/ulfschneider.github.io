@@ -22,7 +22,7 @@ if (workbox) {
 
     //For everything that´s to be loaded from this site, use stale-while-revalidate strategy
     registerRoute(
-        new RegExp('/.*'),
+        new RegExp('\/.*'),
         new StaleWhileRevalidate()
     );
 
