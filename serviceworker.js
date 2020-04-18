@@ -29,7 +29,7 @@ if (workbox) {
     });
 
     precacheAndRoute([
-        { url: 'https://unpkg.com/lunr/lunr.js', revision: null }
+        { url: '/r/lunr.js', revision: null }
     ], {
         cacheName: 'static-resources'
     });
