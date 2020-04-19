@@ -70,7 +70,9 @@ if (workbox) {
         { url: '/feed.xml/', revision: null },
         { url: '/colophon/', revision: null },
         { url: '/ownership/', revision: null }
-    ]);
+    ], {
+        ignoreURLParametersMatching: [new RegExp('.*')]
+    });
 
     //As a general rule, 
     //for everything that´s to be loaded from this site, 
