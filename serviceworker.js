@@ -1,12 +1,13 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
+
 if (!workbox) {
     console.error('Workbox didn´t load');
 }
 
 if (workbox) {
-
     const { registerRoute } = workbox.routing;
+    const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
@@ -14,7 +15,7 @@ if (workbox) {
     precacheAndRoute([
         { url: '/r/lunr.js', revision: null }
     ], {
-        cacheName: 'static-resources'
+        cacheName: 'static-resources'        
     });
 
     // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
@@ -66,9 +67,7 @@ if (workbox) {
     //for everything that´s to be loaded from this site, 
     registerRoute(
         new RegExp('\/.*'),
-        new NetworkFirst({
-            cacheName: 'base-cache'
-        })
+        new NetworkFirst()
     );
 
 }
