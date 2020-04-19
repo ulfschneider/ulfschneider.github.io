@@ -11,7 +11,7 @@ With "[Going offline](https://www.youtube.com/watch?v=RVdW-P_oAJ0)", Jeremy Keit
 
 Jeremy explains the logic of the Service Worker very well and presents some JavaScript code for fetching and caching data. One of the takeaways for me here: *logic is more important than code.*  
 
-He is also giving an excellent example for what content could be presented with an offline page.
+He is also giving an excellent example for the content presented with an offline page.
 
 
 
