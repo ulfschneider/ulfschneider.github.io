@@ -12,11 +12,7 @@ if (workbox) {
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
-    precacheAndRoute([
-        { url: '/r/lunr.js', revision: null }
-    ], {
-        cacheName: 'static-resources'        
-    });
+
 
     // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
     registerRoute(
@@ -62,6 +58,19 @@ if (workbox) {
             cacheName: 'static-resources',
         })
     );
+
+
+    precacheAndRoute([
+        { url: '/reading/', revision: null },
+        { url: '/articles/', revision: null },
+        { url: '/tools/', revision: null },
+        { url: '/journal/', revision: null },
+        { url: '/search/', revision: null },
+        { url: '/r/lunr.js', revision: null },
+        { url: '/feed.xml/', revision: null },
+        { url: '/colophon/', revision: null },
+        { url: '/ownership/', revision: null }
+    ]);
 
     //As a general rule, 
     //for everything that´s to be loaded from this site, 
