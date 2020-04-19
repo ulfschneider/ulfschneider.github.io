@@ -41,8 +41,6 @@ blockquote {
   line-height: 1.3em;
   font-size: var(--space-1);  
   font-weight: normal;
-  margin-left: calc((100% - var(--regular-width)) / 2) !important;       
-  max-width: unset !important;
   margin-right: 0; 
 }
 

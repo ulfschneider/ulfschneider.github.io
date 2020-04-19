@@ -30,7 +30,7 @@ The software craftsmanship movement [[Bradbury et al. 2009]][craftsmanship] can 
 
 By claiming our work as being art, the development opportunities will expand for the individual, the team and the surrounding organization. Now it´s all about purpose, autonomy, and mastery. Seth Godin explains what art in work may be:
 
-<figure class="breakout-r">
+<figure class="breakout-l">
 <blockquote>
 There used to be two teams in every workplace: management and labor. Now there’s a third team, the linchpins. These people invent, lead (regardless of title), connect others, make things happen, and create order out of chaos. They figure out what to do when there’s no rule book. They delight and challenge their customers and peers. They love their work, pour their best selves into it, and turn each day into a kind of art. 
 </blockquote>
@@ -39,7 +39,7 @@ There used to be two teams in every workplace: management and labor. Now there�
 
 By Seth Godin's definition an artist is
 
-<figure class="breakout-r">
+<figure class="breakout-l">
 <blockquote>… someone who uses bravery, insight, creativity, and boldness to challenge the status quo. And an artist takes it personally. 
 </blockquote>
 <figcaption>Seth Godin</figcaption>
