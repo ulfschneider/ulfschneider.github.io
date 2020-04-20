@@ -14,7 +14,7 @@ A User Story can cover vast amounts of functionality with a single sentence, whi
 - A smaller feature is much easier to understand, and there is less likelihood of a lack of consensus between team members.
 - When slicing a significant function into smaller pieces, you will often realize that not every single bit is required, this will help you to reduce coding, testing, documentation and everything else you need to do to get your software delivered.
 - Small slices allow the team to get small wins on an almost daily basis, leading to much higher engagement.
-- Your daily scrums become far more exciting and useful. Instead of "yeah, I'm 20% done adding all of the new schemas to the DB", you get "for that story we got the time stamps working in the UI, and today we're going to make the data persist".
+- Your daily scrums become far more exciting and useful. Instead of "yeah, I'm 20% done adding all of the new schemas to the DB," you get "for that story we got the time stamps working in the UI, and today we're going to make the data persist."
 - A smaller size tends to make estimates more accurate (though estimates are not too important, as your stories should be small anyway).
 
 ## JIRA is time-consuming for splitting

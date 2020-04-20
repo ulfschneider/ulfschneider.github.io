@@ -17,12 +17,12 @@ Agile is not implementing a process and then follow. Agile has to be earned, not
 Every organization is unique
 ---
 
-Though, every organization is unique and has to find answers to questions like "what delivers value?", "What is a success?", "How would we know we achieved success?" and, of course, "Why to be agile?" and "What does it mean to be agile?" – there are some general properties which I believe characterize agile organizations.
+Though, every organization is unique and has to find answers to questions like "what delivers value?," "What is a success?," "How would we know we achieved success?" and, of course, "Why to be agile?" and "What does it mean to be agile?" – there are some general properties which I believe characterize agile organizations.
 
 Agile properties
 ---
 
-Find out, if this is something for you: Center around people and results, not processes. Processes are servant, not master. Still, continuously improve processes and focus less on improving the monitoring of people. Identify what brings value to your customers and organize around delivering that value. Money is not the goal; it is a result which comes from achieving value for delighted customers. Have a straight line from your product strategy to your release strategy to the delivery order of the features within a release. Things are ordered in a way to deliver the highest value first, in small increments regularly. The people are oriented about that and understand. Transparency on all levels with everyone seeing the same figures, whether it´s the progress of value delivery or costs and earnings. The workforce is emancipated and authority is brought to where information lives and not information is brought via monitoring chains to "authorities". Give control to people and not take control. Decentralize and find ways to let information and energy flow smoothly to the places where needed. Be clear about the goals and intent, but leave space for the workforce to find ways how to achieve the goals. Grow competency to perform.
+Find out, if this is something for you: Center around people and results, not processes. Processes are servant, not master. Still, continuously improve processes and focus less on improving the monitoring of people. Identify what brings value to your customers and organize around delivering that value. Money is not the goal; it is a result which comes from achieving value for delighted customers. Have a straight line from your product strategy to your release strategy to the delivery order of the features within a release. Things are ordered in a way to deliver the highest value first, in small increments regularly. The people are oriented about that and understand. Transparency on all levels with everyone seeing the same figures, whether it´s the progress of value delivery or costs and earnings. The workforce is emancipated and authority is brought to where information lives and not information is brought via monitoring chains to "authorities." Give control to people and not take control. Decentralize and find ways to let information and energy flow smoothly to the places where needed. Be clear about the goals and intent, but leave space for the workforce to find ways how to achieve the goals. Grow competency to perform.
 
 Strive for a learning attitude on all levels to enable the organization to get better and to lead change. Team and personal growth are not only lip service and to be a leader is about duties and responsibilities and not necessarily about privileges. Leaders are cultivators rather than controllers [Mayer 2013:63]. Instead of one-way, top-down commanding communication, the horizontal discursive approach is the default. Top-down is only used where needed. This organization is more of a leader-leader type instead of playing the leader-follower game (compare with [Marquet 2013]). You want leaders on all levels and not people with their brains off and only following given procedures. 
 
@@ -106,7 +106,7 @@ Picking up the same questions I already asked for the defined process model:
 People 
 ---
 In this short enumeration from the market over problem class to the process model, the last mentioned is the people. Last, not least. People are the most important. Everyone counts, it is no longer that people are being told what to do and follow. With the follower mental model, you will not survive in dynamic, competitive markets or complex problem situations. 
-The only way to survive is with dynamic leaders at all levels in the organization; people who explore problem and solution spaces and find ways to achieve things, artists, status quo challengers with excellent skills. These people have the drive to achieve and strive for purpose, autonomy, and mastery. Of course, in job advertisements, all companies seek for this kind of folks, but after the hiring process, in the "real life", these talents are being treated like if they were all the same and interchangeable, average, like resources, often without any sense and respect. To make it clear, the agile mindset asks for creativity, attitude, know-how, opinions, and cooperation. We want people in their entireness and give them space to grow. We want them to ask "why" and insisting on answers. I believe, everyone in current corporate structures has the ability and the wish to act as a whole human being, but when people are treated day-in and day-out as interchangeable resources, it doesn´t take long, and they behave accordingly, switch brains off and do something interesting in their spare time. You know – setting constraints directs self-organization!
+The only way to survive is with dynamic leaders at all levels in the organization; people who explore problem and solution spaces and find ways to achieve things, artists, status quo challengers with excellent skills. These people have the drive to achieve and strive for purpose, autonomy, and mastery. Of course, in job advertisements, all companies seek for this kind of folks, but after the hiring process, in the "real life," these talents are being treated like if they were all the same and interchangeable, average, like resources, often without any sense and respect. To make it clear, the agile mindset asks for creativity, attitude, know-how, opinions, and cooperation. We want people in their entireness and give them space to grow. We want them to ask "why" and insisting on answers. I believe, everyone in current corporate structures has the ability and the wish to act as a whole human being, but when people are treated day-in and day-out as interchangeable resources, it doesn´t take long, and they behave accordingly, switch brains off and do something interesting in their spare time. You know – setting constraints directs self-organization!
 
 To sum it up, agile does help in competitive dynamic markets. It does help to solve complex problems by leveraging an empirical process model and reinforcing the self-awareness of people as whole human beings.
 
@@ -200,31 +200,31 @@ Scaling agile is about emancipating people. Strive for clarity in goals and inte
 References
 ---
 [Beedle and Schwaber 2002] 
-: K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+: K. Schwaber, M. Beedle, "Agile Software Development with Scrum," Pearson Prentice Hall, 2002
 
 [Cohn 2014] 
-: M. Cohn, "Introducing the LAFABLE Process for Scaling Agile", 2014, <http://www.mountaingoatsoftware.com/blog/introducing-the-lafable-process-for-scaling-agile>
+: M. Cohn, "Introducing the LAFABLE Process for Scaling Agile," 2014, <http://www.mountaingoatsoftware.com/blog/introducing-the-lafable-process-for-scaling-agile>
 
 [Conway 1968] 
-: M. E. Conway, "How Do Committees Invent?", 1968, <http://www.melconway.com/Home/Conways_Law.html>
+: M. E. Conway, "How Do Committees Invent?," 1968, <http://www.melconway.com/Home/Conways_Law.html>
 
 [Jeffries 2015] 
-: R. Jeffries, "Do we really need another method?", 2015, <http://ronjeffries.com/articles/2015-07-07-yet-another-method/>
+: R. Jeffries, "Do we really need another method?," 2015, <http://ronjeffries.com/articles/2015-07-07-yet-another-method/>
 
 [L.A.F.A.B.L.E] 
-: M. Cohn, "Large Agile Framework for Big, Lumbering Enterprises", 2014, <http://www.lafable.com>
+: M. Cohn, "Large Agile Framework for Big, Lumbering Enterprises," 2014, <http://www.lafable.com>
 
 [Marquet 2013] 
-: L. D. Marquet, "Turn the Ship Around! A true story of turning followers into leaders.", Penguin, 2013
+: L. D. Marquet, "Turn the Ship Around! A true story of turning followers into leaders.," Penguin, 2013
 
 [Mayer 2013] 
-: T. Mayer, "The People´s Scrum, Agile Ideas for Revolutionary Transformation", Dymaxicon, 2013
+: T. Mayer, "The People´s Scrum, Agile Ideas for Revolutionary Transformation," Dymaxicon, 2013
 
 [Wohland and Wiemeyer 2007] 
-: G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen", Murmann Verlag, 2007
+: G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen," Murmann Verlag, 2007
 
 [Schwaber 2007] 
-: K. Schwaber, "The Enterprise and Scrum", Microsoft Press, 2007
+: K. Schwaber, "The Enterprise and Scrum," Microsoft Press, 2007
 
 
 [cohn2014]: http://www.mountaingoatsoftware.com/blog/introducing-the-lafable-process-for-scaling-agile

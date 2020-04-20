@@ -94,13 +94,13 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         {%- for p in site.posts -%}
         {%- for meta in pageMeta -%}
         {%- if p.published != false -%}
-        {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
+        {%- if meta == ."" or p.tags contains meta or p.categories contains meta -%}
         <item>
             <title>{{ p.title | xml_escape }}</title>
             <author>{{ p.author }}</author>
             <description>
                 {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
-                {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
+                {{- p.content | xml_escape | replace: "src=&quot;/,"imageUrl | replace: "href=&quot;/,"postUrl -}}
             </description>
             <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>
             <link>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</link>

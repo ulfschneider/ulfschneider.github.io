@@ -16,7 +16,7 @@ To achieve conceptual integrity, it has to be considered during the entire desig
 
 Scrum and Architecture
 ---
-The [Agile Manifesto][agilemanifesto] values *"responding to change over following a plan".* By taking this statement seriously, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adapt and to come to better and more appropriate solutions while delivering results.
+The [Agile Manifesto][agilemanifesto] values *"responding to change over following a plan."* By taking this statement seriously, we accept that it makes sense to inspect our behavior and our achievements in a continuous manner. We do this to learn, to adapt and to come to better and more appropriate solutions while delivering results.
 
 Scrum is a team-oriented management framework for agile product development that creates transparency and has this kind inspect and adapt built in. Work is being *"done"* every two or so weeks, and at the end of these so-called Sprints, a process inspection and a product inspection is being held by the delivery team.
 
@@ -243,7 +243,7 @@ In Scrum, we handle with requirements in the form of User Stories. The Product B
 
 A User Story does not explain how to build it. That is intentional. The User Story says what, why and gives context, but it does not tell the how to give room for self-organization.
 
-> The Storyboard supports the mapping from the *"what"* to the *"how".* The relevant tasks for a specific Story will be visualized in the context of the components they belong to.
+> The Storyboard supports the mapping from the *"what"* to the *"how."* The relevant tasks for a specific Story will be visualized in the context of the components they belong to.
 
 You start with a BBL diagram that contains the components you think are needed to build the Story. Draw the BBL on a flipchart or whiteboard. Now you break down the story into tasks by writing down each task on a sticky note and placing it on the component it belongs to in the BBL diagram.
 
@@ -316,35 +316,35 @@ References
 : Agile Manifesto, 2001, <http://agilemanifesto.org>
 
 [Beedle and Schwaber 2002] 
-: K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+: K. Schwaber, M. Beedle, "Agile Software Development with Scrum," Pearson Prentice Hall, 2002
 
 [Brooks 1995] 
-: F. P. Brooks, "The Mythical Man Month", Addison Wesley 1995
+: F. P. Brooks, "The Mythical Man Month," Addison Wesley 1995
 
 [Brooks 2010] 
-: F. P. Brooks, "The Design of Design", Addison Wesley 2010
+: F. P. Brooks, "The Design of Design," Addison Wesley 2010
 
 [Conway 1968] 
-: M. E. Conway, "How Do Committees Invent?", 1968, <http://www.melconway.com/Home/Conways_Law.html>
+: M. E. Conway, "How Do Committees Invent?," 1968, <http://www.melconway.com/Home/Conways_Law.html>
 
 
 [Fowler 2007] 
-: M. Fowler, "Mocks Aren´t Stubs", 2007, <http://www.martinfowler.com/articles/mocksArentStubs.html>
+: M. Fowler, "Mocks Aren´t Stubs," 2007, <http://www.martinfowler.com/articles/mocksArentStubs.html>
 
 [Friedrichsen 2010] 
-: U. Friedrichsen, "Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten", OBJEKTspektrum, Ausgabe 3, 2010
+: U. Friedrichsen, "Wer braucht einen Architekten? Über Ziele und Aufgaben von Architektur und Architekten," OBJEKTspektrum, Ausgabe 3, 2010
 
 [Osterwalder] 
 : Business Model Canvas, <http://businessmodelgeneration.com/book?_ga=1.264929356.2127012834.1431598082>
 
 [Schneider 2011] 
-: [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess", OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/assets/schneider_os_04_11.pdf)
+: [U. Schneider, "Scrum und Architektur, konzeptionelle Integrität im Scrum Prozess," OBJEKTspektrum, Ausgabe 4, 2011]({{site.url}}/assets/schneider_os_04_11.pdf)
 
 [Zörner 2009] 
-: S. Zörner, "Historisch gewachsen? – Entscheidungen festhalten", Java Magazin 04/2009
+: S. Zörner, "Historisch gewachsen? – Entscheidungen festhalten," Java Magazin 04/2009
 
 [Zörner 2010] 
-: S. Zörner, "Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?", Java Magazin 10/2010
+: S. Zörner, "Gretchenfrage 2.0: Was unterscheidet Softwarearchitekten von Entwicklern?," Java Magazin 10/2010
 
 [agilemanifesto]: http://agilemanifesto.org
 

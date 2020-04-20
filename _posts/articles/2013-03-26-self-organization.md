@@ -29,7 +29,7 @@ The only things that evolve by themselves in an organization are disorder, frict
 
 Fredmund Malik is pointing out in his work, that our current organized society developed itself during the last 150 years. In former times there were organizations, too, but they had more of an amplifying function which means that most of the people did more or less the same, e.g., shooting a weapon, transporting bricks, piling one brick on the other. In these organizations, there were only some rare specialists like master builders or officers.
 
-As a consequence of the visibility of tasks and clear hierarchies, the communication patterns were simple. Knowledge did not play a major role, and only some commands were needed to move the entire organization: "fire", "heave-ho" and the like. [Malik 2009:8]
+As a consequence of the visibility of tasks and clear hierarchies, the communication patterns were simple. Knowledge did not play a major role, and only some commands were needed to move the entire organization: "fire," "heave-ho" and the like. [Malik 2009:8]
 
 Of course, knowledge played a role at any time in history, but we have to see this in relation to the knowledge that is needed nowadays.
 
@@ -119,7 +119,7 @@ Wohland and Wiemeyer explain that internal stimulation with incentives creates m
 
 ## Doing
 
-Done work has momentum. Let your task permeate yourself until a solution arises. Act, deliver, inspect and improve. In the agile movement this attitude is captured by a collection of cute sayings: "Cut through the noise by taking action" [Beedle and Schwaber 2002:27], "Deliver early and decide late", "Do, do right, do better".
+Done work has momentum. Let your task permeate yourself until a solution arises. Act, deliver, inspect and improve. In the agile movement this attitude is captured by a collection of cute sayings: "Cut through the noise by taking action" [Beedle and Schwaber 2002:27], "Deliver early and decide late," "Do, do right, do better."
 
 This all comes down to, that in this complex self-organizing universe where always more is unknown than known theoretical models are not enough.
 
@@ -152,34 +152,34 @@ I want to close with a suggestion for a reflection exercise from Jurgen Appelo. 
 ## References
 
 [Appelo 2011]
-: Jurgen Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
+: Jurgen Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders," Addison Wesley 2011
 
 [Beedle and Schwaber 2002]
-: K. Schwaber, M. Beedle, "Agile Software Development with Scrum", Pearson Prentice Hall, 2002
+: K. Schwaber, M. Beedle, "Agile Software Development with Scrum," Pearson Prentice Hall, 2002
 
 [Bendel 2006]
-: Sylvia Bendel, "Grenzen der Steuerung: Umgang mit Komplexität und Selbstorganisation", Referat für die KFH-Tagung "Kommunikation von Fachhochschulen" Luzern 2006, <http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf>
+: Sylvia Bendel, "Grenzen der Steuerung: Umgang mit Komplexität und Selbstorganisation," Referat für die KFH-Tagung "Kommunikation von Fachhochschulen" Luzern 2006, <http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf>
 
 [Hayek 1969]
-: Friedrich A. von Hayek, "Arten der Ordnung, Freiburger Studien, gesammelte Aufsätze", Siebeck 1969
+: Friedrich A. von Hayek, "Arten der Ordnung, Freiburger Studien, gesammelte Aufsätze," Siebeck 1969
 
 [Hayek 2011]
-: Friedrich A. von Hayek, "Law, Legislation and Liberty", Volume 1: Rules and Order, University of Chicago Press, 2011
+: Friedrich A. von Hayek, "Law, Legislation and Liberty," Volume 1: Rules and Order, University of Chicago Press, 2011
 
 [Kaner et al. 2007]
-: Sam Kaner et al., "Facilitators Guide to Participatory Decision Making", Jossey-Bass 2007, Second Edition
+: Sam Kaner et al., "Facilitators Guide to Participatory Decision Making," Jossey-Bass 2007, Second Edition
 
 [Malik 2009]
-: Fredmund Malik, "Systemisches Management, Evolution, Selbstorganisation", Haupt 2009
+: Fredmund Malik, "Systemisches Management, Evolution, Selbstorganisation," Haupt 2009
 
 [Pink 2009]
-: Daniel Pink, TED Talk: "The puzzle of motivation", TED 2009, <http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html>
+: Daniel Pink, TED Talk: "The puzzle of motivation," TED 2009, <http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html>
 
 [Taleb 2012]
-: Nassim Nicholas Taleb, "Anti-Fragility", ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
+: Nassim Nicholas Taleb, "Anti-Fragility," ZURICH.MINDS 2012, <https://www.youtube.com/watch?v=zOUph1JpLlk>
 
 [Wohland and Wiemeyer 2007]
-: Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister", Murmann 2007
+: Gerhard Wohland und Matthias Wiemeyer, "Denkwerkzeuge der Höchstleister," Murmann 2007
 
 [bendel2006]: http://www.sbendel.ch/fileadmin/user_upload/PDF/IK_Vortrag_KFH.pdf
 [pink2009]: http://www.ted.com/talks/lang/de/dan_pink_on_motivation.html

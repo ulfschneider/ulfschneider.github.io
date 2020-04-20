@@ -94,7 +94,7 @@ raising a heavy fur muff that covered the whole of her lower arm towards the vie
 <h2 id="gregor-then">Gregor then</h2>
 
 <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane,
-which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he
+which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense," he
 thought, but that was something he was unable to do because he was used to sleeping on his right, and in his
 present state couldn't get into that position. However hard he threw himself onto his right, he always
 rolled
@@ -104,7 +104,7 @@ back to where he was.</p>
 
 <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering
 legs,
-and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God", he
+and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God," he
 thought, "what a strenuous career it is that I've chosen! Travelling day in and day out.</p>
 
 <h2 id="doing-business">Doing business</h2>
@@ -124,7 +124,7 @@ spots which he didn't know what to make of; and when he tried to feel the place 
 it
 quickly back because as soon as he touched it he was overcome by a cold shudder. He slid back into his
 former
-position. "Getting up early all the time", he thought, "it makes you stupid.</p>
+position. "Getting up early all the time," he thought, "it makes you stupid.</p>
 
 <h2 id="you-ve-got">You´ve got</h2>
 
@@ -208,7 +208,7 @@ transformed in his bed into a horrible vermin.</p>
             weather.
             Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little
             bit
-            longer and forget all this nonsense", he thought, but that was something he was unable to do because he was
+            longer and forget all this nonsense," he thought, but that was something he was unable to do because he was
             used
             to sleeping on his right, and in his present state couldn't get into that position.</p>
 
@@ -217,7 +217,7 @@ transformed in his bed into a horrible vermin.</p>
 <p>However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a
             hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when
             he
-            began to feel a mild, dull pain there that he had never felt before. "Oh, God", he thought, "what a
+            began to feel a mild, dull pain there that he had never felt before. "Oh, God," he thought, "what a
             strenuous
             career it is that I've chosen! Travelling day in and day out. Doing business like this takes much more
             effort

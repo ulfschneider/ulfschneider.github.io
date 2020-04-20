@@ -39,7 +39,7 @@ If a manager intervenes a current Sprint in a Scrum organization, the Scrum Team
 
 ## What and how
 
-It can not quickly be answered _how_ to give self-organizational forces a direction. But one crucial aspect is to set the right constraints. Leaders should talk more "what" and less "how".  
+It can not quickly be answered _how_ to give self-organizational forces a direction. But one crucial aspect is to set the right constraints. Leaders should talk more "what" and less "how."  
 Identify the "what" that has a value and make it absolutely clear!
 
 > Talk more "what" and less "how"
@@ -75,15 +75,15 @@ Ideas change the world. Taylorism has done that and left us behind with apriori 
 ## References
 
 [Appelo 2011]
-: J. Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders", Addison Wesley 2011
+: J. Appelo, "Management 3.0, Leading Agile Developers, Develop Agile Leaders," Addison Wesley 2011
 
 [Kaner 2007]
-: S. Kaner et al., "Facilitator´s Guide to Participatory Decision Making", Second Edition, Jossey-Bass 2007
+: S. Kaner et al., "Facilitator´s Guide to Participatory Decision Making," Second Edition, Jossey-Bass 2007
 
 [Marquet 2012]
-: L. David Marquet, "Turn the ship around, A true story of turning followers into leaders", Penguin 2012
+: L. David Marquet, "Turn the ship around, A true story of turning followers into leaders," Penguin 2012
 
 [Wujec 2010]
-: T. Wujec, "The Marshmallow Challenge", <https://www.tomwujec.com/marshmallowchallenge>
+: T. Wujec, "The Marshmallow Challenge," <https://www.tomwujec.com/marshmallowchallenge>
 
 [wujec]: https://www.tomwujec.com/marshmallowchallenge

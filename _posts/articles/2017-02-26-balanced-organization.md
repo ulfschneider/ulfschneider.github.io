@@ -191,36 +191,36 @@ References
 
 
 [Beck et al. 2001] 
-: K. Beck et al., "Agile Manifesto", 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
+: K. Beck et al., "Agile Manifesto," 2001, [http://agilemanifesto.org](http://agilemanifesto.org)
 
 
 [Bradbury et al. 2009] 
-: D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
+: D. Bradbury et al., "Manifesto for Software Craftsmanship," 2009, [http://manifesto.softwarecraftsmanship.org](http://manifesto.softwarecraftsmanship.org)
 
 
 [Cottmeyer 2011] 
-: M. Cottmeyer, "Untangling Adoption and Transformation", 2011, [http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation](http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation)
+: M. Cottmeyer, "Untangling Adoption and Transformation," 2011, [http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation](http://www.leadingagile.com/2011/01/untangling-adoption-and-transformation)
 
 
 [Kanban]
-: "Kanban Development", [https://en.wikipedia.org/wiki/Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development))
+: "Kanban Development," [https://en.wikipedia.org/wiki/Kanban_(development)](https://en.wikipedia.org/wiki/Kanban_(development))
 
 
 [Kotter 1996] 
-: John P. Kotter, "Leading Change", Harvard Business School Press, 1996
+: John P. Kotter, "Leading Change," Harvard Business School Press, 1996
 
 
 [Sahota 2012] 
-: Michael Sahota, "An Agile Adoption and Transformation Survival Guide", 2012
+: Michael Sahota, "An Agile Adoption and Transformation Survival Guide," 2012
 
 
 [Schneider 2000] 
-: William E. Schneider, "The Reengineering Alternative", McGraw-Hill, 2000
+: William E. Schneider, "The Reengineering Alternative," McGraw-Hill, 2000
 
 
 [Scrum]
-: "Scrum Guides", [http://www.scrumguides.org](http://www.scrumguides.org)
+: "Scrum Guides," [http://www.scrumguides.org](http://www.scrumguides.org)
 
 
 [XP]
-: "Extreme Programming, A gentle introduction", [http://extremeprogramming.org](http://extremeprogramming.org)
+: "Extreme Programming, A gentle introduction," [http://extremeprogramming.org](http://extremeprogramming.org)

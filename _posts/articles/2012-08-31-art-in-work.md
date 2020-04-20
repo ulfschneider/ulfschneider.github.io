@@ -79,25 +79,25 @@ It is not about even more working. Instead, we need to care about a more suitabl
 ## References
 
 [Aicher 1992]
-: O. Aicher, "analog und digital", Ernst & Sohn, 1992
+: O. Aicher, "analog und digital," Ernst & Sohn, 1992
 
 [K. Beck et al.]
-: "Agile Manifesto", 2001, <http://agilemanifesto.org>
+: "Agile Manifesto," 2001, <http://agilemanifesto.org>
 
 [Bradbury et al. 2009]
-: D. Bradbury et al., "Manifesto for Software Craftsmanship", 2009, <http://manifesto.softwarecraftsmanship.org>
+: D. Bradbury et al., "Manifesto for Software Craftsmanship," 2009, <http://manifesto.softwarecraftsmanship.org>
 
 [Godin 2010]
-: S. Godin, "Linchpin, Are You Indespensable?", Penguin Books, 2010
+: S. Godin, "Linchpin, Are You Indespensable?," Penguin Books, 2010
 
 [Schneider 2012]
-: U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo", OBJEKTspektrum, Ausgabe 5, 2012
+: U. Schneider, "Die Kunst in der Arbeit, eine Herausforderung des Status quo," OBJEKTspektrum, Ausgabe 5, 2012
 
 [Wiki]
-: Wikipedia, "Frederick Winslow Taylor", <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
+: Wikipedia, "Frederick Winslow Taylor," <http://en.wikipedia.org/wiki/Frederick_Winslow_Taylor>
 
 [Wohland and Wiemeyer 2007]
-: G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen", Murmann Verlag, 2007
+: G. Wohland, M. Wiemeyer, "Denkwerkzeuge der Höchstleister, Wie dynamikrobuste Unternehmen Marktdruck erzeugen," Murmann Verlag, 2007
 
 [agilemanifesto]: http://agilemanifesto.org
 [craftsmanship]: http://manifesto.softwarecraftsmanship.org

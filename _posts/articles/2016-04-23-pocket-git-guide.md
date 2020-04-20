@@ -200,7 +200,7 @@ The commit messages reveal whether a committer is a good collaborator or not.
 
 Because in the output of a `git log` is not much space to display text and we do not have time to read through many sentences to understand what a commit was about, as a rule of thumb, the subject of the commit message should contain one line and 50 or fewer characters. Start the subject with a capital letter and do not end with a period.
 
-Use the imperative mood, which means "spoken or written as if giving a command or instruction". Examples:
+Use the imperative mood, which means "spoken or written as if giving a command or instruction." Examples:
 
 - Repair css class assignment for git_hub image
 - No underline for slide navigation
@@ -640,31 +640,31 @@ Display your current editor setting
 ## References
 
 [Atlassian Git] 
-: "Getting Git Right", Altassian Git Tutorial, [atlassian.com/git](https://www.atlassian.com/git/)
+: "Getting Git Right," Altassian Git Tutorial, [atlassian.com/git](https://www.atlassian.com/git/)
 
 [Bash Git Completion] 
-: "Install Bash Git Completion", [github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
+: "Install Bash Git Completion," [github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
 
 [Beams 2014] 
-: C. Beams, "How to Write a Git Commit Message", 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
+: C. Beams, "How to Write a Git Commit Message," 2014, [chris.beams.io/posts/git-commit](http://chris.beams.io/posts/git-commit/)
 
 [Caching Your Git Password] 
-: "Caching your GitHub password in Git", [help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/)
+: "Caching your GitHub password in Git," [help.github.com/articles/caching-your-github-password-in-git/](https://help.github.com/articles/caching-your-github-password-in-git/)
 
 [Chacon, Straub 2014] 
-: S. Chacon, B. Straub, "Pro Git", 2014, [git-scm.com/book](https://git-scm.com/book)
+: S. Chacon, B. Straub, "Pro Git," 2014, [git-scm.com/book](https://git-scm.com/book)
 
 [Cheat Sheet] 
-: "Git Cheat Sheet", [www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)
+: "Git Cheat Sheet," [www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)
 
 [Demaree 2016] 
 : D. Demaree, “Git for Humans”, A Book Apart, 2016, [abookapart.com/products/git-for-humans](https://abookapart.com/products/git-for-humans)
 
 [GitHub] 
-: "Welcome home, developers", [github.com](https://github.com)
+: "Welcome home, developers," [github.com](https://github.com)
 
 [GitHub Desktop] 
-: "Simple collaboration from your desktop", [desktop.github.com](https://desktop.github.com)
+: "Simple collaboration from your desktop," [desktop.github.com](https://desktop.github.com)
 
 [GitRef] 
 : Git command reference, [git-scm.com/docs/](https://git-scm.com/docs/)
@@ -673,11 +673,11 @@ Display your current editor setting
 : Git downloads for different platforms, [git-scm.com/downloads](https://git-scm.com)
 
 [Learn] 
-: "Learn Git & Version Control", [www.git-tower.com/learn/](https://www.git-tower.com/learn/)
+: "Learn Git & Version Control," [www.git-tower.com/learn/](https://www.git-tower.com/learn/)
 
 [Tower] 
 : Version control with Git – made easy,
 In a beautiful, efficient, and powerful app, [git-tower.com](https://www.git-tower.com)
 
 [Westby 2014] 
-: E. J. Westby, "Dealing with Emergencies in Git", 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)
+: E. J. Westby, "Dealing with Emergencies in Git," 2014 [24ways.org/2014/dealing-with-emergencies-in-git/](https://24ways.org/2014/dealing-with-emergencies-in-git/)

@@ -70,7 +70,7 @@ Lencioni offers a field guide for leaders, managers, and facilitators with exerc
 ## References
 
 [Lencioni 2002]
-: Patrick Lencioni, "The Five Dysfunctions of a Team", Jossey-Bass 2002
+: Patrick Lencioni, "The Five Dysfunctions of a Team," Jossey-Bass 2002
 
 [Lencioni 2005]
-: Patrick Lencioni, "Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators", Jossey-Bass 2005
+: Patrick Lencioni, "Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators," Jossey-Bass 2005
