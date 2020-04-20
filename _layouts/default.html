@@ -8,18 +8,22 @@
 <body class="pdx">
 	{% include header.html %}
 
-	<main class="x indent word-wrap default">		
+	<main class="x indent word-wrap default">
 		<div class="breakout-l mrb-1">
 			{% include title.html  %}
 		</div>
-		
+
 		{{ content }}
 
-		{% include step-navigation.html %}
+		{% if page.nostepnav != true and page.categories != empty %}
+		<div class="mrt-1">
+			{% include step-navigation.html %}
+		</div>
+		{% endif %}
 	</main>
 
 	<div class="x breakout-r">
-			{% include footer.html %}
+		{% include footer.html %}
 	</div>
 
 	{% include scripts.html %}
