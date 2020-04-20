@@ -52,7 +52,7 @@
     <div class="float-left nowrap truncate">
         <a class="no-deco meta" href="{{ site.url }}{{ next.url }}">
             {% if shortnav %}
-            <div>newer<span aria-hidden="true"> ⟵</span></div>
+            <div><span aria-hidden="true">&lt;&nbsp;</span>newer</div>
             {% else %}
             <div>Newer:</div>
             <div>{% if next.title != "notitle" && next.notitle != true %}
@@ -66,7 +66,7 @@
     <div class="float-right mrl nowrap truncate right">
         <a class="no-deco meta" href="{{ site.url }}{{ prev.url }}">
             {% if shortnav %}
-            <div><span aria-hidden="true">⟶ </span>older</div>
+            <div>older<span aria-hidden="true">&nbsp;&gt;</span></div>
             {% else %}
             <div>Older:</div>
             <div>{% if prev.title != "notitle" && prev.notitle != true %}
