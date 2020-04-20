@@ -1,6 +1,8 @@
 ---
+layout: image
 title: Social distancing while protesting
 categories: journal
+shortnav: no
 ---
 <figure>
 <img alt="" src="/i/EV_MD_eXkAE7J9R.jpeg"/>

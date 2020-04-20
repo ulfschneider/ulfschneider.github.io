@@ -41,14 +41,18 @@
 {% endif %}
 {% if prev or next %}
 
-{% if include.shortNav != true %}{% assign stepNavClass = "mry-1" %}{% endif %}
+{% if page.shortnav != nil %}
+{% assign shortnav = page.shortnav %}
+{% else %}
+{% assign shortnav = include.shortnav %}
+{% endif %}
 
-<nav class="clearfix step-navigation small lh-2 {{stepNavClass}}">
+<nav class="clearfix step-navigation small lh-2">
     {% if next  %}
     <div class="float-left nowrap truncate">
         <a class="no-deco meta" href="{{ site.url }}{{ next.url }}">
-            {% if include.shortNav %}
-            <div>⟵</div>
+            {% if shortnav %}
+            <div>newer<span aria-hidden="true"> ⟵</span></div>
             {% else %}
             <div>Newer:</div>
             <div>{% if next.title != "notitle" && next.notitle != true %}
@@ -61,8 +65,8 @@
     {% if prev  %}
     <div class="float-right mrl nowrap truncate right">
         <a class="no-deco meta" href="{{ site.url }}{{ prev.url }}">
-            {% if include.shortNav %}
-            <div>⟶</div>
+            {% if shortnav %}
+            <div><span aria-hidden="true">⟶ </span>older</div>
             {% else %}
             <div>Older:</div>
             <div>{% if prev.title != "notitle" && prev.notitle != true %}
