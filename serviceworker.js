@@ -1,9 +1,13 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
+//!!!! if you change the prefix, change it also in the offline page !!!!
 const CACHE_PREFIX = 'ulf-codes';
+
 const CACHE_SUFFIX = 'v1';
 const PRECACHE_NAME = 'precache';
 const RUNTIME_CACHE_NAME = 'cache';
+
+//!!!! if you change the url, change it also in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
 if (!workbox) {
@@ -12,7 +16,7 @@ if (!workbox) {
 
 if (workbox) {
     const { cacheNames, setCacheNameDetails } = workbox.core;
-    const { registerRoute } = workbox.routing;
+    const { registerRoute, setCatchHandler } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
@@ -83,16 +87,29 @@ if (workbox) {
     registerRoute(
         /\.(?:js|css|manifest\.json)$/,
         new StaleWhileRevalidate({
-            cacheName: 'static-cache'
+            cacheName: CACHE_PREFIX + '-static-cache'
         })
     );
+
+
+    const networkFirst = new NetworkFirst({
+        cacheName: cacheNames.runtime
+    })
+
+    const networkFirstHandler = async (args) => {
+        try {
+            const response = await networkFirst.handle(args);
+            return response || await caches.match(OFFLINE_URL);
+        } catch (error) {
+            return await caches.match(OFFLINE_URL);
+        }
+    };
 
     registerRoute(
         /.*\//,
-        new NetworkFirst({
-            cacheName: cacheNames.runtime
-        })
+        networkFirstHandler
     );
 
-
 }
+
+
