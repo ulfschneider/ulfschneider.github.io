@@ -1,22 +1,43 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
+const CACHE_PREFIX = 'ulf-codes';
+const CACHE_SUFFIX = 'v6';
+const PRECACHE_NAME = 'precache';
+const RUNTIME_CACHE_NAME = 'cache';
+const OFFLINE_URL = '/offline/';
 
 if (!workbox) {
     console.error('Workbox didn´t load');
 }
 
 if (workbox) {
-    const { registerRoute } = workbox.routing;
+    const { cacheNames, setCacheNameDetails } = workbox.core;
+    const { registerRoute, setCatchHandler } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
     const { ExpirationPlugin } = workbox.expiration;
 
+    setCacheNameDetails({
+        prefix: CACHE_PREFIX,
+        suffix: CACHE_SUFFIX,
+        precache: PRECACHE_NAME,
+        runtime: RUNTIME_CACHE_NAME,
+    });
 
+    //Remove old caches    
+    addEventListener('activate', event => {
+        event.waitUntil(
+            caches
+                .keys()
+                .then(keys => keys.filter(key => !key.endsWith(CACHE_SUFFIX)))
+                .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+        );
+    });
 
     // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
     registerRoute(
-        new RegExp('^https:\/\/fonts\.googleapis\.com'),
+        /'^https:\/\/fonts\.googleapis\.com'/,
         new StaleWhileRevalidate({
             cacheName: 'google-fonts-stylesheets',
         })
@@ -24,7 +45,7 @@ if (workbox) {
 
     // Cache the underlying font files with a cache-first strategy for 1 year.
     registerRoute(
-        new RegExp('^https:\/\/fonts\.gstatic\.com'),
+        /^https:\/\/fonts\.gstatic\.com'/,
         new CacheFirst({
             cacheName: 'google-fonts-webfonts',
             plugins: [
@@ -39,46 +60,42 @@ if (workbox) {
         })
     );
 
+
     registerRoute(
-        new RegExp('\.(?:png|gif|jpg|jpeg|webp|svg)$'),
+        /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$'/,
         new CacheFirst({
             cacheName: 'images',
             plugins: [
                 new ExpirationPlugin({
-                    maxEntries: 60,
+                    maxEntries: 75,
                     maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
                 }),
             ],
         })
     );
 
+    precacheAndRoute([
+        { url: '/r/lunr.js', revision: null },
+        { url: '/r/active-toc.min.js', revision: null },
+        { url: '/r/dynamic-header.min.js', revision: null },
+        { url: OFFLINE_URL, revision: null }
+    ]);
+
     registerRoute(
-        new RegExp('\.(?:js|css)$'),
+        /\.(?:js|css|manifest\.json)$/,
         new StaleWhileRevalidate({
-            cacheName: 'static-resources',
+            cacheName: 'static-cache'
         })
     );
 
 
-    precacheAndRoute([
-        { url: '/reading/', revision: null },
-        { url: '/articles/', revision: null },
-        { url: '/tools/', revision: null },
-        { url: '/journal/', revision: null },
-        { url: '/search/', revision: null },
-        { url: '/r/lunr.js', revision: null },
-        { url: '/feed.xml/', revision: null },
-        { url: '/colophon/', revision: null },
-        { url: '/ownership/', revision: null }
-    ], {
-        ignoreURLParametersMatching: [new RegExp('.*')]
-    });
 
-    //As a general rule, 
-    //for everything that´s to be loaded from this site, 
     registerRoute(
-        new RegExp('\/.*'),
-        new NetworkFirst()
+        /.*\//,
+        new NetworkFirst({
+            cacheName: cacheNames.runtime
+        })
     );
+
 
 }
