@@ -1,7 +1,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 const CACHE_PREFIX = 'ulf-codes';
-const CACHE_SUFFIX = 'v6';
+const CACHE_SUFFIX = 'v1';
 const PRECACHE_NAME = 'precache';
 const RUNTIME_CACHE_NAME = 'cache';
 const OFFLINE_URL = '/offline/';
@@ -12,7 +12,7 @@ if (!workbox) {
 
 if (workbox) {
     const { cacheNames, setCacheNameDetails } = workbox.core;
-    const { registerRoute, setCatchHandler } = workbox.routing;
+    const { registerRoute } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
@@ -60,7 +60,6 @@ if (workbox) {
         })
     );
 
-
     registerRoute(
         /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$'/,
         new CacheFirst({
@@ -87,8 +86,6 @@ if (workbox) {
             cacheName: 'static-cache'
         })
     );
-
-
 
     registerRoute(
         /.*\//,
