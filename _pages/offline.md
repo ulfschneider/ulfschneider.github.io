@@ -2,10 +2,8 @@
 permalink: /offline/
 title: You´re currently offline
 ---
-<p>
-<span id="we-are-offline"></span>
-<span id="something-is-cached"></span>
-</p>
+
+<p id="we-are-offline"></p>
 
 <script>
   
@@ -14,8 +12,6 @@ const URLS_TO_IGNORE = [/\/offline\/$/, /\.xml\/$/]; //!!!! the offline ignore p
 
 const WE_ARE_OFFLINE_ID = 'we-are-offline';
 const WE_ARE_OFFLINE = `We can´t connect to <i>${location.hostname}</i> right now, and the page you want to see has not been saved for offline reading.`
-
-const SOMETHING_IS_CACHED_ID = "something-is-cached";
 const SOMETHING_IS_CACHED = 'However, these pages <i>have been</i> saved:'
 
 async function evaluateCacheKeys(cacheName, cachedURLs) {
@@ -47,23 +43,24 @@ async function evaluateCacheKeys(cacheName, cachedURLs) {
 }
 
 async function evaluateCaches() {
+    let weAreOffline = document.getElementById(WE_ARE_OFFLINE_ID);
+    weAreOffline.innerHTML = WE_ARE_OFFLINE;
+            
     let cachedURLs = [];
     caches.keys().then(async cacheNames => {
         for(let name of cacheNames) {
             await evaluateCacheKeys(name, cachedURLs);
         }
         if (cachedURLs.length) {
-            let weAreOffline = document.getElementById(WE_ARE_OFFLINE_ID);
-            weAreOffline.innerHTML = WE_ARE_OFFLINE;
-            let somethingCached = document.getElementById(SOMETHING_IS_CACHED_ID);
-            somethingCached.innerHTML = SOMETHING_IS_CACHED;            
+            weAreOffline.innerHTML += ' ';
+            weAreOffline.innerHTML += SOMETHING_IS_CACHED;            
+
             let history = document.createElement('ul');
             history.classList = "reset";
-
-            somethingCached.parentNode.insertBefore(history, somethingCached.nextSibling)                      
             for (let url of cachedURLs) {
                 history.innerHTML += '<li><a href="' + url + '">' + url.pathname + '</a></li>';
             }
+            weAreOffline.parentNode.insertBefore(history, weAreOffline.nextSibling)                      
         }
     });
 }
