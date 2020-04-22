@@ -13,7 +13,7 @@ const CACHE_PREFIX = 'ulf-codes'; //!!!!this prefix needs to be the same as what
 const URLS_TO_IGNORE = [/\/offline\/$/, /\.xml\/$/]; //!!!! the offline ignore pattern needs to be in sync with what is used in the service worker !!!
 
 const WE_ARE_OFFLINE_ID = 'we-are-offline';
-const WE_ARE_OFFLINE = `We can´t connect to ${location.hostname} right now, and the page you want to see has not been saved for offline reading.`
+const WE_ARE_OFFLINE = `We can´t connect to <i>${location.hostname}</i> right now, and the page you want to see has not been saved for offline reading.`
 
 const SOMETHING_IS_CACHED_ID = "something-is-cached";
 const SOMETHING_IS_CACHED = 'However, these pages <i>have been</i> saved:'
