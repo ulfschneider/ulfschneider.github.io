@@ -3,7 +3,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 //!!!! if you change the prefix, change it also in the offline page !!!!
 const CACHE_PREFIX = 'ulf-codes';
 
-const CACHE_SUFFIX = 'v1';
+const CACHE_SUFFIX = 'v2';
 const PRECACHE_NAME = 'precache';
 const RUNTIME_CACHE_NAME = 'cache';
 
