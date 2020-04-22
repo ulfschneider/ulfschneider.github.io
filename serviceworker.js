@@ -91,9 +91,8 @@ if (workbox) {
         })
     );
 
-
     const networkFirst = new NetworkFirst({
-        cacheName: cacheNames.runtime
+        cacheName: cacheNames.runtime,
     })
 
     const networkFirstHandler = async (args) => {
@@ -106,7 +105,7 @@ if (workbox) {
     };
 
     registerRoute(
-        /.*\//,
+        /.*/,
         networkFirstHandler
     );
 
