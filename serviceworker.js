@@ -7,7 +7,7 @@ const CACHE_SUFFIX = 'v1';
 const PRECACHE_NAME = 'precache';
 const RUNTIME_CACHE_NAME = 'cache';
 
-//!!!! if you change the url, change it also in the offline page !!!!
+//!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
 if (!workbox) {
@@ -16,7 +16,7 @@ if (!workbox) {
 
 if (workbox) {
     const { cacheNames, setCacheNameDetails } = workbox.core;
-    const { registerRoute, setCatchHandler } = workbox.routing;
+    const { registerRoute } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
