@@ -16,7 +16,7 @@ if (!workbox) {
 
 if (workbox) {
     const { cacheNames, setCacheNameDetails } = workbox.core;
-    const { registerRoute, setCatchHandler } = workbox.routing;
+    const { registerRoute } = workbox.routing;
     const { precacheAndRoute } = workbox.precaching;
     const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
     const { CacheableResponsePlugin } = workbox.cacheableResponse;
