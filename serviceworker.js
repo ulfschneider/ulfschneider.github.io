@@ -3,11 +3,11 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 //!!!! if you change the prefix, change it also in the offline page !!!!
 const CACHE_PREFIX = 'ulf-codes';
 
-const CACHE_SUFFIX = 'v1';
+const CACHE_SUFFIX = 'v0';
 const PRECACHE_NAME = 'precache';
 const RUNTIME_CACHE_NAME = 'cache';
 
-//!!!! if you change the url, change it also in the offline page !!!!
+//!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
 if (!workbox) {
@@ -91,9 +91,8 @@ if (workbox) {
         })
     );
 
-
     const networkFirst = new NetworkFirst({
-        cacheName: cacheNames.runtime
+        cacheName: cacheNames.runtime,
     })
 
     const networkFirstHandler = async (args) => {
@@ -106,7 +105,7 @@ if (workbox) {
     };
 
     registerRoute(
-        /.*\//,
+        /.*/,
         networkFirstHandler
     );
 

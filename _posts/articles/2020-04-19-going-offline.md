@@ -8,13 +8,9 @@ published: no
 - https://ulf.codes/reading/going-offline-book/
 - Workbox
 
-- fonts
-- images
-- css and javascript
-- generic
-
-- offline page
-- precaching
-
+- offline page -> ok
+- ehnance offline page with with meta text.
 - precache generic search
-- renew?
+
+- updating the service worker manually
+- storing for offline manually

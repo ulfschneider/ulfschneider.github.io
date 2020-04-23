@@ -2,21 +2,38 @@
 permalink: /offline/
 title: You´re currently offline
 ---
-We can´t connect to [{{site.url | remove:"https://"}}]({{site.url}}) right now, and the page you want to see has not been saved for offline reading. <span id="something-cached"></span>
+
+<p id="we-are-offline"></p>
 
 <script>
   
-const SOMETHING_CACHED_ID = "something-cached";
-const OFFLINE_URL = '/offline';
-const SOMETHING_CACHED = 'However, these pages <i>have been</i> saved:'
+const CACHE_PREFIX = 'ulf-codes'; //!!!!this prefix needs to be the same as what is used in the service worker!!!!
+const URLS_TO_IGNORE = [/\/offline\/$/, /\.xml\/$/]; //!!!! the offline ignore pattern needs to be in sync with what is used in the service worker !!!
+
+const WE_ARE_OFFLINE_ID = 'we-are-offline';
+const WE_ARE_OFFLINE = `We can´t connect to <i>${location.hostname}</i> right now, and the page you want to see has not been saved for offline reading.`
+const SOMETHING_IS_CACHED = 'However, these pages <i>have been</i> saved:'
 
 async function evaluateCacheKeys(cacheName, cachedURLs) {
-    if (cacheName.startsWith('ulf-codes')) {
+    if (cacheName.startsWith(CACHE_PREFIX)) {
          await caches.open(cacheName).then(async cache => {
-             await cache.keys().then(keys => {
-                keys.forEach(request => {
-                    if (request.url.endsWith('/') && !request.url.includes(OFFLINE_URL)) {
-                        cachedURLs.push(new URL(request.url));
+             await cache.keys().then(requests => {                 
+
+                requests.forEach(request => {
+                    let url = new URL(request.url);
+                    if (url.pathname.endsWith('/') && url.hostname == location.hostname) {
+                        //i´m only interested in cached pages from my host   
+                        //and the pages pathname must end with /                      
+                        let ignore = false;
+                        for (let pattern of URLS_TO_IGNORE) {
+                            if (pattern.test(url.pathname)) {
+                                ignore = true;
+                                break;
+                            }
+                        }             
+                        if (!ignore) {
+                            cachedURLs.push(new URL(request.url));
+                        }       
                     }
                 });                
             });
@@ -26,21 +43,24 @@ async function evaluateCacheKeys(cacheName, cachedURLs) {
 }
 
 async function evaluateCaches() {
+    let weAreOffline = document.getElementById(WE_ARE_OFFLINE_ID);
+    weAreOffline.innerHTML = WE_ARE_OFFLINE;
+            
     let cachedURLs = [];
     caches.keys().then(async cacheNames => {
         for(let name of cacheNames) {
             await evaluateCacheKeys(name, cachedURLs);
         }
         if (cachedURLs.length) {
-            let somethingCached = document.getElementById(SOMETHING_CACHED_ID);
-            somethingCached.innerHTML = SOMETHING_CACHED;            
+            weAreOffline.innerHTML += ' ';
+            weAreOffline.innerHTML += SOMETHING_IS_CACHED;            
+
             let history = document.createElement('ul');
             history.classList = "reset";
-
-            somethingCached.parentNode.insertBefore(history, somethingCached.nextSibling)                      
             for (let url of cachedURLs) {
                 history.innerHTML += '<li><a href="' + url + '">' + url.pathname + '</a></li>';
             }
+            weAreOffline.parentNode.insertBefore(history, weAreOffline.nextSibling)                      
         }
     });
 }
