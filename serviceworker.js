@@ -1,114 +1,84 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
-
 //!!!! if you change the prefix, change it also in the offline page !!!!
 const CACHE_PREFIX = 'ulf-codes';
-
-const CACHE_SUFFIX = 'v0';
-const PRECACHE_NAME = 'precache';
-const RUNTIME_CACHE_NAME = 'cache';
+const CACHE_SUFFIX = 'v1';
+const CACHE_NAME = 'cache';
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
-if (!workbox) {
-    console.error('Workbox didn´t load');
+
+const STATIC_CACHE_NAME = `${CACHE_PREFIX}-static-${CACHE_NAME}-${CACHE_SUFFIX}`;
+const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}-${CACHE_NAME}-${CACHE_SUFFIX}`
+
+const STATIC_PRECACHE_URLS = [
+    OFFLINE_URL,
+    '/css/main.css',
+    '/favicon.ico',
+    '/apple-touch-icon.png',
+    '/manifest.json',
+    '/r/active-toc.min.js',
+    '/r/dynamic-header.min.js',
+    '/r/fluid-vids.min.js',
+    'https://unpkg.com/lunr/lunr.js',
+    'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:wght@200;400;700&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap'
+];
+
+
+//logging on localhost
+function devlog(message) {
+    if (location.hostname == 'localhost') {
+        console.log(message);
+    }
 }
 
-if (workbox) {
-    const { cacheNames, setCacheNameDetails } = workbox.core;
-    const { registerRoute } = workbox.routing;
-    const { precacheAndRoute } = workbox.precaching;
-    const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
-    const { CacheableResponsePlugin } = workbox.cacheableResponse;
-    const { ExpirationPlugin } = workbox.expiration;
-
-    setCacheNameDetails({
-        prefix: CACHE_PREFIX,
-        suffix: CACHE_SUFFIX,
-        precache: PRECACHE_NAME,
-        runtime: RUNTIME_CACHE_NAME,
-    });
-
-    //Remove old caches    
-    addEventListener('activate', event => {
-        event.waitUntil(
-            caches
-                .keys()
-                .then(keys => keys.filter(key => !key.endsWith(CACHE_SUFFIX)))
-                .then(keys => Promise.all(keys.map(key => caches.delete(key))))
-        );
-    });
-
-    // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
-    registerRoute(
-        /'^https:\/\/fonts\.googleapis\.com'/,
-        new StaleWhileRevalidate({
-            cacheName: 'google-fonts-stylesheets',
-        })
-    );
-
-    // Cache the underlying font files with a cache-first strategy for 1 year.
-    registerRoute(
-        /^https:\/\/fonts\.gstatic\.com'/,
-        new CacheFirst({
-            cacheName: 'google-fonts-webfonts',
-            plugins: [
-                new CacheableResponsePlugin({
-                    statuses: [0, 200],
-                }),
-                new ExpirationPlugin({
-                    maxAgeSeconds: 60 * 60 * 24 * 365,
-                    maxEntries: 30,
-                }),
-            ],
-        })
-    );
-
-    registerRoute(
-        /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$'/,
-        new CacheFirst({
-            cacheName: 'images',
-            plugins: [
-                new ExpirationPlugin({
-                    maxEntries: 75,
-                    maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-                }),
-            ],
-        })
-    );
-
-    precacheAndRoute([
-        { url: '/r/lunr.js', revision: null },
-        { url: '/r/active-toc.min.js', revision: null },
-        { url: '/r/dynamic-header.min.js', revision: null },
-        { url: OFFLINE_URL, revision: null }
-    ]);
-
-    registerRoute(
-        /\.(?:js|css|manifest\.json)$/,
-        new StaleWhileRevalidate({
-            cacheName: CACHE_PREFIX + '-static-cache'
-        })
-    );
-
-    const networkFirst = new NetworkFirst({
-        cacheName: cacheNames.runtime,
-    })
-
-    const networkFirstHandler = async (args) => {
-        try {
-            const response = await networkFirst.handle(args);
-            return response || await caches.match(OFFLINE_URL);
-        } catch (error) {
-            return await caches.match(OFFLINE_URL);
-        }
-    };
-
-    registerRoute(
-        /.*/,
-        networkFirstHandler
-    );
-
+//error logging on localhost
+function deverror(message) {
+    if (location.hostname == 'localhost') {
+        console.error(message);
+    }
 }
 
+//precache on install
+addEventListener('install', event => {
+    skipWaiting();
+    event.waitUntil(
+        caches.open(STATIC_CACHE_NAME)
+            .then(async staticCache => {
+                for (let url of STATIC_PRECACHE_URLS) {
+                    try {
+                        await staticCache.add(url);
+                    } catch (err) {
+                        deverror(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
+                    }
+                }
+            })
+    )
+});
 
+//remove old caches on activate    
+addEventListener('activate', event => {
+    event.waitUntil(
+        caches
+            .keys()
+            .then(cacheNames => cacheNames.filter(name => !(name.startsWith(CACHE_PREFIX) && name.endsWith(CACHE_SUFFIX))))
+            .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
+    );
+});
+
+//return the contents of the cache, if available, otherwise use the network
+addEventListener('fetch', event => {
+    const request = event.request;
+    devlog('Requesting ' + request.url);
+    event.respondWith(
+        caches.match(request)
+            .then(responseFromCache => {
+                if (responseFromCache) {
+                    devlog(`Responding from cache ${request.url}`);
+                    return responseFromCache;
+                }
+                devlog(`Responding from network ${request.url}`);
+                return fetch(request)
+                    .catch(error => caches.match(OFFLINE_URL));
+            })
+    );
+}); 
