@@ -1,6 +1,6 @@
 //!!!! if you change the prefix, change it also in the offline page !!!!
 const CACHE_PREFIX = 'ulf-codes';
-const CACHE_SUFFIX = 'v1';
+const CACHE_SUFFIX = 'x';
 const CACHE_NAME = 'cache';
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
@@ -62,6 +62,7 @@ addEventListener('activate', event => {
             .keys()
             .then(cacheNames => cacheNames.filter(name => !(name.startsWith(CACHE_PREFIX) && name.endsWith(CACHE_SUFFIX))))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
+            .then(() => clients.claim())
     );
 });
 
