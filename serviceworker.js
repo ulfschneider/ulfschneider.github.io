@@ -60,7 +60,7 @@ addEventListener('activate', event => {
     event.waitUntil(
         caches
             .keys()
-            .then(cacheNames => cacheNames.filter(name => name.includes(STATIC) && !name.endsWith(CACHE_VERSION)))
+            .then(cacheNames => cacheNames.filter(name => /*name.includes(STATIC) &&*/ !name.endsWith(CACHE_VERSION)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
             .then(() => clients.claim())
     );
