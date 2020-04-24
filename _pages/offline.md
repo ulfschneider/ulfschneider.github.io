@@ -6,7 +6,8 @@ title: You´re currently offline
 <p id="we-are-offline"></p>
 
 <script>
-const URLS_TO_IGNORE = [/\/offline\/$/, /\.xml\/$/]; //!!!! the offline ignore pattern needs to be in sync with what is used in the service worker !!!
+const OFFLINE_URL = {{page.url}};    
+const URLS_TO_IGNORE = [new RegExp(OFFLINE_URL + '$'), /\.xml\/$/]; 
 
 const WE_ARE_OFFLINE_ID = 'we-are-offline';
 const WE_ARE_OFFLINE = `We can´t connect to <i>${location.hostname}</i> right now, and the page you want to see has not been saved for offline reading.`
