@@ -7,9 +7,9 @@
         event.preventDefault();
         let query = event.target['search-query'].value;
         if (query && query.trim()) {
-            location.href = '/search?query=' + query.trim();
+            location.href = '/search/?query=' + query.trim();
         } else {
-            location.href = '/search';
+            location.href = '/search/';
         }
     }
 </script>
