@@ -45,6 +45,10 @@ blockquote {
   margin-right: 0; 
 }
 
+blockquote+figcaption {
+  padding: 0;
+}
+
 img {
   display:block;
   margin-left: auto;
