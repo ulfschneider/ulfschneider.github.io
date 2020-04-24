@@ -3,7 +3,9 @@
         let loadTime = document.getElementById('load-time');
         if (!loadTime) {
             console.log('Could not find dom element with id load-time to indicate the page load time');
+            return;
         }
+        
         let duration = 0;
         //PerformanceNavigationTiming API
         let entries = performance.getEntriesByType("navigation")

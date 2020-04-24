@@ -1,5 +1,6 @@
 const STATIC = 'static';
 const RUNTIME = 'runtime';
+const IMAGE = 'image';
 const CACHE_NAME = 'cache';
 const CACHE_VERSION = Date.now();
 
@@ -8,6 +9,7 @@ const OFFLINE_URL = '/offline/';
 
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
+const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}-${CACHE_VERSION}`;
 const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}-${CACHE_VERSION}`;
 
 const STATIC_PRECACHE_URLS = [
@@ -66,6 +68,17 @@ addEventListener('activate', event => {
     );
 });
 
+async function putIntoCache({ event, cacheName, value }) {
+    const request = event.request;
+    event.waitUntil(
+        caches.open(cacheName)
+            .then(cache => {
+                devlog(`Putting ${request.url} into ${cacheName}`);
+                return cache.put(request, value);
+            }).catch(error => deverror(error))
+    );
+}
+
 //return the contents of the cache, if available, otherwise use the network
 addEventListener('fetch', event => {
     const request = event.request;
@@ -80,7 +93,21 @@ addEventListener('fetch', event => {
                 }
                 devlog(`Responding from network ${request.url}`);
                 return fetch(request)
-                    .catch(error => caches.match(OFFLINE_URL));
+                    .then(responseFromNetwork => {
+                        const copy = responseFromNetwork.clone();
+                        const url = new URL(request.url);
+                        if (url.hostname == 'fonts.gstatic.com' || url.hostname == 'fonts.googleapis.com') {
+                            //put anything from google fonts into the cache
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
+                        } else if (url.pathname.endsWith('.js')) {
+                            //put javascript into the cache
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
+                        } else if (url.pathname.endsWith('.css')) {
+                            //put css into the cache
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
+                        }
+                        return responseFromNetwork;
+                    }).catch(error => caches.match(OFFLINE_URL));
             })
     );
 });
