@@ -6,8 +6,6 @@ title: You´re currently offline
 <p id="we-are-offline"></p>
 
 <script>
-  
-const CACHE_PREFIX = 'ulf-codes'; //!!!!this prefix needs to be the same as what is used in the service worker!!!!
 const URLS_TO_IGNORE = [/\/offline\/$/, /\.xml\/$/]; //!!!! the offline ignore pattern needs to be in sync with what is used in the service worker !!!
 
 const WE_ARE_OFFLINE_ID = 'we-are-offline';
@@ -15,31 +13,30 @@ const WE_ARE_OFFLINE = `We can´t connect to <i>${location.hostname}</i> right n
 const SOMETHING_IS_CACHED = 'However, these pages <i>have been</i> saved:'
 
 async function evaluateCacheKeys(cacheName, cachedURLs) {
-    if (cacheName.startsWith(CACHE_PREFIX)) {
-         await caches.open(cacheName).then(async cache => {
-             await cache.keys().then(requests => {                 
 
-                requests.forEach(request => {
-                    let url = new URL(request.url);
-                    if (url.pathname.endsWith('/') && url.hostname == location.hostname) {
-                        //i´m only interested in cached pages from my host   
-                        //and the pages pathname must end with /                      
-                        let ignore = false;
-                        for (let pattern of URLS_TO_IGNORE) {
-                            if (pattern.test(url.pathname)) {
-                                ignore = true;
-                                break;
-                            }
-                        }             
-                        if (!ignore) {
-                            cachedURLs.push(new URL(request.url));
-                        }       
+    await caches.open(cacheName).then(async cache => {
+        await cache.keys().then(requests => {
+            requests.forEach(request => {
+                let url = new URL(request.url);
+                if (url.pathname.endsWith('/') && url.hostname == location.hostname) {
+                    //i´m only interested in cached pages from my host   
+                    //and the pages pathname must end with /                      
+                    let ignore = false;
+                    for (let pattern of URLS_TO_IGNORE) {
+                        if (pattern.test(url.pathname)) {
+                            ignore = true;
+                            break;
+                        }
                     }
-                });                
+                    if (!ignore) {
+                        cachedURLs.push(new URL(request.url));
+                    }
+                }
             });
         });
-    } 
-    return Promise.resolve(cachedURLs); 
+    });
+
+    return Promise.resolve(cachedURLs);
 }
 
 async function evaluateCaches() {

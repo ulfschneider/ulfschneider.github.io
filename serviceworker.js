@@ -1,14 +1,14 @@
-//!!!! if you change the prefix, change it also in the offline page !!!!
-const CACHE_PREFIX = 'ulf-codes';
-const CACHE_SUFFIX = 'x';
+const STATIC = 'static';
+const RUNTIME = 'runtime';
 const CACHE_NAME = 'cache';
+const CACHE_VERSION = Date.now();
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
 
-const STATIC_CACHE_NAME = `${CACHE_PREFIX}-static-${CACHE_NAME}-${CACHE_SUFFIX}`;
-const RUNTIME_CACHE_NAME = `${CACHE_PREFIX}-${CACHE_NAME}-${CACHE_SUFFIX}`
+const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
+const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}-${CACHE_VERSION}`;
 
 const STATIC_PRECACHE_URLS = [
     OFFLINE_URL,
@@ -55,12 +55,12 @@ addEventListener('install', event => {
     )
 });
 
-//remove old caches on activate    
+//remove old static caches on activate    
 addEventListener('activate', event => {
     event.waitUntil(
         caches
             .keys()
-            .then(cacheNames => cacheNames.filter(name => !(name.startsWith(CACHE_PREFIX) && name.endsWith(CACHE_SUFFIX))))
+            .then(cacheNames => cacheNames.filter(name => name.includes(STATIC) && !name.endsWith(CACHE_VERSION)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
             .then(() => clients.claim())
     );
@@ -70,6 +70,7 @@ addEventListener('activate', event => {
 addEventListener('fetch', event => {
     const request = event.request;
     devlog('Requesting ' + request.url);
+
     event.respondWith(
         caches.match(request)
             .then(responseFromCache => {
@@ -82,4 +83,6 @@ addEventListener('fetch', event => {
                     .catch(error => caches.match(OFFLINE_URL));
             })
     );
-}); 
+});
+
+
