@@ -7,6 +7,7 @@ published: no
 - https://ulf.codes/reading/going-offline-video/
 - https://ulf.codes/reading/going-offline-book/
 - Workbox
+- https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 
 - offline page -> ok
 - ehnance offline page with with meta text.

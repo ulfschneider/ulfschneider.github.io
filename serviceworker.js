@@ -1,16 +1,20 @@
 const STATIC = 'static';
 const RUNTIME = 'runtime';
 const IMAGE = 'image';
+
 const CACHE_NAME = 'cache';
+const CACHE_MINUTES = 60 * 24 * 30; //30 days
 const CACHE_VERSION = Date.now();
+
+const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //10 days
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
-const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}-${CACHE_VERSION}`;
-const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}-${CACHE_VERSION}`;
+const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
+const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
 
 const STATIC_PRECACHE_URLS = [
     OFFLINE_URL,
@@ -40,6 +44,79 @@ function deverror(message) {
     }
 }
 
+function setExpire(headers, minutes) {
+    minutes = minutes ? minutes : CACHE_MINUTES;
+
+    let expires = new Date();
+    expires.setMinutes(expires.getMinutes() + minutes);
+    headers.append(`${CACHE_NAME}-expires`, expires.toUTCString());
+}
+
+function getExpire(headers) {
+    const expires = headers.get(`${CACHE_NAME}-expires`);
+    return expires ? Date.parse(expires) : 0;
+}
+
+async function cloneResponse(response, expireMinutes) {
+
+    cloneHeaders = function (response) {
+        let headers = new Headers();
+        for (var kv of response.headers.entries()) {
+            headers.append(kv[0], kv[1]);
+        }
+        return headers;
+    }
+
+    let clone = response.clone();
+    if (expireMinutes) {
+        let headers = cloneHeaders(clone);
+        setExpire(headers, expireMinutes);
+        return new Promise(resolve => {
+            return clone.blob().then(blob => {
+                resolve(new Response(blob, {
+                    status: clone.status,
+                    statusText: clone.statusText,
+                    headers: headers
+                }));
+            });
+        });
+    } else {
+        return Promise.resolve(clone);
+    }
+}
+
+async function putIntoCache({ event, cacheName, expireMinutes, response }) {
+    //TODO limit items in cache
+    const request = event.request;
+    return cloneResponse(response, expireMinutes)
+        .then(clone => {
+            return caches.open(cacheName)
+                .then(cache => {
+                    devlog(`Putting ${request.url} into ${cacheName}`);
+                    return cache.put(request, clone);
+                })
+        }).catch(error => deverror(error));
+}
+
+async function getFromCache(request) {
+    return caches.match(request)
+        .then(responseFromCache => {
+            if (responseFromCache) {
+                const expires = getExpire(responseFromCache.headers);
+                if (!expires) {
+                    return responseFromCache;
+                }
+
+                const now = new Date();
+                if (expires > now) {
+                    return responseFromCache;
+                } else {
+                    devlog(`${request.url} is expired in cache`);
+                }
+            }
+        });
+}
+
 //precache on install
 addEventListener('install', event => {
     skipWaiting();
@@ -59,33 +136,33 @@ addEventListener('install', event => {
 
 //remove old static caches on activate    
 addEventListener('activate', event => {
-    event.waitUntil(
+    const cleanUpCaches = async () => {
         caches
             .keys()
             .then(cacheNames => cacheNames.filter(name => /*name.includes(STATIC) &&*/ !name.endsWith(CACHE_VERSION)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
-            .then(() => clients.claim())
-    );
+            .then(() => clients.claim());
+    }
+
+    event.waitUntil(cleanUpCaches());
+
 });
 
-async function putIntoCache({ event, cacheName, value }) {
-    const request = event.request;
-    event.waitUntil(
-        caches.open(cacheName)
-            .then(cache => {
-                devlog(`Putting ${request.url} into ${cacheName}`);
-                return cache.put(request, value);
-            }).catch(error => deverror(error))
-    );
-}
 
-//return the contents of the cache, if available, otherwise use the network
+
 addEventListener('fetch', event => {
     const request = event.request;
     devlog('Requesting ' + request.url);
 
+    //TODO network first
+    //if pathname is '\/.*\/$ or '\/.*\/\?
+    //fetch network
+    //put into cache
+    //respond from network
+    
+    //cache first
     event.respondWith(
-        caches.match(request)
+        getFromCache(request)
             .then(responseFromCache => {
                 if (responseFromCache) {
                     devlog(`Responding from cache ${request.url}`);
@@ -94,20 +171,22 @@ addEventListener('fetch', event => {
                 devlog(`Responding from network ${request.url}`);
                 return fetch(request)
                     .then(responseFromNetwork => {
-                        const copy = responseFromNetwork.clone();
                         const url = new URL(request.url);
                         if (url.hostname == 'fonts.gstatic.com' || url.hostname == 'fonts.googleapis.com') {
-                            //put anything from google fonts into the cache
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
-                        } else if (url.pathname.endsWith('.js')) {
-                            //put javascript into the cache
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
-                        } else if (url.pathname.endsWith('.css')) {
-                            //put css into the cache
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, value: copy });
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                        } else if (/\.js$/.test(url.pathname)) {
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                        } else if (/\.css$/.test(url.pathname)) {
+                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                        } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
+                            putIntoCache({ event: event, cacheName: IMAGE_CACHE_NAME, expireMinutes: IMAGE_CACHE_MINUTES, response: responseFromNetwork });
                         }
+
                         return responseFromNetwork;
-                    }).catch(error => caches.match(OFFLINE_URL));
+                    }).catch(error => {
+                        deverror(error);
+                        return caches.match(OFFLINE_URL);
+                    });
             })
     );
 });
