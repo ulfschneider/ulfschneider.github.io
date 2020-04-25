@@ -1,5 +1,5 @@
 ---
-title: Going Offline (book)
+title: Going Offline (book) ★
 categories: reading
 refer: A Book Apart by Jeremy Keith
 ---

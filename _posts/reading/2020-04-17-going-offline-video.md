@@ -1,5 +1,5 @@
 ---
-title: Going Offline (video)
+title: Going Offline (video) ★
 categories: reading
 refer: A talk by Jeremy Keith
 ---
