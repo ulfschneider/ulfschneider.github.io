@@ -139,7 +139,7 @@ addEventListener('activate', event => {
     const cleanUpCaches = async () => {
         caches
             .keys()
-            .then(cacheNames => cacheNames.filter(name => /*name.includes(STATIC) &&*/ !name.endsWith(CACHE_VERSION)))
+            .then(cacheNames => cacheNames.filter(name => name.includes(STATIC) && !name.endsWith(CACHE_VERSION)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
             .then(() => clients.claim());
     }
@@ -149,18 +149,9 @@ addEventListener('activate', event => {
 });
 
 
-
-addEventListener('fetch', event => {
+function cacheFirst(event) {
     const request = event.request;
-    devlog('Requesting ' + request.url);
-
-    //TODO network first
-    //if pathname is '\/.*\/$ or '\/.*\/\?
-    //fetch network
-    //put into cache
-    //respond from network
     
-    //cache first
     event.respondWith(
         getFromCache(request)
             .then(responseFromCache => {
@@ -189,6 +180,20 @@ addEventListener('fetch', event => {
                     });
             })
     );
+}
+
+
+addEventListener('fetch', event => {
+    const request = event.request;
+    devlog('Requesting ' + request.url);
+
+    //TODO network first
+    //if pathname is '\/.*\/$ or '\/.*\/\?
+    //fetch network
+    //put into cache
+    //respond from network
+
+    cacheFirst(event);
 });
 
 
