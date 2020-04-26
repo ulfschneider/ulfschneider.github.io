@@ -99,7 +99,7 @@ async function putIntoCache({ event, cacheName, expireMinutes, response }) {
 }
 
 async function getFromCache(request) {
-    return caches.match(request)
+    return caches.match(request, { ignoreSearch: true })
         .then(responseFromCache => {
             if (responseFromCache) {
                 const expires = getExpire(responseFromCache.headers);
@@ -151,7 +151,7 @@ addEventListener('activate', event => {
 
 function cacheFirst(event) {
     const request = event.request;
-    
+
     event.respondWith(
         getFromCache(request)
             .then(responseFromCache => {
