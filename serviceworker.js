@@ -251,6 +251,5 @@ addEventListener('fetch', event => {
     event.respondWith(handleEvent());
 });
 
-//TODO, when offline, reuse cached assets even when expired
 
 
