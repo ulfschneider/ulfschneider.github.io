@@ -6,7 +6,8 @@ const CACHE_NAME = 'cache';
 const CACHE_MINUTES = 60 * 24 * 30; //30 days
 const CACHE_VERSION = Date.now();
 
-const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //10 days
+const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //cache for 10 days
+const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
@@ -41,6 +42,7 @@ function devlog(message) {
 function deverror(message) {
     if (location.hostname == 'localhost') {
         console.error(message);
+
     }
 }
 
@@ -68,7 +70,7 @@ async function cloneResponse(response, expireMinutes) {
     }
 
     let clone = response.clone();
-    if (expireMinutes) {
+    if (expireMinutes > 0) {
         let headers = cloneHeaders(clone);
         setExpire(headers, expireMinutes);
         return new Promise(resolve => {
@@ -85,8 +87,29 @@ async function cloneResponse(response, expireMinutes) {
     }
 }
 
-async function putIntoCache({ event, cacheName, expireMinutes, response }) {
-    //TODO limit items in cache
+async function ensureCacheLimit(cacheName, limitCount) {
+    //ensure limit count is not exceeded
+    if (limitCount > 0) {
+        await caches.open(cacheName)
+            .then(async cache => {
+                await cache.keys()
+                    .then(async keys => {
+                        let removeCount = keys.length - limitCount;
+                        for (let i = 0; i < removeCount; i++) {
+                            devlog(`Removing ${keys[i].url} from ${cacheName} to ensure cache limit of ${limitCount}`);
+                            await cache.delete(keys[i]);
+                        }
+                    });
+            });
+    }
+}
+
+async function putIntoCache({ event, cacheName, expireMinutes, limitCount, response }) {
+
+    //do not wait for this to return
+    ensureCacheLimit(cacheName, limitCount);
+
+    //put the response into the cache
     const request = event.request;
     return cloneResponse(response, expireMinutes)
         .then(clone => {
@@ -95,7 +118,8 @@ async function putIntoCache({ event, cacheName, expireMinutes, response }) {
                     devlog(`Putting ${request.url} into ${cacheName}`);
                     return cache.put(request, clone);
                 })
-        }).catch(error => deverror(error));
+        })
+        .catch(error => deverror(error));
 }
 
 async function getFromCache(request) {
@@ -145,7 +169,6 @@ addEventListener('activate', event => {
     }
 
     event.waitUntil(cleanUpCaches());
-
 });
 
 
@@ -163,14 +186,33 @@ function cacheFirst(event) {
                 return fetch(request)
                     .then(responseFromNetwork => {
                         const url = new URL(request.url);
-                        if (url.hostname == 'fonts.gstatic.com' || url.hostname == 'fonts.googleapis.com') {
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                        if (url.hostname == 'fonts.gstatic.com'
+                            || url.hostname == 'fonts.googleapis.com') {
+                            putIntoCache({
+                                event: event,
+                                cacheName: STATIC_CACHE_NAME,
+                                response: responseFromNetwork
+                            });
                         } else if (/\.js$/.test(url.pathname)) {
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                            putIntoCache({
+                                event: event,
+                                cacheName: STATIC_CACHE_NAME,
+                                response: responseFromNetwork
+                            });
                         } else if (/\.css$/.test(url.pathname)) {
-                            putIntoCache({ event: event, cacheName: STATIC_CACHE_NAME, response: responseFromNetwork });
+                            putIntoCache({
+                                event: event,
+                                cacheName: STATIC_CACHE_NAME,
+                                response: responseFromNetwork
+                            });
                         } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                            putIntoCache({ event: event, cacheName: IMAGE_CACHE_NAME, expireMinutes: IMAGE_CACHE_MINUTES, response: responseFromNetwork });
+                            putIntoCache({
+                                event: event,
+                                cacheName: IMAGE_CACHE_NAME,
+                                expireMinutes: IMAGE_CACHE_MINUTES,
+                                limitCount: IMAGE_CACHE_LIMIT_COUNT,
+                                response: responseFromNetwork
+                            });
                         }
 
                         return responseFromNetwork;
