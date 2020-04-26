@@ -118,26 +118,18 @@ async function putResponseIntoCache({ request, response, cacheName, expireMinute
     }
 }
 
-async function getFromCache(request) {
-    try {
-        let responseFromCache = await caches.match(request);
-        if (responseFromCache) {
-            const expires = getExpire(responseFromCache.headers);
-            if (!expires) {
-                return responseFromCache;
-            }
+function isExpired(response) {
+    const expires = getExpire(response.headers);
 
-            const now = new Date();
-            if (expires > now) {
-                return responseFromCache;
-            } else {
-                devlog(`${request.url} is expired in cache`);
-            }
+    if (expires > 0) {
+        const now = new Date();
+        if (expires < now) {
+            return true; //response is expired
         }
-    } catch (error) {
-        console.error(error);
     }
+    return false;
 }
+
 
 //precache on install
 addEventListener('install', event => {
@@ -192,51 +184,54 @@ async function networkFirst(event) {
 
 async function cacheFirst(event) {
     const request = event.request;
-    return getFromCache(request)
-        .then(responseFromCache => {
-            if (responseFromCache) {
-                devlog(`Responding from cache ${request.url}`);
-                return responseFromCache;
-            }
-            devlog(`Responding from network ${request.url}`);
-            return fetch(request)
-                .then(async responseFromNetwork => {
-                    const url = new URL(request.url);
-                    if (url.hostname == 'fonts.gstatic.com'
-                        || url.hostname == 'fonts.googleapis.com') {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/\.js$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/\.css$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: IMAGE_CACHE_NAME,
-                            expireMinutes: IMAGE_CACHE_MINUTES,
-                            limitCount: IMAGE_CACHE_LIMIT_COUNT,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    }
+    let responseFromCache = await caches.match(request);
+    if (responseFromCache && !isExpired(responseFromCache)) {
+        devlog(`Responding from cache ${request.url}`);
+        return responseFromCache;
+    } else {
+        return fetch(request)
+            .then(async responseFromNetwork => {
+                const url = new URL(request.url);
+                if (url.hostname == 'fonts.gstatic.com'
+                    || url.hostname == 'fonts.googleapis.com') {
+                    await putResponseIntoCache({
+                        cacheName: STATIC_CACHE_NAME,
+                        request: request,
+                        response: responseFromNetwork.clone()
+                    });
+                } else if (/\.js$/.test(url.pathname)) {
+                    await putResponseIntoCache({
+                        cacheName: STATIC_CACHE_NAME,
+                        request: request,
+                        response: responseFromNetwork.clone()
+                    });
+                } else if (/\.css$/.test(url.pathname)) {
+                    await putResponseIntoCache({
+                        cacheName: STATIC_CACHE_NAME,
+                        request: request,
+                        response: responseFromNetwork.clone()
+                    });
+                } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
+                    await putResponseIntoCache({
+                        cacheName: IMAGE_CACHE_NAME,
+                        expireMinutes: IMAGE_CACHE_MINUTES,
+                        limitCount: IMAGE_CACHE_LIMIT_COUNT,
+                        request: request,
+                        response: responseFromNetwork.clone()
+                    });
+                }
 
-                    return responseFromNetwork;
-                }).catch(error => {
-                    console.error(error);
+                return responseFromNetwork;
+            }).catch(error => {
+                console.error(error);
+                if (responseFromCache) {
+                    //use an outdated cache response, because that is better than nothing
+                    return responseFromCache;
+                } else {
                     return caches.match(OFFLINE_URL);
-                });
-        });
+                }
+            });
+    }
 }
 
 
@@ -255,5 +250,7 @@ addEventListener('fetch', event => {
     devlog('Requesting ' + request.url);
     event.respondWith(handleEvent());
 });
+
+//TODO, when offline, reuse cached assets even when expired
 
 
