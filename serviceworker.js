@@ -12,7 +12,6 @@ const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
-
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
 const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
