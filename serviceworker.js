@@ -59,7 +59,7 @@ function getExpire(headers) {
     return expires ? Date.parse(expires) : 0;
 }
 
-async function cloneResponse(response, expireMinutes) {
+async function maintainExpiration(response, expireMinutes) {
 
     cloneHeaders = function (response) {
         let headers = new Headers();
@@ -69,99 +69,97 @@ async function cloneResponse(response, expireMinutes) {
         return headers;
     }
 
-    let clone = response.clone();
-    if (expireMinutes > 0) {
-        let headers = cloneHeaders(clone);
-        setExpire(headers, expireMinutes);
-        return new Promise(resolve => {
-            return clone.blob().then(blob => {
-                resolve(new Response(blob, {
-                    status: clone.status,
-                    statusText: clone.statusText,
-                    headers: headers
-                }));
+    cloneResponse = async function (response, headers) {
+        try {
+            let blob = await response.blob();
+            return new Response(blob, {
+                status: response.status,
+                statusText: response.statusText,
+                headers: headers ? headers : response.headers
             });
-        });
-    } else {
-        return Promise.resolve(clone);
+        } catch (error) {
+            console.error(error);
+        }
     }
+
+    let headers = cloneHeaders(response);
+    if (expireMinutes > 0) {
+        setExpire(headers, expireMinutes);
+    }
+    return cloneResponse(response, headers);
 }
 
 async function ensureCacheLimit(cacheName, limitCount) {
-    //ensure limit count is not exceeded
-    if (limitCount > 0) {
-        await caches.open(cacheName)
-            .then(async cache => {
-                await cache.keys()
-                    .then(async keys => {
-                        let removeCount = keys.length - limitCount;
-                        for (let i = 0; i < removeCount; i++) {
-                            devlog(`Removing ${keys[i].url} from ${cacheName} to ensure cache limit of ${limitCount}`);
-                            await cache.delete(keys[i]);
-                        }
-                    });
-            });
+    try {
+        if (limitCount > 0) {
+            let cache = await caches.open(cacheName);
+            let keys = await cache.keys();
+            let removeCount = keys.length - limitCount;
+            for (let i = 0; i < removeCount; i++) {
+                devlog(`Removing ${keys[i].url} from ${cacheName} to ensure cache limit of ${limitCount}`);
+                await cache.delete(keys[i]).catch(error => console.error(error));
+            }
+        }
+    } catch (error) {
+        console.error(error);
     }
 }
 
-async function putIntoCache({ event, cacheName, expireMinutes, limitCount, response }) {
-
-    //do not wait for this to return
-    ensureCacheLimit(cacheName, limitCount);
-
-    //put the response into the cache
-    const request = event.request;
-    return cloneResponse(response, expireMinutes)
-        .then(clone => {
-            return caches.open(cacheName)
-                .then(cache => {
-                    devlog(`Putting ${request.url} into ${cacheName}`);
-                    return cache.put(request, clone);
-                })
-        })
-        .catch(error => deverror(error));
+async function cacheResponse({ request, response, cacheName, expireMinutes, limitCount }) {
+    try {
+        let metaResponse = await maintainExpiration(response, expireMinutes)
+        let cache = await caches.open(cacheName);
+        devlog(`Putting ${request.url} into ${cacheName}`);
+        let result = cache.put(request, metaResponse);
+        await ensureCacheLimit(cacheName, limitCount);
+        return result;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 async function getFromCache(request) {
-    return caches.match(request, { ignoreSearch: true })
-        .then(responseFromCache => {
-            if (responseFromCache) {
-                const expires = getExpire(responseFromCache.headers);
-                if (!expires) {
-                    return responseFromCache;
-                }
-
-                const now = new Date();
-                if (expires > now) {
-                    return responseFromCache;
-                } else {
-                    devlog(`${request.url} is expired in cache`);
-                }
+    try {
+        let responseFromCache = await caches.match(request);
+        if (responseFromCache) {
+            const expires = getExpire(responseFromCache.headers);
+            if (!expires) {
+                return responseFromCache;
             }
-        });
+
+            const now = new Date();
+            if (expires > now) {
+                return responseFromCache;
+            } else {
+                devlog(`${request.url} is expired in cache`);
+            }
+        }
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 //precache on install
 addEventListener('install', event => {
+    const precache = async function () {
+        let staticCache = await caches.open(STATIC_CACHE_NAME);
+        for (let url of STATIC_PRECACHE_URLS) {
+            try {
+                await staticCache.add(url);
+            } catch (err) {
+                console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
+            }
+        }
+    }
+
     skipWaiting();
-    event.waitUntil(
-        caches.open(STATIC_CACHE_NAME)
-            .then(async staticCache => {
-                for (let url of STATIC_PRECACHE_URLS) {
-                    try {
-                        await staticCache.add(url);
-                    } catch (err) {
-                        deverror(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
-                    }
-                }
-            })
-    )
+    event.waitUntil(precache())
 });
 
 //remove old static caches on activate    
 addEventListener('activate', event => {
-    const cleanUpCaches = async () => {
-        caches
+    const cleanUpCaches = async function () {
+        return caches
             .keys()
             .then(cacheNames => cacheNames.filter(name => name.includes(STATIC) && !name.endsWith(CACHE_VERSION)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
@@ -184,40 +182,40 @@ function cacheFirst(event) {
                 }
                 devlog(`Responding from network ${request.url}`);
                 return fetch(request)
-                    .then(responseFromNetwork => {
+                    .then(async responseFromNetwork => {
                         const url = new URL(request.url);
                         if (url.hostname == 'fonts.gstatic.com'
                             || url.hostname == 'fonts.googleapis.com') {
-                            putIntoCache({
-                                event: event,
+                            await cacheResponse({
                                 cacheName: STATIC_CACHE_NAME,
-                                response: responseFromNetwork
+                                request: request,
+                                response: responseFromNetwork.clone()
                             });
                         } else if (/\.js$/.test(url.pathname)) {
-                            putIntoCache({
-                                event: event,
+                            await cacheResponse({
                                 cacheName: STATIC_CACHE_NAME,
-                                response: responseFromNetwork
+                                request: request,
+                                response: responseFromNetwork.clone()
                             });
                         } else if (/\.css$/.test(url.pathname)) {
-                            putIntoCache({
-                                event: event,
+                            await cacheResponse({
                                 cacheName: STATIC_CACHE_NAME,
-                                response: responseFromNetwork
+                                request: request,
+                                response: responseFromNetwork.clone()
                             });
                         } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                            putIntoCache({
-                                event: event,
+                            await cacheResponse({
                                 cacheName: IMAGE_CACHE_NAME,
                                 expireMinutes: IMAGE_CACHE_MINUTES,
                                 limitCount: IMAGE_CACHE_LIMIT_COUNT,
-                                response: responseFromNetwork
+                                request: request,
+                                response: responseFromNetwork.clone()
                             });
                         }
 
                         return responseFromNetwork;
                     }).catch(error => {
-                        deverror(error);
+                        console.error(error);
                         return caches.match(OFFLINE_URL);
                     });
             })
