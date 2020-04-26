@@ -191,14 +191,15 @@ async function cacheFirst(event) {
         return fetch(request)
             .then(async responseFromNetwork => {
                 const url = new URL(request.url);
-                if (url.hostname == 'fonts.gstatic.com'
-                    || url.hostname == 'fonts.googleapis.com') {
+                
+              /*  if (url.hostname == 'fonts.gstatic.com'
+                   || url.hostname == 'fonts.googleapis.com') {
                     await putResponseIntoCache({
                         cacheName: STATIC_CACHE_NAME,
                         request: request,
                         response: responseFromNetwork.clone()
                     });
-                } else if (/\.js$/.test(url.pathname)) {
+                } else */if (/\.js$/.test(url.pathname)) {
                     await putResponseIntoCache({
                         cacheName: STATIC_CACHE_NAME,
                         request: request,
@@ -246,7 +247,7 @@ addEventListener('fetch', event => {
         }
     }
 
-    
+
     devlog('Requesting ' + request.url);
     event.respondWith(handleEvent());
 });
