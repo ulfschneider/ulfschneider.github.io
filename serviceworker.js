@@ -247,6 +247,7 @@ addEventListener('fetch', event => {
         }
     }
 
+    
     devlog('Requesting ' + request.url);
     event.respondWith(handleEvent());
 });
