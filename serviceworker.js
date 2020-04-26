@@ -105,7 +105,7 @@ async function ensureCacheLimit(cacheName, limitCount) {
     }
 }
 
-async function cacheResponse({ request, response, cacheName, expireMinutes, limitCount }) {
+async function putResponseIntoCache({ request, response, cacheName, expireMinutes, limitCount }) {
     try {
         let metaResponse = await maintainExpiration(response, expireMinutes)
         let cache = await caches.open(cacheName);
@@ -170,70 +170,90 @@ addEventListener('activate', event => {
 });
 
 
-function cacheFirst(event) {
+async function networkFirst(event) {
     const request = event.request;
+    try {
+        if (request.headers.get('Accept').includes('text/html')) {
+            devlog(`Responding from network ${request.url}`);
+            let responseFromNetwork = await fetch(request);
+            if (responseFromNetwork) {
+                await putResponseIntoCache({
+                    cacheName: RUNTIME_CACHE_NAME,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
+            }
+            return responseFromNetwork;
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-    event.respondWith(
-        getFromCache(request)
-            .then(responseFromCache => {
-                if (responseFromCache) {
-                    devlog(`Responding from cache ${request.url}`);
-                    return responseFromCache;
-                }
-                devlog(`Responding from network ${request.url}`);
-                return fetch(request)
-                    .then(async responseFromNetwork => {
-                        const url = new URL(request.url);
-                        if (url.hostname == 'fonts.gstatic.com'
-                            || url.hostname == 'fonts.googleapis.com') {
-                            await cacheResponse({
-                                cacheName: STATIC_CACHE_NAME,
-                                request: request,
-                                response: responseFromNetwork.clone()
-                            });
-                        } else if (/\.js$/.test(url.pathname)) {
-                            await cacheResponse({
-                                cacheName: STATIC_CACHE_NAME,
-                                request: request,
-                                response: responseFromNetwork.clone()
-                            });
-                        } else if (/\.css$/.test(url.pathname)) {
-                            await cacheResponse({
-                                cacheName: STATIC_CACHE_NAME,
-                                request: request,
-                                response: responseFromNetwork.clone()
-                            });
-                        } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                            await cacheResponse({
-                                cacheName: IMAGE_CACHE_NAME,
-                                expireMinutes: IMAGE_CACHE_MINUTES,
-                                limitCount: IMAGE_CACHE_LIMIT_COUNT,
-                                request: request,
-                                response: responseFromNetwork.clone()
-                            });
-                        }
+async function cacheFirst(event) {
+    const request = event.request;
+    return getFromCache(request)
+        .then(responseFromCache => {
+            if (responseFromCache) {
+                devlog(`Responding from cache ${request.url}`);
+                return responseFromCache;
+            }
+            devlog(`Responding from network ${request.url}`);
+            return fetch(request)
+                .then(async responseFromNetwork => {
+                    const url = new URL(request.url);
+                    if (url.hostname == 'fonts.gstatic.com'
+                        || url.hostname == 'fonts.googleapis.com') {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/\.js$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/\.css$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: IMAGE_CACHE_NAME,
+                            expireMinutes: IMAGE_CACHE_MINUTES,
+                            limitCount: IMAGE_CACHE_LIMIT_COUNT,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    }
 
-                        return responseFromNetwork;
-                    }).catch(error => {
-                        console.error(error);
-                        return caches.match(OFFLINE_URL);
-                    });
-            })
-    );
+                    return responseFromNetwork;
+                }).catch(error => {
+                    console.error(error);
+                    return caches.match(OFFLINE_URL);
+                });
+        });
 }
 
 
 addEventListener('fetch', event => {
     const request = event.request;
+    const handleEvent = async function () {
+        let networkFirstResponse = await networkFirst(event);
+        if (networkFirstResponse) {
+            return networkFirstResponse;
+        } else {
+            let cacheFirstResponse = await cacheFirst(event);
+            return cacheFirstResponse;
+        }
+    }
+
     devlog('Requesting ' + request.url);
-
-    //TODO network first
-    //if pathname is '\/.*\/$ or '\/.*\/\?
-    //fetch network
-    //put into cache
-    //respond from network
-
-    cacheFirst(event);
+    event.respondWith(handleEvent());
 });
 
 
