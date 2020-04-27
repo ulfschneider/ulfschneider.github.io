@@ -3,8 +3,8 @@ const RUNTIME = 'runtime';
 const IMAGE = 'image';
 
 const CACHE_NAME = 'cache';
-const CACHE_MINUTES = 60 * 24 * 30; //30 days
 const CACHE_VERSION = Date.now();
+const CACHE_MINUTES = 60 * 24 * 30; //30 days
 
 const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //cache for 10 days
 const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
@@ -16,6 +16,7 @@ const OFFLINE_URL = '/offline/';
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
 const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
+const CACHE_NAMES = [STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTIME_CACHE_NAME];
 
 const STATIC_PRECACHE_URLS = [
     OFFLINE_URL,
@@ -153,7 +154,7 @@ addEventListener('activate', event => {
     const cleanUpCaches = async function () {
         return caches
             .keys()
-            .then(cacheNames => cacheNames.filter(name => name.includes(STATIC) && !name.endsWith(CACHE_VERSION)))
+            .then(cacheNames => cacheNames.filter(name => !CACHE_NAMES.includes(name)))
             .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
             .then(() => clients.claim());
     }
