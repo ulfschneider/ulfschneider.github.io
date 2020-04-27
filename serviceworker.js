@@ -133,7 +133,7 @@ addEventListener('install', event => {
         let staticCache = await caches.open(STATIC_CACHE_NAME);
         for (let url of STATIC_PRECACHE_URLS) {
             try {
-                await staticCache.add(url);
+                await staticCache.add(url); //TODO put offline page into runtime cache
             } catch (err) {
                 console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
             }
