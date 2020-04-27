@@ -1,8 +1,9 @@
 ---
 title: Self-organization
-subtitle:   A force of life
+subtitle: A force of life
 categories: articles
 ---
+
 Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.
 
 This contrasts with the constructing model, in which a central masterminded instance designs the system and controls it. Broadly, one can say that self-organization relies on evolution and construction relies on command and obedience.
@@ -11,14 +12,14 @@ The affirmation of the evolutionary approach is rewarding but will challenge tra
 
 Leaders in agile organizations have the vital function of actively giving self-organizational forces a direction. This seems to be conflicting with the evolutionary approach and to span the tension field even further, here are two quotes I found in [Malik 2009:137]:
 
-<figure class="breakout-l">
+<figure>
 <blockquote>
 The only things that evolve by themselves in an organization are disorder, friction, and malperformance. 
 </blockquote>
 <figcaption>Peter F. Drucker</figcaption>
 </figure>
 
-<figure class="breakout-l">
+<figure>
 <blockquote>
 … the only possibility of transcending the capacity of individual minds is to rely on those super personal, 'self-organizing' forces which create spontaneous orders. 
 </blockquote>
@@ -37,7 +38,7 @@ With the dawning industrialization, a new type of organization arises. Reading a
 
 But how can this new world be connected to the evolution principle?
 
-<figure class="breakout-l">
+<figure>
 <blockquote>The new world is the result of humans acting, but it is not made by a central constructing instance and in this way not the result of human design. </blockquote>
 <figcaption>Friedrich A. von Hayek</figcaption>
 </figure>
@@ -78,7 +79,7 @@ Knowledge organizations are not able to survive without large degrees of freedom
 
 The reaction to unforeseeable events affords ad-hoc negotiation, the breakdown of routines and goal-oriented development of new rules to modify current structures.
 
-<figure class="breakout-l">
+<figure>
 <blockquote>Radically one has to leave behind the idea that everything in the organization can be ruled and controlled </blockquote>
 <figcaption>Sylvia Bendel</figcaption>
 </figure>

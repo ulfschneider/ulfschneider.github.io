@@ -31,23 +31,11 @@
   --fs-h3: 1rem;
   --lh-h3: 1.62em;
 
-  --blockquote-indicator: "";
   --heading-text-transform: unset;
   --heading-font-weight: 700;
   --pre-background: var(--neutral-5);
 }
 
-blockquote {
-  line-height: 1.3em;
-  font-size: var(--space-1);  
-  font-weight: normal;
-  padding: 0;
-  margin-right: 0; 
-}
-
-blockquote+figcaption {
-  padding: 0;
-}
 
 img {
   display:block;

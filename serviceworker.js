@@ -12,7 +12,6 @@ const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
-
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
 const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
@@ -193,14 +192,15 @@ async function cacheFirst(event) {
         return fetch(request)
             .then(async responseFromNetwork => {
                 const url = new URL(request.url);
-                if (url.hostname == 'fonts.gstatic.com'
-                    || url.hostname == 'fonts.googleapis.com') {
+                
+              /*  if (url.hostname == 'fonts.gstatic.com'
+                   || url.hostname == 'fonts.googleapis.com') {
                     await putResponseIntoCache({
                         cacheName: STATIC_CACHE_NAME,
                         request: request,
                         response: responseFromNetwork.clone()
                     });
-                } else if (/\.js$/.test(url.pathname)) {
+                } else */if (/\.js$/.test(url.pathname)) {
                     await putResponseIntoCache({
                         cacheName: STATIC_CACHE_NAME,
                         request: request,
@@ -247,6 +247,7 @@ addEventListener('fetch', event => {
             return cacheFirstResponse;
         }
     }
+
 
     devlog('Requesting ' + request.url);
     event.respondWith(handleEvent());
