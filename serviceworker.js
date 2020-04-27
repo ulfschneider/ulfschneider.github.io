@@ -158,24 +158,84 @@ addEventListener('activate', event => {
 });
 
 
-async function networkFirst(event) {
-    const request = event.request;
-    try {
-        if (request.headers.get('Accept').includes('text/html')) {
-            devlog(`Responding from network ${request.url}`);
-            let responseFromNetwork = await fetch(request);
-            if (responseFromNetwork) {
+async function fetchAndCache({ request, responseFromCache }) {
+
+    if (responseFromCache
+        && getExpire(responseFromCache.headers) > 0
+        && !isExpired(responseFromCache)) {
+        //we have a cache entry that´s not expired
+        //no need to bother the network
+        return responseFromCache;
+    }
+
+    const url = new URL(request.url);
+    if (responseFromCache) {
+        //we have a cache entry, but it´s expired 
+        //or we have no expiration date for the entry
+        //therefore we have to update from the network
+        devlog(`Updating cache ${url}`);
+    } else {
+        //we have no cache and therefore have
+        //to fetch a response from the network
+        devlog(`Responding from network ${url}`);
+    }
+    return fetch(request)
+        .then(async responseFromNetwork => {
+            
+            if (request.headers.get('Accept').includes('text/html')) {
                 await putResponseIntoCache({
                     cacheName: RUNTIME_CACHE_NAME,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
+            } else if (/\/manifest\.json$/.test(url.pathname)) {
+                await putResponseIntoCache({
+                    cacheName: STATIC_CACHE_NAME,
+                    expireMinutes: STATIC_CACHE_MINUTES,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
+            } else if (/js$/.test(url.pathname)) {
+                await putResponseIntoCache({
+                    cacheName: STATIC_CACHE_NAME,
+                    expireMinutes: STATIC_CACHE_MINUTES,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
+            } else if (/css[2]?$/.test(url.pathname)) {
+                await putResponseIntoCache({
+                    cacheName: STATIC_CACHE_NAME,
+                    expireMinutes: STATIC_CACHE_MINUTES,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
+            } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
+                await putResponseIntoCache({
+                    cacheName: STATIC_CACHE_NAME,
+                    expireMinutes: STATIC_CACHE_MINUTES,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
+            } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
+                await putResponseIntoCache({
+                    cacheName: IMAGE_CACHE_NAME,
+                    expireMinutes: IMAGE_CACHE_MINUTES,
+                    limitCount: IMAGE_CACHE_LIMIT_COUNT,
+                    request: request,
+                    response: responseFromNetwork.clone()
+                });
             }
+
             return responseFromNetwork;
-        }
-    } catch (error) {
-        console.error(error);
-    }
+        });
+}
+
+
+async function networkFirst(event) {
+    const request = event.request;
+
+    return fetchAndCache({ request: request })
+        .catch(error => deverror('Failure in network first operation ' + error));
 }
 
 
@@ -183,57 +243,18 @@ async function cacheFirst(event) {
     const request = event.request;
     const responseFromCache = await caches.match(request);
 
-    const fetchAndCache = async function () {
-        return fetch(request)
-            .then(async responseFromNetwork => {
-
-                if (!responseFromCache
-                    || isExpired(responseFromCache)
-                    || getExpire(responseFromCache.headers) == 0) {
-
-                    const url = new URL(request.url);
-                    if (/\/manifest\.json$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            expireMinutes: STATIC_CACHE_MINUTES,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/js$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            expireMinutes: STATIC_CACHE_MINUTES,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/css[2]?$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            expireMinutes: STATIC_CACHE_MINUTES,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: STATIC_CACHE_NAME,
-                            expireMinutes: STATIC_CACHE_MINUTES,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                        await putResponseIntoCache({
-                            cacheName: IMAGE_CACHE_NAME,
-                            expireMinutes: IMAGE_CACHE_MINUTES,
-                            limitCount: IMAGE_CACHE_LIMIT_COUNT,
-                            request: request,
-                            response: responseFromNetwork.clone()
-                        });
-                    }
-                }
-
-                return responseFromNetwork;
-            }).catch(error => {
-                devlog(error);
+    if (responseFromCache && !isExpired(responseFromCache)) {
+        devlog(`Responding from cache ${request.url}`);
+        
+        //clone response and call without await
+        fetchAndCache({ request: request, responseFromCache: responseFromCache.clone() }) 
+            .catch(error => deverror('Failure in cache first operation ' + error)); 
+            
+        return responseFromCache;
+    } else {
+        return fetchAndCache({ request: request })
+            .catch(error => {
+                devlog('Failure in cache first operation ' + error);
                 if (responseFromCache) {
                     //use an outdated cache response, 
                     //because that is better than nothing
@@ -241,30 +262,23 @@ async function cacheFirst(event) {
                 } else {
                     return caches.match(OFFLINE_URL);
                 }
-            });
+            });;
     }
-
-    if (responseFromCache && !isExpired(responseFromCache)) {
-        devlog(`Responding from cache ${request.url}`);
-        fetchAndCache(); //call without await
-        return responseFromCache;
-    } else {
-        return fetchAndCache();
-    }
-
 }
 
 
 addEventListener('fetch', event => {
     const request = event.request;
     const handleEvent = async function () {
-        let networkFirstResponse = await networkFirst(event);
-        if (networkFirstResponse) {
-            return networkFirstResponse;
-        } else {
-            let cacheFirstResponse = await cacheFirst(event);
-            return cacheFirstResponse;
+        if (request.headers.get('Accept').includes('text/html')) {
+            let networkFirstResponse = await networkFirst(event);
+            if (networkFirstResponse) {
+                return networkFirstResponse;
+            }
         }
+
+        let cacheFirstResponse = await cacheFirst(event);
+        return cacheFirstResponse;
     }
 
 
