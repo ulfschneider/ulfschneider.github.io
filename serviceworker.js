@@ -249,7 +249,7 @@ async function cacheFirst(event) {
         //clone response and call without await
         fetchAndCache({ request: request, responseFromCache: responseFromCache.clone() }) 
             .catch(error => deverror('Failure in cache first operation ' + error)); 
-            
+
         return responseFromCache;
     } else {
         return fetchAndCache({ request: request })
@@ -277,8 +277,7 @@ addEventListener('fetch', event => {
             }
         }
 
-        let cacheFirstResponse = await cacheFirst(event);
-        return cacheFirstResponse;
+        return cacheFirst(event);
     }
 
 
