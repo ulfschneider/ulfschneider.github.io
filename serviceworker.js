@@ -3,31 +3,21 @@ const RUNTIME = 'runtime';
 const IMAGE = 'image';
 
 const CACHE_NAME = 'cache';
-const CACHE_VERSION = Date.now();
-const CACHE_MINUTES = 60 * 24 * 30; //30 days
 
+const STATIC_CACHE_MINUTES = 60 * 24; //one day
 const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //cache for 10 days
 const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
 
-const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
+const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
 const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
 const CACHE_NAMES = [STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTIME_CACHE_NAME];
 
 const STATIC_PRECACHE_URLS = [
-    OFFLINE_URL,
-    '/css/main.css',
-    '/favicon.ico',
-    '/apple-touch-icon.png',
-    '/manifest.json',
-    '/r/active-toc.min.js',
-    '/r/dynamic-header.min.js',
-    '/r/fluid-vids.min.js',
-    'https://unpkg.com/lunr/lunr.js',
-    'https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:wght@200;400;700&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap'
+    OFFLINE_URL
 ];
 
 
@@ -79,14 +69,20 @@ async function maintainExpiration(response, expireMinutes) {
             });
         } catch (error) {
             console.error(error);
+            return response;
         }
     }
 
-    let headers = cloneHeaders(response);
-    if (expireMinutes > 0) {
+    if (expireMinutes > 0 && response.type != 'opaque') {
+        //unfortunately, for opaque response types 
+        //the expiration cannot be controlled here
+        let headers = cloneHeaders(response);
         setExpire(headers, expireMinutes);
+        return cloneResponse(response, headers);
+    } else {
+        return response;
     }
-    return cloneResponse(response, headers);
+
 }
 
 async function ensureCacheLimit(cacheName, limitCount) {
@@ -96,7 +92,7 @@ async function ensureCacheLimit(cacheName, limitCount) {
             let keys = await cache.keys();
             let removeCount = keys.length - limitCount;
             for (let i = 0; i < removeCount; i++) {
-                devlog(`Removing ${keys[i].url} from ${cacheName} to ensure cache limit of ${limitCount}`);
+                devlog(`Removing from ${cacheName} to ensure cache limit of ${limitCount}: ${keys[i].url}`);
                 await cache.delete(keys[i]).catch(error => console.error(error));
             }
         }
@@ -109,7 +105,7 @@ async function putResponseIntoCache({ request, response, cacheName, expireMinute
     try {
         let metaResponse = await maintainExpiration(response, expireMinutes)
         let cache = await caches.open(cacheName);
-        devlog(`Putting ${request.url} into ${cacheName}`);
+        devlog(`Putting into ${cacheName}: ${request.url}`);
         let result = cache.put(request, metaResponse);
         await ensureCacheLimit(cacheName, limitCount);
         return result;
@@ -182,57 +178,80 @@ async function networkFirst(event) {
     }
 }
 
+
 async function cacheFirst(event) {
     const request = event.request;
-    let responseFromCache = await caches.match(request);
-    if (responseFromCache && !isExpired(responseFromCache)) {
-        devlog(`Responding from cache ${request.url}`);
-        return responseFromCache;
-    } else {
+    const responseFromCache = await caches.match(request);
+
+    const fetchAndCache = async function () {
         return fetch(request)
             .then(async responseFromNetwork => {
-                const url = new URL(request.url);
-                
-              /*  if (url.hostname == 'fonts.gstatic.com'
-                   || url.hostname == 'fonts.googleapis.com') {
-                    await putResponseIntoCache({
-                        cacheName: STATIC_CACHE_NAME,
-                        request: request,
-                        response: responseFromNetwork.clone()
-                    });
-                } else */if (/\.js$/.test(url.pathname)) {
-                    await putResponseIntoCache({
-                        cacheName: STATIC_CACHE_NAME,
-                        request: request,
-                        response: responseFromNetwork.clone()
-                    });
-                } else if (/\.css$/.test(url.pathname)) {
-                    await putResponseIntoCache({
-                        cacheName: STATIC_CACHE_NAME,
-                        request: request,
-                        response: responseFromNetwork.clone()
-                    });
-                } else if (/\.(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                    await putResponseIntoCache({
-                        cacheName: IMAGE_CACHE_NAME,
-                        expireMinutes: IMAGE_CACHE_MINUTES,
-                        limitCount: IMAGE_CACHE_LIMIT_COUNT,
-                        request: request,
-                        response: responseFromNetwork.clone()
-                    });
+
+                if (!responseFromCache
+                    || isExpired(responseFromCache)
+                    || getExpire(responseFromCache.headers) == 0) {
+
+                    const url = new URL(request.url);
+                    if (/\/manifest\.json$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            expireMinutes: STATIC_CACHE_MINUTES,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/js$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            expireMinutes: STATIC_CACHE_MINUTES,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/css[2]?$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            expireMinutes: STATIC_CACHE_MINUTES,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: STATIC_CACHE_NAME,
+                            expireMinutes: STATIC_CACHE_MINUTES,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
+                        await putResponseIntoCache({
+                            cacheName: IMAGE_CACHE_NAME,
+                            expireMinutes: IMAGE_CACHE_MINUTES,
+                            limitCount: IMAGE_CACHE_LIMIT_COUNT,
+                            request: request,
+                            response: responseFromNetwork.clone()
+                        });
+                    }
                 }
 
                 return responseFromNetwork;
             }).catch(error => {
-                console.error(error);
+                devlog(error);
                 if (responseFromCache) {
-                    //use an outdated cache response, because that is better than nothing
+                    //use an outdated cache response, 
+                    //because that is better than nothing
                     return responseFromCache;
                 } else {
                     return caches.match(OFFLINE_URL);
                 }
             });
     }
+
+    if (responseFromCache && !isExpired(responseFromCache)) {
+        devlog(`Responding from cache ${request.url}`);
+        fetchAndCache(); //call without await
+        return responseFromCache;
+    } else {
+        return fetchAndCache();
+    }
+
 }
 
 
