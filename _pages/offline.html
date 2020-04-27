@@ -56,7 +56,7 @@ title: You´re currently offline
                 let history = document.createElement('ul');
                 history.classList = "reset";
                 for (let url of cachedURLs) {
-                    history.innerHTML += '<li><a href="' + url + '">' + url.pathname + '</a></li>';
+                    history.innerHTML += '<li><a href="' + url + '">' + url.pathname + url.search + '</a></li>';
                 }
                 weAreOffline.parentNode.insertBefore(history, weAreOffline.nextSibling)
             }
