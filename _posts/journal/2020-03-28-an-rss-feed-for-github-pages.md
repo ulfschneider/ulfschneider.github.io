@@ -64,7 +64,7 @@ tags: [reading, journal]
 In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is referenced. The layout file needs to be available under the name <code>postfeed.html</code> in the <code>_layouts</code> folder. The content of <code>postfeed.html</code> is the tiny programm that creates the feed. It is this:
 
 
-<figcaption class="mrt-2">_layouts/postfeed.html</figcaption>
+<figcaption class="mrt-2 breakout">_layouts/postfeed.html</figcaption>
 ~~~
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -127,6 +127,6 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
 </rss>
 </rss>{% endraw %}
 ~~~
-{:.breakout-r.mrb-2}
+{:.breakout.mrb-2}
 
 Just copy the code above, store it inside of <code>_layouts/postfeed.html</code>, and you are ready to use your new RSS feed.
