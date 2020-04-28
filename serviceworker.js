@@ -75,7 +75,7 @@ async function fetchAndCache({ request, responseFromCache }) {
         return responseFromCache;
     }
 
-    if (request instanceof String || request instanceof URL) {
+    if (typeof request == 'string' || request instanceof String || request instanceof URL) {
         request = new Request(request);
     }
 
@@ -221,11 +221,11 @@ function deverror(message) {
 }
 
 function makeURL(url) {
-    if (url instanceof String && !url.startsWith('http')) {
+    if ((typeof url == 'string' || url instanceof String) && !url.startsWith('http')) {
         return new URL(url, location.origin);
-    } else {
-        return new URL(url);
     }
+    return new URL(url);
+
 }
 
 function getExpire(response) {
