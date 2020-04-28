@@ -25,7 +25,6 @@
         {%- if node.published != false and node.exclude_search != true -%}
         {%- unless page.exclude_layouts contains node.layout -%}
         {%- for meta in pageMeta -%}
-
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
         'id': {{ node.url | jsonify }},
@@ -41,7 +40,6 @@
         },
         {%- break -%}
         {%- endif -%}
-
         {%- endfor -%}
         {%- endunless -%}
         {%- endif -%}
