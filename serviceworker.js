@@ -263,7 +263,7 @@ async function maintainExpiration(response, expireMinutes) {
         }
     }
 
-    if (expireMinutes > 0 && response.type != 'opaque') {
+    if (expireMinutes > 0 && response.type != 'opaque' && response.type != 'error') {
         //unfortunately, for opaque response types 
         //the expiration cannot be controlled here        
         return cloneResponse(response);
@@ -290,12 +290,14 @@ async function ensureCacheLimit(cacheName, limitCount) {
 
 async function putResponseIntoCache({ request, response, cacheName, expireMinutes, limitCount }) {
     try {
-        let metaResponse = await maintainExpiration(response, expireMinutes)
-        let cache = await caches.open(cacheName);
-        devlog(`Putting into ${cacheName}: ${request.url}`);
-        let result = cache.put(request, metaResponse);
-        await ensureCacheLimit(cacheName, limitCount);
-        return result;
+        if (response.type != 'error') {
+            let metaResponse = await maintainExpiration(response, expireMinutes)
+            let cache = await caches.open(cacheName);
+            devlog(`Putting into ${cacheName}: ${request.url}`);
+            let result = cache.put(request, metaResponse);
+            await ensureCacheLimit(cacheName, limitCount);
+            return result;
+        }
     } catch (error) {
         console.error(error);
     }
