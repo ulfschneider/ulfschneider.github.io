@@ -221,7 +221,7 @@ function deverror(message) {
 }
 
 function makeURL(url) {
-    if (!url.startsWith('http')) {
+    if (url instanceof String && !url.startsWith('http')) {
         return new URL(url, location.origin);
     } else {
         return new URL(url);
@@ -270,7 +270,6 @@ async function maintainExpiration(response, expireMinutes) {
     } else {
         return response;
     }
-
 }
 
 async function ensureCacheLimit(cacheName, limitCount) {
