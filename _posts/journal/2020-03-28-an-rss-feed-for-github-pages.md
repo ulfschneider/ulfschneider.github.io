@@ -69,7 +69,7 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-        <title>{{- site.title -}}</title>
+        <title>{{- site.title -}}</title>        
         <description></description>
         <link>{{- site.url -}}{{- site.baseurl -}}</link>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
@@ -81,26 +81,31 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         {%- assign imageUrl = imageUrl | append: site.baseurl -%}
         {%- assign imageUrl = imageUrl | append: "/" -%}
 
-        {%- assign posturl = "href=&quot;" -%}
+        {%- assign postUrl = "href=&quot;" -%}
         {%- assign postUrl = postUrl | append: site.url -%}
-        {%- assign posturl = postUrl | append: site.baseurl -%}
-        {%- assign posturl = postUrl | append: "/" -%}
+        {%- assign postUrl = postUrl | append: site.baseurl -%}
+        {%- assign postUrl = postUrl | append: "/" -%}
 
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
         {%- assign pageMeta = pageMeta | compact | uniq -%}
+        {%- if pageMeta.size == 0 -%}
+        {%- assign pageMeta = pageMeta | push: "." -%}
+        {%- endif -%}
 
         {%- for p in site.posts -%}
+        {%- if p.published != false and p.exclude_feed != true -%}
+        {%- unless page.exclude_layouts contains p.layout -%}
         {%- for meta in pageMeta -%}
-        {%- if p.published != false -%}
-        {%- if meta == ."" or p.tags contains meta or p.categories contains meta -%}
+        {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
         <item>
             <title>{{ p.title | xml_escape }}</title>
             <author>{{ p.author }}</author>
             <description>
                 {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
-                {{- p.content | xml_escape | replace: "src=&quot;/,"imageUrl | replace: "href=&quot;/,"postUrl -}}
+                {%- if p.refer -%}&lt;p&gt;{{- p.refer -}}&lt;/p&gt;{%- endif -%}
+                {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
             </description>
             <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>
             <link>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</link>
@@ -114,10 +119,12 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         </item>
         {%- break -%}
         {%- endif -%}
-        {%- endif -%}
         {%- endfor -%}
+        {%- endunless -%}
+        {%- endif -%}        
         {%- endfor -%}
     </channel>
+</rss>
 </rss>{% endraw %}
 ~~~
 {:.breakout-r.mrb-2}
