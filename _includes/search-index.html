@@ -61,7 +61,7 @@
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { title: data.title, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags });
+                friendlyMap.set(data.id, { title: data.title, subtitle: data.subtitle, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags });
             }
         });
     }
@@ -125,11 +125,11 @@
                 article.appendChild(refer);                
             }
 
-            if (friend.excerpt) {
+            if (friend.subtitle || friend.excerpt) {
                 let excerpt = document.createElement('p');
                 article.appendChild(excerpt);
                 excerpt.classList = 'inline';
-                excerpt.innerHTML = friend.excerpt;
+                excerpt.innerHTML = friend.subtitle || friend.excerpt;
 
                 if (!friend.title || friend.title == 'notitle') {
                     excerpt.innerHTML += ' ';
