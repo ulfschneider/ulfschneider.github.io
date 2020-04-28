@@ -4,6 +4,8 @@ subtitle: Emil is deeply into witches and magic things. I promised to him, we wo
 categories: emil
 layout: image
 ---
+Visiting the "witches castle," Falkenburg.
+
 <figure class="mry-4">
 <img src="/i/IMG_0809.jpg" alt="">
 <figcaption>Emil is entering the castle</figcaption>
