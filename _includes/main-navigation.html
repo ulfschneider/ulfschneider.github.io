@@ -3,9 +3,9 @@
 	{% if p.mainnav %}
 	{% unless p.url != "/" %}
 	{% if page.url == p.url %}
-	<span class="inline-block meta black bold mrr">{{p.mainnav}}</span>
+	<span class="inline-block meta black bold mrr-d1">{{p.mainnav}}</span>
 	{% else %}
-	<span class="inline-block mrr"><a href="/" class="no-deco meta">{{p.mainnav}}</a></span>
+	<span class="inline-block mrr-d1"><a href="/" class="no-deco meta">{{p.mainnav}}</a></span>
 	{% endif %}
 	{% endunless %}
 	{% endif %}

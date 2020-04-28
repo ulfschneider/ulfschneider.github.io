@@ -4,15 +4,14 @@
 	{% endif %}
 	<nav>
 		<ul class="mry-0 reset">
-			<li class="inline-block mrr"><a href="/" class="logo">U</a></li>
 			{%if site.rss %}
-			<li class="inline-block mrr"><a href="{{site.rss}}" class="small no-deco meta">RSS</a></li>
+			<li class="inline-block"><a href="{{site.rss}}" class="small no-deco meta">RSS</a></li>
 			{% endif %}
 			{%if site.colophon and site.colophon != page.url %}
-			<li class="inline-block mrr"><a href="{{site.colophon}}" class="small no-deco meta">Colophon</a></li>
+			<li class="inline-block"><a href="{{site.colophon}}" class="small no-deco meta">Colophon</a></li>
 			{% endif %}
 			{% if site.ownership and site.ownership != page.url %}
-			<li class="inline-block mrr"><a href="{{site.ownership}}" class="small no-deco meta">Ownership</a></li>
+			<li class="inline-block"><a href="{{site.ownership}}" class="small no-deco meta">Ownership</a></li>
 			{% endif %}
 			<li id="load-time" class="inline-block small meta"></li>
 		</ul>
