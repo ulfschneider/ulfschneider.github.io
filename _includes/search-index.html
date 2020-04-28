@@ -15,7 +15,6 @@
 
 {% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
-
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
@@ -26,7 +25,7 @@
         {%- if node.published != false and node.exclude_search != true -%}
         {%- unless page.exclude_layouts contains node.layout -%}
         {%- for meta in pageMeta -%}
-        {%- unless excludeMeta contains meta -%}
+
         {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         {
         'id': {{ node.url | jsonify }},
@@ -42,7 +41,7 @@
         },
         {%- break -%}
         {%- endif -%}
-        {%- endunless -%}
+
         {%- endfor -%}
         {%- endunless -%}
         {%- endif -%}

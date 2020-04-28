@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-        <title>{{- site.title -}}</title>        
+        <title>{{- site.title -}}</title>
         <description></description>
         <link>{{- site.url -}}{{- site.baseurl -}}</link>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
@@ -26,10 +26,16 @@
         {%- assign pageMeta = pageMeta | push: "." -%}
         {%- endif -%}
 
+        {%- assign excludeMeta = "" | split: "" -%}
+        {%- assign excludeMeta = excludeMeta | push: page.exclude_tags -%}
+        {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
+        {%- assign excludeMeta = excludeMeta | compact | uniq -%}
+        
         {%- for p in site.posts -%}
         {%- if p.published != false and p.exclude_feed != true -%}
         {%- unless page.exclude_layouts contains p.layout -%}
         {%- for meta in pageMeta -%}
+
         {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
         <item>
             <title>{{ p.title | xml_escape }}</title>
@@ -51,9 +57,10 @@
         </item>
         {%- break -%}
         {%- endif -%}
+
         {%- endfor -%}
         {%- endunless -%}
-        {%- endif -%}        
+        {%- endif -%}
         {%- endfor -%}
     </channel>
 </rss>

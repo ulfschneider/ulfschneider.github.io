@@ -1,6 +1,0 @@
----
-layout: postfeed
-permalink: /feed.xml/
-exclude_layouts: [image, gallery,postfeed]
-exclude_search: true
----
