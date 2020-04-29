@@ -8,8 +8,7 @@ layout: default
 <style>
     img {
         height: unset !important;
-        max-height: unset !important;
-        width: 100%;
+        max-height: unset !important;        
     }
 </style>
 <div class="md:breakout">
