@@ -281,6 +281,12 @@ async function ensureCacheLimit(cacheName, limitCount) {
             for (let i = 0; i < removeCount; i++) {
                 devlog(`Removing from ${cacheName} to ensure cache limit of ${limitCount}: ${keys[i].url}`);
                 await cache.delete(keys[i]).catch(error => console.error(error));
+                keys = await cache.keys();
+
+                //always use most current cache length 
+                //as other ensureCacheLimits might run 
+                //simultaneously               
+                removeCount = keys.length - limitCount; 
             }
         }
     } catch (error) {
@@ -295,7 +301,7 @@ async function putResponseIntoCache({ request, response, cacheName, expireMinute
             let cache = await caches.open(cacheName);
             devlog(`Putting into ${cacheName}: ${request.url}`);
             let result = cache.put(request, metaResponse);
-            await ensureCacheLimit(cacheName, limitCount);
+            ensureCacheLimit(cacheName, limitCount); //do not await
             return result;
         }
     } catch (error) {
