@@ -16,7 +16,6 @@ layout: default
 
 <figure class="mry-4">
 <img src="/i/IMG_0809.jpg" alt="">
-<figcaption>Emil is entering the castle</figcaption>
 </figure>
 
 <figure class="mry-4">
