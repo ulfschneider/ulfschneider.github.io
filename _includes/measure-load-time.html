@@ -12,7 +12,7 @@
         if (entries && entries.length) {
             duration = entries[0].loadEventStart;
         } else if (performance && performance.timing) {
-            //this is a deprecated API, it´s only here for browser that
+            //this is a deprecated API, it´s only here for browsers that
             //do not support the above PerformanceNavigationTiming API
             duration = performance.timing.loadEventStart - performance.timing.navigationStart;
         }
