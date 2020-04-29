@@ -18,45 +18,65 @@
         {%- assign postUrl = postUrl | append: site.baseurl -%}
         {%- assign postUrl = postUrl | append: "/" -%}
 
+        {%- assign contentNodes = site.posts -%}
+        {%- assign contentNodes = contentNodes | concat: site.pages -%}
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
-        {%- assign pageMeta = pageMeta | compact | uniq -%}
+        {%- assign pageMeta = pageMeta|compact|uniq -%}
         {%- if pageMeta.size == 0 -%}
         {%- assign pageMeta = pageMeta | push: "." -%}
         {%- endif -%}
-
+        
         {%- assign excludeMeta = "" | split: "" -%}
         {%- assign excludeMeta = excludeMeta | push: page.exclude_tags -%}
         {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
-        {%- assign excludeMeta = excludeMeta | compact | uniq -%}
+        {%- assign excludeMeta = excludeMeta|compact|uniq -%}
         
-        {%- for p in site.posts -%}
-        {%- if p.published != false and p.exclude_feed != true -%}
-        {%- unless page.exclude_layouts contains p.layout -%}
+        {%- for node in contentNodes -%}
+        {%- if node.published != false and node.exclude_feed != true -%}
+        {%- unless page.exclude_layouts contains node.layout and node.layout != "rssfeed" -%}
+
+        {%- assign isExcluded = false -%}
+        {%- assign nodeMeta = "" | split: "" -%}
+        {%- assign nodeMeta = nodeMeta | push: node.tags -%}
+        {%- assign nodeMeta = nodeMeta | push: node.categories -%}
+        {%- assign nodeMeta = nodeMeta|compact|uniq -%}
+
+        {%- for meta in nodeMeta -%}
+        {%- if excludeMeta contains meta -%}
+        {%- assign isExcluded = true -%}
+        {%- break -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {% unless isExcluded == true %}
+
         {%- for meta in pageMeta -%}
-        {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
+        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         <item>
-            <title>{{ p.title | xml_escape }}</title>
-            <author>{{ p.author }}</author>
+            <title>{{ node.title | xml_escape }}</title>
+            <author>{{ node.author }}</author>
             <description>
-                {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
-                {%- if p.refer -%}&lt;p&gt;{{- p.refer -}}&lt;/p&gt;{%- endif -%}
-                {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
+                {%- if node.subtitle -%}&lt;p&gt;{{- node.subtitle -}}&lt;/p&gt;{%- endif -%}
+                {%- if node.refer -%}&lt;p&gt;{{- node.refer -}}&lt;/p&gt;{%- endif -%}
+                {{- node.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
             </description>
-            <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>
-            <link>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</link>
-            <guid>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</guid>
-            {%- for tag in p.tags -%}
+            <pubDate>{{- node.date | date_to_rfc822 -}}</pubDate>
+            <link>{{- node.url | prepend: site.baseurl | prepend: site.url -}}</link>
+            <guid>{{- node.url | prepend: site.baseurl | prepend: site.url -}}</guid>
+            {%- for tag in node.tags -%}
             <category>{{- tag | xml_escape -}}</category>
             {%- endfor -%}
-            {%- for c in p.categories -%}
+            {%- for c in node.categories -%}
             <category>{{- c | xml_escape -}}</category>
             {%- endfor -%}
         </item>
         {%- break -%}
         {%- endif -%}
         {%- endfor -%}
+
+        {%- endunless -%}
+        
         {%- endunless -%}
         {%- endif -%}
         {%- endfor -%}

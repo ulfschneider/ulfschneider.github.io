@@ -21,14 +21,14 @@ However, <code>jekyll-feed</code> has some limitations:
 - I´m referencing things inside of my blog with relative URLs. E.g., <code>/tools</code>, or <code>/images/we-are-riding-the-bullitt.jpg</code>. Those relative links remain so in your feed. But a relative link doesn´t work inside of an RSS reader, which means an image is not displayed or a link to an article is not functioning. In the RSS reader, you need absolute URLs.
 
 ## My own feed generator
-To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts and no pages. Here is what you have to do to use it:
+To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts as well as pages. Here is what you have to do to use it:
 
-For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the name <code>/feed.rss</code> that publishes the categories *articles, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
+For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the URL <code>/feed.rss/</code>, that publishes the categories *articles, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
 
 <figure>
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
-layout: postfeed
+layout: rssfeed
 permalink: /feed.xml/
 categories: [articles, tools, reading, journal]
 ---</pre>
@@ -43,7 +43,7 @@ The filtering of posts is not only working for categories. You can also filter f
 <figure>
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
-layout: postfeed
+layout: rssfeed
 permalink: /feed.xml/
 tags: [articles, tools, reading, journal]
 ---</pre>
@@ -54,22 +54,35 @@ A logical OR filter combination of categories and tags is in the form:
 <figure>
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
-layout: postfeed
+layout: rssfeed
 permalink: /feed.xml/
 categories: [tools]
 tags: [reading, journal]
 ---</pre>
 </figure>
 
-In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is referenced. The layout file needs to be available under the name <code>postfeed.html</code> in the <code>_layouts</code> folder. The content of <code>postfeed.html</code> is the tiny programm that creates the feed. It is this:
+Here are all the front matter settings you have:
+
+|Front Matter|Value|Meaning|
+|---|---|---|
+|layout | rssfeed | mandatory |
+|permalink | /feed.xml/ | it can be another URL, but it should end with `.xml` |
+|categories |   | an array of all the categories you want to include into the feed |
+|tags |   | an array of all the tags you want to include into the feed |
+|exclude_categories |   | an array of all the categories you do **not** want to include into the feed |
+|exclude_tags |   | an array of all the tags you do **not** want to include into the feed |
+|exclude_layouts |   | an array of all the layouts you do **not** want to include into the feed |
+{:.breakout-r}
+
+In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is referenced. The layout file needs to be available under the name <code>rssfeed.html</code> in the <code>_layouts</code> folder. The content of <code>rssfeed.html</code> is the tiny programm that creates the feed. It is this:
 
 
-<figcaption class="mrt-2 breakout">_layouts/postfeed.html</figcaption>
+<figcaption class="mrt-2 breakout">_layouts/rssfeed.html</figcaption>
 ~~~
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-        <title>{{- site.title -}}</title>        
+        <title>{{- site.title -}}</title>
         <description></description>
         <link>{{- site.url -}}{{- site.baseurl -}}</link>
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
@@ -86,47 +99,71 @@ In the above <code>feed.md</code> file, a layout named <code>postfeed</code> is 
         {%- assign postUrl = postUrl | append: site.baseurl -%}
         {%- assign postUrl = postUrl | append: "/" -%}
 
+        {%- assign contentNodes = site.posts -%}
+        {%- assign contentNodes = contentNodes | concat: site.pages -%}
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
-        {%- assign pageMeta = pageMeta | compact | uniq -%}
+        {%- assign pageMeta = pageMeta|compact|uniq -%}
         {%- if pageMeta.size == 0 -%}
         {%- assign pageMeta = pageMeta | push: "." -%}
         {%- endif -%}
+        
+        {%- assign excludeMeta = "" | split: "" -%}
+        {%- assign excludeMeta = excludeMeta | push: page.exclude_tags -%}
+        {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
+        {%- assign excludeMeta = excludeMeta|compact|uniq -%}
+        
+        {%- for node in contentNodes -%}
+        {%- if node.published != false and node.exclude_feed != true -%}
+        {%- unless page.exclude_layouts contains node.layout and node.layout != "rssfeed" -%}
 
-        {%- for p in site.posts -%}
-        {%- if p.published != false and p.exclude_feed != true -%}
-        {%- unless page.exclude_layouts contains p.layout -%}
+        {%- assign isExcluded = false -%}
+        {%- assign nodeMeta = "" | split: "" -%}
+        {%- assign nodeMeta = nodeMeta | push: node.tags -%}
+        {%- assign nodeMeta = nodeMeta | push: node.categories -%}
+        {%- assign nodeMeta = nodeMeta|compact|uniq -%}
+
+        {%- for meta in nodeMeta -%}
+        {%- if excludeMeta contains meta -%}
+        {%- assign isExcluded = true -%}
+        {%- break -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {% unless isExcluded == true %}
+
         {%- for meta in pageMeta -%}
-        {%- if meta == "." or p.tags contains meta or p.categories contains meta -%}
+        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
         <item>
-            <title>{{ p.title | xml_escape }}</title>
-            <author>{{ p.author }}</author>
+            <title>{{ node.title | xml_escape }}</title>
+            <author>{{ node.author }}</author>
             <description>
-                {%- if p.subtitle -%}&lt;p&gt;{{- p.subtitle -}}&lt;/p&gt;{%- endif -%}
-                {%- if p.refer -%}&lt;p&gt;{{- p.refer -}}&lt;/p&gt;{%- endif -%}
-                {{- p.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
+                {%- if node.subtitle -%}&lt;p&gt;{{- node.subtitle -}}&lt;/p&gt;{%- endif -%}
+                {%- if node.refer -%}&lt;p&gt;{{- node.refer -}}&lt;/p&gt;{%- endif -%}
+                {{- node.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
             </description>
-            <pubDate>{{- p.date | date_to_rfc822 -}}</pubDate>
-            <link>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</link>
-            <guid>{{- p.url | prepend: site.baseurl | prepend: site.url -}}</guid>
-            {%- for tag in p.tags -%}
+            <pubDate>{{- node.date | date_to_rfc822 -}}</pubDate>
+            <link>{{- node.url | prepend: site.baseurl | prepend: site.url -}}</link>
+            <guid>{{- node.url | prepend: site.baseurl | prepend: site.url -}}</guid>
+            {%- for tag in node.tags -%}
             <category>{{- tag | xml_escape -}}</category>
             {%- endfor -%}
-            {%- for c in p.categories -%}
+            {%- for c in node.categories -%}
             <category>{{- c | xml_escape -}}</category>
             {%- endfor -%}
         </item>
         {%- break -%}
         {%- endif -%}
         {%- endfor -%}
+
         {%- endunless -%}
-        {%- endif -%}        
+        
+        {%- endunless -%}
+        {%- endif -%}
         {%- endfor -%}
     </channel>
-</rss>
 </rss>{% endraw %}
 ~~~
 {:.breakout.mrb-2}
 
-Just copy the code above, store it inside of <code>_layouts/postfeed.html</code>, and you are ready to use your new RSS feed.
+Just copy the code above, store it inside of <code>_layouts/rssfeed.html</code>, and you are ready to use your new RSS feed.
