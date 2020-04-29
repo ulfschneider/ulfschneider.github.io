@@ -1,5 +1,5 @@
 ---
-layout: image
+layout: default
 ---
 <style>
     .gallery {
@@ -41,10 +41,9 @@ layout: image
         }
     }
 </style>
-<a href="/" class="logo">U</a>
 {{ content }}
 
-<div class="gallery mrt-1">
+<div class="gallery md:breakout mrt-1">
 
     <!-- posts -->
     {% assign pageMeta = "" | split: ""%}
