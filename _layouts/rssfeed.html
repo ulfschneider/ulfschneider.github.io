@@ -19,7 +19,6 @@
         {%- assign postUrl = postUrl | append: "/" -%}
 
         {%- assign contentNodes = site.posts -%}
-        {%- assign contentNodes = contentNodes | concat: site.pages -%}
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}

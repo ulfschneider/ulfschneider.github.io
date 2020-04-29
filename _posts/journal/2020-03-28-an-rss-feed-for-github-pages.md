@@ -21,7 +21,7 @@ However, <code>jekyll-feed</code> has some limitations:
 - I´m referencing things inside of my blog with relative URLs. E.g., <code>/tools</code>, or <code>/images/we-are-riding-the-bullitt.jpg</code>. Those relative links remain so in your feed. But a relative link doesn´t work inside of an RSS reader, which means an image is not displayed or a link to an article is not functioning. In the RSS reader, you need absolute URLs.
 
 ## My own feed generator
-To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts as well as pages. Here is what you have to do to use it:
+To overcome those limitations, I decided not to use <code>jekyll-feed</code> and instead write my own tiny RSS generator. My generator is publishing posts and no pages. Here is what you have to do to use it:
 
 For each feed you want to publish, you have to create a markdown file inside of the <code>_pages</code> folder – for example, a feed with the URL <code>/feed.rss/</code>, that publishes the categories *articles, tools, reading, and journal* is represented by a file <code>feed.md</code> with the following front matter contents:
 
@@ -100,7 +100,6 @@ In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is r
         {%- assign postUrl = postUrl | append: "/" -%}
 
         {%- assign contentNodes = site.posts -%}
-        {%- assign contentNodes = contentNodes | concat: site.pages -%}
         {%- assign pageMeta = "" | split: "" -%}
         {%- assign pageMeta = pageMeta | push: page.tags -%}
         {%- assign pageMeta = pageMeta | push: page.categories -%}
