@@ -78,7 +78,7 @@
     }
 
     function getParameterByName(name, url) {
-        url = url ? url : window.location.href;
+        url = url ? url : location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
         let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
         let results = regex.exec(url);
@@ -223,7 +223,7 @@
         printSearchResults(resultSet, query);
     }
 
-    window.addEventListener('load', function (event) {
+    addEventListener('load', function (event) {
         searchIndex = buildSearchIndex();
         let query = getParameterByName('query');
         let input = document.getElementById(SEARCH_QUERY_ID);
