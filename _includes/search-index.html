@@ -30,6 +30,7 @@
         'id': {{ node.url | jsonify }},
         'title': {%- if node.title -%} {{ node.title | jsonify }} {%- else -%} {{ node.mainnav | jsonify }} {%- endif -%},
         {%- if node.subtitle -%} 'subtitle': {{ node.subtitle | jsonify }}, {%- endif -%}
+        {%- if node.abstract -%} 'abstract': {{ node.abstract | jsonify }}, {%- endif -%}
         'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
         {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
         {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
@@ -53,6 +54,7 @@
             this.ref('id');
             this.field('title', { boost: 10 });
             this.field('subtitle', { boost: 10 });
+            this.field('abstract', { boost: 10 });
             this.field('author');
             this.field('refer');
             this.field('categories');
@@ -61,7 +63,16 @@
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { title: data.title, subtitle: data.subtitle, excerpt: data.excerpt, author: data.author, refer: data.refer, date: data.date, categories: data.categories, tags: data.tags });
+                friendlyMap.set(data.id, { 
+                    title: data.title, 
+                    subtitle: data.subtitle, 
+                    abstract: data.abstract,
+                    excerpt: data.excerpt, 
+                    author: data.author, 
+                    refer: data.refer, 
+                    date: data.date, 
+                    categories: data.categories, 
+                    tags: data.tags });
             }
         });
     }
@@ -125,11 +136,11 @@
                 article.appendChild(refer);                
             }
 
-            if (friend.subtitle || friend.excerpt) {
+            if (friend.abstract || friend.subtitle || friend.excerpt) {
                 let excerpt = document.createElement('p');
                 article.appendChild(excerpt);
                 excerpt.classList = 'inline';
-                excerpt.innerHTML = friend.subtitle || friend.excerpt;
+                excerpt.innerHTML = friend.abstract || friend.subtitle || friend.excerpt;
 
                 if (!friend.title || friend.title == 'notitle') {
                     excerpt.innerHTML += ' ';

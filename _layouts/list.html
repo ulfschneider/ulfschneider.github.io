@@ -51,9 +51,11 @@ layout: default
     <div class="meta small">{% include refer.html refer=p.refer %}</div>
     {% endif %}
 
-    <p class="inline">
+    <p class="inline">        
         {% if p.abstract %}
         {{ p.abstract }}
+        {% elsif p.subtitle %}
+        {{p.subtitle}}
         {% else %}
         {{ p.excerpt | strip_html | truncatewords:25, "&nbsp;…"  }}
         {% endif %}
