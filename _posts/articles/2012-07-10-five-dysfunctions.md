@@ -4,7 +4,7 @@ subtitle: A non-performing team is not a team
 categories: articles
 ---
 
-Deliver with each iteration a [done]({{site.url}}/definition-of-done) piece of work and collaborate as a team. If you do only these two things and forget about all the concepts and procedures we like to talk about in the agile world, you already have made a good part of the agile journey.
+Deliver with each iteration a [done](/articles/definition-of-done) piece of work and collaborate as a team. If you do only these two things and forget about all the concepts and procedures we like to talk about in the agile world, you already have made a good part of the agile journey.
 
 Teams deliver — the better the team, the better the performance. We can not think about a team without thinking about performance. Some people being nice to each other and chatting around at the coffee corner does not mean they are a team. They may only be a group of people sharing the same coffee machine but not sharing their goals and rewards.
 
