@@ -43,11 +43,6 @@ img {
   margin-right: auto;
 }
 
-figure blockquote {
-  margin: 0 !important;
-}
-
-
 header.is-dynamic {
   background: var(--neutral-5);
   border-bottom: 1px solid var(--neutral-4);
@@ -64,38 +59,6 @@ nav ul li {
 }
 
 
-a.logo {
-  width: var(--base-font-size);
-  height: var(--base-font-size);
-  line-height: var(--base-font-size);
-  font-size: calc(var(--base-font-size) - 4px);
-  background: black;
-  color: var(--base-background);
-  font-family: var(--meta-font-family);
-  font-weight: 500;
-  text-align: center;  
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  border-radius: var(--rounded);
-}
-
-a.logo:visited:active {
-  color: white;
-  background: var(--link-hover-color);
-}
-
-
-@media (hover: hover) {
-  a.logo:hover {
-    color: white;
-    background: var(--link-hover-color);
-  }
-}
-
-a.logo:focus:active {
-  background: var(--link-active-color) !important;
-}
 
 
 
