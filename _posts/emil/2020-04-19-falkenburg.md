@@ -5,12 +5,6 @@ categories: emil
 layout: default
 ---
 
-<style>
-    img {
-        height: unset !important;
-        max-height: unset !important;        
-    }
-</style>
 <div class="md:breakout">
 
 <figure class="mry-4">

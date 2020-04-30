@@ -301,7 +301,7 @@ async function putResponseIntoCache({ request, response, cacheName, expireMinute
             let cache = await caches.open(cacheName);
             devlog(`Putting into ${cacheName}: ${request.url}`);
             let result = await cache.put(request, metaResponse);
-            ensureCacheLimit(cacheName, limitCount); //do not await
+            //ensureCacheLimit(cacheName, limitCount); //do not await
             return result;
         }
     } catch (error) {
