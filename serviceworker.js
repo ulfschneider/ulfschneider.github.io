@@ -6,7 +6,7 @@ const CACHE_NAME = 'cache';
 
 const STATIC_CACHE_MINUTES = 60 * 24; //one day
 const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //cache for 10 days
-const IMAGE_CACHE_LIMIT_COUNT = 150; //cache 150 images
+const IMAGE_CACHE_MAX_ITEMS = 150; //cache 150 images
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
@@ -64,6 +64,16 @@ addEventListener('activate', event => {
     event.waitUntil(cleanUpCaches());
 });
 
+//the trimCache command is must be sent from the onload event of 
+//the page where the service worker is registered
+addEventListener("message", event => {
+    var data = event.data;
+    if (data.command == "trimCache") {
+        devlog(`Trimming ${IMAGE_CACHE_NAME} to a max limit of ${IMAGE_CACHE_MAX_ITEMS} items`);
+        trimCache({ cacheName: IMAGE_CACHE_NAME, maxItems: IMAGE_CACHE_MAX_ITEMS });
+    }
+});
+
 
 async function fetchAndCache({ request, responseFromCache }) {
 
@@ -101,44 +111,43 @@ async function fetchAndCache({ request, responseFromCache }) {
             let accept = request.headers.get('Accept');
             if (accept && accept.includes('text/html')
                 || /^\/.+\/(\?|$)/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: RUNTIME_CACHE_NAME,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/\/manifest\.json$/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/js$/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/css[2]?$/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                await putResponseIntoCache({
+                await stashInCache({
                     cacheName: IMAGE_CACHE_NAME,
                     expireMinutes: IMAGE_CACHE_MINUTES,
-                    limitCount: IMAGE_CACHE_LIMIT_COUNT,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
@@ -233,7 +242,7 @@ function getExpire(response) {
     return expires ? Date.parse(expires) : 0;
 }
 
-async function maintainExpiration(response, expireMinutes) {
+async function maintainExpiration({ response, expireMinutes }) {
 
     cloneHeaders = function (response) {
         let headers = new Headers();
@@ -272,40 +281,23 @@ async function maintainExpiration(response, expireMinutes) {
     }
 }
 
-async function ensureCacheLimit(cacheName, limitCount) {
-    try {
-        if (limitCount > 0) {
-            let cache = await caches.open(cacheName);
-            let keys = await cache.keys();
-            let removeCount = keys.length - limitCount;
-            for (let i = 0; i < removeCount; i++) {
-                devlog(`Removing from ${cacheName} to ensure cache limit of ${limitCount}: ${keys[i].url}`);
-                await cache.delete(keys[i]).catch(error => console.error(error));
-                keys = await cache.keys();
 
-                //always use most current cache length 
-                //as other ensureCacheLimits might run 
-                //simultaneously               
-                removeCount = keys.length - limitCount; 
-            }
-        }
-    } catch (error) {
-        console.error(error);
+async function trimCache({ cacheName, maxItems }) {
+    let cache = await caches.open(cacheName);
+    let keys = await cache.keys();
+    if (keys.length > maxItems) {
+        await cache.delete(keys[0]);
+        await trimCache({ cacheName: cacheName, maxItems: maxItems });
     }
 }
 
-async function putResponseIntoCache({ request, response, cacheName, expireMinutes, limitCount }) {
-    try {
-        if (response.type != 'error') {
-            let metaResponse = await maintainExpiration(response, expireMinutes)
-            let cache = await caches.open(cacheName);
-            devlog(`Putting into ${cacheName}: ${request.url}`);
-            let result = await cache.put(request, metaResponse);
-            //ensureCacheLimit(cacheName, limitCount); //do not await
-            return result;
-        }
-    } catch (error) {
-        console.error(error);
+
+async function stashInCache({ request, response, cacheName, expireMinutes }) {
+    if (response.type != 'error') {
+        let metaResponse = await maintainExpiration({ response: response, expireMinutes: expireMinutes })
+        let cache = await caches.open(cacheName);
+        devlog(`Putting into ${cacheName}: ${request.url}`);
+        return cache.put(request, metaResponse);
     }
 }
 
