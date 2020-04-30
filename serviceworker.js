@@ -34,38 +34,32 @@ const NO_CACHE_URLS = [
 ]
 
 
-//precache on install
-addEventListener('install', event => {
-    const precache = async function () {
-
-        for (let url of STATIC_PRECACHE_URLS) {
-            try {
-                await fetchAndCache({ request: makeURL(url) });
-            } catch (err) {
-                console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
-            }
-        }
-    }
-
-    skipWaiting();
-    event.waitUntil(precache())
+//preCache on install
+addEventListener('install', async event => {
+    await event.waitUntil(preCache())
+    await skipWaiting(); //ensure that updates to the underlying 
+    //service worker take effect immediately 
 });
 
-//remove old static caches on activate    
-addEventListener('activate', event => {
-    const cleanUpCaches = async function () {
-        return caches
-            .keys()
-            .then(cacheNames => cacheNames.filter(name => !CACHE_NAMES.includes(name)))
-            .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))))
-            .then(() => clients.claim());
-    }
 
-    event.waitUntil(cleanUpCaches());
+//remove old static caches on activate  
+addEventListener('activate', async event => {
+    const activate = async function () {
+        await clearOldCaches();
+        await clients.claim(); //let this service worker set itself 
+        //as the controller for all clients within its scope        
+        //use clients.claim() inside to 
+        //the "activate" event listener 
+        //so that clients do not need to be reloaded 
+        //before their fetches will go through this service worker
+    }
+    await event.waitUntil(activate());
 });
 
-//the trimCache command is must be sent from the onload event of 
+
+//the trimCache command must be sent from the onload event of 
 //the page where the service worker is registered
+//https://medium.com/@brandonrozek/limiting-the-cache-in-service-workers-revisited-f0245713e67e
 addEventListener("message", event => {
     var data = event.data;
     if (data.command == "trimCache") {
@@ -75,6 +69,7 @@ addEventListener("message", event => {
 });
 
 
+//react on requests
 addEventListener('fetch', event => {
     const request = event.request;
     const handleEvent = async function () {
@@ -88,14 +83,67 @@ addEventListener('fetch', event => {
         return cacheFirst(event);
     }
 
-
     devlog('Requesting ' + request.url);
     event.respondWith(handleEvent());
 });
 
 
-
 //// helpers 
+
+async function preCache() {
+    for (let url of STATIC_PRECACHE_URLS) {
+        try {
+            await fetchAndCache({ request: makeURL(url) });
+        } catch (err) {
+            console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
+        }
+    }
+}
+
+
+async function clearOldCaches() {
+    return caches
+        .keys()
+        .then(cacheNames => cacheNames.filter(name => !CACHE_NAMES.includes(name)))
+        .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))));
+}
+
+
+async function networkFirst(event) {
+    const request = event.request;
+
+    return fetchAndCache({ request: request })
+        .catch(error => deverror('Failure in network first operation ' + error));
+}
+
+
+async function cacheFirst(event) {
+    const request = event.request;
+    const responseFromCache = await caches.match(request);
+
+    if (responseFromCache && !isExpired(responseFromCache)) {
+        devlog(`Responding from cache ${request.url}`);
+
+        //clone response and call without await
+        fetchAndCache({ request: request, responseFromCache: responseFromCache.clone() })
+            .catch(error => deverror('Failure in cache first operation ' + error));
+
+        return responseFromCache;
+    } else {
+        return fetchAndCache({ request: request })
+            .catch(error => {
+                devlog('Failure in cache first operation ' + error);
+                if (responseFromCache) {
+                    //use an outdated cache response, 
+                    //because that is better than nothing
+                    return responseFromCache;
+                } else {
+                    return caches.match(OFFLINE_URL);
+                }
+            });;
+    }
+}
+
 
 async function fetchAndCache({ request, responseFromCache }) {
 
@@ -180,47 +228,12 @@ async function fetchAndCache({ request, responseFromCache }) {
 }
 
 
-async function networkFirst(event) {
-    const request = event.request;
-
-    return fetchAndCache({ request: request })
-        .catch(error => deverror('Failure in network first operation ' + error));
-}
-
-
-async function cacheFirst(event) {
-    const request = event.request;
-    const responseFromCache = await caches.match(request);
-
-    if (responseFromCache && !isExpired(responseFromCache)) {
-        devlog(`Responding from cache ${request.url}`);
-
-        //clone response and call without await
-        fetchAndCache({ request: request, responseFromCache: responseFromCache.clone() })
-            .catch(error => deverror('Failure in cache first operation ' + error));
-
-        return responseFromCache;
-    } else {
-        return fetchAndCache({ request: request })
-            .catch(error => {
-                devlog('Failure in cache first operation ' + error);
-                if (responseFromCache) {
-                    //use an outdated cache response, 
-                    //because that is better than nothing
-                    return responseFromCache;
-                } else {
-                    return caches.match(OFFLINE_URL);
-                }
-            });;
-    }
-}
-
-
 function devlog(message) {
     if (location.hostname == 'localhost') {
         console.log(message);
     }
 }
+
 
 function deverror(message) {
     if (location.hostname == 'localhost') {
@@ -228,6 +241,7 @@ function deverror(message) {
 
     }
 }
+
 
 function makeURL(url) {
     if ((typeof url == 'string' || url instanceof String) && !url.startsWith('http')) {
@@ -237,10 +251,12 @@ function makeURL(url) {
 
 }
 
+
 function getExpire(response) {
     const expires = response.headers.get(`${CACHE_NAME}-expires`);
     return expires ? Date.parse(expires) : 0;
 }
+
 
 async function maintainExpiration({ response, expireMinutes }) {
 
@@ -300,6 +316,7 @@ async function stashInCache({ request, response, cacheName, expireMinutes }) {
         return cache.put(request, metaResponse);
     }
 }
+
 
 function isExpired(response) {
     const expires = getExpire(response);
