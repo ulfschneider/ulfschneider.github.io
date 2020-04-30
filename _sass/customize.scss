@@ -43,12 +43,17 @@ img {
   margin-right: auto;
 }
 
-
 nav ul li {
   margin-right: var(--space-d1);
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (any-pointer: coarse) {
+  nav {
+    line-height: var(--space-2);
   }
 }
 
