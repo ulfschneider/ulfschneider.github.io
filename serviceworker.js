@@ -6,7 +6,7 @@ const CACHE_NAME = 'cache';
 
 const STATIC_CACHE_MINUTES = 60 * 24; //expire cahce entries after one day
 const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //expire cache entries after 10 days
-const IMAGE_CACHE_MAX_ITEMS = 50; //cache this amount images, not more
+const IMAGE_CACHE_MAX_ITEMS = 50; //cache this amount of images, not more
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
 const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
@@ -305,21 +305,29 @@ async function maintainExpiration({ response, expireMinutes }) {
 
 //https://medium.com/@adactio/cache-limiting-in-service-workers-d6741361ca19
 async function trimCache({ cacheName, maxItems }) {
-    let cache = await caches.open(cacheName);
-    let keys = await cache.keys();
-    if (keys.length > maxItems) {
-        await cache.delete(keys[0]);
-        await trimCache({ cacheName: cacheName, maxItems: maxItems });
+    try {
+        let cache = await caches.open(cacheName);
+        let keys = await cache.keys();
+        if (keys.length > maxItems) {
+            await cache.delete(keys[0]);
+            await trimCache({ cacheName: cacheName, maxItems: maxItems });
+        }
+    } catch (error) {
+        console.error(error);
     }
 }
 
 
 async function stashInCache({ request, response, cacheName, expireMinutes }) {
-    if (response.type != 'error') {
-        let metaResponse = await maintainExpiration({ response: response, expireMinutes: expireMinutes })
-        let cache = await caches.open(cacheName);
-        devlog(`Putting into ${cacheName}: ${request.url}`);
-        return cache.put(request, metaResponse);
+    try {
+        if (response.type != 'error') {
+            let metaResponse = await maintainExpiration({ response: response, expireMinutes: expireMinutes })
+            let cache = await caches.open(cacheName);
+            devlog(`Putting into ${cacheName}: ${request.url}`);
+            return cache.put(request, metaResponse);
+        }
+    } catch (error) {
+        console.error(error);
     }
 }
 
