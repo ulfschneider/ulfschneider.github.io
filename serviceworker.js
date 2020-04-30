@@ -4,8 +4,8 @@ const IMAGE = 'image';
 
 const CACHE_NAME = 'cache';
 
-const STATIC_CACHE_MINUTES = 60 * 24; //one day
-const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //cache for 10 days
+const STATIC_CACHE_MINUTES = 60 * 24; //expire cahce entries after one day
+const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //expire cache entries after 10 days
 const IMAGE_CACHE_MAX_ITEMS = 150; //cache 150 images
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
