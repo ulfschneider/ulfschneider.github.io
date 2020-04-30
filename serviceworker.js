@@ -297,7 +297,7 @@ async function maintainExpiration({ response, expireMinutes }) {
     }
 }
 
-
+//https://medium.com/@adactio/cache-limiting-in-service-workers-d6741361ca19
 async function trimCache({ cacheName, maxItems }) {
     let cache = await caches.open(cacheName);
     let keys = await cache.keys();
