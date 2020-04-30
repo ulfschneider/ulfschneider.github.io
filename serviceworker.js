@@ -75,6 +75,28 @@ addEventListener("message", event => {
 });
 
 
+addEventListener('fetch', event => {
+    const request = event.request;
+    const handleEvent = async function () {
+        if (request.headers.get('Accept').includes('text/html')) {
+            let networkFirstResponse = await networkFirst(event);
+            if (networkFirstResponse) {
+                return networkFirstResponse;
+            }
+        }
+
+        return cacheFirst(event);
+    }
+
+
+    devlog('Requesting ' + request.url);
+    event.respondWith(handleEvent());
+});
+
+
+
+//// helpers 
+
 async function fetchAndCache({ request, responseFromCache }) {
 
     if (responseFromCache
@@ -193,28 +215,6 @@ async function cacheFirst(event) {
     }
 }
 
-
-addEventListener('fetch', event => {
-    const request = event.request;
-    const handleEvent = async function () {
-        if (request.headers.get('Accept').includes('text/html')) {
-            let networkFirstResponse = await networkFirst(event);
-            if (networkFirstResponse) {
-                return networkFirstResponse;
-            }
-        }
-
-        return cacheFirst(event);
-    }
-
-
-    devlog('Requesting ' + request.url);
-    event.respondWith(handleEvent());
-});
-
-
-
-//// helpers 
 
 function devlog(message) {
     if (location.hostname == 'localhost') {
