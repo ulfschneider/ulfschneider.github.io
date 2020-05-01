@@ -181,47 +181,41 @@ async function fetchAndCache({ request, responseFromCache }) {
             let accept = request.headers.get('Accept');
             if (accept && accept.includes('text/html')
                 || /^\/.+\/(\?|$)/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: RUNTIME_CACHE_NAME,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/\/manifest\.json$/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/js$/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/css[2]?$/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
                     expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
             } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
-                //do not await
-                stashInCache({
+                await stashInCache({
                     cacheName: IMAGE_CACHE_NAME,
                     expireMinutes: IMAGE_CACHE_MINUTES,
                     request: request,
