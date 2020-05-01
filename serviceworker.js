@@ -320,7 +320,7 @@ async function trimCache({ cacheName, maxItems }) {
 
 async function stashInCache({ request, response, cacheName, expireMinutes }) {
     try {
-        if (response.type != 'error') {
+        if (response.type != 'error' && response.type != 'opaque') {
             let metaResponse = await maintainExpiration({ response: response, expireMinutes: expireMinutes })
             let cache = await caches.open(cacheName);
             devlog(`Putting into ${cacheName}: ${request.url}`);
