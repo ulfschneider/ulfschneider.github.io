@@ -4,8 +4,9 @@ const IMAGE = 'image';
 
 const CACHE_NAME = 'cache';
 
-const STATIC_CACHE_MINUTES = 60 * 24; //expire cahce entries after one day
+const STATIC_CACHE_MINUTES = 60 * 24; //expire cache entries after one day
 const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //expire cache entries after 10 days
+const FONT_CACHE_MINUTES = 60 * 24 * 30; //expire fonts after 30 days
 const IMAGE_CACHE_MAX_ITEMS = 75; //cache this amount of images, not more
 
 const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
@@ -26,8 +27,36 @@ const STATIC_PRECACHE_URLS = [
     '/search/',
     '/colophon/',
     '/ownership/',
-    'https://unpkg.com/lunr/lunr.js'
+    'https://unpkg.com/lunr/lunr.js',
+    '/fonts/ibm-plex-serif-v8-latin-regular.woff2',
+    '/fonts/ibm-plex-serif-v8-latin-regular.woff',
+    '/fonts/ibm-plex-serif-v8-latin-italic.woff2',
+    '/fonts/ibm-plex-serif-v8-latin-italic.woff',
+    '/fonts/ibm-plex-serif-v8-latin-700.woff2',
+    '/fonts/ibm-plex-serif-v8-latin-700.woff',
+    '/fonts/ibm-plex-serif-v8-latin-700italic.woff2',
+    '/fonts/ibm-plex-serif-v8-latin-700italic.woff',
+    '/fonts/ibm-plex-sans-v7-latin-regular.woff2',
+    '/fonts/ibm-plex-sans-v7-latin-regular.woff',
+    '/fonts/ibm-plex-sans-v7-latin-italic.woff2',
+    '/fonts/ibm-plex-sans-v7-latin-italic.woff',
+    '/fonts/ibm-plex-sans-v7-latin-200.woff2',
+    '/fonts/ibm-plex-sans-v7-latin-200.woff',
+    '/fonts/ibm-plex-sans-v7-latin-700.woff2',
+    '/fonts/ibm-plex-sans-v7-latin-700.woff',
+    '/fonts/ibm-plex-sans-v7-latin-700italic.woff2',
+    '/fonts/ibm-plex-sans-v7-latin-700italic.woff',
+    '/fonts/ibm-plex-mono-v5-latin-regular.woff2',
+    '/fonts/ibm-plex-mono-v5-latin-regular.woff',
+    '/fonts/ibm-plex-mono-v5-latin-italic.woff2',
+    '/fonts/ibm-plex-mono-v5-latin-italic.woff',
+    '/fonts/ibm-plex-mono-v5-latin-700.woff2',
+    '/fonts/ibm-plex-mono-v5-latin-700.woff',
+    '/fonts/ibm-plex-mono-v5-latin-700italic.woff2',
+    '/fonts/ibm-plex-mono-v5-latin-700italic.woff',
 ];
+
+
 
 const NO_CACHE_URLS = [
     '/feed.xml/'
@@ -210,7 +239,7 @@ async function fetchAndCache({ request, responseFromCache }) {
             } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
-                    expireMinutes: STATIC_CACHE_MINUTES,
+                    expireMinutes: FONT_CACHE_MINUTES,
                     request: request,
                     response: responseFromNetwork.clone()
                 });
