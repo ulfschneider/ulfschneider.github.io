@@ -45,7 +45,7 @@
         'title': {%- if node.title -%} {{ node.title | jsonify }} {%- else -%} {{ node.mainnav | jsonify }} {%- endif -%},
         {%- if node.subtitle -%} 'subtitle': {{ node.subtitle | jsonify }}, {%- endif -%}
         {%- if node.abstract -%} 'abstract': {{ node.abstract | jsonify }}, {%- endif -%}
-        'excerpt': {{ node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
+        'excerpt': {{ node.content | markdownify | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
         {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
         {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
         {%- if node.refer -%} 'refer': {{ node.refer | jsonify }}, {%- endif -%}

@@ -139,7 +139,7 @@ In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is r
             <description>
                 {%- if node.subtitle -%}&lt;p&gt;{{- node.subtitle -}}&lt;/p&gt;{%- endif -%}
                 {%- if node.refer -%}&lt;p&gt;{{- node.refer -}}&lt;/p&gt;{%- endif -%}
-                {{- node.content | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
+                {{- node.content | markdownify | xml_escape | replace: "src=&quot;/",imageUrl | replace: "href=&quot;/",postUrl -}}
             </description>
             <pubDate>{{- node.date | date_to_rfc822 -}}</pubDate>
             <link>{{- node.url | prepend: site.baseurl | prepend: site.url -}}</link>
