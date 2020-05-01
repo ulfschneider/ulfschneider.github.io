@@ -12,8 +12,8 @@
 {%- assign excludeMeta = excludeMeta | push: page.exclude_tags -%}
 {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
 {%- assign excludeMeta = excludeMeta|compact|uniq -%}
-<!--onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value); history.pushState(null, '', location.pathname + '?query=' + event.target[SEARCH_QUERY_ID].value)"-->
-{% include search-field.html focus=true %}
+
+{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value); history.replaceState(null, '', location.pathname + '?query=' + event.target[SEARCH_QUERY_ID].value);" %}
 <div id="search-results"></div>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
