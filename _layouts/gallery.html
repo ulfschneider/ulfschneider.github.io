@@ -44,19 +44,10 @@ layout: default
 {{ content }}
 
 
-
-<div id="image-container" class="gallery md:breakout mrt-1">
-
-    <article>
-        <a class="no-deco" href="{{p.url}}">
-            <img class="fit-cover width-100" loading="lazy" {{ htmlTag }} />
-        </a>
-    </article>
-
+<div class="md:breakout mry-1">
+<div id="image-container" class="gallery"></div>
+<button id="load-more" class="block mrx-auto mrt-3 mrb-2 width-5">Load more images</button>
 </div>
-
-<button id="load-more" class="block mrx-auto mry-3 width-5">Load more images</button>
-
 <!-- prepare image urls of posts -->
 {%- assign imageData = "" | split: "" -%}
 
@@ -100,7 +91,7 @@ layout: default
 {%- endfor -%}
 
 <script>
-    var imageData = JSON.parse('[{{imageData | join: "," }}]');
+    var imageData = JSON.parse('[{{imageData | compact | join: "," }}]');
     var index = getIndex();
     var increment = 10;
     var container = document.getElementById('image-container');
