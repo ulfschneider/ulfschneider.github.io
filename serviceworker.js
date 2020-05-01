@@ -16,9 +16,11 @@ const CACHE_NAMES = [STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTIME_CACHE_NAME];
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
+const NOT_FOUND_URL = "/404.html";
 
 const STATIC_PRECACHE_URLS = [
     OFFLINE_URL,
+    NOT_FOUND_URL,
     '/',
     '/reading/',
     '/articles/',
