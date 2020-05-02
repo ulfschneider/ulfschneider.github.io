@@ -132,7 +132,7 @@ layout: default
     if (index + increment > imageData.length) {
         loadMore.style = 'display:none;';
     }
-    loadMore.addEventListener('click', function (event) {
+    loadMore.addEventListener('click', event => {
         index += increment;
         history.replaceState(null, '', location.pathname + '?index=' + index);
         loadImages({ start: index });
