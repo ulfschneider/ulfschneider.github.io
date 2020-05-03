@@ -114,7 +114,7 @@
 
 {% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value); history.replaceState(null, '', location.pathname + '?query=' + event.target[SEARCH_QUERY_ID].value)" %}
 
-<div id="search-results"></div>
+<div class="mrt-1" id="search-results"></div>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
@@ -191,8 +191,7 @@
         if (parent) {
             let friend = friendlyMap.get(entry.ref);
 
-            let article = document.createElement('article');
-            article.classList = 'mry-2';
+            let article = document.createElement('article');            
             parent.appendChild(article);
 
             if (friend.title && friend.title != 'notitle') {
