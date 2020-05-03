@@ -73,8 +73,8 @@ layout: default
 {%- for htmlTag in htmlTags -%}
 {%- if htmlTag contains "src=" -%}
 {%- assign imgURL = htmlTag | remove: "src=" -%}
-{%- assign data = '{ "postURL":"' | append: p.url | append: '","imgURL":' | append: imgURL | append:'}' -%}
-{%- assign imageData = imageData | push: data -%}
+{%- assign dataEntry = '{ "postURL":"' | append: p.url | append: '","imgURL":' | append: imgURL | append:'}' -%}
+{%- assign imageData = imageData | push: dataEntry -%}
 {%- assign hasImage = true -%}
 {%- endif -%}
 {%- endfor -%}
@@ -89,7 +89,7 @@ layout: default
 {%- endfor -%}
 
 <script>
-    var imageData = JSON.parse('[{{imageData | compact | join: "," }}]');
+    var imageData = [{{ imageData | compact | join: "," }}];
     var index = getIndex();
     var increment = 10;
     var container = document.getElementById('image-container');

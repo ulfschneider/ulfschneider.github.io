@@ -13,56 +13,114 @@
 {%- assign excludeMeta = excludeMeta | push: page.exclude_categories -%}
 {%- assign excludeMeta = excludeMeta|compact|uniq -%}
 
-{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value); history.replaceState(null, '', location.pathname + '?query=' + event.target[SEARCH_QUERY_ID].value);" %}
+{%- assign searchData = "" | split: "" -%}
+{%- for node in contentNodes -%}
+{%- if node.published != false and node.exclude_search != true -%}
+{%- unless page.exclude_layouts contains node.layout -%}
+
+{%- assign isExcluded = false -%}
+{%- assign nodeMeta = "" | split: "" -%}
+{%- assign nodeMeta = nodeMeta | push: node.tags -%}
+{%- assign nodeMeta = nodeMeta | push: node.categories -%}
+{%- assign nodeMeta = nodeMeta|compact|uniq -%}
+{%- for meta in nodeMeta -%}
+{%- if excludeMeta contains meta -%}
+{%- assign isExcluded = true -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+{%- unless isExcluded == true -%}
+
+{%- for meta in pageMeta -%}
+{%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
+
+{%- assign json = node.url | jsonify -%}
+{%- assign dataEntry = '{ "id":' | append: json | append: ',' -%}
+
+{%- assign dataEntry = dataEntry | append: '"title":' -%}
+{%- if node.title -%}
+{%- assign json = node.title | jsonify -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- else -%}
+{%- assign json = node.mainnav | jsonify -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- if node.subtitle -%}
+{%- assign json = node.subtitle | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"subtitle":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- if node.abstract -%}
+{%- assign json = node.abstract | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"abstract":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- assign dataEntry = dataEntry | append: '"excerpt":' -%}
+{%- assign json = node.content | strip_html | truncatewords: 25, "&nbsp;…" | jsonify -%}
+{%- assign dataEntry = dataEntry | append: json -%}
+{%- assign dataEntry = dataEntry | append: ',' -%}
+
+{%- if node.date -%}
+{%- assign json = node.date | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"date":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+{%- if node.author -%}
+{%- assign json = node.author | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"author":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- if node.refer -%}
+{%- assign json = node.refer | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"refer":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- if node.categories != empty -%}
+{%- assign json = node.categories | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"categories":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- if node.tags != empty -%}
+{%- assign json = node.tags | jsonify -%}
+{%- assign dataEntry = dataEntry | append: '"tags":' -%}
+{%- assign dataEntry = dataEntry | append: json | append: ',' -%}
+{%- endif -%}
+
+{%- assign dataEntry = dataEntry | append: '"content":' -%}
+{%- assign json = node.content | strip_html | jsonify -%}
+{%- assign dataEntry = dataEntry | append: json -%}
+
+
+{%- assign dataEntry = dataEntry | append: '}' -%}
+
+{%- assign searchData = searchData | push: dataEntry -%}
+
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+
+{%- endunless -%}
+
+{%- endunless -%}
+{%- endif -%}
+{%- endfor -%}
+
+
+{% include search-field.html focus=true onsubmit="event.preventDefault(); search(event.target[SEARCH_QUERY_ID].value); history.replaceState(null, '', location.pathname + '?query=' + event.target[SEARCH_QUERY_ID].value)" %}
+
 <div id="search-results"></div>
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
     const SEARCH_QUERY_ID = 'search-query';
 
-    var searchData = [
-        {%- for node in contentNodes -%}
-        {%- if node.published != false and node.exclude_search != true -%}
-        {%- unless page.exclude_layouts contains node.layout -%}
-        
-        {%- assign isExcluded = false -%}
-        {%- assign nodeMeta = "" | split: "" -%}
-        {%- assign nodeMeta = nodeMeta | push: node.tags -%}
-        {%- assign nodeMeta = nodeMeta | push: node.categories -%}
-        {%- assign nodeMeta = nodeMeta|compact|uniq -%}
-        {%- for meta in nodeMeta -%}
-        {%- if excludeMeta contains meta -%}
-        {%- assign isExcluded = true -%}
-        {%- break -%}
-        {%- endif -%}
-        {%- endfor -%}
-        {% unless isExcluded == true %}
-
-        {%- for meta in pageMeta -%}
-        {%- if meta == "." or node.tags contains meta or node.categories contains meta -%}
-        {
-        'id': {{ node.url | jsonify }},
-        'title': {%- if node.title -%} {{ node.title | jsonify }} {%- else -%} {{ node.mainnav | jsonify }} {%- endif -%},
-        {%- if node.subtitle -%} 'subtitle': {{ node.subtitle | jsonify }}, {%- endif -%}
-        {%- if node.abstract -%} 'abstract': {{ node.abstract | jsonify }}, {%- endif -%}
-        'excerpt': {{ node.content | markdownify | strip_html | truncatewords: 25, "&nbsp;…" | jsonify }},
-        {%- if node.date -%} 'date': {{ node.date | jsonify }}, {%- endif -%}
-        {%- if node.author -%} 'author': {{ node.author | jsonify }}, {%- endif -%}
-        {%- if node.refer -%} 'refer': {{ node.refer | jsonify }}, {%- endif -%}
-        {%- if node.categories != empty -%} 'categories': {{ node.categories | jsonify }}, {%- endif -%}
-        {%- if node.tags != empty -%} 'tags': {{ node.tags | jsonify }}, {%- endif -%}
-        'content': {{ node.content | strip_html | jsonify }}
-        },
-        {%- break -%}
-        {%- endif -%}
-        {%- endfor -%}
-
-        {%- endunless -%}
-
-        {%- endunless -%}        
-        {%- endif -%}
-        {%- endfor -%}
-];
+    var searchData = [{{searchData | compact | join: "," }}];
 
     var searchIndex;
     var friendlyMap = new Map();
@@ -80,16 +138,17 @@
 
             for (let data of searchData) {
                 this.add(data);
-                friendlyMap.set(data.id, { 
-                    title: data.title, 
-                    subtitle: data.subtitle, 
+                friendlyMap.set(data.id, {
+                    title: data.title,
+                    subtitle: data.subtitle,
                     abstract: data.abstract,
-                    excerpt: data.excerpt, 
-                    author: data.author, 
-                    refer: data.refer, 
-                    date: data.date, 
-                    categories: data.categories, 
-                    tags: data.tags });
+                    excerpt: data.excerpt,
+                    author: data.author,
+                    refer: data.refer,
+                    date: data.date,
+                    categories: data.categories,
+                    tags: data.tags
+                });
             }
         });
     }
@@ -135,22 +194,22 @@
             let article = document.createElement('article');
             article.classList = 'mry-2';
             parent.appendChild(article);
-                     
+
             if (friend.title && friend.title != 'notitle') {
                 let title = document.createElement('h2');
-                title.classList = 'mry-0'                
+                title.classList = 'mry-0'
                 article.appendChild(title);
                 let linkToArticle = document.createElement('a');
                 linkToArticle.href = entry.ref;
                 linkToArticle.innerHTML = friend.title;
                 title.appendChild(linkToArticle);
-            } 
-            
+            }
+
             if (friend.refer) {
                 let refer = document.createElement('div');
                 refer.classList = 'small meta';
-                refer.innerHTML = friend.refer;                
-                article.appendChild(refer);                
+                refer.innerHTML = friend.refer;
+                article.appendChild(refer);
             }
 
             if (friend.abstract || friend.subtitle || friend.excerpt) {
@@ -182,15 +241,15 @@
                     aside.appendChild(author);
                 }
 
-                if (friend.date) {   
+                if (friend.date) {
                     if (friend.author) {
                         aside.innerHTML += '<span aria-hidden="true"> · </span>';
-                    }                   
-                    let date = document.createElement('time');                   
+                    }
+                    let date = document.createElement('time');
                     date.innerHTML += formatDate(friend.date);
                     aside.appendChild(date);
-                }                
-            }   
+                }
+            }
         }
     }
 
