@@ -16,16 +16,16 @@
 	</style>
 </head>
 
-<body class="pdx">
-	<main class="x breakout indent word-wrap image mrt-2">
+<body>
+	<main class="x indent word-wrap image mrt-2">
 
 		{{ content }}
 
-		<div class="flex justify-space-between mrt-2">
+		<div class="breakout flex justify-space-between mrt-2">
 			<div class="small lh-2 mrr mxw-6">
 				{% include title.html %}
 
-				{% if page.notitle == true or page.title == "notitle" %}
+				{% if page.notitle == true or page.title == nil or page.title == "notitle" %}
 				{% if page.categories != nil or page.tags != nil %}
 				<div class="meta lh-2 inline-block bg-base-background">
 					{% include categories-and-tags.html %}

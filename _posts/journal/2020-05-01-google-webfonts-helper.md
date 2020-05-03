@@ -4,7 +4,7 @@ categories: journal
 ---
 [Mario Ranftl](https://mranftl.com) has written the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts), which makes self-hosting Google fonts as simple as it possibly can be. 
 
-In the process of writing the service worker for my website, I´m caching several contents to speed up response to the users. I´m also caching Google fonts. 
+The service worker of my website is caching several contents to speed up response to the users. Google fonts are also cached. 
 
 Because those fonts come back as *opaque* http responses from Google, they take a lot of space in the cache and can produce even [other problems](https://developers.google.com/web/tools/workbox/guides/handle-third-party-requests) when using a cache-first strategy. 
 

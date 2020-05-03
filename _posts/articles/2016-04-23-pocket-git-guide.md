@@ -34,10 +34,9 @@ abstract: A short entry-level approach to Git.
 - [Commmand reference](#command-reference)
 - [References](#references)
 
-## Reasons to use Git
-
+<div class="breakout">
+<h2>Reasons to use Git</h2>
 Git will help you doing the following things with a computer:
-
 <div class="x-12 mrt">
 <div class="xx-12 rg:xx-6">
 <h2 class="inline">Personal</h2>
@@ -61,6 +60,7 @@ Git will help you doing the following things with a computer:
 </ul>
 </div>
 
+</div>
 </div>
 
 Git is free. You can get Git for any platform at [git-scm.com/downloads](https://git-scm.com/downloads).

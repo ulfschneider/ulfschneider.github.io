@@ -4,6 +4,7 @@ subtitle: During the Corona crisis I am all day at home with Emil. Every now and
 categories: emil
 layout: image
 ---
+<div class="breakout">
 <img alt="Emil from the back, while looking into a pond" src="/i/IMG_0897.jpg" />
 
 <section class="x-12">
@@ -12,5 +13,5 @@ layout: image
 </section>
 
 <img class="mrt-3" alt="Emil riding his bike" src="/i/IMG_0969.jpg" />
-
+</div>
 

@@ -4,6 +4,7 @@ subtitle: Emil is deeply into witches and magic things. I promised to him, we wo
 categories: emil
 layout: image
 ---
+<div class="breakout">
 <img src="/i/IMG_0809.jpg" alt="">
 
 <img class="mrt-3" src="/i/IMG_0812.jpg"/>
@@ -38,4 +39,4 @@ layout: image
 </section>
 
 <img class="mrt-3" src="/i/IMG_0883.jpg"/>
-
+</div>

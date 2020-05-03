@@ -66,7 +66,7 @@ abstract: Highlight your TOC entries while scrolling.
         <a href="#however-hard">However hard</a>
 </div>
 
-<div class="md:breakout-l content pdy-3    ">
+<div class="breakout-l content pdy-3">
 <h1 class="mrt-0" >active-toc</h1>
 <p class="mrt-1 mrb-4">An <a href="https://www.npmjs.com/package/active-toc">npm package</a> to highlight the entries of your table of contents while scrolling your website. active-toc is leveraging the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">Intersection Observer API</a>.</p>
 
@@ -76,7 +76,7 @@ abstract: Highlight your TOC entries while scrolling.
 
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible
-            vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+            vermin. He lay on his *armour*-like back, and if he lifted his head a little he could see his brown belly,
             slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed
             ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him,
             waved
