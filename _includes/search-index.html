@@ -264,13 +264,13 @@
     }
 
     function printResultCount(searchResults, resultSet, query) {
-        let count = document.createElement('p');
+        let count = document.createElement('div');
         if (resultSet.length == 0) {
             count.innerHTML = 'Your search for "' + query + '" did not return any results.'
         } else {
             count.innerHTML = resultSet.length + ' results:';
         }
-        count.classList = "small meta mry no-indent";
+        count.classList = "small meta mry";
         searchResults.append(count);
     }
 
