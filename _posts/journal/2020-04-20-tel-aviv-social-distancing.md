@@ -2,7 +2,6 @@
 layout: image
 title: Social distancing while protesting
 categories: journal
-shortnav: no
 ---
 <figure class="breakout">
 <img alt="" src="/i/social-distancing-while-protesting.jpg"/>
