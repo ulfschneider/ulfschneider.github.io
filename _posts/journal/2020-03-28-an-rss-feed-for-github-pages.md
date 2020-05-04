@@ -163,6 +163,6 @@ In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is r
     </channel>
 </rss>{% endraw %}
 ~~~
-{:.breakout.mrb-2}
+{:.breakout-wide-r.mrb-2}
 
 Just copy the code above, store it inside of <code>_layouts/rssfeed.html</code>, and you are ready to use your new RSS feed.
