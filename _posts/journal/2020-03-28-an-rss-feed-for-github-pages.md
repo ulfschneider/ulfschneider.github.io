@@ -77,7 +77,7 @@ Here are all the front matter settings you have:
 In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is referenced. The layout file needs to be available under the name <code>rssfeed.html</code> in the <code>_layouts</code> folder. The content of <code>rssfeed.html</code> is the tiny programm that creates the feed. It is this:
 
 
-<figcaption class="mrt-2 breakout-wide-r">_layouts/rssfeed.html</figcaption>
+<figcaption class="mrt-2 breakout-wide">_layouts/rssfeed.html</figcaption>
 ~~~
 {% raw %}<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -163,6 +163,6 @@ In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is r
     </channel>
 </rss>{% endraw %}
 ~~~
-{:.breakout-wide-r.mrb-2}
+{:.breakout-wide.mrb-2}
 
 Just copy the code above, store it inside of <code>_layouts/rssfeed.html</code>, and you are ready to use your new RSS feed.
