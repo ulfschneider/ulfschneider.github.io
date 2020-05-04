@@ -103,6 +103,7 @@ addEventListener("message", event => {
 //react on requests
 addEventListener('fetch', event => {
     const request = event.request;
+
     const handleEvent = async function () {
         if (request.headers.get('Accept').includes('text/html')) {
             let networkFirstResponse = await networkFirst(event);
@@ -142,7 +143,7 @@ async function clearOldCaches() {
 
 async function networkFirst(event) {
     const request = event.request;
-
+    
     return fetchAndCache({ request: request })
         .catch(error => deverror('Failure in network first operation ' + error));
 }
