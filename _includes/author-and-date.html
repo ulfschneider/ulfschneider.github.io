@@ -5,11 +5,11 @@
 {%- endif -%}
 
 {%- if include.author or page.author -%}
-{%- if include.date and include.nodate != true -%}
-<span aria-hidden="true">·</span>
-{%- elsif page.date and page.nodate != true%}
-<span aria-hidden="true">·</span>
-{%- endif -%}
+{% if include.date and include.nodate != true %}
+<span aria-hidden="true"> · </span>
+{% elsif page.date and page.nodate != true %}
+<span aria-hidden="true"> · </span>
+{% endif %}
 {%- endif -%}
 
 {%- if include.date and include.nodate != true%}

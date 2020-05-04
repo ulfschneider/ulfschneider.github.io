@@ -4,14 +4,14 @@
 {%- assign pageMeta = pageMeta | push: page.categories -%}
 {%- assign pageMeta = pageMeta | compact | uniq | sort -%}
 
-{%- if pageMeta.size > 0 -%}
+{% if pageMeta.size > 0 %}
 <nav class="meta inline-block lh-1">
-    <span>in</span>
+    <span> in </span>
     {%- for meta in pageMeta -%}    
     <ul class="reset mry-0 inline ">
         <li class="inline"><a class="meta no-deco" href="/{{meta}}"><span aria-hidden="true">#</span>{{meta}}</a></li>
     </ul>
     {%- endfor -%}
 </nav>
-{%- endif -%}
+{% endif %}
 {%- endif -%}
