@@ -3,4 +3,6 @@ layout: image
 categories: bike
 nostepnav: true
 ---
-![](/i/cross-the-alps.jpg)
+<div class="breakout">
+<img alt="" src="/i/cross-the-alps.jpg" />
+</div>
