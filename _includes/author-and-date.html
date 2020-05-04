@@ -1,19 +1,19 @@
-{%if include.author%}
+{%- if include.author -%}
 <span>By {{include.author}}</span>
-{% elsif page.author %}
+{%- elsif page.author -%}
 <span>By {{page.author}}</span>
-{% endif %}
+{%- endif -%}
 
-{% if include.author or page.author %}
-{% if include.date and include.nodate != true %}
+{%- if include.author or page.author -%}
+{%- if include.date and include.nodate != true -%}
 <span aria-hidden="true">·</span>
-{% elsif page.date and page.nodate != true%}
+{%- elsif page.date and page.nodate != true%}
 <span aria-hidden="true">·</span>
-{% endif %}
-{% endif %}
+{%- endif -%}
+{%- endif -%}
 
-{% if include.date and include.nodate != true%}
+{%- if include.date and include.nodate != true%}
 <time class="no-wrap">{{ include.date | date: '%B %e, %Y' }}</time>
-{% elsif page.date and page.nodate != true %}
+{%- elsif page.date and page.nodate != true -%}
 <time class="no-wrap">{{ page.date | date: '%B %e, %Y' }}</time>
-{% endif %}
+{%- endif -%}

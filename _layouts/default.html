@@ -9,19 +9,19 @@
 	{% include header.html %}
 
 	<main class="x indent word-wrap default">
-		{% unless page.title == 'notitle' or page.title == nil or page.notitle == true  %}
+		{%- unless page.title == 'notitle' or page.title == nil or page.notitle == true  -%}
 		<div class="breakout-l mrb-1">
 			{% include title.html  %}
 		</div>
-		{% endunless %}
+		{%- endunless -%}
 
 		{{ content }}
 
-		{% if page.nometa != true and page.nostepnav != true and page.categories != empty %}
+		{%- if page.nometa != true and page.nostepnav != true and page.categories != empty -%}
 		
 		{% include step-navigation.html %}
 		
-		{% endif %}
+		{%- endif -%}
 	</main>
 
 	<div class="x breakout-r">

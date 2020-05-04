@@ -1,37 +1,37 @@
 <nav>
-	{% for p in site.pages %}
-	{% if p.mainnav %}
-	{% unless p.url != "/" %}
-	{% if page.url == p.url %}
+	{%- for p in site.pages -%}
+	{%- if p.mainnav -%}
+	{%- unless p.url != "/" -%}
+	{%- if page.url == p.url -%}
 	<span class="inline-block meta heading-color bold mrr-d1">{{p.mainnav}}</span>
-	{% else %}
+	{%- else -%}
 	<span class="inline-block mrr-d1"><a href="/" class="no-deco meta">{{p.mainnav}}</a></span>
-	{% endif %}
-	{% endunless %}
-	{% endif %}
-	{% endfor %}
+	{%- endif -%}
+	{%- endunless -%}
+	{%- endif -%}
+	{%- endfor -%}
 
 
 	<ul class="reset inline-block mry-0">
-		{% for p in site.pages %}
-		{% if p.mainnav %}
-		{% unless p.url == "/" %}
-		{% if page.url == p.url %}
+		{%- for p in site.pages -%}
+		{%- if p.mainnav -%}
+		{%- unless p.url == "/" -%}
+		{%- if page.url == p.url -%}
 		<li class="inline-block meta heading-color bold">{{p.mainnav}}</li>
-		{% elsif page.categories contains p.categories and page.categories.size == 1 %}
+		{%- elsif page.categories contains p.categories and page.categories.size == 1 -%}
 
 		<li class="inline-block">
 			<a class="no-deco meta heading-color bold" href="{{ p.url | prepend: site.baseurl }}">{{p.mainnav}}</a>
 		</li>
-		{% else %}
+		{%- else -%}
 		<li class="inline-block">
 			<a class="no-deco meta" href="{{ p.url | prepend: site.baseurl }}">{{p.mainnav}}</a>
 		</li>
-		{% endif %}
+		{%- endif -%}
 
-		{% endunless %}
-		{% endif %}
-		{% endfor %}
+		{%- endunless -%}
+		{%- endif -%}
+		{%- endfor -%}
 
 	</ul>
 </nav>

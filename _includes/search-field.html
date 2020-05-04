@@ -1,6 +1,6 @@
-{% assign onsubmit = "submitQuery(event);"%}
-{% if include.onsubmit %}{% assign onsubmit = include.onsubmit %}{% endif %}
-{% if include.focus %}{% assign autofocus = "autofocus" %}{% endif %}
+{%- assign onsubmit = "submitQuery(event);"%}
+{%- if include.onsubmit -%}{%- assign onsubmit = include.onsubmit -%}{%- endif -%}
+{%- if include.focus -%}{%- assign autofocus = "autofocus" -%}{%- endif -%}
 
 <script>
     function submitQuery(event) {
