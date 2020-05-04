@@ -54,7 +54,7 @@ Git will help you doing the following things with a computer:
 <div class="xx-12 rg:xx-6">
 <h2 class="inline">Team</h2>
 <ul class="indent mrt-0">
-<li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of persons on a big project, but also scales down nicely for a small team.</li>
+<li>Share your work with others and keep track of their changes by enforcing the same set of rules for managing versions. This will work even with thousands of people on a big project, but also scales down nicely for a small team.</li>
 <li>When sharing your work with others, you can work on your local computer without being always connected to a shared repository, only synchronizing eventually.</li>
 <li>No central locking of files. All team members have their own working copy on their own computers which allows each of them to work independently.</li>
 </ul>

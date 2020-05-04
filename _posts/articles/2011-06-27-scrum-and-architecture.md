@@ -53,7 +53,7 @@ To me, design decisions, compared to architectural decisions, are of tactical or
 
 The cooperative role model of Scrum does not explicitly mention the architects' role. Except for the Product Owner, the Scrum Master and the Development Team no other roles are named. It is supposed that the members of the Scrum Team will self-organize and find suitable solutions.
 
-But in that model, how will architectural decisions be taken? Are they a result of a team-oriented brainstorming and is the decision *„emergent“*, as long as the decision is being taken *„late“*? How is it ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is that the cooperative derivation of architectural decisions improves decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating persons.
+But in that model, how will architectural decisions be taken? Are they a result of a team-oriented brainstorming and is the decision *„emergent“*, as long as the decision is being taken *„late“*? How is it ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is that the cooperative derivation of architectural decisions improves decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating people.
 
 Human and process
 ---

@@ -115,7 +115,7 @@ Programmers drive it
 
 The agile movement started in the IT industry. It is driven by programmers and engineers at first hand, by people who are in the process of making and delivering. That kind of people who know since long how hard it is to get an idea to life and build something which other people like to use (and pay for). I assume the agile mindset found its first expression in Extreme Programming and Scrum in the second half of the 1990s, followed by the Agile Manifesto in 2001. And to me, when talking about agile in terms of frameworks, still I mean Scrum + XP, I don´t see we need more.
 
-The ideas, values, and principles of agile are pro people and pro results. The central working unit is the team, at max ten persons, cross-functional and being able to deliver results. The team is emancipated, has authority to decide, the competency to act and clarity in the goals to achieve.
+The ideas, values, and principles of agile are pro people and pro results. The central working unit is the team, at max ten people, cross-functional and being able to deliver results. The team is emancipated, has authority to decide, the competency to act and clarity in the goals to achieve.
 
 > Agile is about letting people make things that deliver value now while being connected to their work and validating results. The people are value focused and have the technical expertise to deliver frequently.
 
