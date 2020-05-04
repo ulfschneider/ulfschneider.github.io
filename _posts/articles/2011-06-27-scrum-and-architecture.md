@@ -53,7 +53,7 @@ To me, design decisions, compared to architectural decisions, are of tactical or
 
 The cooperative role model of Scrum does not explicitly mention the architects' role. Except for the Product Owner, the Scrum Master and the Development Team no other roles are named. It is supposed that the members of the Scrum Team will self-organize and find suitable solutions.
 
-But in that model, how will architectural decisions be taken? Are they a result of a team-oriented brainstorming and is the decision *„emergent“*, as long as the decision is being taken *„late“*? How is it ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is that the cooperative derivation of architectural decisions improves decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating people.
+But in that model, how will architectural decisions be taken? Are they a result of a team-oriented brainstorming and is the decision *„emergent“*, as long as the decision is being taken *„late“*? How is it ensured that the decisions follow a consistent concept and lead to conceptual integrity? My thesis is that the cooperative derivation of architectural decisions improves decision quality, but that conceptual integrity can only be achieved for the system if the final decision-making competency is in the hand of one or at a maximum two closely collaborating individuals.
 
 Human and process
 ---
@@ -61,7 +61,7 @@ Good architecture has conceptual integrity. One question is, can this be achieve
 
 From the perspective of agile software development, the answer is easy to find. The first value statement of the Agile Manifesto states that *"individuals and interactions are valued higher than processes and tools"* [[Agile Manifesto]][agilemanifesto]. Therefore in an agile environment, the architect always has a higher significance than any architecture process.
 
-And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product, creativity is a vital solution ingredient. Humans are creative, not so processes. , but any organization will only help if creative people in general and creative architects, in particular, are highly valued in the context of software development.
+And there is even another reason to favor the person over the process. Software development requires social and communicating skills as well as engineering excellence and creativity. For an innovative product, creativity is a vital solution ingredient. Humans are creative, not so processes. , but any organization will only help if creative individuals in general and creative architects, in particular, are highly valued in the context of software development.
 
 This does not mean that the organization can be overlooked when we design the fields of work. The organization is in service to make the communicative and social aspects of software development efficient. The structures we chose will be reflected by the product we create. *"Conway´s Law"* [[Conway 1968]][conway1968] gives us the essential point of view:
 
