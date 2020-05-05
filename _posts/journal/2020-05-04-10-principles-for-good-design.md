@@ -3,7 +3,8 @@ title: The 10 Principles for Good Design
 categories: journal
 ---
 <figure>
-<img alt="Middle-aged Dieter Rams" src="/i/dieter-rams-braun.jpg" />
+<img alt="" src="/i/dieter-rams-braun.jpg" />
+<figcaption>Middle-aged Dieter Rams</figcaption>
 </figure>
 
 The 10 Principles for Good Design as stated by [Dieter Rams](/reading/rams):
