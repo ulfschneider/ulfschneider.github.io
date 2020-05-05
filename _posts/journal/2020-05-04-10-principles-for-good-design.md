@@ -2,7 +2,7 @@
 title: The 10 Principles for Good Design
 categories: journal
 ---
-Dieter Rams: [10 Principles for Good Design](https://readymag.com/shuffle/dieter-rams/)
+[Dieter Rams](/reading/rams/): [10 Principles for Good Design](https://readymag.com/shuffle/dieter-rams/)
 
 <figure>
 <img alt="Middle-aged Dieter Rams" src="/i/dieter-rams-braun.jpg" />
