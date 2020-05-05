@@ -5,7 +5,7 @@
 {%- assign pageMeta = pageMeta | compact | uniq | sort -%}
 
 {% if pageMeta.size > 0 %}
-<nav class="meta inline-block lh-1">
+<nav class="meta inline-block lh-1 mrr">
     <span> in </span>
     {%- for meta in pageMeta -%}    
     <ul class="reset mry-0 inline ">
