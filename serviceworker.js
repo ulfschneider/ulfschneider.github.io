@@ -1,18 +1,30 @@
+const CACHE_VERSION = 'v2'; //to remove old caches
+
 const STATIC = 'static';
 const RUNTIME = 'runtime';
 const IMAGE = 'image';
-
+const FONT = 'font';
 const CACHE_NAME = 'cache';
 
-const STATIC_CACHE_MINUTES = 60 * 24; //expire cache entries after one day
-const IMAGE_CACHE_MINUTES = 60 * 24 * 10; //expire cache entries after 10 days
-const FONT_CACHE_MINUTES = 60 * 24 * 30; //expire fonts after 30 days
-const IMAGE_CACHE_MAX_ITEMS = 100; //cache this amount of images, not more
+const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}-${CACHE_VERSION}`;
+const FONT_CACHE_NAME = `${FONT}-${CACHE_NAME}-${CACHE_VERSION}`;
+const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}-${CACHE_VERSION}`;
+const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}-${CACHE_VERSION}`;
+const CACHE_NAMES = [FONT_CACHE_NAME, STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTIME_CACHE_NAME];
 
-const STATIC_CACHE_NAME = `${STATIC}-${CACHE_NAME}`;
-const IMAGE_CACHE_NAME = `${IMAGE}-${CACHE_NAME}`;
-const RUNTIME_CACHE_NAME = `${RUNTIME}-${CACHE_NAME}`;
-const CACHE_NAMES = [STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTIME_CACHE_NAME];
+const CACHE_SETTINGS = {
+    [STATIC_CACHE_NAME]: {
+        maxAgeMinutes: 60 * 24 //expire cache entries after one day
+    },
+    [FONT_CACHE_NAME]: {
+        maxAgeMinutes: 60 * 24 * 30 //expire fonts after 30 days
+    },
+    [RUNTIME_CACHE_NAME]: {},
+    [IMAGE_CACHE_NAME]: {
+        maxAgeMinutes: 60 * 24 * 10, //expire cache entries after 10 days
+        maxItems: 100 //cache this amount of images, not more
+    }
+}
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
@@ -88,14 +100,22 @@ addEventListener('activate', async event => {
 });
 
 
+//FIXME
 //the trimCache command must be sent from the onload event of 
 //the page where the service worker is registered
 //https://medium.com/@brandonrozek/limiting-the-cache-in-service-workers-revisited-f0245713e67e
 addEventListener("message", event => {
     var data = event.data;
     if (data.command == "trimCache") {
-        devlog(`Trimming ${IMAGE_CACHE_NAME} to a max limit of ${IMAGE_CACHE_MAX_ITEMS} items`);
-        trimCache({ cacheName: IMAGE_CACHE_NAME, maxItems: IMAGE_CACHE_MAX_ITEMS });
+        for (let cacheName of CACHE_NAMES) {
+            if (CACHE_SETTINGS[cacheName]) {
+                const maxItems = CACHE_SETTINGS[cacheName].maxItems;
+                if (maxItems) {
+                    devlog(`Trimming ${cacheName} to a max limit of ${maxItems} items`);
+                    trimCache({ cacheName: cacheName, maxItems: maxItems });
+                }
+            }
+        }
     }
 });
 
@@ -106,6 +126,7 @@ addEventListener('fetch', event => {
 
     const handleEvent = async function () {
         if (request.headers.get('Accept').includes('text/html')) {
+
             let networkFirstResponse = await networkFirst(event);
             if (networkFirstResponse) {
                 return networkFirstResponse;
@@ -125,7 +146,7 @@ addEventListener('fetch', event => {
 async function preCache() {
     for (let url of STATIC_PRECACHE_URLS) {
         try {
-            await fetchAndCache({ request: makeURL(url) });
+            await fetchAndCache(makeURL(url));
         } catch (err) {
             console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
         }
@@ -136,33 +157,37 @@ async function preCache() {
 async function clearOldCaches() {
     return caches
         .keys()
-        .then(cacheNames => cacheNames.filter(name => !CACHE_NAMES.includes(name)))
+        .then(cacheNames => cacheNames.filter(name => CACHE_NAMES.indexOf(name) == -1))
         .then(cacheNames => Promise.all(cacheNames.map(name => caches.delete(name))));
 }
 
 
 async function networkFirst(event) {
     const request = event.request;
-    
-    return fetchAndCache({ request: request })
+
+    return fetchAndCache(request)
         .catch(error => deverror('Failure in network first operation ' + error));
 }
 
 
-async function cacheFirst(event) {
+async function cacheFirst(event, options) {
+    options = options ? options : {};
     const request = event.request;
-    const responseFromCache = await caches.match(request);
+    const responseFromCache = await caches.match(request, options);
 
     if (responseFromCache && !isExpired(responseFromCache)) {
         devlog(`Responding from cache ${request.url}`);
 
-        //clone response and call without await
-        fetchAndCache({ request: request, responseFromCache: responseFromCache.clone() })
-            .catch(error => deverror('Failure in cache first operation ' + error));
+        if (options.revalidate) {
+            //clone response and call without await
+            options.responseFromCache = responseFromCache.clone();
+            fetchAndCache(request, options)
+                .catch(error => deverror('Failure in cache first operation ' + error));
+        }
 
         return responseFromCache;
     } else {
-        return fetchAndCache({ request: request })
+        return fetchAndCache(request, options)
             .catch(error => {
                 devlog('Failure in cache first operation ' + error);
                 if (responseFromCache) {
@@ -177,25 +202,32 @@ async function cacheFirst(event) {
 }
 
 
-async function fetchAndCache({ request, responseFromCache }) {
 
-    if (responseFromCache
-        && getExpire(responseFromCache) > 0
-        && !isExpired(responseFromCache)) {
+
+async function fetchAndCache(request, options) {
+    options = options ? options : {};
+    if (options.responseFromCache
+        && getExpire(options.responseFromCache) > 0
+        && !isExpired(options.responseFromCache)
+        && !options.revalidate) {
         //we have a cache entry that´s not expired
-        //no need to bother the network
-        return responseFromCache;
+        //and we do not enforce a revalidation
+        //no need to bother the network        
+        return options.responseFromCache;
     }
 
-    if (typeof request == 'string' || request instanceof String || request instanceof URL) {
+    if (typeof request == 'string'
+        || request instanceof String
+        || request instanceof URL) {
         request = new Request(request);
     }
 
     let url = new URL(request.url);
 
-    if (responseFromCache) {
+    if (options.responseFromCache) {
         //we have a cache entry, but it´s expired 
         //or we have no expiration date for the entry
+        //or we enforce a revalidation
         //therefore we have to update from the network
         devlog(`Updating cache ${url}`);
     } else {
@@ -209,49 +241,50 @@ async function fetchAndCache({ request, responseFromCache }) {
             if (NO_CACHE_URLS.includes(url.pathname + url.search) || NO_CACHE_URLS.includes(url)) {
                 return responseFromNetwork;
             }
-
+            
             let accept = request.headers.get('Accept');
             if (accept && accept.includes('text/html')
-                || /^\/.+\/(\?|$)/.test(url.pathname)) {
+                || /^\/.+\/$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: RUNTIME_CACHE_NAME,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options
                 });
             } else if (/\/manifest\.json$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
-                    expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options,
                 });
             } else if (/js$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
-                    expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options
                 });
             } else if (/css[2]?$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: STATIC_CACHE_NAME,
-                    expireMinutes: STATIC_CACHE_MINUTES,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options
                 });
             } else if (/(woff[2]?|ttf|otf|sfnt)$/.test(url.pathname)) {
                 await stashInCache({
-                    cacheName: STATIC_CACHE_NAME,
-                    expireMinutes: FONT_CACHE_MINUTES,
+                    cacheName: FONT_CACHE_NAME,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options
                 });
             } else if (/(jpg|jpeg|ico|png|gif|svg)$/.test(url.pathname)) {
                 await stashInCache({
                     cacheName: IMAGE_CACHE_NAME,
-                    expireMinutes: IMAGE_CACHE_MINUTES,
                     request: request,
-                    response: responseFromNetwork.clone()
+                    response: responseFromNetwork.clone(),
+                    options
                 });
             }
 
@@ -290,7 +323,7 @@ function getExpire(response) {
 }
 
 
-async function maintainExpiration({ response, expireMinutes }) {
+async function maintainExpiration({ response, maxAgeMinutes }) {
 
     cloneHeaders = function (response) {
         let headers = new Headers();
@@ -305,7 +338,7 @@ async function maintainExpiration({ response, expireMinutes }) {
             let headers = cloneHeaders(response);
 
             let expires = new Date();
-            expires.setMinutes(expires.getMinutes() + expireMinutes);
+            expires.setMinutes(expires.getMinutes() + maxAgeMinutes);
             headers.append(`${CACHE_NAME}-expires`, expires.toUTCString());
 
             let blob = await response.blob();
@@ -320,7 +353,7 @@ async function maintainExpiration({ response, expireMinutes }) {
         }
     }
 
-    if (expireMinutes > 0 && response.type != 'opaque' && response.type != 'error') {
+    if (maxAgeMinutes > 0 && response.type != 'opaque' && response.type != 'error') {
         //unfortunately, for opaque response types 
         //the expiration cannot be controlled here        
         return cloneResponse(response);
@@ -344,10 +377,16 @@ async function trimCache({ cacheName, maxItems }) {
 }
 
 
-async function stashInCache({ request, response, cacheName, expireMinutes }) {
+async function stashInCache({ request, response, cacheName, options }) {
+    options = options ? options : {};
     try {
         if (response.type != 'error' && response.type != 'opaque') {
-            let metaResponse = await maintainExpiration({ response: response, expireMinutes: expireMinutes })
+
+            if (!options.maxAgeMinutes && CACHE_SETTINGS[cacheName]) {
+                options.maxAgeMinutes = CACHE_SETTINGS[cacheName].maxAgeMinutes;
+            }
+
+            let metaResponse = await maintainExpiration({ response: response, maxAgeMinutes: options.maxAgeMinutes })
             let cache = await caches.open(cacheName);
             devlog(`Putting into ${cacheName}: ${request.url}`);
             return cache.put(request, metaResponse);
