@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v2'; //to remove old caches
+const CACHE_VERSION = 'v3'; //version is used to remove old caches
 
 const STATIC = 'static';
 const RUNTIME = 'runtime';
@@ -14,25 +14,29 @@ const CACHE_NAMES = [FONT_CACHE_NAME, STATIC_CACHE_NAME, IMAGE_CACHE_NAME, RUNTI
 
 const CACHE_SETTINGS = {
     [STATIC_CACHE_NAME]: {
-        maxAgeMinutes: 60 * 24 //expire cache entries after one day
+        maxAgeMinutes: 60 * 24 //expire static entries after one day
     },
     [FONT_CACHE_NAME]: {
         maxAgeMinutes: 60 * 24 * 30 //expire fonts after 30 days
     },
-    [RUNTIME_CACHE_NAME]: {},
+    [RUNTIME_CACHE_NAME]: {
+        maxAgeMinutes: 60 * 24 //expire runtime entries after one day
+    },
     [IMAGE_CACHE_NAME]: {
-        maxAgeMinutes: 60 * 24 * 10, //expire cache entries after 10 days
+        maxAgeMinutes: 60 * 24 * 10, //expire images after 10 days
         maxItems: 100 //cache this amount of images, not more
     }
 }
 
 //!!!! if you change the url, change it also in the URLS_TO_IGNORE in the offline page !!!!
 const OFFLINE_URL = '/offline/';
-const NOT_FOUND_URL = "/404.html";
 
-const STATIC_PRECACHE_URLS = [
-    OFFLINE_URL,
-    NOT_FOUND_URL,
+const NO_CACHE_URLS = [
+    '/feed.xml/'
+]
+
+const PRECACHE_URLS = [
+    OFFLINE_URL,    
     '/',
     '/reading/',
     '/articles/',
@@ -69,12 +73,6 @@ const STATIC_PRECACHE_URLS = [
     '/fonts/ibm-plex-mono-v5-latin-700italic.woff2',
     '/fonts/ibm-plex-mono-v5-latin-700italic.woff',
 ];
-
-
-
-const NO_CACHE_URLS = [
-    '/feed.xml/'
-]
 
 
 //preCache on install
@@ -144,11 +142,11 @@ addEventListener('fetch', event => {
 //// helpers 
 
 async function preCache() {
-    for (let url of STATIC_PRECACHE_URLS) {
+    for (let url of PRECACHE_URLS) {
         try {
             await fetchAndCache(makeURL(url));
         } catch (err) {
-            console.error(`Failure when adding ${url} to ${STATIC_CACHE_NAME}`, err);
+            console.error(`Failure when caching ${url}:` + err);
         }
     }
 }
@@ -166,7 +164,7 @@ async function networkFirst(event) {
     const request = event.request;
 
     return fetchAndCache(request)
-        .catch(error => deverror('Failure in network first operation ' + error));
+        .catch(error => deverror('Failure in network first operation: ' + error));
 }
 
 
@@ -182,14 +180,14 @@ async function cacheFirst(event, options) {
             //clone response and call without await
             options.responseFromCache = responseFromCache.clone();
             fetchAndCache(request, options)
-                .catch(error => deverror('Failure in cache first operation ' + error));
+                .catch(error => deverror('Failure in cache first operation: ' + error));
         }
 
         return responseFromCache;
     } else {
         return fetchAndCache(request, options)
             .catch(error => {
-                devlog('Failure in cache first operation ' + error);
+                deverror('Failure in cache first operation: ' + error);
                 if (responseFromCache) {
                     //use an outdated cache response, 
                     //because that is better than nothing
