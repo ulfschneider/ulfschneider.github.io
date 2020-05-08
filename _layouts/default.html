@@ -18,9 +18,9 @@
 		{{ content }}
 
 		{%- if page.nometa != true and page.nostepnav != true and page.categories != empty -%}
-		
+
 		{% include step-navigation.html %}
-		
+
 		{%- endif -%}
 	</main>
 
@@ -28,6 +28,7 @@
 		{% include footer.html %}
 	</div>
 
+	{% include fit-vids.html %}
 	{% include measure-load-time.html %}
 </body>
 

@@ -3,16 +3,15 @@
 
 <head>
 	{% include head.html %}
-	<style>		
+	<style>
 		.image .title * {
 			line-height: var(--lh-2);
 			font-size: var(--fs-d1);
 		}
-		
+
 		.image .title .sub-title {
 			color: var(--meta-color);
 		}
-		
 	</style>
 </head>
 
@@ -44,6 +43,7 @@
 	<div class="x breakout">
 		{% include footer.html mainnav=true %}
 	</div>
+	{% include fit-vids.html %}
 	{% include measure-load-time.html %}
 </body>
 
