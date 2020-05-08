@@ -119,8 +119,9 @@
 <script>
     const SEARCH_RESULTS_ID = 'search-results';
     const SEARCH_QUERY_ID = 'search-query';
+    const URLS_TO_IGNORE = [/\/404.*/, /\/offline\/$/, /\.xml[\/]?$/, /\.css$/, /\.js$/];
 
-    var searchData = [{{searchData | compact | join: "," }}];
+    var searchData = [{{ searchData | compact | join: "," }}];
 
     var searchIndex;
     var friendlyMap = new Map();
@@ -137,18 +138,28 @@
             this.field('content');
 
             for (let data of searchData) {
-                this.add(data);
-                friendlyMap.set(data.id, {
-                    title: data.title,
-                    subtitle: data.subtitle,
-                    abstract: data.abstract,
-                    excerpt: data.excerpt,
-                    author: data.author,
-                    refer: data.refer,
-                    date: data.date,
-                    categories: data.categories,
-                    tags: data.tags
-                });
+                let ignore = false;
+                for (let pattern of URLS_TO_IGNORE) {                    
+                    if (pattern.test(data.id)) {
+                        ignore = true;
+                        break;
+                    }
+                }
+                
+                if (!ignore) {
+                    this.add(data);
+                    friendlyMap.set(data.id, {
+                        title: data.title,
+                        subtitle: data.subtitle,
+                        abstract: data.abstract,
+                        excerpt: data.excerpt,
+                        author: data.author,
+                        refer: data.refer,
+                        date: data.date,
+                        categories: data.categories,
+                        tags: data.tags
+                    });
+                }
             }
         });
     }
@@ -191,7 +202,7 @@
         if (parent) {
             let friend = friendlyMap.get(entry.ref);
 
-            let article = document.createElement('article');            
+            let article = document.createElement('article');
             parent.appendChild(article);
 
             if (friend.title && friend.title != 'notitle') {
