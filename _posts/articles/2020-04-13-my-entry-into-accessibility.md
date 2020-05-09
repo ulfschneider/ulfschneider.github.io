@@ -1,6 +1,5 @@
-#todo
 ---
-title: My entry into accessibility
+title: My entry into accessibility #todo
 categories: articles
 published: no
 ---

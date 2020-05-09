@@ -1,5 +1,5 @@
 ---
-title: Going Offline
+title: Going Offline #todo
 categories: articles
 published: no
 ---
@@ -17,3 +17,4 @@ published: no
 
 - updating the service worker manually
 - storing for offline manually
+
