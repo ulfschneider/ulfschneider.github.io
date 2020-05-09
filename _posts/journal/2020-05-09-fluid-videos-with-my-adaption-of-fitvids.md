@@ -2,7 +2,7 @@
 title: Fluid videos with my adaption of FitVids
 categories: journal
 ---
-Embedded videos are not automatically responsive or fluid. They come with a fixed setting for width and height. To make them responsive while keeping aspect ratio, they are embedded into a wrapper element. The wrapper receives some clever padding and positioning, and as a last step the fixed dimensions are removed from the video. The technique has been described by Thierry Koblentz in his *A List Apart* article "[Creating Intrinsic Ratios for Video](https://alistapart.com/article/creating-intrinsic-ratios-for-video/)" in 2009.
+Embedded videos are not automatically responsive or fluid. They come with a fixed setting for width and height. To make them responsive while keeping aspect ratio, typically they are embedded into a wrapper element. The wrapper receives some clever padding and positioning, and as a last step the fixed dimensions are removed from the video. The technique has been described by Thierry Koblentz in his *A List Apart* article "[Creating Intrinsic Ratios for Video](https://alistapart.com/article/creating-intrinsic-ratios-for-video/)" in 2009.
 
 To achieve this kind of manipulation automatically for all videos on your website, you have to run a script. Therefore I came up with my own tiny version of the [FitVids](http://fitvidsjs.com) script. FitVids is Dave Rupert´s implementation of the described algorithm. It has jQuery as a dependency, which I wanted to avoid. Therefore I picked up Dave´s code and simplified it to my needs. No dependencies anymore. 
 
