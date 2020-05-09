@@ -6,6 +6,14 @@ Embedded videos are not automatically responsive or fluid. They come with a fixe
 
 To achieve this kind of manipulation automatically for all videos on your website, you have to run a script. Therefore I came up with my own tiny version of the [FitVids](http://fitvidsjs.com) script. FitVids is Dave Rupert´s implementation of the described algorithm. It has jQuery as a dependency, which I wanted to avoid. Therefore I picked up Dave´s code and simplified it to my needs. No dependencies anymore. 
 
+When using the script, **it is important to set a max-width for IFrames in your CSS!** But you probably already have that as a part of your general CSS settings.
+
+```
+iframe {
+  max-width: 100%;
+  }
+```
+
 Place the script on your website by putting it into a file, e.g. `fit-vids.js`, and reference it via `<script src="/.../fit-vids.js"></script>`. Here it is:
 
 ```
