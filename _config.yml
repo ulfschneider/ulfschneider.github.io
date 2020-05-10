@@ -25,7 +25,7 @@ defaults:
       path: _pages 
       type: pages
     values:
-      permalink: /:title/
+      permalink: /:basename/
   - 
     scope:      
       path: _posts
