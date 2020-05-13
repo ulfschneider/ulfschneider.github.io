@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v3'; //version is used to remove old caches
+const CACHE_VERSION = 'v4'; //version is used to remove old caches
 
 const STATIC = 'static';
 const RUNTIME = 'runtime';

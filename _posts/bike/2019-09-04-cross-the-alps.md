@@ -1,7 +1,7 @@
 ---
 layout: image
 title: Crossing the Alps
-subtitle: With my Santa Cruz Blur
+subtitle: With my Santa Cruz Blur TR
 categories: bike
 nostepnav: true
 ---

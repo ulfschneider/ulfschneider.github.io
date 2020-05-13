@@ -41,7 +41,7 @@ layout: default
 {{ content }}
 <div class="breakout">
     <div id="image-container" class="gallery mry-2"></div>
-    <button id="load-more" class="block mrx-auto mrt-3 mrb-2 width-5">Load more images</button>
+    <button id="load-more" class="block mrx-auto mrt-3 mrb-2 w-5">Load more images</button>
 </div>
 <!-- prepare image urls of posts -->
 {%- assign imageData = "" | split: "" -%}
@@ -100,7 +100,7 @@ layout: default
         article.appendChild(anchor);
         let img = document.createElement('img');
         img.src = imgData.imgURL;
-        img.classList = 'fit-cover width-100'
+        img.classList = 'fit-cover w-100'
         img.setAttribute('loading', 'lazy');
         anchor.appendChild(img);
     }
