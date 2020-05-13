@@ -5,13 +5,18 @@ categories: emil
 layout: image
 ---
 <div class="breakout">
-<img alt="Emil from the back, while looking into a pond" src="/i/IMG_0897.jpg" />
+<img class="mrl-0" alt="Emil from the back, while looking into a pond" src="/i/IMG_0897.jpg" />
 
 <section class="x-12">
 <img class="md:xx-6 mrt-3" alt="Chestnut Blossoms" src="/i/IMG_0961.jpg" />
 <img class="md:xx-6 mrt-3" alt="Dandelion" src="/i/IMG_0963.jpg" />
 </section>
 
-<img class="mrt-3" alt="Emil riding his bike" src="/i/IMG_0969.jpg" />
+<img class="mrt-3 mrr-0" alt="Emil riding his bike" src="/i/IMG_0969.jpg" />
+
 </div>
+
+
+
+
 
