@@ -17,7 +17,7 @@ const CACHE_SETTINGS = {
         maxAgeMinutes: 60 * 24 //expire static entries after one day
     },
     [FONT_CACHE_NAME]: {
-        maxAgeMinutes: 60 * 24 * 30 //expire fonts after 30 days
+        maxAgeMinutes: 60 * 24 * 180 //expire fonts after 180 days
     },
     [RUNTIME_CACHE_NAME]: {
         maxAgeMinutes: 60 * 24 //expire runtime entries after one day
