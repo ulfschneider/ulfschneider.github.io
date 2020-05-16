@@ -36,7 +36,7 @@ const NO_CACHE_URLS = [
 ]
 
 const PRECACHE_URLS = [
-    OFFLINE_URL,    
+    OFFLINE_URL,
     '/',
     '/reading/',
     '/articles/',
@@ -241,7 +241,7 @@ async function fetchAndCache(request, options) {
             if (NO_CACHE_URLS.includes(url.pathname + url.search) || NO_CACHE_URLS.includes(url)) {
                 return responseFromNetwork;
             }
-            
+
             let accept = request.headers.get('Accept');
             if (accept && accept.includes('text/html')
                 || /^\/.+\/$/.test(url.pathname)) {
@@ -376,11 +376,35 @@ async function trimCache({ cacheName, maxItems }) {
     }
 }
 
+function isValidToCache({ request, response }) {
+    const url = new URL(request.url);
+    if (/^\/browser-sync\//.test(url.pathname)) {
+        devlog(`Refusing to cache because of browser-sync request: ${request.url}`);
+        return false;
+    }
+    if (request.method == 'POST') {
+        devlog(`Refusing to cache because of POST request: ${request.url}`);
+        return false;
+    }
+    if (request.method == 'PUT') {
+        devlog(`Refusing to cache because of PUT request: ${request.url}`);
+        return false;
+    }
+    if (response.type == 'error') {
+        devlog(`Refusing to cache because of error response: ${request.url}`);
+        return false;
+    }
+    if (response.type == 'opaque') {
+        devlog(`Refusing to cache because of opaque response: ${request.url}`);
+        return false;
+    }
+    return true;
+}
 
 async function stashInCache({ request, response, cacheName, options }) {
     options = options ? options : {};
     try {
-        if (response.type != 'error' && response.type != 'opaque') {
+        if (isValidToCache({ request: request, response: response })) {
 
             if (!options.maxAgeMinutes && CACHE_SETTINGS[cacheName]) {
                 options.maxAgeMinutes = CACHE_SETTINGS[cacheName].maxAgeMinutes;
