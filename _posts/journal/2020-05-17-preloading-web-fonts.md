@@ -1,5 +1,3 @@
-
-
 ---
 title: Preloading web fonts
 categories: journal
