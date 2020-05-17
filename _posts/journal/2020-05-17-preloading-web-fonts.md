@@ -17,7 +17,7 @@ On my website, I´m loading fonts via `@font-face` with `font-display:swap`. Lik
 
 `swap` means, the browser will use a fallback font to display the text until the web font has fully downloaded. The behavior is named “flash of unstyled text”, or FOUT. It makes the initial display of information to the user fast, but creates an annoying *flash*, once the custom font is downloaded and injected into the page.
 
-*What I want to have* is an immediate stable rendering and no flicker when a user transitions between pages of my website. Therefore I was investigating the options of `font-display`, which are `block`, `swap`, `fallback`, `optional`, and `auto`. 
+*What I want to have* is an immediate stable rendering and no flicker when a user transitions between pages of my website. Therefore I investigated the options of `font-display`, which are `block`, `swap`, `fallback`, `optional`, and `auto`. 
 
 - `block` will hide *(block)* the text until the webfont is fully downloaded. This creates an effect named "flash of invisible text", or FOIT.
 - `swap` will use the fallback font to display and swap it with the custom font once its downloaded. This is likely to create a page reflow. The effect is named "flash of unstyled text", of FOIT.
