@@ -73,4 +73,4 @@ addEventListener('load', event => {
     }
 });
 ```
-{:.breakout-wide-r}
+{:.breakout-r}
