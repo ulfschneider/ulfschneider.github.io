@@ -2,7 +2,7 @@
 title: Preloading web fonts
 categories: journal
 ---
-I learned about preloading web fonts! On my website, I´m loading fonts via `@font-face` with `font-display:swap`. Like so:
+On my website, I´m loading fonts via `@font-face` with `font-display:swap`. Like so:
 
 ```
 @font-face {
