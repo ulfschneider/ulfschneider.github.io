@@ -72,7 +72,7 @@ Here are all the front matter settings you have:
 |exclude_categories |   | an array of all the categories you do **not** want to include into the feed |
 |exclude_tags |   | an array of all the tags you do **not** want to include into the feed |
 |exclude_layouts |   | an array of all the layouts you do **not** want to include into the feed |
-{:.breakout-r}
+{:.breakout}
 
 In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is referenced. The layout file needs to be available under the name <code>rssfeed.html</code> in the <code>_layouts</code> folder. The content of <code>rssfeed.html</code> is the tiny programm that creates the feed. It is this:
 
