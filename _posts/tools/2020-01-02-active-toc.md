@@ -6,6 +6,9 @@ abstract: Highlight your TOC entries while scrolling.
 ---
 
 <style>
+    html, body {
+        scroll-behavior: smooth;
+    }
   #toc a {
       color: unset;
         text-decoration: unset;
