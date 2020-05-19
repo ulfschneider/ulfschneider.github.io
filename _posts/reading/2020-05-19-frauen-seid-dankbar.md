@@ -1,8 +1,14 @@
 ---
 title: Frauen, seid dankbar
-refer: Essay by Elisabeth Raether in Zeit Online
+refer: Essay von Elisabeth Raether in Zeit Online
 categories: reading
 ---
 [Frauen, seid dankbar](https://www.zeit.de/wirtschaft/2020-05/wirtschaftskrise-frauen-coronavirus-berufe-krankenpflege-altenpflege).
 
-*In diesem Jahr könnte das Bruttoinlandsprodukt laut Prognosen der Bundesregierung um 6,3 Prozent einbrechen. Nächstes Jahr soll es dafür um 5,2 Prozent wachsen: einmal steil bergab, dann sofort wieder bergauf. […] Denken wir "deutsche Wirtschaft", fallen uns die genannten Kennziffern ein. Und wir denken an die immer selben Leute, die sich als Vertreter der Wirtschaft begreifen. Es sind die, die sich jetzt als Erste und am lautesten zu Wort melden, die Autoindustrie, die Lufthansa in Gestalt ihrer CEOs. Männer, die ganz und gar in ihrem Chef-Sein aufzugehen scheinen, sodass man selbst beim Zusehen manchmal glaubt, man sei bei ihnen angestellt und die Bundesregierung so eine Art nerviger Betriebsrat.*
+*Die Wirtschaftsführer haben über die Jahre einen ganz eigenen Tonfall entwickelt, mit dem sie sich an die Öffentlichkeit wenden: etwas zwischen Drohen und Jammern, ein Selbstmitleid, das jeden Moment in Aggression umschlagen kann. Die Politik zeigt sich mal genervt, meist aber durchaus empfänglich für den Quengelton der Wirtschaftsführer.*
+
+*Man könnte aus diesem Spiel aber einmal ausbrechen und sehen, was wirklich so passiert in diesem Land. Als Erstes fällt ja auf, dass da, wo die Frauen arbeiten, gar nichts strotzt. Dort herrschen Mangel und Überlastung. Der Personalmangel in deutschen Kitas ist so groß, dass ein Betreuungsplatz für immerhin das Liebste, was man hat, heute etwas ganz Besonderes ist, ein Luxus, wie früher eine, sagen wir, Reise mit dem Kreuzfahrtschiff. Manchmal muss leider der Mittagsschlaf für die Kinder ausfallen, weil es nicht genügend Personal zur Schlafbetreuung gibt. Die Erzieherinnen, die die Knappheit ausgleichen müssen, werden häufiger krank als vergleichbare Gruppen in der Bevölkerung.*
+
+*In der Krankenpflege, wo 80 Prozent des Personals weiblich sind, ist es normal, dass die Angestellten Überstunden anhäufen. Laut verschiedenen Studien kann nur eine Minderheit sich vorstellen, den Beruf bis zum Rentenalter auszuüben. Vollzeit sei wegen der Belastung nicht zu schaffen, was das Einkommen noch mal niedriger macht.*
+
+*In der Altenpflege, 84 Prozent weiblich, verdienen die Angestellten noch weniger, nämlich nur 85 Prozent des mittleren Verdienstes. In der mobilen Pflege, 88 Prozent weiblich, haben die allermeisten keine Ausbildung. Sie sind Hilfskräfte, die auf rund 60 Prozent des mittleren Verdienstes kommen, fast die Hälfte von ihnen ist über 50 Jahre alt.*
