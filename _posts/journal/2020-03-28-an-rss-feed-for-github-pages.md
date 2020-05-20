@@ -12,7 +12,7 @@ I´m building my blog with Jekyll, and hosting it via GitHub Pages. Out of the b
   – jekyll-feed</pre>
 </figure>
 
-Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml/</code>.
+Once Jekyll rebuilds your site with the plugin activated, your RSS feed is available under the URL path <code>/feed.xml</code>.
 
 ## Limitations of jekyll-feed
 However, <code>jekyll-feed</code> has some limitations:
@@ -29,12 +29,12 @@ For each feed you want to publish, you have to create a markdown file inside of 
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: rssfeed
-permalink: /feed.xml/
+permalink: /feed.xml
 categories: [articles, tools, reading, journal]
 ---</pre>
 </figure>
 
-The address of the published feed, <code>/feed.xml/</code> in this case, doesn´t need to correspond to the name of the feed definition file, <code>feed.md</code> in our example. You define the feed address with the <code>permalink</code> setting inside of the feed definition file. 
+The address of the published feed, <code>/feed.xml</code> in this case, doesn´t need to correspond to the name of the feed definition file, <code>feed.md</code> in our example. You define the feed address with the <code>permalink</code> setting inside of the feed definition file. 
 
 You can have multiple feed definition files with different content filters and subsequently different feed addresses.
 
@@ -44,7 +44,7 @@ The filtering of posts is not only working for categories. You can also filter f
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: rssfeed
-permalink: /feed.xml/
+permalink: /feed.xml
 tags: [articles, tools, reading, journal]
 ---</pre>
 </figure>
@@ -55,7 +55,7 @@ A logical OR filter combination of categories and tags is in the form:
 <figcaption>_pages/feed.md</figcaption>
 <pre>---
 layout: rssfeed
-permalink: /feed.xml/
+permalink: /feed.xml
 categories: [tools]
 tags: [reading, journal]
 ---</pre>
@@ -66,13 +66,13 @@ Here are all the front matter settings you have:
 |Front Matter|Value|Meaning|
 |---|---|---|
 |layout | rssfeed | mandatory |
-|permalink | /feed.xml/ | it can be another URL, but it should end with `.xml` |
+|permalink | /feed.xml | it can be another URL, but it should end with `.xml` |
 |categories |   | an array of all the categories you want to include into the feed |
 |tags |   | an array of all the tags you want to include into the feed |
 |exclude_categories |   | an array of all the categories you do **not** want to include into the feed |
 |exclude_tags |   | an array of all the tags you do **not** want to include into the feed |
 |exclude_layouts |   | an array of all the layouts you do **not** want to include into the feed |
-{:.breakout-r}
+{:.breakout}
 
 In the above <code>feed.md</code> file, a layout named <code>rssfeed</code> is referenced. The layout file needs to be available under the name <code>rssfeed.html</code> in the <code>_layouts</code> folder. The content of <code>rssfeed.html</code> is the tiny programm that creates the feed. It is this:
 

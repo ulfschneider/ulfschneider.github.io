@@ -6,6 +6,9 @@ abstract: Highlight your TOC entries while scrolling.
 ---
 
 <style>
+    html, body {
+        scroll-behavior: smooth;
+    }
   #toc a {
       color: unset;
         text-decoration: unset;
@@ -48,7 +51,7 @@ abstract: Highlight your TOC entries while scrolling.
 </style>
 
 <div id="toc" class="meta">
-        <a href="/tools" class="mrb-2">ulf.codes</a>
+        <a href="/tools/" class="mrb-2">ulf.codes</a>
         <a href="#one-morning">One morning</a>
         <a href="#he-thought">He thought</a>
         <a href="#gregor-then">Gregor then</a>

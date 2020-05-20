@@ -1,0 +1,7 @@
+---
+layout: rssfeed
+permalink: /rss.xml
+exclude_layouts: [image,gallery,rssfeed]
+exclude_categories: [emil]
+exclude_search: true
+---
