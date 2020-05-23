@@ -1,5 +1,5 @@
 {%- if page.nometa != true and page.nostepnav != true -%}
-{%- assign pageMeta = "" | split: ""%}
+{%- assign pageMeta = "" | split: "" -%}
 {%- assign pageMeta = pageMeta | push: page.tags -%}
 {%- assign pageMeta = pageMeta | push: page.categories -%}
 {%- assign pageMeta = pageMeta | compact | uniq | sort -%}
