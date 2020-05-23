@@ -5,7 +5,7 @@ nometa: true
 ---
 <h1 class="fs-2 lh-2 md:fs-4 md:lh-1 breakout-l mrb-2">Hi, I´m <span class="inline-block">Ulf Schneider,</span> a developer and agile coach living in Paderborn, Germany.</h1>
 
-<picture class="mry-2">
+<picture class="mry-2 bg-neutral-5">
   <source srcset="/i/ulf/ulf-16x9-600.jpg" media="(min-width: 400px)">
   <img width="600" height="337" class="w-100 fit-cover" srcset="/i/ulf/ulf-16x9-400.jpg" alt="Portrait of Ulf Schneier">
 </picture>
