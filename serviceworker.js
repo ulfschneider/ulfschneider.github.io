@@ -45,6 +45,8 @@ const PRECACHE_URLS = [
     '/search/',
     '/colophon/',
     '/ownership/',
+    '/img/ulf/ulf-16x9-600.jpg',
+    '/img/ulf/ulf-16x9-400.jpg',
     '/r/fit-vids.js',
     '/r/measure-load-time.js',
     'https://unpkg.com/lunr/lunr.js',
