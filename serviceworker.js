@@ -44,23 +44,23 @@ const PRECACHE_URLS = [
     '/journal/',
     '/search/',
     '/colophon/',
-    '/ownership/',    
+    '/ownership/',
     '/r/fit-vids.js',
     '/r/measure-load-time.js',
-    'https://unpkg.com/lunr/lunr.js',
     '/fonts/ibm-plex-serif-v8-latin-regular.woff2',
     '/fonts/ibm-plex-serif-v8-latin-italic.woff2',
     '/fonts/ibm-plex-serif-v8-latin-700.woff2',
     '/fonts/ibm-plex-serif-v8-latin-700italic.woff2',
     '/fonts/ibm-plex-sans-v7-latin-regular.woff2',
     '/fonts/ibm-plex-sans-v7-latin-italic.woff2',
-    '/fonts/ibm-plex-sans-v7-latin-200.woff2',    
+    '/fonts/ibm-plex-sans-v7-latin-200.woff2',
     '/fonts/ibm-plex-sans-v7-latin-700.woff2',
     '/fonts/ibm-plex-sans-v7-latin-700italic.woff2',
     '/fonts/ibm-plex-mono-v5-latin-regular.woff2',
     '/fonts/ibm-plex-mono-v5-latin-italic.woff2',
     '/fonts/ibm-plex-mono-v5-latin-700.woff2',
-    '/fonts/ibm-plex-mono-v5-latin-700italic.woff2'
+    '/fonts/ibm-plex-mono-v5-latin-700italic.woff2',
+    'https://unpkg.com/lunr/lunr.js'
 ];
 
 
