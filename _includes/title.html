@@ -1,7 +1,7 @@
 {%- unless page.title == "notitle" or page.title == nil or page.notitle == true -%}
 <div class="title no-indent">
     {%- if page.title  -%}
-    <h1 class="lh-2 fs-2 md:fs-4 md:lh-1">{{ page.title }}</h1>
+    <h1 class="lh-2 fs-2 md:fs-4 md:lh-1 mrb-d2">{{ page.title }}</h1>
     {%- endif -%}
 
     {%- if page.subtitle -%}
@@ -17,7 +17,7 @@
     {%- if page.nostepnav == true or page.nometa == true -%}{%- assign meta = false -%}{%- endif -%}
 
     {%- if page.author or date or meta  -%}
-    <aside class="lh-2 small meta">
+    <aside class="lh-2 small meta mrt-d2">
         {%- include author-and-date.html -%}
         {%- include categories-and-tags.html -%}        
     </aside>
