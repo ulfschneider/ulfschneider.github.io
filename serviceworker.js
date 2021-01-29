@@ -87,7 +87,6 @@ addEventListener('activate', async event => {
 });
 
 
-//FIXME
 //the trimCache command must be sent from the onload event of 
 //the page where the service worker is registered
 //https://medium.com/@brandonrozek/limiting-the-cache-in-service-workers-revisited-f0245713e67e
